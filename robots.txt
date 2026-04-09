@@ -1,0 +1,33 @@
+# Robots.txt para Bilbao Reforma
+# https://www.bilbaoreforma.es/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.bilbaoreforma.es/sitemap.xml
+
+# Rutas principales
+Allow: /index.html
+Allow: /contacto.html
+Allow: /sobre-nosotros.html
+Allow: /politica-privacidad.html
+Allow: /aviso-legal.html
+
+# Calculadora
+Allow: /calculadora/
+
+# Blog
+Allow: /blog/
+
+# Directorio de empresas
+Allow: /empresas/
+
+# Archivos estáticos
+Allow: /styles.css
+Allow: /calculator.js
+
+# Bloquear acceso a archivos de configuración
+Disallow: /*.js$
+Disallow: /*.md$
+Disallow: /content/

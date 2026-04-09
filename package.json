@@ -1,0 +1,10 @@
+{
+  "name": "bilbao-reforma-calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora de presupuestos de fontanería para Bilbao Reformas",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "start": "npx serve . -l 3000"
+  }
+}
