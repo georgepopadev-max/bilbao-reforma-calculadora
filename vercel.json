@@ -1,0 +1,6 @@
+{
+  "buildCommand": "echo 'Static site - no build required'",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
+  "framework": null
+}
