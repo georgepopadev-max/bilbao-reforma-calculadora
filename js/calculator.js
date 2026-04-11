@@ -405,16 +405,16 @@
   // ============================================================
 
   function nextStep() {
-    console.log('nextStep called, currentStep:', state.currentStep, 'state:', JSON.stringify(state.data));
+    // console.log('nextStep called, currentStep:', state.currentStep, 'state:', JSON.stringify(state.data));
     if (!validateStep(state.currentStep)) {
-      console.log('validation failed');
+      // console.log('validation failed');
       renderErrors();
       return false;
     }
     
     if (state.currentStep < state.totalSteps) {
       state.currentStep++;
-      console.log('advancing to step', state.currentStep);
+      // console.log('advancing to step', state.currentStep);
       render();
       return true;
     }
@@ -1062,7 +1062,7 @@
   // ============================================================
 
   function generatePDF() {
-    console.log('downloadPDF called');
+    // console.log('downloadPDF called');
     const result = state.result;
     if (!result) {
       alert('Calcula tu presupuesto primero.');
@@ -1107,9 +1107,9 @@
   }
 
   function showLeadForm() {
-    // Scroll to lead form
     const leadForm = document.querySelector('.lead-form');
     if (leadForm) {
+      leadForm.style.display = 'block';
       leadForm.scrollIntoView({ behavior: 'smooth' });
     }
   }
@@ -1173,16 +1173,27 @@
       });
       recalculate();
     },
-    toggleExtra: function(key, el) {
-      // el is the DOM element clicked (for static HTML)
-      // Determine current checked state from element
-      const isChecked = el && el.getAttribute('aria-pressed') === 'true';
-      const qty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
-      updateExtra(key, !isChecked, qty);
-      // Toggle aria-pressed and 'selected' class visually
-      if (el) {
-        el.setAttribute('aria-pressed', !isChecked ? 'true' : 'false');
-        el.classList.toggle('selected', !isChecked);
+    toggleExtra: function(key, elOrChecked, qty) {
+      // elOrChecked is either DOM element (static HTML) or boolean (dynamic rendering)
+      // Determine current checked state
+      let isChecked;
+      if (typeof elOrChecked === 'boolean') {
+        isChecked = elOrChecked;
+        if (typeof qty === 'number') {
+          updateExtra(key, isChecked, qty);
+        } else {
+          updateExtra(key, isChecked);
+        }
+      } else {
+        // DOM element case (static HTML)
+        isChecked = elOrChecked && elOrChecked.getAttribute('aria-pressed') === 'true';
+        const extraQty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
+        updateExtra(key, !isChecked, extraQty);
+        // Toggle aria-pressed and 'selected' class visually
+        if (elOrChecked) {
+          elOrChecked.setAttribute('aria-pressed', !isChecked ? 'true' : 'false');
+          elOrChecked.classList.toggle('selected', !isChecked);
+        }
       }
     },
     toggleContingency: function(el) {
@@ -1233,17 +1244,37 @@
         if (emailInput) emailInput.focus();
         return;
       }
-      // Collect data
-      var leadData = {
-        name: name,
-        email: email,
-        phone: phone,
-        data: state.data,
-        result: state.result
-      };
-      console.log('Lead submitted:', leadData);
-      alert('¡Gracias ' + name + '! Te contactaremos pronto con presupuestos personalizados.');
-      // In production: send to backend
+
+      // Estimate range
+      var resultLow = state.result ? state.result.low : 0;
+      var resultHigh = state.result ? state.result.high : 0;
+      var estimateRange = resultLow && resultHigh
+        ? resultLow.toLocaleString('es-ES') + ' € - ' + resultHigh.toLocaleString('es-ES') + ' €'
+        : 'Por calcular';
+
+      // Build mailto body
+      var body = '--- FORMULARIO DE CONTACTO ---%0A%0A';
+      body += 'Nombre: ' + name + '%0A';
+      body += 'Email: ' + email + '%0A';
+      if (phone) {
+        body += 'Teléfono: ' + phone + '%0A';
+      }
+      body += '%0A--- PRESUPUESTO CALCULADO ---%0A';
+      body += 'Tipo de reforma: ' + (state.data.reformScope || state.data.reformTypes.join(', ')) + '%0A';
+      body += 'Metros cuadrados: ' + state.data.sqm + ' m²%0A';
+      body += 'Antigüedad edificio: ' + state.data.buildingAge + '%0A';
+      body += 'Calidad materiales: ' + state.data.quality + '%0A';
+      body += 'Estimación: ' + estimateRange + '%0A';
+      if (state.data.extras && Object.keys(state.data.extras).length > 0) {
+        var extrasList = Object.keys(state.data.extras).filter(function(k) { return state.data.extras[k].checked; });
+        if (extrasList.length > 0) {
+          body += 'Extras seleccionados: ' + extrasList.join(', ') + '%0A';
+        }
+      }
+      body += '%0A--- RECIBIDO A TRAVÉS DE BILBAO REFORMA ---';
+
+      var subject = 'Bilbao Reforma - Solicitud de presupuestos';
+      window.location.href = 'mailto:hola@bilbaoreforma.es?subject=' + encodeURIComponent(subject) + '&body=' + body;
     },
     
     // State access (for debugging)
@@ -1280,7 +1311,7 @@
   function init() {
     // Initialize with first step visible (static HTML)
     showStep(1);
-    console.log('Bilbao Calculadora initialized');
+    // console.log('Bilbao Calculadora initialized');
   }
 
   // Auto-init on DOM ready

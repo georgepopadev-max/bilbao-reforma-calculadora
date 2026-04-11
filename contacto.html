@@ -319,7 +319,7 @@
       </div>
 
       <div class="contact-layout">
-        <div class="contact-form-card" style="display:none">
+        <div class="contact-form-card">
           <h2 class="contact-form-title">Envíanos un mensaje</h2>
           <form class="contact-form">
             <div class="form-row">
@@ -371,7 +371,7 @@
                 <svg class="contact-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <div class="contact-list-content">
                   <strong>Correo electrónico</strong>
-                  <span>info@bilbaoreforma.es</span>
+                  <span>hola@bilbaoreforma.es</span>
                 </div>
               </li>
               <li class="contact-list-item">
@@ -461,7 +461,7 @@
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Contacto</h4>
-          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@bilbaoreforma.es</p>
+          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> hola@bilbaoreforma.es</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -476,6 +476,52 @@
       var btn = this;
       var isOpen = menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Form submit handler - mailto solution
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var projectType = document.getElementById('project-type').value;
+      var message = document.getElementById('message').value.trim();
+
+      var subject = 'Bilbao Reforma - Contacto';
+      var body = 'Nombre: ' + name + '%0A';
+      body += 'Email: ' + email + '%0A';
+      if (phone) {
+        body += 'Teléfono: ' + phone + '%0A';
+      }
+      if (projectType) {
+        var projectLabels = {
+          'particular': 'Soy particular y quiero información sobre reformas',
+          'empresa': 'Soy empresa de reformas y quiero aparecer en el directorio',
+          'colaboracion': 'Propuesta de colaboración o afiliación',
+          'soporte': 'Soporte técnico sobre la calculadora',
+          'otro': 'Otro asunto'
+        };
+        body += 'Tipo de proyecto: ' + (projectLabels[projectType] || projectType) + '%0A';
+      }
+      body += '%0A---%0AMensaje:%0A' + encodeURIComponent(message);
+
+      window.location.href = 'mailto:hola@bilbaoreforma.es?subject=' + encodeURIComponent(subject) + '&body=' + body;
+
+      // Show confirmation
+      var formCard = document.querySelector('.contact-form-card');
+      var confirmation = document.createElement('div');
+      confirmation.className = 'form-confirmation';
+      confirmation.style.cssText = 'background: #d4edda; color: #155724; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+      confirmation.innerHTML = '<strong>¡Mensaje preparado!</strong><br>Se abrirá tu cliente de correo. Si no se abre, escríbenos a <a href="mailto:hola@bilbaoreforma.es">hola@bilbaoreforma.es</a>';
+      formCard.appendChild(confirmation);
+
+      // Remove confirmation after 5 seconds
+      setTimeout(function() {
+        if (confirmation.parentNode) {
+          confirmation.parentNode.removeChild(confirmation);
+        }
+      }, 5000);
     });
   </script>
 </body>
