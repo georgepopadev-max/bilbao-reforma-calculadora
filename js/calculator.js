@@ -48,10 +48,10 @@
     extras: {
       windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 150, max: 300, default: 200, unit: 'ventana' },
       terrace:        { label: 'Terraza/Balcón',      type: 'per-sqm',  defaultQty: 10, min: 200, max: 500, default: 300, unit: 'm²' },
-      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 0,  min: 60,  max: 90,  default: 75,  unit: 'm²' },
+      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 0,  min: 60,  max: 130, default: 95,  unit: 'm²' },
       demolition:     { label: 'Demolición tabiques', type: 'per-sqm',  defaultQty: 0,  min: 16,  max: 27,  default: 20,  unit: 'm²' },
-      domotics:       { label: 'Domótica',            type: 'flat',     defaultQty: 1,  min: 1500,max: 3000, default: 2000, unit: 'ud' },
-      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 3000,max: 6000, default: 4000, unit: 'ud' }
+      domotics:       { label: 'Domótica',            type: 'flat',     defaultQty: 1,  min: 1000,max: 3000, default: 2000, unit: 'ud' },
+      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 3000,max: 9000, default: 6000, unit: 'ud' }
     },
 
     // Contingency
@@ -162,14 +162,14 @@
       let floorLow, floorHigh;
       
       if (qualityKey === 'basic') {
-        floorLow = sqm * 25;
-        floorHigh = sqm * 35;
+        floorLow = sqm * 25 * qualityMult;
+        floorHigh = sqm * 35 * qualityMult;
       } else if (qualityKey === 'medium') {
-        floorLow = sqm * 45;
-        floorHigh = sqm * 65;
+        floorLow = sqm * 45 * qualityMult;
+        floorHigh = sqm * 65 * qualityMult;
       } else {
-        floorLow = sqm * 65;
-        floorHigh = sqm * 100;
+        floorLow = sqm * 65 * qualityMult;
+        floorHigh = sqm * 100 * qualityMult;
       }
       
       subtotalLow += floorLow;
@@ -279,8 +279,8 @@
       item: scopeData.label,
       qty: sqm,
       unit: 'm²',
-      lowRate: Math.round(baseLowPerSqm * ageMult),
-      highRate: Math.round(baseHighPerSqm * ageMult),
+      lowRate: Math.round(baseLowPerSqm),
+      highRate: Math.round(baseHighPerSqm),
       lowTotal: Math.round(baseLowAge),
       highTotal: Math.round(baseHighAge)
     });
@@ -334,6 +334,12 @@
       if (!extraData) continue;
       
       const qty = extra.qty || extraData.defaultQty;
+      
+      // Skip extras with no valid quantity
+      if (qty <= 0) {
+        continue;
+      }
+      
       let itemLow, itemHigh;
       
       if (extraData.type === 'per-sqm') {
@@ -500,12 +506,14 @@
   function updateQuality(quality) {
     state.data.quality = quality;
     state.ui.errors.quality = null;
-    // Update visual selection for quality cards (step 4)
+    // Update visual selection for quality cards
     document.querySelectorAll('.quality-card').forEach(function(el) {
       const elQuality = el.getAttribute('data-quality');
-      // Map data-quality to API quality
+      // elQuality is already API key: 'basic', 'medium', 'premium' (from JS rendering)
+      // or Spanish: 'basica', 'media', 'premium' (from HTML static)
+      // Map Spanish to API if needed
       const qualityMap = { 'basica': 'basic', 'media': 'medium', 'premium': 'premium' };
-      const apiQuality = qualityMap[elQuality];
+      const apiQuality = qualityMap[elQuality] || elQuality;
       if (apiQuality === quality) {
         el.classList.add('selected');
         el.setAttribute('aria-pressed', 'true');
@@ -520,6 +528,10 @@
   function updateExtra(key, checked, qty) {
     if (!state.data.extras[key]) {
       state.data.extras[key] = { checked: false, qty: 0 };
+    }
+    // Añadir guard:
+    if (!PRICE_DATA.extras[key]) {
+      return;
     }
     state.data.extras[key].checked = checked;
     state.data.extras[key].qty = qty !== undefined ? qty : PRICE_DATA.extras[key].defaultQty;
@@ -577,18 +589,25 @@
     }
     
     // Update breakdown bars — percentage relative to TOTAL (sum of all items)
-    const breakdownBars = document.querySelectorAll('.breakdown-bar');
-    const totalHigh = result.breakdown.reduce(function(sum, item) { return sum + item.highTotal; }, 0);
-    result.breakdown.forEach(function(item, idx) {
-      if (breakdownBars[idx]) {
-        const bar = breakdownBars[idx];
+    const breakdownContainer = document.getElementById('resultBreakdownBars');
+    if (breakdownContainer && result.breakdown) {
+      const totalHigh = result.breakdown.reduce(function(sum, item) { return sum + item.highTotal; }, 0);
+      let barsHTML = '';
+      result.breakdown.forEach(function(item) {
         const pct = totalHigh > 0 ? Math.round((item.highTotal / totalHigh) * 100) : 0;
-        const fill = bar.querySelector('.breakdown-bar-fill');
-        if (fill) fill.style.width = pct + '%';
-        const valueEl = bar.querySelector('.breakdown-bar-value');
-        if (valueEl) valueEl.textContent = pct + '% · ~' + Math.round((item.lowTotal + item.highTotal) / 2).toLocaleString('es-ES') + ' €';
-      }
-    });
+        const itemAvg = Math.round((item.lowTotal + item.highTotal) / 2);
+        barsHTML += '<div class="breakdown-bar">';
+        barsHTML += '<div class="breakdown-bar-header">';
+        barsHTML += '<span class="breakdown-bar-label">' + item.item + '</span>';
+        barsHTML += '<span class="breakdown-bar-value">' + pct + '% · ~' + itemAvg.toLocaleString('es-ES') + ' €</span>';
+        barsHTML += '</div>';
+        barsHTML += '<div class="breakdown-bar-track">';
+        barsHTML += '<div class="breakdown-bar-fill" style="width: ' + pct + '%"></div>';
+        barsHTML += '</div>';
+        barsHTML += '</div>';
+      });
+      breakdownContainer.innerHTML = barsHTML;
+    }
   }
 
   function showStep(step) {
@@ -723,13 +742,13 @@
                  id="sqm-slider"
                  class="sqm-slider"
                  min="20"
-                 max="300"
+                 max="500"
                  value="${state.data.sqm}"
                  oninput="window.BilbaoCalc.updateSqm(this.value)">
           
           <div class="sqm-range-labels">
             <span>20 m²</span>
-            <span>300 m²</span>
+            <span>500 m²</span>
           </div>
         </div>
         
@@ -1062,48 +1081,310 @@
   // ============================================================
 
   function generatePDF() {
-    // console.log('downloadPDF called');
     const result = state.result;
     if (!result) {
       alert('Calcula tu presupuesto primero.');
       return;
     }
-    // Generate a simple text file with the budget
+
     const data = state.data;
+
+    // Collect client name from lead form if present in DOM
+    let clientName = '';
+    var nameInput = document.getElementById('leadName');
+    if (nameInput && nameInput.value && nameInput.value.trim()) {
+      clientName = nameInput.value.trim();
+    }
+
+    // Format today's date
+    const today = new Date();
+    const dateStr = today.toLocaleDateString('es-ES', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric'
+    });
+
+    // Generate budget number
+    const budgetNum = 'BR-' + today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') +
+      String(today.getDate()).padStart(2, '0') + '-' +
+      String(Math.floor(Math.random() * 900) + 100);
+
     const qualityLabel = PRICE_DATA.qualityMultiplier[data.quality]?.label || 'No especificada';
     const ageLabel = PRICE_DATA.ageMultiplier[data.buildingAge]?.label || 'No especificada';
-    
-    let text = 'PRESUPUESTO ORIENTATIVO - REFORMA BILBAO\n';
-    text += '==========================================\n\n';
-    text += `Tipo de reforma: ${data.reformScope ? PRICE_DATA.reformScope[data.reformScope].label : data.reformTypes.map(t => PRICE_DATA.reformType[t]?.label).join(', ')}\n`;
-    text += `Metros cuadrados: ${data.sqm} m²\n`;
-    text += `Antigüedad edificio: ${ageLabel}\n`;
-    text += `Calidad materiales: ${qualityLabel}\n`;
-    text += `\nPRESUPUESTO ESTIMADO:\n`;
-    text += `Desde: ${result.low.toLocaleString('es-ES')} €\n`;
-    text += `Hasta: ${result.high.toLocaleString('es-ES')} €\n`;
-    text += `Precio medio por m²: ${result.avgPerSqm} €/m²\n\n`;
-    text += `Desglose:\n`;
-    if (result.breakdown) {
-      result.breakdown.forEach(function(item) {
-        text += `  - ${item.item}: ${item.lowTotal.toLocaleString('es-ES')} – ${item.highTotal.toLocaleString('es-ES')} €\n`;
-      });
+    const reformLabel = data.reformScope
+      ? PRICE_DATA.reformScope[data.reformScope].label
+      : data.reformTypes.map(t => PRICE_DATA.reformType[t]?.label).join(', ');
+
+    // Build breakdown rows
+    const breakdownRows = result.breakdown.map(item => {
+      const avgRate = Math.round((item.lowRate + item.highRate) / 2);
+      const avgTotal = Math.round((item.lowTotal + item.highTotal) / 2);
+      return `
+        <tr>
+          <td>${item.item}</td>
+          <td class="text-center">${item.qty} ${item.unit}</td>
+          <td class="text-right">${avgRate.toLocaleString('es-ES')} €</td>
+          <td class="text-right">${avgTotal.toLocaleString('es-ES')} €</td>
+        </tr>`;
+    }).join('');
+
+    // Totals
+    const subtotal = Math.round((result.low + result.high) / 2);
+    const iva = Math.round(subtotal * 0.10);
+    const total = subtotal + iva;
+
+    // Format helpers
+    const fmt = n => n.toLocaleString('es-ES') + ' €';
+
+    const htmlContent = `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Presupuesto Bilbao Reforma</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    padding: 44px 50px;
+    background: #fff;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+    border-bottom: 3px solid #C45C3E;
+    padding-bottom: 22px;
+  }
+  .logo { font-size: 22px; font-weight: 700; color: #C45C3E; letter-spacing: -0.5px; }
+  .logo-sub { font-size: 11px; color: #999; margin-top: 3px; letter-spacing: 0.5px; }
+  .budget-info { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
+  .budget-number { font-weight: 700; color: #2d2d2d; font-size: 14px; }
+  .budget-title {
+    font-size: 26px;
+    font-weight: 300;
+    color: #C45C3E;
+    margin-bottom: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .meta-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  .client-data {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 18px 22px;
+    border-radius: 8px;
+  }
+  .project-data {
+    background: #f8f8f8;
+    padding: 18px 22px;
+    border-radius: 8px;
+    min-width: 260px;
+  }
+  .section-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #aaa;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .client-data .value { font-size: 15px; color: #2d2d2d; font-weight: 500; }
+  .project-data .value { font-size: 14px; color: #2d2d2d; font-weight: 500; line-height: 1.8; }
+  .project-data .value span { color: #666; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 28px; }
+  thead tr { background: #C45C3E; }
+  thead th {
+    color: #fff;
+    padding: 11px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  thead th:nth-child(2),
+  thead th:nth-child(3),
+  thead th:nth-child(4) { text-align: right; }
+  thead th:nth-child(2) { text-align: center; }
+  tbody tr:nth-child(even) { background: #fafafa; }
+  tbody td { padding: 11px 16px; border-bottom: 1px solid #f0f0f0; font-size: 13px; color: #444; }
+  .text-right { text-align: right; }
+  .text-center { text-align: center; }
+  .totals-box {
+    margin-left: auto;
+    width: 340px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .totals-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #555;
+  }
+  .totals-row:last-child { border-bottom: none; }
+  .totals-row.subtotal { background: #f8f8f8; }
+  .totals-row.iva { background: #f8f8f8; }
+  .totals-row.total {
+    background: #C45C3E;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 14px 20px;
+  }
+  .totals-row.total .totals-label { color: #fff; }
+  .totals-row.total .totals-value { color: #fff; }
+  .note-box {
+    background: #fff8f0;
+    border-left: 4px solid #C45C3E;
+    padding: 14px 18px;
+    font-size: 12.5px;
+    color: #666;
+    margin-bottom: 30px;
+    border-radius: 0 6px 6px 0;
+    line-height: 1.6;
+  }
+  .note-box strong { color: #C45C3E; }
+  .conditions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .condition-item {
+    background: #f4f4f4;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .condition-item .cond-icon { font-size: 14px; }
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #aaa;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 36px;
+    line-height: 1.8;
+  }
+  .footer a { color: #C45C3E; text-decoration: none; }
+  @media print {
+    body { padding: 20px; }
+    .no-print { display: none; }
+  }
+  @page { margin: 20mm; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="logo">🏗️ Bilbao Reforma</div>
+    <div class="logo-sub">Presupuestos orientativos · Bilbao y provincia</div>
+  </div>
+  <div class="budget-info">
+    <div class="budget-number">${budgetNum}</div>
+    <div>Fecha: ${dateStr}</div>
+    <div>Validez: 30 días</div>
+  </div>
+</div>
+
+<div class="budget-title">PRESUPUESTO DE REFORMA</div>
+
+<div class="meta-grid">
+  <div class="client-data">
+    <div class="section-label">${clientName ? 'Cliente' : 'Datos del proyecto'}</div>
+    <div class="value">${clientName || reformLabel}</div>
+  </div>
+  <div class="project-data">
+    <div class="section-label">Datos del proyecto</div>
+    <div class="value">
+      ${reformLabel}${clientName ? '<br>' : ''}
+      <span>Superficie:</span> ${data.sqm} m²<br>
+      <span>Calidad:</span> ${qualityLabel}<br>
+      <span>Antigüedad:</span> ${ageLabel}
+    </div>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Partida</th>
+      <th>Cantidad</th>
+      <th>€/ud</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    ${breakdownRows}
+  </tbody>
+</table>
+
+<div class="totals-box">
+  <div class="totals-row subtotal">
+    <span class="totals-label">Subtotal (sin IVA)</span>
+    <span class="totals-value">${fmt(subtotal)}</span>
+  </div>
+  <div class="totals-row iva">
+    <span class="totals-label">IVA (10%)</span>
+    <span class="totals-value">${fmt(iva)}</span>
+  </div>
+  <div class="totals-row total">
+    <span class="totals-label">TOTAL</span>
+    <span class="totals-value">${fmt(total)}</span>
+  </div>
+</div>
+
+<div class="note-box">
+  <strong>Nota importante:</strong> Los precios indicados son orientativos y sin IVA. Este presupuesto tiene una horquilla de ±15% sobre la estimación final. Para un presupuesto cerrado, solicita presupuestos personalizados a empresas locales certificadas.
+</div>
+
+<div class="conditions">
+  <div class="condition-item"><span class="cond-icon">📐</span> Precios por m² orientativos</div>
+  <div class="condition-item"><span class="cond-icon">📅</span> Plazo de ejecución a confirmar</div>
+  <div class="condition-item"><span class="cond-icon">📝</span> Presupuesto sin compromiso</div>
+  <div class="condition-item"><span class="cond-icon">🏙️</span> Bilbao y provincia</div>
+</div>
+
+<div class="footer">
+  <div>bilbaoreforma.es · hola@bilbaoreforma.es</div>
+  <div>Este documento es una estimación orientativa y no constituye una oferta contractual.</div>
+  <div>Presupuesto generado automáticamente · ${dateStr}</div>
+</div>
+
+<script>
+window.onload = function() {
+  window.print();
+};
+<\/script>
+
+</body>
+</html>`;
+
+    var printWindow = window.open('', '_blank');
+    if (!printWindow) {
+      alert('Por favor, permite las ventanas emergentes para imprimir el presupuesto.');
+      return;
     }
-    text += '\n----------------------------------------\n';
-    text += 'Este presupuesto es orientativo (±15%).\n';
-    text += 'Solicita presupuestos personalizados a empresas locales.\n';
-    text += 'Generado por BilbaoReforma.es\n';
-    
-    // Download as text file
-    const blob = new Blob([text], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'presupuesto-reforma-bilbao.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    printWindow.document.write(htmlContent);
+    printWindow.document.close();
   }
 
   function showLeadForm() {
@@ -1139,13 +1420,13 @@
       // Clear scope when selecting individual types
       state.data.reformScope = null;
       state.ui.isCalculated = false;
-      // Update visual selected state for reform type cards
-      document.querySelectorAll('.reform-type-card').forEach(function(el) {
-        const elType = el.getAttribute('data-reform');
-        // Map data-reform to API type
+      // Update visual — handle both HTML static (data-reform) and JS rendering (data-type)
+      document.querySelectorAll('.card[data-type], [data-reform]').forEach(function(el) {
+        const elType = el.getAttribute('data-type') || el.getAttribute('data-reform');
+        // Map Spanish HTML labels to API types for HTML static cards
         const typeMap = { 'pintura': 'painting', 'suelo': 'flooring', 'bano': 'bathroom', 'cocina': 'kitchen' };
-        const apiType = typeMap[elType];
-        if (apiType && types.indexOf(apiType) !== -1) {
+        const apiType = typeMap[elType] || elType; // use elType directly if already API key
+        if (types.indexOf(apiType) !== -1) {
           el.classList.add('selected');
           el.setAttribute('aria-pressed', 'true');
         } else {
@@ -1156,14 +1437,13 @@
       recalculate();
     },
     selectScope: function(scope) {
-      // Clear individual types when selecting a scope
       state.data.reformTypes = [];
       state.data.reformScope = scope;
       state.ui.isCalculated = false;
-      // Update visual: select integral card, deselect others
-      document.querySelectorAll('.reform-type-card').forEach(function(el) {
-        const elScope = el.getAttribute('data-reform');
-        if (elScope === 'integral') {
+      // Update visual: select scope card, deselect others
+      document.querySelectorAll('[data-scope]').forEach(function(el) {
+        const elScope = el.getAttribute('data-scope');
+        if (elScope === scope) {
           el.classList.add('selected');
           el.setAttribute('aria-pressed', 'true');
         } else {
@@ -1173,28 +1453,13 @@
       });
       recalculate();
     },
-    toggleExtra: function(key, elOrChecked, qty) {
-      // elOrChecked is either DOM element (static HTML) or boolean (dynamic rendering)
-      // Determine current checked state
-      let isChecked;
-      if (typeof elOrChecked === 'boolean') {
-        isChecked = elOrChecked;
-        if (typeof qty === 'number') {
-          updateExtra(key, isChecked, qty);
-        } else {
-          updateExtra(key, isChecked);
-        }
-      } else {
-        // DOM element case (static HTML)
-        isChecked = elOrChecked && elOrChecked.getAttribute('aria-pressed') === 'true';
-        const extraQty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
-        updateExtra(key, !isChecked, extraQty);
-        // Toggle aria-pressed and 'selected' class visually
-        if (elOrChecked) {
-          elOrChecked.setAttribute('aria-pressed', !isChecked ? 'true' : 'false');
-          elOrChecked.classList.toggle('selected', !isChecked);
-        }
-      }
+    toggleExtra: function(key) {
+      const current = state.data.extras[key];
+      const isChecked = current && current.checked;
+      const qty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
+      updateExtra(key, !isChecked, qty);
+      // Note: DOM update happens via recalculate() → render() → showStep()
+      // No manual aria-pressed/classList manipulation needed — state drives the UI
     },
     toggleContingency: function(el) {
       // Toggle contingency on/off
@@ -1213,11 +1478,13 @@
       updateExtra(key, !isChecked, qty);
     },
     updateExtraQty: function(key, qty) {
+      if (!PRICE_DATA.extras[key]) { return; } // Unknown extra, don't crash
       const val = parseInt(qty, 10);
-      if (state.data.extras[key]) {
-        state.data.extras[key].qty = val;
-        recalculate();
+      if (!state.data.extras[key]) {
+        state.data.extras[key] = { checked: false, qty: 0 };
       }
+      state.data.extras[key].qty = val;
+      recalculate();
     },
     
     // Calculation
@@ -1241,6 +1508,12 @@
       }
       if (!email) {
         alert('Por favor, introduce tu email.');
+        if (emailInput) emailInput.focus();
+        return;
+      }
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Por favor, introduce un email válido.');
         if (emailInput) emailInput.focus();
         return;
       }
@@ -1311,6 +1584,8 @@
   function init() {
     // Initialize with first step visible (static HTML)
     showStep(1);
+    // Bind navigation button events
+    bindNavigationEvents();
     // console.log('Bilbao Calculadora initialized');
   }
 

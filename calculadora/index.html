@@ -217,8 +217,8 @@
               class="meters-input"
               value="80"
               min="20"
-              max="200"
-              placeholder="20–200"
+              max="500"
+              placeholder="20–500"
               aria-label="Metros cuadrados"
               oninput="window.BilbaoCalc.updateSqm(this.value)"
             >
@@ -228,7 +228,7 @@
               id="metersSlider"
               class="meters-slider"
               min="20"
-              max="200"
+              max="500"
               value="80"
               aria-label="Slider de metros cuadrados"
               oninput="window.BilbaoCalc.updateSqm(this.value)"
@@ -238,7 +238,7 @@
               <button class="meters-preset-btn" data-meters="70" type="button" onclick="window.BilbaoCalc.updateSqm(70)">
                 Piso 2 hab<br><span style="font-weight: 400; opacity: 0.7">~70 m²</span>
               </button>
-              <button class="meters-preset-btn selected" data-meters="90" type="button" onclick="window.BilbaoCalc.updateSqm(90)">
+              <button class="meters-preset-btn" data-meters="90" type="button" onclick="window.BilbaoCalc.updateSqm(90)">
                 Piso 3 hab<br><span style="font-weight: 400; opacity: 0.7">~90 m²</span>
               </button>
               <button class="meters-preset-btn" data-meters="120" type="button" onclick="window.BilbaoCalc.updateSqm(120)">
@@ -399,7 +399,7 @@
           </div>
 
           <div class="extras-grid" id="extrasGrid">
-            <div class="extra-checkbox-item" data-extra="ventanas" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('windows', this)">
+            <div class="extra-checkbox-item" data-extra="windows" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('windows')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -412,7 +412,7 @@
               <span class="extra-price">+150–300 €/ud</span>
             </div>
 
-            <div class="extra-checkbox-item" data-extra="terraza" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('terrace', this)">
+            <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('terrace')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -425,7 +425,7 @@
               <span class="extra-price">+200–500 €/m²</span>
             </div>
 
-            <div class="extra-checkbox-item" data-extra="suelo-radiante" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('radiantFloor', this)">
+            <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('radiantFloor')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -438,7 +438,7 @@
               <span class="extra-price">+60–130 €/m²</span>
             </div>
 
-            <div class="extra-checkbox-item" data-extra="demolicion" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('demolition', this)">
+            <div class="extra-checkbox-item" data-extra="demolition" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('demolition')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -451,7 +451,7 @@
               <span class="extra-price">+16–27 €/m²</span>
             </div>
 
-            <div class="extra-checkbox-item" data-extra="domotica" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('domotics', this)">
+            <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('domotics')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -464,7 +464,7 @@
               <span class="extra-price">+1.000–3.000 €</span>
             </div>
 
-            <div class="extra-checkbox-item" data-extra="aerotermia" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('aerothermia', this)">
+            <div class="extra-checkbox-item" data-extra="aerothermia" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('aerothermia')">
               <div class="extra-checkbox">
                 <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
@@ -533,65 +533,7 @@
             <div class="result-breakdown">
               <h2 class="result-breakdown-title">Desglose orientativo</h2>
 
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Cocina</span>
-                  <span class="breakdown-bar-value">35% · ~10.500 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill cocina" style="width: 35%"></div>
-                </div>
-              </div>
-
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Baño</span>
-                  <span class="breakdown-bar-value">25% · ~7.500 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill bano" style="width: 25%"></div>
-                </div>
-              </div>
-
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Suelo</span>
-                  <span class="breakdown-bar-value">15% · ~4.500 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill suelo" style="width: 15%"></div>
-                </div>
-              </div>
-
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Pintura</span>
-                  <span class="breakdown-bar-value">10% · ~3.000 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill pintura" style="width: 10%"></div>
-                </div>
-              </div>
-
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Instalaciones</span>
-                  <span class="breakdown-bar-value">10% · ~3.000 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill instalaciones" style="width: 10%"></div>
-                </div>
-              </div>
-
-              <div class="breakdown-bar">
-                <div class="breakdown-bar-header">
-                  <span class="breakdown-bar-label">Imprevistos</span>
-                  <span class="breakdown-bar-value">5% · ~1.500 €</span>
-                </div>
-                <div class="breakdown-bar-track">
-                  <div class="breakdown-bar-fill imprevistos" style="width: 5%"></div>
-                </div>
-              </div>
+              <div id="resultBreakdownBars"></div>
             </div>
 
             <div class="result-comparison">
@@ -620,6 +562,8 @@
 
             <div class="result-disclaimer">
               ⚠️ Este presupuesto es orientativo y puede variar ±15% según las características específicas de tu vivienda. Solicita presupuestos personalizados a empresas locales para un cálculo exacto.
+
+              Precios sin IVA (10% IVA reducido para reformas de vivienda).
             </div>
 
             <div class="lead-form" style="display:none">
