@@ -2234,6 +2234,18 @@ input, select, textarea {
 }
 
 /* ============================================
+   TEMPORARILY HIDE ALL ADSENSE PLACEHOLDERS
+   ============================================ */
+.adsense-container,
+.adsense-leaderboard,
+.adsense-inline,
+.adsense-placeholder,
+.adsense-sidebar,
+.sidebar-adsense {
+  display: none !important;
+}
+
+/* ============================================
    Article layout (blog)
    ============================================ */
 .article-layout {
