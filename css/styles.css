@@ -1974,6 +1974,7 @@ input, select, textarea {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  align-items: stretch;
 }
 
 @media (min-width: 640px) {
@@ -1984,8 +1985,15 @@ input, select, textarea {
 
 .differentiator-card {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
   align-items: flex-start;
+  padding: 1.25rem;
+  background: var(--color-blanco);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .differentiator-icon {
@@ -2016,6 +2024,8 @@ input, select, textarea {
   font-size: 0.8125rem;
   color: var(--color-gris);
   line-height: 1.5;
+  flex: 1;
+  margin: 0;
 }
 
 /* ============================================
