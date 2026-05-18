@@ -48,7 +48,7 @@
     extras: {
       windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 150, max: 300, default: 200, unit: 'ventana' },
       terrace:        { label: 'Terraza/Balcón',      type: 'per-sqm',  defaultQty: 10, min: 200, max: 500, default: 300, unit: 'm²' },
-      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 0,  min: 60,  max: 130, default: 95,  unit: 'm²' },
+      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 1,  min: 60,  max: 130, default: 95,  unit: 'm²' },
       demolition:     { label: 'Demolición tabiques', type: 'per-sqm',  defaultQty: 0,  min: 16,  max: 27,  default: 20,  unit: 'm²' },
       domotics:       { label: 'Domótica',            type: 'flat',     defaultQty: 1,  min: 1000,max: 3000, default: 2000, unit: 'ud' },
       aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 3000,max: 9000, default: 6000, unit: 'ud' }
@@ -437,6 +437,12 @@
   }
 
   function goToStep(step) {
+    // Step 1 is always accessible without validation (no data required)
+    if (step === 1) {
+      state.currentStep = step;
+      render();
+      return true;
+    }
     if (step >= 1 && step <= state.totalSteps) {
       // Validate all previous steps
       for (let i = 1; i < step; i++) {
@@ -526,12 +532,13 @@
   }
 
   function updateExtra(key, checked, qty) {
+    // Guard: if key not in PRICE_DATA.extras, create a safe default object without crashing
+    if (!PRICE_DATA.extras[key]) {
+      state.data.extras[key] = { checked: checked, qty: qty !== undefined ? qty : 0 };
+      return;
+    }
     if (!state.data.extras[key]) {
       state.data.extras[key] = { checked: false, qty: 0 };
-    }
-    // Añadir guard:
-    if (!PRICE_DATA.extras[key]) {
-      return;
     }
     state.data.extras[key].checked = checked;
     state.data.extras[key].qty = qty !== undefined ? qty : PRICE_DATA.extras[key].defaultQty;
@@ -1434,13 +1441,18 @@ window.onload = function() {
           el.setAttribute('aria-pressed', 'false');
         }
       });
+      // Deselect scope cards when individual types are selected
+      document.querySelectorAll('[data-scope]').forEach(function(el) {
+        el.classList.remove('selected');
+        el.setAttribute('aria-pressed', 'false');
+      });
       recalculate();
     },
     selectScope: function(scope) {
       state.data.reformTypes = [];
       state.data.reformScope = scope;
       state.ui.isCalculated = false;
-      // Update visual: select scope card, deselect others
+      // Update visual: select scope card, deselect individual type cards
       document.querySelectorAll('[data-scope]').forEach(function(el) {
         const elScope = el.getAttribute('data-scope');
         if (elScope === scope) {
@@ -1450,6 +1462,11 @@ window.onload = function() {
           el.classList.remove('selected');
           el.setAttribute('aria-pressed', 'false');
         }
+      });
+      // Deselect individual reform type cards when scope is selected
+      document.querySelectorAll('.reform-type-card[data-reform]').forEach(function(el) {
+        el.classList.remove('selected');
+        el.setAttribute('aria-pressed', 'false');
       });
       recalculate();
     },

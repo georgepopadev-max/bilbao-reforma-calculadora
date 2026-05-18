@@ -26,15 +26,55 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+<!-- Canonical URL -->
+  <link rel="canonical" href="https://bilbaoreforma.es/index.html">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bilbao Reforma",
+    "description": "Calculadora de presupuestos de reformas en Bilbao y Bizkaia. Precios orientativos en menos de 2 minutos.",
+    "url": "https://bilbaoreforma.es",
+    "telephone": "+34 644 937618",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bilbao",
+      "addressRegion": "Bizkaia",
+      "postalCode": "48001",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.2611,
+      "longitude": -2.9350
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Bizkaia"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
   <!-- ============================================
        HEADER COMPONENT
        ============================================ -->
   <header class="site-header">
     <div class="header-container">
       <a href="index.html" class="header-logo">
-        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <svg alt="Bilbao Reforma - Logo" class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
           <polyline points="9 22 9 12 15 12 15 22"></polyline>
         </svg>
@@ -47,7 +87,7 @@
         <a href="contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
       </nav>
       <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
-        <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg alt="" class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -66,7 +106,7 @@
     </nav>
   </div>
 
-  <main class="home-main">
+  <main class="home-main" id="main-content">
     <!-- ============================================
          HERO SECTION
          ============================================ -->
@@ -83,7 +123,7 @@
         <p class="hero-subtitle">Obtén un presupuesto orientativo en menos de 2 minutos, sin registro. Con datos reales de precios de empresas de reformas en Bilbao y Bizkaia.</p>
         <div class="hero-cta-group">
           <a href="calculadora/index.html" class="hero-cta-primary">
-            <svg class="hero-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg alt="" class="hero-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
               <line x1="8" y1="6" x2="16" y2="6"></line>
               <line x1="8" y1="10" x2="16" y2="10"></line>
@@ -115,13 +155,13 @@
     <!-- ============================================
          ADSENSE PLACEHOLDER (desktop: 728x90)
          ============================================ -->
-    <div class="adsense-container adsense-leaderboard" style="display:none">
-      <!-- AdSense: Líder de anuncios -->
-      <!-- Reemplazar con código AdSense real -->
+    <!--
+    <div class="adsense-container adsense-leaderboard">
       <div class="adsense-placeholder">
         <span>Anuncio</span>
       </div>
     </div>
+    -->
 
     <!-- ============================================
          CONTENT + SIDEBAR LAYOUT
@@ -172,7 +212,7 @@
           <div class="home-section-cta">
             <a href="calculadora/index.html" class="btn btn-primary">
               Probar la calculadora
-              <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg alt="" class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
@@ -273,22 +313,26 @@
         </section>
 
         <!-- ADSENSE IN-ARTICLE (mobile: 300x250) -->
+        <!--
         <div class="adsense-container adsense-inline">
           <div class="adsense-placeholder">
             <span>Anuncio</span>
           </div>
         </div>
+        -->
 
       </div>
 
       <!-- Sidebar -->
       <aside class="home-sidebar">
         <!-- AdSense Sidebar -->
-        <div class="sidebar-adsense" style="display:none">
+        <!--
+        <div class="sidebar-adsense">
           <div class="adsense-placeholder adsense-sidebar">
             <span>Anuncio</span>
           </div>
         </div>
+        -->
 
         <!-- Artículos Populares -->
         <div class="sidebar-section">
@@ -356,7 +400,7 @@
           </div>
           <a href="blog/index.html" class="sidebar-more-link">
             Ver todos los artículos
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg alt="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
@@ -374,7 +418,7 @@
       <div class="footer-grid">
         <div class="footer-col footer-col-brand">
           <a href="index.html" class="footer-logo">
-            <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg alt="Bilbao Reforma - Logo" class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
@@ -401,13 +445,17 @@
         <div class="footer-col">
           <h4 class="footer-col-title">Contacto</h4>
           <p class="footer-contact-info">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <svg alt="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             hola@bilbaoreforma.es
           </p>
+          <address class="footer-address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Bilbao</span>, <span itemprop="addressRegion">Bizkaia</span>, <span itemprop="postalCode">48001</span>
+          </address>
+          <a href="tel:+34644937618" class="footer-tel" itemprop="telephone">+34 644 93 76 18</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">© 2025 Bilbao Reforma. Todos los derechos reservados.</p>
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma. Todos los derechos reservados.</p>
         <p class="footer-disclaimer">Precios orientativos. Consulta con empresas locales para presupuestos personalizados.</p>
       </div>
     </div>

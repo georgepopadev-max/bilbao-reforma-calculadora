@@ -14,20 +14,18 @@ Allow: /sobre-nosotros.html
 Allow: /politica-privacidad.html
 Allow: /aviso-legal.html
 
-# Calculadora
+# Calculadora (incluye todas las sub-rutas)
 Allow: /calculadora/
 
-# Blog
+# Blog (incluye todas las sub-rutas)
 Allow: /blog/
 
-# Directorio de empresas
+# Directorio de empresas (incluye todas las sub-rutas)
 Allow: /empresas/
 
-# Archivos estáticos
-Allow: /styles.css
-Allow: /calculator.js
-
-# Bloquear acceso a archivos de configuración
+# Bloquear acceso a archivos de configuración y desarrollo
 Disallow: /*.js$
 Disallow: /*.md$
+Disallow: /*.json$
 Disallow: /content/
+Disallow: /config/

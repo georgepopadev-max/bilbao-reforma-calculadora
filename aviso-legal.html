@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aviso Legal de Bilbao Reforma. Información legal sobre el titular del sitio web, condiciones de uso y responsabilidad.">
   <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aviso Legal - Bilbao Reforma">
+  <meta property="og:description" content="Información legal sobre Bilbao Reforma, calculadora de presupuestos de reformas en Bilbao y Bizkaia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bilbaoreforma.es/aviso-legal.html">
   
   <title>Aviso Legal | Bilbao Reforma</title>
   
@@ -13,31 +19,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
   <div class="page-wrapper">
     <!-- Header -->
     <header class="site-header">
       <div class="header-container">
-        <a href="index.html" class="site-logo">
-          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <a href="index.html" class="header-logo">
+          <svg alt="Bilbao Reforma - Logo" class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
-          <span class="logo-text">Bilbao Reforma</span>
+          <span class="header-logo-text">Bilbao Reforma</span>
         </a>
-        <nav class="main-nav">
-          <a href="index.html" class="nav-link">Calculadora</a>
-          <a href="blog/index.html" class="nav-link">Blog</a>
-          <a href="empresas/index.html" class="nav-link">Empresas</a>
-          <a href="contacto.html" class="nav-link">Contacto</a>
+        <nav class="header-nav" aria-label="Navegación principal">
+          <a href="calculadora/index.html" class="header-nav-link">Calculadora</a>
+          <a href="blog/index.html" class="header-nav-link">Blog</a>
+          <a href="empresas/index.html" class="header-nav-link">Empresas</a>
+          <a href="contacto.html" class="header-nav-link">Contacto</a>
         </nav>
+        <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg alt="" class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menú</span>
+        <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">✕</button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Inicio</a>
+        <a href="calculadora/index.html" class="mobile-nav-link">Calculadora</a>
+        <a href="empresas/index.html" class="mobile-nav-link">Empresas</a>
+        <a href="blog/index.html" class="mobile-nav-link">Blog</a>
+        <a href="sobre-nosotros.html" class="mobile-nav-link">Sobre nosotros</a>
+        <a href="contacto.html" class="mobile-nav-link">Contacto</a>
+      </nav>
+    </div>
+
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
       <div class="container-narrow">
         <article class="legal-document">
           <h1 class="document-title">Aviso Legal</h1>
@@ -109,6 +139,11 @@
       </div>
     </main>
 
+    <!-- AdSense Placeholder Inline -->
+    <div class="adsense-container adsense-inline" style="min-height: 250px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border: 1px dashed #ccc; margin: 2rem auto; max-width: 750px;">
+      <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
+    </div>
+
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-container">
@@ -178,5 +213,19 @@
     .footer-bottom p { font-size: 0.8rem; color: #777; }
     @media (max-width: 768px) { .main-nav { gap: 1rem; } .nav-link { font-size: 0.8rem; } .legal-document { padding: 1.5rem; } .footer-grid { grid-template-columns: 1fr; } }
   </style>
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobileMenu');
+      var btn = this;
+      var isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+    function closeMobileMenu() {
+      var menu = document.getElementById('mobileMenu');
+      var btn = document.getElementById('mobileToggle');
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  </script>
 </body>
 </html>
