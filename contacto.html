@@ -46,13 +46,19 @@
     .contact-layout {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
       padding-bottom: 3rem;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 768px) {
       .contact-layout {
-        grid-template-columns: 1fr 320px;
-        gap: 2.5rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
       }
     }
     .contact-form-card {
@@ -394,6 +400,25 @@
             </div>
             <button type="submit" class="submit-btn">Enviar mensaje</button>
           </form>
+
+          <!-- FAQ -->
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-beige);">
+            <h3 style="font-family: var(--font-playfair); font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 1rem;">Preguntas frecuentes</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.875rem;">
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Cuánto tarda en llegar la respuesta?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Respondemos en menos de 24 horas laborables. Para consultas urgentes, escríbenos directamente a hola@bilbaoreforma.es</p>
+              </details>
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Puedo darme de alta como empresa?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Sí, selecciona "Soy empresa de reformas" en el tipo de proyecto y te enviaremos información sobre nuestras tarifas.</p>
+              </details>
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Los datos están protegidos?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Sí, cumplimos con el RGPD. Nunca compartimos tu información con terceros sin tu consentimiento.</p>
+              </details>
+            </div>
+          </div>
         </div>
 
         <aside class="contact-sidebar">
