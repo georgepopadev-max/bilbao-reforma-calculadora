@@ -1,24 +1,59 @@
 /**
  * Bilbao Reforma Calculadora — Calculator Logic
  * Pure vanilla JavaScript, no frameworks
- * 
+ *
  * Data sourced from SPEC.md — Bilbao 2025 prices
  */
+
+import { DATASET_VALIDATED } from './datasetValidated.js';
 
 (function() {
   'use strict';
 
   // ============================================================
+  // HELPERS — datasetValidated compatibility
+  // ============================================================
+
+  // Helper: extraer rango de bathroom/kitchen desde datasetValidated
+  // datasetValidated tiene variants{} anidados, calculator.js espera min/max planos
+  function getRoomRangeFromDataset(typeKey) {
+    const typeData = DATASET_VALIDATED.reformType[typeKey];
+    if (!typeData) return null;
+    // Si ya tiene min/max directo (legacy), usar esos
+    if (typeData.min !== undefined && typeData.max !== undefined) {
+      return { min: typeData.min, max: typeData.max };
+    }
+    // Si tiene variants, promediar el rango global
+    if (typeData.variants) {
+      const variantKeys = Object.keys(typeData.variants);
+      let min = Infinity, max = 0;
+      variantKeys.forEach(k => {
+        const v = typeData.variants[k];
+        if (v.min !== undefined && v.min < min) min = v.min;
+        if (v.max !== undefined && v.max > max) max = v.max;
+        // variants con minTotal/maxTotal (bathroom)
+        if (v.minTotal !== undefined && v.minTotal < min) min = v.minTotal;
+        if (v.maxTotal !== undefined && v.maxTotal > max) max = v.maxTotal;
+      });
+      if (min !== Infinity && max > 0) return { min, max };
+    }
+    return null;
+  }
+
+  // ============================================================
   // CONSTANTS — Bilbao 2025 Price Data
   // ============================================================
+
+  const bathroomRange = getRoomRangeFromDataset('bathroom') || { min: 3000, max: 12000 };
+  const kitchenRange = getRoomRangeFromDataset('kitchen') || { min: 5000, max: 16000 };
 
   const PRICE_DATA = {
     // €/m² ranges by reform type
     reformType: {
       painting:   { label: 'Pintura',         minPerSqm: 8,   maxPerSqm: 20,  unit: 'm²',  basePerSqm: 14 },
       flooring:   { label: 'Suelo',           minPerSqm: 25,  maxPerSqm: 130, unit: 'm²',  basePerSqm: 55 },
-      bathroom:   { label: 'Baño completo',   min: 3000,      max: 12000,     unit: 'ud',   basePerSqm: 0 },
-      kitchen:    { label: 'Cocina',          min: 5000,      max: 16000,     unit: 'ud',   basePerSqm: 0 }
+      bathroom:   { label: 'Baño completo',   min: bathroomRange.min, max: bathroomRange.max, unit: 'ud',   basePerSqm: 0 },
+      kitchen:    { label: 'Cocina',          min: kitchenRange.min, max: kitchenRange.max, unit: 'ud',   basePerSqm: 0 }
     },
 
     // €/m² by reform scope (full reform) — sourced from datasetValidated.js
