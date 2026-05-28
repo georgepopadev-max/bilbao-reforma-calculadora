@@ -137,73 +137,110 @@
             <p class="step-subtitle">Selecciona el tipo de reforma que necesitas</p>
           </div>
 
-          <div class="reform-types-grid" id="reformTypesGrid">
-            <!-- Pintura -->
-            <div class="reform-type-card" data-reform="pintura" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('painting')">
-              <svg class="reform-type-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 11H5a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4h.5"></path>
-                <path d="M12 11V3"></path>
-                <path d="M8 7l4-4 4 4"></path>
-                <path d="M19 15H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14"></path>
-              </svg>
-              <div class="reform-type-name">Pintura</div>
-              <div class="reform-type-range">8–15 €/m²</div>
+          <!-- SECCIÓN A: Reforma Completa (Scope) -->
+          <div class="scope-section">
+            <div class="scope-section-header">
+              <h2 class="scope-section-title">Reforma completa</h2>
+              <p class="scope-section-desc">Incluye todos los trabajos: fontanería, electricidad, suelos y pintura en toda la vivienda</p>
             </div>
-
-            <!-- Suelo -->
-            <div class="reform-type-card" data-reform="suelo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('flooring')">
-              <svg class="reform-type-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                <path d="M3 9h18"></path>
-                <path d="M3 15h18"></path>
-                <path d="M9 3v18"></path>
-                <path d="M15 3v18"></path>
-              </svg>
-              <div class="reform-type-name">Suelo</div>
-              <div class="reform-type-range">25–80 €/m²</div>
+            <div class="scope-cards-grid">
+              <!-- Básica -->
+              <div class="scope-card" data-scope="basic" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('basic')">
+                <div class="scope-card-icon">🏠</div>
+                <div class="scope-card-label">Reforma básica</div>
+                <div class="scope-card-desc">Pintura, suelos, baños y cocina con materiales estándar. Ideal para actualizar un piso usado.</div>
+                <div class="scope-card-price">500–600 €/m²</div>
+                <div class="scope-card-selected-mark"></div>
+              </div>
+              <!-- Media -->
+              <div class="scope-card" data-scope="medium" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('medium')">
+                <div class="scope-card-icon">🏡</div>
+                <div class="scope-card-label">Reforma media</div>
+                <div class="scope-card-desc">Mejor calidad de materiales, incluye electricidad nueva y certificados. Recomendada para pisos de 20-40 años.</div>
+                <div class="scope-card-price">600–800 €/m²</div>
+                <div class="scope-card-selected-mark"></div>
+              </div>
+              <!-- Integral -->
+              <div class="scope-card" data-scope="integral" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('integral')">
+                <div class="scope-card-icon">🏗️</div>
+                <div class="scope-card-label">Reforma integral</div>
+                <div class="scope-card-desc">Todo incluido: fontanería, electricidad, falsos techos, parquet, pintura, baños y cocina. Llaves en mano.</div>
+                <div class="scope-card-price">800–1.400 €/m²</div>
+                <div class="scope-card-selected-mark"></div>
+              </div>
+              <!-- Premium -->
+              <div class="scope-card scope-card-premium" data-scope="luxury" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('luxury')">
+                <div class="scope-card-icon">✨</div>
+                <div class="scope-card-label">Reforma premium</div>
+                <div class="scope-card-desc">Materiales de alta gama, domótica, aerotermia, diseño interior. Para viviendas que buscan el máximo acabado.</div>
+                <div class="scope-card-price">1.100–1.400 €/m²</div>
+                <div class="scope-card-selected-mark"></div>
+              </div>
             </div>
+          </div>
 
-            <!-- Baño -->
-            <div class="reform-type-card" data-reform="bano" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('bathroom')">
-              <svg class="reform-type-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.7 3 4 3.7 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path>
-                <line x1="10" y1="5" x2="8" y2="7"></line>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <line x1="7" y1="19" x2="7" y2="21"></line>
-                <line x1="17" y1="19" x2="17" y2="21"></line>
-              </svg>
-              <div class="reform-type-name">Baño</div>
-              <div class="reform-type-range">3.000–12.000 €</div>
+          <!-- Divider entre secciones -->
+          <div class="step-section-divider">
+            <span class="step-divider-text">o bien, selecciona estancias sueltas</span>
+          </div>
+
+          <!-- SECCIÓN B: Estancias Individuales (Type) -->
+          <div class="type-section">
+            <div class="type-section-header">
+              <h2 class="type-section-title">Selecciona estancias individuales</h2>
+              <p class="type-section-desc">Si no necesitas una reforma completa, elige solo las estancias que quieras reformers</p>
             </div>
-
-            <!-- Cocina -->
-            <div class="reform-type-card" data-reform="cocina" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('kitchen')">
-              <svg class="reform-type-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 11h18"></path>
-                <path d="M5 11V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"></path>
-                <path d="M5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"></path>
-                <path d="M12 4v4"></path>
-                <path d="M8 4v2"></path>
-                <path d="M16 4v2"></path>
-                <circle cx="8" cy="16" r="1"></circle>
-                <circle cx="12" cy="16" r="1"></circle>
-              </svg>
-              <div class="reform-type-name">Cocina</div>
-              <div class="reform-type-range">5.000–16.000 €</div>
-            </div>
-
-            <!-- Integral -->
-            <div class="reform-type-card" data-reform="integral" role="button" tabindex="0" aria-pressed="false" style="grid-column: span 2;" onclick="window.BilbaoCalc.selectScope('integral')">
-              <svg class="reform-type-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 8h20"></path>
-                <path d="M2 16h20"></path>
-                <path d="M4 8v8"></path>
-                <path d="M20 8v8"></path>
-                <rect x="6" y="4" width="12" height="16" rx="2"></rect>
-                <line x1="6" y1="12" x2="18" y2="12"></line>
-              </svg>
-              <div class="reform-type-name">Reforma Integral</div>
-              <div class="reform-type-range">400–1.400 €/m²</div>
+            <div class="type-cards-grid">
+              <!-- Pintura -->
+              <div class="type-card" data-reform="pintura" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('painting')">
+                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 11H5a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4h.5"></path>
+                  <path d="M12 11V3"></path>
+                  <path d="M8 7l4-4 4 4"></path>
+                  <path d="M19 15H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14"></path>
+                </svg>
+                <div class="type-card-name">Pintura</div>
+                <div class="type-card-price">8–20 €/m²</div>
+              </div>
+              <!-- Suelo -->
+              <div class="type-card" data-reform="suelo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('flooring')">
+                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M3 9h18"></path>
+                  <path d="M3 15h18"></path>
+                  <path d="M9 3v18"></path>
+                  <path d="M15 3v18"></path>
+                </svg>
+                <div class="type-card-name">Suelo</div>
+                <div class="type-card-price">25–130 €/m²</div>
+              </div>
+              <!-- Baño -->
+              <div class="type-card" data-reform="bano" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('bathroom')">
+                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.7 3 4 3.7 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path>
+                  <line x1="10" y1="5" x2="8" y2="7"></line>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <line x1="7" y1="19" x2="7" y2="21"></line>
+                  <line x1="17" y1="19" x2="17" y2="21"></line>
+                </svg>
+                <div class="type-card-name">Baño completo</div>
+                <div class="type-card-price">3.000–12.000 €</div>
+              </div>
+              <!-- Cocina -->
+              <div class="type-card" data-reform="cocina" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('kitchen')">
+                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11h18"></path>
+                  <path d="M5 11V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"></path>
+                  <path d="M5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"></path>
+                  <path d="M12 4v4"></path>
+                  <path d="M8 4v2"></path>
+                  <path d="M16 4v2"></path>
+                  <circle cx="8" cy="16" r="1"></circle>
+                  <circle cx="12" cy="16" r="1"></circle>
+                </svg>
+                <div class="type-card-name">Cocina</div>
+                <div class="type-card-price">5.000–16.000 €</div>
+              </div>
             </div>
           </div>
 

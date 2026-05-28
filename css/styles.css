@@ -353,6 +353,248 @@ input, select, textarea {
 }
 
 /* ============================================
+   Scope Section — Reforma Completa (Step 1)
+   ============================================ */
+.scope-section {
+  margin-bottom: 1.5rem;
+}
+
+.scope-section-header {
+  margin-bottom: 1rem;
+}
+
+.scope-section-title {
+  font-family: var(--font-playfair);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-terracota);
+  margin-bottom: 0.25rem;
+}
+
+.scope-section-desc {
+  font-size: 0.8125rem;
+  color: var(--color-gris);
+  line-height: 1.4;
+}
+
+.scope-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+@media (min-width: 520px) {
+  .scope-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.scope-card {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-beige);
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.scope-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-terracota);
+  transform: scaleX(0);
+  transition: transform var(--transition-fast);
+}
+
+.scope-card:hover {
+  border-color: var(--color-terracota-light);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.scope-card:hover::before {
+  transform: scaleX(1);
+}
+
+.scope-card.selected {
+  border-color: var(--color-terracota);
+  background-color: #FDF5F3;
+  box-shadow: var(--shadow-card-active);
+}
+
+.scope-card.selected::before {
+  transform: scaleX(1);
+  background: var(--color-terracota);
+}
+
+.scope-card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.scope-card-label {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-grafito);
+  margin-bottom: 0.375rem;
+}
+
+.scope-card-desc {
+  font-size: 0.75rem;
+  color: var(--color-gris);
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+}
+
+.scope-card-price {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-terracota);
+  background: var(--color-terracota-light);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.scope-card-selected-mark {
+  display: none;
+}
+
+.scope-card.selected .scope-card-selected-mark {
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  background: var(--color-terracota);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ============================================
+   Step Section Divider
+   ============================================ */
+.step-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.step-section-divider::before,
+.step-section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-beige-dark);
+}
+
+.step-divider-text {
+  font-size: 0.8125rem;
+  color: var(--color-gris);
+  white-space: nowrap;
+  padding: 0 0.5rem;
+}
+
+/* ============================================
+   Type Section — Estancias Individuales (Step 1)
+   ============================================ */
+.type-section {
+  margin-bottom: 1rem;
+}
+
+.type-section-header {
+  margin-bottom: 0.875rem;
+}
+
+.type-section-title {
+  font-family: var(--font-inter);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-grafito);
+  margin-bottom: 0.2rem;
+}
+
+.type-section-desc {
+  font-size: 0.8125rem;
+  color: var(--color-gris);
+  line-height: 1.4;
+}
+
+.type-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+@media (min-width: 480px) {
+  .type-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+.type-card {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-beige);
+  border-radius: var(--radius-card);
+  padding: 0.875rem 0.625rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-card);
+}
+
+.type-card:hover {
+  border-color: var(--color-verde-montana-light);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-1px);
+}
+
+.type-card.selected {
+  border-color: var(--color-verde-montana);
+  background-color: #F4F7F2;
+}
+
+.type-card.selected .type-card-icon {
+  color: var(--color-verde-montana);
+}
+
+.type-card-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 0.375rem;
+  color: var(--color-verde-montana);
+  transition: color var(--transition-fast);
+}
+
+.type-card-name {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--color-grafito);
+  margin-bottom: 0.25rem;
+}
+
+.type-card-price {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-gris);
+}
+
+/* ============================================
    Square Meters Input (Step 2)
    ============================================ */
 .meters-input-group {

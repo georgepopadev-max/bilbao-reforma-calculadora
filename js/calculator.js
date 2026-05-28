@@ -15,18 +15,18 @@
   const PRICE_DATA = {
     // €/m² ranges by reform type
     reformType: {
-      painting:   { label: 'Pintura',         minPerSqm: 8,   maxPerSqm: 15,  unit: 'm²',  basePerSqm: 10 },
-      flooring:   { label: 'Suelo',           minPerSqm: 25,  maxPerSqm: 100, unit: 'm²',  basePerSqm: 55 },
+      painting:   { label: 'Pintura',         minPerSqm: 8,   maxPerSqm: 20,  unit: 'm²',  basePerSqm: 14 },
+      flooring:   { label: 'Suelo',           minPerSqm: 25,  maxPerSqm: 130, unit: 'm²',  basePerSqm: 55 },
       bathroom:   { label: 'Baño completo',   min: 3000,      max: 12000,     unit: 'ud',   basePerSqm: 0 },
       kitchen:    { label: 'Cocina',          min: 5000,      max: 16000,     unit: 'ud',   basePerSqm: 0 }
     },
 
-    // €/m² by reform scope (full reform)
+    // €/m² by reform scope (full reform) — sourced from datasetValidated.js
     reformScope: {
-      basic:     { label: 'Reforma básica',     minPerSqm: 200, maxPerSqm: 300, basePerSqm: 250 },
-      medium:    { label: 'Reforma media',       minPerSqm: 400, maxPerSqm: 500, basePerSqm: 450 },
-      integral:  { label: 'Reforma integral',   minPerSqm: 600, maxPerSqm: 800, basePerSqm: 700 },
-      luxury:    { label: 'Reforma lujo',       minPerSqm: 900, maxPerSqm: 1400, basePerSqm: 1150 }
+      basic:     { label: 'Reforma básica',     minPerSqm: 500, maxPerSqm: 600, basePerSqm: 550 },
+      medium:    { label: 'Reforma media',       minPerSqm: 600, maxPerSqm: 800, basePerSqm: 700 },
+      integral:  { label: 'Reforma integral',   minPerSqm: 800, maxPerSqm: 1400, basePerSqm: 1100 },
+      luxury:    { label: 'Reforma premium',    minPerSqm: 1100, maxPerSqm: 1400, basePerSqm: 1250 }
     },
 
     // Quality multipliers
@@ -414,14 +414,13 @@
     // console.log('nextStep called, currentStep:', state.currentStep, 'state:', JSON.stringify(state.data));
     if (!validateStep(state.currentStep)) {
       // console.log('validation failed');
-      renderErrors();
       return false;
     }
     
     if (state.currentStep < state.totalSteps) {
       state.currentStep++;
       // console.log('advancing to step', state.currentStep);
-      render();
+      showStep(state.currentStep);
       return true;
     }
     return false;
@@ -430,7 +429,7 @@
   function prevStep() {
     if (state.currentStep > 1) {
       state.currentStep--;
-      render();
+      showStep(state.currentStep);
       return true;
     }
     return false;
@@ -440,7 +439,7 @@
     // Step 1 is always accessible without validation (no data required)
     if (step === 1) {
       state.currentStep = step;
-      render();
+      showStep(state.currentStep);
       return true;
     }
     if (step >= 1 && step <= state.totalSteps) {
@@ -448,13 +447,13 @@
       for (let i = 1; i < step; i++) {
         if (!validateStep(i)) {
           state.currentStep = i;
-          renderErrors();
-          render();
+          // Error display not implemented for static HTML
+          showStep(state.currentStep);
           return false;
         }
       }
       state.currentStep = step;
-      render();
+      showStep(state.currentStep);
       return true;
     }
     return false;
@@ -547,14 +546,14 @@
 
   function recalculate() {
     state.ui.isLoading = true;
-    render(); // Show loading state
+    showStep(state.currentStep); // Show current step (loading state handled by step 6)
     
     // Simulate async calculation for UX
     setTimeout(() => {
       state.result = calculate();
       state.ui.isCalculated = true;
       state.ui.isLoading = false;
-      render();
+      showStep(state.currentStep);
     }, 150);
   }
 
@@ -651,372 +650,6 @@
     }
     // Update button states
     updateNavigationState();
-  }
-
-  function render() {
-    // Legacy: only update step visibility for static HTML
-    showStep(state.currentStep);
-  }
-
-  function renderCurrentStep() {
-    const container = document.getElementById('step-container');
-    if (!container) return;
-    
-    // Add transition class
-    container.classList.add('step-transition');
-    
-    switch (state.currentStep) {
-      case 1: renderStep1(container); break;
-      case 2: renderStep2(container); break;
-      case 3: renderStep3(container); break;
-      case 4: renderStep4(container); break;
-      case 5: renderStep5(container); break;
-      case 6: renderStep6(container); break;
-    }
-    
-    // Remove transition class after animation
-    setTimeout(() => container.classList.remove('step-transition'), 300);
-  }
-
-  function renderStep1(container) {
-    const selectedScope = state.data.reformScope;
-    const selectedTypes = state.data.reformTypes;
-    
-    container.innerHTML = `
-      <div class="step-content">
-        <h2 class="step-title">¿Qué quieres reformar?</h2>
-        <p class="step-subtitle">Selecciona el tipo de reforma o combina varias estancias</p>
-        
-        <!-- Reform Scope Cards (Full reforms) -->
-        <div class="section-label">Reforma completa</div>
-        <div class="card-grid scope-grid">
-          ${Object.entries(PRICE_DATA.reformScope).map(([key, scope]) => `
-            <div class="card ${selectedScope === key ? 'selected' : ''}" 
-                 data-scope="${key}"
-                 onclick="window.BilbaoCalc.selectScope('${key}')">
-              <div class="card-icon">
-                ${getScopeIcon(key)}
-              </div>
-              <div class="card-title">${scope.label}</div>
-              <div class="card-price">${scope.minPerSqm}–${scope.maxPerSqm} €/m²</div>
-            </div>
-          `).join('')}
-        </div>
-        
-        <!-- Individual Room Cards -->
-        <div class="section-label">O selecciona estancias individuales</div>
-        <div class="card-grid room-grid">
-          ${Object.entries(PRICE_DATA.reformType).map(([key, type]) => `
-            <div class="card ${selectedTypes.includes(key) ? 'selected' : ''}"
-                 data-type="${key}"
-                 onclick="window.BilbaoCalc.toggleReformType('${key}')">
-              <div class="card-icon">
-                ${getRoomIcon(key)}
-              </div>
-              <div class="card-title">${type.label}</div>
-              <div class="card-price">
-                ${type.unit === 'm²' ? `${type.minPerSqm}–${type.maxPerSqm} €/m²` : `${formatCurrency(type.min)}–${formatCurrency(type.max)}`}
-              </div>
-            </div>
-          `).join('')}
-        </div>
-        
-        ${state.ui.errors.reformType ? `<div class="error-message">${state.ui.errors.reformType}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function renderStep2(container) {
-    container.innerHTML = `
-      <div class="step-content">
-        <h2 class="step-title">¿Cuántos metros tiene tu vivienda?</h2>
-        <p class="step-subtitle">Introduce la superficie total a reformar</p>
-        
-        <div class="sqm-input-group">
-          <div class="sqm-display">
-            <input type="number" 
-                   id="sqm-input" 
-                   class="sqm-input"
-                   value="${state.data.sqm}"
-                   min="20"
-                   max="500"
-                   onchange="window.BilbaoCalc.updateSqm(this.value)"
-                   oninput="window.BilbaoCalc.updateSqm(this.value)">
-            <span class="sqm-unit">m²</span>
-          </div>
-          
-          <input type="range" 
-                 id="sqm-slider"
-                 class="sqm-slider"
-                 min="20"
-                 max="500"
-                 value="${state.data.sqm}"
-                 oninput="window.BilbaoCalc.updateSqm(this.value)">
-          
-          <div class="sqm-range-labels">
-            <span>20 m²</span>
-            <span>500 m²</span>
-          </div>
-        </div>
-        
-        <div class="presets">
-          <div class="section-label">O elige un preset</div>
-          <div class="preset-buttons">
-            ${SQM_PRESETS.map(preset => `
-              <button class="preset-btn ${state.data.sqm === preset.value ? 'active' : ''}"
-                      onclick="window.BilbaoCalc.updateSqm(${preset.value})">
-                ${preset.label}
-              </button>
-            `).join('')}
-          </div>
-        </div>
-        
-        ${state.ui.errors.sqm ? `<div class="error-message">${state.ui.errors.sqm}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function renderStep3(container) {
-    container.innerHTML = `
-      <div class="step-content">
-        <h2 class="step-title">¿Qué antigüedad tiene el edificio?</h2>
-        <p class="step-subtitle">La edad del edificio afecta al coste por posibles instalaciones adicionales</p>
-        
-        <div class="radio-cards">
-          ${Object.entries(PRICE_DATA.ageMultiplier).map(([key, age]) => `
-            <div class="radio-card ${state.data.buildingAge === key ? 'selected' : ''}"
-                 onclick="window.BilbaoCalc.updateBuildingAge('${key}')">
-              <input type="radio" 
-                     name="building-age" 
-                     value="${key}"
-                     ${state.data.buildingAge === key ? 'checked' : ''}>
-              <div class="radio-content">
-                <div class="radio-title">${age.label}</div>
-                <div class="radio-note">${age.note}</div>
-                ${age.multiplier > 1 ? `<div class="radio-impact">+${Math.round((age.multiplier - 1) * 100)}% sobre presupuesto base</div>` : ''}
-              </div>
-            </div>
-          `).join('')}
-        </div>
-        
-        ${state.ui.errors.buildingAge ? `<div class="error-message">${state.ui.errors.buildingAge}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function renderStep4(container) {
-    container.innerHTML = `
-      <div class="step-content">
-        <h2 class="step-title">¿Qué calidad de materiales prefieres?</h2>
-        <p class="step-subtitle">La calidad influye directamente en el presupuesto final</p>
-        
-        <div class="quality-cards">
-          ${Object.entries(PRICE_DATA.qualityMultiplier).map(([key, quality]) => `
-            <div class="quality-card ${state.data.quality === key ? 'selected' : ''}"
-                 onclick="window.BilbaoCalc.updateQuality('${key}')">
-              <div class="quality-header">
-                <div class="quality-name">${quality.label}</div>
-                <div class="quality-multiplier">${key === 'basic' ? '-20%' : key === 'premium' ? '+40%' : 'Base'}</div>
-              </div>
-              <div class="quality-desc">${quality.desc}</div>
-            </div>
-          `).join('')}
-        </div>
-        
-        ${state.ui.errors.quality ? `<div class="error-message">${state.ui.errors.quality}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function renderStep5(container) {
-    const extras = state.data.extras;
-    
-    container.innerHTML = `
-      <div class="step-content">
-        <h2 class="step-title">¿Necesitas algo adicional?</h2>
-        <p class="step-subtitle">Selecciona los extras opcionales (pueden incrementar el presupuesto)</p>
-        
-        <div class="extras-list">
-          ${Object.entries(PRICE_DATA.extras).map(([key, extra]) => {
-            const isChecked = extras[key]?.checked || false;
-            const qty = extras[key]?.qty ?? extra.defaultQty;
-            
-            return `
-              <div class="extra-item ${isChecked ? 'checked' : ''}">
-                <label class="extra-checkbox">
-                  <input type="checkbox"
-                         ${isChecked ? 'checked' : ''}
-                         onchange="window.BilbaoCalc.toggleExtra('${key}', this.checked, ${qty})">
-                  <span class="checkmark"></span>
-                </label>
-                <div class="extra-info" onclick="window.BilbaoCalc.toggleExtra('${key}', ${!isChecked}, ${qty})">
-                  <div class="extra-name">${extra.label}</div>
-                  <div class="extra-price">${extra.type === 'flat' ? formatCurrency(extra.min) + '–' + formatCurrency(extra.max) : formatCurrency(extra.min) + '–' + formatCurrency(extra.max) + ' €/' + extra.unit}</div>
-                </div>
-                ${extra.type !== 'flat' ? `
-                  <div class="extra-qty" onclick="event.stopPropagation()">
-                    <label>Cantidad:</label>
-                    <input type="number" 
-                           value="${qty}" 
-                           min="0"
-                           max="50"
-                           onchange="window.BilbaoCalc.updateExtraQty('${key}', this.value)">
-                    <span class="qty-unit">${extra.unit}</span>
-                  </div>
-                ` : ''}
-              </div>
-            `;
-          }).join('')}
-        </div>
-        
-        <div class="contingency-note">
-          <span class="icon">ℹ️</span>
-          <span>Se añade un 15% para imprevistos por defecto</span>
-        </div>
-      </div>
-    `;
-  }
-
-  function renderStep6(container) {
-    if (state.ui.isLoading) {
-      container.innerHTML = `
-        <div class="loading-state">
-          <div class="loading-spinner"></div>
-          <p>Calculando tu presupuesto...</p>
-        </div>
-      `;
-      return;
-    }
-    
-    const result = state.result;
-    
-    if (!result) {
-      container.innerHTML = `
-        <div class="error-state">
-          <p>No se ha podido calcular el presupuesto. Por favor, vuelve atrás e intenta de nuevo.</p>
-          <button class="btn btn-secondary" onclick="window.BilbaoCalc.goToStep(1)">Volver al inicio</button>
-        </div>
-      `;
-      return;
-    }
-    
-    const { data } = state;
-    const scopeLabel = data.reformScope 
-      ? PRICE_DATA.reformScope[data.reformScope].label
-      : data.reformTypes.map(t => PRICE_DATA.reformType[t].label).join(' + ');
-    
-    container.innerHTML = `
-      <div class="result-content">
-        <div class="result-header">
-          <h2 class="result-title">Tu reforma en Bilbao</h2>
-          <p class="result-subtitle">Estimación para ${scopeLabel.toLowerCase()} en un piso de ${data.sqm}m²</p>
-        </div>
-        
-        <div class="result-range">
-          <div class="range-label">Presupuesto estimado</div>
-          <div class="range-values">
-            <span class="range-low">${formatCurrency(result.low)}</span>
-            <span class="range-separator">—</span>
-            <span class="range-high">${formatCurrency(result.high)}</span>
-          </div>
-        </div>
-        
-        <div class="result-comparator">
-          <div class="comparator-icon">📊</div>
-          <div class="comparator-text">
-            <strong>${formatCurrency(result.avgPerSqm)} €/m²</strong> — 
-            El precio medio en Bilbao para tu reforma es de ${formatCurrency(result.avgPerSqm)} por metro cuadrado
-          </div>
-        </div>
-        
-        <div class="result-breakdown">
-          <h3 class="breakdown-title">Desglose por partidas</h3>
-          <div class="breakdown-bars">
-            ${renderBreakdownBars(result.breakdown, result.high)}
-          </div>
-          <div class="breakdown-table">
-            ${renderBreakdownTable(result.breakdown)}
-          </div>
-        </div>
-        
-        <div class="result-disclaimer">
-          * Este presupuesto es orientativo. Solicita presupuestos personalizados a empresas locales para una estimación precisa.
-        </div>
-        
-        <div class="result-ctas">
-          <button class="btn btn-primary btn-large" onclick="window.BilbaoCalc.downloadPDF()">
-            <span class="btn-icon">📄</span>
-            Descargar Presupuesto PDF
-          </button>
-          <button class="btn btn-secondary btn-large" onclick="window.BilbaoCalc.requestQuotes()">
-            <span class="btn-icon">📞</span>
-            Recibir 3 Presupuestos de Empresas Locales
-          </button>
-        </div>
-        
-        <div class="result-share">
-          <button class="btn btn-text" onclick="window.BilbaoCalc.restart()">
-            ← Hacer otro cálculo
-          </button>
-        </div>
-      </div>
-    `;
-  }
-
-  function renderBreakdownBars(breakdown, total) {
-    // Filter out contingency for cleaner visualization
-    const items = breakdown.filter(item => !item.item.includes('Imprevistos'));
-    
-    return items.map(item => {
-      const maxTotal = Math.max(...items.map(i => i.highTotal));
-      const widthPercent = (item.highTotal / maxTotal) * 100;
-      const totalPercent = (item.highTotal / total) * 100;
-      
-      return `
-        <div class="bar-item">
-          <div class="bar-label">
-            <span class="bar-name">${item.item}</span>
-            <span class="bar-percent">${totalPercent.toFixed(0)}%</span>
-          </div>
-          <div class="bar-track">
-            <div class="bar-fill" style="width: ${widthPercent}%"></div>
-          </div>
-          <div class="bar-values">
-            <span>${formatCurrency(item.lowTotal)} — ${formatCurrency(item.highTotal)}</span>
-          </div>
-        </div>
-      `;
-    }).join('');
-  }
-
-  function renderBreakdownTable(breakdown) {
-    return `
-      <table class="breakdown-table-el">
-        <thead>
-          <tr>
-            <th>Partida</th>
-            <th>Cantidad</th>
-            <th>€/m² (bajo–alto)</th>
-            <th>Total (bajo–alto)</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${breakdown.map(item => `
-            <tr>
-              <td>${item.item}</td>
-              <td>${item.qty} ${item.unit}</td>
-              <td>${formatCurrency(item.lowRate)}–${formatCurrency(item.highRate)}</td>
-              <td>${formatCurrency(item.lowTotal)}–${formatCurrency(item.highTotal)}</td>
-            </tr>
-          `).join('')}
-        </tbody>
-      </table>
-    `;
-  }
-
-  function renderErrors() {
-    // Re-render current step to show errors
-    renderCurrentStep();
   }
 
   // ============================================================
@@ -1464,7 +1097,7 @@ window.onload = function() {
         }
       });
       // Deselect individual reform type cards when scope is selected
-      document.querySelectorAll('.reform-type-card[data-reform]').forEach(function(el) {
+      document.querySelectorAll('.type-card[data-reform]').forEach(function(el) {
         el.classList.remove('selected');
         el.setAttribute('aria-pressed', 'false');
       });
@@ -1590,7 +1223,6 @@ window.onload = function() {
       };
       state.result = null;
       showStep(1);
-      render();
     }
   };
 
