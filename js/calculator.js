@@ -161,16 +161,18 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     // Calculate each selected room type
     if (reformTypes.includes('painting')) {
       const base = PRICE_DATA.reformType.painting;
-      const low = sqm * base.minPerSqm * qualityMult;
-      const high = sqm * base.maxPerSqm * qualityMult;
+      const minRate = Math.max(base.minPerSqm * qualityMult, 8); // clamp min to 8
+      const maxRate = base.maxPerSqm * qualityMult;
+      const low = sqm * minRate;
+      const high = sqm * maxRate;
       subtotalLow += low;
       subtotalHigh += high;
       breakdown.push({
         item: base.label,
         qty: sqm,
         unit: 'm²',
-        lowRate: Math.round(base.minPerSqm * qualityMult),
-        highRate: Math.round(base.maxPerSqm * qualityMult),
+        lowRate: Math.round(minRate),
+        highRate: Math.round(maxRate),
         lowTotal: Math.round(low),
         highTotal: Math.round(high)
       });
@@ -181,9 +183,10 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       // Use quality to determine flooring type pricing
       const qualityKey = quality || 'medium';
       let floorLow, floorHigh;
-      
+
       if (qualityKey === 'basic') {
-        floorLow = sqm * 25 * qualityMult;
+        const minRate = Math.max(25, 25 * qualityMult); // clamp min to 25
+        floorLow = sqm * minRate;
         floorHigh = sqm * 35 * qualityMult;
       } else if (qualityKey === 'medium') {
         floorLow = sqm * 45 * qualityMult;
@@ -192,7 +195,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
         floorLow = sqm * 65 * qualityMult;
         floorHigh = sqm * 100 * qualityMult;
       }
-      
+
       subtotalLow += floorLow;
       subtotalHigh += floorHigh;
       breakdown.push({
@@ -208,7 +211,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     
     if (reformTypes.includes('bathroom')) {
       const base = PRICE_DATA.reformType.bathroom;
-      const low = base.min * qualityMult;
+      const calculatedLow = base.min * qualityMult;
+      const low = Math.max(calculatedLow, base.min); // clamp to absolute min
       const high = base.max * qualityMult;
       subtotalLow += low;
       subtotalHigh += high;
@@ -216,8 +220,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
         item: base.label,
         qty: 1,
         unit: 'ud',
-        lowRate: Math.round(base.min * qualityMult),
-        highRate: Math.round(base.max * qualityMult),
+        lowRate: Math.round(low),
+        highRate: Math.round(high),
         lowTotal: Math.round(low),
         highTotal: Math.round(high)
       });
@@ -225,7 +229,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     
     if (reformTypes.includes('kitchen')) {
       const base = PRICE_DATA.reformType.kitchen;
-      const low = base.min * qualityMult;
+      const calculatedLow = base.min * qualityMult;
+      const low = Math.max(calculatedLow, base.min); // clamp to absolute min
       const high = base.max * qualityMult;
       subtotalLow += low;
       subtotalHigh += high;
@@ -233,8 +238,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
         item: base.label,
         qty: 1,
         unit: 'ud',
-        lowRate: Math.round(base.min * qualityMult),
-        highRate: Math.round(base.max * qualityMult),
+        lowRate: Math.round(low),
+        highRate: Math.round(high),
         lowTotal: Math.round(low),
         highTotal: Math.round(high)
       });
