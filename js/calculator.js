@@ -766,6 +766,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     }
 
     const data = state.data;
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
 
     // Collect client name from lead form if present in DOM
     let clientName = '';
@@ -794,275 +796,236 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       ? PRICE_DATA.reformScope[data.reformScope].label
       : data.reformTypes.map(t => PRICE_DATA.reformType[t]?.label).join(', ');
 
-    // Build breakdown rows
-    const breakdownRows = result.breakdown.map(item => {
+    // Colors
+    const TERRACOTA = [196, 92, 62];
+    const DARK = [45, 45, 45];
+    const GRAY = [100, 100, 100];
+    const LIGHT_GRAY = [245, 245, 245];
+
+    // Margins and layout
+    const margin = 20;
+    const pageW = 210;
+    const contentW = pageW - margin * 2;
+    let y = margin;
+
+    // ===== HEADER =====
+    doc.setFillColor(...TERRACOTA);
+    doc.rect(margin, y, contentW, 2, 'F');
+
+    y += 8;
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(18);
+    doc.setTextColor(...TERRACOTA);
+    doc.text('Bilbao Reforma', margin, y);
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(150, 150, 150);
+    doc.text('Presupuestos orientativos · Bilbao y provincia', margin, y + 5);
+
+    // Budget info (right side)
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(...DARK);
+    const budgetX = pageW - margin - doc.getTextWidth(budgetNum);
+    doc.text(budgetNum, pageW - margin, y);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(...GRAY);
+    doc.text('Fecha: ' + dateStr, pageW - margin, y + 5);
+    doc.text('Validez: 30 días', pageW - margin, y + 10);
+
+    y += 22;
+
+    // ===== TITLE =====
+    doc.setFont('helvetica', 'light');
+    doc.setFontSize(20);
+    doc.setTextColor(...TERRACOTA);
+    doc.text('PRESUPUESTO DE REFORMA', pageW / 2, y, { align: 'center' });
+    y += 14;
+
+    // ===== META GRID =====
+    const metaH = 28;
+    const halfW = contentW / 2 - 4;
+
+    // Left box - client/project
+    doc.setFillColor(...LIGHT_GRAY);
+    doc.roundedRect(margin, y, halfW, metaH, 2, 2, 'F');
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(170, 170, 170);
+    doc.text((clientName ? 'Cliente' : 'Datos del proyecto').toUpperCase(), margin + 5, y + 5);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(...DARK);
+    doc.text(clientName || reformLabel, margin + 5, y + 14);
+    if (clientName) {
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(...GRAY);
+      doc.text('Proyecto: ' + reformLabel, margin + 5, y + 21);
+    }
+
+    // Right box - project data
+    doc.setFillColor(...LIGHT_GRAY);
+    doc.roundedRect(margin + halfW + 8, y, halfW, metaH, 2, 2, 'F');
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(170, 170, 170);
+    doc.text('Datos del proyecto'.toUpperCase(), margin + halfW + 13, y + 5);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(9);
+    doc.setTextColor(...DARK);
+    doc.text('Superficie: ' + data.sqm + ' m²', margin + halfW + 13, y + 13);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(...GRAY);
+    doc.text('Calidad: ' + qualityLabel + '   Antigüedad: ' + ageLabel, margin + halfW + 13, y + 19);
+
+    y += metaH + 10;
+
+    // ===== TABLE HEADER =====
+    const colPartida = margin;
+    const colCantidad = margin + 80;
+    const colEurUd = margin + 115;
+    const colTotal = margin + 145;
+
+    doc.setFillColor(...TERRACOTA);
+    doc.rect(margin, y, contentW, 8, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(9);
+    doc.setTextColor(255, 255, 255);
+    doc.text('Partida', colPartida + 3, y + 5.5);
+    doc.text('Cantidad', colCantidad + 3, y + 5.5);
+    doc.text('€/ud', colEurUd + 3, y + 5.5);
+    doc.text('Total', colTotal + 3, y + 5.5);
+    y += 8;
+
+    // ===== TABLE BODY =====
+    const tableStartY = y;
+    let subtotalLow = 0;
+    let subtotalHigh = 0;
+
+    result.breakdown.forEach(function(item, idx) {
       const avgRate = Math.round((item.lowRate + item.highRate) / 2);
       const avgTotal = Math.round((item.lowTotal + item.highTotal) / 2);
-      return `
-        <tr>
-          <td>${item.item}</td>
-          <td class="text-center">${item.qty} ${item.unit}</td>
-          <td class="text-right">${avgRate.toLocaleString('es-ES')} €</td>
-          <td class="text-right">${avgTotal.toLocaleString('es-ES')} €</td>
-        </tr>`;
-    }).join('');
+      subtotalLow += item.lowTotal;
+      subtotalHigh += item.highTotal;
 
-    // Totals
+      if (idx % 2 === 1) {
+        doc.setFillColor(...LIGHT_GRAY);
+        doc.rect(margin, y, contentW, 7, 'F');
+      }
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9);
+      doc.setTextColor(...DARK);
+      doc.text(item.item, colPartida + 3, y + 5);
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9);
+      doc.setTextColor(...GRAY);
+      doc.text(item.qty + ' ' + item.unit, colCantidad + 3, y + 5);
+
+      doc.text(avgRate.toLocaleString('es-ES') + ' €', colEurUd + 3, y + 5);
+
+      doc.setTextColor(...DARK);
+      doc.text(avgTotal.toLocaleString('es-ES') + ' €', colTotal + 3, y + 5);
+
+      y += 7;
+    });
+
+    tableStartY && tableStartY; // suppress unused warning
+
+    // ===== TOTALS BOX =====
+    y += 4;
+    const totalsX = pageW - margin - 80;
+    const totalsW = 80;
+
     const subtotal = Math.round((result.low + result.high) / 2);
     const iva = Math.round(subtotal * 0.10);
     const total = subtotal + iva;
 
-    // Format helpers
-    const fmt = n => n.toLocaleString('es-ES') + ' €';
+    const fmt = function(n) { return n.toLocaleString('es-ES') + ' €'; };
 
-    const htmlContent = `<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Presupuesto Bilbao Reforma</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #2d2d2d;
-    padding: 44px 50px;
-    background: #fff;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 36px;
-    border-bottom: 3px solid #C45C3E;
-    padding-bottom: 22px;
-  }
-  .logo { font-size: 22px; font-weight: 700; color: #C45C3E; letter-spacing: -0.5px; }
-  .logo-sub { font-size: 11px; color: #999; margin-top: 3px; letter-spacing: 0.5px; }
-  .budget-info { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
-  .budget-number { font-weight: 700; color: #2d2d2d; font-size: 14px; }
-  .budget-title {
-    font-size: 26px;
-    font-weight: 300;
-    color: #C45C3E;
-    margin-bottom: 28px;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  .meta-grid {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 28px;
-  }
-  .client-data {
-    flex: 1;
-    background: #f8f8f8;
-    padding: 18px 22px;
-    border-radius: 8px;
-  }
-  .project-data {
-    background: #f8f8f8;
-    padding: 18px 22px;
-    border-radius: 8px;
-    min-width: 260px;
-  }
-  .section-label {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #aaa;
-    margin-bottom: 6px;
-    font-weight: 600;
-  }
-  .client-data .value { font-size: 15px; color: #2d2d2d; font-weight: 500; }
-  .project-data .value { font-size: 14px; color: #2d2d2d; font-weight: 500; line-height: 1.8; }
-  .project-data .value span { color: #666; font-size: 13px; }
-  table { width: 100%; border-collapse: collapse; margin-bottom: 28px; }
-  thead tr { background: #C45C3E; }
-  thead th {
-    color: #fff;
-    padding: 11px 16px;
-    text-align: left;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-  }
-  thead th:nth-child(2),
-  thead th:nth-child(3),
-  thead th:nth-child(4) { text-align: right; }
-  thead th:nth-child(2) { text-align: center; }
-  tbody tr:nth-child(even) { background: #fafafa; }
-  tbody td { padding: 11px 16px; border-bottom: 1px solid #f0f0f0; font-size: 13px; color: #444; }
-  .text-right { text-align: right; }
-  .text-center { text-align: center; }
-  .totals-box {
-    margin-left: auto;
-    width: 340px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 24px;
-  }
-  .totals-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 11px 20px;
-    border-bottom: 1px solid #f0f0f0;
-    font-size: 13px;
-    color: #555;
-  }
-  .totals-row:last-child { border-bottom: none; }
-  .totals-row.subtotal { background: #f8f8f8; }
-  .totals-row.iva { background: #f8f8f8; }
-  .totals-row.total {
-    background: #C45C3E;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 14px 20px;
-  }
-  .totals-row.total .totals-label { color: #fff; }
-  .totals-row.total .totals-value { color: #fff; }
-  .note-box {
-    background: #fff8f0;
-    border-left: 4px solid #C45C3E;
-    padding: 14px 18px;
-    font-size: 12.5px;
-    color: #666;
-    margin-bottom: 30px;
-    border-radius: 0 6px 6px 0;
-    line-height: 1.6;
-  }
-  .note-box strong { color: #C45C3E; }
-  .conditions {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
-  }
-  .condition-item {
-    background: #f4f4f4;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-size: 12px;
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .condition-item .cond-icon { font-size: 14px; }
-  .footer {
-    text-align: center;
-    font-size: 11px;
-    color: #aaa;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-    margin-top: 36px;
-    line-height: 1.8;
-  }
-  .footer a { color: #C45C3E; text-decoration: none; }
-  @media print {
-    body { padding: 20px; }
-    .no-print { display: none; }
-  }
-  @page { margin: 20mm; }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div>
-    <div class="logo">🏗️ Bilbao Reforma</div>
-    <div class="logo-sub">Presupuestos orientativos · Bilbao y provincia</div>
-  </div>
-  <div class="budget-info">
-    <div class="budget-number">${budgetNum}</div>
-    <div>Fecha: ${dateStr}</div>
-    <div>Validez: 30 días</div>
-  </div>
-</div>
-
-<div class="budget-title">PRESUPUESTO DE REFORMA</div>
-
-<div class="meta-grid">
-  <div class="client-data">
-    <div class="section-label">${clientName ? 'Cliente' : 'Datos del proyecto'}</div>
-    <div class="value">${clientName || reformLabel}</div>
-  </div>
-  <div class="project-data">
-    <div class="section-label">Datos del proyecto</div>
-    <div class="value">
-      ${reformLabel}${clientName ? '<br>' : ''}
-      <span>Superficie:</span> ${data.sqm} m²<br>
-      <span>Calidad:</span> ${qualityLabel}<br>
-      <span>Antigüedad:</span> ${ageLabel}
-    </div>
-  </div>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Partida</th>
-      <th>Cantidad</th>
-      <th>€/ud</th>
-      <th>Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    ${breakdownRows}
-  </tbody>
-</table>
-
-<div class="totals-box">
-  <div class="totals-row subtotal">
-    <span class="totals-label">Subtotal (sin IVA)</span>
-    <span class="totals-value">${fmt(subtotal)}</span>
-  </div>
-  <div class="totals-row iva">
-    <span class="totals-label">IVA (10%)</span>
-    <span class="totals-value">${fmt(iva)}</span>
-  </div>
-  <div class="totals-row total">
-    <span class="totals-label">TOTAL</span>
-    <span class="totals-value">${fmt(total)}</span>
-  </div>
-</div>
-
-<div class="note-box">
-  <strong>Nota importante:</strong> Los precios indicados son orientativos y sin IVA. Este presupuesto tiene una horquilla de ±15% sobre la estimación final. Para un presupuesto cerrado, solicita presupuestos personalizados a empresas locales certificadas.
-</div>
-
-<div class="conditions">
-  <div class="condition-item"><span class="cond-icon">📐</span> Precios por m² orientativos</div>
-  <div class="condition-item"><span class="cond-icon">📅</span> Plazo de ejecución a confirmar</div>
-  <div class="condition-item"><span class="cond-icon">📝</span> Presupuesto sin compromiso</div>
-  <div class="condition-item"><span class="cond-icon">🏙️</span> Bilbao y provincia</div>
-</div>
-
-<div class="footer">
-  <div>bilbaoreforma.es · hola@bilbaoreforma.es</div>
-  <div>Este documento es una estimación orientativa y no constituye una oferta contractual.</div>
-  <div>Presupuesto generado automáticamente · ${dateStr}</div>
-</div>
-
-<script>
-window.onload = function() {
-  window.print();
-};
-<\/script>
-
-</body>
-</html>`;
-
-    var printWindow = window.open('', '_blank');
-    if (!printWindow) {
-      alert('Por favor, permite las ventanas emergentes para imprimir el presupuesto.');
-      return;
+    function drawTotalsRow(label, value, bgColor, fontSize, textColor) {
+      doc.setFillColor(...(bgColor || LIGHT_GRAY));
+      doc.rect(totalsX, y, totalsW, 7, 'F');
+      doc.setFont('helvetica', fontSize === 11 ? 'bold' : 'normal');
+      doc.setFontSize(fontSize || 9);
+      doc.setTextColor(...(textColor || GRAY));
+      doc.text(label, totalsX + 4, y + 5);
+      doc.setTextColor(...(textColor || DARK));
+      doc.text(value, totalsX + totalsW - 4, y + 5, { align: 'right' });
+      y += 7;
     }
-    printWindow.document.write(htmlContent);
-    printWindow.document.close();
+
+    drawTotalsRow('Subtotal (sin IVA)', fmt(subtotal), LIGHT_GRAY, 9, GRAY);
+    drawTotalsRow('IVA (10%)', fmt(iva), LIGHT_GRAY, 9, GRAY);
+    drawTotalsRow('TOTAL', fmt(total), TERRACOTA, 12, [255, 255, 255]);
+
+    y += 8;
+
+    // ===== NOTE BOX =====
+    doc.setFillColor(255, 248, 240);
+    doc.rect(totalsX, y, totalsW, 20, 'F');
+    doc.setDrawColor(...TERRACOTA);
+    doc.setLineWidth(0.5);
+    doc.line(totalsX, y, totalsX, y + 20);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(8);
+    doc.setTextColor(...TERRACOTA);
+    doc.text('Nota importante:', totalsX + 4, y + 5);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(...GRAY);
+    doc.setFontSize(7);
+    const noteLines = doc.splitTextToSize(
+      'Los precios indicados son orientativos y sin IVA. Este presupuesto tiene una horquilla de ±15% sobre la estimación final.',
+      totalsW - 8
+    );
+    doc.text(noteLines, totalsX + 4, y + 10);
+
+    y += 24;
+
+    // ===== CONDITIONS =====
+    const condY = y;
+    const condItems = [
+      { icon: '📐', text: 'Precios por m² orientativos' },
+      { icon: '📅', text: 'Plazo de ejecución a confirmar' },
+      { icon: '📝', text: 'Presupuesto sin compromiso' },
+      { icon: '🏙️', text: 'Bilbao y provincia' }
+    ];
+
+    doc.setFontSize(8);
+    let condX = margin;
+    condItems.forEach(function(item) {
+      doc.setFillColor(244, 244, 244);
+      const itemW = 45;
+      doc.roundedRect(condX, condY, itemW, 7, 1, 1, 'F');
+      doc.setTextColor(...GRAY);
+      doc.text(item.icon + ' ' + item.text, condX + 3, condY + 4.5);
+      condX += itemW + 3;
+    });
+
+    y = condY + 14;
+
+    // ===== FOOTER =====
+    doc.setDrawColor(230, 230, 230);
+    doc.setLineWidth(0.3);
+    doc.line(margin, y, pageW - margin, y);
+
+    y += 5;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(180, 180, 180);
+    doc.text('bilbaoreforma.es · hola@bilbaoreforma.es', pageW / 2, y, { align: 'center' });
+    y += 3.5;
+    doc.setFontSize(7);
+    doc.text('Este documento es una estimación orientativa y no constituye una oferta contractual.', pageW / 2, y, { align: 'center' });
+    y += 3.5;
+    doc.text('Presupuesto generado automáticamente · ' + dateStr, pageW / 2, y, { align: 'center' });
+
+    // ===== SAVE =====
+    doc.save('presupuesto-' + budgetNum + '.pdf');
   }
 
   function showLeadForm() {
