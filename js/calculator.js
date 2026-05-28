@@ -1136,6 +1136,23 @@ window.onload = function() {
       });
       recalculate();
     },
+    updateReformTypes: function(types) {
+      // Set reform types directly (replaces any existing)
+      types.forEach(function(type) {
+        if (state.data.reformTypes.indexOf(type) === -1) {
+          state.data.reformTypes.push(type);
+        }
+      });
+      state.data.reformScope = null;
+      state.ui.isCalculated = false;
+      recalculate();
+    },
+    updateReformScope: function(scope) {
+      state.data.reformTypes = [];
+      state.data.reformScope = scope;
+      state.ui.isCalculated = false;
+      recalculate();
+    },
     toggleExtra: function(key) {
       const current = state.data.extras[key];
       const isChecked = current && current.checked;
@@ -1264,12 +1281,28 @@ window.onload = function() {
   // ============================================================
 
   function init() {
-    // Initialize with first step visible (static HTML)
-    showStep(1);
-    // Bind navigation button events
-    bindNavigationEvents();
-    // console.log('Bilbao Calculadora initialized');
+  // Pre-seleccionar desde query params si existen
+  const params = new URLSearchParams(window.location.search);
+  const preset = params.get('preset');
+
+  if (preset) {
+    // Mapeo de preset → reformScope o reformTypes
+    var scopePresets = { 'basic': 'basic', 'media': 'medium', 'integral': 'integral', 'premium': 'luxury' };
+    var typePresets = { 'cocina': 'kitchen', 'bano': 'bathroom', 'pintura': 'painting', 'suelo': 'flooring' };
+
+    if (scopePresets[preset]) {
+      BilbaoCalc.updateReformScope(scopePresets[preset]);
+    } else if (typePresets[preset]) {
+      BilbaoCalc.updateReformTypes([typePresets[preset]]);
+    }
   }
+
+  // Initialize with first step visible (static HTML)
+  showStep(1);
+  // Bind navigation button events
+  bindNavigationEvents();
+  // console.log('Bilbao Calculadora initialized');
+}
 
   // Auto-init on DOM ready
   if (document.readyState === 'loading') {
