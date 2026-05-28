@@ -586,7 +586,19 @@
     // Update comparison
     const compValueEl = document.querySelector('.result-comparison-value');
     if (compValueEl) compValueEl.textContent = result.avgPerSqm + ' €/m²';
-    
+
+    // Texto dinámico para la etiqueta de comparación Bilbao
+    const reformTypeLabel = data.reformScope
+      ? PRICE_DATA.reformScope[data.reformScope].label.toLowerCase()
+      : (data.reformTypes.length === 1
+        ? PRICE_DATA.reformType[data.reformTypes[0]]?.label.toLowerCase()
+        : 'múltiples estancias');
+    const ageLabelText = PRICE_DATA.ageMultiplier[data.buildingAge]?.label || '';
+    const comparisonLabelEl = document.querySelector('.result-comparison-label');
+    if (comparisonLabelEl) {
+      comparisonLabelEl.textContent = `para ${reformTypeLabel} en edificio ${ageLabelText}`;
+    }
+
     // Update subtitle with reform type and sqm
     const subtitleEl = document.querySelector('.result-subtitle');
     if (subtitleEl) {
