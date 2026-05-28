@@ -56,28 +56,14 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       kitchen:    { label: 'Cocina',          min: kitchenRange.min, max: kitchenRange.max, unit: 'ud',   basePerSqm: 0 }
     },
 
-    // €/m² by reform scope (full reform) — sourced from datasetValidated.js
-    reformScope: {
-      basic:     { label: 'Reforma básica',     minPerSqm: 500, maxPerSqm: 600, basePerSqm: 550 },
-      medium:    { label: 'Reforma media',       minPerSqm: 600, maxPerSqm: 800, basePerSqm: 700 },
-      integral:  { label: 'Reforma integral',   minPerSqm: 800, maxPerSqm: 1400, basePerSqm: 1100 },
-      luxury:    { label: 'Reforma premium',    minPerSqm: 1100, maxPerSqm: 1400, basePerSqm: 1250 }
-    },
+    // €/m² by reform scope (full reform) — sourced from DATASET_VALIDATED
+    reformScope: DATASET_VALIDATED.reformScope,
 
-    // Quality multipliers
-    qualityMultiplier: {
-      basic:    { label: 'Básica',  multiplier: 0.8,  desc: 'Leroy Merlin, marca blanca' },
-      medium:   { label: 'Media',   multiplier: 1.0,  desc: 'Cosentino, Porcelanosa gama media, Roca, Grohe' },
-      premium:  { label: 'Premium', multiplier: 1.4,  desc: 'Dekton, Saloni alta gama, Villeroy & Boch, Hansgrohe' }
-    },
+    // Quality multipliers — sourced from DATASET_VALIDATED
+    qualityMultiplier: DATASET_VALIDATED.qualityMultiplier,
 
-    // Building age multipliers
-    ageMultiplier: {
-      new:       { label: '< 20 años',      multiplier: 1.0,  note: 'Instalaciones modernas' },
-      moderate:  { label: '20–40 años',     multiplier: 1.05, note: 'Renovación parcial recomendada' },
-      old:       { label: '40–70 años',      multiplier: 1.15, note: 'Tuberías y electricidad pueden necesitarse' },
-      historic:  { label: '> 70 años / Casco Viejo', multiplier: 1.25, note: 'Mayor complejidad + licencias' }
-    },
+    // Building age multipliers — sourced from DATASET_VALIDATED
+    ageMultiplier: DATASET_VALIDATED.ageMultiplier,
 
     // Extra costs
     extras: {
