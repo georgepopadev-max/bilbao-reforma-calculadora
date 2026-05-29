@@ -1126,8 +1126,12 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       const isChecked = current && current.checked;
       const qty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
       updateExtra(key, !isChecked, qty);
-      // Note: DOM update happens via recalculate() → render() → showStep()
-      // No manual aria-pressed/classList manipulation needed — state drives the UI
+      // Update DOM: toggle aria-pressed and selected class on the checkbox item
+      const el = document.querySelector('.extra-checkbox-item[data-extra="' + key + '"]');
+      if (el) {
+        el.classList.toggle('selected', !isChecked);
+        el.setAttribute('aria-pressed', !isChecked ? 'true' : 'false');
+      }
     },
     toggleContingency: function(el) {
       // Toggle contingency on/off
@@ -1144,6 +1148,12 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       const isChecked = current && current.checked;
       const qty = current && current.qty ? current.qty : (PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1);
       updateExtra(key, !isChecked, qty);
+      // Update DOM: toggle aria-pressed and selected class on the checkbox item
+      const el = document.querySelector('.extra-checkbox-item[data-extra="' + key + '"]');
+      if (el) {
+        el.classList.toggle('selected', !isChecked);
+        el.setAttribute('aria-pressed', !isChecked ? 'true' : 'false');
+      }
     },
     updateExtraQty: function(key, qty) {
       if (!PRICE_DATA.extras[key]) { return; } // Unknown extra, don't crash
