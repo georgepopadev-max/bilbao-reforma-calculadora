@@ -9,26 +9,26 @@ export const DATASET_VALIDATED = {
     // €/m² for full reform by quality level
     basic: {
       label: 'Reforma básica',
-      minPerSqm: 500,
-      maxPerSqm: 600,
-      basePerSqm: 550,
+      minPerSqm: 550,
+      maxPerSqm: 700,
+      basePerSqm: 625,
       source: 'blog/precio-reforma-integral-bilbao.html',
       confidence: 'high',
       notes: 'Materiales marca blanca (Leroy Merlin), pintura vinílica, suelo vinilo o parqué económico, sanitarios Roca básicos, grifería estándar. No incluye electrodomésticos ni licencias.'
     },
     medium: {
       label: 'Reforma media',
-      minPerSqm: 600,
-      maxPerSqm: 800,
-      basePerSqm: 700,
+      minPerSqm: 700,
+      maxPerSqm: 950,
+      basePerSqm: 825,
       source: 'blog/precio-reforma-integral-bilbao.html',
       confidence: 'high',
       notes: 'Muebles cocina gama media (Cosentino bajo), encimera Silestone, parqué 8mm AC4, sanitarios Roca o similar, grifería monomando Grohe o similar. No incluye electrodomésticos.'
     },
     integral: {
       label: 'Reforma integral',
-      minPerSqm: 800,
-      maxPerSqm: 1400,
+      minPerSqm: 900,
+      maxPerSqm: 1300,
       basePerSqm: 1100,
       source: 'blog/precio-reforma-integral-bilbao.html',
       confidence: 'high',
@@ -36,9 +36,9 @@ export const DATASET_VALIDATED = {
     },
     luxury: {
       label: 'Reforma premium',
-      minPerSqm: 1100,
-      maxPerSqm: 1400,
-      basePerSqm: 1250,
+      minPerSqm: 1300,
+      maxPerSqm: 1600,
+      basePerSqm: 1450,
       source: 'blog/precio-reforma-integral-bilbao.html',
       confidence: 'medium',
       notes: 'Nivel superior del rango premium del blog. Incluye los acabados de gama más alta del rango 800–1.400 €/m².'
@@ -342,7 +342,7 @@ export const DATASET_VALIDATED = {
     },
     historic: {
       label: '> 70 años / Casco Viejo',
-      multiplier: 1.25,
+      multiplier: 1.30,
       note: 'Mayor complejidad + licencias'
     }
   },

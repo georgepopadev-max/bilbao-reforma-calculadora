@@ -50,8 +50,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
   const PRICE_DATA = {
     // €/m² ranges by reform type
     reformType: {
-      painting:   { label: 'Pintura',         minPerSqm: 8,   maxPerSqm: 20,  unit: 'm²',  basePerSqm: 14 },
-      flooring:   { label: 'Suelo',           minPerSqm: 25,  maxPerSqm: 130, unit: 'm²',  basePerSqm: 55 },
+      painting:   { label: 'Pintura',         minPerSqm: 12,  maxPerSqm: 25,  unit: 'm²',  basePerSqm: 18 },
+      flooring:   { label: 'Suelo',           minPerSqm: 35,  maxPerSqm: 140, unit: 'm²',  basePerSqm: 75 },
       bathroom:   { label: 'Baño completo',   min: bathroomRange.min, max: bathroomRange.max, unit: 'ud',   basePerSqm: 0 },
       kitchen:    { label: 'Cocina',          min: kitchenRange.min, max: kitchenRange.max, unit: 'ud',   basePerSqm: 0 }
     },
@@ -67,12 +67,12 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
 
     // Extra costs
     extras: {
-      windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 150, max: 300, default: 200, unit: 'ventana' },
-      terrace:        { label: 'Terraza/Balcón',      type: 'per-sqm',  defaultQty: 10, min: 200, max: 500, default: 300, unit: 'm²' },
-      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 1,  min: 60,  max: 130, default: 95,  unit: 'm²' },
-      demolition:     { label: 'Demolición tabiques', type: 'per-sqm',  defaultQty: 0,  min: 16,  max: 27,  default: 20,  unit: 'm²' },
+      windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 350, max: 700, default: 500, unit: 'ventana' },
+      terrace:        { label: 'Terraza/Balcón',      type: 'per-sqm',  defaultQty: 10, min: 250, max: 550, default: 400, unit: 'm²' },
+      radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 1,  min: 70,  max: 140, default: 105, unit: 'm²' },
+      demolition:     { label: 'Demolición tabiques', type: 'per-sqm',  defaultQty: 0,  min: 22,  max: 35,  default: 28,  unit: 'm²' },
       domotics:       { label: 'Domótica',            type: 'flat',     defaultQty: 1,  min: 1000,max: 3000, default: 2000, unit: 'ud' },
-      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 3000,max: 9000, default: 6000, unit: 'ud' }
+      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 4500,max: 10000, default: 7000, unit: 'ud' }
     },
 
     // Contingency

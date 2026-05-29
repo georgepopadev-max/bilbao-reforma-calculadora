@@ -471,6 +471,11 @@
                 <div class="extra-desc">PVC o aluminio, 2 hojas</div>
               </div>
               <span class="extra-price">+150–300 €/ud</span>
+<div class="extra-qty-control">
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('windows', Math.max(0, parseInt(document.getElementById('qty-windows').value || 4) - 1))">−</button>
+              <input type="number" id="qty-windows" class="extra-qty-input" value="4" min="0" onchange="window.BilbaoCalc.updateExtraQty('windows', parseInt(this.value) || 0)" />
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('windows', parseInt(document.getElementById('qty-windows').value || 4) + 1)">+</button>
+            </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('terrace')">
@@ -484,6 +489,11 @@
                 <div class="extra-desc">Revestimiento y suelo exterior</div>
               </div>
               <span class="extra-price">+200–500 €/m²</span>
+<div class="extra-qty-control">
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('terrace', Math.max(0, parseInt(document.getElementById('qty-terrace').value || 10) - 1))">−</button>
+              <input type="number" id="qty-terrace" class="extra-qty-input" value="10" min="0" onchange="window.BilbaoCalc.updateExtraQty('terrace', parseInt(this.value) || 0)" />
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('terrace', parseInt(document.getElementById('qty-terrace').value || 10) + 1)">+</button>
+            </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('radiantFloor')">
@@ -497,6 +507,11 @@
                 <div class="extra-desc">Material + instalación completa</div>
               </div>
               <span class="extra-price">+60–130 €/m²</span>
+<div class="extra-qty-control">
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('radiantFloor', Math.max(0, parseInt(document.getElementById('qty-radiantFloor').value || 1) - 1))">−</button>
+              <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="1" min="0" onchange="window.BilbaoCalc.updateExtraQty('radiantFloor', parseInt(this.value) || 0)" />
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('radiantFloor', parseInt(document.getElementById('qty-radiantFloor').value || 1) + 1)">+</button>
+            </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="demolition" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('demolition')">
@@ -510,6 +525,11 @@
                 <div class="extra-desc">Eliminar muros no estructurales</div>
               </div>
               <span class="extra-price">+16–27 €/m²</span>
+<div class="extra-qty-control">
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('demolition', Math.max(0, parseInt(document.getElementById('qty-demolition').value || 1) - 1))">−</button>
+              <input type="number" id="qty-demolition" class="extra-qty-input" value="1" min="0" onchange="window.BilbaoCalc.updateExtraQty('demolition', parseInt(this.value) || 0)" />
+              <button class="extra-qty-btn" onclick="window.BilbaoCalc.updateExtraQty('demolition', parseInt(document.getElementById('qty-demolition').value || 1) + 1)">+</button>
+            </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('domotics')">
