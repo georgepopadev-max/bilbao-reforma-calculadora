@@ -447,6 +447,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       state.currentStep++;
       // console.log('advancing to step', state.currentStep);
       showStep(state.currentStep);
+      document.getElementById('step' + state.currentStep).scrollIntoView({ behavior: 'smooth', block: 'start' });
       return true;
     }
     return false;
@@ -456,6 +457,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     if (state.currentStep > 1) {
       state.currentStep--;
       showStep(state.currentStep);
+      document.getElementById('step' + state.currentStep).scrollIntoView({ behavior: 'smooth', block: 'start' });
       return true;
     }
     return false;
