@@ -514,9 +514,9 @@
               </div>
               <span class="extra-price">+70–140 €/m²</span>
 <div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('radiantFloor', Math.max(0, parseInt(document.getElementById('qty-radiantFloor').value || 1) - 1))">−</button>
-              <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="1" min="0" onclick="event.stopPropagation()" onchange="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('radiantFloor', parseInt(this.value) || 0)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('radiantFloor', parseInt(document.getElementById('qty-radiantFloor').value || 1) + 1)">+</button>
+              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=Math.max(5,parseInt(inp.value)||1)-5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">−</button>
+              <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="1" min="5" step="5" onclick="event.stopPropagation()" oninput="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(this.value)||1)" />
+              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=parseInt(inp.value||1)+5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">+</button>
             </div>
             </div>
 
@@ -532,9 +532,9 @@
               </div>
               <span class="extra-price">+22–35 €/m²</span>
 <div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('demolition', Math.max(0, parseInt(document.getElementById('qty-demolition').value || 1) - 1))">−</button>
-              <input type="number" id="qty-demolition" class="extra-qty-input" value="1" min="0" onclick="event.stopPropagation()" onchange="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('demolition', parseInt(this.value) || 0)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('demolition', parseInt(document.getElementById('qty-demolition').value || 1) + 1)">+</button>
+              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=Math.max(5,parseInt(inp.value)||1)-5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">−</button>
+              <input type="number" id="qty-demolition" class="extra-qty-input" value="1" min="5" step="5" onclick="event.stopPropagation()" oninput="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('demolition',parseInt(this.value)||1)" />
+              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=parseInt(inp.value||1)+5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">+</button>
             </div>
             </div>
 
