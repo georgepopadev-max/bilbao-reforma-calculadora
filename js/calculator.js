@@ -1126,7 +1126,8 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     toggleExtra: function(key) {
       const current = state.data.extras[key];
       const isChecked = current && current.checked;
-      const qty = PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1;
+      // Use existing qty from state, or defaultQty from PRICE_DATA
+      const qty = current && current.qty ? current.qty : (PRICE_DATA.extras[key] ? PRICE_DATA.extras[key].defaultQty : 1);
       updateExtra(key, !isChecked, qty);
       // Update DOM: toggle aria-pressed and selected class on the checkbox item
       const el = document.querySelector('.extra-checkbox-item[data-extra="' + key + '"]');
