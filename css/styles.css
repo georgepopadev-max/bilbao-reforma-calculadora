@@ -1174,6 +1174,20 @@ input, select, textarea {
   margin-bottom: 1.5rem;
 }
 
+.result-chart-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 .result-breakdown-title {
   font-family: var(--font-playfair);
   font-size: 1.125rem;

@@ -48,12 +48,12 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
   const kitchenRange = getRoomRangeFromDataset('kitchen') || { min: 5000, max: 16000 };
 
   const PRICE_DATA = {
-    // €/m² ranges by reform type
+    // €/m² ranges by reform type — sourced from datasetValidated
     reformType: {
-      painting:   { label: 'Pintura',         minPerSqm: 12,  maxPerSqm: 25,  unit: 'm²',  basePerSqm: 18 },
-      flooring:   { label: 'Suelo',           minPerSqm: 35,  maxPerSqm: 140, unit: 'm²',  basePerSqm: 75 },
-      bathroom:   { label: 'Baño completo',   min: bathroomRange.min, max: bathroomRange.max, unit: 'ud',   basePerSqm: 0 },
-      kitchen:    { label: 'Cocina',          min: kitchenRange.min, max: kitchenRange.max, unit: 'ud',   basePerSqm: 0 }
+      painting:   { label: 'Pintura',         minPerSqm: 8,   maxPerSqm: 20,  unit: 'm²',  basePerSqm: 14 },
+      flooring:   { label: 'Suelo',           minPerSqm: 25,  maxPerSqm: 130, unit: 'm²',  basePerSqm: 65 },
+      bathroom:   { label: 'Baño completo',   min: 2500,      max: 20000,     unit: 'ud',   basePerSqm: 0 },
+      kitchen:    { label: 'Cocina',          min: 5000,      max: 16000,     unit: 'ud',   basePerSqm: 0 }
     },
 
     // €/m² by reform scope (full reform) — sourced from DATASET_VALIDATED
@@ -65,14 +65,28 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     // Building age multipliers — sourced from DATASET_VALIDATED
     ageMultiplier: DATASET_VALIDATED.ageMultiplier,
 
-    // Extra costs
+    // Extra costs — sourced from datasetValidated (averages)
     extras: {
-      windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 350, max: 700, default: 500, unit: 'ventana' },
+      windows:        { label: 'Ventanas PVC',        type: 'per-unit', defaultQty: 4,  min: 350, max: 700, default: 525, unit: 'ventana' },
       terrace:        { label: 'Terraza/Balcón',      type: 'per-sqm',  defaultQty: 10, min: 250, max: 550, default: 400, unit: 'm²' },
       radiantFloor:   { label: 'Suelo radiante',      type: 'per-sqm',  defaultQty: 1,  min: 70,  max: 140, default: 105, unit: 'm²' },
       demolition:     { label: 'Demolición tabiques', type: 'per-sqm',  defaultQty: 0,  min: 22,  max: 35,  default: 28,  unit: 'm²' },
       domotics:       { label: 'Domótica',            type: 'flat',     defaultQty: 1,  min: 1000,max: 3000, default: 2000, unit: 'ud' },
-      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 4500,max: 10000, default: 7000, unit: 'ud' }
+      aerothermia:    { label: 'Aerotermia',          type: 'flat',     defaultQty: 1,  min: 4500,max: 10000, default: 7250, unit: 'ud' }
+    },
+
+    // Quality-based ranges for room calculations (economic/medium/premium)
+    roomQualityRanges: {
+      bathroom: {
+        economic: { min: 2500, max: 7500 },
+        medium:   { min: 5500, max: 12000 },
+        premium:  { min: 9000, max: 20000 }
+      },
+      kitchen: {
+        basic:    { min: 5000, max: 6000 },
+        medium:   { min: 8000, max: 10000 },
+        premium:  { min: 12000, max: 16000 }
+      }
     },
 
     // Contingency
@@ -211,9 +225,17 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     
     if (reformTypes.includes('bathroom')) {
       const base = PRICE_DATA.reformType.bathroom;
-      const calculatedLow = base.min * qualityMult;
-      const low = Math.max(calculatedLow, base.min); // clamp to absolute min
-      const high = base.max * qualityMult;
+      const ranges = PRICE_DATA.roomQualityRanges.bathroom;
+      let roomRange;
+      if (quality === 'basic') {
+        roomRange = ranges.economic;
+      } else if (quality === 'premium') {
+        roomRange = ranges.premium;
+      } else {
+        roomRange = ranges.medium;
+      }
+      const low = roomRange.min;
+      const high = roomRange.max;
       subtotalLow += low;
       subtotalHigh += high;
       breakdown.push({
@@ -229,9 +251,17 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     
     if (reformTypes.includes('kitchen')) {
       const base = PRICE_DATA.reformType.kitchen;
-      const calculatedLow = base.min * qualityMult;
-      const low = Math.max(calculatedLow, base.min); // clamp to absolute min
-      const high = base.max * qualityMult;
+      const ranges = PRICE_DATA.roomQualityRanges.kitchen;
+      let roomRange;
+      if (quality === 'basic') {
+        roomRange = ranges.basic;
+      } else if (quality === 'premium') {
+        roomRange = ranges.premium;
+      } else {
+        roomRange = ranges.medium;
+      }
+      const low = roomRange.min;
+      const high = roomRange.max;
       subtotalLow += low;
       subtotalHigh += high;
       breakdown.push({
@@ -654,6 +684,110 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       });
       breakdownContainer.innerHTML = barsHTML;
     }
+
+    // Update Chart.js doughnut chart
+    updateBreakdownChart(result.breakdown);
+  }
+
+  function updateBreakdownChart(breakdown) {
+    const canvas = document.getElementById('breakdownChart');
+    if (!canvas) return;
+
+    // Destroy existing chart if any
+    if (window.breakdownChartInstance) {
+      window.breakdownChartInstance.destroy();
+    }
+
+    // Prepare data — filter out contingency for cleaner chart
+    const chartData = breakdown.filter(item => !item.item.includes('Imprevistos'));
+    const total = chartData.reduce((sum, item) => sum + item.highTotal, 0);
+
+    if (chartData.length === 0 || total === 0) return;
+
+    // Color palette matching CSS breakdown-bar-fill colors
+    const colors = [
+      '#C45C3E', // terracota - bathroom
+      '#7D8B6A', // verde-montana - kitchen
+      '#C4B8A8', // beige/suelo
+      '#E8D5C4', // pintura
+      '#A8B8A4', // instalaciones
+      '#8B7355'  // other extras
+    ];
+
+    const labels = chartData.map(item => item.item);
+    const values = chartData.map(item => item.highTotal);
+    const percentages = chartData.map(item => Math.round((item.highTotal / total) * 100));
+
+    // Update bars with color classes and percentage labels
+    const breakdownContainer = document.getElementById('resultBreakdownBars');
+    if (breakdownContainer) {
+      let barsHTML = '';
+      chartData.forEach(function(item, idx) {
+        const pct = percentages[idx];
+        const itemAvg = Math.round((item.lowTotal + item.highTotal) / 2);
+        const colorClass = ['bano', 'cocina', 'suelo', 'pintura', 'instalaciones', 'imprevistos'][idx % 6];
+        barsHTML += '<div class="breakdown-bar">';
+        barsHTML += '<div class="breakdown-bar-header">';
+        barsHTML += '<span class="breakdown-bar-label">' + item.item + '</span>';
+        barsHTML += '<span class="breakdown-bar-value">' + pct + '% · ~' + itemAvg.toLocaleString('es-ES') + ' €</span>';
+        barsHTML += '</div>';
+        barsHTML += '<div class="breakdown-bar-track">';
+        barsHTML += '<div class="breakdown-bar-fill ' + colorClass + '" style="width: ' + pct + '%"></div>';
+        barsHTML += '</div>';
+        barsHTML += '</div>';
+      });
+      // Add contingency back to bars if present
+      const contingency = breakdown.find(item => item.item.includes('Imprevistos'));
+      if (contingency) {
+        const pct = Math.round((contingency.highTotal / total) * 100);
+        const itemAvg = Math.round((contingency.lowTotal + contingency.highTotal) / 2);
+        barsHTML += '<div class="breakdown-bar">';
+        barsHTML += '<div class="breakdown-bar-header">';
+        barsHTML += '<span class="breakdown-bar-label">Imprevistos (15%)</span>';
+        barsHTML += '<span class="breakdown-bar-value">' + pct + '% · ~' + itemAvg.toLocaleString('es-ES') + ' €</span>';
+        barsHTML += '</div>';
+        barsHTML += '<div class="breakdown-bar-track">';
+        barsHTML += '<div class="breakdown-bar-fill imprevistos" style="width: ' + pct + '%"></div>';
+        barsHTML += '</div>';
+        barsHTML += '</div>';
+      }
+      breakdownContainer.innerHTML = barsHTML;
+    }
+
+    // Create doughnut chart
+    window.breakdownChartInstance = new Chart(canvas, {
+      type: 'doughnut',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: values,
+          backgroundColor: colors.slice(0, chartData.length),
+          borderColor: '#ffffff',
+          borderWidth: 2,
+          hoverOffset: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        cutout: '60%',
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const idx = context.dataIndex;
+                const pct = percentages[idx];
+                const value = values[idx].toLocaleString('es-ES');
+                return context.label + ': ' + value + ' € (' + pct + '%)';
+              }
+            }
+          }
+        }
+      }
+    });
   }
 
   function showStep(step) {

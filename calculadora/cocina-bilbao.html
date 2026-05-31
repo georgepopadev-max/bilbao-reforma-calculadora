@@ -375,7 +375,7 @@
                 <div class="age-option-title">Más de 70 años / Casco Viejo</div>
                 <div class="age-option-desc">Acceso difícil, materiales especiales, licencias</div>
               </div>
-              <span class="age-option-badge">×1.25</span>
+              <span class="age-option-badge">×1.30</span>
             </div>
           </div>
 
@@ -477,11 +477,11 @@
                 <div class="extra-desc">PVC o aluminio, 2 hojas</div>
               </div>
               <span class="extra-price">+350–700 €/ud</span>
-<div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('windows', Math.max(0, parseInt(document.getElementById('qty-windows').value || 4) - 1))">−</button>
-              <input type="number" id="qty-windows" class="extra-qty-input" value="4" min="0" onclick="event.stopPropagation()" onchange="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('windows', parseInt(this.value) || 0)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('windows', parseInt(document.getElementById('qty-windows').value || 4) + 1)">+</button>
-            </div>
+              <div class="extra-qty-control">
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-windows'); inp.value=Math.max(1,parseInt(inp.value)||4)-1; window.BilbaoCalc.updateExtraQty('windows',parseInt(inp.value))">−</button>
+                <input type="number" id="qty-windows" class="extra-qty-input" value="4" min="1" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('windows',parseInt(this.value)||1)" />
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-windows'); inp.value=parseInt(inp.value||4)+1; window.BilbaoCalc.updateExtraQty('windows',parseInt(inp.value))">+</button>
+              </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('terrace')">
@@ -495,11 +495,11 @@
                 <div class="extra-desc">Revestimiento y suelo exterior</div>
               </div>
               <span class="extra-price">+250–550 €/m²</span>
-<div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('terrace', Math.max(0, parseInt(document.getElementById('qty-terrace').value || 10) - 1))">−</button>
-              <input type="number" id="qty-terrace" class="extra-qty-input" value="10" min="0" onclick="event.stopPropagation()" onchange="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('terrace', parseInt(this.value) || 0)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('terrace', parseInt(document.getElementById('qty-terrace').value || 10) + 1)">+</button>
-            </div>
+              <div class="extra-qty-control">
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-terrace'); inp.value=Math.max(5,parseInt(inp.value)||10)-5; window.BilbaoCalc.updateExtraQty('terrace',parseInt(inp.value))">−</button>
+                <input type="number" id="qty-terrace" class="extra-qty-input" value="10" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('terrace',parseInt(this.value)||5)" />
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-terrace'); inp.value=parseInt(inp.value||10)+5; window.BilbaoCalc.updateExtraQty('terrace',parseInt(inp.value))">+</button>
+              </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('radiantFloor')">
@@ -513,11 +513,11 @@
                 <div class="extra-desc">Material + instalación completa</div>
               </div>
               <span class="extra-price">+70–140 €/m²</span>
-<div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=Math.max(5,parseInt(inp.value)||1)-5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">−</button>
-              <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="1" min="5" step="5" onclick="event.stopPropagation()" oninput="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(this.value)||1)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=parseInt(inp.value||1)+5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">+</button>
-            </div>
+              <div class="extra-qty-control">
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=Math.max(5,parseInt(inp.value)||20)-5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">−</button>
+                <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="20" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(this.value)||20)" />
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=parseInt(inp.value||20)+5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">+</button>
+              </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="demolition" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('demolition')">
@@ -531,11 +531,11 @@
                 <div class="extra-desc">Eliminar muros no estructurales</div>
               </div>
               <span class="extra-price">+22–35 €/m²</span>
-<div class="extra-qty-control">
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=Math.max(5,parseInt(inp.value)||1)-5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">−</button>
-              <input type="number" id="qty-demolition" class="extra-qty-input" value="1" min="5" step="5" onclick="event.stopPropagation()" oninput="event.stopPropagation(); window.BilbaoCalc.updateExtraQty('demolition',parseInt(this.value)||1)" />
-              <button class="extra-qty-btn" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=parseInt(inp.value||1)+5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">+</button>
-            </div>
+              <div class="extra-qty-control">
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=Math.max(5,parseInt(inp.value)||20)-5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">−</button>
+                <input type="number" id="qty-demolition" class="extra-qty-input" value="20" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('demolition',parseInt(this.value)||20)" />
+                <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=parseInt(inp.value||20)+5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">+</button>
+              </div>
             </div>
 
             <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('domotics')">
@@ -740,6 +740,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script type="module" src="../js/calculator.js"></script>
   <script>
     document.getElementById('mobileToggle').addEventListener('click', function() {
