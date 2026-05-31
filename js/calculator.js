@@ -916,7 +916,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     const today = new Date();
     const dateStr = today.toLocaleDateString('es-ES', {
       day: '2-digit',
-      month: 'long',
+      month: '2-digit',
       year: 'numeric'
     });
 
@@ -966,10 +966,10 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     const budgetX = pageW - margin - doc.getTextWidth(budgetNum);
     doc.text(budgetNum, pageW - margin, y);
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(9);
+    doc.setFontSize(8);
     doc.setTextColor(...GRAY);
-    doc.text('Fecha: ' + dateStr, pageW - margin, y + 5);
-    doc.text('Validez: 30 días', pageW - margin, y + 10);
+    doc.text('Fecha: ' + dateStr, pageW - margin - 5, y + 5);
+    doc.text('Validez: 30 días', pageW - margin - 5, y + 10);
 
     y += 22;
 
@@ -1125,10 +1125,10 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     // ===== CONDITIONS =====
     const condY = y;
     const condItems = [
-      { icon: '📐', text: 'Precios por m² orientativos' },
-      { icon: '📅', text: 'Plazo de ejecución a confirmar' },
-      { icon: '📝', text: 'Presupuesto sin compromiso' },
-      { icon: '🏙️', text: 'Bilbao y provincia' }
+      'Precios/m² orientativos',
+      'Plazo a confirmar',
+      'Sin compromiso',
+      'Bilbao y provincia'
     ];
 
     doc.setFontSize(8);
@@ -1138,7 +1138,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       const itemW = 45;
       doc.roundedRect(condX, condY, itemW, 7, 1, 1, 'F');
       doc.setTextColor(...GRAY);
-      doc.text(item.icon + ' ' + item.text, condX + 3, condY + 4.5);
+      doc.text(item, condX + 3, condY + 4.5);
       condX += itemW + 3;
     });
 
