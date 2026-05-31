@@ -1315,53 +1315,108 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       var name = nameInput ? nameInput.value.trim() : '';
       var email = emailInput ? emailInput.value.trim() : '';
       var phone = phoneInput ? phoneInput.value.trim() : '';
+
       if (!name) {
         alert('Por favor, introduce tu nombre.');
         if (nameInput) nameInput.focus();
-        return;
+        return false;
       }
       if (!email) {
         alert('Por favor, introduce tu email.');
         if (emailInput) emailInput.focus();
-        return;
+        return false;
       }
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         alert('Por favor, introduce un email válido.');
         if (emailInput) emailInput.focus();
-        return;
+        return false;
       }
 
-      // Estimate range
-      var resultLow = state.result ? state.result.low : 0;
-      var resultHigh = state.result ? state.result.high : 0;
-      var estimateRange = resultLow && resultHigh
-        ? resultLow.toLocaleString('es-ES') + ' € - ' + resultHigh.toLocaleString('es-ES') + ' €'
-        : 'Por calcular';
+      var result = state.result;
+      var data = state.data;
 
-      // Build mailto body
-      var body = '--- FORMULARIO DE CONTACTO ---%0A%0A';
-      body += 'Nombre: ' + name + '%0A';
-      body += 'Email: ' + email + '%0A';
-      if (phone) {
-        body += 'Teléfono: ' + phone + '%0A';
+      var qualityLabel = PRICE_DATA.qualityMultiplier[data.quality]?.label || data.quality || 'No especificada';
+      var ageLabel = PRICE_DATA.ageMultiplier[data.buildingAge]?.label || data.buildingAge || 'No especificada';
+
+      var reformTypeLabels = [];
+      if (data.reformScope) {
+        reformTypeLabels.push(PRICE_DATA.reformScope[data.reformScope]?.label || data.reformScope);
+      } else if (data.reformTypes && data.reformTypes.length > 0) {
+        reformTypeLabels = data.reformTypes.map(function(t) { return PRICE_DATA.reformType[t]?.label || t; });
       }
-      body += '%0A--- PRESUPUESTO CALCULADO ---%0A';
-      body += 'Tipo de reforma: ' + (state.data.reformScope || state.data.reformTypes.join(', ')) + '%0A';
-      body += 'Metros cuadrados: ' + state.data.sqm + ' m²%0A';
-      body += 'Antigüedad edificio: ' + state.data.buildingAge + '%0A';
-      body += 'Calidad materiales: ' + state.data.quality + '%0A';
-      body += 'Estimación: ' + estimateRange + '%0A';
-      if (state.data.extras && Object.keys(state.data.extras).length > 0) {
-        var extrasList = Object.keys(state.data.extras).filter(function(k) { return state.data.extras[k].checked; });
-        if (extrasList.length > 0) {
-          body += 'Extras seleccionados: ' + extrasList.join(', ') + '%0A';
+
+      var datosProyecto = 'TIPO DE REFORMA: ' + reformTypeLabels.join(', ') + '\n';
+      datosProyecto += 'SUPERFICIE: ' + data.sqm + ' m²\n';
+      datosProyecto += 'ANTIGÜEDAD: ' + ageLabel + '\n';
+      datosProyecto += 'CALIDAD: ' + qualityLabel;
+
+      var desglose = '--- DESGLOSE DEL PRESUPUESTO ---\n';
+      if (result && result.breakdown) {
+        result.breakdown.forEach(function(item) {
+          var rateStr = item.lowRate === item.highRate
+            ? item.lowRate.toLocaleString('es-ES') + ' €/' + item.unit
+            : item.lowRate.toLocaleString('es-ES') + '-' + item.highRate.toLocaleString('es-ES') + ' €/' + item.unit;
+          var totalStr = item.lowTotal === item.highTotal
+            ? item.lowTotal.toLocaleString('es-ES') + ' €'
+            : item.lowTotal.toLocaleString('es-ES') + '-' + item.highTotal.toLocaleString('es-ES') + ' €';
+          desglose += '\n' + item.item + ' | ' + item.qty + ' ' + item.unit + ' | ' + rateStr + ' | ' + totalStr;
+        });
+      }
+
+      var subtotalLow = result ? result.low : 0;
+      var subtotalHigh = result ? result.high : 0;
+      var ivaLow = Math.round(subtotalLow * 0.10);
+      var ivaHigh = Math.round(subtotalHigh * 0.10);
+      var totalLow = subtotalLow + ivaLow;
+      var totalHigh = subtotalHigh + ivaHigh;
+
+      var totales = '--- TOTALES ---\n';
+      totales += 'Subtotal (sin IVA): ' + subtotalLow.toLocaleString('es-ES') + ' € - ' + subtotalHigh.toLocaleString('es-ES') + ' €\n';
+      totales += 'IVA (10%): ' + ivaLow.toLocaleString('es-ES') + ' € - ' + ivaHigh.toLocaleString('es-ES') + ' €\n';
+      totales += 'TOTAL: ' + totalLow.toLocaleString('es-ES') + ' € - ' + totalHigh.toLocaleString('es-ES') + ' €';
+
+      var extrasStr = '';
+      if (data.extras) {
+        var checkedExtras = Object.keys(data.extras).filter(function(k) { return data.extras[k].checked; });
+        if (checkedExtras.length > 0) {
+          extrasStr = '--- EXTRAS SELECCIONADOS ---\n';
+          checkedExtras.forEach(function(key) {
+            var extraData = PRICE_DATA.extras[key];
+            var qty = data.extras[key].qty || extraData.defaultQty;
+            var extraLow = extraData.type === 'flat' ? extraData.min : qty * extraData.min;
+            var extraHigh = extraData.type === 'flat' ? extraData.max : qty * extraData.max;
+            var unitStr = extraData.unit === 'm²' ? 'm²' : (extraData.unit === 'ventana' ? ' ud' : ' ud');
+            var totalExtraStr = extraLow === extraHigh
+              ? extraLow.toLocaleString('es-ES') + ' €'
+              : extraLow.toLocaleString('es-ES') + '-' + extraHigh.toLocaleString('es-ES') + ' €';
+            extrasStr += '\n' + extraData.label + ': ' + qty + unitStr + ' | ' + totalExtraStr;
+          });
         }
       }
-      body += '%0A--- RECIBIDO A TRAVÉS DE BILBAO REFORMA ---';
 
-      var subject = 'Bilbao Reforma - Solicitud de presupuestos';
-      window.location.href = 'mailto:bilbaoreforma@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
+      var condiciones = '--- CONDICIONES ---\n';
+      condiciones += 'Presupuesto orientativo. Sujeto a confirmacion de medidas reales.\n';
+      condiciones += 'Valido 30 dias desde la fecha del presupuesto.\n';
+      if (data.contingencyEnabled) {
+        condiciones += 'Imprevistos (15%): Incluidos';
+      } else {
+        condiciones += 'Imprevistos: No incluidos';
+      }
+
+      var today = new Date();
+      var dateStr = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+      var fechaPresupuesto = 'Fecha presupuesto: ' + dateStr + ' | Bilbao Reforma';
+
+      document.getElementById('hiddenDatosProyecto').value = datosProyecto;
+      document.getElementById('hiddenDesglose').value = desglose;
+      document.getElementById('hiddenTotales').value = totales;
+      document.getElementById('hiddenExtras').value = extrasStr;
+      document.getElementById('hiddenCondiciones').value = condiciones;
+      document.getElementById('hiddenFecha').value = fechaPresupuesto;
+
+      document.getElementById('leadFormHidden').submit();
+      return true;
     },
     
     // State access (for debugging)
