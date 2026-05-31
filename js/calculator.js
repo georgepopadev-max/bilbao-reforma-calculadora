@@ -1164,7 +1164,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
   }
 
   function showLeadForm() {
-    const leadForm = document.querySelector('.lead-form');
+    const leadForm = document.getElementById('leadFormHidden');
     if (leadForm) {
       leadForm.style.display = 'block';
       leadForm.scrollIntoView({ behavior: 'smooth' });
