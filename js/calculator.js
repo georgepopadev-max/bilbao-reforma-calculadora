@@ -963,7 +963,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(12);
     doc.setTextColor(...DARK);
-    doc.text(budgetNum, pageW - margin, y);
+    doc.text(budgetNum, pageW - margin, y, { align: 'right' });
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(...GRAY);
@@ -1134,10 +1134,10 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     let condX = margin;
     condItems.forEach(function(item) {
       doc.setFillColor(244, 244, 244);
-      const itemW = 48;
+      const itemW = doc.getTextWidth(item) + 8;
       doc.roundedRect(condX, condY, itemW, 7, 1, 1, 'F');
       doc.setTextColor(...GRAY);
-      doc.text(item, condX + 3, condY + 4.5);
+      doc.text(item, condX + 4, condY + 4.5);
       condX += itemW + 3;
     });
 
