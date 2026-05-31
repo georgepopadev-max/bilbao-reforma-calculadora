@@ -955,6 +955,17 @@ input, select, textarea {
   cursor: pointer;
   transition: all var(--transition-fast);
   box-shadow: var(--shadow-card);
+  flex-wrap: wrap;
+}
+
+.extra-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--color-beige);
 }
 
 .extra-checkbox-item:hover {
@@ -1018,6 +1029,12 @@ input, select, textarea {
   font-size: 0.75rem;
   color: var(--color-terracota);
   font-weight: 500;
+  white-space: nowrap;
+}
+
+.extra-unit {
+  font-size: 0.7rem;
+  color: var(--color-gris);
   white-space: nowrap;
 }
 
@@ -2929,7 +2946,6 @@ input, select, textarea {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-left: auto;
   flex-shrink: 0;
 }
 .extra-qty-btn {

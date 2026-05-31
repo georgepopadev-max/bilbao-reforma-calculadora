@@ -1021,9 +1021,9 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
 
     // ===== TABLE HEADER =====
     const colPartida = margin;
-    const colCantidad = margin + 80;
-    const colEurUd = margin + 115;
-    const colTotal = margin + 145;
+    const colCantidad = margin + 72;
+    const colEurUd = margin + 112;
+    const colTotal = margin + 150;
 
     doc.setFillColor(...TERRACOTA);
     doc.rect(margin, y, contentW, 8, 'F');
