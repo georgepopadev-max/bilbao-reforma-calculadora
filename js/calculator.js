@@ -1153,7 +1153,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(180, 180, 180);
-    doc.text('bilbaoreforma.es · hola@bilbaoreforma.es', pageW / 2, y, { align: 'center' });
+    doc.text('bilbaoreforma.es · bilbaoreforma@gmail.com', pageW / 2, y, { align: 'center' });
     y += 3.5;
     doc.setFontSize(7);
     doc.text('Este documento es una estimación orientativa y no constituye una oferta contractual.', pageW / 2, y, { align: 'center' });
@@ -1362,7 +1362,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       body += '%0A--- RECIBIDO A TRAVÉS DE BILBAO REFORMA ---';
 
       var subject = 'Bilbao Reforma - Solicitud de presupuestos';
-      window.location.href = 'mailto:hola@bilbaoreforma.es?subject=' + encodeURIComponent(subject) + '&body=' + body;
+      window.location.href = 'mailto:bilbaoreforma@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
     },
     
     // State access (for debugging)
