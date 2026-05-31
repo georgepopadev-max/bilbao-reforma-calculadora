@@ -963,13 +963,12 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(12);
     doc.setTextColor(...DARK);
-    const budgetX = pageW - margin - doc.getTextWidth(budgetNum);
     doc.text(budgetNum, pageW - margin, y);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(...GRAY);
-    doc.text('Fecha: ' + dateStr, pageW - margin - 5, y + 5);
-    doc.text('Validez: 30 días', pageW - margin - 5, y + 10);
+    doc.text('Fecha: ' + dateStr, margin, y + 11);
+    doc.text('Validez: 30 días', margin, y + 16);
 
     y += 22;
 
@@ -1135,7 +1134,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     let condX = margin;
     condItems.forEach(function(item) {
       doc.setFillColor(244, 244, 244);
-      const itemW = 45;
+      const itemW = 48;
       doc.roundedRect(condX, condY, itemW, 7, 1, 1, 'F');
       doc.setTextColor(...GRAY);
       doc.text(item, condX + 3, condY + 4.5);
