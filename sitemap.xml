@@ -125,31 +125,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://www.bilbaoreforma.es/blog/domotica-reforma-vivienda.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bilbaoreforma.es/blog/errores-reforma-bilbao.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bilbaoreforma.es/blog/mantenimiento-edificio-bilbao.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bilbaoreforma.es/blog/tendencias-reforma-cocina.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bilbaoreforma.es/blog/economia-domestica-reformas.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <!-- Directorio de empresas -->
   <url>
@@ -169,6 +144,21 @@
   </url>
   <url>
     <loc>https://www.bilbaoreforma.es/empresas/eraber.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/empresas/reformas-zunzunegui.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/empresas/raquel-gonzalez-interiorismo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/empresas/reformas-fernandez.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

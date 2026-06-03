@@ -17,6 +17,9 @@ Allow: /aviso-legal.html
 # Calculadora (incluye todas las sub-rutas)
 Allow: /calculadora/
 
+# Landings por barrio
+Allow: /barrios/
+
 # Blog (incluye todas las sub-rutas)
 Allow: /blog/
 
@@ -24,7 +27,6 @@ Allow: /blog/
 Allow: /empresas/
 
 # Bloquear acceso a archivos de configuración y desarrollo
-Disallow: /*.js$
 Disallow: /*.md$
 Disallow: /*.json$
 Disallow: /content/

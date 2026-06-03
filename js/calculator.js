@@ -11,6 +11,47 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
   'use strict';
 
   // ============================================================
+  // URL PARAMETERS — barrio and age preset from landing pages
+  // ============================================================
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const presetBarrio = urlParams.get('barrio');
+  const presetAge = urlParams.get('age');
+
+  const BARRIO_TO_AGE = {
+    'casco-viejo': 'historic',
+    'indautxu':    'old',
+    'deusto':      'moderate',
+    'getxo':       'moderate'
+  };
+
+  const BARRIO_LABELS = {
+    'casco-viejo': 'Casco Viejo',
+    'indautxu':    'Indautxu',
+    'deusto':      'Deusto',
+    'getxo':       'Getxo'
+  };
+
+  const BARRIO_MULTIPLIERS = {
+    'casco-viejo': 1.30,
+    'indautxu':    1.15,
+    'deusto':      1.10,
+    'getxo':       1.10
+  };
+
+  // Inject barrio preset badge into step 3 header
+  function injectBarrioBadge() {
+    if (!presetBarrio || !BARRIO_LABELS[presetBarrio]) return;
+    const step3Header = document.querySelector('#step3 .step-header');
+    if (!step3Header) return;
+    const badge = document.createElement('div');
+    badge.className = 'barrio-preset-badge';
+    badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:white;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;';
+    badge.textContent = 'Barrio: ' + BARRIO_LABELS[presetBarrio];
+    step3Header.insertBefore(badge, step3Header.firstChild);
+  }
+
+  // ============================================================
   // HELPERS — datasetValidated compatibility
   // ============================================================
 
@@ -1438,6 +1479,22 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     } else if (typePresets[preset]) {
       BilbaoCalc.updateReformTypes([typePresets[preset]]);
     }
+  }
+
+  // Pre-seleccionar antiguedad desde parametro barrio o age
+  if (presetAge && BilbaoCalc.updateBuildingAge) {
+    setTimeout(function() {
+      BilbaoCalc.updateBuildingAge(presetAge);
+    }, 50);
+  } else if (presetBarrio && BARRIO_TO_AGE[presetBarrio] && BilbaoCalc.updateBuildingAge) {
+    setTimeout(function() {
+      BilbaoCalc.updateBuildingAge(BARRIO_TO_AGE[presetBarrio]);
+    }, 50);
+  }
+
+  // Inyectar badge de barrio en paso 3 si hay parametro
+  if (presetBarrio && BARRIO_LABELS[presetBarrio]) {
+    setTimeout(injectBarrioBadge, 50);
   }
 
   // Initialize with first step visible (static HTML)
