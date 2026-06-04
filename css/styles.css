@@ -2618,47 +2618,63 @@ input, select, textarea {
     padding-bottom: 0.75rem !important;
     margin-bottom: 1rem !important;
     position: relative !important;
+    /* Hide scrollbar — use overflow hidden trick */
+    overflow-y: hidden !important;
   }
   
-  /* Fade-out hint on right edge */
+  /* Hide scrollbar on scope cards container */
+  .scope-cards-grid::-webkit-scrollbar {
+    display: none !important;
+    height: 0 !important;
+  }
+  .scope-cards-grid {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  
+  /* Fade-out hint on right edge - thin gradient, z-index below cards */
   .scope-cards-grid::after {
     content: '' !important;
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
     bottom: 0 !important;
-    width: 60px !important;
-    background: linear-gradient(to right, transparent 50%, var(--color-crema)) !important;
+    width: 50px !important;
+    background: linear-gradient(to right, transparent 30%, var(--color-crema)) !important;
     pointer-events: none !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
   }
   
-  /* Fade-out hint on left edge for symmetry */
+  /* Left fade - minimal, just 4px to avoid edge clash */
   .scope-cards-grid::before {
     content: '' !important;
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
     bottom: 0 !important;
-    width: 16px !important;
+    width: 4px !important;
     background: var(--color-crema) !important;
     pointer-events: none !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
   }
   
   .scope-card {
-    flex: 0 0 calc(70vw - 0.75rem) !important;
-    min-width: 190px !important;
-    max-width: 260px !important;
+    flex: 0 0 min(70vw, 220px) !important;
+    min-width: 160px !important;
+    max-width: 220px !important;
     scroll-snap-align: start !important;
     padding: 1rem 0.75rem !important;
+    /* Ensure card is above fade edges */
+    position: relative !important;
+    z-index: 3 !important;
   }
 }
 
 @media (max-width: 480px) {
   .scope-card {
-    flex: 0 0 calc(75vw - 0.5rem) !important;
-    min-width: 180px !important;
+    flex: 0 0 min(75vw, 200px) !important;
+    min-width: 140px !important;
+    max-width: 200px !important;
   }
 }
 
@@ -2667,6 +2683,7 @@ input, select, textarea {
   .type-cards-grid {
     display: flex !important;
     overflow-x: auto !important;
+    overflow-y: hidden !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
     gap: 0.625rem !important;
@@ -2674,6 +2691,17 @@ input, select, textarea {
     position: relative !important;
   }
   
+  /* Hide scrollbar on type cards container */
+  .type-cards-grid::-webkit-scrollbar {
+    display: none !important;
+    height: 0 !important;
+  }
+  .type-cards-grid {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  
+  /* Fade-out hint on right edge - thin gradient from inside the cards */
   .type-cards-grid::after {
     content: '' !important;
     position: absolute !important;
@@ -2681,15 +2709,19 @@ input, select, textarea {
     top: 0 !important;
     bottom: 0 !important;
     width: 40px !important;
-    background: linear-gradient(to right, transparent, var(--color-crema)) !important;
+    background: linear-gradient(to right, transparent 20%, var(--color-crema)) !important;
     pointer-events: none !important;
+    z-index: 2 !important;
   }
   
   .type-card {
     flex: 0 0 auto !important;
-    min-width: 140px !important;
+    min-width: 120px !important;
+    max-width: 150px !important;
     scroll-snap-align: start !important;
     padding: 0.75rem 0.5rem !important;
+    position: relative !important;
+    z-index: 3 !important;
   }
 }
 
