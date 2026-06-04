@@ -4,7 +4,7 @@
  * Each entry includes: source file, confidence level, date extracted
  */
 
-export const DATASET_VALIDATED = {
+const DATASET_VALIDATED = {
   reformScope: {
     // €/m² for full reform by quality level
     basic: {
@@ -409,5 +409,4 @@ Object.keys(DATASET_VALIDATED).forEach(key => {
     Object.freeze(DATASET_VALIDATED[key]);
   }
 });
-
-export default DATASET_VALIDATED;
+window.DATASET_VALIDATED = DATASET_VALIDATED;

@@ -5,7 +5,6 @@
  * Data sourced from SPEC.md — Bilbao 2025 prices
  */
 
-import { DATASET_VALIDATED } from './datasetValidated.js';
 
 (function() {
   'use strict';
@@ -1443,9 +1442,9 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       const LIGHT_GRAY = [245, 245, 245];
       const VERDE = [74, 103, 65];
 
-      const today = new Date();
-      const dateStr = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
-      const pdfDateStr = today.toISOString().split('T')[0]; // YYYY-MM-DD for filename
+      const pdfDate = new Date();
+      const pdfDateStr = pdfDate.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+      const pdfFileDateStr = pdfDate.toISOString().split('T')[0]; // YYYY-MM-DD for filename
 
       // ===== HEADER =====
       doc.setFillColor(...TERRACOTA);
