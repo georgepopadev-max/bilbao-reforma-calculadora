@@ -1684,11 +1684,13 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
   // console.log('Bilbao Calculadora initialized');
 }
 
-  // Auto-init on DOM ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+// Auto-init on DOM ready — wrap in try/catch so errors are surfaced
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    try { init(); } catch(e) { console.error('BilbaoCalc init error:', e); alert('Error inicializando: ' + e.message); }
+  });
+} else {
+  try { init(); } catch(e) { console.error('BilbaoCalc init error:', e); alert('Error inicializando: ' + e.message); }
+}
 
 })();

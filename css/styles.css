@@ -2723,6 +2723,11 @@ input, select, textarea {
     position: relative !important;
     z-index: 3 !important;
   }
+
+  .type-card.selected {
+    border: 2px solid var(--color-verde-montana) !important;
+    background-color: #F4F7F2 !important;
+  }
 }
 
 /* 5. General mobile spacing improvements */
