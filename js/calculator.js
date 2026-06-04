@@ -1655,20 +1655,20 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
     var typePresets = { 'cocina': 'kitchen', 'bano': 'bathroom', 'pintura': 'painting', 'suelo': 'flooring' };
 
     if (scopePresets[preset]) {
-      BilbaoCalc.updateReformScope(scopePresets[preset]);
+      window.BilbaoCalc.updateReformScope(scopePresets[preset]);
     } else if (typePresets[preset]) {
-      BilbaoCalc.updateReformTypes([typePresets[preset]]);
+      window.BilbaoCalc.updateReformTypes([typePresets[preset]]);
     }
   }
 
   // Pre-seleccionar antiguedad desde parametro barrio o age
-  if (presetAge && BilbaoCalc.updateBuildingAge) {
+  if (presetAge && window.BilbaoCalc && window.BilbaoCalc.updateBuildingAge) {
     setTimeout(function() {
-      BilbaoCalc.updateBuildingAge(presetAge);
+      window.BilbaoCalc.updateBuildingAge(presetAge);
     }, 50);
-  } else if (presetBarrio && BARRIO_TO_AGE[presetBarrio] && BilbaoCalc.updateBuildingAge) {
+  } else if (presetBarrio && BARRIO_TO_AGE[presetBarrio] && window.BilbaoCalc && window.BilbaoCalc.updateBuildingAge) {
     setTimeout(function() {
-      BilbaoCalc.updateBuildingAge(BARRIO_TO_AGE[presetBarrio]);
+      window.BilbaoCalc.updateBuildingAge(BARRIO_TO_AGE[presetBarrio]);
     }, 50);
   }
 
