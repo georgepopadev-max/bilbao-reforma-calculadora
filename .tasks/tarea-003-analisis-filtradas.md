@@ -1,6 +1,9 @@
 # TAREA-003: Analizar calculadora filtrada
 
-## 📋 Análisis
+## 📋 OBSOLETA — Ya implementada
+
+Las páginas filtradas ya existen: `calculadora/cocina-bilbao.html`, `calculadora/bano-bilbao.html`, etc.
+El sistema de `?preset=` y `?barrio=` está implementado en calculator.js.
 
 ### Concepto
 Las "calculadoras filtradas" son páginas específicas para cada tipo de reforma con URL propia. Ejemplo: `/calculadora/cocina-bilbao.html`. Incluyen:

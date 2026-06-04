@@ -275,7 +275,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       } else {
         roomRange = ranges.medium;
       }
-      const low = roomRange.min;
+      const low = Math.max(roomRange.min, 2500); // clamp min to 2500€
       const high = roomRange.max;
       subtotalLow += low;
       subtotalHigh += high;
@@ -301,7 +301,7 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
       } else {
         roomRange = ranges.medium;
       }
-      const low = roomRange.min;
+      const low = Math.max(roomRange.min, 5000); // clamp min to 5000€
       const high = roomRange.max;
       subtotalLow += low;
       subtotalHigh += high;
@@ -1430,7 +1430,187 @@ import { DATASET_VALIDATED } from './datasetValidated.js';
 
       body = encodeURIComponent(body);
 
-      window.location.href = 'mailto:bilbaoreforma@gmail.com?subject=' + subject + '&body=' + body;
+      // Generate PDF with jsPDF
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const pageW = doc.internal.pageSize.getWidth();
+      const margin = 18;
+      const contentW = pageW - margin * 2;
+
+      const TERRACOTA = [196, 92, 62];
+      const DARK = [45, 45, 45];
+      const GRAY = [107, 107, 107];
+      const LIGHT_GRAY = [245, 245, 245];
+      const VERDE = [74, 103, 65];
+
+      const today = new Date();
+      const dateStr = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+      const pdfDateStr = today.toISOString().split('T')[0]; // YYYY-MM-DD for filename
+
+      // ===== HEADER =====
+      doc.setFillColor(...TERRACOTA);
+      doc.rect(0, 0, pageW, 22, 'F');
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(16);
+      doc.setTextColor(255, 255, 255);
+      doc.text('BILBAO REFORMA', margin, 13);
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9);
+      doc.setTextColor(255, 255, 255);
+      doc.text('Presupuesto orientativo', pageW - margin, 13, { align: 'right' });
+
+      let y = 32;
+
+      // ===== TITLE =====
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(18);
+      doc.setTextColor(...TERRACOTA);
+      doc.text('PRESUPUESTO DE REFORMA', pageW / 2, y, { align: 'center' });
+
+      y += 10;
+
+      // ===== PROJECT DATA GRID =====
+      const boxH = 32;
+      const halfW = contentW / 2 - 4;
+
+      // Left box - reform type
+      doc.setFillColor(...LIGHT_GRAY);
+      doc.roundedRect(margin, y, halfW, boxH, 2, 2, 'F');
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(170, 170, 170);
+      doc.text('TIPO DE REFORMA', margin + 5, y + 6);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(11);
+      doc.setTextColor(...DARK);
+      doc.text(reformTypeStr, margin + 5, y + 16);
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(...GRAY);
+      if (data.extras) {
+        var checkedExtras = Object.keys(data.extras).filter(function(k) { return data.extras[k].checked; });
+        if (checkedExtras.length > 0) {
+          var extrasLabels = checkedExtras.map(function(k) { return PRICE_DATA.extras[k]?.label || k; }).join(', ');
+          doc.text('Extras: ' + extrasLabels, margin + 5, y + 23);
+        }
+      }
+
+      // Right box - specs
+      doc.setFillColor(...LIGHT_GRAY);
+      doc.roundedRect(margin + halfW + 8, y, halfW, boxH, 2, 2, 'F');
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(170, 170, 170);
+      doc.text('ESPECIFICACIONES', margin + halfW + 13, y + 6);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(10);
+      doc.setTextColor(...DARK);
+      doc.text('Superficie: ' + data.sqm + ' m²', margin + halfW + 13, y + 14);
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9);
+      doc.setTextColor(...GRAY);
+      doc.text('Calidad: ' + qualityLabel + '  |  Antigüedad: ' + ageLabel, margin + halfW + 13, y + 21);
+
+      y += boxH + 10;
+
+      // ===== BUDGET BOX =====
+      doc.setFillColor(...VERDE);
+      doc.roundedRect(margin, y, contentW, 20, 2, 2, 'F');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(10);
+      doc.setTextColor(255, 255, 255);
+      doc.text('PRESUPUESTO ORIENTATIVO (sin IVA)', margin + 6, y + 8);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(16);
+      doc.text(subtotalLow.toLocaleString('es-ES') + ' € - ' + subtotalHigh.toLocaleString('es-ES') + ' €', pageW - margin - 6, y + 13, { align: 'right' });
+
+      y += 28;
+
+      // ===== BREAKDOWN TABLE =====
+      if (result && result.breakdown && result.breakdown.length > 0) {
+        // Table header
+        doc.setFillColor(...TERRACOTA);
+        doc.rect(margin, y, contentW, 8, 'F');
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(8);
+        doc.setTextColor(255, 255, 255);
+        doc.text('CONCEPTO', margin + 3, y + 5.5);
+        doc.text('CANT.', margin + 80, y + 5.5);
+        doc.text('€/UD', margin + 115, y + 5.5);
+        doc.text('TOTAL', margin + 150, y + 5.5);
+
+        y += 8;
+
+        result.breakdown.forEach(function(item, idx) {
+          if (y > 270) {
+            doc.addPage();
+            y = 20;
+          }
+
+          if (idx % 2 === 1) {
+            doc.setFillColor(...LIGHT_GRAY);
+            doc.rect(margin, y, contentW, 7, 'F');
+          }
+
+          const avgRate = Math.round((item.lowRate + item.highRate) / 2);
+          const avgTotal = Math.round((item.lowTotal + item.highTotal) / 2);
+
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(9);
+          doc.setTextColor(...DARK);
+          doc.text(item.item, margin + 3, y + 5);
+
+          doc.setTextColor(...GRAY);
+          doc.text(item.qty + ' ' + item.unit, margin + 80, y + 5);
+
+          doc.setTextColor(...DARK);
+          doc.text(avgRate.toLocaleString('es-ES') + ' €', margin + 115, y + 5);
+
+          doc.setTextColor(...DARK);
+          doc.text(avgTotal.toLocaleString('es-ES') + ' €', margin + 150, y + 5);
+
+          y += 7;
+        });
+
+        y += 6;
+      }
+
+      // ===== CONTACT INFO =====
+      if (y > 250) {
+        doc.addPage();
+        y = 20;
+      }
+
+      doc.setFillColor(...LIGHT_GRAY);
+      doc.roundedRect(margin, y, contentW, 22, 2, 2, 'F');
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(...GRAY);
+      doc.text('Contacto solicitado:', margin + 5, y + 7);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(10);
+      doc.setTextColor(...DARK);
+      doc.text(name + (phone ? '  |  ' + phone : '') + '  |  ' + email, margin + 5, y + 14);
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(...GRAY);
+      doc.text('Fecha: ' + dateStr, margin + 5, y + 19);
+
+      y += 30;
+
+      // ===== FOOTER =====
+      doc.setFont('helvetica', 'italic');
+      doc.setFontSize(8);
+      doc.setTextColor(...GRAY);
+      doc.text('Presupuesto orientativo. Sujeto a confirmacion de medidas reales.', pageW / 2, y, { align: 'center' });
+      doc.text('Bilbao Reforma  |  bilbaoreforma@gmail.com', pageW / 2, y + 5, { align: 'center' });
+
+      // Save the PDF
+      const filename = 'presupuesto-reforma-bilbao-' + pdfDateStr + '.pdf';
+      doc.save(filename);
+
       return true;
     },
     
