@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
 
-  <title>Calculadora de Pintura en Bilbao 2026</title>
+<title>Calculadora de Pintura en Bilbao 2026</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23C45C3E' rx='12' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>B</text></svg>">
@@ -29,7 +29,7 @@
 <!-- Canonical URL -->
   <link rel="canonical" href="https://bilbaoreforma.es/calculadora/pintura-bilbao.html">
 
-  <!-- Schema.org WebSite with CalculateAction -->
+<!-- Schema.org WebSite with CalculateAction -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,6 +48,24 @@
         "name": "Presupuesto Pintura Bilbao"
       }
     }
+  }
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo calcular presupuesto de pintura en Bilbao 2025",
+    "description": "Calcula el coste de pintar tu piso en Bilbao: precios entre 8-20 €/m² con mano de obra incluida. Incluye gotelé alisado si lo necesitas.",
+    "step": [
+      {"@type": "HowToStep", "name": "Selecciona tipo de reforma", "position": 1, "text": "Elige entre reforma completa de vivienda o selecciona solo pintura."},
+      {"@type": "HowToStep", "name": "Indica los metros cuadrados", "position": 2, "text": "Usa el slider o escribe directamente los m² de tu vivienda."},
+      {"@type": "HowToStep", "name": "Elige la antigüedad del edificio", "position": 3, "text": "Edificios de más de 40 años pueden tener amianto en el gotelé — requiere estudio previo."},
+      {"@type": "HowToStep", "name": "Selecciona calidad de pintura", "position": 4, "text": "Básica (vinílica), Media (acrílica), Premium (lavable) o Alisado de gotelé."},
+      {"@type": "HowToStep", "name": "Añade extras opcionales", "position": 5, "text": "Ventanas, suelo radiante u otros elementos."},
+      {"@type": "HowToStep", "name": "Recibe tu presupuesto orientativo", "position": 6, "text": "Obtén una horquilla de precio por m² y descarga el PDF con el desglose."}
+    ]
   }
   </script>
 </head>
@@ -774,8 +792,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="../js/datasetValidated.js"></script>
-  <script src="../js/calculator.js"></script>
+<script type="module" src="../js/calculator.js"></script>
   <script>
     document.getElementById('mobileToggle').addEventListener('click', function() {
       var menu = document.getElementById('mobileMenu');
@@ -784,10 +801,7 @@
       btn.setAttribute('aria-expanded', isOpen);
     });
 
-    // Auto-load preset from URL
-    if (window.location.search.includes('preset=pintura')) {
-      window.BilbaoCalc.loadPreset('pintura');
-    }
+    
   </script>
 </body>
 </html>

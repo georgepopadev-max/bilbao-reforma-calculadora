@@ -50,6 +50,24 @@
     }
   }
   </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo calcular presupuesto reforma integral en Bilbao 2025",
+    "description": "Calcula el coste de una reforma integral en Bilbao: incluye fontanería, electricidad, suelos, pintura, baños y cocina. Precios entre 550-1.600 €/m² según calidad.",
+    "step": [
+      {"@type": "HowToStep", "name": "Selecciona nivel de reforma", "position": 1, "text": "Elige entre básica (550-700 €/m²), media (700-950 €/m²), integral (900-1.300 €/m²) o premium (1.300-1.600 €/m²)."},
+      {"@type": "HowToStep", "name": "Indica los metros cuadrados", "position": 2, "text": "Usa el slider o escribe directamente los m² de tu vivienda (20-500 m²)."},
+      {"@type": "HowToStep", "name": "Elige la antigüedad del edificio", "position": 3, "text": "Los edificios de más de 40 años pueden necesitar renovación de instalaciones, lo que añade un 5-30% al presupuesto."},
+      {"@type": "HowToStep", "name": "Selecciona calidad de materiales", "position": 4, "text": "Básica ( Leroy Merlin), Media (Porcelanosa, Roca) o Premium (Villeroy & Boch, Hansgrohe)."},
+      {"@type": "HowToStep", "name": "Añade extras opcionales", "position": 5, "text": "Ventanas, suelo radiante, domótica o aerotermia para una vivienda más eficiente."},
+      {"@type": "HowToStep", "name": "Recibe tu presupuesto orientativo", "position": 6, "text": "Obtén una horquilla completa con desglose por partidas y descarga el PDF."}
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- ============================================
@@ -773,8 +791,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="../js/datasetValidated.js"></script>
-  <script src="../js/calculator.js"></script>
+<script type="module" src="../js/calculator.js"></script>
   <script>
     document.getElementById('mobileToggle').addEventListener('click', function() {
       var menu = document.getElementById('mobileMenu');
@@ -783,10 +800,7 @@
       btn.setAttribute('aria-expanded', isOpen);
     });
 
-    // Auto-load preset from URL
-    if (window.location.search.includes('preset=integral')) {
-      window.BilbaoCalc.loadPreset('integral');
-    }
+    
   </script>
 </body>
 </html>
