@@ -1920,6 +1920,97 @@ input, select, textarea {
 }
 
 /* ============================================
+   FAQ SECTION
+   ============================================ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-beige);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--color-terracota-light);
+}
+
+.faq-item[open] {
+  border-color: var(--color-terracota);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.125rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-grafito);
+  transition: background-color var(--transition-fast);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question:hover {
+  background-color: var(--color-crema);
+}
+
+.faq-question-text {
+  flex: 1;
+  text-align: left;
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  color: var(--color-terracota);
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px solid var(--color-beige);
+}
+
+.faq-answer p {
+  font-size: 0.9375rem;
+  color: var(--color-gris);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.faq-answer a {
+  color: var(--color-terracota);
+  text-decoration: none;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
    HOMEPAGE — HERO SECTION
    ============================================ */
 .home-main {
