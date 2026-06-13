@@ -23,7 +23,7 @@ html {
   --color-crema: #FAF7F2;
   --color-blanco: #FFFFFF;
   --color-grafito: #2D2D2D;
-  --color-gris: #6B6B6B;
+  --color-gris: #5A5A5A;
   --color-txakoli: #7FA650;
   --color-beige: #E8E2D9;
   --color-beige-dark: #D4CCC0;
@@ -1838,7 +1838,7 @@ input, select, textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.7);
   margin-bottom: 1rem;
 }
 
@@ -1916,7 +1916,7 @@ input, select, textarea {
 
 .footer-disclaimer {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
 }
 
 /* ============================================
@@ -2047,7 +2047,7 @@ input, select, textarea {
   gap: 0.375rem;
   padding: 0.375rem 0.875rem;
   background-color: var(--color-terracota-light);
-  color: var(--color-terracota);
+  color: #8B3A24;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
@@ -2103,7 +2103,7 @@ input, select, textarea {
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 1.75rem;
-  background-color: var(--color-terracota);
+  background-color: #B34E30;
   color: var(--color-blanco);
   text-decoration: none;
   border-radius: var(--radius-button);
@@ -2130,12 +2130,12 @@ input, select, textarea {
   justify-content: center;
   padding: 1rem 1.75rem;
   background-color: var(--color-blanco);
-  color: var(--color-terracota);
+  color: #8B3A24;
   text-decoration: none;
   border-radius: var(--radius-button);
   font-size: 1rem;
   font-weight: 600;
-  border: 2px solid var(--color-terracota);
+  border: 2px solid #B34E30;
   transition: all var(--transition-fast);
 }
 
@@ -2570,7 +2570,7 @@ input, select, textarea {
 }
 
 .btn-primary {
-  background-color: var(--color-terracota);
+  background-color: #B34E30;
   color: var(--color-blanco);
 }
 
