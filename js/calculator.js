@@ -1192,7 +1192,7 @@
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(180, 180, 180);
-    doc.text('bilbaoreforma.es · bilbaoreforma@gmail.com', pageW / 2, y, { align: 'center' });
+    doc.text('bilbaoreforma.es · info@bilbaoreforma.es', pageW / 2, y, { align: 'center' });
     y += 3.5;
     doc.setFontSize(7);
     doc.text('Este documento es una estimación orientativa y no constituye una oferta contractual.', pageW / 2, y, { align: 'center' });
@@ -1604,7 +1604,7 @@
       doc.setFontSize(8);
       doc.setTextColor(...GRAY);
       doc.text('Presupuesto orientativo. Sujeto a confirmacion de medidas reales.', pageW / 2, y, { align: 'center' });
-      doc.text('Bilbao Reforma  |  bilbaoreforma@gmail.com', pageW / 2, y + 5, { align: 'center' });
+      doc.text('Bilbao Reforma  |  info@bilbaoreforma.es', pageW / 2, y + 5, { align: 'center' });
 
       // Save the PDF
       const filename = 'presupuesto-reforma-bilbao-' + pdfDateStr + '.pdf';

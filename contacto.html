@@ -360,7 +360,7 @@
             <div style="display: flex; flex-direction: column; gap: 0.875rem;">
               <details style="border-radius: var(--radius-button); overflow: hidden;">
                 <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Cuánto tardas en responder?</summary>
-                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Intento responder en menos de 48 horas. Para consultas urgentes, escríbeme directamente a bilbaoreforma@gmail.com</p>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Intento responder en menos de 48 horas. Para consultas urgentes, escríbeme directamente a info@bilbaoreforma.es</p>
               </details>
               <details style="border-radius: var(--radius-button); overflow: hidden;">
                 <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Puedo darme de alta como empresa?</summary>
@@ -382,7 +382,7 @@
                 <svg class="contact-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <div class="contact-list-content">
                   <strong>Correo electrónico</strong>
-                  <span>bilbaoreforma@gmail.com</span>
+                  <span>info@bilbaoreforma.es</span>
                 </div>
               </li>
               
@@ -399,7 +399,7 @@
           <div class="cta-card">
             <h3 class="cta-card-title">¿Tienes una empresa de reformas?</h3>
             <p class="cta-card-text">Si quieres aparecer en nuestro directorio de empresas recomendadas, escríbeme y te envío información.</p>
-            <a href="mailto:bilbaoreforma@gmail.com?subject=Información directorio empresas" class="cta-card-link">Consultar información →</a>
+            <a href="mailto:info@bilbaoreforma.es?subject=Información directorio empresas" class="cta-card-link">Consultar información →</a>
           </div>
 
           <div class="info-card" style="margin-top: 1.5rem;">
@@ -457,7 +457,7 @@
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Contacto</h4>
-          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> bilbaoreforma@gmail.com</p>
+          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@bilbaoreforma.es</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -483,38 +483,91 @@
       var projectType = document.getElementById('project-type').value;
       var message = document.getElementById('message').value.trim();
 
-      var subject = 'Bilbao Reforma - Contacto';
-      var body = 'Nombre: ' + name + '%0A';
-      body += 'Email: ' + email + '%0A';
-      if (phone) {
-        body += 'Teléfono: ' + phone + '%0A';
-      }
-      if (projectType) {
-        var projectLabels = {
-          'particular': 'Consulta sobre reformas',
-          'empresa': 'Quiero aparecer en el directorio',
-          'colaboracion': 'Propuesta de colaboración',
-          'soporte': 'Soporte sobre la calculadora',
-          'otro': 'Otro'
-        };
-        body += 'Asunto: ' + (projectLabels[projectType] || projectType) + '%0A';
-      }
-      body += '%0A---%0AMensaje:%0A' + encodeURIComponent(message);
-
-      window.location.href = 'mailto:bilbaoreforma@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
-
       var formCard = document.querySelector('.contact-form-card');
-      var confirmation = document.createElement('div');
-      confirmation.className = 'form-confirmation';
-      confirmation.style.cssText = 'background: #d4edda; color: #155724; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
-      confirmation.innerHTML = '<strong>¡Mensaje preparado!</strong><br>Se abrirá tu cliente de correo. Si no se abre, escríbeme a <a href="mailto:bilbaoreforma@gmail.com">bilbaoreforma@gmail.com</a>';
-      formCard.appendChild(confirmation);
+      var submitBtn = document.querySelector('.submit-btn');
 
-      setTimeout(function() {
-        if (confirmation.parentNode) {
-          confirmation.parentNode.removeChild(confirmation);
+      // Disable button while sending
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+
+      // Send to backend API
+      fetch('https://api.bilbaoreforma.es/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone || null,
+          source: 'bilbao_calculadora',
+          project_type: projectType || null,
+          message: message,
+          city: 'Bilbao'
+        })
+      })
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error al enviar');
         }
-      }, 5000);
+      })
+      .then(function(data) {
+        // Success
+        var confirmation = document.createElement('div');
+        confirmation.className = 'form-confirmation';
+        confirmation.style.cssText = 'background: #d4edda; color: #155724; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+        confirmation.innerHTML = '<strong>¡Mensaje enviado!</strong><br>Te responderé lo antes posible.';
+        formCard.appendChild(confirmation);
+
+        // Reset form
+        document.querySelector('.contact-form').reset();
+
+        setTimeout(function() {
+          if (confirmation.parentNode) {
+            confirmation.parentNode.removeChild(confirmation);
+          }
+        }, 5000);
+      })
+      .catch(function(error) {
+        // Error - fallback to email
+        var subject = 'Bilbao Reforma - Contacto';
+        var body = 'Nombre: ' + name + '%0A';
+        body += 'Email: ' + email + '%0A';
+        if (phone) {
+          body += 'Teléfono: ' + phone + '%0A';
+        }
+        if (projectType) {
+          var projectLabels = {
+            'particular': 'Consulta sobre reformas',
+            'empresa': 'Quiero aparecer en el directorio',
+            'colaboracion': 'Propuesta de colaboración',
+            'soporte': 'Soporte sobre la calculadora',
+            'otro': 'Otro'
+          };
+          body += 'Asunto: ' + (projectLabels[projectType] || projectType) + '%0A';
+        }
+        body += '%0A---%0AMensaje:%0A' + encodeURIComponent(message);
+
+        window.location.href = 'mailto:info@bilbaoreforma.es?subject=' + encodeURIComponent(subject) + '&body=' + body;
+
+        var confirmation = document.createElement('div');
+        confirmation.className = 'form-confirmation';
+        confirmation.style.cssText = 'background: #fff3cd; color: #856404; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+        confirmation.innerHTML = '<strong>¡Ups!</strong><br>No he podido enviar automáticamente. Se abrirá tu cliente de correo. Si no se abre, escríbeme a <a href="mailto:info@bilbaoreforma.es">info@bilbaoreforma.es</a>';
+        formCard.appendChild(confirmation);
+
+        setTimeout(function() {
+          if (confirmation.parentNode) {
+            confirmation.parentNode.removeChild(confirmation);
+          }
+        }, 5000);
+      })
+      .finally(function() {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar mensaje';
+      });
     });
   </script>
 </body>
