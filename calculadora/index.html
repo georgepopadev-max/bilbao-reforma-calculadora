@@ -26,10 +26,130 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* SEO sections for calculator page */
+    .calculator-seo-prices,
+    .calculator-seo-faq,
+    .calculator-seo-links {
+      max-width: 640px;
+      margin: 3rem auto 0;
+      padding: 0 1rem;
+    }
+    .calculator-seo-title {
+      font-family: var(--font-playfair);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-grafito);
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .calculator-seo-subtitle {
+      text-align: center;
+      color: var(--color-gris);
+      font-size: 0.9375rem;
+      margin-bottom: 1.5rem;
+    }
+    .calculator-seo-table-wrapper {
+      overflow-x: auto;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+    }
+    .calculator-seo-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--color-blanco);
+      font-size: 0.875rem;
+    }
+    .calculator-seo-table th {
+      background: var(--color-terracota);
+      color: var(--color-blanco);
+      font-weight: 600;
+      text-align: left;
+      padding: 1rem;
+    }
+    .calculator-seo-table td {
+      padding: 0.875rem 1rem;
+      border-bottom: 1px solid var(--color-beige);
+      color: var(--color-gris);
+    }
+    .calculator-seo-table tr:last-child td {
+      border-bottom: none;
+    }
+    .calculator-seo-table tr:hover td {
+      background: var(--color-crema);
+    }
+    .calculator-seo-note {
+      font-size: 0.8125rem;
+      color: var(--color-gris);
+      text-align: center;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .calculator-seo-faq {
+      margin-top: 2.5rem;
+    }
+    .calculator-seo-faq-item {
+      background: var(--color-blanco);
+      border-radius: var(--radius-card);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-card);
+    }
+    .calculator-seo-faq-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-grafito);
+      margin-bottom: 0.5rem;
+    }
+    .calculator-seo-faq-item p {
+      font-size: 0.9375rem;
+      color: var(--color-gris);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .calculator-seo-faq-item a {
+      color: var(--color-terracota);
+      text-decoration: none;
+    }
+    .calculator-seo-faq-item a:hover {
+      text-decoration: underline;
+    }
+    .calculator-seo-links {
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .calculator-seo-links-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    @media (min-width: 640px) {
+      .calculator-seo-links-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .calculator-seo-links-list li a {
+      display: block;
+      background: var(--color-blanco);
+      border-radius: var(--radius-card);
+      padding: 0.875rem 1rem;
+      color: var(--color-terracota);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      box-shadow: var(--shadow-card);
+      transition: all var(--transition-fast);
+    }
+    .calculator-seo-links-list li a:hover {
+      background: var(--color-terracota-light);
+      transform: translateY(-1px);
+    }
+  </style>
 <!-- Canonical URL -->
   <link rel="canonical" href="https://bilbaoreforma.es/calculadora/index.html">
 
-  <!-- Schema.org WebSite with CalculateAction -->
+  <!-- Schema.org WebSite with CalculateAction + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,6 +168,46 @@
         "name": "Presupuesto Reforma Bilbao"
       }
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Es gratis usar la calculadora de presupuestos de Bilbao Reforma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, la calculadora de Bilbao Reforma es completamente gratuita y no requiere registro. En menos de 2 minutos obtienes una estimación orientativa sin compromiso ninguno."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El precio que me da la calculadora es el precio final de mi reforma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El resultado es una estimación orientativa basada en precios medios de mercado. El presupuesto real puede variar ±15% según las características específicas de tu vivienda. Para un precio exacto, necesitas que un profesional visite tu piso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo calcular el presupuesto para una sola habitación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. La calculadora permite seleccionar estancias individuales: pintura, suelo, baño completo o cocina. También puedes elegir una reforma completa de toda la vivienda si lo prefieres."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los precios son válidos para todos los barrios de Bilbao?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, los precios base son los mismos para toda Bilbao. El Casco Viejo puede tener costes adicionales del 20-30% por la dificultad de acceso y las posibles licencias de patrimonio histórico. Edificios de más de 70 años también pueden requerir trabajos extra."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -92,8 +252,10 @@
 
   <main class="calculator-main">
     <div class="calculator-intro-editorial">
-      <h2>Calculadora de Reformas en Bilbao — presupuestos desde 8 €/m²</h2>
-      <p>¿Cuánto cuesta reformar un piso en Bilbao? Usa nuestra calculadora para obtener un presupuesto orientativo en menos de 2 minutos. Incluye pintura, suelos, baños, cocinas y reforma integral. Datos basados en precios reales de empresas de reformas en Bizkaia, actualizados para 2026.</p>
+      <h2>Calculadora de Presupuestos de Reformas en Bilbao</h2>
+      <p>¿Cuánto cuesta reformar un piso en Bilbao? Esta herramienta te da una <strong>estimación orientativa en menos de 2 minutos</strong>. Solo necesitas indicar los metros cuadrados, el tipo de reforma y la calidad de materiales que buscas.</p>
+      <p>Los datos de precios están basados en <strong>precios reales de empresas de reformas en Bizkaia</strong>, actualizados para 2026. La calculadora cubre desde pintura básica hasta reformas integrales completas en viviendas de cualquier tamaño en Bilbao y sus barrios: Santutxu, Indautxu, Casco Viejo, Deusto y Errekalde.</p>
+      <p>Recuerda: el resultado es una <strong>estimación orientativa</strong>, no un presupuesto real. Para un cálculo exacto, contacta con empresas locales que puedan visitar tu vivienda y evaluar su estado concreto.</p>
     </div>
 
     <div class="calculator-wrapper">
@@ -703,6 +865,114 @@
 
       </div>
     </div>
+
+    <!-- SEO: Tabla de precios orientativos -->
+    <section class="calculator-seo-prices" aria-labelledby="seo-prices-title">
+      <h2 id="seo-prices-title" class="calculator-seo-title">Precios Orientativos de Reformas en Bilbao 2026</h2>
+      <p class="calculator-seo-subtitle">Precios de mercado en Bilbao y Bizkaia. Material + instalación profesional. IVA no incluido (10% IVA reducido para reformas de vivienda).</p>
+      <div class="calculator-seo-table-wrapper">
+        <table class="calculator-seo-table">
+          <thead>
+            <tr>
+              <th>Tipo de Reforma</th>
+              <th>Descripción</th>
+              <th>Precio Orientativo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Reforma básica</strong></td>
+              <td>Pintura, suelos, baño y cocina con materiales estándar</td>
+              <td>550–700 €/m²</td>
+            </tr>
+            <tr>
+              <td><strong>Reforma media</strong></td>
+              <td>Mejor calidad, electricidad nueva y certificados</td>
+              <td>700–950 €/m²</td>
+            </tr>
+            <tr>
+              <td><strong>Reforma integral</strong></td>
+              <td>Todo incluido: fontanería, electricidad, parquet, pintura, baños, cocina</td>
+              <td>900–1.300 €/m²</td>
+            </tr>
+            <tr>
+              <td><strong>Reforma premium</strong></td>
+              <td>Alta gama, domótica, aerotermia, diseño interior</td>
+              <td>1.300–1.600 €/m²</td>
+            </tr>
+            <tr>
+              <td>Pintura</td>
+              <td>Paredes y techos, incluye preparación y acabado</td>
+              <td>12–25 €/m²</td>
+            </tr>
+            <tr>
+              <td>Suelo parqué flotante</td>
+              <td>Parqué de roble instalado con base nivelada</td>
+              <td>50–75 €/m²</td>
+            </tr>
+            <tr>
+              <td>Suelo porcelánico</td>
+              <td>Porcelánico instalado con base nivelada</td>
+              <td>55–85 €/m²</td>
+            </tr>
+            <tr>
+              <td>Baño completo</td>
+              <td>Demolición, fontanería, electricidad, sanitarios, azulejos</td>
+              <td>6.000–9.000 € (fijo)</td>
+            </tr>
+            <tr>
+              <td>Cocina completa</td>
+              <td>Demolición, fontanería, electricidad, muebles, encimera</td>
+              <td>8.000–12.000 € (fijo)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="calculator-seo-note">* Estos precios son orientativos y pueden variar según la antigüedad del edificio, la ubicación y las condiciones específicas de cada vivienda. Solicita presupuestos personalizados para un cálculo exacto.</p>
+    </section>
+
+    <!-- SEO: FAQ sobre la calculadora -->
+    <section class="calculator-seo-faq" aria-labelledby="seo-faq-title">
+      <h2 id="seo-faq-title" class="calculator-seo-title">Preguntas Frecuentes sobre la Calculadora de Reformas</h2>
+
+      <div class="calculator-seo-faq-item">
+        <h3>¿Es gratis usar la calculadora de presupuestos?</h3>
+        <p>Sí, la calculadora de Bilbao Reforma es completamente gratuita y no requiere registro. En menos de 2 minutos obtienes una estimación orientativa sin compromiso ninguno.</p>
+      </div>
+
+      <div class="calculator-seo-faq-item">
+        <h3>¿El precio que me da la calculadora es el precio final de mi reforma?</h3>
+        <p>No. El resultado es una <strong>estimación orientativa</strong> basada en precios medios de mercado. El presupuesto real puede variar ±15% según las características específicas de tu vivienda. Para un precio exacto, necesitas que un profesional visite tu piso.</p>
+      </div>
+
+      <div class="calculator-seo-faq-item">
+        <h3>¿Puedo calcular el presupuesto para una sola habitación?</h3>
+        <p>Sí. La calculadora permite seleccionar estancias individuales: pintura, suelo, baño completo o cocina. También puedes elegir una reforma completa de toda la vivienda si lo prefieres.</p>
+      </div>
+
+      <div class="calculator-seo-faq-item">
+        <h3>¿Los precios son válidos para todos los barrios de Bilbao?</h3>
+        <p>Sí, los precios base son los mismos para toda Bilbao. El Casco Viejo puede tener costes adicionales del 20-30% por la dificultad de acceso y las posibles licencias de patrimonio histórico. Edificios de más de 70 años también pueden requerir trabajos extra.</p>
+      </div>
+
+      <div class="calculator-seo-faq-item">
+        <h3>¿Cómo consigo un presupuesto real para mi reforma?</h3>
+        <p>Usa la calculadora para tener una primera referencia. Después, contacta con 2-3 empresas locales pidiendo presupuestos detallados que incluyan: desglose de materiales, mano de obra, plazos y garantía. <a href="../blog/empresas-reformas-bilbao.html">Consulta nuestra guía para elegir empresa de reformas en Bilbao</a>.</p>
+      </div>
+    </section>
+
+    <!-- Internal links to blog -->
+    <section class="calculator-seo-links">
+      <h2 class="calculator-seo-title">Artículos Relacionados</h2>
+      <ul class="calculator-seo-links-list">
+        <li><a href="../blog/precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a></li>
+        <li><a href="../blog/reforma-80m2-bilbao-ejemplo.html">Ejemplo Real: Reforma de Piso de 80m² en Bilbao</a></li>
+        <li><a href="../blog/empresas-reformas-bilbao.html">Cómo Elegir una Empresa de Reformas en Bilbao</a></li>
+        <li><a href="../blog/reforma-bano-bilbao.html">Reforma de Baño en Bilbao: Precios 2025</a></li>
+        <li><a href="../blog/reforma-cocina-bilbao.html">Reforma de Cocina en Bilbao: Precios y Guía 2025</a></li>
+        <li><a href="../reformas-bilbao.html">Reformas Bilbao 2025: Empresas, Precios y Guía Completa</a></li>
+      </ul>
+    </section>
   </main>
 
   <!-- AdSense Placeholder -->
