@@ -24,6 +24,28 @@
         grid-template-columns: 1fr !important;
       }
     }
+    .blog-filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid #C45C3E;
+      background: transparent;
+      color: #C45C3E;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #C45C3E;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -66,8 +88,19 @@
       <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
     </div>
 
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bano">Baño</button>
+      <button class="filter-btn" data-filter="cocina">Cocina</button>
+      <button class="filter-btn" data-filter="suelo">Suelo</button>
+      <button class="filter-btn" data-filter="integral">Integral</button>
+      <button class="filter-btn" data-filter="calefaccion">Calefacción</button>
+      <button class="filter-btn" data-filter="legal">Legal</button>
+      <button class="filter-btn" data-filter="empresas">Empresas</button>
+    </div>
+
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-      <a href="/blog/errores-comunes-reforma-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/errores-comunes-reforma-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F6E8E4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Errores</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
@@ -76,7 +109,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Los 12 fallos más costosos al reformar en Bilbao: presupuestos, licencias, contratos y más. Cómo evitarlos sin sorpresas.</p>
       </a>
 
-      <a href="/blog/reformas-bilbao-guia-2025.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reformas-bilbao-guia-2025.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: var(--color-terracota-light); color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Guía</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
@@ -85,7 +118,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo sobre reformas en Bilbao: precios por m², barrios, licencias en Bizkaia, cómo elegir empresa y errores a evitar.</p>
       </a>
 
-      <a href="/blog/reforma-bano-bilbao-2025.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reforma-bano-bilbao-2025.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8F0E4; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Baño</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
@@ -94,7 +127,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Precio reforma baño Bilbao. Costes por partidas, tendencias en baños, cómo ahorrar y qué evitar. Guía actualizada.</p>
       </a>
 
-      <a href="/blog/precio-reforma-integral-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/precio-reforma-integral-bilbao.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: var(--color-terracota-light); color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Guía</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
@@ -103,7 +136,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo lo que necesitas saber sobre presupuestos para reformas integrales en Bilbao. Precios por m² según calidades y ejemplos reales.</p>
       </a>
 
-      <a href="/blog/reforma-cocina-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8F0E4; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Cocina</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
@@ -112,7 +145,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">¿Cuánto cuesta reformar una cocina en Bilbao? Encimeras, muebles, instalaciones y tendencias para 2025.</p>
       </a>
 
-      <a href="/blog/pintar-piso-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/pintar-piso-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8D5C4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Pintura</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">5 min lectura</span>
@@ -121,7 +154,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Precios de pintura por m², tipos de pintura, preparación de paredes y errores frecuentes que hacen subir el precio.</p>
       </a>
 
-      <a href="/blog/subvenciones-reformas-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/subvenciones-reformas-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F5EBE6; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Ahorro</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
@@ -130,7 +163,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Ayudas y subvenciones disponibles para renovar tu vivienda en Bilbao. Renove, fondos europeos y programas locales.</p>
       </a>
 
-      <a href="/blog/reformas-casco-viejo-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reformas-casco-viejo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F6FBF0; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Casco Viejo</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">9 min lectura</span>
@@ -139,7 +172,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Reformar en el Casco Viejo tiene particularidades únicas: Patrimonio, licencias especiales, accesos difíciles y materiales de época.</p>
       </a>
 
-      <a href="/blog/suelo-radiante-vs-calefaccion.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/suelo-radiante-vs-calefaccion.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8D5C4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Calefacción</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">12 min lectura</span>
@@ -148,7 +181,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Comparativa completa: precios de instalación, consumo, mantenimiento y ahorro energético. ¿Qué conviene en Bilbao?</p>
       </a>
 
-      <a href="/blog/suelo-radiante-ventajas-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/suelo-radiante-ventajas-bilbao.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8D5C4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Calefacción</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
@@ -157,7 +190,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Ahorro energético, confort térmico, compatible con aerotermia. Descubre todas las ventajas del suelo radiante.</p>
       </a>
 
-      <a href="/blog/cambiar-suelo-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/cambiar-suelo-bilbao.html" class="article-card" data-category="suelo" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8E2D9; color: var(--color-gris); padding: 0.25rem 0.5rem; border-radius: 4px;">Suelo</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
@@ -166,7 +199,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Comparativa de precios y características de los principales tipos de suelo. ¿Qué elegir según tu presupuesto y necesidades?</p>
       </a>
 
-      <a href="/blog/reforma-bano-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8F0E4; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Baño</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
@@ -175,7 +208,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo sobre presupuestos para reformar el baño en Bilbao. Desde cambio de bañera hasta reforma integral.</p>
       </a>
 
-      <a href="/blog/errores-reforma-cocina-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/errores-reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8D5C4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Cocina</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
@@ -184,7 +217,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Los 8 errores máscostosos al reformar la cocina y cómo evitarlos. Consejos de expertos locales.</p>
       </a>
 
-      <a href="/blog/tiempo-reforma-integral-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/tiempo-reforma-integral-bilbao.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: var(--color-terracota-light); color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Guía</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
@@ -193,7 +226,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Plazos reales para una reforma integral en Bilbao según tipo de vivienda y tamaño. Incluye calendario orientativo.</p>
       </a>
 
-      <a href="/blog/licencias-obra-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/licencias-obra-bilbao.html" class="article-card" data-category="legal" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F5EBE6; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Legal</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">5 min lectura</span>
@@ -202,7 +235,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Tipos de licencias, tiempos de tramitación y costes en el Ayuntamiento de Bilbao para reformas.</p>
       </a>
 
-      <a href="/blog/reforma-80m2-bilbao-ejemplo.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reforma-80m2-bilbao-ejemplo.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: var(--color-terracota-light); color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Ejemplo</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
@@ -211,7 +244,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Caso práctico real desglosado: partidas, precios y resultado de una reforma integral en un piso bilbaino típico.</p>
       </a>
 
-      <a href="/blog/empresas-reformas-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/empresas-reformas-bilbao.html" class="article-card" data-category="empresas" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8F0E4; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Empresas</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
@@ -220,7 +253,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Preguntas clave, checklist de verificación y señales de alerta al contratar una empresa de reformas.</p>
       </a>
 
-      <a href="/blog/renovar-piso-antiguo-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/renovar-piso-antiguo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F6FBF0; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Renovar</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
@@ -229,7 +262,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Especialistas en pisos de más de 30 años. Qué reformas priorizan, problemas típicos y soluciones.</p>
       </a>
 
-      <a href="/blog/rehabilitacion-edificio-antiguo-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/rehabilitacion-edificio-antiguo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #F6FBF0; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Casco Viejo</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">9 min lectura</span>
@@ -238,7 +271,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Guía para rehabilitar edificios históricos en Bilbao: Patrimonio, estructura, fachadas y ayudas disponibles.</p>
       </a>
 
-      <a href="/blog/reforma-vs-comprar-bilbao.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/reforma-vs-comprar-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8D5C4; color: var(--color-terracota); padding: 0.25rem 0.5rem; border-radius: 4px;">Decisión</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
@@ -247,7 +280,7 @@
         <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Análisis comparativo real. Costes, tiempo, esfuerzo y retorno de inversión para cada opción.</p>
       </a>
 
-      <a href="/blog/aerotermia-bilbao-ventajas.html" class="article-card" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+      <a href="/blog/aerotermia-bilbao-ventajas.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
           <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; background: #E8F0E4; color: var(--color-verde-montana); padding: 0.25rem 0.5rem; border-radius: 4px;">Eficiencia</span>
           <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
@@ -308,5 +341,24 @@
       btn.setAttribute('aria-expanded', isOpen);
     });
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const btns = document.querySelectorAll('.filter-btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.article-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
