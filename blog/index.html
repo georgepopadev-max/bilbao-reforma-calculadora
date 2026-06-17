@@ -402,9 +402,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const filter = btn.dataset.filter;
       document.querySelectorAll('.article-card').forEach(card => {
         if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = '';
+          card.style.display = 'block';
+          card.style.visibility = 'visible';
         } else {
           card.style.display = 'none';
+          card.style.visibility = 'hidden';
         }
       });
     });
