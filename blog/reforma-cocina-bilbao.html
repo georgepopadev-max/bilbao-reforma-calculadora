@@ -467,6 +467,23 @@
       </div>
     </main>
 
+    <!-- Mobile sidebar fallback -->
+    <aside class="mobile-sidebar" style="display:none; padding: 1.5rem 1rem; background: #f8f4f0; margin-top: 2rem;">
+      <h3 style="font-size: 1rem; margin-bottom: 1rem;">Artículos relacionados</h3>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="margin-bottom: 0.75rem;"><a href="reforma-cocina-bilbao.html" style="color: #C45C3E; text-decoration: none;">Reforma Cocina Bilbao</a></li>
+        <li style="margin-bottom: 0.75rem;"><a href="reforma-bano-bilbao.html" style="color: #C45C3E; text-decoration: none;">Reforma Baño Bilbao</a></li>
+        <li style="margin-bottom: 0.75rem;"><a href="pintar-piso-bilbao.html" style="color: #C45C3E; text-decoration: none;">Pintar Piso Bilbao</a></li>
+        <li style="margin-bottom: 0.75rem;"><a href="../calculadora/index.html" style="color: #C45C3E; text-decoration: none;">Calculadora Reformas</a></li>
+      </ul>
+    </aside>
+
+    <style>
+    @media (max-width: 1023px) {
+      .mobile-sidebar { display: block !important; }
+    }
+    </style>
+
     <aside class="article-sidebar">
       <div class="sidebar-widget">
         <h3 class="sidebar-widget-title">Artículos sobre Cocina</h3>
@@ -543,6 +560,16 @@
       var isOpen = menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen);
     });
+    // Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    var btn = document.getElementById('mobileToggle');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
+});
+
   </script>
 </body>
 </html>

@@ -402,8 +402,10 @@
       gap: 0.5rem;
     }
     .paint-extra-qty-btn {
-      width: 28px;
-      height: 28px;
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      min-height: 36px;
       border-radius: 6px;
       border: 1px solid var(--color-beje);
       background: var(--color-blanco);
@@ -420,7 +422,8 @@
     }
     .paint-extra-qty-input {
       width: 40px;
-      height: 28px;
+      height: 36px;
+      min-height: 36px;
       border-radius: 6px;
       border: 1px solid var(--color-beje);
       background: var(--color-blanco);
@@ -1541,6 +1544,16 @@
       var isOpen = menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen);
     });
+    // Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    var btn = document.getElementById('mobileToggle');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
+});
+
   </script>
 </body>
 </html>
