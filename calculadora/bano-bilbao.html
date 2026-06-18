@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
 
-<title>Calculadora de Reforma de Baño en Bilbao 2026</title>
+  <title>Calculadora de Reforma de Baño en Bilbao 2026</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23C45C3E' rx='12' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>B</text></svg>">
@@ -26,7 +26,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="../css/styles.css">
-<!-- Canonical URL -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://bilbaoreforma.es/calculadora/bano-bilbao.html">
 
   <!-- Schema.org WebSite with CalculateAction -->
@@ -40,7 +40,7 @@
       "@type": "CalculateAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://bilbaoreforma.es/calculadora/bano-bilbao.html?preset=bano",
+        "urlTemplate": "https://bilbaoreforma.es/calculadora/bano-bilbao.html",
         "actionPlatform": ["http://schema.org/DesktopWebPlatform"]
       },
       "object": {
@@ -51,24 +51,7 @@
   }
   </script>
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Cómo calcular presupuesto reforma baño en Bilbao 2025",
-    "description": "Aprende a usar nuestra calculadora para obtener un presupuesto orientativo de tu reforma de baño en Bilbao. Sin registro, en 2 minutos.",
-    "step": [
-      {"@type": "HowToStep", "name": "Selecciona tipo de reforma", "position": 1, "text": "Elige entre reforma completa de vivienda o selecciona estancias individuales como baño, cocina, pintura o suelo."},
-      {"@type": "HowToStep", "name": "Indica los metros cuadrados", "position": 2, "text": "Usa el slider o escribe directamente los m² de tu vivienda (20-500 m²)."},
-      {"@type": "HowToStep", "name": "Elige la antigüedad del edificio", "position": 3, "text": "Los edificios de más de 40 años pueden necesitar renovación de tuberías y electricidad, lo que aumenta el presupuesto."},
-      {"@type": "HowToStep", "name": "Selecciona calidad de materiales", "position": 4, "text": "Básica ( Leroy Merlin), Media (Roca, Grohe) o Premium (Villeroy & Boch, Hansgrohe)."},
-      {"@type": "HowToStep", "name": "Añade extras opcionales", "position": 5, "text": "Ventanas, terraza, suelo radiante, domótica o aerotermia. Cada uno tiene un coste adicional."},
-      {"@type": "HowToStep", "name": "Recibe tu presupuesto orientativo", "position": 6, "text": "Obtén una horquilla de precio orientativa y descarga el PDF con el desglose completo."}
-    ]
-  }
-  </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045202932904797" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045202932904797" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- ============================================
@@ -121,37 +104,49 @@
       <p style="font-size:1rem;line-height:1.6;color:#555;">Obtén un <strong>presupuesto orientativo para reforma de Baño en Bilbao</strong> en menos de 2 minutos. Datos basados en precios reales de empresas de reformas en Bizkaia, actualizados 2026.</p>
     </section>
 
+    <!-- Hidden inputs for result -->
+    <input type="hidden" id="totalPrice" name="totalPrice" value="">
+    <input type="hidden" id="priceRange" name="priceRange" value="">
+
     <div class="calculator-wrapper">
       <!-- Progress Bar -->
       <div class="progress-container" id="progressContainer">
         <div class="progress-steps">
           <div class="progress-step active" data-step="1" onclick="window.BilbaoCalc.goToStep(1)">
             <span class="progress-step-number">1</span>
-            <span class="progress-step-label">Tipo</span>
+            <span class="progress-step-label">Metros</span>
           </div>
           <div class="progress-step" data-step="2" onclick="window.BilbaoCalc.goToStep(2)">
             <span class="progress-step-number">2</span>
-            <span class="progress-step-label">Metros</span>
+            <span class="progress-step-label">Ducha/Bañera</span>
           </div>
           <div class="progress-step" data-step="3" onclick="window.BilbaoCalc.goToStep(3)">
             <span class="progress-step-number">3</span>
-            <span class="progress-step-label">Edificio</span>
+            <span class="progress-step-label">Revestimiento</span>
           </div>
           <div class="progress-step" data-step="4" onclick="window.BilbaoCalc.goToStep(4)">
             <span class="progress-step-number">4</span>
-            <span class="progress-step-label">Calidad</span>
+            <span class="progress-step-label">Sanitarios</span>
           </div>
           <div class="progress-step" data-step="5" onclick="window.BilbaoCalc.goToStep(5)">
             <span class="progress-step-number">5</span>
-            <span class="progress-step-label">Extras</span>
+            <span class="progress-step-label">Suelo</span>
           </div>
           <div class="progress-step" data-step="6" onclick="window.BilbaoCalc.goToStep(6)">
             <span class="progress-step-number">6</span>
+            <span class="progress-step-label">Extras</span>
+          </div>
+          <div class="progress-step" data-step="7" onclick="window.BilbaoCalc.goToStep(7)">
+            <span class="progress-step-number">7</span>
+            <span class="progress-step-label">Edificio</span>
+          </div>
+          <div class="progress-step" data-step="8" onclick="window.BilbaoCalc.goToStep(8)">
+            <span class="progress-step-number">8</span>
             <span class="progress-step-label">Resultado</span>
           </div>
         </div>
         <div class="progress-bar-track">
-          <div class="progress-bar-fill" id="progressBarFill" style="width: 16.67%"></div>
+          <div class="progress-bar-fill" id="progressBarFill" style="width: 12.5%"></div>
         </div>
       </div>
 
@@ -159,123 +154,63 @@
       <div class="wizard-container" id="wizardContainer">
 
         <!-- ============================================
-             STEP 1: Tipo de Reforma
+             STEP 1: Metros del Baño
              ============================================ -->
         <div class="wizard-step active" id="step1" data-step="1">
           <div class="step-header">
-            <h1 class="step-title">¿Qué quieres reformar?</h1>
-            <p class="step-subtitle">Selecciona el tipo de reforma que necesitas</p>
+            <h1 class="step-title">¿Cuántos metros tiene tu baño?</h1>
+            <p class="step-subtitle">Indica los metros cuadrados del baño a reformar</p>
           </div>
 
-          <!-- SECCIÓN A: Reforma Completa (Scope) -->
-          <div class="scope-section">
-            <div class="scope-section-header">
-              <h2 class="scope-section-title">Reforma completa</h2>
-              <p class="scope-section-desc">Incluye todos los trabajos: fontanería, electricidad, suelos y pintura en toda la vivienda</p>
-            </div>
-            <div class="scope-cards-grid">
-              <!-- Básica -->
-              <div class="scope-card" data-scope="basic" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('basic')">
-                <div class="scope-card-icon">🏠</div>
-                <div class="scope-card-label">Reforma básica</div>
-                <div class="scope-card-desc">Pintura, suelos, baños y cocina con materiales estándar. Ideal para actualizar un piso usado.</div>
-                <div class="scope-card-price">550–700 €/m²</div>
-                <div class="scope-card-selected-mark"></div>
-              </div>
-              <!-- Media -->
-              <div class="scope-card" data-scope="medium" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('medium')">
-                <div class="scope-card-icon">🏡</div>
-                <div class="scope-card-label">Reforma media</div>
-                <div class="scope-card-desc">Mejor calidad de materiales, incluye electricidad nueva y certificados. Recomendada para pisos de 20-40 años.</div>
-                <div class="scope-card-price">700–950 €/m²</div>
-                <div class="scope-card-selected-mark"></div>
-              </div>
-              <!-- Integral -->
-              <div class="scope-card" data-scope="integral" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('integral')">
-                <div class="scope-card-icon">🏗️</div>
-                <div class="scope-card-label">Reforma integral</div>
-                <div class="scope-card-desc">Todo incluido: fontanería, electricidad, falsos techos, parquet, pintura, baños y cocina. Llaves en mano.</div>
-                <div class="scope-card-price">900–1.300 €/m²</div>
-                <div class="scope-card-selected-mark"></div>
-              </div>
-              <!-- Premium -->
-              <div class="scope-card scope-card-premium" data-scope="luxury" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectScope('luxury')">
-                <div class="scope-card-icon">✨</div>
-                <div class="scope-card-label">Reforma premium</div>
-                <div class="scope-card-desc">Materiales de alta gama, domótica, aerotermia, diseño interior. Para viviendas que buscan el máximo acabado.</div>
-                <div class="scope-card-price">1.300–1.600 €/m²</div>
-                <div class="scope-card-selected-mark"></div>
-              </div>
-            </div>
-          </div>
+          <div class="meters-input-group">
+            <label class="meters-label" for="metersInput">Metros cuadrados</label>
 
-          <!-- Divider entre secciones -->
-          <div class="step-section-divider">
-            <span class="step-divider-text">o bien, selecciona estancias sueltas</span>
-          </div>
-
-          <!-- SECCIÓN B: Estancias Individuales (Type) -->
-          <div class="type-section">
-            <div class="type-section-header">
-              <h2 class="type-section-title">Selecciona estancias individuales</h2>
-              <p class="type-section-desc">Si no necesitas una reforma completa, elige solo las estancias que quieras reformar</p>
+            <div class="meters-value-display">
+              <span class="meters-value-number" id="metersDisplayValue">6</span>
+              <span class="meters-value-unit">m²</span>
             </div>
-            <div class="type-cards-grid">
-              <!-- Pintura -->
-              <div class="type-card" data-reform="pintura" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('painting')">
-                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M19 11H5a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4h.5"></path>
-                  <path d="M12 11V3"></path>
-                  <path d="M8 7l4-4 4 4"></path>
-                  <path d="M19 15H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14"></path>
-                </svg>
-                <div class="type-card-name">Pintura</div>
-                <div class="type-card-price">12–25 €/m²</div>
-              </div>
-              <!-- Suelo -->
-              <div class="type-card" data-reform="suelo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('flooring')">
-                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                  <path d="M3 9h18"></path>
-                  <path d="M3 15h18"></path>
-                  <path d="M9 3v18"></path>
-                  <path d="M15 3v18"></path>
-                </svg>
-                <div class="type-card-name">Suelo</div>
-                <div class="type-card-price">35–140 €/m²</div>
-              </div>
-              <!-- Baño -->
-              <div class="type-card" data-reform="bano" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('bathroom')">
-                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.7 3 4 3.7 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path>
-                  <line x1="10" y1="5" x2="8" y2="7"></line>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <line x1="7" y1="19" x2="7" y2="21"></line>
-                  <line x1="17" y1="19" x2="17" y2="21"></line>
-                </svg>
-                <div class="type-card-name">Baño completo</div>
-                <div class="type-card-price">3.000–12.000 €</div>
-              </div>
-              <!-- Cocina -->
-              <div class="type-card" data-reform="cocina" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleReformType('kitchen')">
-                <svg class="type-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 11h18"></path>
-                  <path d="M5 11V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"></path>
-                  <path d="M5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"></path>
-                  <path d="M12 4v4"></path>
-                  <path d="M8 4v2"></path>
-                  <path d="M16 4v2"></path>
-                  <circle cx="8" cy="16" r="1"></circle>
-                  <circle cx="12" cy="16" r="1"></circle>
-                </svg>
-                <div class="type-card-name">Cocina</div>
-                <div class="type-card-price">5.000–16.000 €</div>
-              </div>
+
+            <input
+              type="number"
+              id="metersInput"
+              class="meters-input"
+              value="6"
+              min="3"
+              max="20"
+              placeholder="3–20"
+              aria-label="Metros cuadrados del baño"
+              oninput="window.BilbaoCalc.updateSqm(this.value)"
+            >
+
+            <input
+              type="range"
+              id="metersSlider"
+              class="meters-slider"
+              min="3"
+              max="20"
+              value="6"
+              aria-label="Slider de metros cuadrados"
+              oninput="window.BilbaoCalc.updateSqm(this.value)"
+            >
+
+            <div class="meters-presets">
+              <button class="meters-preset-btn" data-meters="4" type="button" onclick="window.BilbaoCalc.updateSqm(4)">
+                Baño pequeño<br><span style="font-weight: 400; opacity: 0.7">~4–5 m²</span>
+              </button>
+              <button class="meters-preset-btn" data-meters="7" type="button" onclick="window.BilbaoCalc.updateSqm(7)">
+                Baño estándar<br><span style="font-weight: 400; opacity: 0.7">~6–8 m²</span>
+              </button>
+              <button class="meters-preset-btn" data-meters="11" type="button" onclick="window.BilbaoCalc.updateSqm(11)">
+                Baño grande<br><span style="font-weight: 400; opacity: 0.7">~10–12 m²</span>
+              </button>
+              <button class="meters-preset-btn" data-meters="16" type="button" onclick="window.BilbaoCalc.updateSqm(16)">
+                Baño master<br><span style="font-weight: 400; opacity: 0.7">&gt;15 m²</span>
+              </button>
             </div>
           </div>
 
           <nav class="wizard-nav">
-            <button class="wizard-nav-btn wizard-nav-btn-next" id="step1Next" onclick="try { window.BilbaoCalc.nextStep(); } catch(e) { console.error(e); alert('Error: ' + e); }">
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step1Next" onclick="window.BilbaoCalc.nextStep()" type="button">
               Continuar
               <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -286,55 +221,45 @@
         </div>
 
         <!-- ============================================
-             STEP 2: Metros Cuadrados
+             STEP 2: Elemento Principal (Ducha vs Bañera)
              ============================================ -->
         <div class="wizard-step" id="step2" data-step="2">
           <div class="step-header">
-            <h1 class="step-title">¿Cuántos metros tiene tu vivienda?</h1>
-            <p class="step-subtitle">Indica los metros cuadrados a reformar</p>
+            <h1 class="step-title">¿Qué elemento principal quieres instalar?</h1>
+            <p class="step-subtitle">Selecciona la opción que mejor se adapte a tu baño</p>
           </div>
 
-          <div class="meters-input-group">
-            <label class="meters-label" for="metersInput">Metros cuadrados</label>
-
-            <div class="meters-value-display">
-              <span class="meters-value-number" id="metersDisplayValue">80</span>
-              <span class="meters-value-unit">m²</span>
+          <div class="age-options" id="mainElementOptions">
+            <div class="age-option selected" data-value="ducha" role="button" tabindex="0" aria-pressed="true" onclick="window.BilbaoCalc.selectOption('mainElement', 'ducha')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Solo ducha</div>
+                <div class="age-option-desc">Plato de ducha o walk-in</div>
+              </div>
             </div>
 
-            <input
-              type="number"
-              id="metersInput"
-              class="meters-input"
-              value="80"
-              min="20"
-              max="500"
-              placeholder="20–500"
-              aria-label="Metros cuadrados"
-              oninput="window.BilbaoCalc.updateSqm(this.value)"
-            >
+            <div class="age-option" data-value="banera" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('mainElement', 'banera')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Solo bañera</div>
+                <div class="age-option-desc">Bañera estándar o de hidromasaje</div>
+              </div>
+            </div>
 
-            <input
-              type="range"
-              id="metersSlider"
-              class="meters-slider"
-              min="20"
-              max="500"
-              value="80"
-              aria-label="Slider de metros cuadrados"
-              oninput="window.BilbaoCalc.updateSqm(this.value)"
-            >
+            <div class="age-option" data-value="ducha_banera" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('mainElement', 'ducha_banera')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Ducha + bañera</div>
+                <div class="age-option-desc">Ambos elementos en el baño</div>
+              </div>
+            </div>
 
-            <div class="meters-presets">
-              <button class="meters-preset-btn" data-meters="70" type="button" onclick="window.BilbaoCalc.updateSqm(70)">
-                Piso 2 hab<br><span style="font-weight: 400; opacity: 0.7">~70 m²</span>
-              </button>
-              <button class="meters-preset-btn" data-meters="90" type="button" onclick="window.BilbaoCalc.updateSqm(90)">
-                Piso 3 hab<br><span style="font-weight: 400; opacity: 0.7">~90 m²</span>
-              </button>
-              <button class="meters-preset-btn" data-meters="120" type="button" onclick="window.BilbaoCalc.updateSqm(120)">
-                Ático<br><span style="font-weight: 400; opacity: 0.7">~120 m²</span>
-              </button>
+            <div class="age-option" data-value="sanitarios" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('mainElement', 'sanitarios')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Cambio de sanitarios sin obra</div>
+                <div class="age-option-desc">Solo cambiar inodoro, lavabo sin cambiar instalación</div>
+              </div>
             </div>
           </div>
 
@@ -357,9 +282,422 @@
         </div>
 
         <!-- ============================================
-             STEP 3: Antigüedad del Edificio
+             STEP 3: Tipo de Ducha (si aplica)
              ============================================ -->
         <div class="wizard-step" id="step3" data-step="3">
+          <div class="step-header">
+            <h1 class="step-title">¿Qué tipo de ducha quieres?</h1>
+            <p class="step-subtitle">Selecciona el tipo de ducha o bañera</p>
+          </div>
+
+          <div class="age-options" id="duchaTypeOptions">
+            <div class="age-option selected" data-value="plato_convencional" role="button" tabindex="0" aria-pressed="true" onclick="window.BilbaoCalc.selectOption('duchaType', 'plato_convencional')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Plato de ducha convencional</div>
+                <div class="age-option-desc">Modelo estándar con mampara</div>
+              </div>
+              <span class="age-option-badge">+400–800 €</span>
+            </div>
+
+            <div class="age-option" data-value="walk_in" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('duchaType', 'walk_in')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Ducha a ras de suelo (walk-in)</div>
+                <div class="age-option-desc">Diseño moderno, acceso sin barreras</div>
+              </div>
+              <span class="age-option-badge">+800–2.000 €</span>
+            </div>
+
+            <div class="age-option" data-value="mampara_corredera" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('duchaType', 'mampara_corredera')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Ducha con mampara corredera</div>
+                <div class="age-option-desc">Plato con mampara de puertas correderas</div>
+              </div>
+              <span class="age-option-badge">+500–1.200 €</span>
+            </div>
+
+            <div class="age-option" data-value="banera_acero" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('duchaType', 'banera_acero')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Bañera de acero/acrílico</div>
+                <div class="age-option-desc">Modelo estándar empotrado</div>
+              </div>
+              <span class="age-option-badge">+600–1.200 €</span>
+            </div>
+
+            <div class="age-option" data-value="banera_hidro" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('duchaType', 'banera_hidro')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Bañera de hidromasaje / exenta</div>
+                <div class="age-option-desc">Jacuzzi o bañera exenta de diseño</div>
+              </div>
+              <span class="age-option-badge">+2.000–5.000 €</span>
+            </div>
+          </div>
+
+          <nav class="wizard-nav">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step3Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Atrás
+            </button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step3Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+              Continuar
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- ============================================
+             STEP 4: Revestimiento (Azulejos)
+             ============================================ -->
+        <div class="wizard-step" id="step4" data-step="4">
+          <div class="step-header">
+            <h1 class="step-title">¿Qué revestimiento quieres para las paredes?</h1>
+            <p class="step-subtitle">Selecciona el tipo de azulejo o acabados</p>
+          </div>
+
+          <div class="age-options" id="revestimientoOptions">
+            <div class="age-option selected" data-value="no_cambiar" role="button" tabindex="0" aria-pressed="true" onclick="window.BilbaoCalc.selectOption('revestimiento', 'no_cambiar')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">No se cambia azulejo</div>
+                <div class="age-option-desc">Se mantiene el revestimiento existente</div>
+              </div>
+            </div>
+
+            <div class="age-option" data-value="azulejo_parcial" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('revestimiento', 'azulejo_parcial')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Azulejo parcial (hasta 1m altura)</div>
+                <div class="age-option-desc">Revestimiento en zona de ducha/sanitarios</div>
+              </div>
+            </div>
+
+            <div class="age-option" data-value="azulejo_completo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('revestimiento', 'azulejo_completo')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Azulejo completo</div>
+                <div class="age-option-desc">Paredes alicatadas al completo</div>
+              </div>
+            </div>
+
+            <div class="age-option" data-value="gresite" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('revestimiento', 'gresite')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Gresite (estilo rústico/povera)</div>
+                <div class="age-option-desc">Azulejo de pasta de vidrio, estilo mediterráneo</div>
+              </div>
+              <span class="age-option-badge">+30–50%</span>
+            </div>
+          </div>
+
+          <nav class="wizard-nav">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step4Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Atrás
+            </button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step4Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+              Continuar
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- ============================================
+             STEP 5: Sanitarios
+             ============================================ -->
+        <div class="wizard-step" id="step5" data-step="5">
+          <div class="step-header">
+            <h1 class="step-title">¿Qué sanitarios quieres instalar?</h1>
+            <p class="step-subtitle">Selecciona las opciones de inodoro y lavabo</p>
+          </div>
+
+          <div class="extras-grid" id="sanitariosGrid">
+            <!-- Inodoro -->
+            <div class="extra-checkbox-item" data-extra="inodoro_estandar" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('inodoro_estandar')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">Inodoro estándar (a suelo)</div>
+                <div class="extra-desc">Modelo básico de porcelana</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">Incluido</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="inodoro_suspendido" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('inodoro_suspendido')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">Inodoro suspendido (empotrado)</div>
+                <div class="extra-desc">Modelo con bastidor empotrado en pared</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+400–800 €</span>
+              </div>
+            </div>
+
+            <!-- Lavabo -->
+            <div class="extra-checkbox-item" data-extra="lavabo_pedestal" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('lavabo_pedestal')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">Lavabo de pedestal</div>
+                <div class="extra-desc">Modelo clásico con pie soporte</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">Incluido</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="lavabo_encastrado" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('lavabo_encastrado')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">Lavabo encastrado / sobre encimera</div>
+                <div class="extra-desc">Modelo de integración o encimera</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+200–600 €</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="bidet" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('bidet')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Bidet?</div>
+                <div class="extra-desc">Sanitario adicional alongside inodoro</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+300–600 €</span>
+              </div>
+            </div>
+          </div>
+
+          <nav class="wizard-nav">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step5Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Atrás
+            </button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step5Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+              Continuar
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- ============================================
+             STEP 6: Suelo del Baño
+             ============================================ -->
+        <div class="wizard-step" id="step6" data-step="6">
+          <div class="step-header">
+            <h1 class="step-title">¿Qué suelo quieres para el baño?</h1>
+            <p class="step-subtitle">Selecciona el material del suelo</p>
+          </div>
+
+          <div class="age-options" id="sueloOptions">
+            <div class="age-option selected" data-value="gres_antideslizante" role="button" tabindex="0" aria-pressed="true" onclick="window.BilbaoCalc.selectOption('suelo', 'gres_antideslizante')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Gres antideslizante</div>
+                <div class="age-option-desc">Material cerámico resistente al deslizamiento</div>
+              </div>
+              <span class="age-option-badge">Incluido</span>
+            </div>
+
+            <div class="age-option" data-value="gresite_suelo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('suelo', 'gresite_suelo')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Gresite</div>
+                <div class="age-option-desc">Azulejo de pasta de vidrio, estilo rústico</div>
+              </div>
+              <span class="age-option-badge">+40–60 €/m²</span>
+            </div>
+
+            <div class="age-option" data-value="microcemento" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('suelo', 'microcemento')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Microcemento</div>
+                <div class="age-option-desc">Acabado continuo, moderno y sin juntas</div>
+              </div>
+              <span class="age-option-badge">+70–120 €/m²</span>
+            </div>
+
+            <div class="age-option" data-value="piedra_natural" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.selectOption('suelo', 'piedra_natural')">
+              <div class="age-option-radio"></div>
+              <div class="age-option-content">
+                <div class="age-option-title">Piedra natural</div>
+                <div class="age-option-desc">Mármol, pizarra o granito pulido</div>
+              </div>
+              <span class="age-option-badge">+100–200 €/m²</span>
+            </div>
+          </div>
+
+          <nav class="wizard-nav">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step6Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Atrás
+            </button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step6Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+              Continuar
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- ============================================
+             STEP 7: Extras
+             ============================================ -->
+        <div class="wizard-step" id="step7" data-step="7">
+          <div class="step-header">
+            <h1 class="step-title">¿Algún extra?</h1>
+            <p class="step-subtitle">Selecciona elementos adicionales (opcional)</p>
+          </div>
+
+          <div class="extras-grid" id="extrasGrid">
+            <div class="extra-checkbox-item" data-extra="mueble_lavabo" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('mueble_lavabo')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Mueble lavabo?</div>
+                <div class="extra-desc">Mueble con cajones y puertas</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+300–1.200 €</span>
+                <span class="extra-unit">según modelo</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="espejo_led" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('espejo_led')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Espejo con LED?</div>
+                <div class="extra-desc">Espejo con iluminación integrada</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+150–400 €</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="extractor" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('extractor')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Extractor de aire?</div>
+                <div class="extra-desc">Ventilador para extracción de humedad</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+150–300 €</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="mover_fontaneria" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('mover_fontaneria')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Mover puntos de fontanería?</div>
+                <div class="extra-desc">Desplazar tomas de agua y desagües</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+500–1.500 €</span>
+                <span class="extra-unit">según distancia</span>
+              </div>
+            </div>
+
+            <div class="extra-checkbox-item" data-extra="tuberias_vistas" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('tuberias_vistas')">
+              <div class="extra-checkbox">
+                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="extra-content">
+                <div class="extra-title">¿Tuberías vistas (edificio antiguo)?</div>
+                <div class="extra-desc">Instalación vista sin empotrar</div>
+              </div>
+              <div class="extra-bottom-row">
+                <span class="extra-price">+200–500 €</span>
+              </div>
+            </div>
+          </div>
+
+          <nav class="wizard-nav">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step7Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Atrás
+            </button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step7Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+              Continuar
+              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- ============================================
+             STEP 8: Calidad del Edificio
+             ============================================ -->
+        <div class="wizard-step" id="step8" data-step="8">
           <div class="step-header">
             <h1 class="step-title">¿Qué tipo de edificio?</h1>
             <p class="step-subtitle">La antigüedad afecta al coste por posibles instalaciones</p>
@@ -413,217 +751,14 @@
           </div>
 
           <nav class="wizard-nav">
-            <button class="wizard-nav-btn wizard-nav-btn-back" id="step3Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+            <button class="wizard-nav-btn wizard-nav-btn-back" id="step8Back" onclick="window.BilbaoCalc.prevStep()" type="button">
               <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
               </svg>
               Atrás
             </button>
-            <button class="wizard-nav-btn wizard-nav-btn-next" id="step3Next" onclick="window.BilbaoCalc.nextStep()" type="button">
-              Continuar
-              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </nav>
-        </div>
-
-        <!-- ============================================
-             STEP 4: Nivel de Calidad
-             ============================================ -->
-        <div class="wizard-step" id="step4" data-step="4">
-          <div class="step-header">
-            <h1 class="step-title">¿Qué calidad de materiales prefieres?</h1>
-            <p class="step-subtitle">Elige el nivel de acabado que deseas</p>
-          </div>
-
-          <div class="quality-cards" id="qualityCards">
-            <div class="quality-card badge-basica" data-quality="basica" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.updateQuality('basic')">
-              <span class="quality-card-badge">Económica</span>
-              <div class="quality-card-name">Básica</div>
-              <div class="quality-card-desc">Acabados funcionales, marcas blancas y estándar</div>
-              <div class="quality-card-brands">Leroy Merlin, marca blanca</div>
-            </div>
-
-            <div class="quality-card badge-media selected" data-quality="media" role="button" tabindex="0" aria-pressed="true" onclick="window.BilbaoCalc.updateQuality('medium')">
-              <span class="quality-card-badge">Recomendada</span>
-              <div class="quality-card-name">Media</div>
-              <div class="quality-card-desc">Buena relación calidad-precio, marcas reconocidas</div>
-              <div class="quality-card-brands">Cosentino, Porcelanosa, Roca, Grohe</div>
-            </div>
-
-            <div class="quality-card badge-premium" data-quality="premium" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.updateQuality('premium')">
-              <span class="quality-card-badge">Alta gama</span>
-              <div class="quality-card-name">Premium</div>
-              <div class="quality-card-desc">Acabados de lujo, materiales premium</div>
-              <div class="quality-card-brands">Dekton, Saloni, Villeroy & Boch, Hansgrohe</div>
-            </div>
-          </div>
-
-          <nav class="wizard-nav">
-            <button class="wizard-nav-btn wizard-nav-btn-back" id="step4Back" onclick="window.BilbaoCalc.prevStep()" type="button">
-              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-              </svg>
-              Atrás
-            </button>
-            <button class="wizard-nav-btn wizard-nav-btn-next" id="step4Next" onclick="window.BilbaoCalc.nextStep()" type="button">
-              Continuar
-              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </nav>
-        </div>
-
-        <!-- ============================================
-             STEP 5: Extras Opcionales
-             ============================================ -->
-        <div class="wizard-step" id="step5" data-step="5">
-          <div class="step-header">
-            <h1 class="step-title">¿Algún extra?</h1>
-            <p class="step-subtitle">Selecciona los elementos adicionales (opcional)</p>
-          </div>
-
-          <div class="extras-grid" id="extrasGrid">
-            <div class="extra-checkbox-item" data-extra="windows" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('windows')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Cambio de ventanas</div>
-                <div class="extra-desc">PVC o aluminio, 2 hojas</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+350–700 €/ud</span>
-                <span class="extra-unit">por ventana</span>
-                <div class="extra-qty-control">
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-windows'); inp.value=Math.max(1,parseInt(inp.value)||4)-1; window.BilbaoCalc.updateExtraQty('windows',parseInt(inp.value))">−</button>
-                  <input type="number" id="qty-windows" class="extra-qty-input" value="4" min="1" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('windows',parseInt(this.value)||1)" />
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-windows'); inp.value=parseInt(inp.value||4)+1; window.BilbaoCalc.updateExtraQty('windows',parseInt(inp.value))">+</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('terrace')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Terraza / Balcón</div>
-                <div class="extra-desc">Revestimiento y suelo exterior</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+250–550 €/m²</span>
-                <span class="extra-unit">por m²</span>
-                <div class="extra-qty-control">
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-terrace'); inp.value=Math.max(5,parseInt(inp.value)||10)-5; window.BilbaoCalc.updateExtraQty('terrace',parseInt(inp.value))">−</button>
-                  <input type="number" id="qty-terrace" class="extra-qty-input" value="10" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('terrace',parseInt(this.value)||5)" />
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-terrace'); inp.value=parseInt(inp.value||10)+5; window.BilbaoCalc.updateExtraQty('terrace',parseInt(inp.value))">+</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('radiantFloor')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Suelo radiante</div>
-                <div class="extra-desc">Material + instalación completa</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+70–140 €/m²</span>
-                <span class="extra-unit">por m²</span>
-                <div class="extra-qty-control">
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=Math.max(5,parseInt(inp.value)||20)-5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">−</button>
-                  <input type="number" id="qty-radiantFloor" class="extra-qty-input" value="20" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(this.value)||20)" />
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-radiantFloor'); inp.value=parseInt(inp.value||20)+5; window.BilbaoCalc.updateExtraQty('radiantFloor',parseInt(inp.value))">+</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="extra-checkbox-item" data-extra="demolition" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('demolition')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Demolición tabiques</div>
-                <div class="extra-desc">Eliminar muros no estructurales</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+22–35 €/m²</span>
-                <span class="extra-unit">por m²</span>
-                <div class="extra-qty-control">
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=Math.max(5,parseInt(inp.value)||20)-5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">−</button>
-                  <input type="number" id="qty-demolition" class="extra-qty-input" value="20" min="5" step="5" onclick="event.stopPropagation()" onchange="window.BilbaoCalc.updateExtraQty('demolition',parseInt(this.value)||20)" />
-                  <button class="extra-qty-btn" type="button" onclick="event.stopPropagation(); var inp=document.getElementById('qty-demolition'); inp.value=parseInt(inp.value||20)+5; window.BilbaoCalc.updateExtraQty('demolition',parseInt(inp.value))">+</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('domotics')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Domótica básica</div>
-                <div class="extra-desc">Iluminación inteligente, termostato</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+1.000–3.000 €</span>
-                <span class="extra-unit">precio fijo</span>
-              </div>
-            </div>
-
-            <div class="extra-checkbox-item" data-extra="aerothermia" role="button" tabindex="0" aria-pressed="false" onclick="window.BilbaoCalc.toggleExtra('aerothermia')">
-              <div class="extra-checkbox">
-                <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <div class="extra-content">
-                <div class="extra-title">Aerotermia</div>
-                <div class="extra-desc">Equipo + instalación ACS y calefacción</div>
-              </div>
-              <div class="extra-bottom-row">
-                <span class="extra-price">+4.500–10.000 €</span>
-                <span class="extra-unit">precio fijo</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="imprevistos-toggle">
-            <div class="imprevistos-info">
-              <span class="imprevistos-label">¿Incluir imprevistos?</span>
-              <span class="imprevistos-hint">(+15% recomendado)</span>
-            </div>
-            <div class="toggle-switch active" id="imprevistosToggle" role="switch" aria-checked="true" tabindex="0" onclick="window.BilbaoCalc.toggleContingency(this)"></div>
-          </div>
-
-          <nav class="wizard-nav">
-            <button class="wizard-nav-btn wizard-nav-btn-back" id="step5Back" onclick="window.BilbaoCalc.prevStep()" type="button">
-              <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-              </svg>
-              Atrás
-            </button>
-            <button class="wizard-nav-btn wizard-nav-btn-next" id="step5Next" onclick="window.BilbaoCalc.nextStep()" type="button">
+            <button class="wizard-nav-btn wizard-nav-btn-next" id="step8Next" onclick="window.BilbaoCalc.calculateAndShowResult()" type="button">
               Ver presupuesto
               <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -634,9 +769,9 @@
         </div>
 
         <!-- ============================================
-             STEP 6: Resultado
+             STEP 9: Resultado (oculto initially, shown via JS)
              ============================================ -->
-        <div class="wizard-step" id="step6" data-step="6">
+        <div class="wizard-step" id="step9" data-step="9" style="display:none;">
           <div class="result-container">
             <div class="result-header">
               <span class="result-badge">
@@ -648,27 +783,26 @@
               </span>
               <h1 class="result-title">
                 Tu reforma de baño en Bilbao cuesta entre<br>
-                <span class="result-title-price">—</span>
+                <span class="result-title-price" id="resultPriceMin">—</span>
               </h1>
               <p class="result-subtitle">Completa los pasos para ver tu estimación</p>
 
               <div class="result-range">
-                <span class="result-range-low">—</span>
+                <span class="result-range-low" id="resultRangeLow">—</span>
                 <span class="result-range-separator">—</span>
-                <span class="result-range-high">—</span>
+                <span class="result-range-high" id="resultRangeHigh">—</span>
               </div>
             </div>
 
             <div class="result-breakdown">
               <h2 class="result-breakdown-title">Desglose orientativo</h2>
-
               <div id="resultBreakdownBars"></div>
             </div>
 
             <div class="result-comparison">
               <div class="result-comparison-title">Precio medio en Bilbao</div>
-              <div class="result-comparison-value">450 €/m²</div>
-              <div class="result-comparison-label" id="resultComparisonLabel">para reforma media en edificio 20-40 años</div>
+              <div class="result-comparison-value" id="pricePerSqm">800–1.200 €/m²</div>
+              <div class="result-comparison-label" id="resultComparisonLabel">para reforma media de baño en edificio 20-40 años</div>
             </div>
 
             <div class="result-ctas">
@@ -690,21 +824,13 @@
             </div>
 
             <div class="result-disclaimer">
-              ⚠️ Este presupuesto es orientativo y puede variar ±15% según las características específicas de tu vivienda. Solicita presupuestos personalizados a empresas locales para un cálculo exacto.
-
+              ⚠️ Este presupuesto es orientativo y puede variar ±15% según las características específicas de tu baño. Solicita presupuestos personalizados a empresas locales para un cálculo exacto.
+              <br><br>
               Precios sin IVA (10% IVA reducido para reformas de vivienda).
             </div>
 
-            <form id="leadFormHidden" style="display:none;">
-              <h3 class="lead-form-title">¿No hay presupuesto disponible? Déjanos tu email y te avisaremos cuando esté listo.</h3>
-              <input type="text" class="lead-form-input" style="width: 100%; margin-bottom: 0.75rem;" placeholder="Tu nombre" aria-label="Nombre" name="nombre" id="leadName">
-              <input type="email" class="lead-form-input" style="width: 100%; margin-bottom: 0.75rem;" placeholder="Email *" aria-label="Email" name="email" id="leadEmail" required>
-              <input type="tel" class="lead-form-input" style="width: 100%; margin-bottom: 0.75rem;" placeholder="Móvil (opcional)" aria-label="Teléfono" name="telefono" id="leadPhone">
-              <button class="lead-form-submit" type="button" onclick="window.BilbaoCalc.submitLead()">Avísame</button>
-            </form>
-
             <nav class="wizard-nav">
-              <button class="wizard-nav-btn wizard-nav-btn-back" id="step6Back" onclick="window.BilbaoCalc.prevStep()" type="button">
+              <button class="wizard-nav-btn wizard-nav-btn-back" id="step9Back" onclick="window.BilbaoCalc.prevStep()" type="button">
                 <svg class="wizard-nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="19" y1="12" x2="5" y2="12"></line>
                   <polyline points="12 19 5 12 12 5"></polyline>
@@ -747,11 +873,6 @@
       </div>
     </div>
   </section>
-
-  <!-- AdSense Placeholder -->
-  <div class="adsense-container adsense-leaderboard" style="display:none!important;">
-    <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <section class="fuentes-section" style="max-width:800px;margin:3rem auto;padding:0 1rem;border-top:2px solid #e0e0e0;padding-top:2rem;">
     <h2 style="font-size:1.3rem;margin-bottom:1rem;">Fuentes y datos</h2>
@@ -810,16 +931,313 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script type="module" src="../js/calculator.min.js"></script>
   <script>
+    // ============================================
+    // Baño Calculator — Self-contained JS Engine
+    // ============================================
+    window.BilbaoCalc = {
+      currentStep: 1,
+      totalSteps: 9,
+
+      data: {
+        metros: 6,
+        mainElement: null,
+        duchaType: null,
+        revestimiento: null,
+        suelo: null,
+        sanitarios: [],
+        extras: [],
+        edificio: 1.0,
+      },
+
+      init() {
+        document.querySelectorAll('.wizard-step').forEach(el => {
+          el.style.display = 'none';
+          el.classList.remove('active');
+        });
+        this.showStep(1);
+      },
+
+      showStep(n) {
+        document.querySelectorAll('.wizard-step').forEach(el => {
+          el.style.display = 'none';
+          el.classList.remove('active');
+        });
+        const step = document.querySelector(`.wizard-step[data-step="${n}"]`);
+        if (step) {
+          step.style.display = 'block';
+          step.classList.add('active');
+        }
+        this.currentStep = n;
+        this.updateProgress();
+        // Scroll to top of wizard
+        const wizard = document.getElementById('wizardContainer');
+        if (wizard) wizard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      },
+
+      goToStep(n) {
+        if (n >= 1 && n <= this.totalSteps) this.showStep(n);
+      },
+
+      nextStep() {
+        if (this.currentStep < this.totalSteps) this.showStep(this.currentStep + 1);
+        else this.calculateAndShowResult();
+      },
+
+      prevStep() {
+        if (this.currentStep > 1) this.showStep(this.currentStep - 1);
+      },
+
+      updateProgress() {
+        const fill = document.getElementById('progressBarFill');
+        if (fill) fill.style.width = ((this.currentStep / this.totalSteps) * 100) + '%';
+        document.querySelectorAll('.progress-step').forEach(p => {
+          const s = parseInt(p.dataset.step);
+          if (s === this.currentStep) p.classList.add('active');
+          else p.classList.remove('active');
+        });
+      },
+
+      updateSqm(m2) {
+        this.data.metros = parseInt(m2) || 6;
+        const display = document.getElementById('metersDisplayValue');
+        if (display) display.textContent = this.data.metros;
+        const input = document.getElementById('metersInput');
+        if (input) input.value = this.data.metros;
+        const slider = document.getElementById('metersSlider');
+        if (slider) slider.value = this.data.metros;
+      },
+
+      selectOption(key, value) {
+        this.data[key] = value;
+        // Update visual selection in the options group
+        const container = document.querySelector(`[id$="Options"]`);
+        if (container) {
+          container.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.value === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        // Handle main element options container
+        const mainContainer = document.getElementById('mainElementOptions');
+        if (mainContainer && key === 'mainElement') {
+          mainContainer.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.value === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        // Handle ducha type
+        const duchaContainer = document.getElementById('duchaTypeOptions');
+        if (duchaContainer && key === 'duchaType') {
+          duchaContainer.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.value === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        // Handle revestimiento
+        const revContainer = document.getElementById('revestimientoOptions');
+        if (revContainer && key === 'revestimiento') {
+          revContainer.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.value === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        // Handle suelo
+        const sueloContainer = document.getElementById('sueloOptions');
+        if (sueloContainer && key === 'suelo') {
+          sueloContainer.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.value === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        // Handle age options
+        const ageContainer = document.getElementById('ageOptions');
+        if (ageContainer && key === 'buildingAge') {
+          ageContainer.querySelectorAll('.age-option').forEach(opt => {
+            if (opt.dataset.age === value) {
+              opt.classList.add('selected');
+              opt.setAttribute('aria-pressed', 'true');
+            } else {
+              opt.classList.remove('selected');
+              opt.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+      },
+
+      toggleExtra(val) {
+        const isSanitario = ['inodoro_estandar','inodoro_suspendido','lavabo_pedestal','lavabo_encastrado','bidet'].includes(val);
+        if (isSanitario) {
+          const idx = this.data.sanitarios.indexOf(val);
+          if (idx > -1) this.data.sanitarios.splice(idx, 1);
+          else this.data.sanitarios.push(val);
+          // Update visual
+          const item = document.querySelector(`[data-extra="${val}"]`);
+          if (item) {
+            const pressed = item.getAttribute('aria-pressed') === 'true';
+            item.setAttribute('aria-pressed', !pressed);
+            item.classList.toggle('selected', !pressed);
+          }
+        } else {
+          const idx = this.data.extras.indexOf(val);
+          if (idx > -1) this.data.extras.splice(idx, 1);
+          else this.data.extras.push(val);
+          const item = document.querySelector(`[data-extra="${val}"]`);
+          if (item) {
+            const pressed = item.getAttribute('aria-pressed') === 'true';
+            item.setAttribute('aria-pressed', !pressed);
+            item.classList.toggle('selected', !pressed);
+          }
+        }
+      },
+
+      updateBuildingAge(age) {
+        const multipliers = { new: 1.0, moderate: 1.05, old: 1.15, historic: 1.30 };
+        this.data.edificio = multipliers[age] || 1.0;
+        this.selectOption('buildingAge', age);
+      },
+
+      calculate() {
+        let base = 0;
+        const m2 = this.data.metros;
+
+        // Base por metro según elemento principal
+        const precioM2 = {
+          ducha: 450, banera: 550, ducha_banera: 750, sanitarios: 200
+        };
+        base += m2 * (precioM2[this.data.mainElement] || 400);
+
+        // Tipo ducha/banera
+        const precioDucha = {
+          plato_convencional: 600, walk_in: 1400, mampara_corredera: 850,
+          banera_acero: 900, banera_hidro: 3500
+        };
+        if (this.data.duchaType && precioDucha[this.data.duchaType]) {
+          base += precioDucha[this.data.duchaType];
+        }
+
+        // Revestimiento
+        const precioRev = {
+          no_cambiar: 0, azulejo_parcial: m2 * 45,
+          azulejo_completo: m2 * 85, gresite: m2 * 120
+        };
+        base += precioRev[this.data.revestimiento] || 0;
+
+        // Sanitarios
+        const precioSan = {
+          inodoro_estandar: 350, inodoro_suspendido: 750,
+          lavabo_pedestal: 300, lavabo_encastrado: 600, bidet: 450
+        };
+        this.data.sanitarios.forEach(s => { base += precioSan[s] || 0; });
+
+        // Suelo
+        const precioSuelo = {
+          gres_antideslizante: 0, gresite_suelo: m2 * 50,
+          microcemento: m2 * 95, piedra_natural: m2 * 150
+        };
+        base += precioSuelo[this.data.suelo] || 0;
+
+        // Extras
+        const precioExtras = {
+          mueble_lavabo: 750, espejo_led: 275, extractor: 225,
+          mover_fontaneria: 1000, tuberias_vistas: 350
+        };
+        this.data.extras.forEach(e => { base += precioExtras[e] || 0; });
+
+        // Edificio multiplier
+        base *= this.data.edificio;
+
+        const low = Math.round(base * 0.85);
+        const high = Math.round(base * 1.15);
+        return { low, high, base };
+      },
+
+      calculateAndShowResult() {
+        const { low, high } = this.calculate();
+        this.showStep(9); // Result step
+
+        const lowEl = document.getElementById('resultRangeLow');
+        const highEl = document.getElementById('resultRangeHigh');
+        const priceMinEl = document.getElementById('resultPriceMin');
+        if (lowEl) lowEl.textContent = low.toLocaleString('es-ES') + ' €';
+        if (highEl) highEl.textContent = high.toLocaleString('es-ES') + ' €';
+        if (priceMinEl) priceMinEl.textContent = low.toLocaleString('es-ES') + ' €';
+
+        // Build simple breakdown bars
+        const bars = document.getElementById('resultBreakdownBars');
+        if (bars) {
+          const { base } = this.calculate();
+          const items = [
+            { label: 'Elemento principal', pct: Math.round((this.data.metros * (({ducha:450,banera:550,ducha_banera:750,sanitarios:200}[this.data.mainElement])||400)) / base * 100) },
+            { label: 'Revestimiento', pct: Math.round(((typeof this.data.revestimiento !== 'undefined' && this.data.revestimiento !== null) ? ({no_cambiar:0,azulejo_parcial:this.data.metros*45,azulejo_completo:this.data.metros*85,gresite:this.data.metros*120}[this.data.revestimiento]||0) : 0) / base * 100) },
+            { label: 'Sanitarios', pct: Math.round(this.data.sanitarios.reduce((s,v)=>s+({inodoro_estandar:350,inodoro_suspendido:750,lavabo_pedestal:300,lavabo_encastrado:600,bidet:450}[v]||0),0)/base*100) },
+            { label: 'Suelo', pct: Math.round(((this.data.suelo&&{gres_antideslizante:0,gresite_suelo:this.data.metros*50,microcemento:this.data.metros*95,piedra_natural:this.data.metros*150}[this.data.suelo])||0)/base*100) },
+          ];
+          bars.innerHTML = items.map(i => `<div class="breakdown-bar"><span class="breakdown-label">${i.label}</span><div class="breakdown-track"><div class="breakdown-fill" style="width:${i.pct}%"></div></div><span class="breakdown-pct">${i.pct}%</span></div>`).join('');
+        }
+      },
+
+      downloadPDF() {
+        const { low, high } = this.calculate();
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        doc.setFontSize(18);
+        doc.text('Presupuesto Reforma Baño - Bilbao', 20, 20);
+        doc.setFontSize(12);
+        doc.text(`Metros: ${this.data.metros}m²`, 20, 35);
+        doc.text(`Elemento: ${this.data.mainElement || 'N/A'}`, 20, 45);
+        doc.text(`Tipo ducha: ${this.data.duchaType || 'N/A'}`, 20, 55);
+        doc.text(`Revestimiento: ${this.data.revestimiento || 'N/A'}`, 20, 65);
+        doc.text(`Presupuesto: ${low.toLocaleString('es-ES')}€ - ${high.toLocaleString('es-ES')}€`, 20, 80);
+        doc.save('presupuesto-reforma-bano-bilbao.pdf');
+      },
+
+      requestQuotes() { window.location.href = '../contacto.html'; },
+
+      restart() {
+        this.data = { metros: 6, mainElement: null, duchaType: null, revestimiento: null, suelo: null, sanitarios: [], extras: [], edificio: 1.0 };
+        this.currentStep = 1;
+        // Reset visual selections
+        document.querySelectorAll('.age-option').forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed','false'); });
+        document.querySelectorAll('.extra-checkbox-item').forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed','false'); });
+        this.showStep(1);
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => window.BilbaoCalc.init());
+
+    // Mobile menu toggle
     document.getElementById('mobileToggle').addEventListener('click', function() {
       var menu = document.getElementById('mobileMenu');
       var btn = this;
       var isOpen = menu.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen);
     });
-
-    
   </script>
 </body>
 </html>
