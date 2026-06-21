@@ -6,6 +6,8 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.bilbaoreforma.es/sitemap.xml
+Sitemap: https://www.bilbaoreforma.es/sitemap-donostia.xml
+Sitemap: https://www.bilbaoreforma.es/sitemap-vitoria.xml
 
 # Rutas principales
 Allow: /index.html
