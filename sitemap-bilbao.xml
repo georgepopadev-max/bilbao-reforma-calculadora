@@ -39,15 +39,53 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Páginas de barrios (NUEVAS - Sprint SEO 2026-06) -->
+  <url>
+    <loc>https://www.bilbaoreforma.es/barrios/reforma-deusto.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/barrios/reforma-indautxu.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/barrios/reforma-santutxu.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
   <!-- Blog -->
   <url>
     <loc>https://www.bilbaoreforma.es/blog/index.html</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Hub temático Baño (NUEVO - Sprint SEO 2026-06) -->
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/hub-reforma-bano-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Hub temático Cocina (NUEVO - Sprint SEO 2026-06) -->
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/hub-reforma-cocina-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
   <url>
     <loc>https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -83,13 +121,13 @@
   </url>
   <url>
     <loc>https://www.bilbaoreforma.es/blog/pintar-piso-bilbao.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -216,6 +254,72 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/empresas-reformas-donostia.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bilbaoreforma.es/blog/reformas-bilbao-precios.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- Directorio de empresas -->
   <url>
@@ -278,11 +382,15 @@
     <priority>0.5</priority>
   </url>
   
-<!-- Páginas legales -->
+  <!-- Páginas legales -->
   <url>
     <loc>https://www.bilbaoreforma.es/aviso-legal.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
-  </urlset>
+  <url>
+    <loc>https://www.bilbaoreforma.es/politica-privacidad.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
