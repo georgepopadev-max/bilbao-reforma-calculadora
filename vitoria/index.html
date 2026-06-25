@@ -55,17 +55,44 @@
         </svg>
         <span class="header-logo-text">Reforma Vitoria</span>
       </a>
+      <div class="header-divider" aria-hidden="true"></div>
       <nav class="city-switcher" aria-label="Cambiar de ciudad">
         <button type="button" class="city-switcher-toggle" id="citySwitcherToggle" aria-expanded="false" aria-haspopup="true">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span class="city-switcher-pin" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span class="city-switcher-label">Cubrimos</span>
           <span class="city-switcher-current">Vitoria-Gasteiz</span>
-          <svg class="city-switcher-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <svg class="city-switcher-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </button>
-        <ul class="city-switcher-menu" id="citySwitcherMenu" role="menu">
-          <li role="none"><a href="../index.html" class="city-switcher-link" role="menuitem">Bilbao</a></li>
-          <li role="none"><a href="index.html" class="city-switcher-link is-active" role="menuitem">📍 Vitoria-Gasteiz (actual)</a></li>
-          <li role="none"><a href="../donostia/index.html" class="city-switcher-link" role="menuitem">Donostia-San Sebastián</a></li>
-        </ul>
+        <div class="city-switcher-menu" id="citySwitcherMenu" role="menu">
+          <div class="city-switcher-menu-header">
+            <span class="city-switcher-menu-title">Elige tu ciudad</span>
+            <span class="city-switcher-menu-subtitle">Cobertura completa en las 3 capitales</span>
+          </div>
+          <a href="../index.html" class="city-switcher-link" role="menuitem">
+            <span class="city-switcher-link-icon" aria-hidden="true">📍</span>
+            <span class="city-switcher-link-content">
+              <span class="city-switcher-link-name">Bilbao</span>
+              <span class="city-switcher-link-region">Vizcaya · Bizkaia</span>
+            </span>
+          </a>
+          <a href="index.html" class="city-switcher-link is-active" role="menuitem">
+            <span class="city-switcher-link-icon" aria-hidden="true">📍</span>
+            <span class="city-switcher-link-content">
+              <span class="city-switcher-link-name">Vitoria-Gasteiz</span>
+              <span class="city-switcher-link-region">Álava · Araba</span>
+            </span>
+            <span class="city-switcher-link-badge">Estás aquí</span>
+          </a>
+          <a href="../donostia/index.html" class="city-switcher-link" role="menuitem">
+            <span class="city-switcher-link-icon" aria-hidden="true">📍</span>
+            <span class="city-switcher-link-content">
+              <span class="city-switcher-link-name">Donostia-San Sebastián</span>
+              <span class="city-switcher-link-region">Guipúzcoa · Gipuzkoa</span>
+            </span>
+          </a>
+        </div>
       </nav>
       <nav class="header-nav" aria-label="Navegación principal">
         <a href="calculadora/index.html" class="header-nav-link">Calculadora</a>
