@@ -55,6 +55,18 @@
         </svg>
         <span class="header-logo-text">Reforma Donostia</span>
       </a>
+      <nav class="city-switcher" aria-label="Cambiar de ciudad">
+        <button type="button" class="city-switcher-toggle" id="citySwitcherToggle" aria-expanded="false" aria-haspopup="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span class="city-switcher-current">Donostia-San Sebastián</span>
+          <svg class="city-switcher-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="city-switcher-menu" id="citySwitcherMenu" role="menu">
+          <li role="none"><a href="../index.html" class="city-switcher-link" role="menuitem">Bilbao</a></li>
+          <li role="none"><a href="../vitoria/index.html" class="city-switcher-link" role="menuitem">Vitoria-Gasteiz</a></li>
+          <li role="none"><a href="index.html" class="city-switcher-link is-active" role="menuitem">📍 Donostia-San Sebastián (actual)</a></li>
+        </ul>
+      </nav>
       <nav class="header-nav" aria-label="Navegación principal">
         <a href="calculadora/index.html" class="header-nav-link">Calculadora</a>
         <a href="blog/index.html" class="header-nav-link">Blog</a>
@@ -78,6 +90,13 @@
       <a href="../empresas/index.html" class="mobile-nav-link">Empresas</a>
       <a href="../contacto.html" class="mobile-nav-link">Contacto</a>
     </nav>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-city-switcher">
+      <span class="mobile-city-switcher-label">📍 Cambiar de ciudad</span>
+      <a href="../index.html" class="mobile-city-link">Bilbao</a>
+      <a href="../vitoria/index.html" class="mobile-city-link">Vitoria-Gasteiz</a>
+      <a href="index.html" class="mobile-city-link is-active">Donostia-San Sebastián</a>
+    </div>
   </div>
 
   <main class="home-main" id="main-content">
@@ -242,6 +261,15 @@
             <a href="../politica-privacidad.html" class="footer-nav-link">Política de privacidad</a>
           </nav>
         </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">También cubrimos</h4>
+          <nav class="footer-nav">
+            <a href="../index.html" class="footer-nav-link">Bilbao</a>
+            <a href="../vitoria/index.html" class="footer-nav-link">Vitoria-Gasteiz</a>
+            <a href="index.html" class="footer-nav-link">📍 Donostia-San Sebastián (actual)</a>
+          </nav>
+          <p class="footer-col-note">Cobertura completa en las 3 capitales del País Vasco.</p>
+        </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copyright">© 2025–2026 Reforma Donostia. Todos los derechos reservados.</p>
@@ -267,6 +295,31 @@ document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
   });
 });
 
+  </script>
+  <script defer>
+    // City switcher dropdown
+    (function() {
+      var btn = document.getElementById('citySwitcherToggle');
+      var menu = document.getElementById('citySwitcherMenu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isOpen = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
   </script>
 </body>
 </html>
