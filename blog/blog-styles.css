@@ -4,32 +4,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 :root {
-  --color-terracota: #C45C3E;
-  --color-terracota-hover: #A84A32;
-  --color-terracota-light: #EDD5CA;
-  --color-verde-montana: #4A6741;
+  /* COLORES — Sistema unificado */
+  --color-primary: #C45C3E;
+  --color-primary-dark: #A84A32;
+  --color-primary-light: #E8A28C;
+  --color-terracota: var(--color-primary);
+  --color-terracota-hover: var(--color-primary-dark);
+  --color-terracota-light: var(--color-primary-light);
+  --color-secondary: #4A6741;
+  --color-verde-montana: var(--color-secondary);
   --color-verde-montana-light: #A4B99B;
-  --color-crema: #FAF7F2;
-  --color-blanco: #FFFFFF;
-  --color-grafito: #2D2D2D;
-  --color-gris: #6B6B6B;
   --color-txakoli: #7FA650;
+  --color-bg-page: #FFFFFF;
+  --color-bg-soft: #F8F5F2;
+  --color-bg-card: #FFFFFF;
+  --color-blanco: #FFFFFF;
+  --color-crema: var(--color-bg-soft);
+  --color-text-strong: #1E293B;
+  --color-text-body: #334155;
+  --color-text-muted: #64748B;
+  --color-text-on-primary: #FFFFFF;
+  --color-grafito: #2D2D2D;
+  --color-gris: #5A5A5A;
   --color-beige: #E8E2D9;
   --color-beige-dark: #D4CCC0;
-  --font-playfair: 'Playfair Display', Georgia, serif;
-  --font-inter: 'Inter', system-ui, sans-serif;
+  --shadow-card: 0 4px 12px rgba(30, 41, 59, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(30, 41, 59, 0.12);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
-  --radius-card: 12px;
-  --radius-button: 8px;
-  --shadow-card: 0 2px 8px rgba(45, 30, 15, 0.08);
-  --shadow-card-hover: 0 4px 16px rgba(45, 30, 15, 0.12);
+  --font-playfair: var(--font-serif);
+  --font-inter: var(--font-sans);
+  --font-size-h1: clamp(2rem, 5vw, 3.5rem);
+  --font-size-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --radius-card: var(--radius-md);
+  --radius-button: var(--radius-sm);
+  --shadow-button: 0 2px 8px rgba(196, 92, 62, 0.3);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
-body { font-family: var(--font-inter); line-height: 1.7; color: var(--color-grafito); background-color: var(--color-crema); -webkit-font-smoothing: antialiased; }
-a { color: var(--color-terracota); text-decoration: none; }
-a:hover { text-decoration: underline; }
+body { font-family: var(--font-sans); line-height: 1.7; color: var(--color-text-body); background-color: var(--color-bg-soft); -webkit-font-smoothing: antialiased; }
+
+/* LINK RESET */
+a, a:link, a:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-text-strong);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+}
+h1 { font-size: var(--font-size-h1); font-weight: var(--font-weight-bold); }
+h2 { font-size: var(--font-size-h2); font-weight: var(--font-weight-bold); }
+h3 { font-size: var(--font-size-h3); font-weight: var(--font-weight-semibold); }
+h4 { font-size: var(--font-size-h4); font-weight: var(--font-weight-semibold); }
+p { font-family: var(--font-sans); color: var(--color-text-body); font-size: var(--font-size-body); line-height: 1.7; margin-bottom: var(--space-sm); }
+.text-muted { color: var(--color-text-muted); font-size: var(--font-size-small); }
 
 /* Layout */
 .blog-wrapper { max-width: 800px; margin: 0 auto; padding: 1rem; }

@@ -3052,6 +3052,22 @@ footer a:hover {
 }
 
 /* ============================================
+   CARD — Componente genérico reutilizable
+   ============================================ */
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+/* ============================================
    CALCULATOR INTRO (Editorial Header)
    ============================================ */
 .calculator-intro-editorial {
