@@ -52,6 +52,7 @@ html {
   /* Alias existentes */
   --color-grafito: #2D2D2D;
   --color-gris: #5A5A5A;
+  --color-gris-oscuro: var(--color-grafito);
 
   /* Neutros */
   --color-beige: #E8E2D9;
