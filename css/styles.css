@@ -113,17 +113,28 @@ html {
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
+
+  /* z-index — Capas de apilamiento */
+  --z-base: 1;
+  --z-dropdown: 50;
+  --z-sticky: 100;
+  --z-overlay: 500;
+  --z-modal: 1000;
+  --z-toast: 2000;
 }
 
 /* ============================================
    LINK RESET — Terracota por defecto
+   Excluye botones y CTAs para no romper su color blanco
    ============================================ */
-a, a:link, a:visited {
+a:not([class*="btn"]):not([class*="cta"]):not([class*="button"]):not(.hero-cta-primary):not(.hero-cta-secondary),
+a:not([class*="btn"]):not([class*="cta"]):not([class*="button"]):not(.hero-cta-primary):not(.hero-cta-secondary):link,
+a:not([class*="btn"]):not([class*="cta"]):not([class*="button"]):not(.hero-cta-primary):not(.hero-cta-secondary):visited {
   color: var(--color-primary);
   text-decoration: none;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
-a:hover {
+a:not([class*="btn"]):not([class*="cta"]):not([class*="button"]):not(.hero-cta-primary):not(.hero-cta-secondary):hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
 }
@@ -1740,13 +1751,13 @@ p {
    SITE HEADER (reusable component)
    ============================================ */
 .site-header {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #ffffff;
   -webkit-backdrop-filter: saturate(180%) blur(16px);
   backdrop-filter: saturate(180%) blur(16px);
   border-bottom: 1px solid rgba(232, 226, 217, 0.6);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: var(--z-sticky);
   box-shadow: 0 1px 3px rgba(45, 30, 15, 0.04);
 }
 
@@ -1896,7 +1907,7 @@ p {
   margin: 0;
   padding: 0.5rem;
   min-width: 320px;
-  z-index: 1000;
+  z-index: var(--z-modal);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);
@@ -2138,7 +2149,7 @@ p {
   right: 0;
   height: 100dvh;
   background-color: var(--color-blanco);
-  z-index: 200;
+  z-index: var(--z-overlay);
   overflow-y: auto;
 }
 
@@ -2538,15 +2549,16 @@ footer a:hover {
   }
 }
 
-.hero-cta-primary {
+.hero-cta-primary,
+a.hero-cta-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 1.75rem;
   background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
-  text-decoration: none;
+  color: var(--color-text-on-primary) !important;
+  text-decoration: none !important;
   border-radius: var(--radius-pill);
   font-size: 1rem;
   font-weight: 600;
