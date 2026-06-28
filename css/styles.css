@@ -14,39 +14,121 @@ html {
    CSS Variables — Design Tokens
    ============================================ */
 :root {
-  /* Colores principales */
-  --color-terracota: #C45C3E;
-  --color-terracota-hover: #A84A32;
-  --color-terracota-light: #EDD5CA;
-  --color-verde-montana: #4A6741;
-  --color-verde-montana-light: #A4B99B;
-  --color-crema: #FAF7F2;
+  /* COLORES — Sistema unificado */
+  /* Primary — Terracota Bilbao */
+  --color-primary: #C45C3E;
+  --color-primary-dark: #A84A32;
+  --color-primary-light: #E8A28C;
+
+  /* Alias para compatibilidad */
+  --color-terracota: var(--color-primary);
+  --color-terracota-hover: var(--color-primary-dark);
+  --color-terracota-light: var(--color-primary-light);
+
+  /* Secondary — Verde montaña */
+  --color-secondary: #4A6741;
+  --color-secondary-light: #A4B99B;
+
+  /* Alias existentes */
+  --color-verde-montana: var(--color-secondary);
+  --color-verde-montana-light: var(--color-secondary-light);
+  --color-txakoli: #7FA650;
+
+  /* Fondos */
+  --color-bg-page: #FFFFFF;
+  --color-bg-soft: #F8F5F2;
+  --color-bg-card: #FFFFFF;
+
+  /* Alias existentes */
   --color-blanco: #FFFFFF;
+  --color-crema: var(--color-bg-soft);
+
+  /* Texto */
+  --color-text-strong: #1E293B;
+  --color-text-body: #334155;
+  --color-text-muted: #64748B;
+  --color-text-on-primary: #FFFFFF;
+
+  /* Alias existentes */
   --color-grafito: #2D2D2D;
   --color-gris: #5A5A5A;
-  --color-txakoli: #7FA650;
+
+  /* Neutros */
   --color-beige: #E8E2D9;
   --color-beige-dark: #D4CCC0;
 
+  /* Estados */
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+
   /* Sombras */
-  --shadow-card: 0 2px 8px rgba(45, 30, 15, 0.08);
-  --shadow-card-hover: 0 4px 16px rgba(45, 30, 15, 0.12);
-  --shadow-card-active: 0 1px 4px rgba(45, 30, 15, 0.06);
+  --shadow-card: 0 4px 12px rgba(30, 41, 59, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(30, 41, 59, 0.12);
+  --shadow-card-active: 0 1px 4px rgba(30, 41, 59, 0.06);
+  --shadow-button: 0 2px 8px rgba(196, 92, 62, 0.3);
 
   /* Tipografías */
-  --font-playfair: 'Playfair Display', Georgia, serif;
-  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
 
+  /* Alias existentes */
+  --font-playfair: var(--font-serif);
+  --font-inter: var(--font-sans);
+
+  /* Tamaños tipográficos */
+  --font-size-h1: clamp(2rem, 5vw, 3.5rem);
+  --font-size-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+
+  /* Pesos tipográficos */
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+
   /* Espaciado */
-  --radius-card: 12px;
-  --radius-button: 8px;
-  --radius-input: 8px;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Radios */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Alias existentes */
+  --radius-card: var(--radius-md);
+  --radius-button: var(--radius-sm);
+  --radius-input: var(--radius-sm);
 
   /* Transiciones */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
+}
+
+/* ============================================
+   LINK RESET — Terracota por defecto
+   ============================================ */
+a, a:link, a:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* ============================================
@@ -91,6 +173,50 @@ button {
 input, select, textarea {
   font-family: inherit;
   font-size: inherit;
+}
+
+/* ============================================
+   TYPOGRAPHY — Jerarquía clara
+   ============================================ */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-text-strong);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
+}
+
+p {
+  font-family: var(--font-sans);
+  color: var(--color-text-body);
+  font-size: var(--font-size-body);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
 }
 
 /* ============================================
@@ -2043,9 +2169,10 @@ input, select, textarea {
    SITE FOOTER (reusable component)
    ============================================ */
 .site-footer {
-  background-color: var(--color-grafito);
-  color: var(--color-blanco);
+  background-color: var(--color-text-strong);
+  color: var(--color-text-on-primary);
   margin-top: 4rem;
+  padding: var(--space-xl) var(--space-md);
 }
 
 .footer-container {
@@ -2119,12 +2246,21 @@ input, select, textarea {
 }
 
 .footer-col-title {
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 1rem;
+  color: var(--color-text-on-primary);
+  margin-bottom: var(--space-md);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s ease;
+}
+footer a:hover {
+  color: var(--color-text-on-primary);
 }
 
 .footer-nav {
@@ -2407,18 +2543,18 @@ input, select, textarea {
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 1.75rem;
-  background-color: #B34E30;
-  color: var(--color-blanco);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
   text-decoration: none;
-  border-radius: var(--radius-button);
+  border-radius: var(--radius-pill);
   font-size: 1rem;
   font-weight: 600;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(196, 92, 62, 0.25);
+  box-shadow: var(--shadow-button);
 }
 
 .hero-cta-primary:hover {
-  background-color: var(--color-terracota-hover);
+  background-color: var(--color-primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(196, 92, 62, 0.3);
 }
@@ -2433,18 +2569,19 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   padding: 1rem 1.75rem;
-  background-color: var(--color-blanco);
-  color: #8B3A24;
+  background-color: var(--color-bg-card);
+  color: var(--color-primary);
   text-decoration: none;
-  border-radius: var(--radius-button);
+  border-radius: var(--radius-pill);
   font-size: 1rem;
   font-weight: 600;
-  border: 2px solid #B34E30;
+  border: 2px solid var(--color-primary);
   transition: all var(--transition-fast);
 }
 
 .hero-cta-secondary:hover {
-  background-color: #FDF5F3;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
 }
 
 .hero-trust {
@@ -2719,10 +2856,16 @@ input, select, textarea {
 }
 
 .testimonial-card {
-  background-color: var(--color-blanco);
-  border-radius: var(--radius-card);
-  padding: 1.5rem;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
   box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
 }
 
 .testimonial-stars {
@@ -2738,17 +2881,18 @@ input, select, textarea {
 }
 
 .testimonial-text {
-  font-size: 0.875rem;
-  color: var(--color-grafito);
-  line-height: 1.6;
+  color: var(--color-text-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
 .testimonial-author {
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: var(--color-gris);
+  color: var(--color-text-strong);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-small);
+  margin-top: var(--space-sm);
 }
 
 /* ============================================
@@ -2862,40 +3006,44 @@ input, select, textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-button);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  cursor: pointer;
+  gap: var(--space-xs);
+  padding: 0.875rem 2rem;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 1rem;
+  border-radius: var(--radius-pill);
   border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
 .btn-primary {
-  background-color: #B34E30;
-  color: var(--color-blanco);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  box-shadow: var(--shadow-button);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-terracota-hover);
-  transform: translateY(-1px);
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196, 92, 62, 0.4);
 }
 
 .btn-secondary {
-  background-color: var(--color-blanco);
-  color: var(--color-terracota);
-  border: 2px solid var(--color-terracota);
+  background: var(--color-bg-card);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background-color: #FDF5F3;
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
 }
 
 .btn-large {
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.0625rem;
 }
 
 .btn-icon-right {
