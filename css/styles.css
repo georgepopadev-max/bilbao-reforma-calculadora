@@ -2114,13 +2114,13 @@ p {
 
 .header-nav-link-cta {
   background-color: var(--color-terracota);
-  color: var(--color-blanco);
+  color: #FFFFFF !important;
   margin-left: 0.5rem;
 }
 
 .header-nav-link-cta:hover {
   background-color: var(--color-terracota-hover);
-  color: var(--color-blanco);
+  color: #FFFFFF !important;
 }
 
 .header-mobile-toggle {
@@ -2557,7 +2557,7 @@ a.hero-cta-primary {
   gap: 0.5rem;
   padding: 1rem 1.75rem;
   background-color: var(--color-primary);
-  color: var(--color-text-on-primary) !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
   border-radius: var(--radius-pill);
   font-size: 1rem;
