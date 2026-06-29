@@ -36,7 +36,17 @@
     { "source": "/empresas", "destination": "/empresas.html" },
     { "source": "/empresas/", "destination": "/empresas.html" },
     { "source": "/barrios", "destination": "/barrios.html" },
-    { "source": "/barrios/", "destination": "/barrios.html" }
+    { "source": "/barrios/", "destination": "/barrios.html" },
+    { "source": "/calculadora/index.html", "destination": "/calculadora.html" },
+    { "source": "/empresas/index.html", "destination": "/empresas.html" },
+    { "source": "/blog/index.html", "destination": "/blog.html" },
+    { "source": "/donostia/index.html", "destination": "/donostia.html" },
+    { "source": "/vitoria/index.html", "destination": "/vitoria.html" },
+    { "source": "/donostia/calculadora/index.html", "destination": "/donostia/calculadora.html" },
+    { "source": "/donostia/empresas/index.html", "destination": "/donostia/empresas.html" },
+    { "source": "/donostia/blog/index.html", "destination": "/donostia/blog.html" },
+    { "source": "/vitoria/calculadora/index.html", "destination": "/vitoria/calculadora.html" },
+    { "source": "/vitoria/empresas/index.html", "destination": "/vitoria/empresas.html" }
   ],
   "headers": [
     {

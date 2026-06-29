@@ -2,23 +2,193 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Hero from '../components/home/Hero.astro';
+import SeoContent from '../components/home/SeoContent.astro';
+import FAQ from '../components/home/FAQ.astro';
+import HowItWorks from '../components/home/HowItWorks.astro';
+import WhyUs from '../components/home/WhyUs.astro';
+import Testimonials from '../components/home/Testimonials.astro';
+import FeaturedCities from '../components/home/FeaturedCities.astro';
+import VerifiedCompanies from '../components/home/VerifiedCompanies.astro';
+import PopularArticles from '../components/home/PopularArticles.astro';
+import FinalCTA from '../components/home/FinalCTA.astro';
+
+// Schemas from legacy (lines 58-260 of legacy/index.html)
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.bilbaoreforma.es/#business",
+  "name": "Bilbao Reforma",
+  "description": "Directorio de empresas de reformas verificadas y calculadora de presupuestos online para Bilbao, Donostia y Vitoria-Gasteiz.",
+  "url": "https://www.bilbaoreforma.es",
+  "logo": "https://www.bilbaoreforma.es/images/logo.png",
+  "image": "https://www.bilbaoreforma.es/images/og/home-og.jpg",
+  "telephone": "+34 642 147 856",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Gran Vía 1",
+    "addressLocality": "Bilbao",
+    "postalCode": "48001",
+    "addressRegion": "Bizkaia",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.2630,
+    "longitude": -2.9350
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Bilbao" },
+    { "@type": "City", "name": "Donostia-San Sebastián" },
+    { "@type": "City", "name": "Vitoria-Gasteiz" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": []
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Reformas integrales y presupuestos online",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.bilbaoreforma.es/#business"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Bilbao" },
+    { "@type": "City", "name": "Donostia-San Sebastián" },
+    { "@type": "City", "name": "Vitoria-Gasteiz" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de reforma",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reforma integral"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reforma de baño"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reforma de cocina"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cambio de suelo"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pintura de piso"}}
+    ]
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta una reforma integral en Bilbao?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El precio medio de una reforma integral en Bilbao oscila entre 700€ y 1.400€ por metro cuadrado, dependiendo del nivel de calidad elegido. Para un piso de 80m², el presupuesto orientativo se sitúa entre 56.000€ y 112.000€. Usa nuestra calculadora para obtener un desglose personalizado por partidas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La calculadora de presupuestos es gratuita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, completamente gratuita. La calculadora de reformas de Bilbao Reforma te ofrece un presupuesto orientativo en menos de 2 minutos sin necesidad de registro, teléfono ni email. Es una herramienta informativa para ayudarte a planificar tu reforma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los precios se actualizan con el coste actual en Bilbao?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Los precios de la calculadora se basan en datos reales de empresas de reformas activas en Bilbao y Bizkaia, no en tablas genéricas de internet. Actualizamos las tarifas regularmente para reflejar el mercado local de 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo contratar directamente a una empresa desde la web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La calculadora te da un presupuesto orientativo. Si lo deseas, puedes solicitar presupuestos personalizados a empresas de reformas en Bilbao a través de nuestro directorio de empresas verificadas, todas con experiencia local demostrada."
+      }
+    }
+  ]
+};
 ---
+
 <BaseLayout
-  title="Bilbao Reforma - Calculadora de Reformas"
-  description="Calculadora de presupuestos de reformas para Bilbao y Bizkaia. Precios orientativos para reforma de baño, cocina, pintura, suelo y reforma integral. Datos reales de empresas locales."
+  title="Reformas Bilbao | Presupuesto Online + Empresas Verificadas"
+  description="Calcula tu presupuesto de reforma en Bilbao 2026 en 2 minutos, gratis. Datos reales de empresas locales verificadas."
   canonical="https://www.bilbaoreforma.es/"
+  jsonSchemas={[localBusinessSchema, serviceSchema, faqSchema]}
 >
   <Header city="bilbao" />
-  <main style="max-width: 1200px; margin: 0 auto; padding: 4rem 1rem; text-align: center;">
-    <h1 style="font-family: var(--font-playfair); font-size: 2.5rem; color: var(--color-grafito); margin-bottom: 1rem;">
-      Bilbao Reforma
-    </h1>
-    <p style="font-size: 1.125rem; color: var(--color-gris); margin-bottom: 2rem;">
-      Calculadora de presupuestos de reformas más completa para Bilbao y Bizkaia.
-    </p>
-    <a href="/calculadora/index.html" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; background: var(--color-terracota); color: var(--color-blanco); text-decoration: none; border-radius: var(--radius-button); font-weight: 600;">
-      Abrir calculadora ->
-    </a>
+
+  <main id="main-content">
+    <Hero />
+    <SeoContent />
+    <FAQ />
+
+    <!-- Content + sidebar layout -->
+    <div class="home-content-layout">
+      <!-- Main column -->
+      <div class="home-content">
+        <HowItWorks />
+        <WhyUs />
+        <Testimonials />
+      </div>
+      <!-- Sidebar -->
+      <aside class="home-sidebar">
+        <div class="sidebar-sticky">
+          <PopularArticles />
+        </div>
+      </aside>
+    </div>
+
+    <FeaturedCities />
+    <VerifiedCompanies />
+    <FinalCTA />
   </main>
+
   <Footer city="bilbao" />
 </BaseLayout>
+
+<style>
+  .home-content-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    align-items: start;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home-sidebar {
+    min-width: 0;
+  }
+  .sidebar-sticky {
+    position: sticky;
+    top: 6rem;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(45,30,15,0.06);
+  }
+  @media (max-width: 1024px) {
+    .home-content-layout {
+      grid-template-columns: 1fr;
+    }
+    .sidebar-sticky {
+      position: static;
+    }
+  }
+</style>

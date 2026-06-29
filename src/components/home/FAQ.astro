@@ -1,0 +1,98 @@
+---
+// FAQ — Preguntas Frecuentes section
+---
+<section class="home-section" style="padding: 3rem 1.5rem; max-width: 1200px; margin: 0 auto;">
+  <h2 style="font-size: 1.75rem; font-weight: 700; color: #1E293B; font-family: 'Playfair Display', serif; margin-bottom: 2rem;">Preguntas Frecuentes sobre la Calculadora de Reformas</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question-text">¿Cuánto cuesta una reforma integral en Bilbao?</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <div class="faq-answer">
+        <p>El precio medio de una reforma integral en Bilbao oscila entre <strong>700€ y 1.400€ por metro cuadrado</strong>, dependiendo del nivel de calidad elegido. Para un piso de 80m², el presupuesto orientativo se sitúa entre 56.000€ y 112.000€. Usa nuestra calculadora para obtener un desglose personalizado por partidas.</p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question-text">¿La calculadora de presupuestos es gratuita?</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <div class="faq-answer">
+        <p>Sí, completamente gratuita. La calculadora de reformas de Bilbao Reforma te ofrece un presupuesto orientativo en <strong>menos de 2 minutos</strong> sin necesidad de registro, teléfono ni email. Es una herramienta informativa para ayudarte a planificar tu reforma.</p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question-text">¿Los precios se actualizan con el coste actual en Bilbao?</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <div class="faq-answer">
+        <p>Sí. Los precios de la calculadora se basan en datos reales de empresas de reformas activas en Bilbao y Bizkaia, no en tablas genéricas de internet. Actualizamos las tarifas regularmente para reflejar el mercado local de 2026.</p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question-text">¿Puedo contratar directamente a una empresa desde la web?</span>
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <div class="faq-answer">
+        <p>La calculadora te da un presupuesto orientativo. Si lo deseas, puedes solicitar presupuestos personalizados a empresas de reformas en Bilbao a través de nuestro <a href="/empresas/index.html" style="color: var(--color-terracota);">directorio de empresas verificadas</a>, todas con experiencia local demostrada.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<style>
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 800px;
+  }
+  .faq-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(30,41,59,0.06);
+    overflow: hidden;
+  }
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--color-grafito);
+    gap: 1rem;
+    list-style: none;
+  }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::marker { display: none; }
+  .faq-question:hover { color: var(--color-terracota); }
+  .faq-question-text { flex: 1; }
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    color: var(--color-terracota);
+  }
+  details[open] .faq-icon { transform: rotate(180deg); }
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem;
+    color: var(--color-gris);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  .faq-answer p { margin: 0; }
+</style>
