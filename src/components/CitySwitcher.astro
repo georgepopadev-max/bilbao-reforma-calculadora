@@ -1,13 +1,14 @@
 ---
 export interface Props {
   currentCity?: 'bilbao' | 'donostia' | 'vitoria';
+  depth?: string;
 }
-const { currentCity = 'bilbao' } = Astro.props;
+const { currentCity = 'bilbao', depth = '' } = Astro.props;
 
 const cities = [
-  { id: 'bilbao', name: 'Bilbao', path: '' },
-  { id: 'donostia', name: 'Donostia', path: 'donostia' },
-  { id: 'vitoria', name: 'Vitoria', path: 'vitoria' },
+  { id: 'bilbao', name: 'Bilbao', subpath: '' },
+  { id: 'donostia', name: 'Donostia', subpath: 'donostia' },
+  { id: 'vitoria', name: 'Vitoria', subpath: 'vitoria' },
 ];
 ---
 <div class="city-switcher">
@@ -15,7 +16,7 @@ const cities = [
   <div class="city-switcher-buttons">
     {cities.map(city => (
       <a
-        href={`/${city.path}${city.path ? '/' : ''}index.html`}
+        href={city.subpath ? `${depth}${city.subpath}/index.html` : `${depth}index.html`}
         class={`city-btn ${currentCity === city.id ? 'city-btn-active' : ''}`}
         aria-current={currentCity === city.id ? 'page' : undefined}
       >

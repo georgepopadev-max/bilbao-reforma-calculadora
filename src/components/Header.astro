@@ -47,6 +47,7 @@ const isEmpresasActive = currentPath.includes('/empresas');
       </svg>
       <span class="header-logo-text">Bilbao Reforma</span>
     </a>
+    <CitySwitcher currentCity={city} depth={depth} />
     <nav class="header-nav">
       <a href={calcHref} class={`header-nav-link${isCalcActive ? ' header-nav-link-active' : ''}`}>Calculadora</a>
       <a href={blogHref} class={`header-nav-link${isBlogActive ? ' header-nav-link-active' : ''}`}>Blog</a>
