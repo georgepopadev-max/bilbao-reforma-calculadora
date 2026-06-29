@@ -1,53 +1,21 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
   "installCommand": "npm install",
-  "framework": null,
+  "outputDirectory": "dist",
   "rewrites": [
-    {
-      "source": "/blog/subvencion-accesibilidad-bilbao/",
-      "destination": "/blog/subvencion-accesibilidad-bilbao.html"
-    },
-    {
-      "source": "/blog/subvencion-accesibilidad-donostia/",
-      "destination": "/blog/subvencion-accesibilidad-donostia.html"
-    },
-    {
-      "source": "/blog/subvencion-cambio-calderas-vitoria/",
-      "destination": "/blog/subvencion-cambio-calderas-vitoria.html"
-    },
-    {
-      "source": "/blog/subvencion-cambio-ventanas-bilbao/",
-      "destination": "/blog/subvencion-cambio-ventanas-bilbao.html"
-    },
-    {
-      "source": "/blog/subvencion-eficiencia-energetica-bilbao/",
-      "destination": "/blog/subvencion-eficiencia-energetica-bilbao.html"
-    },
-    {
-      "source": "/blog/subvencion-fachadas-bilbao/",
-      "destination": "/blog/subvencion-fachadas-bilbao.html"
-    },
-    {
-      "source": "/blog/subvencion-rehabilitacion-energetica-donostia/",
-      "destination": "/blog/subvencion-rehabilitacion-energetica-donostia.html"
-    }
+    { "source": "/blog/subvencion-accesibilidad-bilbao/", "destination": "/blog/subvencion-accesibilidad-bilbao.html" },
+    { "source": "/blog/subvencion-accesibilidad-donostia/", "destination": "/blog/subvencion-accesibilidad-donostia.html" },
+    { "source": "/blog/subvencion-cambio-calderas-vitoria/", "destination": "/blog/subvencion-cambio-calderas-vitoria.html" },
+    { "source": "/blog/subvencion-cambio-ventanas-bilbao/", "destination": "/blog/subvencion-cambio-ventanas-bilbao.html" },
+    { "source": "/blog/subvencion-eficiencia-energetica-bilbao/", "destination": "/blog/subvencion-eficiencia-energetica-bilbao.html" },
+    { "source": "/blog/subvencion-fachadas-bilbao/", "destination": "/blog/subvencion-fachadas-bilbao.html" },
+    { "source": "/blog/subvencion-rehabilitacion-energetica-donostia/", "destination": "/blog/subvencion-rehabilitacion-energetica-donostia.html" }
   ],
   "headers": [
     {
-      "source": "/css/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    },
-    {
-      "source": "/js/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    },
-    {
-      "source": "/content/(.*)",
+      "source": "/_astro/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
