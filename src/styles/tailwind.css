@@ -1,17 +1,13 @@
 /* ============================================
    Tailwind entry — import all layers
    ============================================ */
+
+/* Imports deben ir PRIMERO por spec CSS */
+@import './tokens.css';
+@import './base.css';
+@import './components.css';
+
+/* Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Base styles layer */
-@layer base {
-  @import './tokens.css';
-  @import './base.css';
-}
-
-/* Component styles layer */
-@layer components {
-  @import './components.css';
-}
