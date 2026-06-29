@@ -1,8 +1,38 @@
 {
-  "buildCommand": "echo 'Static site - no build required'",
-  "outputDirectory": ".",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": null,
+  "rewrites": [
+    {
+      "source": "/blog/subvencion-accesibilidad-bilbao/",
+      "destination": "/blog/subvencion-accesibilidad-bilbao.html"
+    },
+    {
+      "source": "/blog/subvencion-accesibilidad-donostia/",
+      "destination": "/blog/subvencion-accesibilidad-donostia.html"
+    },
+    {
+      "source": "/blog/subvencion-cambio-calderas-vitoria/",
+      "destination": "/blog/subvencion-cambio-calderas-vitoria.html"
+    },
+    {
+      "source": "/blog/subvencion-cambio-ventanas-bilbao/",
+      "destination": "/blog/subvencion-cambio-ventanas-bilbao.html"
+    },
+    {
+      "source": "/blog/subvencion-eficiencia-energetica-bilbao/",
+      "destination": "/blog/subvencion-eficiencia-energetica-bilbao.html"
+    },
+    {
+      "source": "/blog/subvencion-fachadas-bilbao/",
+      "destination": "/blog/subvencion-fachadas-bilbao.html"
+    },
+    {
+      "source": "/blog/subvencion-rehabilitacion-energetica-donostia/",
+      "destination": "/blog/subvencion-rehabilitacion-energetica-donostia.html"
+    }
+  ],
   "headers": [
     {
       "source": "/css/(.*)",
@@ -23,7 +53,7 @@
       ]
     },
     {
-      "source": "/(:path*.)html",
+      "source": "/(.*).html",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
       ]
