@@ -1,0 +1,636 @@
+---
+export interface Props {
+  title: string;
+  city: 'bilbao' | 'donostia' | 'vitoria';
+  calculatorType: 'bano' | 'cocina' | 'integral' | 'pintura' | 'suelo';
+  minPrice?: number;
+}
+
+const { title, city, calculatorType, minPrice } = Astro.props;
+
+const cityName = city === 'bilbao' ? 'Bilbao' : city === 'donostia' ? 'Donostia' : 'Vitoria-Gasteiz';
+const calcLabel = calculatorType === 'bano' ? 'reforma de baño'
+  : calculatorType === 'cocina' ? 'reforma de cocina'
+  : calculatorType === 'integral' ? 'reforma integral'
+  : calculatorType === 'pintura' ? 'pintura'
+  : 'cambio de suelo';
+
+const stepLabels: Record<string, string[]> = {
+  bano:     ['Metros', 'Ducha/Bañera', 'Revestimiento', 'Sanitarios', 'Suelo', 'Extras', 'Edificio', 'Resultado'],
+  cocina:   ['Metros', 'Distribución', 'Muebles', 'Encimera', 'Electrodomésticos', 'Suelo', 'Extras', 'Resultado'],
+  integral: ['Metros', 'Estado', 'Calidad', 'Distribución', 'Instalaciones', 'Acabados', 'Extras', 'Resultado'],
+  pintura:  ['Metros', 'Paredes', 'Techos', 'Tipo pintura', 'Carpintería', 'Estado', 'Extras', 'Resultado'],
+  suelo:    ['Metros', 'Estado', 'Tipo suelo', 'Material', 'Mano obra', 'Retirada', 'Extras', 'Resultado'],
+};
+
+const labels = stepLabels[calculatorType] || stepLabels.integral;
+---
+
+<div class="calculator-wizard" data-calculator-type={calculatorType} data-city={city}>
+  <!-- Stepper visual -->
+  <div class="stepper" id="stepper">
+    <div class="stepper-track">
+      {labels.map((label, i) => (
+        <div class="stepper-step" data-step={i + 1}>
+          <div class="stepper-bubble">{i + 1}</div>
+          <div class="stepper-label">{label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Wizard steps container -->
+  <div class="wizard-container" id="wizardContainer">
+    <slot />
+  </div>
+
+  <!-- Result panel -->
+  <div class="calculator-result" id="calculator-result" style="display:none;">
+    <h2 class="result-heading">Tu {calcLabel} en {cityName} cuesta entre</h2>
+    <div class="result-amount">
+      <span id="result-min">—</span>
+      <span class="result-amount-divider">—</span>
+      <span id="result-max">—</span>
+    </div>
+    {minPrice && <p class="result-clamp">Precio mínimo garantizado: {minPrice} €</p>}
+    <p id="result-breakdown" class="result-breakdown">Desglose orientativo</p>
+    <div class="result-actions">
+      <a href="tel:+34642147856" class="result-btn result-btn-primary">📞 Llamar para contratar</a>
+      <a href="/empresas/" class="result-btn result-btn-secondary">Ver empresas verificadas</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* =============================================
+     CALCULATOR WIZARD SHELL
+     Uses design tokens from src/styles/tokens.css
+     ============================================= */
+
+  .calculator-wizard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 4rem;
+  }
+
+  /* ---- STEPER ---- */
+  .stepper {
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+  .stepper-track {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .stepper-track::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background: var(--color-beige);
+    z-index: 0;
+  }
+  .stepper-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    flex: 1;
+  }
+  .stepper-bubble {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-blanco);
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-pill);
+    color: var(--color-gris);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    transition: all var(--transition-base);
+    font-family: var(--font-inter);
+  }
+  .stepper-step.active .stepper-bubble {
+    background: var(--color-terracota);
+    border-color: var(--color-terracota);
+    color: var(--color-blanco);
+    box-shadow: 0 0 0 4px rgba(196, 92, 62, 0.15);
+  }
+  .stepper-step.completed .stepper-bubble {
+    background: var(--color-verde-montana);
+    border-color: var(--color-verde-montana);
+    color: var(--color-blanco);
+  }
+  .stepper-label {
+    font-size: 0.6875rem;
+    color: var(--color-gris);
+    line-height: 1.2;
+    font-family: var(--font-inter);
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .stepper-label { display: block; }
+    .stepper-bubble { width: 36px; height: 36px; font-size: 0.875rem; }
+    .stepper-track::before { top: 18px; }
+  }
+
+  /* ---- WIZARD CONTAINER ---- */
+  .wizard-container {
+    background: var(--color-blanco);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+
+  /* ---- WIZARD STEP (used by pages) ---- */
+  :global(.wizard-step) {
+    display: none;
+    padding: 2rem 1.5rem;
+  }
+  :global(.wizard-step.active) {
+    display: block;
+    animation: fadeSlideIn 0.3s ease;
+  }
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  :global(.wizard-step h1),
+  :global(.wizard-step h2) {
+    font-family: var(--font-playfair);
+    color: var(--color-grafito);
+    margin-bottom: 0.5rem;
+  }
+  :global(.wizard-step h1) { font-size: 1.5rem; }
+  :global(.wizard-step h2) { font-size: 1.25rem; }
+  :global(.step-header) { margin-bottom: 1.5rem; }
+  :global(.step-subtitle) {
+    color: var(--color-gris);
+    font-size: 0.9375rem;
+    margin-top: 0.25rem;
+    font-family: var(--font-inter);
+  }
+
+  /* ---- PROGRESS BAR (legacy compatibility) ---- */
+  :global(.progress-container) {
+    background: var(--color-blanco);
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-beige);
+  }
+  :global(.progress-steps) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  :global(.progress-step) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    opacity: 0.5;
+    transition: opacity var(--transition-base);
+  }
+  :global(.progress-step.active) { opacity: 1; }
+  :global(.progress-step.completed) { opacity: 0.8; }
+  :global(.progress-step-number) {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-pill);
+    background: var(--color-beige);
+    color: var(--color-grafito);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-inter);
+    transition: all var(--transition-base);
+  }
+  :global(.progress-step.active .progress-step-number) {
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+  }
+  :global(.progress-step.completed .progress-step-number) {
+    background: var(--color-verde-montana);
+    color: var(--color-blanco);
+  }
+  :global(.progress-step-label) {
+    font-size: 0.625rem;
+    color: var(--color-gris);
+    text-align: center;
+    font-family: var(--font-inter);
+  }
+  :global(.progress-bar-track) {
+    height: 4px;
+    background: var(--color-beige);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  :global(.progress-bar-fill) {
+    height: 100%;
+    background: var(--color-terracota);
+    border-radius: var(--radius-pill);
+    transition: width 0.4s ease;
+  }
+
+  /* ---- METERS INPUT ---- */
+  :global(.meters-input-group) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  :global(.meters-label) {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+    font-family: var(--font-inter);
+  }
+  :global(.meters-value-display) {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  :global(.meters-value-number) {
+    font-family: var(--font-playfair);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-terracota);
+    line-height: 1;
+  }
+  :global(.meters-value-unit) {
+    font-size: 1.5rem;
+    color: var(--color-gris);
+    font-family: var(--font-inter);
+  }
+  :global(.meters-input) {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    font-size: 1.125rem;
+    color: var(--color-grafito);
+    background: var(--color-blanco);
+    text-align: center;
+    font-family: var(--font-inter);
+    transition: border-color var(--transition-base);
+  }
+  :global(.meters-input:focus) {
+    outline: none;
+    border-color: var(--color-terracota);
+  }
+  :global(.meters-slider) {
+    width: 100%;
+    accent-color: var(--color-terracota);
+  }
+  :global(.meters-presets) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  @media (min-width: 480px) {
+    :global(.meters-presets) { grid-template-columns: repeat(4, 1fr); }
+  }
+  :global(.meters-preset-btn) {
+    padding: 0.75rem 0.5rem;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-card);
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: all var(--transition-base);
+    font-family: var(--font-inter);
+    line-height: 1.3;
+  }
+  :global(.meters-preset-btn:hover) {
+    border-color: var(--color-terracota);
+    background: var(--color-terracota-light);
+    color: var(--color-terracota);
+  }
+
+  /* ---- AGE / OPTION CARDS ---- */
+  :global(.age-options) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 480px) {
+    :global(.age-options) { grid-template-columns: repeat(2, 1fr); }
+  }
+  :global(.age-option) {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 1rem;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-card);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    background: var(--color-blanco);
+    position: relative;
+  }
+  :global(.age-option:hover) {
+    border-color: var(--color-terracota);
+    background: var(--color-terracota-light);
+  }
+  :global(.age-option.selected) {
+    border-color: var(--color-terracota);
+    background: var(--color-terracota-light);
+    box-shadow: 0 0 0 3px rgba(196, 92, 62, 0.12);
+  }
+  :global(.age-option-radio) {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+    transition: all var(--transition-base);
+    position: relative;
+  }
+  :global(.age-option.selected .age-option-radio) {
+    border-color: var(--color-terracota);
+    background: var(--color-terracota);
+    box-shadow: inset 0 0 0 3px var(--color-blanco);
+  }
+  :global(.age-option-title) {
+    font-weight: 600;
+    color: var(--color-grafito);
+    font-size: 0.9375rem;
+    font-family: var(--font-inter);
+    margin-bottom: 0.125rem;
+  }
+  :global(.age-option-desc) {
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    font-family: var(--font-inter);
+  }
+  :global(.age-option-badge) {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-verde-montana);
+    background: var(--color-verde-montana-light);
+    padding: 0.125rem 0.5rem;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-inter);
+    white-space: nowrap;
+  }
+
+  /* ---- WIZARD NAV BUTTONS ---- */
+  :global(.wizard-nav) {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  :global(.wizard-nav-btn) {
+    padding: 0.875rem 1.5rem;
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-family: var(--font-inter);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  :global(.wizard-nav-btn-next),
+  :global(.wizard-nav-btn-primary) {
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+    margin-left: auto;
+  }
+  :global(.wizard-nav-btn-next:hover),
+  :global(.wizard-nav-btn-primary:hover) {
+    background: var(--color-terracota-hover);
+  }
+  :global(.wizard-nav-btn-back),
+  :global(.wizard-nav-btn-secondary) {
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    border: 2px solid var(--color-beige);
+  }
+  :global(.wizard-nav-btn-back:hover),
+  :global(.wizard-nav-btn-secondary:hover) {
+    border-color: var(--color-terracota);
+    color: var(--color-terracota);
+  }
+  :global(.wizard-nav-btn:disabled) {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* ---- RESULT ---- */
+  :global(.result-container) {
+    padding: 2rem 1.5rem;
+  }
+  :global(.result-header) {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  :global(.result-title) {
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    color: var(--color-grafito);
+    margin-bottom: 1rem;
+  }
+  :global(.result-range) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-playfair);
+  }
+  :global(.result-range-low) { color: var(--color-grafito); }
+  :global(.result-range-separator) { color: var(--color-gris); font-size: 1.5rem; }
+  :global(.result-range-high) { color: var(--color-verde-montana); }
+  :global(.result-breakdown) {
+    background: var(--color-crema);
+    border-radius: var(--radius-card);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--color-gris);
+    font-family: var(--font-inter);
+  }
+  :global(.result-disclaimer) {
+    background: var(--color-blanco);
+    border: 1px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    padding: 0.875rem 1rem;
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--font-inter);
+  }
+
+  /* ---- RESULT SECTION (component output) ---- */
+  .calculator-result {
+    margin-top: 1.5rem;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, #F0F7EE 0%, #E8F0E5 100%);
+    border-radius: var(--radius-card);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-verde-montana-light);
+  }
+  .result-heading {
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    color: var(--color-grafito);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .result-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-verde-montana);
+    font-family: var(--font-playfair);
+    margin: 0.5rem 0;
+  }
+  .result-amount-divider { color: var(--color-gris); }
+  #result-min, #result-max { display: inline-block; }
+  .result-clamp {
+    font-size: 0.875rem;
+    color: var(--color-gris);
+    margin-top: 0.5rem;
+    font-family: var(--font-inter);
+  }
+  .result-breakdown {
+    font-size: 0.875rem;
+    color: var(--color-gris);
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--color-blanco);
+    border-radius: var(--radius-button);
+    font-family: var(--font-inter);
+  }
+  .result-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  .result-btn {
+    padding: 0.875rem 1.5rem;
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    font-family: var(--font-inter);
+    font-size: 0.9375rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .result-btn-primary {
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+  }
+  .result-btn-primary:hover { background: var(--color-terracota-hover); }
+  .result-btn-secondary {
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    border: 2px solid var(--color-beige);
+  }
+  .result-btn-secondary:hover { border-color: var(--color-terracota); color: var(--color-terracota); }
+
+  /* ---- MOBILE RESPONSIVE ---- */
+  @media (max-width: 480px) {
+    .calculator-wizard { padding: 1rem 0.75rem 3rem; }
+    :global(.wizard-step) { padding: 1.5rem 1rem; }
+    :global(.meters-value-number) { font-size: 3rem; }
+    :global(.age-options) { grid-template-columns: 1fr; }
+    .result-amount { font-size: 2rem; }
+  }
+
+  /* ---- CALCULATOR WRAPPER / PROGRESS (legacy) ---- */
+  :global(.calculator-wrapper) {
+    background: var(--color-blanco);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+  :global(.calculator-intro-editorial) {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem 2rem;
+    text-align: center;
+  }
+  :global(.calculator-intro-editorial h2) {
+    font-family: var(--font-playfair);
+    font-size: 1.5rem;
+    color: var(--color-grafito);
+    margin-bottom: 0.75rem;
+  }
+  :global(.calculator-intro-editorial p) {
+    font-family: var(--font-inter);
+    color: var(--color-gris);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto 0.75rem;
+  }
+  :global(.calculator-intro-editorial a) {
+    color: var(--color-terracota);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  :global(.calculator-intro-editorial a:hover) {
+    text-decoration: underline;
+  }
+  :global(.calculator-cta-banner) {
+    max-width: 760px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  :global(.calculator-cta-banner a) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-card);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    transition: background var(--transition-base);
+  }
+  :global(.calculator-cta-banner a:hover) {
+    background: var(--color-terracota-hover);
+  }
+  :global(.calculator-cta-banner a span:last-child) {
+    white-space: nowrap;
+    font-weight: 700;
+  }
+</style>

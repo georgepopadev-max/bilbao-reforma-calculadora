@@ -1,9 +1,434 @@
 ---
+/**
+ * Calculadora Suelo Bilbao — Flooring replacement calculator
+ * A3 Zone
+ * No minimum clamp
+ */
 import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
+import Calculator from '../../components/calculator/Calculator.astro';
 ---
-<CalculadoraLayout title="Calculadora Cambio Suelo Bilbao 2026" description="Calculadora de Cambio de Suelo en Bilbao 2026 — Presupuesto orientativo desde 25 €/m². Parqué, porcelánico y vinilo." canonical="https://www.bilbaoreforma.es/calculadora/suelo-bilbao.html" city="bilbao" calculatorType="suelo">
-  <div style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;text-align:center;">
-    <h2>Cambio de Suelo en Bilbao: desde 25 €/m²</h2>
-    <p>Precios de suelo con material e instalación. Parqué flotante, porcelánico imitación madera y vinilo LVT. <strong>Usa la <a href="/calculadora/index.html" style="color:#C45C3E;">calculadora general</a> para un presupuesto completo.</strong></p>
+
+<CalculadoraLayout
+  title="Calculadora Cambio Suelo Bilbao 2026"
+  description="Calculadora de Cambio de Suelo en Bilbao 2026 — Presupuesto orientativo desde 25 €/m². Parqué, porcelánico y vinilo."
+  canonical="https://www.bilbaoreforma.es/calculadora/suelo-bilbao.html"
+  city="bilbao"
+  calculatorType="suelo"
+>
+  <!-- CTA banner -->
+  <div class="calculator-cta-banner">
+    <a href="/calculadora/index.html">
+      <span>🏠 ¿Necesitas también pintura o cambio de puertas? Usa la calculadora integral</span>
+      <span>→ Calcular</span>
+    </a>
   </div>
+
+  <!-- Editorial intro -->
+  <div class="calculator-intro-editorial">
+    <h2>Cambio de Suelo en Bilbao: desde 25 €/m²</h2>
+    <p>Precios de suelo con material e instalación. Parqué flotante, porcelánico imitación madera y vinilo LVT. El precio varía mucho según el material elegido y si hay que retirar el suelo existente.</p>
+    <p><a href="/blog/suelo-bilbao.html">Leer artículo: Guía de precios de cambio de suelo en Bilbao</a></p>
+  </div>
+
+  <!-- Wizard -->
+  <Calculator
+    title="Cambio de Suelo en Bilbao"
+    city="bilbao"
+    calculatorType="suelo"
+  >
+    <!-- STEP 1: Metros -->
+    <div class="wizard-step active" id="step1" data-step="1">
+      <div class="step-header">
+        <h1>¿Cuántos metros de suelo quieres cambiar?</h1>
+        <p class="step-subtitle">Metros cuadrados de suelo a instalar</p>
+      </div>
+      <div class="meters-input-group">
+        <label class="meters-label" for="metersInput">Metros cuadrados</label>
+        <div class="meters-value-display">
+          <span class="meters-value-number" id="metersDisplayValue">75</span>
+          <span class="meters-value-unit">m²</span>
+        </div>
+        <input type="number" id="metersInput" class="meters-input" value="75" min="10" max="400" placeholder="10–400" aria-label="Metros cuadrados de suelo" />
+        <input type="range" id="metersSlider" class="meters-slider" min="10" max="400" value="75" aria-label="Slider de metros cuadrados" />
+        <div class="meters-presets">
+          <button class="meters-preset-btn" data-meters="40" type="button">Habitación<br><small>~30–50 m²</small></button>
+          <button class="meters-preset-btn" data-meters="75" type="button">Piso medio<br><small>~65–85 m²</small></button>
+          <button class="meters-preset-btn" data-meters="120" type="button">Piso grande<br><small>~100–140 m²</small></button>
+          <button class="meters-preset-btn" data-meters="200" type="button">Casa/Ático<br><small>&gt;150 m²</small></button>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 2: Estado actual del suelo -->
+    <div class="wizard-step" id="step2" data-step="2">
+      <div class="step-header">
+        <h1>¿Qué hay ahora bajo los pies?</h1>
+        <p class="step-subtitle">El estado del suelo actual afecta al precio</p>
+      </div>
+      <div class="age-options" id="estadoOptions">
+        <div class="age-option selected" data-value="laminado" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Parqué / laminado actual</div>
+            <div class="age-option-desc">Se retira y se instala encima o se cambia</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="ceramico" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Baldosa / cerámica</div>
+            <div class="age-option-desc">Retirada más compleja, requiere obra</div>
+          </div>
+          <span class="age-option-badge">+8 €/m²</span>
+        </div>
+        <div class="age-option" data-value="moqueta" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Moqueta</div>
+          <span class="age-option-badge">+5 €/m²</span>
+        </div>
+        <div class="age-option" data-value="nuevo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Obra nueva / sin suelo</div>
+          <span class="age-option-badge">Sin retirada</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 3: Tipo de suelo nuevo -->
+    <div class="wizard-step" id="step3" data-step="3">
+      <div class="step-header">
+        <h1>¿Qué tipo de suelo quieres poner?</h1>
+      </div>
+      <div class="age-options" id="tipoSueloOptions">
+        <div class="age-option selected" data-value="laminado" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Parqué laminado (8-10mm)</div>
+            <div class="age-option-desc"> Leroy Merlin, Quick-Step, Kronotex</div>
+          </div>
+          <span class="age-option-badge">25–35 €/m²</span>
+        </div>
+        <div class="age-option" data-value="vinylico" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Vinilo LVT / SPC</div>
+            <div class="age-option-desc">Impermeable, fino, buena relación calidad/precio</div>
+          </div>
+          <span class="age-option-badge">35–50 €/m²</span>
+        </div>
+        <div class="age-option" data-value="porcelanico" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Porcelánico imitación madera</div>
+            <div class="age-option-desc">Gres porcelánico de alta gama</div>
+          </div>
+          <span class="age-option-badge">45–70 €/m²</span>
+        </div>
+        <div class="age-option" data-value="parque" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Parqué flotante de madera</div>
+            <div class="age-option-desc">Roble, haya, acabados naturales</div>
+          </div>
+          <span class="age-option-badge">60–100 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 4: Calidad / Gama -->
+    <div class="wizard-step" id="step4" data-step="4">
+      <div class="step-header">
+        <h1>¿Qué gama de material prefieres?</h1>
+      </div>
+      <div class="age-options" id="gamaOptions">
+        <div class="age-option selected" data-value="economica" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gama económica</div>
+            <div class="age-option-desc">Marca blanca, grueso bajo (6-7mm)</div>
+          </div>
+          <span class="age-option-badge">×0.8</span>
+        </div>
+        <div class="age-option" data-value="media" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gama media</div>
+            <div class="age-option-desc">Quick-Step, Kronotex, Egger (8mm+)</div>
+          </div>
+          <span class="age-option-badge">×1.0</span>
+        </div>
+        <div class="age-option" data-value="premium" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gama premium</div>
+            <div class="age-option-desc">Parqué deconstructor, grandes formatos</div>
+          </div>
+          <span class="age-option-badge">×1.5</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 5: Mano de obra -->
+    <div class="wizard-step" id="step5" data-step="5">
+      <div class="step-header">
+        <h1>¿Qué incluye la instalación?</h1>
+      </div>
+      <div class="age-options" id="instalacionOptions">
+        <div class="age-option selected" data-value="solo_suelo" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Solo colocación del suelo</div>
+        </div>
+        <div class="age-option" data-value="con_transporte" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Suelo + transporte a domicilio</div>
+            <div class="age-option-desc">El material llega a casa</div>
+          </div>
+          <span class="age-option-badge">+300 €</span>
+        </div>
+        <div class="age-option" data-value="completa" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Instalación completa + material</div>
+            <div class="age-option-desc">Llave en mano, suelo suministrado por el profesional</div>
+          </div>
+          <span class="age-option-badge">×1.15</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 6: Extras -->
+    <div class="wizard-step" id="step6" data-step="6">
+      <div class="step-header">
+        <h1>¿Necesitas algún trabajo extra?</h1>
+      </div>
+      <div class="age-options" id="extrasOptions">
+        <div class="age-option selected" data-value="ninguno" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Solo cambio de suelo</div>
+        </div>
+        <div class="age-option" data-value="rodapiés" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Cambio de rodapiés</div>
+          <span class="age-option-badge">+250 €</span>
+        </div>
+        <div class="age-option" data-value="alisado" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Alisado / recrecido del suelo</div>
+          <span class="age-option-badge">+15 €/m²</span>
+        </div>
+        <div class="age-option" data-value="todo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Rodapiés + alisado completo</div>
+          <span class="age-option-badge">+m²+250 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 7: Resultado -->
+    <div class="wizard-step" id="step7" data-step="7">
+      <div class="result-container">
+        <div class="result-header">
+          <h1 class="result-title">Tu cambio de suelo en Bilbao cuesta entre</h1>
+          <div class="result-range">
+            <span class="result-range-low" id="resultRangeLow">—</span>
+            <span class="result-range-separator">—</span>
+            <span class="result-range-high" id="resultRangeHigh">—</span>
+          </div>
+        </div>
+        <div class="result-breakdown">
+          <p style="margin:0;font-family:var(--font-inter);font-size:0.875rem;">Precio orientativo incluye material medio y mano de obra. Puede variar según el estado del suelo existente.</p>
+        </div>
+        <div class="result-disclaimer">
+          ⚠️ Este presupuesto es orientativo y puede variar ±15% según condiciones del suelo y accesibilidad del edificio.
+        </div>
+        <nav class="wizard-nav">
+          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
+          <button class="wizard-nav-btn wizard-nav-btn-primary" type="button" onclick="window.location.href='/calculadora/suelo-bilbao.html'">Nuevo cálculo →</button>
+        </nav>
+      </div>
+    </div>
+  </Calculator>
 </CalculadoraLayout>
+
+<script>
+  import { BARRIO_MULTIPLIERS, BARRIO_LABELS, formatCurrency } from '/src/scripts/calculator/index.ts';
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const barrio = urlParams.get('barrio');
+
+  if (barrio && BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS]) {
+    const stepHeader = document.querySelector('#step1 .step-header');
+    if (stepHeader) {
+      const badge = document.createElement('div');
+      badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:var(--color-blanco);padding:0.25rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;font-family:var(--font-inter);';
+      badge.textContent = 'Barrio: ' + BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS];
+      stepHeader.insertBefore(badge, stepHeader.firstChild);
+    }
+  }
+
+  const state = {
+    metros: 75,
+    estadoActual: 'laminado',
+    tipoSuelo: 'laminado',
+    gama: 'media',
+    instalacion: 'solo_suelo',
+    extras: 'ningunos',
+  };
+
+  function showStep(n: number) {
+    document.querySelectorAll('.stepper-step').forEach(el => {
+      const step = parseInt((el as HTMLElement).dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (step < n) el.classList.add('completed');
+      if (step === n) el.classList.add('active');
+    });
+    document.querySelectorAll('.wizard-step').forEach(el => {
+      (el as HTMLElement).style.display = 'none';
+      el.classList.remove('active');
+    });
+    const step = document.querySelector(`.wizard-step[data-step="${n}"]`);
+    if (step) {
+      (step as HTMLElement).style.display = 'block';
+      step.classList.add('active');
+    }
+  }
+
+  function updateSqm(val: number) {
+    state.metros = val;
+    const display = document.getElementById('metersDisplayValue');
+    const input = document.getElementById('metersInput') as HTMLInputElement;
+    const slider = document.getElementById('metersSlider') as HTMLInputElement;
+    if (display) display.textContent = String(val);
+    if (input) input.value = String(val);
+    if (slider) slider.value = String(val);
+  }
+
+  function selectOption(containerId: string, key: string, value: string) {
+    state[key as keyof typeof state] = value as any;
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-value') === value;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function calculateSuelo() {
+    const m2 = state.metros;
+    const baseRate: Record<string, number> = { laminado: 30, vinylico: 42, porcelanico: 57, parque: 80 };
+    const estadoExtra: Record<string, number> = { laminado: 0, ceramico: m2 * 8, moqueta: m2 * 5, nuevo: -3 };
+    const gamaMult: Record<string, number> = { economica: 0.8, media: 1.0, premium: 1.5 };
+    const instalMult: Record<string, number> = { solo_suelo: 1.0, con_transporte: 1.05, completa: 1.15 };
+    const extrasCost: Record<string, number> = { ninguno: 0, rodapies: 250, alisado: m2 * 15, todo: m2 * 15 + 250 };
+
+    const rate = baseRate[state.tipoSuelo] || 30;
+    const estado = estadoExtra[state.estadoActual] || 0;
+    const gama = gamaMult[state.gama] || 1.0;
+    const instal = instalMult[state.instalacion] || 1.0;
+    const extras = extrasCost[state.extras] || 0;
+
+    let base = m2 * rate * gama * instal + estado + extras;
+
+    if (barrio && BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS]) {
+      base *= BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS];
+    }
+
+    const low = Math.round(base * 0.85);
+    const high = Math.round(base * 1.15);
+
+    return { low, high };
+  }
+
+  function showResult() {
+    const { low, high } = calculateSuelo();
+    showStep(7);
+    const lowEl = document.getElementById('resultRangeLow');
+    const highEl = document.getElementById('resultRangeHigh');
+    if (lowEl) lowEl.textContent = formatCurrency(low) + ' €';
+    if (highEl) highEl.textContent = formatCurrency(high) + ' €';
+  }
+
+  let currentStep = 1;
+
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep === 6) { showResult(); }
+      else { currentStep++; showStep(currentStep); }
+    });
+  });
+
+  document.querySelectorAll('.wizard-nav-btn-back').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 1) { currentStep--; showStep(currentStep); }
+    });
+  });
+
+  const metersInput = document.getElementById('metersInput') as HTMLInputElement;
+  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement;
+  metersInput?.addEventListener('input', () => updateSqm(parseInt(metersInput.value)));
+  metersSlider?.addEventListener('input', () => updateSqm(parseInt(metersSlider.value)));
+
+  document.querySelectorAll('.meters-preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const m = parseInt((btn as HTMLButtonElement).dataset.meters || '75');
+      updateSqm(m);
+    });
+  });
+
+  ['laminado', 'ceramico', 'moqueta', 'nuevo'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('estadoOptions', 'estadoActual', val));
+    });
+  });
+
+  ['laminado', 'vinylico', 'porcelanico', 'parque'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('tipoSueloOptions', 'tipoSuelo', val));
+    });
+  });
+
+  ['economica', 'media', 'premium'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('gamaOptions', 'gama', val));
+    });
+  });
+
+  ['solo_suelo', 'con_transporte', 'completa'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('instalacionOptions', 'instalacion', val));
+    });
+  });
+
+  ['ningunos', 'rodapies', 'alisado', 'todo'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('extrasOptions', 'extras', val));
+    });
+  });
+
+  showStep(1);
+</script>

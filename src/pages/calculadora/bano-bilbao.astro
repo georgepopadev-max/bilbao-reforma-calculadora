@@ -2,11 +2,12 @@
 /**
  * Calculadora Baño Bilbao — Specialized bathroom calculator
  * A3 Zone
- * 
+ *
  * CLAMP: MIN_BATHROOM = 2500 EUR
  * This clamp MUST be preserved exactly.
  */
 import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
+import Calculator from '../../components/calculator/Calculator.astro';
 ---
 
 <CalculadoraLayout
@@ -17,304 +18,267 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
   calculatorType="bano"
   minPrice={2500}
 >
-  <!-- CTA back to main calculator -->
-  <div style="max-width:760px;margin:2rem auto;padding:0 1.5rem;">
-    <a href="/calculadora/index.html" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-terracota,#C45C3E);color:white;padding:1rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:500;">
+  <!-- CTA banner -->
+  <div class="calculator-cta-banner">
+    <a href="/calculadora/index.html">
       <span>🛁 ¿Quieres comparar con reforma integral completa? Usa nuestra calculadora general</span>
-      <span style="white-space:nowrap;font-weight:600;">→ Calcular</span>
+      <span>→ Calcular</span>
     </a>
   </div>
 
-  <div class="calculator-intro-editorial" style="max-width:800px;margin:0 auto;padding:0 1.5rem 2rem;text-align:center;">
+  <!-- Editorial intro -->
+  <div class="calculator-intro-editorial">
     <h2>Reforma de Baño en Bilbao: presupuestos desde 2.500 € hasta 12.000 €</h2>
     <p>La reforma de un baño en Bilbao incluye varios conceptos: sanitarios, alicatado, fontanería y electricidad. Dependiendo del tamaño y la calidad, el presupuesto oscila entre <strong>2.500 €</strong> para un baño básico y <strong>12.000 €</strong> para un baño completo con acabados premium.</p>
-    <p><a href="/blog/reforma-bano-bilbao.html" style="color:#C45C3E;">Leer artículo: Guía completa para reformar un baño en Bilbao</a></p>
+    <p><a href="/blog/reforma-bano-bilbao.html">Leer artículo: Guía completa para reformar un baño en Bilbao</a></p>
   </div>
 
-  <!-- Specialized Bathroom Wizard -->
-  <div class="calculator-wrapper" style="max-width:700px;margin:0 auto;padding:0 1rem 4rem;">
-    <div class="progress-container" id="progressContainer">
-      <div class="progress-steps">
-        <div class="progress-step active" data-step="1"><span class="progress-step-number">1</span><span class="progress-step-label">Metros</span></div>
-        <div class="progress-step" data-step="2"><span class="progress-step-number">2</span><span class="progress-step-label">Ducha/Bañera</span></div>
-        <div class="progress-step" data-step="3"><span class="progress-step-number">3</span><span class="progress-step-label">Revestimiento</span></div>
-        <div class="progress-step" data-step="4"><span class="progress-step-number">4</span><span class="progress-step-label">Sanitarios</span></div>
-        <div class="progress-step" data-step="5"><span class="progress-step-number">5</span><span class="progress-step-label">Suelo</span></div>
-        <div class="progress-step" data-step="6"><span class="progress-step-number">6</span><span class="progress-step-label">Extras</span></div>
-        <div class="progress-step" data-step="7"><span class="progress-step-number">7</span><span class="progress-step-label">Edificio</span></div>
-        <div class="progress-step" data-step="8"><span class="progress-step-number">8</span><span class="progress-step-label">Resultado</span></div>
+  <!-- Wizard -->
+  <Calculator
+    title="Reforma de Baño en Bilbao"
+    city="bilbao"
+    calculatorType="bano"
+    minPrice={2500}
+  >
+    <!-- STEP 1: Metros -->
+    <div class="wizard-step active" id="step1" data-step="1">
+      <div class="step-header">
+        <h1>¿Cuántos metros tiene tu baño?</h1>
+        <p class="step-subtitle">Indica los metros cuadrados del baño a reformar</p>
       </div>
-      <div class="progress-bar-track">
-        <div class="progress-bar-fill" id="progressBarFill" style="width: 12.5%"></div>
+      <div class="meters-input-group">
+        <label class="meters-label" for="metersInput">Metros cuadrados</label>
+        <div class="meters-value-display">
+          <span class="meters-value-number" id="metersDisplayValue">6</span>
+          <span class="meters-value-unit">m²</span>
+        </div>
+        <input type="number" id="metersInput" class="meters-input" value="6" min="3" max="20" placeholder="3–20" aria-label="Metros cuadrados del baño" />
+        <input type="range" id="metersSlider" class="meters-slider" min="3" max="20" value="6" aria-label="Slider de metros cuadrados" />
+        <div class="meters-presets">
+          <button class="meters-preset-btn" data-meters="4" type="button">Baño pequeño<br><small>~4–5 m²</small></button>
+          <button class="meters-preset-btn" data-meters="7" type="button">Baño estándar<br><small>~6–8 m²</small></button>
+          <button class="meters-preset-btn" data-meters="11" type="button">Baño grande<br><small>~10–12 m²</small></button>
+          <button class="meters-preset-btn" data-meters="16" type="button">Baño master<br><small>&gt;15 m²</small></button>
+        </div>
       </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
     </div>
 
-    <div class="wizard-container" id="wizardContainer">
-
-      <!-- STEP 1: Metros -->
-      <div class="wizard-step active" id="step1" data-step="1">
-        <div class="step-header">
-          <h1 class="step-title">¿Cuántos metros tiene tu baño?</h1>
-          <p class="step-subtitle">Indica los metros cuadrados del baño a reformar</p>
+    <!-- STEP 2: Elemento Principal -->
+    <div class="wizard-step" id="step2" data-step="2">
+      <div class="step-header">
+        <h1>¿Qué elemento principal quieres instalar?</h1>
+      </div>
+      <div class="age-options" id="mainElementOptions">
+        <div class="age-option selected" data-value="ducha" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Solo ducha</div>
+            <div class="age-option-desc">Plato de ducha o walk-in</div>
+          </div>
         </div>
-        <div class="meters-input-group">
-          <label class="meters-label" for="metersInput">Metros cuadrados</label>
-          <div class="meters-value-display">
-            <span class="meters-value-number" id="metersDisplayValue">6</span>
-            <span class="meters-value-unit">m²</span>
+        <div class="age-option" data-value="banera" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Solo bañera</div>
+            <div class="age-option-desc">Bañera estándar o de hidromasaje</div>
           </div>
-          <input type="number" id="metersInput" class="meters-input" value="6" min="3" max="20" placeholder="3–20" aria-label="Metros cuadrados del baño" />
-          <input type="range" id="metersSlider" class="meters-slider" min="3" max="20" value="6" aria-label="Slider de metros cuadrados" />
-          <div class="meters-presets">
-            <button class="meters-preset-btn" data-meters="4" type="button">Baño pequeño<br><span style="font-weight:400;opacity:0.7">~4–5 m²</span></button>
-            <button class="meters-preset-btn" data-meters="7" type="button">Baño estándar<br><span style="font-weight:400;opacity:0.7">~6–8 m²</span></button>
-            <button class="meters-preset-btn" data-meters="11" type="button">Baño grande<br><span style="font-weight:400;opacity:0.7">~10–12 m²</span></button>
-            <button class="meters-preset-btn" data-meters="16" type="button">Baño master<br><span style="font-weight:400;opacity:0.7">&gt;15 m²</span></button>
+        </div>
+        <div class="age-option" data-value="ducha_banera" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Ducha + bañera</div>
+            <div class="age-option-desc">Ambos elementos</div>
           </div>
+        </div>
+        <div class="age-option" data-value="sanitarios" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Cambio de sanitarios sin obra</div>
+            <div class="age-option-desc">Solo cambiar inodoro, lavabo</div>
+          </div>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 3: Tipo Ducha -->
+    <div class="wizard-step" id="step3" data-step="3">
+      <div class="step-header">
+        <h1>¿Qué tipo de ducha quieres?</h1>
+      </div>
+      <div class="age-options" id="duchaTypeOptions">
+        <div class="age-option selected" data-value="plato_convencional" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Plato de ducha convencional</div>
+          </div>
+          <span class="age-option-badge">+400–800 €</span>
+        </div>
+        <div class="age-option" data-value="walk_in" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Ducha a ras de suelo (walk-in)</div>
+          </div>
+          <span class="age-option-badge">+800–2.000 €</span>
+        </div>
+        <div class="age-option" data-value="banera_acero" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Bañera de acero/acrílico</div>
+          </div>
+          <span class="age-option-badge">+600–1.200 €</span>
+        </div>
+        <div class="age-option" data-value="banera_hidro" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Bañera de hidromasaje / exenta</div>
+          </div>
+          <span class="age-option-badge">+2.000–5.000 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 4: Revestimiento -->
+    <div class="wizard-step" id="step4" data-step="4">
+      <div class="step-header">
+        <h1>¿Qué revestimiento quieres para las paredes?</h1>
+      </div>
+      <div class="age-options" id="revestimientoOptions">
+        <div class="age-option selected" data-value="no_cambiar" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">No se cambia azulejo</div>
+        </div>
+        <div class="age-option" data-value="azulejo_parcial" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Azulejo parcial (hasta 1m)</div>
+        </div>
+        <div class="age-option" data-value="azulejo_completo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Azulejo completo</div>
+        </div>
+        <div class="age-option" data-value="gresite" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gresite</div>
+          </div>
+          <span class="age-option-badge">+30–50%</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 5: Suelo -->
+    <div class="wizard-step" id="step5" data-step="5">
+      <div class="step-header">
+        <h1>¿Qué suelo quieres para el baño?</h1>
+      </div>
+      <div class="age-options" id="sueloOptions">
+        <div class="age-option selected" data-value="gres_antideslizante" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Gres antideslizante</div>
+          <span class="age-option-badge">Incluido</span>
+        </div>
+        <div class="age-option" data-value="gresite_suelo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Gresite</div>
+          <span class="age-option-badge">+40–60 €/m²</span>
+        </div>
+        <div class="age-option" data-value="microcemento" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Microcemento</div>
+          <span class="age-option-badge">+70–120 €/m²</span>
+        </div>
+        <div class="age-option" data-value="piedra_natural" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Piedra natural</div>
+          <span class="age-option-badge">+100–200 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 6: Tipo Edificio -->
+    <div class="wizard-step" id="step6" data-step="6">
+      <div class="step-header">
+        <h1>¿Qué tipo de edificio?</h1>
+        <p class="step-subtitle">La antigüedad afecta al coste</p>
+      </div>
+      <div class="age-options" id="ageOptions">
+        <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Menos de 20 años</div>
+          <span class="age-option-badge">×1.00</span>
+        </div>
+        <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 20 y 40 años</div>
+          <span class="age-option-badge">×1.05</span>
+        </div>
+        <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 40 y 70 años</div>
+          <span class="age-option-badge">×1.15</span>
+        </div>
+        <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Más de 70 años / Casco Viejo</div>
+          <span class="age-option-badge">×1.30</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 7: Resultado -->
+    <div class="wizard-step" id="step7" data-step="7">
+      <div class="result-container">
+        <div class="result-header">
+          <h1 class="result-title">Tu reforma de baño en Bilbao cuesta entre</h1>
+          <div class="result-range">
+            <span class="result-range-low" id="resultRangeLow">—</span>
+            <span class="result-range-separator">—</span>
+            <span class="result-range-high" id="resultRangeHigh">—</span>
+          </div>
+        </div>
+        <div class="result-breakdown" id="resultBreakdownBars">
+          <p style="margin:0;font-family:var(--font-inter);font-size:0.875rem;">Desglose orientativo</p>
+        </div>
+        <div class="result-disclaimer">
+          ⚠️ Este presupuesto es orientativo y puede variar ±15%. <strong>Precio mínimo garantizado: 2.500 €</strong> para reforma de baño básica.
         </div>
         <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
+          <button class="wizard-nav-btn wizard-nav-btn-primary" type="button" onclick="window.location.href='/calculadora/bano-bilbao.html'">Nuevo cálculo →</button>
         </nav>
-      </div>
-
-      <!-- STEP 2: Elemento Principal -->
-      <div class="wizard-step" id="step2" data-step="2">
-        <div class="step-header">
-          <h1 class="step-title">¿Qué elemento principal quieres instalar?</h1>
-        </div>
-        <div class="age-options" id="mainElementOptions">
-          <div class="age-option selected" data-value="ducha" role="button" tabindex="0" aria-pressed="true">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Solo ducha</div>
-              <div class="age-option-desc">Plato de ducha o walk-in</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="banera" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Solo bañera</div>
-              <div class="age-option-desc">Bañera estándar o de hidromasaje</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="ducha_banera" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Ducha + bañera</div>
-              <div class="age-option-desc">Ambos elementos</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="sanitarios" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Cambio de sanitarios sin obra</div>
-              <div class="age-option-desc">Solo cambiar inodoro, lavabo</div>
-            </div>
-          </div>
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
-        </nav>
-      </div>
-
-      <!-- STEP 3: Tipo Ducha -->
-      <div class="wizard-step" id="step3" data-step="3">
-        <div class="step-header">
-          <h1 class="step-title">¿Qué tipo de ducha quieres?</h1>
-        </div>
-        <div class="age-options" id="duchaTypeOptions">
-          <div class="age-option selected" data-value="plato_convencional" role="button" tabindex="0" aria-pressed="true">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Plato de ducha convencional</div>
-            </div>
-            <span class="age-option-badge">+400–800 €</span>
-          </div>
-          <div class="age-option" data-value="walk_in" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Ducha a ras de suelo (walk-in)</div>
-            </div>
-            <span class="age-option-badge">+800–2.000 €</span>
-          </div>
-          <div class="age-option" data-value="banera_acero" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Bañera de acero/acrílico</div>
-            </div>
-            <span class="age-option-badge">+600–1.200 €</span>
-          </div>
-          <div class="age-option" data-value="banera_hidro" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Bañera de hidromasaje / exenta</div>
-            </div>
-            <span class="age-option-badge">+2.000–5.000 €</span>
-          </div>
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
-        </nav>
-      </div>
-
-      <!-- STEP 4: Revestimiento -->
-      <div class="wizard-step" id="step4" data-step="4">
-        <div class="step-header">
-          <h1 class="step-title">¿Qué revestimiento quieres para las paredes?</h1>
-        </div>
-        <div class="age-options" id="revestimientoOptions">
-          <div class="age-option selected" data-value="no_cambiar" role="button" tabindex="0" aria-pressed="true">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">No se cambia azulejo</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="azulejo_parcial" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Azulejo parcial (hasta 1m)</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="azulejo_completo" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Azulejo completo</div>
-            </div>
-          </div>
-          <div class="age-option" data-value="gresite" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Gresite</div>
-            </div>
-            <span class="age-option-badge">+30–50%</span>
-          </div>
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
-        </nav>
-      </div>
-
-      <!-- STEP 5: Suelo -->
-      <div class="wizard-step" id="step5" data-step="5">
-        <div class="step-header">
-          <h1 class="step-title">¿Qué suelo quieres para el baño?</h1>
-        </div>
-        <div class="age-options" id="sueloOptions">
-          <div class="age-option selected" data-value="gres_antideslizante" role="button" tabindex="0" aria-pressed="true">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Gres antideslizante</div>
-            </div>
-            <span class="age-option-badge">Incluido</span>
-          </div>
-          <div class="age-option" data-value="gresite_suelo" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Gresite</div>
-            </div>
-            <span class="age-option-badge">+40–60 €/m²</span>
-          </div>
-          <div class="age-option" data-value="microcemento" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Microcemento</div>
-            </div>
-            <span class="age-option-badge">+70–120 €/m²</span>
-          </div>
-          <div class="age-option" data-value="piedra_natural" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Piedra natural</div>
-            </div>
-            <span class="age-option-badge">+100–200 €/m²</span>
-          </div>
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
-        </nav>
-      </div>
-
-      <!-- STEP 6: Calidad Edificio -->
-      <div class="wizard-step" id="step6" data-step="6">
-        <div class="step-header">
-          <h1 class="step-title">¿Qué tipo de edificio?</h1>
-          <p class="step-subtitle">La antigüedad afecta al coste</p>
-        </div>
-        <div class="age-options" id="ageOptions">
-          <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Menos de 20 años</div>
-            </div>
-            <span class="age-option-badge">×1.00</span>
-          </div>
-          <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Entre 20 y 40 años</div>
-            </div>
-            <span class="age-option-badge">×1.05</span>
-          </div>
-          <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Entre 40 y 70 años</div>
-            </div>
-            <span class="age-option-badge">×1.15</span>
-          </div>
-          <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
-            <div class="age-option-radio"></div>
-            <div class="age-option-content">
-              <div class="age-option-title">Más de 70 años / Casco Viejo</div>
-            </div>
-            <span class="age-option-badge">×1.30</span>
-          </div>
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
-        </nav>
-      </div>
-
-      <!-- STEP 7: Resultado -->
-      <div class="wizard-step" id="step7" data-step="7" style="display:none;">
-        <div class="result-container">
-          <div class="result-header">
-            <h1 class="result-title">Tu reforma de baño en Bilbao cuesta entre</h1>
-            <div class="result-range">
-              <span class="result-range-low" id="resultRangeLow">—</span>
-              <span class="result-range-separator">—</span>
-              <span class="result-range-high" id="resultRangeHigh">—</span>
-            </div>
-          </div>
-          <div class="result-breakdown">
-            <h2 class="result-breakdown-title">Desglose orientativo</h2>
-            <div id="resultBreakdownBars"></div>
-          </div>
-          <div class="result-disclaimer">
-            ⚠️ Este presupuesto es orientativo y puede variar ±15%. <strong>Precio mínimo garantizado: 2.500 €</strong> para reforma de baño básica.
-          </div>
-          <nav class="wizard-nav">
-            <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-            <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Nuevo cálculo →</button>
-          </nav>
-        </div>
       </div>
     </div>
-  </div>
+  </Calculator>
 </CalculadoraLayout>
 
-<!-- Bathroom calculator island: loads specialized baño calculator -->
 <script>
-  import { calculate, BARRIO_MULTIPLIERS, BARRIO_TO_AGE, BARRIO_LABELS, presetBarrio, formatCurrency } from '/src/scripts/calculator/index.ts';
+  import { BARRIO_MULTIPLIERS, BARRIO_LABELS, formatCurrency } from '/src/scripts/calculator/index.ts';
 
   const MIN_BATHROOM = 2500;
 
-  // Read ?barrio= and ?age= from URL
+  // Read ?barrio= from URL
   const urlParams = new URLSearchParams(window.location.search);
   const barrio = urlParams.get('barrio');
 
@@ -323,7 +287,7 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
     const step3Header = document.querySelector('#step3 .step-header');
     if (step3Header) {
       const badge = document.createElement('div');
-      badge.style.cssText = 'display:inline-block;background:#7D8B6A;color:white;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;';
+      badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:var(--color-blanco);padding:0.25rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;font-family:var(--font-inter);';
       badge.textContent = 'Barrio: ' + BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS];
       step3Header.insertBefore(badge, step3Header.firstChild);
     }
@@ -341,6 +305,14 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 
   // Helpers
   function showStep(n: number) {
+    // Update stepper
+    document.querySelectorAll('.stepper-step').forEach(el => {
+      const step = parseInt((el as HTMLElement).dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (step < n) el.classList.add('completed');
+      if (step === n) el.classList.add('active');
+    });
+
     document.querySelectorAll('.wizard-step').forEach(el => {
       (el as HTMLElement).style.display = 'none';
       el.classList.remove('active');
@@ -350,8 +322,6 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
       (step as HTMLElement).style.display = 'block';
       step.classList.add('active');
     }
-    const fill = document.getElementById('progressBarFill');
-    if (fill) fill.style.width = ((n / 8) * 100) + '%';
   }
 
   function updateSqm(val: number) {
@@ -378,7 +348,13 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
   function selectAge(age: string) {
     const multipliers: Record<string, number> = { new: 1.0, moderate: 1.05, old: 1.15, historic: 1.30 };
     state.edificio = multipliers[age] || 1.0;
-    selectOption('ageOptions', 'buildingAge', age);
+    const container = document.getElementById('ageOptions');
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-age') === age;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
   }
 
   function calculateBathroom() {
@@ -413,7 +389,7 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
       base *= BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS];
     }
 
-    // Apply MIN_BATHROOM clamp
+    // Apply MIN_BATHROOM clamp — MUST BE PRESERVED
     const low = Math.max(Math.round(base * 0.85), MIN_BATHROOM);
     const high = Math.round(base * 1.15);
 
@@ -481,7 +457,7 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 
   ['no_cambiar', 'azulejo_parcial', 'azulejo_completo', 'gresite'].forEach(val => {
     document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
-      el.addEventListener('click', () => selectOption('revestimientoOptions', 'revestimiento', val));
+      el.addEventListener('click', () => selectOption('revestimientoOptions', 'revéstimiento', val));
     });
   });
 
@@ -497,6 +473,6 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
     });
   });
 
-  // Init
+  // Init — show step 1
   showStep(1);
 </script>
