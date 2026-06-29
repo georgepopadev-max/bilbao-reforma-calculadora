@@ -1,7 +1,7 @@
 ---
 import HubLayout from '../../layouts/HubLayout.astro';
 
-const children = [
+const items = [
   { title: 'Presupuesto Reforma Baño Bilbao 2026', href: '/blog/presupuesto-reforma-bano-bilbao.html', description: 'Cómo pedir y comparar presupuestos.', category: 'BAÑO', readTime: '8 min' },
   { title: 'Precio m² Reforma Baño Bilbao 2026', href: '/blog/precio-m2-reforma-bano-bilbao.html', description: 'Tabla completa de precios por m².', category: 'BAÑO', readTime: '7 min' },
   { title: 'Reforma Baño Bilbao 2025', href: '/blog/reforma-bano-bilbao.html', description: 'Guía general con todo lo que necesitas.', category: 'BAÑO', readTime: '9 min' },
@@ -28,7 +28,7 @@ const faqs = [
   city="bilbao"
   datePublished="2026-06-23"
   dateModified="2026-06-23"
-  children={children}
+  items={items}
   faqs={faqs}
 >
   <main style="max-width: 1100px; margin: 0 auto; padding: 2rem 1rem;">
@@ -102,7 +102,7 @@ const faqs = [
         Estos 8 artículos cubren en profundidad cada aspecto de la reforma de baño:
       </p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-        {children.map(child => (
+        {items.map(child => (
           <a href={child.href} style="text-decoration: none; background: white; border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block;">
             <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
               <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">{child.category}</span>

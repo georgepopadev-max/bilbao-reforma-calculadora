@@ -16,10 +16,10 @@ export interface Props {
   description?: string;
   canonical?: string;
   category?: string;
-  city?: string;
+  city?: 'bilbao' | 'donostia' | 'vitoria';
   datePublished?: string;
   dateModified?: string;
-  children?: HubChild[];
+  items?: HubChild[];
   faqs?: Array<{ q: string; a: string }>;
   jsonSchemas?: any[];
 }
@@ -32,7 +32,7 @@ const {
   city = 'bilbao',
   datePublished,
   dateModified,
-  children = [],
+  items = [],
   faqs = [],
   jsonSchemas = [],
 } = Astro.props;
@@ -48,7 +48,7 @@ const collectionSchema = {
   url: canonical || `${siteUrl}${Astro.url.pathname}`,
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: children.map((child, i) => ({
+    itemListElement: items.map((child, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       url: child.href.startsWith('http') ? child.href : `${siteUrl}${child.href}`,
@@ -75,16 +75,13 @@ const breadcrumbSchema = {
 };
 
 // FAQPage schema
-const faqSchema = faqs.length > 0 ? {
+const faqSchema = Array.isArray(faqs) && faqs.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faqs.map(faq => ({
     '@type': 'Question',
     name: faq.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.a,
-    },
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
   })),
 } : null;
 
