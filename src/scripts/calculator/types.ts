@@ -194,6 +194,7 @@ export interface BilbaoCalcPublicAPI {
   updateQuality: (quality: QualityKey) => void;
   toggleReformType: (type: ReformTypeKey) => void;
   selectScope: (scope: ReformScopeKey) => void;
+  setTotalSteps: (steps: number) => void;
   updateReformTypes: (types: ReformTypeKey[]) => void;
   updateReformScope: (scope: ReformScopeKey) => void;
   toggleExtra: (key: string) => void;

@@ -388,6 +388,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
 <script>
   import BilbaoCalc from '../../../scripts/calculator/core.ts';
   BilbaoCalc.setRegion('vitoria');
+  BilbaoCalc.setTotalSteps(7); // 6 wizard steps + 1 result
   BilbaoCalc.init();
 
   // Scope cards (step 1)

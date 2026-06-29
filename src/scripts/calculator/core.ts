@@ -325,6 +325,7 @@ const BilbaoCalc: BilbaoCalcPublicAPI = {
   updateQuality: doUpdateQuality,
   toggleReformType: doToggleReformType,
   selectScope: doSelectScope,
+  setTotalSteps,
   updateReformTypes: (types: ReformTypeKey[]) => {
     types.forEach((type) => {
       if (!state.data.reformTypes.includes(type)) {
@@ -356,6 +357,10 @@ if (typeof window !== 'undefined') {
 }
 
 export default BilbaoCalc;
+export function setTotalSteps(steps: number): void {
+  state.totalSteps = steps;
+}
+
 export {
   state,
   nextStep,
