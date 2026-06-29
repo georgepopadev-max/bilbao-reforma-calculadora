@@ -4,6 +4,8 @@
  * A3 Zone
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
@@ -12,20 +14,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   canonical="https://www.bilbaoreforma.es/contacto.html"
 >
 
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/index.html" class="header-logo">
-        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <span class="header-logo-text">Bilbao Reforma</span>
-      </a>
-      <nav class="header-nav">
-        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
-        <a href="/blog/index.html" class="header-nav-link">Blog</a>
-        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
-        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <Header city="bilbao" />
 
   <main id="main-content">
     <section style="max-width:600px;margin:4rem auto;padding:0 1.5rem;">
@@ -51,11 +40,5 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p>
-      </div>
-    </div>
-  </footer>
+  <Footer city="bilbao" />
 </BaseLayout>
