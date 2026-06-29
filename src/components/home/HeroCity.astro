@@ -1,0 +1,154 @@
+---
+// HeroCity — Homepage hero for Donostia/Vitoria city pages
+interface Props {
+  city: 'donostia' | 'vitoria';
+}
+
+const { city } = Astro.props;
+
+const cityConfig = {
+  donostia: {
+    name: 'Donostia-San Sebastián',
+    region: 'Gipuzkoa',
+    year: '2026',
+    badge: 'Precios actualizados Donostia 2026',
+    h1: 'Calculadora de Reformas en Donostia',
+    subtitle: 'Obtén un presupuesto orientativo en menos de 2 minutos, sin registro. Con datos reales de precios de empresas de reformas en Donostia/San Sebastián y Gipuzkoa.',
+    calculatorUrl: '/donostia/calculadora/index.html',
+  },
+  vitoria: {
+    name: 'Vitoria-Gasteiz',
+    region: 'Álava',
+    year: '2026',
+    badge: 'Precios actualizados Vitoria 2026',
+    h1: 'Calculadora de Reformas en Vitoria',
+    subtitle: 'Obtén un presupuesto orientativo en menos de 2 minutos, sin registro. Con datos reales de precios de empresas de reformas en Vitoria-Gasteiz y Álava.',
+    calculatorUrl: '/vitoria/calculadora/index.html',
+  },
+};
+
+const config = cityConfig[city];
+---
+
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      {config.badge}
+    </div>
+    <h1 class="hero-title">{config.h1}</h1>
+    <p class="hero-subtitle">{config.subtitle}</p>
+    <div class="hero-cta-group">
+      <a href={config.calculatorUrl} class="hero-cta-primary">
+        <svg alt="" class="hero-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+          <line x1="8" y1="6" x2="16" y2="6"></line>
+          <line x1="8" y1="10" x2="16" y2="10"></line>
+          <line x1="8" y1="14" x2="12" y2="14"></line>
+        </svg>
+        Calcular presupuesto gratis
+      </a>
+    </div>
+    <div class="hero-trust">
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        Gratuito
+      </span>
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        Sin registro
+      </span>
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        En menos de 2 min
+      </span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #FDF6F0 0%, #FEF9F4 50%, #FFF8F2 100%);
+    padding: 4rem 1.5rem 5rem;
+    text-align: center;
+  }
+  .hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(196, 92, 62, 0.1);
+    color: var(--color-terracota);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.375rem 0.875rem;
+    border-radius: 999px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(196, 92, 62, 0.2);
+  }
+  .hero-title {
+    font-family: var(--font-playfair);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--color-grafito);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+  .hero-subtitle {
+    font-size: 1.0625rem;
+    color: var(--color-gris);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+  }
+  .hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .hero-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-terracota);
+    color: white;
+    padding: 0.875rem 1.75rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    box-shadow: 0 4px 14px rgba(196, 92, 62, 0.35);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .hero-cta-primary:hover {
+    background: var(--color-terracota-hover);
+    box-shadow: 0 6px 20px rgba(196, 92, 62, 0.4);
+    text-decoration: none;
+    color: white;
+  }
+  .hero-cta-icon { width: 18px; height: 18px; }
+  .hero-trust {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-trust-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    font-weight: 500;
+  }
+  .hero-trust-item svg { color: #22c55e; }
+</style>

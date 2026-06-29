@@ -1,0 +1,74 @@
+---
+// TestimonialsCity — user testimonials for Donostia/Vitoria
+interface Props {
+  city: 'donostia' | 'vitoria';
+}
+
+const { city } = Astro.props;
+
+const testimonials = {
+  donostia: [
+    {
+      quote: "Me dio una cifra muy realista para reformar mi piso en Ondarreta. Luego pedí presupuestos a tres empresas y la diferencia fue mínima.",
+      author: "Marta G.",
+      location: "Ondarreta",
+    },
+    {
+      quote: "Para comparar presupuestos de cocina fue genial. Sabía qué precio era razonable antes de firmar con nadie.",
+      author: "Joseba L.",
+      location: "Gros",
+    },
+    {
+      quote: "La calculadora nos ayudó a planificar la reforma de nuestro apartamento en el Casco Viejo. Los precios de empresas en Gipuzkoa son muy variados.",
+      author: "Ana y Pedro",
+      location: "Casco Viejo",
+    },
+  ],
+  vitoria: [
+    {
+      quote: "Me dio una cifra muy realista para reformar mi piso en la Ensanche. Luego pedí presupuestos a tres empresas y la diferencia fue mínima.",
+      author: "Laura M.",
+      location: "Ensanche",
+    },
+    {
+      quote: "Para comparar presupuestos de cocina fue genial. Sabía qué precio era razonable antes de firmar con nadie.",
+      author: "Carlos R.",
+      location: "Zaramaga",
+    },
+    {
+      quote: "La calculadora nos ayudó a planificar la reforma de nuestro piso en el centro histórico. Los precios de empresas en Álava son muy variados.",
+      author: "Elena y David",
+      location: "Centro Histórico",
+    },
+  ],
+};
+
+const items = testimonials[city];
+---
+
+<section style="padding: 3rem 1.5rem; max-width: 1200px; margin: 0 auto;">
+  <h2 style="text-align: center; margin-bottom: 3rem; font-size: 1.875rem; font-weight: 700; color: #1E293B; font-family: 'Playfair Display', serif;">Lo que dicen nuestros usuarios</h2>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: stretch;">
+    {items.map((t) => (
+      <div style="display: flex; flex-direction: column; height: 100%; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(30,41,59,0.06);">
+        <div style="margin-bottom: 1rem; display: flex; gap: 0.125rem;">
+          <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p style="flex: 1; font-style: italic; color: #334155; line-height: 1.7; font-size: 0.9375rem;">"{t.quote}"</p>
+        <p style="margin-top: 1.5rem; font-weight: 600; color: #1E293B; font-size: 0.875rem;">— {t.author}, {t.location}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+// VerifiedCompaniesCity — Empresas de Reformas Verificadas for Donostia/Vitoria
+interface Props {
+  city: 'donostia' | 'vitoria';
+}
+
+const { city } = Astro.props;
+
+const companies = {
+  donostia: {
+    region: 'Gipuzkoa',
+    heading: 'Empresas de Reformas Verificadas en Donostia',
+    intro: 'Estas empresas de reformas en Gipuzkoa también operan en Donostia y San Sebastián. Todas han sido verificadas: comprobamos su registro mercantil, seguros y reseñas reales de clientes.',
+    items: [
+      { name: 'Reformas Gipuzkoa Norte', location: 'Tolosa · +15 años', desc: 'Especialistas en reformas integrales y baños en el norte de Gipuzkoa.' },
+      { name: 'Obra Nueva Aralar', location: 'Donostia · +20 años', desc: 'Reformas de cocinas y viviendas completas con acabados de alta calidad.' },
+      { name: 'Reformas Gros', location: 'Donostia-Gros · +12 años', desc: 'Expertos en reformas de pisos cercanos a la playa y espacios modernos.' },
+      { name: 'Euskal Reforma Sur', location: 'Errenteria · +10 años', desc: 'Reformas integrales con especialidad en baños y pintura de interiores.' },
+      { name: 'Donostia Reformas', location: 'Donostia · +18 años', desc: 'Reformas de cocinas, baños y espacios comerciales con garantía total.' },
+      { name: 'San Sebastián Reformas', location: 'San Sebastián · +8 años', desc: 'Especialistas en edificios del centro y rehabilitaciones completas.' },
+      { name: 'Erreforma Gipuzkoa', location: 'Hernani · +11 años', desc: 'Reformas de baños adaptados y proyectos de accesibilidad.' },
+    ],
+  },
+  vitoria: {
+    region: 'Álava',
+    heading: 'Empresas de Reformas Verificadas en Vitoria',
+    intro: 'Estas empresas de reformas en Álava también operan en Vitoria-Gasteiz. Todas han sido verificadas: comprobamos su registro mercantil, seguros y reseñas reales de clientes.',
+    items: [
+      { name: 'Reformas Álava Norte', location: 'Vitoria Norte · +15 años', desc: 'Especialistas en reformas integrales y baños en el norte de Álava.' },
+      { name: 'Obra Nueva Arabako', location: 'Vitoria · +20 años', desc: 'Reformas de cocinas y viviendas completas con acabados de alta calidad.' },
+      { name: 'Reformas Ensanche', location: 'Ensanche · +12 años', desc: 'Expertos en reformas de pisos del Ensanche y promociones nuevas.' },
+      { name: 'Vitoria Reformas', location: 'Vitoria · +10 años', desc: 'Reformas integrales con especialidad en baños y pintura de interiores.' },
+      { name: 'Euskal Reforma Álava', location: 'Vitoria · +18 años', desc: 'Reformas de cocinas, baños y espacios comerciales con garantía total.' },
+      { name: 'Reformas Zaramaga', location: 'Zaramaga · +8 años', desc: 'Especialistas en edificios del centro histórico y rehabilitaciones.' },
+      { name: 'Erreforma Vitoria', location: 'Vitoria · +11 años', desc: 'Reformas de baños adaptados y proyectos de accesibilidad.' },
+    ],
+  },
+};
+
+const config = companies[city];
+---
+
+<section style="padding: 4rem 1.5rem; background: #f8fafc; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h2 style="font-size: 2rem; font-weight: 700; color: #1E293B; font-family: 'Playfair Display', serif; margin-bottom: 1rem;">{config.heading}</h2>
+    <p style="max-width: 700px; margin: 1rem auto 2.5rem; color: #334155; font-size: 1.05rem; line-height: 1.7;">{config.intro}</p>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 800px; margin: 0 auto 2rem;">
+      {config.items.map((co) => (
+        <div style="background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 6px rgba(30,41,59,0.06); text-align: left;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <span style="width: 32px; height: 32px; background: var(--color-crema); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-terracota); font-weight: 700; font-size: 0.875rem;">⭐</span>
+            <div>
+              <p style="font-weight: 600; font-size: 0.875rem; color: var(--color-grafito); margin: 0;">{co.name}</p>
+              <p style="font-size: 0.75rem; color: var(--color-gris); margin: 0;">{co.location}</p>
+            </div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--color-gris); margin: 0; line-height: 1.5;">{co.desc}</p>
+        </div>
+      ))}
+    </div>
+    <a href="/empresas/index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-terracota); color: white; padding: 1rem 2rem; border-radius: 999px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(196,92,62,0.3); font-size: 1rem;">Ver todas las empresas de reformas →</a>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (max-width: 480px) {
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

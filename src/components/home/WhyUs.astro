@@ -1,8 +1,31 @@
 ---
 // WhyUs — "Por qué Bilbao Reforma" differentiators section
+interface Props {
+  city?: 'bilbao' | 'donostia' | 'vitoria';
+}
+
+const { city = 'bilbao' } = Astro.props;
+
+const cityConfig = {
+  bilbao: {
+    heading: 'Por qué Bilbao Reforma',
+    region: 'Bilbao y Bizkaia',
+  },
+  donostia: {
+    heading: '¿Por qué Reforma Donostia?',
+    region: 'Donostia y Gipuzkoa',
+  },
+  vitoria: {
+    heading: '¿Por qué Reforma Vitoria?',
+    region: 'Vitoria y Álava',
+  },
+};
+
+const config = cityConfig[city];
 ---
+
 <section class="home-section home-section-alt">
-  <h2 style="font-size: 1.375rem; font-weight: 700; color: #1E293B; font-family: 'Playfair Display', serif; margin-bottom: 1.5rem;">Por qué Bilbao Reforma</h2>
+  <h2 style="font-size: 1.375rem; font-weight: 700; color: #1E293B; font-family: 'Playfair Display', serif; margin-bottom: 1.5rem;">{config.heading}</h2>
   <div class="differentiators-grid">
     <div class="differentiator-card">
       <div class="differentiator-icon">
@@ -11,8 +34,8 @@
           <circle cx="12" cy="10" r="3"></circle>
         </svg>
       </div>
-      <h4 class="differentiator-title">Datos locales de Bilbao</h4>
-      <p class="differentiator-desc">Precios basados en datos reales de empresas de reformas en Bilbao y Bizkaia, no en tablas genéricas de internet.</p>
+      <h4 class="differentiator-title">Datos locales de {config.region}</h4>
+      <p class="differentiator-desc">Precios basados en datos reales de empresas de reformas en {config.region}, no en tablas genéricas de internet.</p>
     </div>
     <div class="differentiator-card">
       <div class="differentiator-icon">
@@ -47,7 +70,7 @@
         </svg>
       </div>
       <h4 class="differentiator-title">Empresas verificadas</h4>
-      <p class="differentiator-desc">Conectamos con empresas locales recomendadas que han hecho reformas en Bilbao.</p>
+      <p class="differentiator-desc">Conectamos con empresas locales recomendadas que han hecho reformas en {config.region}.</p>
     </div>
   </div>
 </section>

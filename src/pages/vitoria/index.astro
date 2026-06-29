@@ -1,37 +1,179 @@
 ---
+/**
+ * Vitoria Index — Bilbao Reforma
+ * A3 Zone — Full migration from legacy/vitoria/index.html
+ */
 import CityLayout from '../../layouts/CityLayout.astro';
-const schema = {
+import HeroCity from '../../components/home/HeroCity.astro';
+import HowItWorks from '../../components/home/HowItWorks.astro';
+import WhyUs from '../../components/home/WhyUs.astro';
+import TestimonialsCity from '../../components/home/TestimonialsCity.astro';
+import VerifiedCompaniesCity from '../../components/home/VerifiedCompaniesCity.astro';
+import PopularArticles from '../../components/home/PopularArticles.astro';
+import FAQCity from '../../components/home/FAQCity.astro';
+import FinalCTA from '../../components/home/FinalCTA.astro';
+
+// Schemas specific to Vitoria
+const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Reforma Vitoria',
+  '@id': 'https://www.bilbaoreforma.es/#business-vitoria',
+  'name': 'Reforma Vitoria',
   description: 'Calculadora de presupuestos de reformas en Vitoria-Gasteiz y Álava. Precios orientativos en menos de 2 minutos.',
   url: 'https://www.bilbaoreforma.es/vitoria/',
-  areaServed: { '@type': 'State', name: 'Álava' },
+  logo: 'https://www.bilbaoreforma.es/images/logo.png',
+  image: 'https://www.bilbaoreforma.es/images/og/home-og.jpg',
+  telephone: '+34 642 147 856',
+  priceRange: '€€',
+  address: {
+    '@type': 'PostalAddress',
+    'addressLocality': 'Vitoria-Gasteiz',
+    'addressRegion': 'Álava',
+    'addressCountry': 'ES'
+  },
+  areaServed: [
+    { '@type': 'City', 'name': 'Vitoria-Gasteiz' },
+    { '@type': 'State', 'name': 'Álava' }
+  ],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'],
+      opens: '09:00',
+      closes: '18:00'
+    }
+  ],
+  sameAs: []
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Reformas integrales y presupuestos online',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.bilbaoreforma.es/#business-vitoria'
+  },
+  areaServed: [
+    { '@type': 'City', 'name': 'Vitoria-Gasteiz' },
+    { '@type': 'State', 'name': 'Álava' }
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de reforma',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma integral' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma de baño' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma de cocina' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cambio de suelo' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pintura de piso' } }
+    ]
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta una reforma integral en Vitoria?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio medio de una reforma integral en Vitoria-Gasteiz oscila entre 650€ y 1.300€ por metro cuadrado, dependiendo del nivel de calidad elegido. Para un piso de 80m², el presupuesto orientativo se sitúa entre 52.000€ y 104.000€. Usa nuestra calculadora para obtener un desglose personalizado por partidas.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿La calculadora de presupuestos es gratuita?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, completamente gratuita. La calculadora de reformas de Bilbao Reforma te ofrece un presupuesto orientativo en menos de 2 minutos sin necesidad de registro, teléfono ni email. Es una herramienta informativa para ayudarte a planificar tu reforma en Vitoria o Álava.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Los precios se actualizan con el coste actual en Vitoria?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. Los precios de la calculadora se basan en datos reales de empresas de reformas activas en Vitoria y Álava, no en tablas genéricas de internet. Actualizamos las tarifas regularmente para reflejar el mercado local de 2026.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo contratar directamente a una empresa desde la web?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'La calculadora te da un presupuesto orientativo. Si lo deseas, puedes solicitar presupuestos personalizados a empresas de reformas en Vitoria y Álava a través de nuestro directorio de empresas verificadas.'
+      }
+    }
+  ]
 };
 ---
-<CityLayout title="Calculadora Reformas Vitoria 2026" description="Calculadora de Reformas en Vitoria-Gasteiz 2026. Obtén un presupuesto orientativo en menos de 2 minutos." canonical="https://www.bilbaoreforma.es/vitoria/" city="vitoria" schemaData={schema}>
-  <section style="background:linear-gradient(135deg,#C45C3E 0%,#9a4a2f 100%);color:white;padding:4rem 1.5rem;text-align:center;">
-    <div style="max-width:700px;margin:0 auto;">
-      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;margin-bottom:1rem;">Reformas en Vitoria-Gasteiz 2026</h1>
-      <p style="font-size:1.1rem;opacity:0.9;margin-bottom:2rem;">Calcula el presupuesto orientativo de tu reforma en Vitoria-Gasteiz y Álava en menos de 2 minutos.</p>
-      <a href="/vitoria/calculadora/index.html" style="display:inline-flex;align-items:center;gap:0.5rem;padding:1rem 2rem;background:white;color:#C45C3E;border-radius:8px;font-weight:600;text-decoration:none;font-size:1.1rem;">Calcular presupuesto →</a>
+
+<CityLayout
+  title="Calculadora de Reformas en Vitoria | Presupuesto Online 2026"
+  description="Calculadora de Reformas en Vitoria-Gasteiz 2026. Obtén un presupuesto orientativo para tu reforma en menos de 2 minutos, sin registro. Precios actualizados de empresas en Álava."
+  canonical="https://www.bilbaoreforma.es/vitoria/"
+  city="vitoria"
+>
+  <!-- JSON-LD Schemas -->
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <HeroCity city="vitoria" />
+
+  <div class="home-content-layout">
+    <div class="home-content">
+      <HowItWorks />
+      <WhyUs city="vitoria" />
+      <TestimonialsCity city="vitoria" />
     </div>
-  </section>
-  <section style="padding:3rem 1.5rem;">
-    <div style="max-width:900px;margin:0 auto;text-align:center;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1.5rem;">Calculadoras por tipo de reforma</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
-        <a href="/vitoria/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-          <div style="font-size:2rem;margin-bottom:0.75rem;">🚿</div>
-          <h3 style="font-size:1rem;margin-bottom:0.5rem;">Reforma de Baño</h3>
-          <p style="font-size:0.85rem;color:#666;">Desde 2.500 €</p>
-        </a>
-        <a href="/vitoria/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-          <div style="font-size:2rem;margin-bottom:0.75rem;">🏗️</div>
-          <h3 style="font-size:1rem;margin-bottom:0.5rem;">Reforma Integral</h3>
-          <p style="font-size:0.85rem;color:#666;">Desde 700 €/m²</p>
-        </a>
+    <aside class="home-sidebar">
+      <div class="sidebar-sticky">
+        <PopularArticles city="vitoria" />
       </div>
-    </div>
-  </section>
+    </aside>
+  </div>
+
+  <VerifiedCompaniesCity city="vitoria" />
+  <FAQCity city="vitoria" />
+  <FinalCTA />
 </CityLayout>
+
+<style>
+  .home-content-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    align-items: start;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home-sidebar {
+    min-width: 0;
+  }
+  .sidebar-sticky {
+    position: sticky;
+    top: 6rem;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(45,30,15,0.06);
+  }
+  @media (max-width: 1024px) {
+    .home-content-layout {
+      grid-template-columns: 1fr;
+    }
+    .sidebar-sticky {
+      position: static;
+    }
+  }
+</style>
