@@ -1,0 +1,40 @@
+---
+title: "Licencia de Reforma en Bilbao 2026: Tipos, Precios, Plazos y Documentación"
+description: "Guía completa de licencias de obra en Bilbao y Bizkaia 2026: tipos de licencia según obra, precios municipales, plazos de tramitación y documentación necesaria."
+canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao.html"
+category: "presupuesto"
+city: "bilbao"
+faqs:
+  - q: "¿Qué tipo de licencia necesito para reformar mi piso en Bilbao?"
+    a: "Depende de la obra: Comunicación Previa para obras menores (pintura, cambio de sanitarios), Licencia de Obra Menor para reformas de cocina o baño con sustitución de instalaciones, y Licencia de Obra M"
+  - q: "¿Cuánto cuesta la licencia de obra en Bilbao?"
+    a: "La tasa municipal oscila entre 50-150 € para Comunicación Previa, 150-500 € para Licencia de Obra Menor, y 400-1.500 € para Licencia de Obra Mayor. A esto hay que añadir el ICIO (Impuesto de Construcc"
+  - q: "¿Cuánto tarda el Ayuntamiento de Bilbao en conceder una licencia?"
+    a: "La Comunicación Previa permite iniciar obras inmediatamente. La Licencia de Obra Menor se resuelve en aproximadamente 1 mes (ampliable a 3 meses si se requiere documentación adicional). La Licencia de"
+  - q: "¿Necesito licencia para pintar mi piso en Bilbao?"
+    a: "No, la pintura interior se tramita como Comunicación Previa de Obra, que es un trámite ágil y generalmente gratuito. No requiere proyecto técnico ni autorización de la comunidad de propietarios."
+  - q: "¿Qué ocurre si hago obra sin licencia en Bilbao?"
+    a: "Las sanciones pueden alcanzar los 3.000 € para obra menor y mucho más para obra mayor. Además, puedes recibir la orden de derribar lo construido o regularizar la situación, lo que encarece enormemente"
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Licencia de Reforma en Bilbao 2026: Tipos, Precios, Plazos y Documentación"
+    url: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Reforma vs Reestructuración en Bilbao"
+    href: "reforma-vs-reestructuracion-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+  - type: "leer"
+    label: "Reforma vs Reestructuración en Bilbao"
+    href: "reforma-vs-reestructuracion-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+priceTables: 0
+---
+

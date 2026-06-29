@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout
+  title="Bilbao Reforma - Calculadora de Reformas y Presupuestos 2026"
+  description="Calculadora de presupuestos de reformas para Bilbao y Bizkaia. Precios orientativos para reforma de baño, cocina, pintura, suelo y reforma integral. Datos reales de empresas locales."
+  canonical="https://www.bilbaoreforma.es/"
+>
+  <Header city="bilbao" />
+  <main style="max-width: 1200px; margin: 0 auto; padding: 4rem 1rem; text-align: center;">
+    <h1 style="font-family: var(--font-playfair); font-size: 2.5rem; color: var(--color-grafito); margin-bottom: 1rem;">
+      Bilbao Reforma
+    </h1>
+    <p style="font-size: 1.125rem; color: var(--color-gris); margin-bottom: 2rem;">
+      Calculadora de presupuestos de reformas más completa para Bilbao y Bizkaia.
+    </p>
+    <a href="/calculadora/index.html" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; background: var(--color-terracota); color: var(--color-blanco); text-decoration: none; border-radius: var(--radius-button); font-weight: 600;">
+      Abrir calculadora ->
+    </a>
+  </main>
+  <Footer city="bilbao" />
+</BaseLayout>

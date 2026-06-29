@@ -1,0 +1,17 @@
+/* ============================================
+   Tailwind entry — import all layers
+   ============================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles layer */
+@layer base {
+  @import './tokens.css';
+  @import './base.css';
+}
+
+/* Component styles layer */
+@layer components {
+  @import './components.css';
+}

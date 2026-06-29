@@ -1,0 +1,61 @@
+---
+/**
+ * Aviso Legal — Bilbao Reforma
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Aviso Legal | Bilbao Reforma"
+  description="Aviso legal de Bilbao Reforma. Información sobre el responsable del sitio web."
+  canonical="https://www.bilbaoreforma.es/aviso-legal.html"
+>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section style="max-width:700px;margin:4rem auto;padding:0 1.5rem;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1.5rem;">Aviso Legal</h1>
+      
+      <p style="color:#555;line-height:1.8;margin-bottom:1.5rem;"><strong>Responsable:</strong> Bilbao Reforma</p>
+      <p style="color:#555;line-height:1.8;margin-bottom:1.5rem;"><strong>Contacto:</strong> <a href="mailto:info@bilbaoreforma.es" style="color:#C45C3E;">info@bilbaoreforma.es</a></p>
+      
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin:1.5rem 0 1rem;">Objeto</h2>
+      <p style="color:#555;line-height:1.8;margin-bottom:1.5rem;">
+        Bilbao Reforma es un sitio web informativo que ofrece una calculadora de presupuestos orientativos para reformas y un directorio de empresas de reformas. Los presupuestos generados son orientativos y no constituyen una oferta contractual.
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin:1.5rem 0 1rem;">Propiedad intelectual</h2>
+      <p style="color:#555;line-height:1.8;margin-bottom:1.5rem;">
+        Todos los contenidos del sitio web (textos, diseño, estructura) están protegidos por la legislación vigente en materia de propiedad intelectual.
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin:1.5rem 0 1rem;">Limitación de responsabilidad</h2>
+      <p style="color:#555;line-height:1.8;">
+        Los presupuestos generados por la calculadora son orientativos y pueden variar ±15% según las características específicas de cada proyecto. Bilbao Reforma no se hace responsable de los presupuestos finales ofrecidos por las empresas del directorio.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

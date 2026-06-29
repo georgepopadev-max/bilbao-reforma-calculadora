@@ -1,0 +1,40 @@
+---
+title: "Empresas de Reformas en Donostia-San Sebastián 2026: Guía Local"
+description: "Empresas de reformas en Donostia-San Sebastián 2026: guía local con las mejores empresas, precios medios y consejos para elegir sin errores. Actualizado."
+canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-donostia.html"
+category: "empresas"
+city: "donostia"
+faqs:
+  - q: "¿Cómo encontrar una empresa de reformas fiable en Donostia?"
+    a: "Pide al menos 3 presupuestos con desglose por partidas, verifica que tenga seguro de responsabilidad civil vigente, solicita referencias de trabajos recientes y confirma que esté dada de alta fiscalme"
+  - q: "¿Cuánto cuesta una reforma integral en Donostia-San Sebastián?"
+    a: "En Donostia, una reforma integral de vivienda se sitúa entre 650 y 1.000 €/m² para calidades estándar. Un piso de 80 m² puede costar entre 52.000 € y 80.000 € dependiendo del estado inicial y los acab"
+  - q: "¿Qué preguntas debo hacer antes de contratar una empresa de reformas en Donostia?"
+    a: "Cinco preguntas imprescindibles: 1) ¿Tiene seguro de responsabilidad civil? 2) ¿Quién hará el trabajo día a día?3) ¿Tiene experiencia en edificios del centro histórico de Donostia? 4) ¿Qué garantía of"
+  - q: "¿Necesito licencia para hacer una reforma en Donostia?"
+    a: "Depende del tipo de obra. Las reformas menores (pintura, cambio de suelo, baño) suelen requerir comunicación previa. Las reformas integrales, cambios de fachada o intervenciones en edificios protegido"
+  - q: "¿Cuánto se paga por adelantado a una empresa de reformas en Gipuzkoa?"
+    a: "La práctica habitual es un anticipo del 20-30% a la firma del contrato, un segundo pago del 40-50% a mitad de obra, y el resto (20-30%) a la entrega final. Desconfía de empresas que pidan más del 50% "
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Empresas de Reformas en Donostia-San Sebastián 2026: Guía Local"
+    url: "https://www.bilbaoreforma.es/blog/empresas-reformas-donostia.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Empresas de Reformas en Bilbao"
+    href: "empresas-reformas-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+  - type: "leer"
+    label: "Empresas de Reformas en Bilbao"
+    href: "empresas-reformas-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+priceTables: 0
+---
+

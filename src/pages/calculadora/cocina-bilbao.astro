@@ -1,0 +1,55 @@
+---
+/**
+ * Calculadora Cocina Bilbao — Specialized kitchen calculator
+ * A3 Zone
+ * CLAMP: MIN_KITCHEN = 5000 EUR
+ * For 8-10m² kitchen with quality levels:
+ * - basic: 5.000–6.000
+ * - medium: 8.000–10.000
+ * - premium: 12.000–16.000
+ */
+import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
+---
+
+<CalculadoraLayout
+  title="Calculadora de Reforma de Cocina en Bilbao 2026"
+  description="Calculadora de Reforma de Cocina en Bilbao 2026 — Presupuesto orientativo desde 5.000 € hasta 16.000 €. Calcula el coste con materiales y mano de obra."
+  canonical="https://www.bilbaoreforma.es/calculadora/cocina-bilbao.html"
+  city="bilbao"
+  calculatorType="cocina"
+  minPrice={5000}
+>
+  <div style="max-width:760px;margin:2rem auto;padding:0 1.5rem;">
+    <a href="/calculadora/index.html" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#7D8B6A;color:white;padding:1rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:500;">
+      <span>🍳 ¿Quieres comparar con reforma integral completa? Usa nuestra calculadora general</span>
+      <span>→ Calcular</span>
+    </a>
+  </div>
+
+  <div style="max-width:800px;margin:0 auto;padding:0 1.5rem 2rem;text-align:center;">
+    <h2>Reforma de Cocina en Bilbao: presupuestos desde 5.000 € hasta 16.000 €</h2>
+    <p>La reforma de una cocina en Bilbao incluye muebles de cocina, encimera, fontanería, electricidad y albañilería. Para una cocina de 8–10 m² con reforma media el presupuesto es de <strong>8.000–10.000 €</strong>.</p>
+  </div>
+
+  <!-- Kitchen Wizard -->
+  <div style="max-width:600px;margin:0 auto;padding:0 1rem 4rem;">
+    <div style="background:#f9f9f9;padding:2rem;border-radius:12px;text-align:center;">
+      <h3 style="font-size:1.2rem;margin-bottom:1rem;">Calculadora de Cocina — Versión simplificada</h3>
+      <p style="color:#666;margin-bottom:1.5rem;">Usa la calculadora general para un presupuesto completo por m².</p>
+      <a href="/calculadora/index.html" style="display:inline-block;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Calcular cocina →</a>
+    </div>
+
+    <!-- Price reference table -->
+    <div style="margin-top:2rem;">
+      <h4 style="font-size:1rem;margin-bottom:0.75rem;">Precios orientativos por nivel de calidad</h4>
+      <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+        <thead><tr style="background:#eee;"><th style="padding:0.5rem;text-align:left;">Nivel</th><th style="padding:0.5rem;text-align:left;">Rango</th><th style="padding:0.5rem;text-align:left;">Materiales</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:0.5rem;">Básico</td><td style="padding:0.5rem;">5.000–6.000 €</td><td style="padding:0.5rem;">Leroy Merlin, marca blanca</td></tr>
+          <tr><td style="padding:0.5rem;">Medio</td><td style="padding:0.5rem;">8.000–10.000 €</td><td style="padding:0.5rem;">Cosentino, Bosch, Grohe</td></tr>
+          <tr><td style="padding:0.5rem;">Premium</td><td style="padding:0.5rem;">12.000–16.000 €</td><td style="padding:0.5rem;">A medida, Gaggenau, Hansgrohe</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</CalculadoraLayout>

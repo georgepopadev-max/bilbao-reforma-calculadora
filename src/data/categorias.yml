@@ -1,0 +1,30 @@
+# Categorías de blog para Bilbao Reforma
+# Used in blog listing pages and category filtering
+
+- name: Reforma Integral
+  slug: reforma-integral
+  description: Todo sobre reformas integrales de pisos y viviendas en Bilbao
+
+- name: Reforma de Baño
+  slug: reforma-bano
+  description: Guías completas para reformar tu baño en Bilbao
+
+- name: Reforma de Cocina
+  slug: reforma-cocina
+  description: Precios, materiales y consejos para cocinas
+
+- name: Pintura
+  slug: pintura
+  description: Pintar pisos, paredes, gotelé y acabados
+
+- name: Suelo
+  slug: suelo
+  description: Parqué, porcelánico, vinilo y más
+
+- name: Subvenciones
+  slug: subvenciones
+  description: Ayudas y subvenciones para reformas en España
+
+- name: Empresas
+  slug: empresas
+  description: Directorio y reseñas de empresas de reformas

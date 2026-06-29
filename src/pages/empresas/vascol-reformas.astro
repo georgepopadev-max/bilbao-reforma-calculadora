@@ -1,0 +1,5 @@
+---
+import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
+const empresa = { name: 'Vascol Reformas', slug: 'vascol-reformas', phone: '+34 677 88 99 00', email: 'vascolreformas@email.com', address: 'Calle Colon de Larreategui 26, Bilbao 48009', services: ['Reformas de locales', 'Reformas comerciales', 'Albañilería', 'Fontanería', 'Electricidad'], description: 'Especialistas en reformas de locales comerciales y oficinas en Bilbao. Proyectos de hostelería, tiendas y espacios de trabajo.', location: 'Bilbao', ratingValue: '4.3', reviewCount: '18', coordinates: { lat: 43.2610, lng: -2.9360 } };
+---
+<EmpresaLayout empresa={empresa} />

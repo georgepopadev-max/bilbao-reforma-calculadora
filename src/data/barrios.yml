@@ -1,0 +1,40 @@
+# Barrios de Bilbao con multiplicadores de precio
+# Used in calculator barrio selector (?barrio= URL param)
+
+- name: Casco Viejo
+  slug: casco-viejo
+  multiplicador: 1.30
+  agePreset: historic
+  description: El Casco Viejo de Bilbao, uno de los barrios más emblemáticos con edificios históricos que requieren materiales y acabados especiales.
+  zones:
+    - Siete Calles
+    - Bilbao La Vieja
+    - San Francisco
+
+- name: Indautxu
+  slug: indautxu
+  multiplicador: 1.15
+  agePreset: old
+  description: Zona prime de Bilbao, con alta densidad de viviendas y edificios de calidad media-alta.
+  zones:
+    - Indautxu
+    - El Ensanche
+
+- name: Deusto
+  slug: deusto
+  multiplicador: 1.10
+  agePreset: moderate
+  description: Barrio universitario y residencial con buena comunicación y precios moderados.
+  zones:
+    - Deusto
+    - San Pedro de Deusto
+
+- name: Getxo
+  slug: getxo
+  multiplicador: 1.10
+  agePreset: moderate
+  description: Municipio residencial de alto nivel al norte de Bilbao, conocido por sus villas y zonas ajardinadas.
+  zones:
+    - Algorta
+    - Getxo
+    - Areeta

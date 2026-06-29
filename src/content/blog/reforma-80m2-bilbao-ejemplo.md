@@ -1,0 +1,40 @@
+---
+title: "Reforma Piso 80m² Bilbao: Caso Práctico Real con Presupuesto Desglosado 2026"
+description: "Reforma piso 80m2 Bilbao: caso práctico real con presupuesto desglosado. Tabla de precios por partida para reforma media en piso típico bilbaino. Ejemplo completo 2026."
+canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo.html"
+category: "presupuesto"
+city: "bilbao"
+faqs:
+  - q: "¿Cuánto cuesta una reforma media de un piso de 80m² en Bilbao?"
+    a: "Una reforma media de un piso de 80m² en Bilbao cuesta entre 24.000 € y 40.000 €, dependiendo de la calidad de materiales. El caso práctico real que analizamos en este artículo fue de 34.600 € con mate"
+  - q: "¿Qué partidas representan el mayor coste en una reforma integral?"
+    a: "La cocina y el baño juntos suman más del 50% del presupuesto de una reforma media. En nuestro caso práctico, la cocina completa (muebles, electrodomésticos,fontanería) representaba 12.100 € y el baño "
+  - q: "¿Cuánto tiempo dura una reforma media de 80m² en Bilbao?"
+    a: "Una reforma media de un piso de 80m² en Bilbao dura entre 6 y 10 semanas. En nuestro caso práctico foram 6 semanas (30 días laborables). Desconfía de empresas que prometan hacerlo en 3 o 4 semanas: es"
+  - q: "¿Qué imprevistos surgen durante una reforma en un edificio antiguo bilbaino?"
+    a: "En edificios de más de 40 años en Bilbao siempre hay sorpresas. Las más comunes son: tuberías de plomo o hierro que hay que substituir, desagües deteriorados descubiertos al abrir el suelo, desniveles"
+  - q: "¿Conviene añadir una partida de imprevistos en el presupuesto?"
+    a: "Sí, siempre. Recomendamos incluir entre un 10% y un 15% del presupuesto total como reserva para imprevistos. En nuestro caso práctico, la partida era de 3.145 € (9,1% del total) y realmente surgieron "
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Reforma Piso 80m² Bilbao: Caso Práctico Real con Presupuesto Desglosado 2026"
+    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Reforma 80m² Bilbao: Guía Completa"
+    href: "reforma-80m2-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+  - type: "leer"
+    label: "Reforma 80m² Bilbao: Guía Completa"
+    href: "reforma-80m2-bilbao.html"
+  - type: "leer"
+    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
+    href: "precio-reforma-integral-bilbao.html"
+priceTables: 0
+---
+

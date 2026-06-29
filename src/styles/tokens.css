@@ -1,0 +1,47 @@
+/* ============================================
+   Design Tokens — Extrídos de css/styles.css
+   ============================================ */
+:root {
+  /* COLORES — Sistema unificado */
+  --color-terracota: #C45C3E;
+  --color-terracota-hover: #A84A32;
+  --color-terracota-light: #EDD5CA;
+
+  --color-verde-montana: #4A6741;
+  --color-verde-montana-light: #A4B99B;
+  --color-verde-txakoli: #7FA650;
+
+  --color-crema: #FAF7F2;
+  --color-blanco: #FFFFFF;
+
+  --color-grafito: #2D2D2D;
+  --color-gris: #6B6B6B;
+
+  --color-beige: #E8E2D9;
+  --color-beige-dark: #D4CCC0;
+
+  /* Fonts */
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Border Radius */
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(45, 30, 15, 0.08);
+  --shadow-card-hover: 0 4px 16px rgba(45, 30, 15, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+}

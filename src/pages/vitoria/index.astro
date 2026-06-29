@@ -1,0 +1,37 @@
+---
+import CityLayout from '../../layouts/CityLayout.astro';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Reforma Vitoria',
+  description: 'Calculadora de presupuestos de reformas en Vitoria-Gasteiz y Álava. Precios orientativos en menos de 2 minutos.',
+  url: 'https://www.bilbaoreforma.es/vitoria/',
+  areaServed: { '@type': 'State', name: 'Álava' },
+};
+---
+<CityLayout title="Calculadora de Reformas en Vitoria-Gasteiz 2026 | Presupuesto Gratis" description="Calculadora de Reformas en Vitoria-Gasteiz 2026. Obtén un presupuesto orientativo en menos de 2 minutos." canonical="https://www.bilbaoreforma.es/vitoria/" city="vitoria" schemaData={schema}>
+  <section style="background:linear-gradient(135deg,#C45C3E 0%,#9a4a2f 100%);color:white;padding:4rem 1.5rem;text-align:center;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;margin-bottom:1rem;">Reformas en Vitoria-Gasteiz 2026</h1>
+      <p style="font-size:1.1rem;opacity:0.9;margin-bottom:2rem;">Calcula el presupuesto orientativo de tu reforma en Vitoria-Gasteiz y Álava en menos de 2 minutos.</p>
+      <a href="/vitoria/calculadora/index.html" style="display:inline-flex;align-items:center;gap:0.5rem;padding:1rem 2rem;background:white;color:#C45C3E;border-radius:8px;font-weight:600;text-decoration:none;font-size:1.1rem;">Calcular presupuesto →</a>
+    </div>
+  </section>
+  <section style="padding:3rem 1.5rem;">
+    <div style="max-width:900px;margin:0 auto;text-align:center;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1.5rem;">Calculadoras por tipo de reforma</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+        <a href="/vitoria/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🚿</div>
+          <h3 style="font-size:1rem;margin-bottom:0.5rem;">Reforma de Baño</h3>
+          <p style="font-size:0.85rem;color:#666;">Desde 2.500 €</p>
+        </a>
+        <a href="/vitoria/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🏗️</div>
+          <h3 style="font-size:1rem;margin-bottom:0.5rem;">Reforma Integral</h3>
+          <p style="font-size:0.85rem;color:#666;">Desde 700 €/m²</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</CityLayout>

@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const empresas = [
+  { name: 'Eraber', slug: 'eraber', location: 'Santutxu', phone: '+34 627 40 70 90', rating: '4.6', services: ['Albañilería', 'Pintura', 'Reformas integrales'] },
+  { name: 'Raquel González Interiorismo', slug: 'raquel-gonzalez-interiorismo', location: 'Bilbao', phone: '+34 644 12 34 56', rating: '4.8', services: ['Interiorismo', 'Reformas', 'Diseño'] },
+  { name: 'RB Interiores', slug: 'rb-interiores', location: 'Bilbao', phone: '+34 622 11 22 33', rating: '4.4', services: ['Reformas de interiores', 'Albañilería'] },
+  { name: 'Reformas Fernández', slug: 'reformas-fernandez', location: 'Bilbao', phone: '+34 633 44 55 66', rating: '4.7', services: ['Reformas generales', 'Albañilería'] },
+  { name: 'Reformas Zunzunegui', slug: 'reformas-zunzunegui', location: 'Bilbao', phone: '+34 655 77 88 99', rating: '4.5', services: ['Reformas integrales', 'Locales'] },
+  { name: 'Vascol Reformas', slug: 'vascol-reformas', location: 'Bilbao', phone: '+34 677 88 99 00', rating: '4.3', services: ['Reformas de locales', 'Comerciales'] },
+];
+---
+
+<BaseLayout title="Empresas de Reformas en Bilbao | Bilbao Reforma" description="Directorio de empresas de reformas verificadas en Bilbao y Bizkaia." canonical="https://www.bilbaoreforma.es/empresas/index.html">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Empresas de reformas en Bilbao', itemListElement: empresas.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: `https://www.bilbaoreforma.es/empresas/${e.slug}.html` })) })} />
+  </Fragment>
+  <header class="site-header"><div class="header-container"><a href="/index.html" class="header-logo"><svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span class="header-logo-text">Bilbao Reforma</span></a><nav class="header-nav"><a href="/calculadora/index.html" class="header-nav-link">Calculadora</a><a href="/blog/index.html" class="header-nav-link">Blog</a><a href="/empresas/index.html" class="header-nav-link header-nav-link-active">Empresas</a><a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a></nav></div></header>
+  <main id="main-content">
+    <section style="max-width:900px;margin:4rem auto;padding:0 1.5rem;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:0.5rem;">Empresas de Reformas en Bilbao</h1>
+      <p style="color:#666;margin-bottom:2rem;">{empresas.length} empresas verificadas en Bilbao y Bizkaia.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        {empresas.map(e => (
+          <a href={`${e.slug}.html`} style="display:block;padding:1.5rem;background:#f9f9f9;border-radius:12px;text-decoration:none;color:inherit;border:1px solid #eee;">
+            <h2 style="font-size:1.1rem;margin-bottom:0.5rem;">{e.name}</h2>
+            <p style="font-size:0.85rem;color:#888;margin-bottom:0.5rem;">📍 {e.location}</p>
+            <p style="font-size:0.85rem;margin-bottom:0.5rem;">⭐ {e.rating}/5</p>
+            <p style="font-size:0.8rem;color:#C45C3E;">Ver ficha →</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-bottom"><p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p></div></div></footer>
+</BaseLayout>

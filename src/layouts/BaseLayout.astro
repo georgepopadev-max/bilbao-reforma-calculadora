@@ -1,0 +1,105 @@
+---
+import '../styles/tailwind.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  ogLocale?: string;
+  noindex?: boolean;
+  jsonSchemas?: any[];
+}
+
+const {
+  title,
+  description = 'Bilbao Reforma - La calculadora de presupuestos de reformas más completa para Bilbao y Bizkaia.',
+  canonical,
+  ogTitle,
+  ogDescription,
+  ogType = 'website',
+  ogLocale = 'es_ES',
+  noindex = false,
+  jsonSchemas = [],
+} = Astro.props;
+
+const siteUrl = 'https://www.bilbaoreforma.es';
+const fullTitle = title.includes('Bilbao Reforma') ? title : `${title} | Bilbao Reforma`;
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  <title>{fullTitle}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalUrl}>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={ogTitle || fullTitle}>
+  <meta property="og:description" content={ogDescription || description}>
+  <meta property="og:type" content={ogType}>
+  <meta property="og:locale" content={ogLocale}>
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:site_name" content="Bilbao Reforma">
+
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJNJJ3L6');
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Schemas -->
+  {jsonSchemas.map(schema => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJNJJ3L6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <slot />
+
+  <!-- Mobile menu toggle script -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggle = document.getElementById('mobileToggle');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var menu = document.getElementById('mobileMenu');
+          var isOpen = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', isOpen);
+        });
+      }
+      document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          var menu = document.getElementById('mobileMenu');
+          var btn = document.getElementById('mobileToggle');
+          if (menu) menu.classList.remove('open');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

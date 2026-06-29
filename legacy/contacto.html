@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJNJJ3L6');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto con Bilbao Reforma. Envía tus preguntas sobre reformas en Bilbao.">
+  <meta name="robots" content="index, follow">
+  <title>Contacto | Bilbao Reforma</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://bilbaoreforma.es/contacto.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .contact-hero {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+    .contact-hero-title {
+      font-family: var(--font-playfair);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-grafito);
+      margin-bottom: 0.75rem;
+    }
+    @media (min-width: 768px) {
+      .contact-hero-title {
+        font-size: 2.5rem;
+      }
+    }
+    .contact-hero-subtitle {
+      font-size: 1.0625rem;
+      color: var(--color-gris);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding-bottom: 3rem;
+    }
+    @media (min-width: 768px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+    .contact-form-card {
+      background: var(--color-blanco);
+      border-radius: var(--radius-card);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+    }
+    .contact-form-title {
+      font-family: var(--font-playfair);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-grafito);
+      margin-bottom: 1.5rem;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    @media (min-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .form-label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-grafito);
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid var(--color-beige);
+      border-radius: var(--radius-input);
+      font-size: 0.9375rem;
+      font-family: var(--font-inter);
+      color: var(--color-grafito);
+      background-color: var(--color-crema);
+      transition: border-color var(--transition-fast);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-terracota);
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: var(--color-gris);
+    }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B6B6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .checkbox-input {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      margin-top: 2px;
+      cursor: pointer;
+      accent-color: var(--color-terracota);
+    }
+    .checkbox-label {
+      font-size: 0.8125rem;
+      color: var(--color-gris);
+      line-height: 1.5;
+      cursor: pointer;
+    }
+    .checkbox-label a {
+      color: var(--color-terracota);
+      text-decoration: none;
+    }
+    .checkbox-label a:hover {
+      text-decoration: underline;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      background: var(--color-terracota);
+      color: var(--color-blanco);
+      border: none;
+      border-radius: var(--radius-button);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      margin-top: 0.5rem;
+    }
+    .submit-btn:hover {
+      background: var(--color-terracota-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(196, 92, 62, 0.25);
+    }
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .info-card {
+      background: var(--color-blanco);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+    .info-card-title {
+      font-family: var(--font-playfair);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-grafito);
+      margin-bottom: 1.25rem;
+    }
+    .contact-list {
+      list-style: none;
+    }
+    .contact-list-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact-list-item:last-child {
+      margin-bottom: 0;
+    }
+    .contact-list-icon {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      color: var(--color-terracota);
+      margin-top: 2px;
+    }
+    .contact-list-content strong {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-gris);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.2rem;
+    }
+    .contact-list-content span {
+      font-size: 0.9375rem;
+      color: var(--color-grafito);
+    }
+    .cta-card {
+      background: var(--color-verde-montana);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+    }
+    .cta-card-title {
+      font-family: var(--font-playfair);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-blanco);
+      margin-bottom: 0.75rem;
+    }
+    .cta-card-text {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .cta-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: var(--color-blanco);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      text-decoration: none;
+    }
+    .cta-card-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045202932904797" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJNJJ3L6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-link">Calculadora</a>
+        <a href="blog/index.html" class="header-nav-link">Blog</a>
+        <a href="empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="contacto.html" class="header-nav-link header-nav-link-active">Contacto</a>
+      </nav>
+      <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Calculadora</a>
+      <a href="blog/index.html" class="mobile-nav-link">Blog</a>
+      <a href="empresas/index.html" class="mobile-nav-link">Empresas</a>
+      <a href="contacto.html" class="mobile-nav-link">Contacto</a>
+    </nav>
+  </div>
+
+  <main class="contact-main">
+    <div class="contact-page">
+      <div class="contact-hero">
+        <h1 class="contact-hero-title">Contacto</h1>
+        <p class="contact-hero-subtitle">¿Tienes preguntas sobre tu reforma? ¿Quieres aparecer en el directorio de empresas? Escríbeme un mensaje.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-form-card">
+          <h2 class="contact-form-title">Envíame un mensaje</h2>
+          <p style="font-size: 0.875rem; color: var(--color-gris); margin-bottom: 1.5rem; line-height: 1.5;">Completa el formulario y te responderé lo antes posible. No comparto tus datos con terceros.</p>
+          
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-beige);">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 16px; height: 16px; color: var(--color-verde-montana);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span style="font-size: 0.75rem; color: var(--color-gris);">Sin spam</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 16px; height: 16px; color: var(--color-verde-montana);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span style="font-size: 0.75rem; color: var(--color-gris);">Datos protegidos</span>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Nombre *</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Correo electrónico *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Teléfono</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="600 123 456">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="project-type">Asunto</label>
+                <select class="form-select" id="project-type" name="project-type">
+                  <option value="">Selecciona una opción</option>
+                  <option value="particular">Consulta sobre reformas</option>
+                  <option value="empresa">Quiero aparecer en el directorio</option>
+                  <option value="colaboracion">Propuesta de colaboración</option>
+                  <option value="soporte">Soporte sobre la calculadora</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Mensaje *</label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <div class="checkbox-row">
+              <input class="checkbox-input" type="checkbox" id="privacy" name="privacy" required>
+              <label class="checkbox-label" for="privacy">
+                He leído y acepto la <a href="politica-privacidad.html">Política de Privacidad</a> *
+              </label>
+            </div>
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+          </form>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-beige);">
+            <h3 style="font-family: var(--font-playfair); font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 1rem;">Preguntas frecuentes</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.875rem;">
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Cuánto tardas en responder?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Intento responder en menos de 48 horas. Para consultas urgentes, escríbeme directamente a info@bilbaoreforma.es</p>
+              </details>
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Puedo darme de alta como empresa?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Sí, selecciona "Quiero aparecer en el directorio" y te enviaré información.</p>
+              </details>
+              <details style="border-radius: var(--radius-button); overflow: hidden;">
+                <summary style="padding: 0.75rem; background: var(--color-crema); cursor: pointer; font-size: 0.875rem; font-weight: 500; color: var(--color-grafito);">¿Cómo protegemos tus datos?</summary>
+                <p style="padding: 0.75rem; font-size: 0.8125rem; color: var(--color-gris); margin: 0;">No comparto tu información con terceros. Puedes consultar mi política de privacidad para más detalles.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-sidebar">
+          <div class="info-card">
+            <h3 class="info-card-title">Contacto directo</h3>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <svg class="contact-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div class="contact-list-content">
+                  <strong>Correo electrónico</strong>
+                  <span>info@bilbaoreforma.es</span>
+                </div>
+              </li>
+              
+              <li class="contact-list-item">
+                <svg class="contact-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="contact-list-content">
+                  <strong>Ubicación</strong>
+                  <span>Bilbao, País Vasco</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta-card">
+            <h3 class="cta-card-title">¿Tienes una empresa de reformas?</h3>
+            <p class="cta-card-text">Si quieres aparecer en nuestro directorio de empresas recomendadas, escríbeme y te envío información.</p>
+            <a href="mailto:info@bilbaoreforma.es?subject=Información directorio empresas" class="cta-card-link">Consultar información →</a>
+          </div>
+
+          <div class="info-card" style="margin-top: 1.5rem;">
+            <h3 class="info-card-title">¿En qué puedo ayudarte?</h3>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.875rem;">
+                <svg style="width: 18px; height: 18px; color: var(--color-verde-montana); flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span style="font-size: 0.875rem; color: var(--color-gris);">Presupuestos orientativos para tu reforma</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.875rem;">
+                <svg style="width: 18px; height: 18px; color: var(--color-verde-montana); flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span style="font-size: 0.875rem; color: var(--color-gris);">Directorio de empresas de reformas</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.875rem;">
+                <svg style="width: 18px; height: 18px; color: var(--color-verde-montana); flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span style="font-size: 0.875rem; color: var(--color-gris);">Información sobre licencias y permisos</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <svg style="width: 18px; height: 18px; color: var(--color-verde-montana); flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span style="font-size: 0.875rem; color: var(--color-gris);">Guía de precios y consejos</span>
+              </li>
+            </ul>
+            <a href="blog/index.html" style="display: inline-flex; align-items: center; gap: 0.375rem; margin-top: 1rem; font-size: 0.875rem; color: var(--color-terracota); text-decoration: none; font-weight: 500;">Ver blog de reformas →</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="footer-logo">
+            <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Bilbao Reforma</span>
+          </a>
+          <p class="footer-brand-desc">Calculadora de presupuestos orientativos para reformas en Bilbao. Información práctica y precios reales del sector.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <nav class="footer-nav">
+            <a href="index.html" class="footer-nav-link">Calculadora</a>
+            <a href="blog/index.html" class="footer-nav-link">Blog</a>
+            <a href="empresas/index.html" class="footer-nav-link">Empresas</a>
+            <a href="contacto.html" class="footer-nav-link">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <nav class="footer-nav">
+            <a href="aviso-legal.html" class="footer-nav-link">Aviso legal</a>
+            <a href="politica-privacidad.html" class="footer-nav-link">Política de privacidad</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contacto</h4>
+          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@bilbaoreforma.es</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobileMenu');
+      var btn = this;
+      var isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+    // Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    var btn = document.getElementById('mobileToggle');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var projectType = document.getElementById('project-type').value;
+      var message = document.getElementById('message').value.trim();
+
+      var formCard = document.querySelector('.contact-form-card');
+      var submitBtn = document.querySelector('.submit-btn');
+
+      // Disable button while sending
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+
+      // Send to backend API
+      fetch('https://api.bilbaoreforma.es/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone || null,
+          source: 'bilbao_calculadora',
+          project_type: projectType || null,
+          message: message,
+          city: 'Bilbao'
+        })
+      })
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error al enviar');
+        }
+      })
+      .then(function(data) {
+        // Success
+        var confirmation = document.createElement('div');
+        confirmation.className = 'form-confirmation';
+        confirmation.style.cssText = 'background: #d4edda; color: #155724; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+        confirmation.innerHTML = '<strong>¡Mensaje enviado!</strong><br>Te responderé lo antes posible.';
+        formCard.appendChild(confirmation);
+
+        // Reset form
+        document.querySelector('.contact-form').reset();
+
+        setTimeout(function() {
+          if (confirmation.parentNode) {
+            confirmation.parentNode.removeChild(confirmation);
+          }
+        }, 5000);
+      })
+      .catch(function(error) {
+        // Error - fallback to email
+        var subject = 'Bilbao Reforma - Contacto';
+        var body = 'Nombre: ' + name + '%0A';
+        body += 'Email: ' + email + '%0A';
+        if (phone) {
+          body += 'Teléfono: ' + phone + '%0A';
+        }
+        if (projectType) {
+          var projectLabels = {
+            'particular': 'Consulta sobre reformas',
+            'empresa': 'Quiero aparecer en el directorio',
+            'colaboracion': 'Propuesta de colaboración',
+            'soporte': 'Soporte sobre la calculadora',
+            'otro': 'Otro'
+          };
+          body += 'Asunto: ' + (projectLabels[projectType] || projectType) + '%0A';
+        }
+        body += '%0A---%0AMensaje:%0A' + encodeURIComponent(message);
+
+        window.location.href = 'mailto:info@bilbaoreforma.es?subject=' + encodeURIComponent(subject) + '&body=' + body;
+
+        var confirmation = document.createElement('div');
+        confirmation.className = 'form-confirmation';
+        confirmation.style.cssText = 'background: #fff3cd; color: #856404; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+        confirmation.innerHTML = '<strong>¡Ups!</strong><br>No he podido enviar automáticamente. Se abrirá tu cliente de correo. Si no se abre, escríbeme a <a href="mailto:info@bilbaoreforma.es">info@bilbaoreforma.es</a>';
+        formCard.appendChild(confirmation);
+
+        setTimeout(function() {
+          if (confirmation.parentNode) {
+            confirmation.parentNode.removeChild(confirmation);
+          }
+        }, 5000);
+      })
+      .finally(function() {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar mensaje';
+      });
+    });
+  </script>
+</body>
+</html>

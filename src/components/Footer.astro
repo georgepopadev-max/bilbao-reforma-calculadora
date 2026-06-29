@@ -1,0 +1,127 @@
+---
+export interface Props {
+  city?: 'bilbao' | 'donostia' | 'vitoria';
+  variant?: 'default' | 'simple' | 'dark';
+}
+
+const { city = 'bilbao', variant = 'default' } = Astro.props;
+---
+<footer class={`site-footer ${variant === 'dark' ? 'site-footer-dark' : ''}`}>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col-brand">
+        <a href={`/${city === 'bilbao' ? '' : city + '/'}index.html`} class="footer-logo">
+          <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Bilbao Reforma</span>
+        </a>
+        <p class="footer-brand-desc">La calculadora de presupuestos de reformas más completa para Bilbao y Bizkaia. Datos reales de empresas locales.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <nav class="footer-nav">
+          <a href={`/${city === 'bilbao' ? 'calculadora/' : city + '/calculadora/'}index.html`} class="footer-nav-link">Calculadora</a>
+          <a href={`/${city === 'bilbao' ? 'blog/' : city + '/blog/'}index.html`} class="footer-nav-link">Blog</a>
+          <a href={`/${city === 'bilbao' ? 'empresas/' : city + '/empresas/'}index.html`} class="footer-nav-link">Empresas</a>
+          <a href={`/${city === 'bilbao' ? 'contacto' : city + '/contacto'}.html`} class="footer-nav-link">Contacto</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legal</h4>
+        <nav class="footer-nav">
+          <a href={`/${city === 'bilbao' ? 'aviso-legal' : city + '/aviso-legal'}.html`} class="footer-nav-link">Aviso legal</a>
+          <a href={`/${city === 'bilbao' ? 'politica-privacidad' : city + '/politica-privacidad'}.html`} class="footer-nav-link">Política de privacidad</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025-2026 Bilbao Reforma. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--color-beige);
+  }
+  .site-footer-dark {
+    background: var(--color-grafito);
+    color: rgba(255,255,255,0.8);
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-grafito);
+    font-family: var(--font-playfair);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  .site-footer-dark .footer-logo { color: var(--color-blanco); }
+  .footer-logo-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--color-terracota);
+  }
+  .footer-brand-desc {
+    font-size: 0.875rem;
+    color: var(--color-gris);
+    line-height: 1.6;
+    max-width: 280px;
+  }
+  .site-footer-dark .footer-brand-desc { color: rgba(255,255,255,0.6); }
+  .footer-col-title {
+    font-family: var(--font-playfair);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+    margin-bottom: 1rem;
+  }
+  .site-footer-dark .footer-col-title { color: var(--color-blanco); }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-nav-link {
+    font-size: 0.875rem;
+    color: var(--color-gris);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-nav-link:hover { color: var(--color-terracota); text-decoration: none; }
+  .site-footer-dark .footer-nav-link { color: rgba(255,255,255,0.7); }
+  .site-footer-dark .footer-nav-link:hover { color: var(--color-terracota-light); }
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-beige);
+    text-align: center;
+  }
+  .site-footer-dark .footer-bottom { border-top-color: rgba(255,255,255,0.1); }
+  .footer-copyright {
+    font-size: 0.75rem;
+    color: var(--color-gris);
+  }
+  .site-footer-dark .footer-copyright { color: rgba(255,255,255,0.5); }
+</style>

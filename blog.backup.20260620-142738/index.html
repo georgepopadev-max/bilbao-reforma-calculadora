@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de reformas en Bilbao — Guías, precios y consejos para reformar tu piso en Bilbao y Bizkaia. Artículos escritos por expertos locales.">
+  <meta name="robots" content="index, follow">
+  <title>Blog de Reformas en Bilbao — Guías y Precios 2025 | Bilbao Reforma</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog - Bilbao Reforma">
+  <meta property="og:description" content="Artículos y guías sobre reformas en Bilbao: precios, licencias, consejos prácticos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bilbaoreforma.es/blog/index.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23C45C3E' rx='12' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>B</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Blog grid responsive fix - prevent overflow on small phones */
+    @media (max-width: 640px) {
+      main[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    .blog-filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 0.35rem 0.875rem;
+      border: 1.5px solid var(--color-terracota);
+      background: transparent;
+      color: var(--color-terracota);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .filter-btn:hover {
+      background: var(--color-terracota-light);
+    }
+    .filter-btn.active {
+      background: var(--color-terracota);
+      color: white;
+    }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045202932904797" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+<a href="../calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="index.html" class="header-nav-link header-nav-link-active">Blog</a>
+        <a href="../empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="../contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+      <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="../calculadora/index.html" class="mobile-nav-link">Calculadora</a>
+      <a href="index.html" class="mobile-nav-link">Blog</a>
+      <a href="../empresas/index.html" class="mobile-nav-link">Empresas</a>
+      <a href="../contacto.html" class="mobile-nav-link">Contacto</a>
+    </nav>
+  </div>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <h1 style="font-family: var(--font-inter); font-size: 2.5rem; font-weight: 700; color: var(--color-grafito); margin-bottom: 0.75rem;">Blog de Reformas en Bilbao</h1>
+      <p style="font-size: 1.0625rem; color: var(--color-gris); max-width: 600px; margin: 0 auto;">Guías prácticas, precios actualizados y consejos de expertos para planificar tu reforma en Bilbao y Bizkaia sin sorpresas.</p>
+    </div>
+
+    <!-- AdSense Placeholder -->
+    <div class="adsense-container adsense-leaderboard" style="display:none!important;">
+      <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
+    </div>
+
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bano">Baño</button>
+      <button class="filter-btn" data-filter="cocina">Cocina</button>
+      <button class="filter-btn" data-filter="suelo">Suelo</button>
+      <button class="filter-btn" data-filter="integral">Integral</button>
+      <button class="filter-btn" data-filter="calefaccion">Calefacción</button>
+      <button class="filter-btn" data-filter="legal">Legal</button>
+      <button class="filter-btn" data-filter="empresas">Empresas</button>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+      <a href="/blog/presupuesto-reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">BAÑO</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Presupuesto Reforma Baño Bilbao 2026 — Precios Orientativos y Sin Compromiso</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Consigue el mejor presupuesto para tu reforma de baño en Bilbao. Precios orientativos por m², ejemplos reales y comparativa 2026.</p>
+      </a>
+
+      <a href="/blog/precio-m2-reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">BAÑO</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Precio m² Reforma Baño Bilbao 2026 — Guía Completa de Costes por Metro Cuadrado</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Descubre el precio por m² de una reforma de baño en Bilbao. Costes reales 2026 según tipo de reforma. Guía completa con tabla de precios y consejos.</p>
+      </a>
+
+      <a href="/blog/errores-comunes-reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">BAÑO</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">12 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Errores Comunes en la Reforma de Baño en Bilbao 2026 — Los 10 Fallos que Debes Evitar</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Descubre los 10 errores más comunes en la reforma de un baño en Bilbao. Evita sorpresas, sobrecostes y problemas. Guía actualizada 2026.</p>
+      </a>
+
+      <a href="/blog/tendencias-reforma-bano-bilbao-2026.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">BAÑO</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Tendencias Reforma Baño Bilbao 2026 — Estilos, Materiales y Acabados de Moda</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Descubre las tendencias en reforma de baño para 2026 en Bilbao. Estilos, materiales, colores y acabados más demandados. Inspírate para tu reforma.</p>
+      </a>
+
+      <a href="/blog/comparativa-reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">BAÑO</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Comparativa Reforma Baño Bilbao 2026 — ¿Qué Ofrece Bilbao frente a Otras Ciudades?</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Compara precios y acabados de reforma de baño en Bilbao vs otras ciudades. Descubre qué ofrece Bilbao, Madrid y Barcelona.</p>
+      </a>
+
+
+      <a href="/blog/errores-comunes-reforma-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Errores</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">12 Errores Comunes en una Reforma (y Cómo Evitarlos)</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Los 12 fallos más costosos al reformar en Bilbao: presupuestos, licencias, contratos y más. Cómo evitarlos sin sorpresas.</p>
+      </a>
+
+      <a href="/blog/reformas-bilbao-guia-2025.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Guía</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo sobre reformas en Bilbao: precios por m², barrios, licencias en Bizkaia, cómo elegir empresa y errores a evitar.</p>
+      </a>
+
+      <a href="/blog/reforma-bano-bilbao-2025.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Baño</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reforma Baño Bilbao 2025: Precios, Tendencias y Consejos</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Precio reforma baño Bilbao. Costes por partidas, tendencias en baños, cómo ahorrar y qué evitar. Guía actualizada.</p>
+      </a>
+
+      <a href="/blog/precio-reforma-integral-bilbao.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Guía</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Precio de Reforma Integral en Bilbao: Guía 2025</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo lo que necesitas saber sobre presupuestos para reformas integrales en Bilbao. Precios por m² según calidades y ejemplos reales.</p>
+      </a>
+
+      <a href="/blog/reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reforma de Cocina en Bilbao: Precios y Consejos</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">¿Cuánto cuesta reformar una cocina en Bilbao? Encimeras, muebles, instalaciones y tendencias para 2025.</p>
+      </a>
+
+      <a href="/blog/pintar-piso-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Pintura</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">5 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Pintar un Piso en Bilbao: Cuánto Cuesta en 2025</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Precios de pintura por m², tipos de pintura, preparación de paredes y errores frecuentes que hacen subir el precio.</p>
+      </a>
+
+      <a href="/blog/subvenciones-reformas-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Ahorro</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Subvenciones para Reformas en Bilbao 2025</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Ayudas y subvenciones disponibles para renovar tu vivienda en Bilbao. Renove, fondos europeos y programas locales.</p>
+      </a>
+
+      <a href="/blog/reformas-casco-viejo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Casco Viejo</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">9 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reformas en el Casco Viejo de Bilbao: Guía Completa</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Reformar en el Casco Viejo tiene particularidades únicas: Patrimonio, licencias especiales, accesos difíciles y materiales de época.</p>
+      </a>
+
+      <a href="/blog/suelo-radiante-vs-calefaccion.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Calefacción</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">12 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Suelo Radiante vs Calefacción Tradicional: Guía Comparativa 2025</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Comparativa completa: precios de instalación, consumo, mantenimiento y ahorro energético. ¿Qué conviene en Bilbao?</p>
+      </a>
+
+      <a href="/blog/suelo-radiante-ventajas-bilbao.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Calefacción</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">¿Por Qué Poner Suelo Radiante? 7 Razones que te Sorprenderán</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Ahorro energético, confort térmico, compatible con aerotermia. Descubre todas las ventajas del suelo radiante.</p>
+      </a>
+
+      <a href="/blog/cambiar-suelo-bilbao.html" class="article-card" data-category="suelo" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Suelo</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Cambiar Suelo en Bilbao: Parqué vs Porcelánico vs Vinilo</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Comparativa de precios y características de los principales tipos de suelo. ¿Qué elegir según tu presupuesto y necesidades?</p>
+      </a>
+
+      <a href="/blog/reforma-bano-bilbao.html" class="article-card" data-category="bano" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Baño</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reforma de Baño en Bilbao: Precios y Guía Completa</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Todo sobre presupuestos para reformar el baño en Bilbao. Desde cambio de bañera hasta reforma integral.</p>
+      </a>
+
+      <a href="/blog/errores-reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Errores Comunes en la Reforma de Cocina que Debes Evitar</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Los 8 errores máscostosos al reformar la cocina y cómo evitarlos. Consejos de expertos locales.</p>
+      </a>
+
+      <a href="/blog/presupuesto-reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Presupuesto Reforma Cocina Bilbao 2026 — Precios Orientativos y Sin Compromiso</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Consigue el mejor presupuesto para tu reforma de cocina en Bilbao. Precios orientativos por m², ejemplos reales y comparativa 2026.</p>
+      </a>
+
+      <a href="/blog/precio-m2-reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Precio m² Reforma Cocina Bilbao 2026 — Guía Completa de Costes por Metro Cuadrado</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Descubre el precio por m² de una reforma de cocina en Bilbao. Costes reales 2026 según tipo de reforma. Guía completa con tabla de precios y consejos.</p>
+      </a>
+
+      <a href="/blog/tendencias-reforma-cocina-bilbao-2026.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Tendencias Reforma Cocina Bilbao 2026 — Estilos, Materiales y Acabados de Moda</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Descubre las tendencias en reforma de cocina para 2026 en Bilbao. Estilos, materiales, colores y acabados más demandados.</p>
+      </a>
+
+      <a href="/blog/comparativa-reforma-cocina-bilbao.html" class="article-card" data-category="cocina" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Cocina</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Comparativa Reforma Cocina Bilbao 2026 — ¿Qué Ofrece Bilbao frente a Otras Ciudades?</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Compara precios y acabados de reforma de cocina en Bilbao vs otras ciudades. Descubre qué ofrece Bilbao, Madrid y Barcelona.</p>
+      </a>
+
+      <a href="/blog/tiempo-reforma-integral-bilbao.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Guía</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">8 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Tiempo de Reforma Integral en Bilbao: ¿Cuánto Dura?</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Plazos reales para una reforma integral en Bilbao según tipo de vivienda y tamaño. Incluye calendario orientativo.</p>
+      </a>
+
+      <a href="/blog/licencias-obra-bilbao.html" class="article-card" data-category="legal" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Legal</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">5 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Licencias de Obra en Bilbao: Todo lo que Necesitas Saber</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Tipos de licencias, tiempos de tramitación y costes en el Ayuntamiento de Bilbao para reformas.</p>
+      </a>
+
+      <a href="/blog/reforma-80m2-bilbao-ejemplo.html" class="article-card" data-category="integral" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Ejemplo</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">10 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reforma de Piso de 80m² en Bilbao: Ejemplo Real con Presupuesto</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Caso práctico real desglosado: partidas, precios y resultado de una reforma integral en un piso bilbaino típico.</p>
+      </a>
+
+      <a href="/blog/empresas-reformas-bilbao.html" class="article-card" data-category="empresas" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Empresas</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Cómo Elegir una Empresa de Reformas en Bilbao</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Preguntas clave, checklist de verificación y señales de alerta al contratar una empresa de reformas.</p>
+      </a>
+
+      <a href="/blog/renovar-piso-antiguo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Renovar</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Renovar un Piso Antiguo en Bilbao: Guía de Reforma</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Especialistas en pisos de más de 30 años. Qué reformas priorizan, problemas típicos y soluciones.</p>
+      </a>
+
+      <a href="/blog/rehabilitacion-edificio-antiguo-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Casco Viejo</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">9 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Rehabilitación de Edificio Antiguo en Bilbao</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Guía para rehabilitar edificios históricos en Bilbao: Patrimonio, estructura, fachadas y ayudas disponibles.</p>
+      </a>
+
+      <a href="/blog/reforma-vs-comprar-bilbao.html" class="article-card" data-category="guia" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Decisión</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">6 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Reformar vs Comprar: ¿Qué Compensa Más en Bilbao?</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Análisis comparativo real. Costes, tiempo, esfuerzo y retorno de inversión para cada opción.</p>
+      </a>
+
+      <a href="/blog/aerotermia-bilbao-ventajas.html" class="article-card" data-category="calefaccion" style="text-decoration: none; background: var(--color-blanco); border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-card); display: block; transition: all var(--transition-fast);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracota); padding: 0.125rem 0; border-bottom: 1.5px solid var(--color-terracota);">Eficiencia</span>
+          <span style="font-size: 0.75rem; color: var(--color-gris);">7 min lectura</span>
+        </div>
+        <h2 style="font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem; line-height: 1.3;">Aerotermia en Bilbao: Ventajas y Precio de Instalación</h2>
+        <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5;">Por qué la aerotermia es la mejor opción de climatización para Bilbao. Ahorro, subvenciones y funcionamiento.</p>
+      </a>
+    </div>
+
+    <!-- AdSense Placeholder Inline -->
+    <div class="adsense-container adsense-inline" style="display:none!important;">
+      <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <a href="../index.html" class="footer-logo">
+            <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Bilbao Reforma</span>
+          </a>
+          <p class="footer-brand-desc">La calculadora de presupuestos de reformas más completa para Bilbao y Bizkaia. Datos reales de empresas locales.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <nav class="footer-nav">
+            <a href="../calculadora/index.html" class="footer-nav-link">Calculadora</a>
+            <a href="index.html" class="footer-nav-link">Blog</a>
+            <a href="../empresas/index.html" class="footer-nav-link">Empresas</a>
+            <a href="../contacto.html" class="footer-nav-link">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <nav class="footer-nav">
+            <a href="../aviso-legal.html" class="footer-nav-link">Aviso legal</a>
+            <a href="../politica-privacidad.html" class="footer-nav-link">Política de privacidad</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contacto</h4>
+          <p class="footer-contact-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@bilbaoreforma.es</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobileMenu');
+      var btn = this;
+      var isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+    // Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    var btn = document.getElementById('mobileToggle');
+    if (menu) menu.classList.remove('open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+  </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const btns = document.querySelectorAll('.filter-btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.article-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+          card.style.visibility = 'visible';
+        } else {
+          card.style.display = 'none';
+          card.style.visibility = 'hidden';
+        }
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

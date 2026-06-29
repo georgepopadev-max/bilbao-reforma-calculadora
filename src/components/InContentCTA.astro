@@ -1,0 +1,22 @@
+---
+export interface CTAItem {
+  label: string;
+  href: string;
+}
+
+export interface Props {
+  type?: 'calculator' | 'related';
+  items: CTAItem[];
+}
+
+const { type = 'related', items } = Astro.props;
+
+const emoji = type === 'calculator' ? '📊' : '📖';
+const defaultLabel = type === 'calculator' ? 'Herramienta recomendada' : 'Leer también';
+---
+<div class="in-content-cta">
+  <span class="in-content-cta-label">{emoji} {defaultLabel}</span>
+  {items.map(item => (
+    <a href={item.href}>{item.label} -&gt;</a>
+  ))}
+</div>

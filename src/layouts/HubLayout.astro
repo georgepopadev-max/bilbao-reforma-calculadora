@@ -1,0 +1,116 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+export interface HubChild {
+  title: string;
+  href: string;
+  description?: string;
+  category?: string;
+  readTime?: string;
+}
+
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  category?: string;
+  city?: string;
+  datePublished?: string;
+  dateModified?: string;
+  children?: HubChild[];
+  faqs?: Array<{ q: string; a: string }>;
+  jsonSchemas?: any[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  category,
+  city = 'bilbao',
+  datePublished,
+  dateModified,
+  children = [],
+  faqs = [],
+  jsonSchemas = [],
+} = Astro.props;
+
+const siteUrl = 'https://www.bilbaoreforma.es';
+
+// CollectionPage + ItemList schema
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description: description,
+  url: canonical || `${siteUrl}${Astro.url.pathname}`,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: children.map((child, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: child.href.startsWith('http') ? child.href : `${siteUrl}${child.href}`,
+      name: child.title,
+    })),
+  },
+};
+
+// BreadcrumbList schema
+const breadcrumbs = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Blog', href: '/blog/' },
+  { name: title, href: Astro.url.pathname },
+];
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((crumb, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: crumb.name,
+    item: `${siteUrl}${crumb.href}`,
+  })),
+};
+
+// FAQPage schema
+const faqSchema = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+} : null;
+
+// Article schema
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  author: { '@type': 'Organization', name: 'Bilbao Reforma', url: siteUrl },
+  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: siteUrl },
+  datePublished: datePublished || '2026-06-23',
+  dateModified: dateModified || '2026-06-23',
+  inLanguage: 'es-ES',
+};
+
+const allSchemas = [collectionSchema, breadcrumbSchema, faqSchema, articleSchema, ...jsonSchemas].filter(Boolean);
+---
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogType="article"
+  jsonSchemas={allSchemas}
+>
+  <Header city={city} />
+  <slot />
+  <Footer city={city} />
+</BaseLayout>

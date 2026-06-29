@@ -1,0 +1,62 @@
+---
+/**
+ * Sobre Nosotros — Bilbao Reforma
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sobre Nosotros | Bilbao Reforma"
+  description="Conoce la historia de Bilbao Reforma: directorio de empresas de reformas verificadas y calculadora de presupuestos online para Bilbao."
+  canonical="https://www.bilbaoreforma.es/sobre-nosotros.html"
+>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section style="max-width:700px;margin:4rem auto;padding:0 1.5rem;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1.5rem;">Sobre Nosotros</h1>
+      
+      <p style="font-size:1.1rem;line-height:1.8;color:#333;margin-bottom:1.5rem;">
+        <strong>Bilbao Reforma</strong> es un proyecto independiente que ofrece dos herramientas para quien quiere reformar en Bilbao, Donostia o Vitoria: una <strong>calculadora de presupuestos orientativos</strong> basada en datos reales de empresas locales, y un <strong>directorio de empresas de reformas verificadas</strong>.
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:2rem 0 1rem;">¿Cómo funciona la calculadora?</h2>
+      <p style="line-height:1.8;color:#555;margin-bottom:1rem;">
+        La calculadora usa datos reales de presupuestos de empresas de reformas activas en Bilbao y Bizkaia. Los precios se actualizan periódicamente según el mercado local de 2026. El resultado es un <strong>presupuesto orientativo</strong> con desglose por partidas, no un precio cerrado.
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:2rem 0 1rem;">¿Por qué crear este proyecto?</h2>
+      <p style="line-height:1.8;color:#555;margin-bottom:1rem;">
+        Encontrar empresas de reformas fiables y obtener presupuestos realistas es difícil. La mayoría de los directorios genéricos incluyen empresas sin verificar. Nosotros contrastamos cada empresa incluida en el directorio y actualizamos los precios de la calculadora con datos de mercado reales.
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:2rem 0 1rem;">Contacto</h2>
+      <p style="line-height:1.8;color:#555;">
+        Para consultas o sugerencias: <a href="mailto:info@bilbaoreforma.es" style="color:#C45C3E;">info@bilbaoreforma.es</a> · <a href="tel:+34642147856" style="color:#C45C3E;">+34 642 147 856</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

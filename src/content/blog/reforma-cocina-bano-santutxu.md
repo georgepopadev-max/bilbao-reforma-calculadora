@@ -1,0 +1,40 @@
+---
+title: "Reforma Cocina y Baño Santutxu 2025-2026: Precios Reales y Guía Local"
+description: "Reforma cocina y baño Santutxu 2025-2026: precios orientativos, consejos para planificar ambas reformas a la vez y ahorrar, y particularidades de los pisos de este barrio de Bilbao."
+canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu.html"
+category: "bano"
+city: "bilbao"
+faqs:
+  - q: "¿Cuánto cuesta reformar cocina y baño en Santutxu?"
+    a: "Para un piso típico de Santutxu (cocina de 8-12 m² y baño de 4-5 m²), la reforma media de ambas estancias cuesta entre 18.000 y 30.000 euros llave en mano. Reformar solo la cocina ronda los 8.000-15.0"
+  - q: "¿Merece la pena hacer cocina y baño a la vez?"
+    a: "Sí, si el presupuesto lo permite. Hacer ambas reformas simultáneamente permite ahorrar en gremios (una sola obra), reducir el tiempo total de inconvenience y optimizar el orden de los trabajos (fontan"
+  - q: "¿Cuánto tiempo se tarda en reformar cocina y baño en Santutxu?"
+    a: "Cocina y baño reformados simultáneamente requieren entre 25 y 45 días laborables. Si se hacen por separado, cada estancia necesita entre 15 y 25 días. Ambas reformas a la vez suelen estar listas en 30"
+  - q: "¿Qué particularidades tienen los pisos de Santutxu para reformar?"
+    a: "Santutxu tiene un parque de vivienda muy heterogéneo: bloques de los años 60-70 con tuberías de plomo y estructura de madera, junto a edificios de los 80-90 con mayor calidad de construcción. Las coci"
+  - q: "¿Se puede vivir en el piso mientras se reforman cocina y baño?"
+    a: "Es extremadamente incómodo. Sin cocina usable y sin baño usable, necesitarás depender de comida para llevar, platos desechables y el baño de un vecino o familiar. Lo más práctico es coordinar la refor"
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Reforma Cocina y Baño Santutxu 2025-2026: Precios Reales y Guía Local"
+    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
+    href: "reforma-cocina-bilbao.html"
+  - type: "leer"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
+    href: "reforma-bano-bilbao.html"
+  - type: "leer"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
+    href: "reforma-cocina-bilbao.html"
+  - type: "leer"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
+    href: "reforma-bano-bilbao.html"
+priceTables: 0
+---
+

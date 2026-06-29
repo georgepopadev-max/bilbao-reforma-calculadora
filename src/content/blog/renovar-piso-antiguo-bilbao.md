@@ -1,0 +1,40 @@
+---
+title: "Reforma de Piso Antiguo en Bilbao: Guía Completa 2026"
+description: "Todo sobre reformas de pisos antiguos en Bilbao: problemas comunes (tuberías de plomo, electricidad vieja), licencias especiales en casco urbano y cómo planificar tu reforma integral."
+canonical: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao.html"
+category: "general"
+city: "vitoria"
+faqs:
+  - q: "¿Qué problemas tienen los pisos antiguos de Bilbao que hay que resolver en una reforma?"
+    a: "Los problemas más frecuentes en pisos bilbainos de más de 50 años son: tuberías de plomo (riesgo para la salud y deterioradas por la cal), instalación eléctrica vieja sin toma de tierra ni diferencial"
+  - q: "¿Cuánto cuesta una reforma integral de un piso antiguo de 80m² en Bilbao?"
+    a: "Una reforma integral de un piso antiguo de 80m² en Bilbao oscila entre 1.000-1.500 €/m² para reforma con cambios de distribución, y puede superar los 1.500-2.500 €/m² si hay que reforzar estructura. L"
+  - q: "¿Necesito licencia especial para reformar en el Casco Viejo de Bilbao?"
+    a: "Sí, el Casco Viejo de Bilbao está protegido como Bien de Interés Cultural. Cualquier reforma que afecte a elementos estructurales, fachadas vistas a calle, o elementos comunes requiere licencia de obr"
+  - q: "¿Cómo sé si mi piso tiene amianto antes de iniciar la reforma?"
+    a: "Los materiales con amianto más comunes en Bilbao son las placas de fibrocemento (uralita) en falsos techos y bajantes, las baldosas de vinilo-amianto en solados anteriores a 2002, y las juntas de mort"
+  - q: "¿Cuánto tiempo dura una reforma integral de un piso antiguo en Bilbao?"
+    a: "La duración depende del alcance: una actualización de acabados dura 4-8 semanas, una reforma semintegral 2-4 meses, una reforma integral con distribución 4-6 meses, y si hay que tocar estructura puede"
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Reforma de Piso Antiguo en Bilbao: Guía Completa 2026"
+    url: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Rehabilitación de Edificio Antiguo en Bilbao"
+    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+  - type: "leer"
+    label: "Reformas en el Casco Viejo de Bilbao"
+    href: "reformas-casco-viejo-bilbao.html"
+  - type: "leer"
+    label: "Rehabilitación de Edificio Antiguo en Bilbao"
+    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+  - type: "leer"
+    label: "Reformas en el Casco Viejo de Bilbao"
+    href: "reformas-casco-viejo-bilbao.html"
+priceTables: 0
+---
+

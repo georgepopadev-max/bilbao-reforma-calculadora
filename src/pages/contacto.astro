@@ -1,0 +1,61 @@
+---
+/**
+ * Contacto — Bilbao Reforma
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contacto | Bilbao Reforma"
+  description="Contacta con Bilbao Reforma para consultas sobre reformas, calculadora o empresas en Bilbao."
+  canonical="https://www.bilbaoreforma.es/contacto.html"
+>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section style="max-width:600px;margin:4rem auto;padding:0 1.5rem;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem;">Contacto</h1>
+      <p style="font-size:1.1rem;color:#555;margin-bottom:2rem;">Ponte en contacto con nosotros para consultas, sugerencias o colaboraciones.</p>
+
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">📧 Email</h3>
+        <a href="mailto:info@bilbaoreforma.es" style="color:#C45C3E;font-size:1.1rem;">info@bilbaoreforma.es</a>
+      </div>
+
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">📞 Teléfono</h3>
+        <a href="tel:+34642147856" style="color:#C45C3E;font-size:1.1rem;">+34 642 147 856</a>
+        <p style="color:#888;font-size:0.9rem;margin-top:0.25rem;">Lunes a Viernes, 9:00–18:00</p>
+      </div>
+
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;">
+        <h3 style="font-size:1.1rem;margin-bottom:0.75rem;">💬 ¿Prefieres calcular primero?</h3>
+        <p style="color:#555;margin-bottom:1rem;">Usa nuestra calculadora gratuita para obtener un presupuesto orientativo en menos de 2 minutos.</p>
+        <a href="/calculadora/index.html" style="display:inline-block;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Ir a la calculadora →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

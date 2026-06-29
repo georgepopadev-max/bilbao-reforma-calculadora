@@ -1,0 +1,162 @@
+---
+/**
+ * CalculadoraLayout — Para páginas de calculadora
+ * A3 Zone
+ * 
+ * Extends BaseLayout.astro y añade:
+ * - Script island del calculator TS
+ * - Contenedor del wizard
+ * - JS snippet inline para bootstrapping
+ */
+
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  city?: 'bilbao' | 'donostia' | 'vitoria';
+  calculatorType?: 'integral' | 'bano' | 'cocina' | 'pintura' | 'suelo';
+  minPrice?: number; // clamp mínimo (baño=2500, cocina=5000)
+}
+
+const {
+  title,
+  description,
+  canonical,
+  city = 'bilbao',
+  calculatorType = 'integral',
+  minPrice,
+} = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: `Bilbao Reforma - Calculadora ${city === 'bilbao' ? 'Bilbao' : city === 'donostia' ? 'Donostia' : 'Vitoria'}`,
+  url: canonical ?? `https://www.bilbaoreforma.es/calculadora/${city === 'bilbao' ? 'index' : city + '/index'}.html`,
+  potentialAction: {
+    '@type': 'CalculateAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: canonical ?? `https://www.bilbaoreforma.es/calculadora/${city === 'bilbao' ? 'index' : city + '/index'}.html`,
+      actionPlatform: ['http://schema.org/DesktopWebPlatform'],
+    },
+    object: {
+      '@type': 'Thing',
+      name: `Presupuesto Reforma ${city === 'bilbao' ? 'Bilbao' : city === 'donostia' ? 'Donostia' : 'Vitoria'}`,
+    },
+  },
+};
+
+// Calculator type for JS init
+const calcType = calculatorType; // 'integral' | 'bano' | 'cocina' | 'pintura' | 'suelo'
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href={`/${city === 'bilbao' ? '' : city + '/'}/index.html`} class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 2rem; align-items: center;">
+        <a href={`/${city === 'bilbao' ? '' : city + '/'}calculadora/index.html`} class="header-nav-link header-nav-link-active" style="padding: 0.5rem 0;">Calculadora</a>
+        <a href={`/${city === 'bilbao' ? '' : city + '/'}blog/index.html`} class="header-nav-link" style="padding: 0.5rem 0;">Blog</a>
+        <a href={`/${city === 'bilbao' ? '' : city + '/'}empresas/index.html`} class="header-nav-link" style="padding: 0.5rem 0;">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta" style="padding: 0.5rem 0;">Contacto</a>
+      </nav>
+
+      <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href={`/${city === 'bilbao' ? '' : city + '/'}calculadora/index.html`} class="mobile-nav-link">Calculadora</a>
+      <a href={`/${city === 'bilbao' ? '' : city + '/'}blog/index.html`} class="mobile-nav-link">Blog</a>
+      <a href={`/${city === 'bilbao' ? '' : city + '/'}empresas/index.html`} class="mobile-nav-link">Empresas</a>
+      <a href="/contacto.html" class="mobile-nav-link">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Calculator Main -->
+  <main class="calculator-main" id="main-content">
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <a href="/index.html" class="footer-logo">
+            <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Bilbao Reforma</span>
+          </a>
+          <p class="footer-brand-desc">Calculadora de presupuestos de reformas más completa para Bilbao y provincia.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <nav class="footer-nav">
+            <a href={`/${city === 'bilbao' ? '' : city + '/'}calculadora/index.html`} class="footer-nav-link">Calculadora</a>
+            <a href={`/${city === 'bilbao' ? '' : city + '/'}blog/index.html`} class="footer-nav-link">Blog</a>
+            <a href={`/${city === 'bilbao' ? '' : city + '/'}empresas/index.html`} class="footer-nav-link">Empresas</a>
+            <a href="/contacto.html" class="footer-nav-link">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <nav class="footer-nav">
+            <a href="/aviso-legal.html" class="footer-nav-link">Aviso legal</a>
+            <a href="/politica-privacidad.html" class="footer-nav-link">Política de privacidad</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contacto</h4>
+          <p class="footer-contact-info">
+            <a href="tel:+34642147856" style="color:inherit;text-decoration:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +34 642 147 856
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma. Todos los derechos reservados.</p>
+        <p class="footer-disclaimer">Precios orientativos. Consulta con empresas locales para presupuestos personalizados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Calculator Island: loads the TS calculator core -->
+  <script>
+    // Initialize calculator based on type
+    import('/src/scripts/calculator/core.js').then(() => {
+      if ((window as any).BilbaoCalc?.init) {
+        (window as any).BilbaoCalc.init();
+      }
+    }).catch(() => {
+      // Fallback: calculator JS not built yet, page still renders
+      console.warn('Calculator TS module not available, using HTML-only mode');
+    });
+  </script>
+</BaseLayout>

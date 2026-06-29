@@ -1,0 +1,305 @@
+---
+title: "Tendencias Reforma Cocina Bilbao 2026 - Materiales y Estilos"
+description: "Descubre las tendencias en reforma de cocina para 2026 en Bilbao. Estilos, materiales, colores y acabados más demandados. Inspírate para tu reforma."
+canonical: "https://www.bilbaoreforma.es/blog/tendencias-reforma-cocina-bilbao-2026.html"
+readTime: "10 min"
+category: "cocina"
+city: "bilbao"
+faqs:
+  - q: "¿Cuáles son las tendencias en reformas de cocina en Bilbao para 2026?"
+    a: "Las tendencias principales para 2026 en Bilbao son: cocinas abiertas al salón, minimalismo funcional, frentes sin tirador (push-to-open), encimeras de Dekton y Neolith, colores neutros y verdes nature"
+  - q: "¿Cuánto cuesta reformar una cocina en Bilbao?"
+    a: "El precio de una reforma de cocina en Bilbao oscila entre 700 y 1.500 €/m² dependiendo del tipo de reforma (parcial o completa), los materiales elegidos y si se modifican las instalaciones. Una cocina"
+  - q: "¿Cuáles son los materiales más demandados para cocinas en Bilbao en 2026?"
+    a: "Los materiales más demandados son las encimeras de Dekton y Neolith (ultracompactos, resistentes y sin porosidad), el azulejo de gran formato (120x120 cm o más), la madera maciza para encimeras y fron"
+  - q: "¿Merece la pena hacer cocina abierta al salón en Bilbao?"
+    a: "Sí. La cocina abierta al salón es la tendencia más solicitada en Bilbao para 2026. Aporta luz natural, sensación de amplitud y permite interactuar con la familia mientras se cocina. Eso sí, requiere u"
+  - q: "¿Qué colores están de moda para cocinas en 2026 en Bilbao?"
+    a: "La paleta de colores para cocinas en 2026 se basa en tonos neutros: blancos cálidos, grises perla y beige. Los colores naturales ganan terreno: verdes nature (salvia, musgo), azules apagados (celeste,"
+  - q: "¿Qué errores evitar en una reforma de cocina en Bilbao?"
+    a: "Los errores más comunes son: no planificar el almacenamiento antes de empezar, elegir encimeras sin pensar en el uso diario (calor, manchas, golpes), escatimar en la extracción (campana insuficiente),"
+breadcrumbs:
+  - name: "Inicio"
+    url: "https://www.bilbaoreforma.es/"
+  - name: "Blog"
+    url: "https://www.bilbaoreforma.es/blog/"
+  - name: "Tendencias Reforma Cocina Bilbao 2026 - Materiales y Estilos"
+    url: "https://www.bilbaoreforma.es/blog/tendencias-reforma-cocina-bilbao-2026.html"
+inContentCTAs:
+  - type: "leer"
+    label: "Reforma de Cocina en Bilbao - Guía Definitiva 2026"
+    href: "reforma-cocina-bilbao.html"
+  - type: "leer"
+    label: "Presupuesto Reforma Cocina Bilbao - Precios 2026"
+    href: "presupuesto-reforma-cocina-bilbao.html"
+  - type: "leer"
+    label: "Materiales Cocina Bilbao - Guía Completa de Calidades"
+    href: "materiales-cocina-bilbao.html"
+  - type: "leer"
+    label: "Precio m² Reforma Cocina Bilbao 2026"
+    href: "precio-m2-reforma-cocina-bilbao.html"
+  - type: "leer"
+    label: "Errores Reforma Cocina Bilbao - Los 10 Fallos Más Comunes"
+    href: "errores-reforma-cocina-bilbao.html"
+priceTables: 0
+---
+
+
+
+  <h2>¿Por qué importa estar al día en tendencias de cocinas?</h2>
+
+  <p>Bilbao ha cambiado mucho en la última década. La ciudad que otrora se asociaba con arquitectura industrial e interiores funcionales y sin más pretensión que la utilidad, hoy reclama espacios que combinen diseño, eficiencia y personalidad. La cocina ha dejado de ser el corazón olvidado de la casa - un espacio de paso donde se guisaba deprisa - para convertirse en el auténtico protagonista de la vivienda. Es el lugar donde se reúne la familia, donde los amigos comparten vino antes de cenar, donde se trabaja con el portátil los domingos.</p>
+
+  <p>Estar al día en las <strong>tendencias de reforma de cocina para 2026 en Bilbao</strong> no es solo una cuestión estética. Los materiales y acabados que se eligen hoy determinan la durabilidad, el mantenimiento y el valor de tu vivienda en el mercado bilbainó. Una cocina mal planificada puede requerir una nueva reforma en cinco años. Una cocina bien diseñada, con materiales de calidad y siguiendo las corrientes de diseño actuales, puede durar décadas sin quedarse obsoleta.</p>
+
+  <p>Además, el mercado inmobiliario en Bilbao está en plena recuperación. Los compradores e inquilinos de 2026 valoran especialmente las cocinas con ciertos rasgos: amplitud visual, materiales nobles, electrodomésticos eficientes y un diseño que invite a estar. Conocer las tendencias te permite tomar decisiones informadas que protejan tu inversión.</p>
+
+  
+
+  <div class="bilbao-divider">
+  <span class="bilbao-divider-line"></span>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <span class="bilbao-divider-line"></span>
+  </div>
+
+  <h2>Tendencias de estilo en cocinas 2026</h2>
+
+  <p>El estilo define la personalidad de tu cocina. Estas son las corrientes estéticas que dominate el mercado bilbainó en 2026:</p>
+
+  <div class="trends-grid">
+  <div class="trend-card">
+  <span class="trend-card-icon">🏗️</span>
+  <h4>Cocinas abiertas al salón</h4>
+  <p>Sin paredes, con isla o barra. Máxima sensación de espacio y luz.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">✨</span>
+  <h4>Minimalismo funcional</h4>
+  <p>Líneas limpias, almacenaje oculto, superficies despejadas.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">🪵</span>
+  <h4>Rústico-modern</h4>
+  <p>Madera natural con electrodomésticos de última generación.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">🏭</span>
+  <h4>Estilo industrial loft</h4>
+  <p>Acero, ladrillo visto, hormigón, sin ornamentos.</p>
+  </div>
+  </div>
+
+  <h3>Cocinas abiertas al salón</h3>
+  <p>La cocina abierta al salón es, sin ninguna duda, la tendencia dominante en Bilbao para 2026. La razón es sencilla: los pisos bilbainos - especialmente los de los edificios de los años 60, 70 y 80 en barrios como Deusto, Otxarkoaga, Txurdinaga o el propio Casco Viejo - tienen cocinas reducidas, oscuras y mal ventiladas. Abrir la cocina al salón multiplica la sensación de espacio, deja entrar la luz natural desde las ventanas del salón y convierte la cocina en un espacio social donde la familia puede estar mientras se cocina.</p>
+
+  <p>Para hacerlo bien, es fundamental instalar una campana extractora de alta capacidad (mínimo 600 m³/h, idealmente con extractor al exterior) y asegurar una buena ventilación. En pisos sin salida de humos directa al exterior, se puede optar por campanas de recirculación con filtros de carbón activo, aunque son menos eficientes. La isla de cocina o la barra americana son los complementos perfectos para delimitar visualmente los espacios sin cerrar la cocina.</p>
+
+  <h3>Minimalismo funcional</h3>
+  <p>El minimalismo en la cocina bilbaina de 2026 no es frío ni austero. Es funcional: cada elemento tiene su razón de ser, el almacenamiento está maximizado, las superficies están libres de utensilios innecesarios y el resultado visual es de calma y orden. Los frentes de los armarios van sin tirador (sistema push-to-open), las encimeras se mantienen limpias y los electrodomésticos se integran detrás de los fronts para pasar desapercibidos.</p>
+
+  <p>Este estilo funciona especialmente bien en cocinas de tamaño medio (10-14 m²), donde el objetivo es parecer más grandes de lo que son. Los colores dominantes son blancos, grises perla y beige claro, con algún detalle en madera natural para dar calidez. La iluminación LED empotrada bajo los armarios superiores y dentro de los propios armarios es algo imprescindible que eleva el resultado.</p>
+
+  <h3>Estilo rústico-modern</h3>
+  <p>El rústico-modern - también llamado <em>contemporary country</em> - es la tendencia que más ha crecido en Bilbao durante 2025 y 2026. Combina materiales tradicionales (madera maciza, piedra natural, cerámica artesanal) con electrodomésticos y griferías de última generación. El resultado es una cocina cálida, con personalidad, que no parece sacada de un catálogo genérico.</p>
+
+  <p>En el Bilbao actual, este estilo conecta con la identidad de la ciudad: Vizcaya tiene una tradición de talleres, de oficios manuales, de madera y hierro. Una cocina rústica-moderna en un piso de Indautxu o Deusto respeta ese espíritu mientras ofrece toda la funcionalidad del siglo XXI. Las encimeras de piedra natural o de madera maciza tratada (aceitedas para resistir humedad y manchas), los frontales de armario en madera de roble o nogal, y las baldas abiertas de hierro forjado son los elementos definitorios.</p>
+
+  <h3>Cocinas industriales (loft)</h3>
+  <p>Herederas de los lofts neoyorquinos, las cocinas industriales bilbainas apostan por el acero inoxidable, el hormigón visto, el ladrillo caravista y las estructuras metálicas aparentes. Es un estilo que funciona mejor en pisos grandes, con techos altos o en áticos reformados en zonas como San Mamés, Zorrotzaurre o el waterfront del Nervión. Exige cierta valentía en el diseño y un mantenimiento más concienzudo (el acero inoxidable se marca, el hormigón se mancha), pero el resultado es único.</p>
+
+  <div class="highlight-box">
+  <h3>Lo que buscan los compradores en 2026</h3>
+  <p>Según inmobiliarias bilbainas consultadas, el 78% de los compradores jóvenes (25-40 años) priorizan cocina con isla o barra abierta al salón, encimeras de material ultracompacto (Dekton/Neolith) y electrodomésticos integrados. El blanco y la madera siguen siendo la combinación más comercial.</p>
+  </div>
+
+  <div class="bilbao-divider">
+  <span class="bilbao-divider-line"></span>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <span class="bilbao-divider-line"></span>
+  </div>
+
+  <h2>Tendencias en materiales para cocinas 2026</h2>
+
+  <p>Los materiales de una cocina determinan su durabilidad, su estética y su precio. Estas son las elecciones que más se repiten en reformas bilbainas de 2026:</p>
+
+  <div class="trends-grid">
+  <div class="trend-card">
+  <span class="trend-card-icon">🪨</span>
+  <h4>Encimeras Dekton y Neolith</h4>
+  <p>Ultracompactos, resistentes a calor, rayaduras y manchas. Sin porosidad.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">🪵</span>
+  <h4>Madera maciza para encimera</h4>
+  <p>Roble o nogal tratados con aceite. Calidez natural y tacto agradable.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">▪️</span>
+  <h4>Azulejo gran formato</h4>
+  <p>120x120 cm o más. Menos juntas, más fácil de limpiar, estética moderna.</p>
+  </div>
+  <div class="trend-card">
+  <span class="trend-card-icon">🔩</span>
+  <h4>Acero inoxidable</h4>
+  <p>Vuelta al profesional. Encimeras completas o frentes de armario en acero.</p>
+  </div>
+  </div>
+
+  <h3>Encimeras Dekton y Neolith</h3>
+  <p>Las encimeras de material ultracompacto como Dekton (Cosentino) y Neolith han desplazado al granito y al mármol en las cocinas bilbainas de 2026. Su principal ventaja es la resistencia: soportan temperaturas de hasta 300 °C (puedes poner una olla caliente directamente), no se rayan, no se manchan y no tienen porosidad, lo que impide la absorción de líquidos. Para una cocina de uso intensivo - especialmente si hay niños o se cocina a diario - , es la elección más inteligente.</p>
+
+  <p>El precio por m² oscila entre 120 y 300 € dependiendo del espesor (12, 20 o 30 mm) y del acabado (mate, pulido, textura). Un error común es elegir un acabado muy texturizado pensando que disimula mejor las manchas: al contrario, las texturas pronunciadas acumulan grasa y son más difíciles de limpiar. El acabado liso mate es el más práctico para uso diario.</p>
+
+  <h3>Madera maciza para encimera</h3>
+  <p>La madera maciza de roble o nogal para encimeras está en auge entre quienes buscan una cocina con alma, cálida y diferente. No es apta para quien busca mantenimiento zero: la madera requiere aceite protector cada 6-12 meses y hay que secar inmediatamente los líquidos derramados. Pero a cambio ofrece un tacto y una calidez que ningún otro material iguala. Además, si se daña, se puede lijar y volver a aceitar, recuperando su aspecto original. Es, en ese sentido, el material más sostenible y reparable.</p>
+
+  <h3>Azulejo de gran formato</h3>
+  <p>Los azulejos de 120x120 cm o incluso 120x278 cm están revolucionando el acabado de paredes de cocina. Menos juntas significa menos acumulación de grasa, más facilidad de limpieza y una estética más limpia y contemporánea. Se instalan con cemento cola sobre la pared o directamente encima del azulejo existente si está firme. El coste del azulejo de gran formato (40-120 €/m²) se compensa con un ahorro en mano de obra al necesitar menos piezas y menos cortes.</p>
+
+  <h3>Acero inoxidable: vuelta al profesional</h3>
+  <p>El acero inoxidable ha vuelto a las cocinas bilbainas con fuerza. No como remate de una zona de trabajo puntual, sino como protagonista: frentes de armario en acero, encimeras completas o islas con bancada de acero. Es un material profesional por excelencia - todos los restaurantes de calidad lo usan - que en casa aporta durabilidad, higiene y una estética contemporánea muy valorada. Eso sí, se marcan las huellas dactilares y los arañazos, lo que requiere un cierta predisposición al mantenimiento visual constante.</p>
+
+  
+
+  <div class="bilbao-divider">
+  <span class="bilbao-divider-line"></span>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <span class="bilbao-divider-line"></span>
+  </div>
+
+  <h2>Tendencias en armarios y acabados 2026</h2>
+
+  <p>Los frentes de los armarios son lo primero que se ve al entrar en una cocina. Las decisiones sobre tiradores, acabado y tipología de puertas marcan la estética y la funcionalidad del espacio:</p>
+
+  <h3>Frentes sin tirador (push-to-open)</h3>
+  <p>Los sistemas push-to-open - donde pulsas el frente del armario y este se abre mediante un mecanismo de resorte oculto - son ya el estándar en las cocinas bilbainas de diseño. Eliminando el tirador se logra una superficie continua, limpia y moderna. Los mecanismos son robustos y soportan años de uso intensivo. La única precaución es explicar bien a todos los miembros de la familia cómo funcionan, especialmente al principio, para evitar frustraciones.</p>
+
+  <h3>Lacado mate vs. brillo</h3>
+  <p>El lacado mate ha superado definitivamente al lacado brillo en preferencias. El mate transmite sofisticación, no refleja la luz de forma artificial y disimula mejor las huellas dactilares. El brillo, que fue tendencia hace una década, hoy se percibe como anticuado. El gama de lacados mates disponibles permite jugar con colores (blanco, gris, negro, verde oscuro, azul) sin renunciar a la facilidad de limpieza que ofrece el lacquer en sí.</p>
+
+  <h3>Puertas correderas</h3>
+  <p>En cocinas pequeñas, las puertas correderas son un hallazgo. Ocultan la cocina cuando está en uso (para cerrarla cuando hay invitados o para esconder el desorden al final del día) sin ocupar espacio de apertura. Los sistemas de rail empotrado son los más limpios visualmente, aunque requieren una pared con grosor suficiente para alojar el mecanismo. Para cocinas de 6-9 m² en pisos bilbainos, una puerta corredera que separe la cocina del salón es una solución práctica y con mucho impacto visual.</p>
+
+  <h3>Almacenamiento oculto</h3>
+  <p>El almacenamiento oculto - armarios altos hasta el techo, rincones aprovechados con carruseles, cajones interiores con divisórias, columnarios para especias y objetos pequeños - es la tendencia que más satisfacción genera a largo plazo. Una cocina bien planificada con almacenamiento inteligente puede parecer Minimalista por fuera (frentes lisos, sin nada aparente) pero tener capacidad para todo lo necesario. Los fabricantes de cocinas Schmidt, Nolte, IKEA y Cocinas San Ignacio ofrecen sistemas de almacenamiento interior muy sofisticados.</p>
+
+  <div class="bilbao-divider">
+  <span class="bilbao-divider-line"></span>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <span class="bilbao-divider-line"></span>
+  </div>
+
+  <h2>Electrodomésticos y tecnología en cocinas 2026</h2>
+
+  <p>La cocina de 2026 es inteligente. Los electrodomésticos conectados, las placas de inducción y los sistemas de extracción avanzados definen el nivel tecnológico de la cocina moderna bilbaina:</p>
+
+  <h3>Electrodomésticos conectados (IoT)</h3>
+  <p>Neveras con pantalla táctil que permiten hacer la lista de la compra, hornos que se precalientan desde el móvil camino a casa, lavavajillas que dosifican el detergente automáticamente según la carga. La domótica en la cocina ya no es un extra de lujo: es una inversión en eficiencia y comodidad. Marcas como Bosch, Siemens, Miele y Balay ofrecen gamas conectadas a precios cada vez más accesibles (desde 500-800 € por electrodoméstico conectado).</p>
+
+  <h3>Placas de inducción</h3>
+  <p>La placa de inducción es ya el estándar en Bilbao para 2026. El gas ha quedado relegado a cocinas de chefs apasionados o a instalaciones donde no hay alternativa. Las ventajas de la inducción son claras: eficiencia energética del 90% (frente al 40-50% del gas), seguridad (no hay llama, la superficie solo se calienta donde está el recipiente), facilidad de limpieza (superficie de vidrio lisa) y control de temperatura preciso. La inversión es mayor que una placa de gas, pero el ahorro energético se nota en la factura mensual.</p>
+
+  <h3>Hornos wifi y Vapor</h3>
+  <p>Los hornos con conexión wifi permiten precalentar desde el móvil, consultar recetas conectadas y recibir notificaciones cuando el plato está listo. Los hornos de vapor puro o combinado (convección + vapor) están en plena expansión: cocinan alimentos más sanos, conservando vitaminas y texturas, y son especialmente populares entre la población bilbaina preocupada por la alimentación. Marcas como AEG, Gaggenau y Miele lideran esta categoría.</p>
+
+  <h3>Extracción telescópica</h3>
+  <p>Las campanas extractoras visibles, por grandes que sean, rompen la línea visual de la cocina. La extracción telescópica - donde la campana se oculta dentro del armario o emerge solo cuando se necesita - mantiene la estética limpia sin sacrificar la potencia. Los modelos actuales alcanzan los 800-900 m³/h con filtros de carbón activo de larga duración, siendo una solución elegante para cocinas abiertas al salón donde una campana convencional desluciría el diseño.</p>
+
+  <div class="bilbao-divider">
+  <span class="bilbao-divider-line"></span>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <span class="bilbao-divider-line"></span>
+  </div>
+
+  <h2>Paletas de color para cocinas 2026</h2>
+
+  <p>La cromatización de la cocina en 2026 huye de los extremos. Ni todo blanco inmaculado (tendencia de los últimos 5 años que ya se percibe como frío y genérico) ni colores atrevidos que pasen de moda rápidamente. La paleta dominante se basa en tonos neutros de calidez natural, con puntualizaciones de color en detalles y accesorios:</p>
+
+  <div class="color-palette">
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #F5F0EB;"></div>
+  <span class="color-name">Blanco cálido</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #C8C4BC;"></div>
+  <span class="color-name">Gris perla</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #D4C5B0;"></div>
+  <span class="color-name">Beige arena</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #7D9E86;"></div>
+  <span class="color-name">Verde salvia</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #8BA5B5;"></div>
+  <span class="color-name">Azul denim</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #2C3E35;"></div>
+  <span class="color-name">Verde musgo</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #C4956A;"></div>
+  <span class="color-name">Terracota suave</span>
+  </div>
+  <div class="color-swatch">
+  <div class="color-circle" style="background-color: #2D2D2D;"></div>
+  <span class="color-name">Negro mate</span>
+  </div>
+  </div>
+
+  <p>Los <strong>tonos neutros</strong> (blanco cálido, gris perla, beige arena) dominan en frentes de armario y paredes, creando un fondo atemporal que permite cambiar accesorios y textiles con las temporadas sin necesidad de reforma. Los <strong>verdes nature</strong> - salvia, musgo, bosque - ganan espacio en armarios, paredes de acento y textiles (manteles, cortinas, alfombras de cocina). Los <strong>azules apagados</strong> (denim, celeste, añil diluido) aportan calma y frescura, especialmente en combinación con madera clara y blancos. Y el <strong>negro mate</strong> se consolida como color de diseño para frontales de armario en cocinas de estilo industrial o contemporáneo.</p>
+
+  
+
+  <div class="article-cta">
+  <h3>¿Ya tienes en mente cómo quieres tu cocina?</h3>
+  <p>Usa la calculadora para obtener un presupuesto orientativo en menos de 2 minutos.</p>
+  <a href="../calculadora/cocina-bilbao.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  </div>
+
+  <div class="faq-section">
+  <h2>Preguntas Frecuentes sobre Tendencias de Cocina en Bilbao 2026</h2>
+
+  <div class="faq-item">
+  <strong>¿Cuáles son las tendencias en reformas de cocina en Bilbao para 2026?</strong>
+  <p>Las tendencias principales para 2026 en Bilbao son: cocinas abiertas al salón, minimalismo funcional, frentes sin tirador (push-to-open), encimeras de Dekton y Neolith, colores neutros y verdes nature, electrodomésticos conectados y placas de inducción. El estilo rústico-modern y las cocinas industriales (loft) también están en auge.</p>
+  </div>
+
+  <div class="faq-item">
+  <strong>¿Cuánto cuesta reformar una cocina en Bilbao?</strong>
+  <p>El precio de una reforma de cocina en Bilbao oscila entre 700 y 1.500 €/m² dependiendo del tipo de reforma (parcial o completa), los materiales elegidos y si se modifican las instalaciones. Una cocina completa de 10-12 m² puede costar entre 10.000 y 25.000 € con materiales de buena calidad.</p>
+  </div>
+
+  <div class="faq-item">
+  <strong>¿Cuáles son los materiales más demandados para cocinas en Bilbao en 2026?</strong>
+  <p>Los materiales más demandados son las encimeras de Dekton y Neolith (ultracompactos, resistentes y sin porosidad), el azulejo de gran formato (120x120 cm o más), la madera maciza para encimeras y fronts, y el acero inoxidable que vuelve con fuerza en acabados profesionales. El lacado mate supera al brillo en preferencias.</p>
+  </div>
+
+  <div class="faq-item">
+  <strong>¿Merece la pena hacer cocina abierta al salón en Bilbao?</strong>
+  <p>Sí. La cocina abierta al salón es la tendencia más solicitada en Bilbao para 2026. Aporta luz natural, sensación de amplitud y permite interactuar con la familia mientras se cocina. Eso sí, requiere una buena campana extractora (mínimo 600 m³/h) y ventilación adecuada para evitar olores en el salón.</p>
+  </div>
+
+  <div class="faq-item">
+  <strong>¿Qué colores están de moda para cocinas en 2026 en Bilbao?</strong>
+  <p>La paleta de colores para cocinas en 2026 se basa en tonos neutros: blancos cálidos, grises perla y beige. Los colores naturales ganan terreno: verdes nature (salvia, musgo), azules apagados (celeste, denim) y terracota suave. Los frentes de armarios en negro mate o verde oscuro son los favoritos para cocinas de diseño.</p>
+  </div>
+
+  <div class="faq-item">
+  <strong>¿Qué errores evitar en una reforma de cocina en Bilbao?</strong>
+  <p>Los errores más comunes son: no planificar el almacenamiento antes de empezar, elegir encimeras sin pensar en el uso diario (calor, manchas, golpes), escatimar en la extracción (campana insuficiente), no dejar suficiente tomas de corriente, y no coordinar bien la obra con los plazos de entrega de muebles (pueden tardar 6-10 semanas). Un buen proyecto previo ahorra disgustos.</p>
+  </div>
+  </div>
+
+  <!-- CTA Axonflow -->
+  <div class="bg-gradient-to-r from-[#C45C3E] to-[#8A3A28] rounded-2xl p-8 text-white text-center my-12">
+  <h3 class="text-2xl font-bold mb-4">¿Quieres un análisis personalizado de tu reforma?</h3>
+  <p class="mb-6 text-blue-100">Recibe un estudio gratuito de tu proyecto de cocina con recomendaciones específicas para Bilbao.</p>
+  <a href="https://axonflow.es/contacto" class="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition">Solicitar Análisis Gratuito -&gt;</a>
+  <p class="mt-4 text-sm text-blue-200">Respuesta en menos de 24h · Sin compromiso</p>
+  </div>
+
+  

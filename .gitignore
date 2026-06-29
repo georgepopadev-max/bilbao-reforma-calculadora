@@ -1,6 +1,29 @@
+# Dependencies
 node_modules/
-.DS_Store
-*.log
 
-# Local backups (pre-sprint snapshots, not source)
-blog.backup.*/
+# Build output
+dist/
+.astro/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Backup
+*.bak

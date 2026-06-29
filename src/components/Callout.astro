@@ -1,0 +1,49 @@
+---
+export interface Props {
+  type?: 'tip' | 'warning' | 'info';
+  title?: string;
+}
+
+const { type = 'info', title } = Astro.props;
+
+const configs = {
+  tip: { icon: '💡', class: 'callout-tip' },
+  warning: { icon: '⚠️', class: 'callout-warning' },
+  info: { icon: 'ℹ️', class: 'callout-info' },
+};
+
+const config = configs[type];
+---
+<div class={`callout ${config.class}`}>
+  {title && <h3>{title}</h3>}
+  <slot />
+</div>
+
+<style>
+  .callout {
+    border-radius: var(--radius-card);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .callout h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  .callout p { margin-bottom: 0; font-size: 0.9375rem; }
+  .callout-tip {
+    background: linear-gradient(135deg, #F6FBF0 0%, #E8F0E4 100%);
+    border: 1px solid #C4D8B0;
+  }
+  .callout-tip h3 { color: var(--color-verde-montana); }
+  .callout-warning {
+    background: #FFF9E6;
+    border: 1px solid #F0E6C8;
+  }
+  .callout-warning h3 { color: #8A7340; }
+  .callout-info {
+    background: var(--color-crema);
+    border: 1px solid var(--color-beige);
+  }
+  .callout-info h3 { color: var(--color-gris); }
+</style>

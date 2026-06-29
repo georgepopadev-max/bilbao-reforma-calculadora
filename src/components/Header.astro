@@ -1,0 +1,136 @@
+---
+import CitySwitcher from './CitySwitcher.astro';
+
+export interface Props {
+  city?: 'bilbao' | 'donostia' | 'vitoria';
+}
+
+const { city = 'bilbao' } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="header-container">
+    <a href={`/${city === 'bilbao' ? '' : city + '/'}index.html`} class="header-logo">
+      <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="header-logo-text">Bilbao Reforma</span>
+    </a>
+    <nav class="header-nav">
+      <a href={`/${city === 'bilbao' ? 'calculadora/' : city + '/calculadora/'}index.html`} class="header-nav-link">Calculadora</a>
+      <a href={`/${city === 'bilbao' ? 'blog/' : city + '/blog/'}index.html`} class={`header-nav-link${currentPath.includes('/blog') ? ' header-nav-link-active' : ''}`}>Blog</a>
+      <a href={`/${city === 'bilbao' ? 'empresas/' : city + '/empresas/'}index.html`} class="header-nav-link">Empresas</a>
+      <a href={`/${city === 'bilbao' ? 'contacto' : city + '/contacto'}.html`} class="header-nav-link header-nav-link-cta">Contacto</a>
+    </nav>
+    <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-nav">
+    <a href={`/${city === 'bilbao' ? 'calculadora/' : city + '/calculadora/'}index.html`} class="mobile-nav-link">Calculadora</a>
+    <a href={`/${city === 'bilbao' ? 'blog/' : city + '/blog/'}index.html`} class="mobile-nav-link">Blog</a>
+    <a href={`/${city === 'bilbao' ? 'empresas/' : city + '/empresas/'}index.html`} class="mobile-nav-link">Empresas</a>
+    <a href={`/${city === 'bilbao' ? 'contacto' : city + '/contacto'}.html`} class="mobile-nav-link">Contacto</a>
+  </nav>
+</div>
+
+<style>
+  .site-header {
+    background: var(--color-blanco);
+    border-bottom: 1px solid var(--color-beige);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-grafito);
+  }
+  .header-logo-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--color-terracota);
+    flex-shrink: 0;
+  }
+  .header-logo-text {
+    font-family: var(--font-playfair);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  .header-nav {
+    display: none;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .header-nav { display: flex; }
+    .header-mobile-toggle { display: none; }
+  }
+  .header-nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gris);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .header-nav-link:hover { color: var(--color-terracota); text-decoration: none; }
+  .header-nav-link-active { color: var(--color-terracota); font-weight: 600; }
+  .header-nav-link-cta {
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: var(--color-terracota);
+    color: var(--color-blanco) !important;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-button);
+    text-decoration: none;
+  }
+  .header-nav-link-cta:hover { background: var(--color-terracota-hover); }
+  .header-mobile-toggle {
+    padding: 0.5rem;
+    color: var(--color-grafito);
+    border-radius: var(--radius-button);
+  }
+  .mobile-menu {
+    display: none;
+    background: var(--color-blanco);
+    border-top: 1px solid var(--color-beige);
+    padding: 1rem;
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .mobile-nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-grafito);
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: var(--radius-button);
+    transition: background 0.2s;
+  }
+  .mobile-nav-link:hover { background: var(--color-crema); text-decoration: none; }
+</style>

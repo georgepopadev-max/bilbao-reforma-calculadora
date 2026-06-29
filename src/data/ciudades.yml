@@ -1,0 +1,41 @@
+# Ciudades cubiertas por Bilbao Reforma
+# Used in city switcher, city-specific pages
+
+- name: Bilbao
+  slug: bilbao
+  province: Bizkaia
+  province_short: Vizcaya
+  country: ES
+  phone: "+34 642 147 856"
+  email: info@bilbaoreforma.es
+  coords:
+    lat: 43.2630
+    lng: -2.9350
+  domain: bilbaoreforma.es
+  canonical: https://www.bilbaoreforma.es/
+
+- name: Donostia-San Sebastián
+  slug: donostia
+  province: Gipuzkoa
+  province_short: Guipúzcoa
+  country: ES
+  phone: "+34 642 147 856"
+  email: info@bilbaoreforma.es
+  coords:
+    lat: 43.3183
+    lng: -1.9812
+  domain: bilbaoreforma.es/donostia
+  canonical: https://www.bilbaoreforma.es/donostia/
+
+- name: Vitoria-Gasteiz
+  slug: vitoria
+  province: Álava
+  province_short: Araba
+  country: ES
+  phone: "+34 642 147 856"
+  email: info@bilbaoreforma.es
+  coords:
+    lat: 42.8468
+    lng: -2.6726
+  domain: bilbaoreforma.es/vitoria
+  canonical: https://www.bilbaoreforma.es/vitoria/

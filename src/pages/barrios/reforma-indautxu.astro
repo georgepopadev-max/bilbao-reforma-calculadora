@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const barrio = { name: 'Indautxu', slug: 'indautxu', multiplicador: 1.15, agePreset: 'old', description: 'Indautxu es la zona prime de Bilbao, con edificios de calidad media-alta. Los precios de reforma son un 15% superiores a la media de Bilbao.' };
+const schema = { '@context': 'https://schema.org', '@type': 'Place', name: 'Indautxu Bilbao', description: barrio.description };
+---
+<BaseLayout title={`Reformas en Indautxu Bilbao | Bilbao Reforma`} description={`Calculadora de presupuestos para reformas en Indautxu Bilbao. Multiplicador 1.15x.`} canonical={`https://www.bilbaoreforma.es/barrios/reforma-indautxu.html`}>
+  <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify(schema)} /></Fragment>
+  <header class="site-header"><div class="header-container"><a href="/index.html" class="header-logo"><svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span class="header-logo-text">Bilbao Reforma</span></a><nav class="header-nav"><a href="/calculadora/index.html" class="header-nav-link">Calculadora</a><a href="/blog/index.html" class="header-nav-link">Blog</a><a href="/empresas/index.html" class="header-nav-link">Empresas</a><a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a></nav></div></header>
+  <main id="main-content">
+    <section style="max-width:700px;margin:4rem auto;padding:0 1.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol style="display:flex;gap:0.5rem;list-style:none;padding:0;margin:0 0 2rem;font-size:0.9rem;color:#888;"><li><a href="/index.html">Bilbao Reforma</a></li><li>›</li><li>Barrios</li><li>›</li><li aria-current="page">Indautxu</li></ol></nav>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:1rem;">Reformas en Indautxu, Bilbao</h1>
+      <div style="background:#7D8B6A;color:white;display:inline-block;padding:0.5rem 1rem;border-radius:20px;font-size:1.1rem;margin-bottom:1.5rem;font-weight:600;">×1.15 sobre precio base</div>
+      <p style="font-size:1.1rem;line-height:1.8;color:#333;margin-bottom:1.5rem;">{barrio.description}</p>
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">
+        <h2 style="font-size:1.2rem;margin-bottom:0.75rem;">Calculadora con multiplicador de Indautxu</h2>
+        <p style="color:#666;margin-bottom:1rem;">Abre la calculadora con el multiplicador de Indautxu ya aplicado.</p>
+        <a href="/calculadora/index.html?barrio=indautxu" style="display:inline-block;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Calcular en Indautxu →</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-bottom"><p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p></div></div></footer>
+</BaseLayout>
