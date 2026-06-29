@@ -378,7 +378,7 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 
           <nav class="wizard-nav">
             <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-            <button class="wizard-nav-btn wizard-nav-btn-next" type="button" onclick="window.BilbaoCalc?.restart()">Nuevo cálculo →</button>
+            <button class="wizard-nav-btn wizard-nav-btn-next" type="button" id="btn-restart">Nuevo cálculo →</button>
           </nav>
         </div>
       </div>
@@ -386,6 +386,86 @@ import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
     </div>
   </div>
 </CalculadoraLayout>
+
+<script>
+  import BilbaoCalc from '../../scripts/calculator/core.ts';
+  BilbaoCalc.init();
+
+  // ── Scope cards (step 1) ─────────────────────────────────────────────────
+  document.querySelectorAll('[data-scope]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const scope = el.getAttribute('data-scope');
+      if (scope) BilbaoCalc.selectScope(scope as any);
+    });
+  });
+
+  // ── Type cards (step 1) ──────────────────────────────────────────────────
+  document.querySelectorAll('[data-reform]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const type = el.getAttribute('data-reform');
+      if (type) BilbaoCalc.toggleReformType(type as any);
+    });
+  });
+
+  // ── All nav buttons (next / back on every step) ────────────────────────────
+  document.querySelectorAll('.wizard-nav-btn-next').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      // Step 5 next button triggers calculation
+      const step5Next = btn.closest('#step5')?.querySelector('.wizard-nav-btn-next');
+      if (btn === step5Next) {
+        BilbaoCalc.calculateAndShowResult();
+      } else {
+        BilbaoCalc.nextStep();
+      }
+    });
+  });
+
+  document.querySelectorAll('.wizard-nav-btn-back').forEach((btn) => {
+    btn.addEventListener('click', () => BilbaoCalc.prevStep());
+  });
+
+  // ── Meters (step 2) ───────────────────────────────────────────────────────
+  const metersInput = document.getElementById('metersInput') as HTMLInputElement | null;
+  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement | null;
+  metersInput?.addEventListener('input', () => BilbaoCalc.updateSqm(metersInput.value));
+  metersSlider?.addEventListener('input', () => BilbaoCalc.updateSqm(metersSlider.value));
+
+  document.querySelectorAll('.meters-preset-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const m = parseInt((btn as HTMLButtonElement).dataset.meters ?? '80', 10);
+      BilbaoCalc.updateSqm(m);
+    });
+  });
+
+  // ── Building age options (step 3) ────────────────────────────────────────
+  document.querySelectorAll('#ageOptions .age-option').forEach((el) => {
+    el.addEventListener('click', () => {
+      const age = el.getAttribute('data-age');
+      if (age) BilbaoCalc.updateBuildingAge(age as any);
+    });
+  });
+
+  // ── Quality options (step 4) ─────────────────────────────────────────────
+  document.querySelectorAll('#qualityOptions .age-option').forEach((el) => {
+    el.addEventListener('click', () => {
+      const quality = el.getAttribute('data-quality');
+      if (quality) BilbaoCalc.updateQuality(quality as any);
+    });
+  });
+
+  // ── Extras (step 5) ─────────────────────────────────────────────────────
+  document.querySelectorAll('.extra-checkbox-item').forEach((el) => {
+    el.addEventListener('click', () => {
+      const key = el.getAttribute('data-extra');
+      if (key) BilbaoCalc.toggleExtra(key);
+    });
+  });
+
+  // ── Result buttons ────────────────────────────────────────────────────────
+  document.getElementById('downloadPdfBtn')?.addEventListener('click', () => BilbaoCalc.downloadPDF());
+  document.getElementById('requestQuotesBtn')?.addEventListener('click', () => BilbaoCalc.requestQuotes());
+  document.getElementById('btn-restart')?.addEventListener('click', () => BilbaoCalc.restart());
+</script>
 
 <style is:global>
   /* Minimal wizard styles (until A1 provides full styles.css) */
