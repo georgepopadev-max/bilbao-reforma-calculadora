@@ -6,6 +6,7 @@
  */
 import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 import Calculator from '../../components/calculator/Calculator.astro';
+import StepFinal from '../../components/calculator/StepFinal.astro';
 ---
 
 <CalculadoraLayout
@@ -250,26 +251,7 @@ import Calculator from '../../components/calculator/Calculator.astro';
 
     <!-- STEP 7: Resultado -->
     <div class="wizard-step" id="step7" data-step="7">
-      <div class="result-container">
-        <div class="result-header">
-          <h1 class="result-title">Tu reforma integral en Bilbao cuesta entre</h1>
-          <div class="result-range">
-            <span class="result-range-low" id="resultRangeLow">—</span>
-            <span class="result-range-separator">—</span>
-            <span class="result-range-high" id="resultRangeHigh">—</span>
-          </div>
-        </div>
-        <div class="result-breakdown">
-          <p style="margin:0;font-family:var(--font-inter);font-size:0.875rem;">Precio orientativo incluye materiales y mano de obra. Puede variar según condiciones del edificio.</p>
-        </div>
-        <div class="result-disclaimer">
-          ⚠️ Este presupuesto es orientativo y puede variar ±20% según el estado del edificio y acabados seleccionados.
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-          <button class="wizard-nav-btn wizard-nav-btn-primary" type="button" onclick="window.location.href='/calculadora/integral-bilbao.html'">Nuevo cálculo →</button>
-        </nav>
-      </div>
+      <StepFinal calculatorType="integral" city="bilbao" />
     </div>
   </Calculator>
 </CalculadoraLayout>
@@ -367,10 +349,15 @@ import Calculator from '../../components/calculator/Calculator.astro';
   function showResult() {
     const { low, high } = calculateIntegral();
     showStep(7);
-    const lowEl = document.getElementById('resultRangeLow');
-    const highEl = document.getElementById('resultRangeHigh');
-    if (lowEl) lowEl.textContent = formatCurrency(low) + ' €';
-    if (highEl) highEl.textContent = formatCurrency(high) + ' €';
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Reforma Integral';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function') {
+      (window as any).stepFinalReveal(low, high, 'Reforma Integral', 'integral', 'bilbao', 'Bilbao', sfEl!);
+    }
   }
 
   let currentStep = 1;
@@ -428,6 +415,11 @@ import Calculator from '../../components/calculator/Calculator.astro';
     document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
       el.addEventListener('click', () => selectOption('acabadosOptions', 'acabados', val));
     });
+  });
+
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
   });
 
   showStep(1);

@@ -6,6 +6,7 @@
  */
 import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 import Calculator from '../../components/calculator/Calculator.astro';
+import StepFinal from '../../components/calculator/StepFinal.astro';
 ---
 
 <CalculadoraLayout
@@ -236,26 +237,7 @@ import Calculator from '../../components/calculator/Calculator.astro';
 
     <!-- STEP 7: Resultado -->
     <div class="wizard-step" id="step7" data-step="7">
-      <div class="result-container">
-        <div class="result-header">
-          <h1 class="result-title">Tu trabajo de pintura en Bilbao cuesta entre</h1>
-          <div class="result-range">
-            <span class="result-range-low" id="resultRangeLow">—</span>
-            <span class="result-range-separator">—</span>
-            <span class="result-range-high" id="resultRangeHigh">—</span>
-          </div>
-        </div>
-        <div class="result-breakdown">
-          <p style="margin:0;font-family:var(--font-inter);font-size:0.875rem;">Precio incluye materiales de calidad y mano de obra profesional. No incluye andamios externos.</p>
-        </div>
-        <div class="result-disclaimer">
-          ⚠️ Este presupuesto es orientativo. Puede variar según estado de las paredes y acceso al edificio.
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-          <button class="wizard-nav-btn wizard-nav-btn-primary" type="button" onclick="window.location.href='/calculadora/pintura-bilbao.html'">Nuevo cálculo →</button>
-        </nav>
-      </div>
+      <StepFinal calculatorType="pintura" city="bilbao" />
     </div>
   </Calculator>
 </CalculadoraLayout>
@@ -364,10 +346,15 @@ import Calculator from '../../components/calculator/Calculator.astro';
   function showResult() {
     const { low, high } = calculatePintura();
     showStep(7);
-    const lowEl = document.getElementById('resultRangeLow');
-    const highEl = document.getElementById('resultRangeHigh');
-    if (lowEl) lowEl.textContent = formatCurrency(low) + ' €';
-    if (highEl) highEl.textContent = formatCurrency(high) + ' €';
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Pintura';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function') {
+      (window as any).stepFinalReveal(low, high, 'Pintura', 'pintura', 'bilbao', 'Bilbao', sfEl!);
+    }
   }
 
   let currentStep = 1;
@@ -425,6 +412,11 @@ import Calculator from '../../components/calculator/Calculator.astro';
     document.querySelectorAll(`[data-age="${age}"]`).forEach(el => {
       el.addEventListener('click', () => selectAge(age));
     });
+  });
+
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
   });
 
   showStep(1);

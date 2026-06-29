@@ -1,0 +1,583 @@
+---
+/**
+ * StepFinal — Shared budget result + Axonflow lead capture.
+ * Replaces step 7 in all 5 Bilbao calculators (bano, cocina, integral, pintura, suelo).
+ *
+ * Each calculator page sets data-budget-low/high/label on this element before
+ * showing it, then StepFinal renders the doughnut, PDF button, and lead form.
+ */
+---
+
+<div
+  class="step-final"
+  id="stepFinal"
+  data-step="final"
+  data-calculator-type={Astro.props.calculatorType}
+  data-city={Astro.props.city}
+  data-budget-low={Astro.props.budgetLow}
+  data-budget-high={Astro.props.budgetHigh}
+  data-budget-label={Astro.props.budgetLabel}
+>
+  <!-- Loading state -->
+  <div class="step-final-loading" id="stepFinalLoading">
+    <div class="loading-spinner"></div>
+    <p>Calculando tu presupuesto...</p>
+  </div>
+
+  <!-- Revealed after budget is set -->
+  <div class="step-final-content" id="stepFinalContent" style="display:none;">
+
+    <!-- Header -->
+    <div class="final-header">
+      <span class="final-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        Presupuesto estimado
+      </span>
+      <h1 class="final-title">Tu reforma cuesta entre</h1>
+      <div class="final-range">
+        <span class="final-range-low" id="finalRangeLow">—</span>
+        <span class="final-range-separator">—</span>
+        <span class="final-range-high" id="finalRangeHigh">—</span>
+      </div>
+      <span class="final-meta" id="finalMeta">—</span>
+    </div>
+
+    <!-- Budget doughnut chart -->
+    <div class="final-budget" id="finalBudget"></div>
+
+    <!-- Action buttons -->
+    <div class="final-actions">
+      <button class="final-btn final-btn-primary" id="downloadPdfBtn" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Descargar PDF
+      </button>
+      <button class="final-btn final-btn-secondary" id="requestQuotesBtn" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Solicitar 3 presupuestos
+      </button>
+    </div>
+
+    <!-- Lead capture form -->
+    <div class="final-leadform">
+      <h2 class="final-leadform-title">&#128231; Recibe el desglose completo por email</h2>
+      <p class="final-leadform-desc">Te enviamos un PDF personalizado + 3 cotizaciones de empresas verificadas en tu ciudad.</p>
+
+      <form id="leadCaptureForm" class="leadform" novalidate>
+        <div class="leadform-row">
+          <label class="leadform-field">
+            <span class="leadform-label">Email</span>
+            <input type="email" id="leadEmail" name="email" required placeholder="tu@email.com" autocomplete="email" />
+          </label>
+          <label class="leadform-field">
+            <span class="leadform-label">Teléfono</span>
+            <input type="tel" id="leadPhone" name="phone" required placeholder="+34 600 000 000" autocomplete="tel" pattern="^\+?[0-9\s\-]{8,20}$" />
+          </label>
+        </div>
+        <label class="leadform-checkbox">
+          <input type="checkbox" id="leadConsent" name="consent" required />
+          <span>Acepto recibir el desglose y ofertas de empresas de reformas. Puedo darme de baja en cualquier momento.</span>
+        </label>
+        <button type="submit" id="leadSubmitBtn" class="leadform-submit">
+          Recibir desglose completo
+        </button>
+        <p class="leadform-feedback" id="leadFeedback"></p>
+      </form>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="final-disclaimer">
+      &#9888; Presupuesto orientativo, basado en precios reales del mercado vasco 2026. Varía ±15% según características específicas. Solicita cotizaciones personalizadas a empresas verificadas.
+    </p>
+
+    <!-- Navigation -->
+    <nav class="wizard-nav">
+      <button class="wizard-nav-btn wizard-nav-btn-back" id="btn-back-final" type="button">&#8592; Modificar</button>
+      <button class="wizard-nav-btn wizard-nav-btn-next" id="btn-restart-final" type="button">Nuevo cálculo &#8594;</button>
+    </nav>
+  </div>
+</div>
+
+<style>
+  .step-final {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .step-final-loading {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--color-gris);
+  }
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-beige);
+    border-top-color: var(--color-terracota);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 1rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .final-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .final-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.875rem;
+    background: var(--color-verde-montana-light);
+    color: var(--color-verde-montana);
+    border-radius: var(--radius-pill);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .final-title {
+    font-family: var(--font-playfair);
+    font-size: clamp(1.25rem, 3vw, 1.625rem);
+    color: var(--color-grafito);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  .final-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: var(--font-playfair);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-verde-montana);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+  .final-range-separator { color: var(--color-gris); font-size: 1.5rem; }
+  .final-meta { display: block; font-size: 0.875rem; color: var(--color-gris); }
+
+  .budget-chart {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    align-items: center;
+    background: var(--color-blanco);
+    border-radius: var(--radius-card);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 2rem;
+  }
+  .budget-chart-svg {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .budget-chart-svg svg { display: block; }
+  .budget-chart-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .budget-chart-label {
+    font-size: 0.6875rem;
+    color: var(--color-gris);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .budget-chart-total {
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-grafito);
+  }
+  .budget-legend { display: flex; flex-direction: column; gap: 0.5rem; }
+  .budget-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .budget-legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .budget-legend-label { flex: 1; color: var(--color-grafito); }
+  .budget-legend-value { color: var(--color-gris); font-weight: 600; }
+
+  .final-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .final-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+  }
+  .final-btn-primary { background: var(--color-terracota); color: var(--color-blanco); }
+  .final-btn-primary:hover { background: var(--color-terracota-hover); }
+  .final-btn-secondary {
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    border: 2px solid var(--color-beige);
+  }
+  .final-btn-secondary:hover { border-color: var(--color-terracota); color: var(--color-terracota); }
+
+  .final-leadform {
+    background: linear-gradient(135deg, var(--color-verde-montana-light), #F0F7EE);
+    border: 1px solid var(--color-verde-montana);
+    border-radius: var(--radius-card);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .final-leadform-title {
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    color: var(--color-grafito);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .final-leadform-desc { color: var(--color-gris); font-size: 0.9375rem; margin-bottom: 1.25rem; }
+
+  .leadform-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem; }
+  .leadform-field { display: block; }
+  .leadform-label { display: block; font-size: 0.8125rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.25rem; }
+  .leadform input[type="email"],
+  .leadform input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    font-size: 0.9375rem;
+    color: var(--color-grafito);
+    background: var(--color-blanco);
+    transition: border-color var(--transition-base);
+  }
+  .leadform input:focus { outline: none; border-color: var(--color-verde-montana); }
+  .leadform input:invalid:not(:placeholder-shown) { border-color: var(--color-terracota); }
+  .leadform-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .leadform-checkbox input { margin-top: 0.2rem; cursor: pointer; }
+  .leadform-submit {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--color-verde-montana);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: var(--radius-button);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background var(--transition-base);
+  }
+  .leadform-submit:hover { background: #3D5535; }
+  .leadform-submit:disabled { background: var(--color-gris); cursor: not-allowed; opacity: 0.6; }
+  .leadform-feedback { margin-top: 0.75rem; font-size: 0.875rem; text-align: center; min-height: 1.25rem; }
+  .leadform-feedback.success { color: var(--color-verde-montana); }
+  .leadform-feedback.error { color: var(--color-terracota); }
+
+  .final-disclaimer {
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .wizard-nav { display: flex; justify-content: space-between; gap: 0.75rem; }
+  .wizard-nav-btn {
+    padding: 0.75rem 1.25rem;
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+  }
+  .wizard-nav-btn-back:hover { border-color: var(--color-terracota); color: var(--color-terracota); }
+  .wizard-nav-btn-next { background: var(--color-terracota); color: var(--color-blanco); border-color: var(--color-terracota); }
+  .wizard-nav-btn-next:hover { background: var(--color-terracota-hover); }
+
+  @media (max-width: 640px) {
+    .budget-chart { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; }
+    .final-actions { grid-template-columns: 1fr; }
+    .leadform-row { grid-template-columns: 1fr; }
+    .step-final { padding: 1.5rem 0.5rem 3rem; }
+  }
+</style>
+
+<script>
+  import { generateDoughnutSVG, type BreakdownItem } from './budget-chart';
+  import { generateBudgetPDF, type BudgetInfo } from './pdf-generator';
+
+  // ---------------------------------------------------------------------------
+  // Breakdown config: label + color + percentage of high budget
+  // ---------------------------------------------------------------------------
+  const BREAKDOWN_CONFIG: Record<string, Array<{ label: string; color: string; pct: number }>> = {
+    bano: [
+      { label: 'Albañilería y azulejos', color: '#4A6760', pct: 35 },
+      { label: 'Sanitarios y grifería', color: '#C45C3E', pct: 25 },
+      { label: 'Fontanería', color: '#6B8F71', pct: 18 },
+      { label: 'Electricidad', color: '#D4A843', pct: 10 },
+      { label: 'Mano de obra', color: '#8B7355', pct: 12 },
+    ],
+    cocina: [
+      { label: 'Muebles de cocina', color: '#4A6760', pct: 30 },
+      { label: 'Electrodomésticos', color: '#C45C3E', pct: 22 },
+      { label: 'Encimera', color: '#6B8F71', pct: 18 },
+      { label: 'Albañilería', color: '#D4A843', pct: 15 },
+      { label: 'Instalación', color: '#8B7355', pct: 15 },
+    ],
+    integral: [
+      { label: 'Albañilería', color: '#4A6760', pct: 28 },
+      { label: 'Cocina + Baños', color: '#C45C3E', pct: 25 },
+      { label: 'Instalaciones', color: '#6B8F71', pct: 18 },
+      { label: 'Pintura', color: '#D4A843', pct: 14 },
+      { label: 'Suelo', color: '#8B7355', pct: 15 },
+    ],
+    pintura: [
+      { label: 'Mano de obra', color: '#4A6760', pct: 55 },
+      { label: 'Materiales', color: '#C45C3E', pct: 30 },
+      { label: 'Preparación paredes', color: '#6B8F71', pct: 15 },
+    ],
+    suelo: [
+      { label: 'Material', color: '#4A6760', pct: 50 },
+      { label: 'Instalación', color: '#C45C3E', pct: 30 },
+      { label: 'Retirada suelo existente', color: '#6B8F71', pct: 12 },
+      { label: 'Transporte y extras', color: '#D4A843', pct: 8 },
+    ],
+  };
+
+  const CALCULATOR_LABELS: Record<string, string> = {
+    bano: 'Reforma de Baño',
+    cocina: 'Reforma de Cocina',
+    integral: 'Reforma Integral',
+    pintura: 'Pintura',
+    suelo: 'Cambio de Suelo',
+  };
+
+  const CITY_LABELS: Record<string, string> = {
+    bilbao: 'Bilbao',
+    donostia: 'Donostia',
+    vitoria: 'Vitoria-Gasteiz',
+  };
+
+  // ---------------------------------------------------------------------------
+  // Init — runs when the page shows this component
+  // ---------------------------------------------------------------------------
+  function initStepFinal() {
+    const el = document.getElementById('stepFinal') as HTMLElement;
+    const loading = document.getElementById('stepFinalLoading');
+    const content = document.getElementById('stepFinalContent');
+    if (!el || !loading || !content) return;
+
+    const calculatorType = el.dataset.calculatorType || 'integral';
+    const city = (el.dataset.city || 'bilbao') as string;
+    const cityLabel = CITY_LABELS[city] || city;
+    const calcLabel = CALCULATOR_LABELS[calculatorType] || calculatorType;
+
+    const low = parseInt(el.dataset.budgetLow || '0');
+    const high = parseInt(el.dataset.budgetHigh || '0');
+    const budgetLabel = el.dataset.budgetLabel || calcLabel;
+
+    if (low <= 0 || high <= 0) {
+      // Budget not set yet — parent will call reveal()
+      return;
+    }
+
+    reveal(low, high, budgetLabel, calculatorType, city, cityLabel, el);
+  }
+
+  function reveal(
+    low: number,
+    high: number,
+    budgetLabel: string,
+    calculatorType: string,
+    city: string,
+    cityLabel: string,
+    el: HTMLElement
+  ) {
+    const loading = document.getElementById('stepFinalLoading');
+    const content = document.getElementById('stepFinalContent');
+    if (!loading || !content) return;
+
+    // Hide loading, show content
+    loading.style.display = 'none';
+    content.style.display = 'block';
+
+    // Set budget range values
+    const lowEl = document.getElementById('finalRangeLow');
+    const highEl = document.getElementById('finalRangeHigh');
+    const metaEl = document.getElementById('finalMeta');
+    const totalEl = document.querySelector('[data-budget-total]') as HTMLElement;
+
+    if (lowEl) lowEl.textContent = formatCurrency(low) + ' €';
+    if (highEl) highEl.textContent = formatCurrency(high) + ' €';
+    if (metaEl) metaEl.textContent = `${budgetLabel} · ${cityLabel} · ${new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}`;
+    if (totalEl) totalEl.textContent = formatCurrency(high);
+
+    // Build breakdown
+    const config = BREAKDOWN_CONFIG[calculatorType] || BREAKDOWN_CONFIG.integral;
+    const breakdown: BreakdownItem[] = config.map(item => ({
+      label: item.label,
+      value: Math.round(high * item.pct / 100),
+      color: item.color,
+    }));
+
+    // Render doughnut SVG
+    const budgetDiv = document.getElementById('finalBudget');
+    if (budgetDiv) {
+      budgetDiv.innerHTML = generateDoughnutSVG(breakdown, 200);
+    }
+
+    // PDF button
+    const pdfBtn = document.getElementById('downloadPdfBtn');
+    pdfBtn?.addEventListener('click', () => {
+      const budget: BudgetInfo = {
+        city: cityLabel,
+        calculatorType: calculatorType as BudgetInfo['calculatorType'],
+        calculatorLabel: budgetLabel,
+        min: low,
+        max: high,
+        breakdown,
+      };
+      generateBudgetPDF(budget);
+    });
+
+    // Request quotes button
+    const quotesBtn = document.getElementById('requestQuotesBtn');
+    quotesBtn?.addEventListener('click', () => {
+      window.location.href = '/empresas/';
+    });
+
+    // Back button → restart wizard at step 1
+    const backBtn = document.getElementById('btn-back-final');
+    backBtn?.addEventListener('click', () => {
+      // Dispatch custom event for parent page to handle
+      window.dispatchEvent(new CustomEvent('stepfinal:back', { detail: { calculatorType } }));
+    });
+
+    // New calculation button
+    const restartBtn = document.getElementById('btn-restart-final');
+    restartBtn?.addEventListener('click', () => {
+      window.location.reload();
+    });
+
+    // Lead capture form
+    setupLeadForm(low, high, calculatorType, cityLabel, budgetLabel);
+  }
+
+  // ---------------------------------------------------------------------------
+  // Lead capture — Axonflow integration
+  // ---------------------------------------------------------------------------
+  function setupLeadForm(
+    low: number,
+    high: number,
+    calculatorType: string,
+    city: string,
+    calcLabel: string
+  ) {
+    const form = document.getElementById('leadCaptureForm') as HTMLFormElement | null;
+    const feedback = document.getElementById('leadFeedback');
+    const submitBtn = document.getElementById('leadSubmitBtn') as HTMLButtonElement | null;
+    if (!form || !feedback || !submitBtn) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const emailInput = document.getElementById('leadEmail') as HTMLInputElement;
+      const phoneInput = document.getElementById('leadPhone') as HTMLInputElement;
+      const consentInput = document.getElementById('leadConsent') as HTMLInputElement;
+
+      if (!form.checkValidity()) {
+        feedback.textContent = 'Por favor, completa todos los campos correctamente.';
+        feedback.className = 'leadform-feedback error';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      feedback.textContent = '';
+
+      const payload = {
+        email: emailInput.value.trim(),
+        phone: phoneInput.value.trim(),
+        source: 'bilbao-reforma-calculadora',
+        calculator_type: calculatorType,
+        city: city,
+        budget_min: low,
+        budget_max: high,
+        budget_label: calcLabel,
+        consent: consentInput.checked,
+        utm_source: new URLSearchParams(window.location.search).get('utm_source') || '',
+      };
+
+      try {
+        const res = await fetch('https://api.axonflow.es/public/lead-capture', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (res.ok) {
+          feedback.textContent = '&#10003; ¡Datos enviados! Te contactaremos pronto con tu desglose.';
+          feedback.className = 'leadform-feedback success';
+          form.reset();
+        } else {
+          const err = await res.json().catch(() => ({}));
+          feedback.textContent = 'Error al enviar. Inténtalo de nuevo o llámanos.';
+          feedback.className = 'leadform-feedback error';
+        }
+      } catch {
+        feedback.textContent = 'Error de conexión. Verifica tu red e inténtalo de nuevo.';
+        feedback.className = 'leadform-feedback error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Recibir desglose completo';
+      }
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Public API — called by parent calculator page after computing budget
+  // ---------------------------------------------------------------------------
+  (window as any).stepFinalReveal = reveal;
+
+  // Auto-init when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initStepFinal);
+  } else {
+    initStepFinal();
+  }
+
+  function formatCurrency(n: number): string {
+    return n.toLocaleString('es-ES');
+  }
+</script>

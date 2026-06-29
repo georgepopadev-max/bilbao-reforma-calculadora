@@ -8,6 +8,7 @@
  */
 import CalculadoraLayout from '../../layouts/CalculadoraLayout.astro';
 import Calculator from '../../components/calculator/Calculator.astro';
+import StepFinal from '../../components/calculator/StepFinal.astro';
 ---
 
 <CalculadoraLayout
@@ -249,26 +250,7 @@ import Calculator from '../../components/calculator/Calculator.astro';
 
     <!-- STEP 7: Resultado -->
     <div class="wizard-step" id="step7" data-step="7">
-      <div class="result-container">
-        <div class="result-header">
-          <h1 class="result-title">Tu reforma de baño en Bilbao cuesta entre</h1>
-          <div class="result-range">
-            <span class="result-range-low" id="resultRangeLow">—</span>
-            <span class="result-range-separator">—</span>
-            <span class="result-range-high" id="resultRangeHigh">—</span>
-          </div>
-        </div>
-        <div class="result-breakdown" id="resultBreakdownBars">
-          <p style="margin:0;font-family:var(--font-inter);font-size:0.875rem;">Desglose orientativo</p>
-        </div>
-        <div class="result-disclaimer">
-          ⚠️ Este presupuesto es orientativo y puede variar ±15%. <strong>Precio mínimo garantizado: 2.500 €</strong> para reforma de baño básica.
-        </div>
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-          <button class="wizard-nav-btn wizard-nav-btn-primary" type="button" onclick="window.location.href='/calculadora/bano-bilbao.html'">Nuevo cálculo →</button>
-        </nav>
-      </div>
+      <StepFinal calculatorType="bano" city="bilbao" />
     </div>
   </Calculator>
 </CalculadoraLayout>
@@ -400,10 +382,16 @@ import Calculator from '../../components/calculator/Calculator.astro';
     const { low, high } = calculateBathroom();
     showStep(7);
 
-    const lowEl = document.getElementById('resultRangeLow');
-    const highEl = document.getElementById('resultRangeHigh');
-    if (lowEl) lowEl.textContent = formatCurrency(low) + ' €';
-    if (highEl) highEl.textContent = formatCurrency(high) + ' €';
+    // Populate StepFinal and reveal it
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Reforma de Baño';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function') {
+      (window as any).stepFinalReveal(low, high, 'Reforma de Baño', 'bano', 'bilbao', 'Bilbao', sfEl!);
+    }
   }
 
   // Event bindings
@@ -471,6 +459,12 @@ import Calculator from '../../components/calculator/Calculator.astro';
     document.querySelectorAll(`[data-age="${age}"]`).forEach(el => {
       el.addEventListener('click', () => selectAge(age));
     });
+  });
+
+  // Back from StepFinal
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
   });
 
   // Init — show step 1
