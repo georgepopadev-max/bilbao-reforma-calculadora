@@ -89,6 +89,9 @@ const { city = 'bilbao', variant = 'default' } = Astro.props;
     line-height: 1.6;
     max-width: 280px;
   }
+  @media (max-width: 480px) {
+    .footer-brand-desc { max-width: 100%; }
+  }
   .site-footer-dark .footer-brand-desc { color: rgba(255,255,255,0.6); }
   .footer-col-title {
     font-family: var(--font-playfair);

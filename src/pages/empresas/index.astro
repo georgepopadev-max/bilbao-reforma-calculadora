@@ -20,9 +20,9 @@ const empresas = [
   <Header city="bilbao" section="empresas" />
   <main id="main-content">
     <section style="max-width:900px;margin:4rem auto;padding:0 1.5rem;">
-      <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:0.5rem;">Empresas de Reformas en Bilbao</h1>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:0.5rem;">Empresas de Reformas en Bilbao</h1>
       <p style="color:#666;margin-bottom:2rem;">{empresas.length} empresas verificadas en Bilbao y Bizkaia.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
         {empresas.map(e => (
           <a href={`${e.slug}.html`} style="display:block;padding:1.5rem;background:#f9f9f9;border-radius:12px;text-decoration:none;color:inherit;border:1px solid #eee;">
             <h2 style="font-size:1.1rem;margin-bottom:0.5rem;">{e.name}</h2>
