@@ -1,5 +1,5 @@
 ---
-title: "Precio m² Reforma Cocina Bilbao 2026 | Guía de Costes por Metro Cuadrado"
+title: "Precio m² Cocina Bilbao 2026"
 description: "Descubre el precio por m² de una reforma de cocina en Bilbao. Costes reales 2026 según tipo de reforma. Guía completa con tabla de precios y consejos."
 canonical: "https://www.bilbaoreforma.es/blog/precio-m2-reforma-cocina-bilbao.html"
 readTime: "13 min"
@@ -41,12 +41,16 @@ inContentCTAs:
 priceTables: 2
 ---
 
-
+<div class="article-content">
   <p>La <strong>reforma de cocina en Bilbao</strong> es uno de los proyectos más solicitados en el mercado inmobiliario bilbaino. La cocina es el corazón de cualquier hogar: allí se prepara la comida, se comparte el día a día y, en muchos pisos bilbainos, también es el espacio donde la familia se reúne. Una cocina bien diseñada y funcional puede incrementar el valor de tu vivienda entre un 7% y un 12%, según estimaciones de inmobiliarias del entorno de Bilbao.</p>
 
   <p>Pero antes de lanzarte a reformarla, necesitas saber <strong>cuánto cuesta el metro cuadrado de reforma de cocina en Bilbao</strong>. No es lo mismo una cocina de 6 m² en un piso del Casco Viejo que una cocina de 15 m² en un chalé de Getxo. Los precios varían mucho según el tipo de reforma, las calidades elegidas y el estado de las instalaciones existentes.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-cocina-bilbao.html">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
+  <a href="errores-reforma-cocina-bilbao.html">Errores Comunes en Reformas de Cocina en Bilbao</a>
+  </div>
 
   <h2>¿Por qué el precio por m² es clave para presupuestar tu reforma de cocina?</h2>
 
@@ -77,7 +81,7 @@ priceTables: 2
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -85,7 +89,7 @@ priceTables: 2
 
   <p>Aquí tienes los <strong>precios orientativos por metro cuadrado</strong> para reforma de cocina en Bilbao, con datos del mercado actual. Los precios incluyen material y mano de obra, pero no incluyen IVA (21%).</p>
 
-  <div class="table-wrap"><table class="price-table">
+  <table class="price-table">
   <caption>Precios orientativos en Bilbao capital. Incluye material + mano de obra. IVA no incluido. Actualizado a 2026.</caption>
   <thead>
   <tr>
@@ -116,7 +120,7 @@ priceTables: 2
   <td>16.000 - 25.000 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p>En Bilbao centro (Abando, Indautxu, Ensanche), los precios se sitúan en la franja alta. En Barakaldo, Basauri, Erandio o Getxo puedes encontrar profesionales con precios un 10-20% más competitivos manteniendo la misma calidad. La diferencia de precio también varía según la antigüedad del edificio y si las instalaciones necesitan renovación completa.</p>
@@ -126,7 +130,7 @@ priceTables: 2
 
   <p>Para que puedas entender exactamente dónde va tu dinero, aquí tienes el <strong>desglose completo por partidas</strong> de una reforma de cocina completa para un espacio de 10-12 m²:</p>
 
-  <div class="table-wrap"><table class="partida-table">
+  <table class="partida-table">
   <thead>
   <tr>
   <th>Partida</th>
@@ -196,7 +200,7 @@ priceTables: 2
   <td>300 - 700 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p><strong>Total orientativo para reforma completa de cocina de 10-12 m²: 10.000 - 20.000 €</strong></p>
 
@@ -243,8 +247,8 @@ priceTables: 2
   <div class="calc-formula">
   <strong>m² de tu cocina</strong> x <strong>1.050 €</strong> (precio medio) = Presupuesto orientativo
   </div>
-  <p>Ejemplo: cocina de 10 m² -&gt; 10 x 1.050 = <strong>10.500 € orientativos</strong></p>
-  <p>Ejemplo: cocina de 12 m² -&gt; 12 x 1.050 = <strong>12.600 € orientativos</strong></p>
+  <p>Ejemplo: cocina de 10 m² -> 10 x 1.050 = <strong>10.500 € orientativos</strong></p>
+  <p>Ejemplo: cocina de 12 m² -> 12 x 1.050 = <strong>12.600 € orientativos</strong></p>
   </div>
 
   <p>Esta fórmula usa el precio medio de reforma completa (1.050 €/m²) y sirve como punto de partida. Para una reforma parcial, usa 750 €/m². Para una reforma integral con cambio de distribución, usa 1.400 €/m².</p>
@@ -253,7 +257,7 @@ priceTables: 2
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -326,7 +330,11 @@ priceTables: 2
   </ol>
 
   <div class="faq-section">
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-cocina-bilbao.html">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
+  <a href="errores-reforma-cocina-bilbao.html">Errores Comunes en Reformas de Cocina en Bilbao</a>
+  </div>
   <h2>Preguntas Frecuentes sobre Precio m² Reforma Cocina Bilbao</h2>
 
   <div class="faq-item">
@@ -360,11 +368,10 @@ priceTables: 2
   </div>
   </div>
 
-  <!-- CTA Axonflow -->
   <div class="bg-gradient-to-r from-[#C45C3E] to-[#8A3A28] rounded-2xl p-8 text-white text-center my-12">
   <h3 class="text-2xl font-bold mb-4">¿Quieres un análisis personalizado de tu reforma?</h3>
   <p class="mb-6 text-blue-100">Recibe un estudio gratuito de tu proyecto de cocina con recomendaciones específicas para Bilbao.</p>
-  <a href="https://axonflow.es/contacto" class="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition">Solicitar Análisis Gratuito -&gt;</a>
+  <a href="https://axonflow.es/contacto" class="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition">Solicitar Análisis Gratuito -></a>
   <p class="mt-4 text-sm text-blue-200">Respuesta en menos de 24h · Sin compromiso</p>
   </div>
-  
+  </div>

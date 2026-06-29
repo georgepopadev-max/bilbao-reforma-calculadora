@@ -3,15 +3,44 @@ import CitySwitcher from './CitySwitcher.astro';
 
 export interface Props {
   city?: 'bilbao' | 'donostia' | 'vitoria';
+  section?: 'root' | 'blog' | 'calculadora' | 'empresas';
 }
 
-const { city = 'bilbao' } = Astro.props;
+const { city = 'bilbao', section = 'root' } = Astro.props;
+
+// Calculate path depth based on city and current section
+// Bilbao root: depth = ''
+// Bilbao section (blog/calculadora/empresas): depth = '../'
+// Donostia/Vitoria any section: depth = '../../'
+const depth = city === 'bilbao' && section === 'root' ? '' :
+              city === 'bilbao' && section !== 'root' ? '../' :
+              '../../'; // donostia or vitoria, any section
+
+// Build nav links using depth
+const calcHref = `${depth}calculadora/index.html`;
+const blogHref = `${depth}blog/index.html`;
+const empresasHref = `${depth}empresas/index.html`;
+const contactoHref = section === 'root' ? 'contacto.html' : `${depth}contacto.html`;
+
+// Logo always goes to city index
+const cityIndexHref = city === 'bilbao' ? `${depth}index.html` : `${depth}../index.html`;
+
+// City switcher links
+const cities = [
+  { name: 'Bilbao', href: city === 'bilbao' ? '#' : '../index.html', active: city === 'bilbao' },
+  { name: 'Donostia', href: city === 'donostia' ? '#' : '../donostia/index.html', active: city === 'donostia' },
+  { name: 'Vitoria', href: city === 'vitoria' ? '#' : '../vitoria/index.html', active: city === 'vitoria' },
+];
 
 const currentPath = Astro.url.pathname;
+const isBlogActive = currentPath.includes('/blog');
+const isCalcActive = currentPath.includes('/calculadora');
+const isEmpresasActive = currentPath.includes('/empresas');
 ---
+
 <header class="site-header">
   <div class="header-container">
-    <a href={`/${city === 'bilbao' ? '' : city + '/'}index.html`} class="header-logo">
+    <a href={cityIndexHref} class="header-logo">
       <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
         <polyline points="9 22 9 12 15 12 15 22"></polyline>
@@ -19,10 +48,10 @@ const currentPath = Astro.url.pathname;
       <span class="header-logo-text">Bilbao Reforma</span>
     </a>
     <nav class="header-nav">
-      <a href={`/${city === 'bilbao' ? 'calculadora/' : city + '/calculadora/'}index.html`} class="header-nav-link">Calculadora</a>
-      <a href={`/${city === 'bilbao' ? 'blog/' : city + '/blog/'}index.html`} class={`header-nav-link${currentPath.includes('/blog') ? ' header-nav-link-active' : ''}`}>Blog</a>
-      <a href={`/${city === 'bilbao' ? 'empresas/' : city + '/empresas/'}index.html`} class="header-nav-link">Empresas</a>
-      <a href={`/${city === 'bilbao' ? 'contacto' : city + '/contacto'}.html`} class="header-nav-link header-nav-link-cta">Contacto</a>
+      <a href={calcHref} class={`header-nav-link${isCalcActive ? ' header-nav-link-active' : ''}`}>Calculadora</a>
+      <a href={blogHref} class={`header-nav-link${isBlogActive ? ' header-nav-link-active' : ''}`}>Blog</a>
+      <a href={empresasHref} class={`header-nav-link${isEmpresasActive ? ' header-nav-link-active' : ''}`}>Empresas</a>
+      <a href={contactoHref} class="header-nav-link header-nav-link-cta">Contacto</a>
     </nav>
     <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
       <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -36,12 +65,22 @@ const currentPath = Astro.url.pathname;
 
 <div class="mobile-menu" id="mobileMenu">
   <nav class="mobile-nav">
-    <a href={`/${city === 'bilbao' ? 'calculadora/' : city + '/calculadora/'}index.html`} class="mobile-nav-link">Calculadora</a>
-    <a href={`/${city === 'bilbao' ? 'blog/' : city + '/blog/'}index.html`} class="mobile-nav-link">Blog</a>
-    <a href={`/${city === 'bilbao' ? 'empresas/' : city + '/empresas/'}index.html`} class="mobile-nav-link">Empresas</a>
-    <a href={`/${city === 'bilbao' ? 'contacto' : city + '/contacto'}.html`} class="mobile-nav-link">Contacto</a>
+    <a href={calcHref} class="mobile-nav-link">Calculadora</a>
+    <a href={blogHref} class="mobile-nav-link">Blog</a>
+    <a href={empresasHref} class="mobile-nav-link">Empresas</a>
+    <a href={contactoHref} class="mobile-nav-link">Contacto</a>
   </nav>
 </div>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('open', !expanded);
+  });
+</script>
 
 <style>
   .site-header {

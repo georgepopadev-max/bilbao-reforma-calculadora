@@ -1,5 +1,5 @@
 ---
-title: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao [2026]"
+title: "Rehabilitación Edificio Antiguo Bilbao 2026"
 description: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao en 2026. Precios €/m², ayudas, licencias y plazos para reformas de edificios de los años 20-60."
 canonical: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao.html"
 date: "4 junio 2026"
@@ -39,17 +39,16 @@ inContentCTAs:
 priceTables: 2
 ---
 
-
+<div class="article-content">
   <p>Bilbao es una ciudad construida sobre capas. Bajo el Guggenheim y la Bilbao postindustrial hay otra ciudad: la de los edificios de los años 20, los bloques de los 40, las casas de corredor de los 50 y los edificios de ladrillo caravista de los 60. Miles de inmuebles que, tras décadas sin mantenimiento, necesitan algo más que una mano de pintura. Necesitan <strong>rehabilitación</strong>. Y la pregunta que se hacen propietarios, comunidades de vecinos y administradores es siempre la misma: <strong>¿cuánto cuesta rehabilitar un edificio antiguo en Bilbao?</strong></p>
 
   <p>La respuesta honesta es: depende. Depende del estado de la estructura, de si hay protección patrimonial, de la época del edificio y de las intervenciones que requiera. En esta guía te damos cifras concretas basadas en datos reales de obras rehabilitadas en Bizkaia para que puedas hacer números antes de tomar decisiones.</p>
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+</div>
 
-
-
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <h2>Bilbao y su patrimonio construido: ¿por qué ahora es el momento?</h2>
   <p>La segunda mitad del siglo XX fue el gran boom constructivo de Bilbao. La expansión de la Ría - Deusto, San Ignacio, Rekalde, Otxarkoaga, Bolueta - absorbió a miles de familias trabajadoras en edificios funcionales pero, en muchos casos, construidos con materiales y técnicas que hoy sabemos limitados. Tuberías de plomo, cableado sin toma de tierra, fachadas de ladrillo sin aislamiento, cubiertas planas con filtraciones recurrentes.</p>
@@ -64,7 +63,7 @@ priceTables: 2
   <h2>Precio de rehabilitación por m² en Bilbao: cifras reales</h2>
   <p>La horquilla de precios para rehabilitar un edificio antiguo en Bilbao es amplia. Usamos datos de obras reales en Bizkaia para establecer rangos realistas:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de rehabilitación</th>
@@ -94,7 +93,7 @@ priceTables: 2
   <td>+ Materiales homologados por Patrimonio, andamios especiales, permisos adicionales</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <div class="cost-highlight">
   <p><strong>Ejemplo práctico:</strong> Un edificio de 1.200 m² construidos (10 viviendas de 90m² + zonas comunes) en Deusto que requiere rehabilitación media costaría entre <strong>960.000 € y 1.320.000 €</strong> en obra. Por vivienda, eso supone unos <strong>96.000-132.000 €</strong>.</p>
@@ -117,11 +116,6 @@ priceTables: 2
   <li><strong>Forjados de madera</strong>: frecuentes en edificios de los 20-30. Requieren tratamiento antichubanco y frecuentemente refuerzo con perfiles de acero o microlistones.</li>
   <li><strong>Instalaciones originales</strong>: cableado de los años 50-60 sin actualizar, tuberías de plomo o hierro galvanizado, sin toma de tierra. La renovación completa de instalaciones puede representar entre el <strong>25% y el 35%</strong> del presupuesto total.</li>
   </ul>
-
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <h2>Desglose de costes: en qué se va el dinero</h2>
 
@@ -206,7 +200,7 @@ priceTables: 2
   <h2>Plazos: ¿cuánto tiempo tarda una rehabilitación en Bilbao?</h2>
   <p>La planificación temporal es crítica. Una rehabilitación de edificio antiguo en Bilbao implica varios bloques de tiempo:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Fase</th>
@@ -236,13 +230,17 @@ priceTables: 2
   <td>Desde el primer plano hasta la entrega de llaves</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>Dato clave</strong>: en Bilbao, la tramitación de licencias de obra mayor en edificios del Casco Viejo puede superar los 4 meses. Si el edificio está catalogado por Patrimonio Histórico, el informe favorable del Ayuntamiento puede tardar otros 2-3 meses. Planifica con esta realidad desde el día uno.</p>
   </blockquote>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+</div>
 <h2>Preguntas frecuentes sobre rehabilitación de edificios antiguos en Bilbao</h2>
 
   <h3>¿Cuánto cuesta rehabilitar un edificio antiguo en Bilbao por m²?</h3>
@@ -265,4 +263,4 @@ priceTables: 2
   <p>Usa la calculadora para obtener un presupuesto orientativo en función de los metros cuadrados y el tipo de edificio.</p>
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto de rehabilitación</a>
   </div>
-  
+  </div>

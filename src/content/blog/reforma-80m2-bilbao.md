@@ -1,5 +1,5 @@
 ---
-title: "Reforma Piso 80m² Bilbao: Ejemplo Real con Presupuesto Desglosado 2026"
+title: "Reforma Piso 80m² Bilbao 2026"
 description: "Ejemplo real de reforma integral de un piso de 80m² en Bilbao. Presupuesto desglosado de 52.668€ con 18 partidas detalladas, precios 2026 y factores clave."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao.html"
 date: "15 junio 2026"
@@ -50,20 +50,36 @@ inContentCTAs:
 priceTables: 2
 ---
 
+<div class="article-header">
+  <div class="article-meta-item">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+  14 min de lectura
+  </div>
+  <div class="article-meta-item">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+  Ejemplo real
+  </div>
+  </div>
+  </div>
 
+  <div class="article-content">
 
   <p>Una <strong>reforma de un piso de 80m² en Bilbao</strong> puede parecer un misterio cuando no tienes datos reales de por dónde van los costes. Los presupuestos varían tanto entre empresas y barrios que es fácil perderse. En este artículo te presentamos un <strong>ejemplo real de reforma integral</strong> con 18 partidas desglosadas, precios actualizados a 2026 y todos los factores que pueden hacer que tu presupuesto se quede corto o sobre.</p>
 
   <h2>Ejemplo real: reforma integral piso 80m² en Bilbao</h2>
 
   <p>Este ejemplo corresponde a un piso real reformado en el barrio de Indautxu (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao-ejemplo.html">Caso Práctico: Reforma 80m² Bilbao</a>
+</div>
 
 
   <h3>El presupuesto completo (tabla desglosada por partidas)</h3>
 
   <div class="table-wrap">
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>#</th>
@@ -179,7 +195,7 @@ priceTables: 2
   <td>4.788 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
   </div>
 
   <div class="budget-total">
@@ -197,7 +213,7 @@ priceTables: 2
   <h3>Tabla de precios por nivel de acabado</h3>
 
   <div class="table-wrap">
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Nivel de acabado</th>
@@ -227,7 +243,7 @@ priceTables: 2
   <td>100.000-112.000 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
   </div>
 
   <h3>Por qué Bilbao está en el rango medio-alto de España</h3>
@@ -321,10 +337,14 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Quieres un presupuesto personalizado para tu reforma?</h3>
   <p>Usa nuestra calculadora para estimar el coste de tu reforma de 80m² en Bilbao y compara hasta 3 empresas locales especializadas.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto -></a>
   </div>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao-ejemplo.html">Caso Práctico: Reforma 80m² Bilbao</a>
+</div>
 <h2>Preguntas frecuentes</h2>
 
   <p><strong>¿52.000 € es caro para una reforma integral de 80m² en Bilbao?</strong><br>
@@ -357,4 +377,4 @@ priceTables: 2
   <p><strong>¿Por qué varían tanto los presupuestos entre empresas?</strong><br>
   Las diferencias de hasta 30% entre presupuestos para la misma obra se explican por: calidad de materiales (no es lo mismo una encimera de Silestone que una de granito económico), costes de mano de obra (empresa con trabajadores en nómina vs. autónomo subcontratado), margen comercial (del 10% al 25%), y partidas incluidas o excluidas. Por eso comparar presupuestos línea a línea es esencial.</p>
 
-  
+  </div>

@@ -1,5 +1,5 @@
 ---
-title: "Subvenciones Reformas Bilbao 2026: Ayudas del Gobierno Vasco"
+title: "Subvenciones Bilbao 2026"
 description: "Subvenciones reformas Bilbao 2026: guía de ayudas autonómicas, municipales y estatales para rehabilitar vivienda. Cuantías, plazos y cómo solicitarlas."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026.html"
 date: "21 junio 2026"
@@ -43,12 +43,17 @@ inContentCTAs:
 priceTables: 3
 ---
 
-
+<div class="article-content">
   <p class="intro-text">Reformar un piso en Bilbao en 2026 sigue siendo una inversión importante, pero ya no es un gasto que tengas que asumir en solitario. El ecosistema de <strong>subvenciones y ayudas públicas</strong> para la rehabilitación de viviendas ha cambiado mucho en los últimos años: se han ampliado partidas, se han simplificado algunos trámites y se han abierto nuevas líneas autonómicas que se suman a las deducciones del IRPF y a las bonificaciones municipales del IBI.</p>
 
   <p class="intro-text">El problema es que, en la práctica, son tantas convocatorias —y con tantos requisitos distintos— que muchos propietarios acaban renunciando a solicitarlas o, peor aún, descubren demasiado tarde que podrían haber pedido una ayuda incompatible con su obra. Esta <strong>guía de subvenciones reformas Bilbao 2026</strong> está pensada para que, antes de empezar cualquier reforma en Bilbao o Bizkaia, tengas claro qué existe este año, qué obras se financian y cómo pedirlo sin perder dinero por el camino. Si todavía no tienes un presupuesto estimado, empieza por nuestra <a href="../index.html">calculadora de reformas</a>.</p>
 
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao: Qué Hacer Antes de Reformar</a>
+  <a href="licencias-obra-bilbao-2026.html">Licencias necesarias en Bilbao 2026: tipos, costes y tramitación</a>
+</div>
 
   <h2>El Mapa de Ayudas en 2026: Cuatro Niveles que Conviene Conocer</h2>
 
@@ -78,7 +83,7 @@ priceTables: 3
   </style>
   <text x="400" y="22" text-anchor="middle" class="fig-title">4 niveles de ayudas compatibles para reformar tu piso en Bilbao</text>
   <g>
-  <rect x="20" y="50" width="180" height="140" rx="10" class="fig-box"></rect>
+  <rect x="20" y="50" width="180" height="140" rx="10" class="fig-box"/>
   <text x="110" y="78" text-anchor="middle" class="fig-label">1. Gobierno Vasco</text>
   <text x="110" y="100" text-anchor="middle" class="fig-sub">Plan Rehabilita</text>
   <text x="110" y="118" text-anchor="middle" class="fig-sub">Bizkaia</text>
@@ -86,7 +91,7 @@ priceTables: 3
   <text x="110" y="163" text-anchor="middle" class="fig-sub">ayuda directa</text>
   </g>
   <g>
-  <rect x="215" y="50" width="180" height="140" rx="10" class="fig-box2"></rect>
+  <rect x="215" y="50" width="180" height="140" rx="10" class="fig-box2"/>
   <text x="305" y="78" text-anchor="middle" class="fig-label">2. Estado + UE</text>
   <text x="305" y="100" text-anchor="middle" class="fig-sub">Plan Estatal y</text>
   <text x="305" y="118" text-anchor="middle" class="fig-sub">fondos Next Gen</text>
@@ -94,7 +99,7 @@ priceTables: 3
   <text x="305" y="163" text-anchor="middle" class="fig-sub">mejora CEE</text>
   </g>
   <g>
-  <rect x="410" y="50" width="180" height="140" rx="10" class="fig-box3"></rect>
+  <rect x="410" y="50" width="180" height="140" rx="10" class="fig-box3"/>
   <text x="500" y="78" text-anchor="middle" class="fig-label">3. IRPF</text>
   <text x="500" y="100" text-anchor="middle" class="fig-sub">Deducciones</text>
   <text x="500" y="118" text-anchor="middle" class="fig-sub">estatales y vascas</text>
@@ -102,7 +107,7 @@ priceTables: 3
   <text x="500" y="163" text-anchor="middle" class="fig-sub">ahorro fiscal</text>
   </g>
   <g>
-  <rect x="605" y="50" width="180" height="140" rx="10" class="fig-box4"></rect>
+  <rect x="605" y="50" width="180" height="140" rx="10" class="fig-box4"/>
   <text x="695" y="78" text-anchor="middle" class="fig-label">4. Ayto. Bilbao</text>
   <text x="695" y="100" text-anchor="middle" class="fig-sub">Bonificación IBI</text>
   <text x="695" y="118" text-anchor="middle" class="fig-sub">Diputación Bizkaia</text>
@@ -137,7 +142,7 @@ priceTables: 3
 
   <p>Las cuantías son orientativas y dependen de cada convocatoria anual, pero como referencia general del marco vasco vigente en 2026 se mueven en estos rangos:</p>
 
-  <div class="table-wrap"><table class="price-table">
+  <table class="price-table">
   <caption>Cuantías orientativas del Plan Rehabilita Bizkaia 2026. Los importes definitivos se confirman en cada convocatoria anual publicada por Eusko Jaurlaritza.</caption>
   <thead>
   <tr>
@@ -178,7 +183,7 @@ priceTables: 3
   <td>Edificio con más de 50 años</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <div class="highlight-box">
   <h3>Convocatorias y plazos en 2026</h3>
@@ -235,31 +240,31 @@ priceTables: 3
   .chart-title { font: 600 14px 'Inter', sans-serif; fill: #2D2D2D; }
   </style>
   <text x="400" y="22" text-anchor="middle" class="chart-title">% de ayuda estatal sobre el coste de la obra (Plan Estatal y Next Generation)</text>
-  <line x1="160" y1="50" x2="160" y2="240" class="bar-axis"></line>
-  <line x1="160" y1="240" x2="780" y2="240" class="bar-axis"></line>
+  <line x1="160" y1="50" x2="160" y2="240" class="bar-axis"/>
+  <line x1="160" y1="240" x2="780" y2="240" class="bar-axis"/>
   <g>
   <text x="150" y="70" text-anchor="end" class="bar-label">Envolvente térmica</text>
-  <rect x="160" y="58" width="465" height="18" rx="3" class="bar-fill"></rect>
+  <rect x="160" y="58" width="465" height="18" rx="3" class="bar-fill"/>
   <text x="635" y="72" class="bar-pct">40–75%</text>
   </g>
   <g>
   <text x="150" y="105" text-anchor="end" class="bar-label">Aerotermia / geotermia</text>
-  <rect x="160" y="93" width="403" height="18" rx="3" class="bar-fill"></rect>
+  <rect x="160" y="93" width="403" height="18" rx="3" class="bar-fill"/>
   <text x="573" y="107" class="bar-pct">40–65%</text>
   </g>
   <g>
   <text x="150" y="140" text-anchor="end" class="bar-label">Suelo radiante eficiente</text>
-  <rect x="160" y="128" width="341" height="18" rx="3" class="bar-fill-2"></rect>
+  <rect x="160" y="128" width="341" height="18" rx="3" class="bar-fill-2"/>
   <text x="511" y="142" class="bar-pct">30–55%</text>
   </g>
   <g>
   <text x="150" y="175" text-anchor="end" class="bar-label">Solar fotovoltaica</text>
-  <rect x="160" y="163" width="310" height="18" rx="3" class="bar-fill-2"></rect>
+  <rect x="160" y="163" width="310" height="18" rx="3" class="bar-fill-2"/>
   <text x="480" y="177" class="bar-pct">30–50%</text>
   </g>
   <g>
   <text x="150" y="210" text-anchor="end" class="bar-label">Domótica y gestión</text>
-  <rect x="160" y="198" width="279" height="18" rx="3" class="bar-fill-2"></rect>
+  <rect x="160" y="198" width="279" height="18" rx="3" class="bar-fill-2"/>
   <text x="449" y="212" class="bar-pct">25–45%</text>
   </g>
   <text x="160" y="255" class="bar-sub">0%</text>
@@ -270,7 +275,7 @@ priceTables: 3
 
   <p>En la práctica, para un particular en Bilbao las líneas estatales más interesantes siguen siendo:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de intervención</th>
@@ -305,7 +310,7 @@ priceTables: 3
   <td>Sistema de control y monitorización</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>Una rehabilitación energética profunda de un piso de 80 m² en Bilbao puede moverse en un coste real de entre 18.000 € y 35.000 €. Con estas ayudas, la parte que asume el propietario puede quedar en el rango de 6.000 € a 14.000 €, dependiendo de las mejoras ejecutadas.</p>
 
@@ -427,7 +432,7 @@ priceTables: 3
 
   <p>Esta tabla sintetiza los rangos orientativos de las principales líneas vigentes en 2026 para reformar un piso en Bilbao. Las cifras reales se confirman en cada convocatoria, por lo que conviene verificar antes de iniciar cualquier trámite.</p>
 
-  <div class="table-wrap"><table class="price-table">
+  <table class="price-table">
   <caption>Resumen de cuantías orientativas para ayudas a la rehabilitación en Bilbao y Bizkaia (2026).</caption>
   <thead>
   <tr>
@@ -483,7 +488,7 @@ priceTables: 3
   <td>Acuerdo de la comunidad</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <div class="warning-box">
   <h3>Importante: datos orientativos</h3>
@@ -492,15 +497,19 @@ priceTables: 3
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
+  <a href="aerotermia-bilbao-ventajas.html">Aerotermia en Bilbao: Ventajas y Subvenciones</a>
+</div>
 
   <h2>Preguntas Frecuentes sobre Subvenciones 2026</h2>
 
-  <details class="faq-item" open="">
+  <details class="faq-item" open>
   <summary>¿Puedo solicitar las ayudas del Gobierno Vasco si vivo de alquiler?</summary>
   <p>En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revertir en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pensadas para el propietario, aunque las de accesibilidad son las que más fácilmente aceptan inquilinos cuando hay personas mayores o con movilidad reducida en la unidad familiar.</p>
   </details>
@@ -528,7 +537,7 @@ priceTables: 3
   <div class="article-cta">
   <h3>Calcula tu Reforma y Planifica las Ayudas</h3>
   <p>Antes de pedir una subvención, necesitas una cifra realista de lo que vas a gastar. Usa nuestra calculadora gratuita y solicita presupuestos a empresas verificadas.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <p>Si quieres avanzar con tu proyecto, en nuestra <a href="../index.html">calculadora de reformas</a> obtendrás una estimación en menos de dos minutos. Y cuando tengas los números claros, solicita hasta tres presupuestos comparados a <a href="../empresas/index.html">empresas de reformas en Bilbao</a> con experiencia en obras subvencionadas. Si además quieres revisar el resto de pasos previos a una reforma, la <a href="reformas-bilbao-guia-2025.html">guía completa de reformas en Bilbao 2025</a> cubre precios por m², barrios, licencias y errores a evitar.</p>
@@ -542,4 +551,4 @@ priceTables: 3
 
   <p class="legal-disclaimer"><strong>Aviso legal:</strong> la información contenida en este artículo es orientativa y se basa en el marco normativo y los programas públicos conocidos a fecha de junio de 2026. Las cuantías, requisitos, plazos y procedimientos de cada ayuda pueden variar entre convocatorias y comunidades autónomas. Esta guía no constituye asesoramiento jurídico, fiscal ni técnico. Antes de tomar decisiones económicas, consulta la convocatoria oficial vigente y, si procede, a un profesional (gestoría, arquitecto técnico o asesor fiscal). Bilbao Reforma no se responsabiliza de decisiones adoptadas exclusivamente a partir de este contenido.</p>
 
-  
+  </div>

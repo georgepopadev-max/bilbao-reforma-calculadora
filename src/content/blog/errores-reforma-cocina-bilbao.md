@@ -1,5 +1,5 @@
 ---
-title: "7 errores al reformarla cocina en Bilbao (y cómo evitarlos) [2026]"
+title: "7 Errores Reforma Cocina Bilbao 2026"
 description: "7 errores al reformarla cocina en Bilbao y cómo evitarlos. Guía práctica con presupuestos reales 2026 para no cometer fallos costosos."
 canonical: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao.html"
 date: "4 junio 2026"
@@ -39,11 +39,15 @@ inContentCTAs:
 priceTables: 2
 ---
 
-
+<div class="article-content">
   <p>La cocina es la habitación más cara de reformar y la que más impacto tiene en tu vida diaria. Un error aquí no se puede disimular colgó un quadro en la pared. Tuberías mal ubicadas, encimeras demasiado bajas o un presupuesto que se dispara sin control son problemas que te acompañarán durante años - y que costarán dinero corregirlos.</p>
 
   <p>En Bilbao, donde muchos edificios tienen más de 50 años y las instalaciones están al límite de su vida útil, estos errores son especialmente comunes. Después de analizar cientos de reformas de cocinas en Bizkaia, hemos identificado los 7 fallos que más frecuentemente generan sorpresas desagradables. Te los contamos - y cómo evitarlos.</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="materiales-cocina-bilbao.html">Materiales para Cocina en Bilbao</a>
+</div>
 
 
   <h2>1. No planificar el triángulo de trabajo</h2>
@@ -61,7 +65,7 @@ priceTables: 2
 
   <p>La realidad de los precios para una cocina de 8-10 m² en Bilbao en 2026:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Nivel de calidad</th>
@@ -86,7 +90,7 @@ priceTables: 2
   <td>1.200-1.600 €/m²</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>Y esto es <strong>sin electrodomésticos</strong>, que añaden entre 2.000 € y 8.000 € dependiendo de la gama. Si tu edificio tiene más de 40 años, cuenta con otros 2.000-4.000 € adicionales para renovar instalaciones. Y siempre, siempre, añade un 15-20% para imprevistos. Es mejor que sobre a que falte.</p>
 
@@ -120,10 +124,10 @@ priceTables: 2
   <p>Muchos propietarios en Bilbao creen que, reformando la cocina "por dentro" sin tocar fachadas, no necesitan ningún permiso municipal. Es un error común que puede salirte muy caro. El tipo de licencia depende del alcance de la reforma:</p>
 
   <ul>
-  <li>Cambio de muebles y encimera sin tocar instalaciones -&gt; comunicación previa (obra menor)</li>
-  <li>Cambio de fontanería o electricidad -&gt; licencia de obra menor como mínimo</li>
-  <li>Redistribución de muros o cambios en la estructura -&gt; licencia de obra mayor (proyecto técnico obligatorio)</li>
-  <li>Si estás en el Casco Viejo de Bilbao -&gt; puede requerir autorización adicional de Patrimonio Histórico del Gobierno Vasco</li>
+  <li>Cambio de muebles y encimera sin tocar instalaciones -> comunicación previa (obra menor)</li>
+  <li>Cambio de fontanería o electricidad -> licencia de obra menor como mínimo</li>
+  <li>Redistribución de muros o cambios en la estructura -> licencia de obra mayor (proyecto técnico obligatorio)</li>
+  <li>Si estás en el Casco Viejo de Bilbao -> puede requerir autorización adicional de Patrimonio Histórico del Gobierno Vasco</li>
   </ul>
 
   <p>Las multas por obra sin licencia en Bizkaia van de 1.000 € a 10.000 € dependiendo de la gravedad. Y si luego necesitas vender el piso, una obra no declarada puede complicar la escrituración y retrasar la operación meses.</p>
@@ -143,7 +147,7 @@ priceTables: 2
   <h2>Presupuestos orientativos para cocina en Bilbao 2026</h2>
   <p>Para que puedas hacer números antes de pedir presupuestos, aquí tienes los rangos orientativos para una cocina de 8-10 m²:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -184,7 +188,7 @@ priceTables: 2
   <td><strong>8.500-15.500 €</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>Nota</strong>: Precios orientativos para Bilbao y Bizkaia en 2026. No incluyen electrodomésticos (2.000-8.000 € adicionales según gama) ni licencias municipales. IVA del 10% para viviendas de más de 2 años de antigüedad.</p>
@@ -211,7 +215,11 @@ priceTables: 2
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
   </div>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="materiales-cocina-bilbao.html">Materiales para Cocina en Bilbao</a>
+</div>
 <h2>Preguntas frecuentes</h2>
 
   <h3>¿Cuánto cuesta reformarla cocina en Bilbao en 2026?</h3>
@@ -230,4 +238,4 @@ priceTables: 2
   <p>Es posible pero muy incómodo. La reforma dura 3-6 semanas sin cocina funcional. Necesitarás un plan alternativo: kitchenette temporal, comer fuera o quedarte en otro sitio. Si tienes niños pequeños o trabajas desde casa, considera mudarte temporalmente durante las semanas más intensas de la obra.</p>
 
   <p>Si te interesa este tema, también puedes leer nuestra guía completa sobre <a href="reforma-cocina-bilbao.html">cuánto cuesta reformarla cocina en Bilbao</a> y nuestro artículo sobre <a href="materiales-cocina-bilbao.html">materiales recomendados para cocinas en Bilbao</a>.</p>
-  
+  </div>

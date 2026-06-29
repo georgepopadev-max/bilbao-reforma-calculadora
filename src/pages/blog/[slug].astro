@@ -51,13 +51,13 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical}>
+<BaseLayout title={title} description={description} canonical={canonical} ogImage="https://www.bilbaoreforma.es/images/og/blog-og.jpg" ogImageAlt={title}>
   <Fragment slot="head">
     {faqs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />}
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <Header city={city} />
+  <Header city={city} section="blog" />
 
   <main>
     <div style="max-width:860px;margin:0 auto;padding:2rem 1rem">

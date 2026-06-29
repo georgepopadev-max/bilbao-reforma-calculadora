@@ -9,6 +9,10 @@ export interface Props {
   ogDescription?: string;
   ogType?: string;
   ogLocale?: string;
+  ogImage?: string;
+  ogImageWidth?: string;
+  ogImageHeight?: string;
+  ogImageAlt?: string;
   noindex?: boolean;
   jsonSchemas?: any[];
 }
@@ -21,6 +25,10 @@ const {
   ogDescription,
   ogType = 'website',
   ogLocale = 'es_ES',
+  ogImage,
+  ogImageWidth = '1200',
+  ogImageHeight = '630',
+  ogImageAlt,
   noindex = false,
   jsonSchemas = [],
 } = Astro.props;
@@ -28,6 +36,10 @@ const {
 const siteUrl = 'https://www.bilbaoreforma.es';
 const fullTitle = title.includes('Bilbao Reforma') ? title : `${title} | Bilbao Reforma`;
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+// Default og:image — falls back to the home OG image; pages can override via ogImage prop.
+const defaultOgImage = `${siteUrl}/images/og/home-og.jpg`;
+const resolvedOgImage = ogImage || defaultOgImage;
+const resolvedOgImageAlt = ogImageAlt || fullTitle;
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -46,6 +58,12 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   <meta property="og:locale" content={ogLocale}>
   <meta property="og:url" content={canonicalUrl}>
   <meta property="og:site_name" content="Bilbao Reforma">
+  <meta property="og:image" content={resolvedOgImage}>
+  <meta property="og:image:width" content={ogImageWidth}>
+  <meta property="og:image:height" content={ogImageHeight}>
+  <meta property="og:image:alt" content={resolvedOgImageAlt}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content={resolvedOgImage}>
 
   <!-- Google Tag Manager -->
   <script is:inline>
@@ -72,6 +90,9 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
   {jsonSchemas.map(schema => (
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   ))}
+
+  <!-- Named head slot for page-specific injected scripts (e.g. BreadcrumbList) -->
+  <slot name="head" />
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -1,5 +1,5 @@
 ---
-title: "Presupuesto Reforma Integral Bilbao 2026 | Guía + Calculadora Gratis"
+title: "Presupuesto Reforma Integral Bilbao 2026"
 description: "Presupuesto reforma integral Bilbao 2026: precios reales por m² (700€-1.400€/m²), ejemplos por tipo de piso y calculadora gratis en 2 min. Todo lo que incluye."
 canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-integral-bilbao.html"
 readTime: "12 min"
@@ -32,14 +32,19 @@ inContentCTAs:
 priceTables: 1
 ---
 
-
+<div class="article-content">
       <p>Si necesitas un <strong>presupuesto de reforma integral en Bilbao</strong>, esta es la guía más completa que vas a encontrar. Te explicamos exactamente cuánto cuesta reformar un piso entero en Bilbao en 2026, qué incluye el precio, qué factores lo hacen variar y cómo usar nuestra calculadora gratis para obtener un presupuesto orientativo en menos de 2 minutos.</p>
 
       <p>El <strong>precio de una reforma integral en Bilbao</strong> oscila entre <strong>700 €/m² y 1.400 €/m²</strong> dependiendo de la calidad elegida. Para un piso de 80 m², eso significa un presupuesto de entre <strong>56.000 € y 112.000 €</strong>. No es un rango arbitrario: son precios basados en datos reales de empresas activas en Bilbao y Bizkaia durante 2026.</p>
 
       <p>Si quieres ir directo al cálculo, usa nuestra <a href="../index.html"><strong>calculadora de presupuestos gratis</strong></a>. Si prefieres entender todos los detalles antes de decidir, sigue leyendo.</p>
 
-      
+      <div class="in-content-cta">
+        <span class="in-content-cta-label">📐 Calcula tu presupuesto</span>
+        <a href="../index.html">Calculadora de reformas Bilbao (gratis, 2 min)</a>
+        <a href="presupuesto-reforma-bano-bilbao.html">Presupuesto reforma de baño</a>
+        <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto reforma de cocina</a>
+      </div>
 
       <h2>¿Qué incluye una reforma integral?</h2>
 
@@ -72,7 +77,7 @@ priceTables: 1
 
       <p>Estos son los <strong>precios orientativos por metro cuadrado</strong> para reforma integral en Bilbao capital y municipios de Bizkaia, incluyendo material estándar y mano de obra (IVA no incluido):</p>
 
-      <div class="table-wrap"><table class="price-table">
+      <table class="price-table">
         <caption>Precios orientativos Bilbao 2026. Incluye material + mano de obra. IVA no incluido. Actualizado a Junio 2026.</caption>
         <thead>
           <tr>
@@ -106,7 +111,7 @@ priceTables: 1
             <td>110.000 - 140.000 €</td>
           </tr>
         </tbody>
-      </table></div>
+      </table>
 
       <p><strong>¿Por qué tanta diferencia entre calidades?</strong> Un suelo de gres estándar cuesta 15-25 €/m²; un parquet de madera natural, 60-120 €/m². Un inodoro de marca blanca, 80-150 €; uno de diseño, 400-800 €. Los materiales marcan entre el 40% y el 60% del presupuesto total.</p>
 
@@ -269,4 +274,4 @@ priceTables: 1
         </a>
       </div>
 
-    
+    </div>

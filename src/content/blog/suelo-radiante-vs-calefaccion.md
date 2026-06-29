@@ -1,5 +1,5 @@
 ---
-title: "Suelo Radiante vs Calefacción Tradicional: Guía Comparativa 2026"
+title: "Suelo Radiante vs Calefacción 2026"
 description: "Suelo radiante vs calefacción tradicional: comparativa completa de precios, consumo, mantenimiento y ahorro energético. ¿Cuál conviene en Bilbao en 2026?"
 canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion.html"
 date: "20 enero 2025"
@@ -41,11 +41,15 @@ inContentCTAs:
 priceTables: 4
 ---
 
-
+<div class="article-content">
   <p>La decisión entre suelo radiante y calefacción tradicional (radiadores) es una de las más importantes en cualquier reforma de cierta envergadura. No es solo una cuestión de presupuesto inicial: el consumo energético, el mantenimiento y el confort a lo largo de los años pesan igual o más.</p>
 
   <p>En esta guía vamos a comparar ambos sistemas sin filtros, con datos reales y orientado al contexto de Bilbao y su clima húmedo del Cantábrico.</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="suelo-radiante-ventajas-bilbao.html">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
+  <a href="tipos-calefaccion-bilbao.html">Tipos de Calefacción en Bilbao</a>
+</div>
 
 
   <h2>Cómo funciona cada sistema</h2>
@@ -62,7 +66,7 @@ priceTables: 4
 
   <h2>Comparativa directa: tabla de características</h2>
 
-  <div class="table-wrap"><table class="comparison-table">
+  <table class="comparison-table">
   <thead>
   <tr>
   <th>Característica</th>
@@ -132,14 +136,14 @@ priceTables: 4
   <td>No</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h2>Costes de instalación: ¿cuánto cuestan cada uno?</h2>
 
   <h3>Suelo radiante: inversión inicial mayor</h3>
   <p>La instalación de suelo radiante requiere más obra y materiales, lo que se traduce en un coste inicial superior:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -168,12 +172,12 @@ priceTables: 4
   <td><strong>80-150 €/m² + suelo</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h3>Radiadores: instalación más económica</h3>
   <p>Instalar radiadores es más sencillo, especialmente si ya existe red de calefacción:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -198,7 +202,7 @@ priceTables: 4
   <td><strong>40-80 €/m²</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <div class="warning-box">
   <strong>Atención:</strong> Estos precios no incluyen la fuente de calor (caldera o bomba de calor), que puede costar entre 2.000 € y 8.000 € dependiendo del equipo. Tampoco incluyen el suelo nuevo si eliges suelo radiante y necesitas el solado existente.
@@ -209,7 +213,7 @@ priceTables: 4
 
   <h3>Escenario: Piso de 90m², calefacción de gas natural</h3>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto (10 años)</th>
@@ -244,7 +248,7 @@ priceTables: 4
   <td><strong>23.400 €</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>En este escenario, la inversión inicial del suelo radiante se compensa en aproximadamente 7-8 años gracias al ahorro energético. A 15-20 años, el suelo radiante con aerotermia sale claramente más económico.</p>
 
@@ -332,7 +336,11 @@ priceTables: 4
   <li>Vas a vender o alquilar en pocos años (amortización difícil)</li>
   </div>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="suelo-radiante-ventajas-bilbao.html">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
+  <a href="tipos-calefaccion-bilbao.html">Tipos de Calefacción en Bilbao</a>
+</div>
 <h2>Preguntas Frecuentes</h2>
 
   <h3>¿Qué sale más caro: instalar suelo radiante o radiadores?</h3>
@@ -358,4 +366,4 @@ priceTables: 4
   <p>Usa nuestra calculadora para ver la diferencia de inversión y consumo a largo plazo.</p>
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto con suelo radiante</a>
   </div>
-  
+  </div>

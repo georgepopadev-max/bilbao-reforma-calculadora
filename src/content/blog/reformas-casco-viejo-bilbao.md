@@ -1,5 +1,5 @@
 ---
-title: "Reformas en el Casco Viejo de Bilbao: Particularidades, Precios y Consejos"
+title: "Reformas Casco Viejo Bilbao 2026"
 description: "Reforma casco viejo Bilbao 2026: licencias de Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas en Casco Viejo."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao.html"
 date: "6 abril 2025"
@@ -37,17 +37,16 @@ inContentCTAs:
 priceTables: 3
 ---
 
-
+<div class="article-content">
   <p>El Casco Viejo de Bilbao es uno de los barrios más deseados de la ciudad. Sus calles empedradas, sus edificios de ladrillo visto, sus balcones de hierro forjado y su ambiente único atrae a familias, comercios e inversores. Pero cuando toca reformar un piso en el Casco Viejo, la historia cambia radicalmente.</p>
 
   <p>Las reformas en el Casco Viejo de Bilbao no son como las de un piso en Deusto, Errekalde o cualquier barrio moderno. Hay licencias especiales, accesos imposibles, materiales obligatorios y una logística que puede disparar el presupuesto entre un 20% y un 40% respecto a una reforma equivalente en otro barrio.</p>
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
+</div>
 
-
-
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <h2>Por Qué el Casco Viejo de Bilbao es Especial para Reformas</h2>
   <p>El Casco Viejo (también llamado Casco Antiguo o "Casco Vieju" popularmente) comprende los barrios de <strong>Artecalle, Somera, Areatxu, Tenderina Alta y Tenderina Baja</strong>. Son los bairros más antiguos de Bilbao, con edificios que datan de los siglos XVIII, XIX y principios del XX.</p>
@@ -64,7 +63,7 @@ priceTables: 3
   <p>Este es el primer quebradero de cabeza con el que te encuentras. No es lo mismo pedir una licencia de obra menor en Deusto que en el Casco Viejo.</p>
 
   <h3>Tipos de Licencia Necesarias</h3>
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de obra</th>
@@ -99,7 +98,7 @@ priceTables: 3
   <td>3-6 meses</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>Importante</strong>: en edificios protegidos, cualquier modificación en la fachada, los elementos comunes visibles desde la calle (balcones, ventanas, puertas) o la estructura requiere autorización expresa de <strong>Patrimonio Cultural del Gobierno Vasco</strong>. Esto no es un trámite de oficina: a veces imponen condiciones sobre materiales, colores o técnicas que pueden sorprenderte.</p>
@@ -118,7 +117,7 @@ priceTables: 3
   </ul>
 
   <h3>Impacto en el Presupuesto</h3>
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Problema de acceso</th>
@@ -147,7 +146,7 @@ priceTables: 3
   <td>+5-10% en tiempo de obra</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>El sobrecoste total por dificultades de acceso en el Casco Viejo puede superar los <strong>4.000-8.000 €</strong> en una reforma integral de un piso de 80m².</p>
 
@@ -168,7 +167,7 @@ priceTables: 3
   <p>Forjados de madera (vigas y revoltón) son habituales en edificios anteriores a 1920. Se están cayendo, pero cuando se mantienen, hay que tratarlos con respeto: tratamiento antixilófagos, consolidación con resina epoxi, no sustitución salvo que sea inevitable.</p>
 
   <h2>Factores que Disparan el Precio de una Reforma en el Casco Viejo</h2>
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Factor</th>
@@ -208,7 +207,7 @@ priceTables: 3
   <td>Menos horas de trabajo efectivo</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h3>Ejemplo Real: Reforma Integral de 75m² en la Tenderina (Casco Viejo)</h3>
   <p><strong>Situación</strong>: Piso de 75m², 4ª planta sin ascensor, edificio de 1890 con protección parcial, tuberías de plomo, instalación eléctrica de los años 60.</p>
@@ -254,7 +253,11 @@ priceTables: 3
   </ul>
   </div>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
+</div>
 <h2>Resumen: Lo Que Necesitas Saber</h2>
   <ul>
   <li>Una reforma en el Casco Viejo cuesta entre un <strong>20% y un 40% más</strong> que la misma reforma en otro barrio de Bilbao</li>
@@ -264,14 +267,9 @@ priceTables: 3
   <li>Necesitas una <strong>empresa con experiencia</strong> en edificios del Casco Viejo. No vale cualquiera.</li>
   </ul>
 
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
-
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en el Casco Viejo de Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada. Selecciona "Casco Viejo" como ubicación para aplicar el factor multiplicador de sobrecoste.</p>
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
   </div>
-  
+  </div>

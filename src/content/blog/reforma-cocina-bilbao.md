@@ -1,5 +1,5 @@
 ---
-title: "Reforma Cocina Bilbao 2026: Precios y Presupuesto"
+title: "Reforma Cocina Bilbao 2026"
 description: "Precio reforma cocina Bilbao 2026. Averigua cuánto cuesta reformar tu cocina en Bilbao según metros y calidades. Presupuesto orientativo en 2 minutos."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bilbao.html"
 readTime: "10 min"
@@ -56,20 +56,24 @@ inContentCTAs:
 priceTables: 1
 ---
 
-
+<div class="article-content">
   <p>La cocina es, junto al baño, la estancia más reformada de los pisos bilbainos. Los cocinas de los edificios de los años 60, 70 y 80 en Bilbao presentan características muy similares: distribución en forma de pasillo estrecho, muebles de madera laminada desgastados, encimeras de formica amarilla, electrodomésticos antiguos y, en muchos casos, instalaciones eléctricas y de gas que no cumplen la normativa actual.</p>
 
   <p>La <strong>reforma de cocina en Bilbao</strong> responde a dos necesidades distintas pero complementarias: por un lado, la actualización funcional (ganar espacio de almacenamiento, mejorar la ergonomía, instalar electrodomésticos eficientes); por otro, la revalorización del inmueble. Si estás pensando en vender o alquilar tu piso en Bilbao, una cocina moderna es una de las mejores inversiones que puedes hacer.</p>
 
   <p>En esta guía te damos <strong>precios orientativos por metro cuadrado para reformar cocina en Bilbao</strong>, un desglose detallado por partidas y todo lo que necesitas saber para planificar tu presupuesto sin sorpresas.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📊 Herramienta recomendada</span>
+  <a href="../calculadora/index.html">Calculadora de presupuesto reforma cocina Bilbao -></a>
+  <a href="presupuesto-reforma-cocina-bilbao.html">Guía de presupuestos para reforma de cocina Bilbao</a>
+  </div>
 
   <h2>Precios por m² para reforma de cocina en Bilbao 2025</h2>
 
   <p>Los siguientes precios son <strong>orientativos para Bilbao capital y área metropolitana</strong>, incluyen material y mano de obra (IVA excluded) y se basan en proyectos reales ejecutados en 2024-2025. El coste final depende del estado actual de la cocina, la antigüedad del edificio y las calidades elegidas.</p>
 
-  <div class="table-wrap"><table class="price-table">
+  <table class="price-table">
   <caption>Precios orientativos reforma cocina Bilbao 2025 (material + mano de obra)</caption>
   <thead>
   <tr>
@@ -110,7 +114,7 @@ priceTables: 1
   <td>19.200 - 30.000 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <div class="highlight-box">
   <h3>💡 ¿Por qué las cocinas cuestan más que los baños por m²?</h3>
@@ -175,7 +179,12 @@ priceTables: 1
   <p><strong>Coste orientativo: 1.500 - 6.000 €</strong></p>
   <p>Pack básico (placa de inducción, horno, extractor, frigorífico combi, lavavajillas): 1.500-3.000 €. Pack gama media (marcas como Balay, Bosch, Siemens): 3.000-5.000 €. Pack premium (Miele, Gaggenau, Wolf): 6.000-15.000 €.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto reforma cocina Bilbao - guía completa para pedir precios</a>
+  <a href="precio-m2-reforma-cocina-bilbao.html">Precio por m² reforma cocina Bilbao - comparativa de calidades</a>
+  <a href="materiales-cocina-bilbao.html">Mejores materiales para cocinas en Bilbao - guía 2025</a>
+  </div>
 
   <h2>Barrios de Bilbao con mayor demanda de cocinas reformadas</h2>
 
@@ -228,7 +237,7 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará tu reforma de cocina en Bilbao?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos, sin compromiso.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -265,5 +274,11 @@ priceTables: 1
   </div>
   </div>
 
-  
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto reforma cocina Bilbao - guía para pedir precios sin sorpresas</a>
+  <a href="precio-m2-reforma-cocina-bilbao.html">Precio por m² reforma cocina Bilbao - comparativa de calidades</a>
+  <a href="materiales-cocina-bilbao.html">Mejores materiales para cocinas Bilbao 2025</a>
+  <a href="errores-reforma-cocina-bilbao.html">Errores más comunes en reformas de cocina Bilbao</a>
+  </div>
+  </div>

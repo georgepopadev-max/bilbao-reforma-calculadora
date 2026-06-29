@@ -1,5 +1,5 @@
 ---
-title: "12 Errores Comunes en una Reforma (y Cómo Evitarlos)"
+title: "12 Errores Comunes en una Reforma Bilbao"
 description: "Errores comunes en una reforma: los 12 fallos más costosos y cómo evitarlos. Guía actualizada para quienes reforman en Bilbao y Bizkaia sin sorpresas."
 canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao.html"
 category: "general"
@@ -38,11 +38,15 @@ inContentCTAs:
 priceTables: 0
 ---
 
-
+<div class="article-content">
   <p>Nadie empieza una reforma queriendo cometer errores. Pero la realidad es que la mayoría de las personas que reforman su vivienda en Bilbao cometen los mismos fallos - porque nadie les avisa de qué deben vigilar.</p>
 
   <p>Después de asesorar a cientos de propietarios en Bilbao y Bizkaia durante sus reformas, hemos identificado los 12 errores que más dinero cuesta, más estrés generan y más fáciles son de evitar.</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+</div>
 
 
   <h2>Los 12 Errores que Fracasan las Reformas</h2>
@@ -110,6 +114,20 @@ priceTables: 0
   </li>
   </ol>
 
+  <h2>¿Cuánto cuesta una reforma integral en un piso antiguo de Bilbao?</h2>
+
+  <p>Una de las preguntas más frecuentes que escuchamos en Bilbao es: <em>"¿Me sale más caro reformar un piso antiguo que uno de los 90?"</em>. La respuesta corta: sí, casi siempre. Y la diferencia no es pequeña.</p>
+
+  <p>Los pisos antiguos de Bilbao —los del Casco Viejo, Santutxu, Indautxu o Rekalde, construidos entre 1950 y 1980— tienen una característica que marca la diferencia: sus <strong>instalaciones originales</strong>. Tuberías de plomo que tienen 50-70 años, cableado eléctrico sin toma de tierra, sin mecanismo diferencial, y en muchos casos sin aislamiento en la fachada. Reformar un piso así exige no solo renovar acabados, sino actualizar instalaciones que ya están al final de su vida útil.</p>
+
+  <p>Según datos del <strong>Ayuntamiento de Bilbao</strong> y del servicio de vivienda de Bizkaia, más del 60 % de los pisos en barrios como Santutxu y Casco Viejo tienen más de 50 años sin reforma integral. Eso significa que cuando compras o heredas uno de estos pisos, la primera reforma no es una mejora: es una <strong>actualización obligatoria</strong> para cumplir el Código Técnico de la Edificación.</p>
+
+  <p>En la práctica, esto se traduce en un sobrecoste de entre <strong>80 € y 150 € por metro cuadrado</strong> solo en actualización de instalaciones. Para un piso de 80 m², eso son entre 6.400 € y 12.000 € adicionales sobre el presupuesto base de reforma. Si a eso le sumamos que estos edificios suelen tener comunidades con limitaciones de horarios para obras (por ejemplo, en el Casco Viejo hay restricción de horarios de escombros por ser BIC), la logística puede añadir otro 5-10 % al presupuesto.</p>
+
+  <p>La buena noticia: una reforma integral de un piso antiguo en Bilbao tiene una <strong>rentabilidad alta</strong>. Según portales inmobiliarios, un piso reformado en Indautxu o Abando puede valer entre un 15 % y un 25 % más que el mismo piso sin reformar. Y los costes de reforma se amortizan antes que en zonas donde el suelo ya es más caro.</p>
+
+  <p>Nuestro consejo: antes de comprar un piso antiguo para reformar, pide a un profesional que valore el estado de las instalaciones. Un informe rápido (200-400 €) puede ahorrarte descubrimientos desagradables una vez firmada la compra.</p>
+
   <h2>Coste Real de Estos Errores en Bilbao</h2>
 
   <p>Veamos lo que estos errores cuestan realmente en términos reales para una reforma en Bilbao:</p>
@@ -128,8 +146,24 @@ priceTables: 0
   <p>En una reforma típica de un piso de 80m² en Bilbao (presupuesto de 50.000€), estos errores comunes podrían añadir <strong>15.000€ a 30.000€</strong> en costes inesperados. Tomarse unos días para planificar correctamente antes de empezar es la mejor inversión que jamás harás.</p>
   </div>
 
-  
-<h2>Cómo Evitar Todos Estos Errores</h2>
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+</div>
+  <h2>Reforma de baño vs reforma de cocina en Bilbao: qué merece más la pena</h2>
+
+  <p>Si tienes un presupuesto limitado y solo puedes permitirte una reforma, surge la pregunta: <strong>¿priorizo el baño o la cocina?</strong> La respuesta depende de varios factores que van más allá del mero coste.</p>
+
+  <p>En términos de <strong>inversión rentable</strong>, la cocina suele tener un retorno superior. Según analistas inmobiliarios, una cocina renovada puede aumentar el valor de venta de un piso entre un 4 % y un 7 %, mientras que un baño renovado suele aportar entre un 3 % y un 5 %. La cocina es el corazón de la vivienda y su estado es uno de los primeros cosas que valoran los compradores.</p>
+
+  <p>Sin embargo, hay matices. En Bilbao, la tipología de vivienda marca mucho. En pisos pequeños de 60-70 m² con un solo baño, <strong>reformar el baño tiene prioridad funcional</strong>: un piso sin baño usable es prácticamente inhabitable. Si solo tienes un baño, no puedes permitirte tenerlo fuera de servicio durante semanas. En cambio, en pisos con dos baños, puedes permitirte priorizar cocina.</p>
+
+  <p>另一个 factor importante: el <strong>coste por metro cuadrado</strong>. Una reforma de cocina media (cambiar muebles, encimera, electrodomésticos) suele costar entre 5.000 € y 12.000 € para una cocina de 10-12 m². Una reforma de baño completa cuesta entre 6.000 € y 14.000 € para un baño de 5-6 m². Por euro invertido, la cocina ofrece más metros reformados y más impacto visual.</p>
+
+  <p>Nuestro recomendación para Bilbao: si el baño tiene problemas graves (fugas, humedades, instalaciones peligrosas), empieza por ahí. Si el baño es funcional pero anticuado y la cocina está en mal estado, prioriza la cocina. Y si ambos están mal, considera una <strong>reforma escalonada</strong>: primero baño (inversión funcional) y en 12-18 meses, cocina (inversión de valor).</p>
+
+  <h2>Cómo Evitar Todos Estos Errores</h2>
 
   <p>La buena noticia: todos estos errores son 100% evitables con una planificación adecuada. Aquí tienes tu lista de verificación:</p>
 
@@ -154,8 +188,8 @@ priceTables: 0
   <div class="article-cta">
   <h3>Obtén un Presupuesto Realista Antes de Empezar tu Reforma</h3>
   <p>Usa nuestra calculadora para saber lo que debería costar una reforma en Bilbao - antes de firmar nada.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <p><strong>Fuentes:</strong> Información sobre costes de reforma basada en datos del <a href="https://observatorioinmobiliario.es/noticias/residencial/el-mercado-de-la-reforma-alcanzar%C3%A1-19-millones-de-viviendas-en-2025-y-la-rehabilitaci%C3%B3n-crecer%C3%A1-un-75/" target="_blank" rel="noopener">Observatorio Inmobiliario</a> y <a href="https://domdiseno.com/precio-reforma-integral-2025-tabla-e-m%C2%B2-por-provincia/" target="_blank" rel="noopener">Dom Diseño</a>.</p>
-  
+  </div>

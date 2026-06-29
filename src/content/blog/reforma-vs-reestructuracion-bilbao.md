@@ -1,5 +1,5 @@
 ---
-title: "Reforma vs Reestructuración en Bilbao: Qué Papel Necesitas [2026]"
+title: "Reforma vs Reestructuración Bilbao 2026"
 description: "Reforma vs reestructuración en Bilbao: qué papel necesitas para obra menor, obra mayor y redistribute tu piso. Guía 2026 con licencias, precios y ejemplos."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao.html"
 date: "4 junio 2026"
@@ -39,11 +39,15 @@ inContentCTAs:
 priceTables: 2
 ---
 
-
+<div class="article-content">
   <p>Antes de llamar a un profesional o pedir presupuestos para tu piso en Bilbao, necesitas saber una cosa: <strong>lo que necesitas no es siempre una reforma</strong>. A veces es una reestructuración. Y la diferencia no es semántica: implica licencias distintas, costes diferentes y un nivel de complejidad que puede convertir un proyecto sencillo en un quebradero de cabeza de meses.</p>
 
   <p>En esta guía te explicamos claramente qué es cada cosa, qué papel necesitas en cada caso y cuánto cuesta conseguir los permisos en Bilbao y Bizkaia en 2026.</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+</div>
 
 
   <h2>¿Qué Es una Reforma de Piso en Bilbao?</h2>
@@ -79,15 +83,10 @@ priceTables: 2
   <p><strong>Dato importante</strong>: según la normativa urbanística del Gobierno Vasco (<a href="https://www.euskadi.eus/planeamiento-urbanistico/web01-a3ing/es/" target="_blank" rel="noopener">Plan General de Ordenación Urbana de Bilbao</a>), cualquier intervención que modifique la estructura, envolvente o uso de una vivienda necesita un proyecto técnico regularizado. No es opcional.</p>
   </blockquote>
 
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
-
   <h2>Licencias y Papeles Necesarios en Bilbao para 2026</h2>
   <p>Esta es la sección que más gente infringe sin saberlo. En Bilbao, hacer obra sin la licencia correspondiente puede acarrear multas de 1.000 € a 50.000 € dependiendo de la gravedad, además de la obligación de devolver el piso a su estado original.</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de Obra</th>
@@ -127,7 +126,7 @@ priceTables: 2
   <td>500-1.500 € + tasas</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h3>¿Quién Puede Firmar el Proyecto?</h3>
   <ul>
@@ -141,7 +140,7 @@ priceTables: 2
   <h2>Comparativa de Precios: Reforma vs Reestructuración en Bilbao</h2>
   <p>La diferencia de coste no es solo de licencias. Una reestructuración implica más mano de obra, más materiales, más tiempo y más gestión. Aquí tienes los datos comparativos:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -181,16 +180,11 @@ priceTables: 2
   <td><strong>70.000-130.000 €</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>Nota</strong>: Estos precios son orientativos para Bilbao y Bizkaia en 2026 e incluyen materiales, mano de obra, proyecto y tasas. No incluyen electrodomésticos, muebles de cocina ni elementos decorativos. El IVA aplicable es del 10% para viviendas de más de 2 años.</p>
   </blockquote>
-
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <h2>Ejemplos Reales: Cuándo Es Reforma y Cuándo Es Reestructuración</h2>
   <p>La mejor forma de entender la diferencia es con casos reales de pisos en Bilbao:</p>
@@ -231,7 +225,11 @@ priceTables: 2
   <h3>¿La reestructuración de un piso en el Casco Viejo de Bilbao es más compleja?</h3>
   <p>Sí, significativamente. El Casco Viejo tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+</div>
 <h2>¿Reforma o Reestructuración? Cómo Decidir</h2>
   <p>La decisión entre reforma y reestructuración depende de tres factores principales:</p>
 
@@ -246,14 +244,9 @@ priceTables: 2
 
   <p>Antes de tomar la decisión, consulta con un profesional. Un arquitecto técnico o aparejador puede evaluar tu piso y decirte qué tipo de intervención necesitas. Muchos ofrecen primera consulta gratuita o a coste muy bajo. Compara siempre al menos tres opiniones antes de contratar.</p>
 
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
-
   <div class="article-cta">
   <h3>¿Sabes qué tipo de intervención necesitas para tu piso?</h3>
   <p>Usa la calculadora para obtener una estimación orientativa según el tipo de obra que necesitas.</p>
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
   </div>
-  
+  </div>

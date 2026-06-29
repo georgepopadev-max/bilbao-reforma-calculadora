@@ -52,7 +52,7 @@ const schema = schemaData ?? {
 ---
 
 <BaseLayout
-  title={title}
+  title={title.includes("Bilbao Reforma") ? title : `${title} | Bilbao Reforma`}
   description={description}
   canonical={canonical}
   jsonSchemas={[schema]}
@@ -114,7 +114,7 @@ const schema = schemaData ?? {
 
       <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 2rem; align-items: center;">
         <a href={`/${citySlugs[city]}/calculadora/index.html`} class="header-nav-link" style="padding: 0.5rem 0;">Calculadora</a>
-        <a href="/blog/index.html" class="header-nav-link" style="padding: 0.5rem 0;">Blog</a>
+        <a href={`/${citySlugs[city]}/blog/index.html`} class="header-nav-link" style="padding: 0.5rem 0;">Blog</a>
         <a href={`/${citySlugs[city]}/empresas/index.html`} class="header-nav-link" style="padding: 0.5rem 0;">Empresas</a>
         <a href="/contacto.html" class="header-nav-link header-nav-link-cta" style="padding: 0.5rem 0;">Contacto</a>
       </nav>
@@ -133,7 +133,7 @@ const schema = schemaData ?? {
   <div class="mobile-menu" id="mobileMenu">
     <nav class="mobile-nav">
       <a href={`/${citySlugs[city]}/calculadora/index.html`} class="mobile-nav-link">Calculadora</a>
-      <a href="/blog/index.html" class="mobile-nav-link">Blog</a>
+      <a href={`/${citySlugs[city]}/blog/index.html`} class="mobile-nav-link">Blog</a>
       <a href={`/${citySlugs[city]}/empresas/index.html`} class="mobile-nav-link">Empresas</a>
       <a href="/contacto.html" class="mobile-nav-link">Contacto</a>
     </nav>
@@ -162,7 +162,7 @@ const schema = schemaData ?? {
           <h4 class="footer-col-title">Navegación</h4>
           <nav class="footer-nav">
             <a href={`/${citySlugs[city]}/calculadora/index.html`} class="footer-nav-link">Calculadora</a>
-            <a href="/blog/index.html" class="footer-nav-link">Blog</a>
+            <a href={`/${citySlugs[city]}/blog/index.html`} class="footer-nav-link">Blog</a>
             <a href={`/${citySlugs[city]}/empresas/index.html`} class="footer-nav-link">Empresas</a>
             <a href="/contacto.html" class="footer-nav-link">Contacto</a>
           </nav>

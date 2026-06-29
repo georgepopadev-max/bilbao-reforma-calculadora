@@ -1,5 +1,5 @@
 ---
-title: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"
+title: "Reformas Bilbao 2026: Guía Práctica"
 description: "Guía completa de reformas en Bilbao 2026. Precios por m², tipos de reformas, licencias en Bizkaia, cómo elegir empresa y errores a evitar. Actualizado."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-guia-2025.html"
 readTime: "12 min"
@@ -39,11 +39,15 @@ inContentCTAs:
 priceTables: 1
 ---
 
-
+<div class="article-content">
   <p class="intro-text">Bilbao es una ciudad con una demanda de reformas estructurales enorme. Gran parte de su parque inmobiliario está formado por edificios de más de 50 años: los pisos del Casco Viejo, los bloques de Indautxu, las viviendas de los años 60 y 70 en Santutxu, Deusto y Errekalde. Muchos de estos inmuebles necesitan actualizaciones urgentes: instalaciones eléctricas obsoletas, baños de los 70, cocinas que ya no responden a las necesidades actuales, y problemas de humedad que se arrastran desde hace décadas.</p>
 
   <p class="intro-text">Si estás pensando en reformar en Bilbao en 2025, esta guía te da todo lo que necesitas saber para hacerlo bien: los tipos de reformas más habituales, los precios de mercado, las particularidades de cada barrio, los trámites con licencias en Bizkaia, cómo elegir una empresa de reformas Bilbao recomendada y los errores que debes evitar a toda costa. Si prefieres calcular un presupuesto orientativo, usa nuestra <a href="../index.html">calculadora de reformas</a>.</p>
-
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="tiempo-reforma-integral-bilbao.html">Tiempo de Reforma Integral en Bilbao</a>
+</div>
 
 
   <h2>Tipos de Reformas Más Demandadas en Bilbao</h2>
@@ -62,7 +66,7 @@ priceTables: 1
 
   <p>Los precios en Bilbao son ligeramente superiores a la media nacional, reflejando el coste de vida del País Vasco y la alta demanda de mano de obra cualificada. A continuación, una tabla orientativa con los precios más habituales:</p>
 
-  <div class="table-wrap"><table class="price-table">
+  <table class="price-table">
   <caption>Precios orientativos en Bilbao 2025. Incluye material de gama media e instalación profesional. IVA no incluido.</caption>
   <thead>
   <tr>
@@ -134,7 +138,7 @@ priceTables: 1
   <td>Con Certificado de Instalación de Agua</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>Para un <strong>reforma integral piso Bilbao precio</strong> en un inmueble de 80 m² con estado medio, el presupuesto orientativo estaría entre <strong>56.000 y 112.000 euros</strong>. Esto puede parecer una inversión alta, pero una reforma integral bien ejecutada puede incrementar el valor de mercado de un piso entre un 15% y un 25%.</p>
 
@@ -216,11 +220,15 @@ priceTables: 1
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="tiempo-reforma-integral-bilbao.html">Tiempo de Reforma Integral en Bilbao</a>
+</div>
 <h2>Errores Comunes al Reformar en Bilbao y Cómo Evitarlos</h2>
 
   <p>Después de años asesorando a propietarios en Bilbao, estos son los errores que más frecuentemente vemos - y los más costosos de remediar:</p>
@@ -258,6 +266,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
-  
+  </div>

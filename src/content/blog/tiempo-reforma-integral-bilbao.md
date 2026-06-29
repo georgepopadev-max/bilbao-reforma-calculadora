@@ -1,5 +1,5 @@
 ---
-title: "Cuánto tarda una reforma integral en Bilbao: timeline realista [2026]"
+title: "Duración Reforma Integral Bilbao 2026"
 description: "Descubre cuánto tarda una reforma integral en Bilbao: timeline realista de 8 a 20 semanas según tipo de obra. Fases, plazos y cómo acelerar tu proyecto en 2026."
 canonical: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao.html"
 date: "4 junio 2026"
@@ -39,15 +39,19 @@ inContentCTAs:
 priceTables: 1
 ---
 
-
+<div class="article-content">
   <p>La pregunta que más escuchamos antes de empezar cualquier reforma en Bilbao es: <strong>¿cuánto va a durar?</strong> Una reforma integral de varios meses implica planificar tu vida, buscar soluciones de alojamiento temporal, y gestionar la incertidumbre. En esta guía te damos un timeline realista, semana a semana.</p>
 
   <h2>El Timeline General: 8 a 20 Semanas</h2>
   <p>La duración depende de tres factores: estado del piso, cambios deseados, y nivel de acabado. Como orientación:</p>
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
+</div>
 
 
-
-  <div class="table-wrap"><table class="timeline-table">
+  <table class="timeline-table">
   <thead>
   <tr>
   <th>Tipo de reforma (piso 80m²)</th>
@@ -68,7 +72,7 @@ priceTables: 1
   <td><strong>16-20 semanas</strong></td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>Importante</strong>: Estos plazos incluyen la fase de obra, pero no la planificación previa (2-4 semanas adicionales). Si necesitas licencia de obra mayor, añade 4-8 semanas más.</p>
@@ -141,7 +145,11 @@ priceTables: 1
   <li><strong>Evita abrir muros de carga</strong>: te ahorras semanas de proyecto estructural y licencia</li>
   </ol>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
+</div>
 <h2>Preguntas Frecuentes</h2>
 
   <h3>¿Cuánto tiempo se tarda en una reforma integral en Bilbao?</h3>
@@ -162,6 +170,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará (y cuánto durará) tu reforma?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
-  
+  </div>

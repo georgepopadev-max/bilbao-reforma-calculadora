@@ -1,5 +1,5 @@
 ---
-title: "Subvenciones y Ayudas para Reformas en Bilbao y Bizkaia 2026"
+title: "Subvenciones Bilbao y Bizkaia 2026"
 description: "Subvenciones reforma Bilbao 2026: ayudas del Gobierno Vasco, Ayuntamiento, rehabilitación energética, qué obras son elegibles y cómo solicitarlas."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao.html"
 date: "6 abril 2025"
@@ -39,17 +39,16 @@ inContentCTAs:
 priceTables: 5
 ---
 
-
+<div class="article-content">
   <p>Una reforma no siempre tiene que salir exclusivamente de tu bolsillo. Si vives en Bilbao o Bizkaia y estás pensando en reformar tu vivienda, hay una serie de <strong>subvenciones y ayudas públicas</strong> que podrían cubrir entre un 20% y un 70% de la inversión, dependiendo del tipo de obra y tu situación personal.</p>
 
   <p>No son conocidos ni fáciles de encontrar. Por eso hemos creado esta guía: para que sepas qué existe, qué obras son elegibles, cuánto puedes cobrar y cómo solicitarlas.</p>
+<div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+</div>
 
-
-
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
 
   <h2>¿Por Qué Hay Subvenciones para Reformas en Bilbao?</h2>
   <p>El Gobierno Vasco y el Ayuntamiento de Bilbao tienen objetivos claros de eficiencia energética y rehabilitación urbana. Bilbao tiene un parque inmobiliario antiguo: la mitad de los edificios tienen más de 50 años y consumen más de lo que la normativa actual consideraría aceptable.</p>
@@ -68,7 +67,7 @@ priceTables: 5
   <p>El Gobierno Vasco tiene vigente un <strong>Plan de Vivienda 2022-2025</strong> que incluye líneas de ayuda para rehabilitación. Las principales:</p>
 
   <h4>Línea 1: Rehabilitación de Viviendas (Ayudas Estatales + Gobierno Vasco)</h4>
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -103,7 +102,7 @@ priceTables: 5
   <td>Viviendas con protección</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <blockquote>
   <p><strong>VSM = Vector de Referencia de Renta</strong> (aproximadamente 13.000 € brutos/año en 2024). Se usa como indicador de capacidad económica.</p>
@@ -114,7 +113,7 @@ priceTables: 5
 
   <p>Para viviendas individuales, las ayudas pueden alcanzar <strong>hasta 18.800 € por vivienda</strong> en función de la mejora energética achieved. Los porcentajes de ayuda sobre el coste de obra varían según el tipo de intervención:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de obra</th>
@@ -126,7 +125,7 @@ priceTables: 5
   <tr>
   <td><strong>Mejora de envolvente térmica</strong> (aislamiento, ventanas)</td>
   <td>40-75% del coste</td>
-  <td>Edificio &gt; 20 años, sin eficiencia actual</td>
+  <td>Edificio > 20 años, sin eficiencia actual</td>
   </tr>
   <tr>
   <td><strong>Instalación de climatización eficiente</strong> (aerotermia, caldera de condensación)</td>
@@ -149,12 +148,12 @@ priceTables: 5
   <td>Instalación de sistema de control</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h3>Programa de Eliminación de Barreras Arquitectónicas</h3>
   <p>Si la reforma incluye la instalación de <strong>ascensor</strong> o adaptación de vivienda para personas con movilidad reducida:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -175,7 +174,7 @@ priceTables: 5
   <td>Variable según ayuntamiento</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h2>Subvenciones del Ayuntamiento de Bilbao 2025</h2>
 
@@ -193,7 +192,7 @@ priceTables: 5
   <h3>Ayudas para la Rehabilitación en el Casco Viejo</h3>
   <p>El Casco Viejo de Bilbao tiene un programa específico de rehabilitación porque es <strong>Bien de Interés Cultural (BIC)</strong>. Las ayudas cubren:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de obra</th>
@@ -218,7 +217,7 @@ priceTables: 5
   <td>Hasta 6.000 €</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <h2>Cómo Solicitar las Subvenciones: Paso a Paso</h2>
 
@@ -258,25 +257,29 @@ priceTables: 5
   <h3>Ejemplo 1: Reforma Integral en Piso de 80m² (Santutxu)</h3>
   <p>Obra: Reforma media (electricidad,fontanería,suelo,pintura) por 32.000 €</p>
   <p>Ingresos: medios (4 VSM)</p>
-  <p>Ayuda solicitada: Programa de rehabilitación Gobierno Vasco -&gt; <strong>4.500 €</strong></p>
+  <p>Ayuda solicitada: Programa de rehabilitación Gobierno Vasco -> <strong>4.500 €</strong></p>
   <p>Coste real tras ayuda: <strong>27.500 €</strong></p>
 
   <h3>Ejemplo 2: Cambio de Ventanas + Aislamiento (Deusto)</h3>
   <p>Obra: Ventanas PVC + aislamiento térmico: 8.500 €</p>
-  <p>Ayuda: Plan de rehabilitación energética Next Generation -&gt; <strong>5.950 €</strong> (70% del coste)</p>
+  <p>Ayuda: Plan de rehabilitación energética Next Generation -> <strong>5.950 €</strong> (70% del coste)</p>
   <p>Coste real tras ayuda: <strong>2.550 €</strong></p>
 
   <h3>Ejemplo 3: Instalación de Aerotermia (Begoña)</h3>
   <p>Obra: Equipo aerotermia con instalación: 7.200 €</p>
-  <p>Ayuda: Programa de eficiencia energética + deducciones fiscales -&gt; <strong>3.600 €</strong> (50%)</p>
+  <p>Ayuda: Programa de eficiencia energética + deducciones fiscales -> <strong>3.600 €</strong> (50%)</p>
   <p>Deducción fiscal adicional: <strong>900 €</strong></p>
   <p><strong>Coste real tras ayuda y deducciones: 2.700 €</strong></p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Leer también</span>
+  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+</div>
 <h2>Deducciones Fiscales: Además de las Subvenciones</h2>
   <p>No olvides las <strong>deducciones fiscales</strong> que puedes aplicar en tu IRPF:</p>
 
-  <div class="table-wrap"><table>
+  <table>
   <thead>
   <tr>
   <th>Tipo de obra</th>
@@ -297,30 +300,25 @@ priceTables: 5
   <td>20% (hasta 5.000 €)</td>
   </tr>
   </tbody>
-  </table></div>
+  </table>
 
   <p>Estas deducciones se aplican en la <strong>declaración de la renta</strong> del año en que se realizan las obras. Necesitarás factura completa a tu nombre.</p>
 
   <div class="checklist">
   <h4>Nuestra Recomendación</h4>
   <ul>
-  <li><strong>Haz los números sin ayudas primero</strong> -&gt; si la reforma es viable sin ellas, las ayudas son un bonus</li>
-  <li><strong>Consulta antes de firmar presupuestos</strong> -&gt; algunas ayudas requieren pasos previos que alteran el proceso</li>
-  <li><strong>Agrupar obras es más eficiente</strong> -&gt; tiene más sentido pedir una sola ayuda para una reforma media que pedir tres ayudas para tres obras parciales</li>
+  <li><strong>Haz los números sin ayudas primero</strong> -> si la reforma es viable sin ellas, las ayudas son un bonus</li>
+  <li><strong>Consulta antes de firmar presupuestos</strong> -> algunas ayudas requieren pasos previos que alteran el proceso</li>
+  <li><strong>Agrupar obras es más eficiente</strong> -> tiene más sentido pedir una sola ayuda para una reforma media que pedir tres ayudas para tres obras parciales</li>
   <li><strong>Usa la calculadora de presupuestos</strong> para tener una cifra de referencia antes de meterte en el proceso de solicitud</li>
   </ul>
   </div>
 
   <p><strong>Fuentes consultadas:</strong> Los datos sobre ayudas del Gobierno Vasco para rehabilitación en 2025 están basados en la información publicada por <a href="https://comunidadeseuskadi.com/ayudas-del-gobierno-vasco-para-la-rehabilitacion-de-fachadas-2025/" target="_blank" rel="noopener">Comunidades de Euskadi</a> y el portal oficial de <a href="https://www.euskadi.eus/web01-a1next/es/" target="_blank" rel="noopener">Vivienda del Gobierno Vasco</a>.</p>
 
-  <!-- AdSense Placeholder Inline -->
-  <div class="adsense-container adsense-inline" style="display:none!important;">
-  <span style="color: #999; font-size: 12px;">Espacio reservado para anuncios</span>
-  </div>
-
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
   <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
   </div>
-  
+  </div>

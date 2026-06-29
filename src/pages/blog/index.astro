@@ -10,9 +10,9 @@ import Footer from '../../components/Footer.astro';
 
 const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => {
-  const dateA = (a.data && a.data.date) || '';
-  const dateB = (b.data && b.data.date) || '';
-  return dateB.localeCompare(dateA);
+  const dateA = new Date(a.data?.date || 0).getTime();
+  const dateB = new Date(b.data?.date || 0).getTime();
+  return dateB - dateA;
 });
 
 // Group by category
@@ -34,11 +34,11 @@ const totalCTAs = posts.reduce((sum, p) => {
 ---
 
 <BaseLayout
-  title="Blog de Reformas Bilbao — Guías, Precios y Consejos 2026"
+  title="Blog Reformas Bilbao — Precios y Consejos"
   description="Blog con guías prácticas sobre reformas en Bilbao: precios de baños, cocinas, suelos, pintura y más. Información actualizada para 2026."
-  canonical="https://www.bilbaoreforma.es/blog/"
+  canonical="https://www.bilbaoreforma.es/blog.html"
 >
-  <Header city="bilbao" />
+  <Header city="bilbao" section="blog" />
 
   <main>
     <div style="max-width:1200px;margin:0 auto;padding:2rem 1rem">

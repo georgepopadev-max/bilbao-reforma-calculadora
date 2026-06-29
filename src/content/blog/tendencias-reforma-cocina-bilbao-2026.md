@@ -1,5 +1,5 @@
 ---
-title: "Tendencias Reforma Cocina Bilbao 2026 - Materiales y Estilos"
+title: "Tendencias Reforma Cocina Bilbao 2026"
 description: "Descubre las tendencias en reforma de cocina para 2026 en Bilbao. Estilos, materiales, colores y acabados más demandados. Inspírate para tu reforma."
 canonical: "https://www.bilbaoreforma.es/blog/tendencias-reforma-cocina-bilbao-2026.html"
 readTime: "10 min"
@@ -44,7 +44,7 @@ inContentCTAs:
 priceTables: 0
 ---
 
-
+<div class="article-content">
 
   <h2>¿Por qué importa estar al día en tendencias de cocinas?</h2>
 
@@ -54,11 +54,15 @@ priceTables: 0
 
   <p>Además, el mercado inmobiliario en Bilbao está en plena recuperación. Los compradores e inquilinos de 2026 valoran especialmente las cocinas con ciertos rasgos: amplitud visual, materiales nobles, electrodomésticos eficientes y un diseño que invite a estar. Conocer las tendencias te permite tomar decisiones informadas que protejan tu inversión.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Guía completa</span>
+  <a href="reforma-cocina-bilbao.html">Reforma de Cocina en Bilbao - Guía Definitiva 2026</a>
+  <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto Reforma Cocina Bilbao - Precios 2026</a>
+  </div>
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -114,7 +118,7 @@ priceTables: 0
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -159,11 +163,15 @@ priceTables: 0
   <h3>Acero inoxidable: vuelta al profesional</h3>
   <p>El acero inoxidable ha vuelto a las cocinas bilbainas con fuerza. No como remate de una zona de trabajo puntual, sino como protagonista: frentes de armario en acero, encimeras completas o islas con bancada de acero. Es un material profesional por excelencia - todos los restaurantes de calidad lo usan - que en casa aporta durabilidad, higiene y una estética contemporánea muy valorada. Eso sí, se marcan las huellas dactilares y los arañazos, lo que requiere un cierta predisposición al mantenimiento visual constante.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Guía de materiales</span>
+  <a href="materiales-cocina-bilbao.html">Materiales Cocina Bilbao - Guía Completa de Calidades</a>
+  <a href="precio-m2-reforma-cocina-bilbao.html">Precio m² Reforma Cocina Bilbao 2026</a>
+  </div>
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -185,7 +193,7 @@ priceTables: 0
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -207,7 +215,7 @@ priceTables: 0
 
   <div class="bilbao-divider">
   <span class="bilbao-divider-line"></span>
-  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+  <svg class="bilbao-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
   <span class="bilbao-divider-line"></span>
   </div>
 
@@ -252,12 +260,15 @@ priceTables: 0
 
   <p>Los <strong>tonos neutros</strong> (blanco cálido, gris perla, beige arena) dominan en frentes de armario y paredes, creando un fondo atemporal que permite cambiar accesorios y textiles con las temporadas sin necesidad de reforma. Los <strong>verdes nature</strong> - salvia, musgo, bosque - ganan espacio en armarios, paredes de acento y textiles (manteles, cortinas, alfombras de cocina). Los <strong>azules apagados</strong> (denim, celeste, añil diluido) aportan calma y frescura, especialmente en combinación con madera clara y blancos. Y el <strong>negro mate</strong> se consolida como color de diseño para frontales de armario en cocinas de estilo industrial o contemporáneo.</p>
 
-  
+  <div class="in-content-cta">
+  <span class="in-content-cta-label">📖 Evitar errores</span>
+  <a href="errores-reforma-cocina-bilbao.html">Errores Reforma Cocina Bilbao - Los 10 Fallos Más Comunes</a>
+  </div>
 
   <div class="article-cta">
   <h3>¿Ya tienes en mente cómo quieres tu cocina?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo en menos de 2 minutos.</p>
-  <a href="../calculadora/cocina-bilbao.html" class="btn">Calcular presupuesto gratis -&gt;</a>
+  <a href="../calculadora/cocina-bilbao.html" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -294,12 +305,11 @@ priceTables: 0
   </div>
   </div>
 
-  <!-- CTA Axonflow -->
   <div class="bg-gradient-to-r from-[#C45C3E] to-[#8A3A28] rounded-2xl p-8 text-white text-center my-12">
   <h3 class="text-2xl font-bold mb-4">¿Quieres un análisis personalizado de tu reforma?</h3>
   <p class="mb-6 text-blue-100">Recibe un estudio gratuito de tu proyecto de cocina con recomendaciones específicas para Bilbao.</p>
-  <a href="https://axonflow.es/contacto" class="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition">Solicitar Análisis Gratuito -&gt;</a>
+  <a href="https://axonflow.es/contacto" class="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition">Solicitar Análisis Gratuito -></a>
   <p class="mt-4 text-sm text-blue-200">Respuesta en menos de 24h · Sin compromiso</p>
   </div>
 
-  
+  </div>
