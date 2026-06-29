@@ -8,12 +8,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
-const posts = await getCollection('blog');
-const sortedPosts = posts.sort((a, b) => {
-  const dateA = new Date(a.data?.date || 0).getTime();
-  const dateB = new Date(b.data?.date || 0).getTime();
-  return dateB - dateA;
-});
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => {
+    const slug = p.slug || p.id || '';
+    return !slug.endsWith('-donostia') && !slug.endsWith('-vitoria');
+  })
+  .sort((a, b) => {
+    const dateA = new Date(a.data?.date || 0).getTime();
+    const dateB = new Date(b.data?.date || 0).getTime();
+    return dateB - dateA;
+  });
 
 // Group by category
 const categories = [...new Set(posts.map((p) => {
@@ -78,7 +83,7 @@ const totalCTAs = posts.reduce((sum, p) => {
 
       {/* Posts grid */}
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
-        {sortedPosts.map((post) => {
+        {posts.map((post) => {
           const d = post.data || {};
           const title = d.title || 'Artículo';
           const description = d.description;
