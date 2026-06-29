@@ -1218,6 +1218,9 @@
   border-radius: var(--radius-button);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
 }
 .empresa-contact-btn--phone {
   background: var(--color-terracota);
@@ -1303,6 +1306,8 @@
   color: var(--color-grafito);
   font-weight: 500;
   line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .empresa-info-card-value a {
   color: var(--color-terracota);
