@@ -170,6 +170,73 @@ export const PRICE_DATA = {
 };
 
 // ============================================================
+// REGIONAL PRICE OVERRIDES
+// ============================================================
+
+const REGIONAL_SCOPE: Record<string, typeof PRICE_DATA.reformScope> = {
+  donostia: {
+    basic:    { label: 'Reforma básica',   minPerSqm: 600, maxPerSqm: 750, basePerSqm: 675 },
+    medium:   { label: 'Reforma media',   minPerSqm: 750, maxPerSqm: 1000, basePerSqm: 875 },
+    integral: { label: 'Reforma integral', minPerSqm: 1000, maxPerSqm: 1400, basePerSqm: 1200 },
+    luxury:   { label: 'Reforma premium',  minPerSqm: 1400, maxPerSqm: 1700, basePerSqm: 1550 },
+  },
+  vitoria: {
+    basic:    { label: 'Reforma básica',   minPerSqm: 500, maxPerSqm: 650, basePerSqm: 575 },
+    medium:   { label: 'Reforma media',   minPerSqm: 650, maxPerSqm: 900, basePerSqm: 775 },
+    integral: { label: 'Reforma integral', minPerSqm: 850, maxPerSqm: 1200, basePerSqm: 1025 },
+    luxury:   { label: 'Reforma premium',  minPerSqm: 1200, maxPerSqm: 1500, basePerSqm: 1350 },
+  },
+};
+
+const REGIONAL_ROOM_RANGES = {
+  donostia: {
+    bathroom: { economic: { min: 4000, max: 7000 }, medium: { min: 7000, max: 10000 }, premium: { min: 10000, max: 14000 } },
+    kitchen:  { economic: { min: 6000, max: 10000 }, medium: { min: 10000, max: 15000 }, premium: { min: 15000, max: 18000 } },
+  },
+  vitoria: {
+    bathroom: { economic: { min: 3500, max: 6000 }, medium: { min: 6000, max: 9000 }, premium: { min: 9000, max: 13000 } },
+    kitchen:  { economic: { min: 5500, max: 9000 }, medium: { min: 9000, max: 14000 }, premium: { min: 14000, max: 17000 } },
+  },
+};
+
+const REGIONAL_EXTRAS: Record<string, typeof PRICE_DATA.extras> = {
+  donostia: {
+    windows:      { label: 'Ventanas PVC',      type: 'per-unit',     defaultQty: 4, min: 400,  max: 800,  perSqmMin: 0, perSqmMax: 0 },
+    terrace:      { label: 'Terraza/Balcón',    type: 'per-sqm',      defaultQty: 0, min: 300,  max: 600,  perSqmMin: 0, perSqmMax: 0 },
+    radiantFloor: { label: 'Suelo radiante',   type: 'per-sqm',      defaultQty: 0, min: 80,   max: 150,  perSqmMin: 0, perSqmMax: 0 },
+    domotics:     { label: 'Domótica',         type: 'fixed',         defaultQty: 0, min: 1200, max: 3500, perSqmMin: 0, perSqmMax: 0 },
+    aerothermia:  { label: 'Aerotermia',       type: 'fixed',         defaultQty: 0, min: 5000, max: 11000, perSqmMin: 0, perSqmMax: 0 },
+  },
+  vitoria: {
+    windows:      { label: 'Ventanas PVC',     type: 'per-unit',    defaultQty: 4, min: 350,  max: 700,  perSqmMin: 0, perSqmMax: 0 },
+    terrace:      { label: 'Terraza/Balcón',   type: 'per-sqm',     defaultQty: 0, min: 250,  max: 550,  perSqmMin: 0, perSqmMax: 0 },
+    radiantFloor: { label: 'Suelo radiante',   type: 'per-sqm',     defaultQty: 0, min: 70,   max: 140,  perSqmMin: 0, perSqmMax: 0 },
+    domotics:     { label: 'Domótica',         type: 'fixed',       defaultQty: 0, min: 1000, max: 3000, perSqmMin: 0, perSqmMax: 0 },
+    aerothermia:  { label: 'Aerotermia',       type: 'fixed',       defaultQty: 0, min: 4500, max: 10000, perSqmMin: 0, perSqmMax: 0 },
+  },
+};
+
+export function setRegion(city: string): void {
+  const scope = REGIONAL_SCOPE[city];
+  const rooms = REGIONAL_ROOM_RANGES[city];
+  const extras = REGIONAL_EXTRAS[city];
+  if (!scope) return;
+  // Mutate PRICE_DATA in-place so all existing references pick it up
+  Object.assign(PRICE_DATA.reformScope, scope);
+  if (rooms) {
+    if (rooms.bathroom) Object.assign(PRICE_DATA.roomQualityRanges.bathroom, rooms.bathroom);
+    if (rooms.kitchen) Object.assign(PRICE_DATA.roomQualityRanges.kitchen, rooms.kitchen);
+  }
+  if (extras) {
+    Object.keys(extras).forEach((k) => {
+      if (PRICE_DATA.extras[k as keyof typeof PRICE_DATA.extras]) {
+        Object.assign(PRICE_DATA.extras[k as keyof typeof PRICE_DATA.extras], extras[k as keyof typeof extras]);
+      }
+    });
+  }
+}
+
+// ============================================================
 // EXTRAS CALCULATION
 // ============================================================
 

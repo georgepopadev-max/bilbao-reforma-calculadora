@@ -13,6 +13,7 @@ import {
   calculateByRooms,
   validateStep,
   formatCurrency,
+  setRegion,
 } from './pricing.js';
 import {
   injectBarrioBadge,
@@ -371,4 +372,5 @@ export {
   downloadPDF,
   requestQuotes,
   init,
+  setRegion,
 };

@@ -138,7 +138,7 @@ import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
           <div class="type-card card" data-reform="kitchen" role="button" tabindex="0" aria-pressed="false">
             <div class="card-icon">🍳</div>
             <div class="card-title">Cocina</div>
-            <div class="card-desc">desde 8.000 €</div>
+            <div class="card-desc">desde 6.000 €</div>
           </div>
         </div>
 
@@ -424,6 +424,7 @@ import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
 
 <script>
   import BilbaoCalc from '../../../scripts/calculator/core.ts';
+  BilbaoCalc.setRegion('donostia');
   BilbaoCalc.init();
 
   // ── Scope cards (step 1) ─────────────────────────────────────────────────
