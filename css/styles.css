@@ -437,12 +437,19 @@ p {
    ============================================ */
 .reform-types-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 480px) {
+  .reform-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
   .reform-types-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -524,7 +531,7 @@ p {
 
 .scope-cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.75rem;
 }
 
@@ -681,11 +688,18 @@ p {
 
 .type-cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.625rem;
 }
 
 @media (min-width: 480px) {
+  .type-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
   .type-cards-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
@@ -815,8 +829,9 @@ p {
 
 .meters-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
+  margin-top: -18px;
   border-radius: 50%;
   background: var(--color-terracota);
   cursor: pointer;
@@ -829,8 +844,9 @@ p {
 }
 
 .meters-slider::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
+  margin-top: -18px;
   border-radius: 50%;
   background: var(--color-terracota);
   cursor: pointer;
@@ -1083,7 +1099,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .extras-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3464,6 +3480,7 @@ a.hero-cta-primary {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+/* TODO: handled by Lote C — sidebar 1fr 300px needs mobile collapse at 640px */
 @media (min-width: 1024px) {
   .article-layout {
     grid-template-columns: 1fr 300px;
