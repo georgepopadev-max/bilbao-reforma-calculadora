@@ -1,22 +1,41 @@
-h1 count verification (grep -o "<h1" | wc -l) — all pages have EXACTLY 1:
+h1 count verification (grep -o "<h1" | wc -l) — ALL pages = 1:
 
 /calculadora/bano-bilbao.html: 1
 /calculadora/cocina-bilbao.html: 1
 /calculadora/integral-bilbao.html: 1
 /calculadora/pintura-bilbao.html: 1
 /calculadora/suelo-bilbao.html: 1
-/calculadora/ (selector index): 1
+/calculadora/ (selector): 1
 /donostia/calculadora/: 1
 /vitoria/calculadora/: 1
 
-Step h1 → h2 changes:
-- bano-bilbao.astro: 6 h1 → h2 (steps 1–6)
-/donostia/calculadora/index.astro: 5 h1 → h2 (steps 1–5) + 1 result h1 → h2 = 6 total
-/vitoria/calculadora/index.astro: 5 h1 → h2 (steps 1–5) + 1 result h1 → h2 = 6 total
-- cocina-bilbao.astro: 6 h1 → h2
-- integral-bilbao.astro: 6 h1 → h2
-- pintura-bilbao.astro: 6 h1 → h2
-- suelo-bilbao.astro: 6 h1 → h2
+--- h1 → h2 changes ---
+bano-bilbao.astro: 6 h1 (steps 1–6) → h2
+cocina-bilbao.astro: 6 h1 (steps 1–6) → h2
+integral-bilbao.astro: 6 h1 (steps 1–6) → h2
+pintura-bilbao.astro: 6 h1 (steps 1–6) → h2
+suelo-bilbao.astro: 6 h1 (steps 1–6) → h2
+donostia/calculadora/index.astro: 5 h1 (steps 1–5) + result h1 → h2 = 6 total
+vitoria/calculadora/index.astro: 5 h1 (steps 1–5) + result h1 → h2 = 6 total
 
-Button overflow fix (T-UI-1.4):
-- Calculator.astro: added `overflow: hidden` to `.meters-presets` grid container
+--- page-level h1 (kept as h1) ---
+bano-bilbao.astro: <h1>Reforma de Baño en Bilbao: presupuestos desde 2.500 € hasta 12.000 €</h1>
+cocina-bilbao.astro: <h1>Reforma de Cocina en Bilbao: presupuestos desde 5.000 € hasta 16.000 €</h1>
+integral-bilbao.astro: <h1>Reforma Integral en Bilbao: desde 700 €/m²</h1>
+pintura-bilbao.astro: <h1>Pintura de Piso en Bilbao: desde 8 €/m²</h1>
+suelo-bilbao.astro: <h1>Cambio de Suelo en Bilbao: desde 25 €/m²</h1>
+donostia/calculadora/index.astro: <h1>Calculadora de Reformas en Donostia 2026</h1>
+vitoria/calculadora/index.astro: <h1>Calculadora de Reformas en Vitoria-Gasteiz 2026</h1>
+selector (calculadora/index.astro): <h1>Calculadora de Reformas en Bilbao</h1>
+
+--- T-UI-1.4 button overflow fix ---
+Calculator.astro: +1 line `overflow: hidden` in `.meters-presets` grid
+
+--- StepFinal h1 → h2 ---
+StepFinal.astro: <h1 class="final-title"> → <h2 class="final-title">
+
+--- screenshots ---
+preset-bano-master-1280.png: 1280x800 desktop preset buttons (4th visible)
+/preset-bano-master-375.png: 375x812 mobile preset buttons
+
+Screenshots evidence: reports/screenshots/lote-c-after/
