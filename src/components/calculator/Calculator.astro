@@ -4,9 +4,11 @@ export interface Props {
   city: 'bilbao' | 'donostia' | 'vitoria';
   calculatorType: 'bano' | 'cocina' | 'integral' | 'pintura' | 'suelo';
   minPrice?: number;
+  // Override step count for SSR (avoids 'de 7' flicker on 6-step calculators)
+  actualStepCount?: number;
 }
 
-const { title, city, calculatorType, minPrice } = Astro.props;
+const { title, city, calculatorType, minPrice, actualStepCount } = Astro.props;
 
 const cityName = city === 'bilbao' ? 'Bilbao' : city === 'donostia' ? 'Donostia' : 'Vitoria-Gasteiz';
 const calcLabel = calculatorType === 'bano' ? 'reforma de baño'
@@ -16,21 +18,22 @@ const calcLabel = calculatorType === 'bano' ? 'reforma de baño'
   : 'cambio de suelo';
 
 const stepLabels: Record<string, string[]> = {
-  bano:     ['Metros', 'Ducha/Bañera', 'Revestimiento', 'Sanitarios', 'Suelo', 'Extras', 'Edificio', 'Resultado'],
-  cocina:   ['Metros', 'Distribución', 'Muebles', 'Encimera', 'Electrodomésticos', 'Suelo', 'Extras', 'Resultado'],
-  integral: ['Metros', 'Estado', 'Calidad', 'Distribución', 'Instalaciones', 'Acabados', 'Extras', 'Resultado'],
-  pintura:  ['Metros', 'Paredes', 'Techos', 'Tipo pintura', 'Carpintería', 'Estado', 'Extras', 'Resultado'],
-  suelo:    ['Metros', 'Estado', 'Tipo suelo', 'Material', 'Mano obra', 'Retirada', 'Extras', 'Resultado'],
+  bano:     ['Metros', 'Ducha/Bañera', 'Revestimiento', 'Sanitarios', 'Suelo', 'Extras', 'Edificio'],
+  cocina:   ['Metros', 'Distribución', 'Muebles', 'Encimera', 'Electrodomésticos', 'Suelo', 'Extras'],
+  integral: ['Metros', 'Estado', 'Calidad', 'Distribución', 'Instalaciones', 'Acabados', 'Extras'],
+  pintura:  ['Metros', 'Paredes', 'Techos', 'Tipo pintura', 'Carpintería', 'Estado', 'Extras'],
+  suelo:    ['Metros', 'Estado', 'Tipo suelo', 'Material', 'Mano obra', 'Retirada', 'Extras'],
 };
 
 const labels = stepLabels[calculatorType] || stepLabels.integral;
+const stepCount = actualStepCount ?? labels.length;
 ---
 
 <div class="calculator-wizard" data-calculator-type={calculatorType} data-city={city}>
   <!-- Progress bar -->
-  <div class="progress-bar-container" id="progressBar" role="progressbar" aria-valuemin={1} aria-valuemax={labels.length - 1} aria-valuenow={1} aria-live="polite">
+  <div class="progress-bar-container" id="progressBar" role="progressbar" aria-valuemin={1} aria-valuemax={stepCount} aria-valuenow={1} aria-live="polite">
     <div class="progress-bar-header">
-      <span class="progress-bar-text" id="progressBarText">Paso 1 de {labels.length - 1}</span>
+      <span class="progress-bar-text" id="progressBarText">Paso 1 de {stepCount}</span>
       <span class="progress-bar-pct" id="progressBarPct">0%</span>
     </div>
     <div class="progress-bar-track">
@@ -784,9 +787,10 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     const progressBarPct = document.getElementById('progressBarPct');
     const progressBarFill = document.getElementById('progressBarFill');
 
+    // Count real wizard steps dynamically (works for both 7-step Bilbao and 6-step Donostia/Vitoria)
+    const wizardSteps = document.querySelectorAll('.wizard-step');
     const stepperSteps = document.querySelectorAll('.stepper-step');
-    // Total real steps (exclude 'Resultado' from step count - it's shown after last input)
-    const totalSteps = stepperSteps.length - 1;
+    const totalSteps = wizardSteps.length || stepperSteps.length;
 
     // ---- Progress bar update ----
     function updateProgressBar(currentStep: number) {
