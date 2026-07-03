@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const barrio = { name: 'Begoña', slug: 'begona', multiplicador: 1.05, agePreset: 'moderate', description: 'Begoña es un barrio residencial de pendiente pronunciada en Bilbao, con edificios de los años 1950 a 1970.物价 moderate con buena relación calidad-precio en reformas. La antigüedad de las construcciones implica renovaciones frecuentes de fontanería y electricidad. El multiplicador del 5% refleja un barrio semicéntrico sin las complicaciones del Casco Viejo.' };
+const schema = { '@context': 'https://schema.org', '@type': 'Place', name: 'Begoña Bilbao', geo: { '@type': 'GeoCoordinates', latitude: 43.2560, longitude: -2.9110 }, description: barrio.description };
+const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.bilbaoreforma.es/' }, { '@type': 'ListItem', position: 2, name: 'Barrios', item: 'https://www.bilbaoreforma.es/barrios/' }, { '@type': 'ListItem', position: 3, name: 'Begoña', item: 'https://www.bilbaoreforma.es/barrios/reforma-begona.html' }] };
+---
+<BaseLayout title={`Reformas Begoña Bilbao 2026 | Calculadora`} description={`Calcula tu reforma en Begoña Bilbao 2026. Multiplicador ×1.05. Empresas verificadas con experiencia en el barrio. Gratis.`} canonical={`https://www.bilbaoreforma.es/barrios/reforma-begona.html`} ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg" ogImageAlt="Reformas Begoña Bilbao">
+  <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify(schema)} /><script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} /></Fragment>
+  <header class="site-header"><div class="header-container"><a href="/index.html" class="header-logo"><svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span class="header-logo-text">Bilbao Reforma</span></a><nav class="header-nav"><a href="/calculadora/index.html" class="header-nav-link">Calculadora</a><a href="/blog/index.html" class="header-nav-link">Blog</a><a href="/empresas/index.html" class="header-nav-link">Empresas</a><a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a></nav></div></header>
+  <main id="main-content">
+    <section style="max-width:700px;margin:4rem auto;padding:0 1.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol style="display:flex;gap:0.5rem;list-style:none;padding:0;margin:0 0 2rem;font-size:0.9rem;color:#888;"><li><a href="/index.html">Bilbao Reforma</a></li><li>›</li><li><a href="/barrios/">Barrios</a></li><li>›</li><li aria-current="page">Begoña</li></ol></nav>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:1rem;">Reformas en Begoña, Bilbao</h1>
+      <div style="background:#7D8B6A;color:white;display:inline-block;padding:0.5rem 1rem;border-radius:20px;font-size:1.1rem;margin-bottom:1.5rem;font-weight:600;">×1.05 sobre precio base</div>
+      <p style="font-size:1.1rem;line-height:1.8;color:#333;margin-bottom:1.5rem;">{barrio.description}</p>
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">
+        <h2 style="font-size:1.2rem;margin-bottom:0.75rem;">Datos clave de Begoña</h2>
+        <ul style="color:#555;line-height:1.8;list-style:none;padding:0;margin:0">
+          <li><strong>Precio medio vivienda:</strong> 3.118 €/m² (Idealista ene 2026)</li>
+          <li><strong>Antigüedad típica edificios:</strong> 1950–1970</li>
+          <li><strong>Tipo reforma más demandada:</strong> Reforma integral + fontanería</li>
+          <li><strong>Multiplicador:</strong> ×1.05</li>
+        </ul>
+      </div>
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">
+        <h2 style="font-size:1.2rem;margin-bottom:0.75rem;">Empresas que trabajan en Begoña</h2>
+        <p style="color:#666;margin-bottom:1rem;">Empresas con experiencia en reformas en el barrio de Begoña:</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem">
+          <li><a href="/empresas/vascol-reformas.html" style="color:#C45C3E;font-weight:600;text-decoration:none">Vascol Reformas →</a> — Reformas generales en Bilbao</li>
+          <li><a href="/empresas/reformas-zunzunegui.html" style="color:#C45C3E;font-weight:600;text-decoration:none">Reformas Zunzunegui →</a> — Fontanería y reformas integrales</li>
+          <li><a href="/empresas/rb-interiores.html" style="color:#C45C3E;font-weight:600;text-decoration:none">RB Interiores →</a> — Interiorismo y reformas de vivienda</li>
+        </ul>
+      </div>
+      <a href="/calculadora/index.html?barrio=begona" style="display:inline-block;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Calcular en Begoña →</a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-bottom"><p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p></div></div></footer>
+</BaseLayout>

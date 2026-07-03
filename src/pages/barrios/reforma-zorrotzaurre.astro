@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const barrio = { name: 'Zorrotzaurre', slug: 'zorrotzaurre', multiplicador: 1.25, agePreset: 'mixed', description: 'Zorrotzaurre es la isla urbana en transformación de Bilbao, donde antiguos edificios industriales se convierten en lofts y viviendas modernas. El multiplicador del 25% es el más alto de todos los barrios bilbaínos, reflejo de la alta demanda de reformas premium y loft en una zona en plein desarrollo. Edificios con mezcla de estructura antigua y necesidades modernas.' };
+const schema = { '@context': 'https://schema.org', '@type': 'Place', name: 'Zorrotzaurre Bilbao', geo: { '@type': 'GeoCoordinates', latitude: 43.2790, longitude: -2.9620 }, description: barrio.description };
+const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.bilbaoreforma.es/' }, { '@type': 'ListItem', position: 2, name: 'Barrios', item: 'https://www.bilbaoreforma.es/barrios/' }, { '@type': 'ListItem', position: 3, name: 'Zorrotzaurre', item: 'https://www.bilbaoreforma.es/barrios/reforma-zorrotzaurre.html' }] };
+---
+<BaseLayout title={`Reformas Zorrotzaurre Bilbao 2026`} description={`Calcula tu reforma en Zorrotzaurre Bilbao. Multiplicador ×1.25. Reformas loft e integrales en la isla urbana. Empresas verificadas.`} canonical={`https://www.bilbaoreforma.es/barrios/reforma-zorrotzaurre.html`} ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg" ogImageAlt="Reformas Zorrotzaurre Bilbao">
+  <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify(schema)} /><script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} /></Fragment>
+  <header class="site-header"><div class="header-container"><a href="/index.html" class="header-logo"><svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span class="header-logo-text">Bilbao Reforma</span></a><nav class="header-nav"><a href="/calculadora/index.html" class="header-nav-link">Calculadora</a><a href="/blog/index.html" class="header-nav-link">Blog</a><a href="/empresas/index.html" class="header-nav-link">Empresas</a><a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a></nav></div></header>
+  <main id="main-content">
+    <section style="max-width:700px;margin:4rem auto;padding:0 1.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol style="display:flex;gap:0.5rem;list-style:none;padding:0;margin:0 0 2rem;font-size:0.9rem;color:#888;"><li><a href="/index.html">Bilbao Reforma</a></li><li>›</li><li><a href="/barrios/">Barrios</a></li><li>›</li><li aria-current="page">Zorrotzaurre</li></ol></nav>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:1rem;">Reformas en Zorrotzaurre, Bilbao</h1>
+      <div style="background:#7D8B6A;color:white;display:inline-block;padding:0.5rem 1rem;border-radius:20px;font-size:1.1rem;margin-bottom:1.5rem;font-weight:600;">×1.25 sobre precio base</div>
+      <p style="font-size:1.1rem;line-height:1.8;color:#333;margin-bottom:1.5rem;">{barrio.description}</p>
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">
+        <h2 style="font-size:1.2rem;margin-bottom:0.75rem;">Datos clave de Zorrotzaurre</h2>
+        <ul style="color:#555;line-height:1.8;list-style:none;padding:0;margin:0">
+          <li><strong>Precio medio vivienda:</strong> 3.800 €/m² (zona en transformación)</li>
+          <li><strong>Antigüedad típica edificios:</strong> Mix: edificios industriales + nuevos lofts</li>
+          <li><strong>Tipo reforma más demandada:</strong> Reforma loft + reforma integral</li>
+          <li><strong>Multiplicador:</strong> ×1.25</li>
+        </ul>
+      </div>
+      <div style="background:#f9f9f9;padding:1.5rem;border-radius:12px;margin-bottom:1.5rem;">
+        <h2 style="font-size:1.2rem;margin-bottom:0.75rem;">Empresas que trabajan en Zorrotzaurre</h2>
+        <p style="color:#666;margin-bottom:1rem;">Empresas con experiencia en reformas loft e integrales en Zorrotzaurre:</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem">
+          <li><a href="/empresas/raquel-gonzalez-interiorismo.html" style="color:#C45C3E;font-weight:600;text-decoration:none">Raquel González Interiorismo →</a> — Diseño loft y reformas premium</li>
+          <li><a href="/empresas/eraber.html" style="color:#C45C3E;font-weight:600;text-decoration:none">Eraber Reformas →</a> — Reformas integrales en zonas urbanas</li>
+          <li><a href="/empresas/rb-interiores.html" style="color:#C45C3E;font-weight:600;text-decoration:none">RB Interiores →</a> — Interiorismo y reformas de viviendas</li>
+        </ul>
+      </div>
+      <a href="/calculadora/index.html?barrio=zorrotzaurre" style="display:inline-block;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Calcular en Zorrotzaurre →</a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-bottom"><p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p></div></div></footer>
+</BaseLayout>
