@@ -1,6 +1,6 @@
 ---
-title: "Suelos Donostia: Guía Parqué y Porcelánico"
-description: "Guía completa para elegir suelo en Donostia: parqué, porcelánico y vinílico. Comparativa de precios, pros, contras y cuál es mejor para cada estancia."
+title: "Cambiar Suelo Donostia 2026"
+description: "Cambiar suelo en Donostia: precios 2026 por m², parqué, porcelánico y vinílico."
 canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-donostia.html"
 city: donostia
 category: Acabados

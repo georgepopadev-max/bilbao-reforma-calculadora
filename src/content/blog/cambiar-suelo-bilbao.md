@@ -1,6 +1,6 @@
 ---
-title: "Cambiar Suelo Bilbao 2026: Guía de Precios"
-description: "Guía completa para elegir suelo en Bilbao: parqué, porcelánico y vinílico. Comparativa de precios, pros, contras y cuál es mejor para cada estancia."
+title: "Cambiar Suelo Bilbao 2026 | Precios"
+description: "Cambiar suelo en Bilbao: precios reales 2026 por m², tipos de material y empresas."
 canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-bilbao.html"
 date: "15 junio 2026"
 readTime: "12 min"

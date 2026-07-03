@@ -1,6 +1,6 @@
 ---
-title: "Suelo Radiante vs Calefacción 2026"
-description: "Suelo radiante vs calefacción tradicional: comparativa completa de precios, consumo, mantenimiento y ahorro energético. ¿Cuál conviene en Bilbao en 2026?"
+title: "Suelo Radiante vs Radiadores Bilbao"
+description: "Suelo radiante vs radiadores en Bilbao: comparativa real, precio, eficiencia y cuándo conviene."
 canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion.html"
 date: "20 enero 2025"
 category: "suelo"

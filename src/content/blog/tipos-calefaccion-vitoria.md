@@ -1,6 +1,6 @@
 ---
-title: "Calefacción Vitoria 2026: Tipos y Costes"
-description: "Compara los mejores tipos de calefacción en Vitoria 2026: gas natural, propano, aerotermia, suelo radiante y radiadores. Costes de instalación, consumo y qué sistema conviene según tu edificio."
+title: "Tipos Calefacción Vitoria 2026"
+description: "Tipos de calefacción en Vitoria 2026: gas natural, aerotermia, suelo radiante y biomasa."
 canonical: https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria.html
 city: vitoria
 category: Instalaciones

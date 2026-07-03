@@ -1,6 +1,6 @@
 ---
-title: "Aerotermia Bilbao 2026: Ventajas"
-description: "Aerotermia en Bilbao y Bizkaia 2026: qué es, cómo funciona, ventajas frente a gasoil y gas natural, y todas las subvenciones disponibles en el País Vasco."
+title: "Aerotermia Bilbao 2026 | Ventajas y Precio"
+description: "Aerotermia en Bilbao: ventajas, precio 12.000-18.000€ y subvenciones 2026 para tu reforma."
 canonical: "https://www.bilbaoreforma.es/blog/aerotermia-bilbao-ventajas.html"
 category: "subvenciones"
 city: "bilbao"

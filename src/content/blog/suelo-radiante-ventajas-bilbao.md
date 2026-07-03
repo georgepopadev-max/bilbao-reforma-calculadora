@@ -1,6 +1,6 @@
 ---
-title: "Suelo Radiante Bilbao 2026: 7 Ventajas"
-description: "¿Por qué instalar suelo radiante? 7 razones que te sorprenderán. Descubre las ventajas del suelo radiante en Bilbao: ahorro energético, confort térmico, compatible con aerotermia y más."
+title: "Suelo Radiante Bilbao 2026 | Guía + Precio"
+description: "Suelo radiante en Bilbao: precio 70-100€/m², ventajas, instalación y subvenciones 2026."
 canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao.html"
 date: "15 enero 2025"
 category: "suelo"

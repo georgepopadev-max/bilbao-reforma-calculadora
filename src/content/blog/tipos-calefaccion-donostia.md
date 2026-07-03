@@ -1,7 +1,7 @@
 ---
 
-title: "Calefacción Donostia 2026: Tipos y Costes"
-description: "Compara los mejores tipos de calefacción en Donostia 2026: gas natural, propano, aerotermia, suelo radiante y radiadores. Costes de instalación, consumo y qué sistema conviene según tu edificio."
+title: "Tipos Calefacción Donostia 2026"
+description: "Tipos de calefacción en Donostia 2026: gas, aerotermia, suelo radiante. Compara precios."
 canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-donostia.html"
 city: donostia
 category: Instalaciones

@@ -1,6 +1,6 @@
 ---
-title: "Suelos Vitoria: Guía Parqué y Porcelánico"
-description: "Guía completa para elegir suelo en Vitoria: parqué, porcelánico y vinílico. Comparativa de precios, pros, contras y cuál es mejor para cada estancia en el mercado alavés."
+title: "Cambiar Suelo Vitoria 2026 | Precio"
+description: "Cambiar suelo en Vitoria 2026: precios por m², materiales y empresas locales."
 canonical: https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria.html
 city: vitoria
 category: Acabados

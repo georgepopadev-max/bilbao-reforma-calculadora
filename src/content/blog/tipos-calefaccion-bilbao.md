@@ -1,6 +1,6 @@
 ---
-title: "Tipos de Calefacción Bilbao 2026"
-description: "Compara los mejores tipos de calefacción en Bilbao 2026: gas natural, propano, aerotermia, suelo radiante y radiadores. Costes de instalación, consumo y qué sistema conviene según tu edificio."
+title: "Tipos Calefacción Bilbao 2026 | Guía"
+description: "Tipos de calefacción en Bilbao 2026: gas, aerotermia, suelo radiante, biomasa. Compara precios."
 canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao.html"
 category: "calefaccion"
 city: "bilbao"
