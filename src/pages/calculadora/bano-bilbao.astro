@@ -447,7 +447,7 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
 
   ['no_cambiar', 'azulejo_parcial', 'azulejo_completo', 'gresite'].forEach(val => {
     document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
-      el.addEventListener('click', () => selectOption('revestimientoOptions', 'revéstimiento', val));
+      el.addEventListener('click', () => selectOption('revestimientoOptions', 'revestimiento', val));
     });
   });
 
