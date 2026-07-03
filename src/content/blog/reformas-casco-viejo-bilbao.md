@@ -1,6 +1,6 @@
 ---
 title: "Reformas Casco Viejo Bilbao 2026"
-description: "Reforma casco viejo Bilbao 2026: licencias de Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas en Casco Viejo."
+description: "Reforma Casco Viejo Bilbao 2026: licencias Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao.html"
 date: "6 abril 2025"
 category: "presupuesto"

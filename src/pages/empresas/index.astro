@@ -13,7 +13,7 @@ const empresas = [
 ];
 ---
 
-<BaseLayout title="Empresas de Reformas en Bilbao | Bilbao Reforma" description="Directorio de empresas de reformas verificadas en Bilbao y Bizkaia." canonical="https://www.bilbaoreforma.es/empresas/index.html">
+<BaseLayout title="Empresas Reformas Bilbao 2026 | Verificadas" description="7 empresas de reformas verificadas en Bilbao y Bizkaia con reseñas, servicios y contacto. Directorio gratuito actualizado 2026." canonical="https://www.bilbaoreforma.es/empresas/index.html">
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Empresas de reformas en Bilbao', itemListElement: empresas.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: `https://www.bilbaoreforma.es/empresas/${e.slug}.html` })) })} />
   </Fragment>

@@ -1,6 +1,6 @@
 ---
 title: "Licencia Reforma Bilbao 2026"
-description: "Guía completa de licencias de obra en Bilbao y Bizkaia 2026: tipos de licencia según obra, precios municipales, plazos de tramitación y documentación necesaria."
+description: "Licencias de obra en Bilbao y Bizkaia 2026: tipos, precios municipales, plazos y documentación necesaria para tu reforma."
 canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao.html"
 category: "presupuesto"
 city: "bilbao"

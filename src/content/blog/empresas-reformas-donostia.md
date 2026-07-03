@@ -1,5 +1,5 @@
 ---
-title: "Empresas Reformas Donostia 2026: Guía Local"
+title: "Empresas Reformas Donostia 2026"
 description: "Empresas de reformas en Donostia-San Sebastián 2026: guía local con las mejores empresas, precios medios y consejos para elegir sin errores. Actualizado."
 canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-donostia.html"
 category: "empresas"
