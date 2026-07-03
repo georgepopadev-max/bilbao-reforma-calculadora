@@ -16,5 +16,8 @@
     "jspdf": "^2.5.2",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
   }
 }

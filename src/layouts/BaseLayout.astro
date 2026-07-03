@@ -101,26 +101,6 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
 
   <slot />
 
-  <!-- Mobile menu toggle script -->
-  <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
-      var toggle = document.getElementById('mobileToggle');
-      if (toggle) {
-        toggle.addEventListener('click', function() {
-          var menu = document.getElementById('mobileMenu');
-          var isOpen = menu.classList.toggle('open');
-          toggle.setAttribute('aria-expanded', isOpen);
-        });
-      }
-      document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
-        link.addEventListener('click', function() {
-          var menu = document.getElementById('mobileMenu');
-          var btn = document.getElementById('mobileToggle');
-          if (menu) menu.classList.remove('open');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
-        });
-      });
-    });
-  </script>
+  <!-- Mobile menu: handled by src/scripts/header-mobile.js -->
 </body>
 </html>

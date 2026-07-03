@@ -10,15 +10,38 @@ const cities = [
   { id: 'donostia', name: 'Donostia', subpath: 'donostia' },
   { id: 'vitoria', name: 'Vitoria', subpath: 'vitoria' },
 ];
+
+// Build href for each city
+function cityHref(cityId: string, subpath: string): string {
+  if (cityId === currentCity) return '#';
+  if (!subpath) return `${depth}index.html`;
+  return `${depth}${subpath}/index.html`;
+}
 ---
+
 <div class="city-switcher">
-  <span class="city-switcher-label">Ciudad:</span>
-  <div class="city-switcher-buttons">
+  <!-- Mobile: native select (<768px) -->
+  <label class="city-switcher-select-wrap" for="citySelect">
+    <span class="sr-only">Seleccionar ciudad</span>
+    <select class="city-switcher-select" id="citySelect">
+      {cities.map(city => (
+        <option value={cityHref(city.id, city.subpath)} selected={city.id === currentCity}>
+          {city.name}
+        </option>
+      ))}
+    </select>
+    <svg class="city-select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </label>
+
+  <!-- Desktop: pill buttons (>=768px) -->
+  <div class="city-switcher-buttons" role="group" aria-label="Cambiar ciudad">
     {cities.map(city => (
       <a
-        href={city.subpath ? `${depth}${city.subpath}/index.html` : `${depth}index.html`}
-        class={`city-btn ${currentCity === city.id ? 'city-btn-active' : ''}`}
-        aria-current={currentCity === city.id ? 'page' : undefined}
+        href={cityHref(city.id, city.subpath)}
+        class={`city-btn ${city.id === currentCity ? 'city-btn-active' : ''}`}
+        aria-current={city.id === currentCity ? 'page' : undefined}
       >
         {city.name}
       </a>
@@ -26,23 +49,78 @@ const cities = [
   </div>
 </div>
 
+<script>
+  // Navigate on select change
+  const select = document.getElementById('citySelect') as HTMLSelectElement | null;
+  select?.addEventListener('change', () => {
+    const value = select.value;
+    if (value && value !== '#') {
+      window.location.href = value;
+    }
+  });
+</script>
+
 <style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .city-switcher {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     font-size: 0.8125rem;
   }
-  .city-switcher-label {
-    color: var(--color-gris);
-    font-weight: 500;
-  }
-  .city-switcher-buttons {
+
+  /* ─── Mobile select (<768px) ─── */
+  .city-switcher-select-wrap {
+    position: relative;
     display: flex;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .city-switcher-select-wrap { display: none; }
+  }
+  .city-switcher-select {
+    appearance: none;
+    background: var(--color-crema);
+    border: 1px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    color: var(--color-grafito);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    cursor: pointer;
+    min-width: 120px;
+    min-height: 44px;
+  }
+  .city-select-chevron {
+    position: absolute;
+    right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    color: var(--color-gris);
+    pointer-events: none;
+  }
+
+  /* ─── Desktop buttons (>=768px) ─── */
+  .city-switcher-buttons {
+    display: none;
     gap: 0.375rem;
   }
+  @media (min-width: 768px) {
+    .city-switcher-buttons { display: flex; }
+  }
   .city-btn {
-    padding: 0.25rem 0.625rem;
+    padding: 0.375rem 0.75rem;
     border-radius: var(--radius-pill);
     text-decoration: none;
     font-weight: 500;
@@ -51,6 +129,12 @@ const cities = [
     border: 1px solid var(--color-beige);
     transition: all 0.2s;
     font-size: 0.75rem;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .city-btn:hover {
     color: var(--color-terracota);
@@ -61,5 +145,8 @@ const cities = [
     background: var(--color-terracota);
     color: var(--color-blanco) !important;
     border-color: var(--color-terracota);
+  }
+  .city-btn-active:hover {
+    background: var(--color-terracota-hover);
   }
 </style>

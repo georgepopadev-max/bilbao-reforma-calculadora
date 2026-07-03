@@ -25,13 +25,6 @@ const contactoHref = section === 'root' ? 'contacto.html' : `${depth}contacto.ht
 // Logo always goes to city index
 const cityIndexHref = city === 'bilbao' ? `${depth}index.html` : `${depth}../index.html`;
 
-// City switcher links
-const cities = [
-  { name: 'Bilbao', href: city === 'bilbao' ? '#' : '../index.html', active: city === 'bilbao' },
-  { name: 'Donostia', href: city === 'donostia' ? '#' : '../donostia/index.html', active: city === 'donostia' },
-  { name: 'Vitoria', href: city === 'vitoria' ? '#' : '../vitoria/index.html', active: city === 'vitoria' },
-];
-
 const currentPath = Astro.url.pathname;
 const isBlogActive = currentPath.includes('/blog');
 const isCalcActive = currentPath.includes('/calculadora');
@@ -47,15 +40,18 @@ const isEmpresasActive = currentPath.includes('/empresas');
       </svg>
       <span class="header-logo-text">Bilbao Reforma</span>
     </a>
-    <CitySwitcher currentCity={city} depth={depth} />
-    <nav class="header-nav">
+
+    <!-- Desktop nav: shown on >=768px -->
+    <nav class="header-nav" aria-label="Navegación principal">
       <a href={calcHref} class={`header-nav-link${isCalcActive ? ' header-nav-link-active' : ''}`}>Calculadora</a>
       <a href={blogHref} class={`header-nav-link${isBlogActive ? ' header-nav-link-active' : ''}`}>Blog</a>
       <a href={empresasHref} class={`header-nav-link${isEmpresasActive ? ' header-nav-link-active' : ''}`}>Empresas</a>
       <a href={contactoHref} class="header-nav-link header-nav-link-cta">Contacto</a>
     </nav>
-    <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
-      <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+    <!-- Mobile toggle: shown on <768px -->
+    <button class="header-mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileDrawer">
+      <svg class="header-mobile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -64,26 +60,37 @@ const isEmpresasActive = currentPath.includes('/empresas');
   </div>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <nav class="mobile-nav">
+<!-- Mobile drawer backdrop -->
+<div class="mobile-drawer-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+
+<!-- Mobile drawer -->
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Menú de navegación" aria-hidden="true">
+  <div class="mobile-drawer-header">
+    <span class="mobile-drawer-title">Menú</span>
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-drawer-nav" aria-label="Navegación móvil">
     <a href={calcHref} class="mobile-nav-link">Calculadora</a>
     <a href={blogHref} class="mobile-nav-link">Blog</a>
     <a href={empresasHref} class="mobile-nav-link">Empresas</a>
-    <a href={contactoHref} class="mobile-nav-link">Contacto</a>
+    <a href={contactoHref} class="mobile-nav-link mobile-nav-link-cta">Contacto</a>
   </nav>
-</div>
+  <div class="mobile-drawer-city">
+    <CitySwitcher currentCity={city} depth={depth} />
+  </div>
+</aside>
 
 <script>
-  const toggle = document.getElementById('mobileToggle');
-  const menu = document.getElementById('mobileMenu');
-  toggle?.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    menu?.classList.toggle('open', !expanded);
-  });
+  import '../scripts/header-mobile.js';
 </script>
 
 <style>
+  /* ─── Header base ─── */
   .site-header {
     background: var(--color-blanco);
     border-bottom: 1px solid var(--color-beige);
@@ -99,6 +106,7 @@ const isEmpresasActive = currentPath.includes('/empresas');
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
   }
   .header-logo {
     display: flex;
@@ -106,6 +114,7 @@ const isEmpresasActive = currentPath.includes('/empresas');
     gap: 0.5rem;
     text-decoration: none;
     color: var(--color-grafito);
+    flex-shrink: 0;
   }
   .header-logo-icon {
     width: 28px;
@@ -118,6 +127,8 @@ const isEmpresasActive = currentPath.includes('/empresas');
     font-size: 1.125rem;
     font-weight: 600;
   }
+
+  /* ─── Desktop nav (>=768px) ─── */
   .header-nav {
     display: none;
     gap: 1.5rem;
@@ -133,6 +144,7 @@ const isEmpresasActive = currentPath.includes('/empresas');
     color: var(--color-gris);
     text-decoration: none;
     transition: color 0.2s;
+    white-space: nowrap;
   }
   .header-nav-link:hover { color: var(--color-terracota); text-decoration: none; }
   .header-nav-link-active { color: var(--color-terracota); font-weight: 600; }
@@ -146,31 +158,119 @@ const isEmpresasActive = currentPath.includes('/empresas');
     text-decoration: none;
   }
   .header-nav-link-cta:hover { background: var(--color-terracota-hover); }
+
+  /* ─── Mobile toggle button ─── */
   .header-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem;
     color: var(--color-grafito);
     border-radius: var(--radius-button);
+    flex-shrink: 0;
   }
-  .mobile-menu {
-    display: none;
+  .header-mobile-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ─── Mobile drawer backdrop ─── */
+  .mobile-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .mobile-drawer-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ─── Mobile drawer ─── */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(320px, 85vw);
     background: var(--color-blanco);
-    border-top: 1px solid var(--color-beige);
-    padding: 1rem;
-  }
-  .mobile-menu.open { display: block; }
-  .mobile-nav {
+    z-index: 201;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -4px 0 24px rgba(0,0,0,0.15);
+    overflow-y: auto;
+  }
+  .mobile-drawer.open {
+    transform: translateX(0);
+  }
+
+  .mobile-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--color-beige);
+  }
+  .mobile-drawer-title {
+    font-family: var(--font-playfair);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+  }
+  .mobile-drawer-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-button);
+    color: var(--color-grafito);
+    flex-shrink: 0;
+  }
+  .mobile-drawer-close svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-drawer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.25rem;
+    gap: 0.25rem;
   }
   .mobile-nav-link {
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-grafito);
     text-decoration: none;
-    padding: 0.75rem;
+    padding: 0.875rem 1rem;
     border-radius: var(--radius-button);
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
-  .mobile-nav-link:hover { background: var(--color-crema); text-decoration: none; }
+  .mobile-nav-link:hover { background: var(--color-crema); text-decoration: none; color: var(--color-terracota); }
+  .mobile-nav-link-cta {
+    background: var(--color-terracota);
+    color: var(--color-blanco) !important;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  .mobile-nav-link-cta:hover { background: var(--color-terracota-hover); color: var(--color-blanco); }
+
+  .mobile-drawer-city {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--color-beige);
+    margin-top: auto;
+  }
+
+  /* ─── Old mobile-menu (unused, kept for compatibility) ─── */
+  .mobile-menu { display: none; }
 </style>

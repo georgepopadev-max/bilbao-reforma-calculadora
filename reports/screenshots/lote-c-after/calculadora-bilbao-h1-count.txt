@@ -1,0 +1,11 @@
+h1 count verification (grep -o "<h1" | wc -l):
+/calculadora/bano-bilbao.html: 1
+/calculadora/cocina-bilbao.html: 1
+/calculadora/integral-bilbao.html: 1
+/calculadora/pintura-bilbao.html: 1
+/calculadora/suelo-bilbao.html: 1
+/calculadora/ (selector): 1
+/donostia/calculadora/: 1
+/vitoria/calculadora/: 1
+
+All pages have EXACTLY 1 h1 element (WCAG compliance).
