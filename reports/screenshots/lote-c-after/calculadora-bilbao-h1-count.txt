@@ -1,11 +1,22 @@
-h1 count verification (grep -o "<h1" | wc -l):
+h1 count verification (grep -o "<h1" | wc -l) — all pages have EXACTLY 1:
+
 /calculadora/bano-bilbao.html: 1
 /calculadora/cocina-bilbao.html: 1
 /calculadora/integral-bilbao.html: 1
 /calculadora/pintura-bilbao.html: 1
 /calculadora/suelo-bilbao.html: 1
-/calculadora/ (selector): 1
+/calculadora/ (selector index): 1
 /donostia/calculadora/: 1
 /vitoria/calculadora/: 1
 
-All pages have EXACTLY 1 h1 element (WCAG compliance).
+Step h1 → h2 changes:
+- bano-bilbao.astro: 6 h1 → h2 (steps 1–6)
+/donostia/calculadora/index.astro: 5 h1 → h2 (steps 1–5) + 1 result h1 → h2 = 6 total
+/vitoria/calculadora/index.astro: 5 h1 → h2 (steps 1–5) + 1 result h1 → h2 = 6 total
+- cocina-bilbao.astro: 6 h1 → h2
+- integral-bilbao.astro: 6 h1 → h2
+- pintura-bilbao.astro: 6 h1 → h2
+- suelo-bilbao.astro: 6 h1 → h2
+
+Button overflow fix (T-UI-1.4):
+- Calculator.astro: added `overflow: hidden` to `.meters-presets` grid container
