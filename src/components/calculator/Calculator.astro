@@ -28,9 +28,9 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
 
 <div class="calculator-wizard" data-calculator-type={calculatorType} data-city={city}>
   <!-- Progress bar -->
-  <div class="progress-bar-container" id="progressBar" role="progressbar" aria-valuemin={1} aria-valuemax={labels.length} aria-valuenow={1} aria-live="polite">
+  <div class="progress-bar-container" id="progressBar" role="progressbar" aria-valuemin={1} aria-valuemax={labels.length - 1} aria-valuenow={1} aria-live="polite">
     <div class="progress-bar-header">
-      <span class="progress-bar-text" id="progressBarText">Step 1 de {labels.length}</span>
+      <span class="progress-bar-text" id="progressBarText">Paso 1 de {labels.length - 1}</span>
       <span class="progress-bar-pct" id="progressBarPct">0%</span>
     </div>
     <div class="progress-bar-track">
@@ -785,14 +785,15 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     const progressBarFill = document.getElementById('progressBarFill');
 
     const stepperSteps = document.querySelectorAll('.stepper-step');
-    const totalSteps = stepperSteps.length;
+    // Total real steps (exclude 'Resultado' from step count - it's shown after last input)
+    const totalSteps = stepperSteps.length - 1;
 
     // ---- Progress bar update ----
     function updateProgressBar(currentStep: number) {
       if (!progressBar || !progressBarText || !progressBarPct || !progressBarFill) return;
       const pct = Math.round(((currentStep - 1) / (totalSteps - 1)) * 100);
       progressBar.setAttribute('aria-valuenow', String(currentStep));
-      progressBarText.textContent = `Step ${currentStep} de ${totalSteps}`;
+      progressBarText.textContent = `Paso ${currentStep} de ${totalSteps}`;
       progressBarPct.textContent = `${pct}%`;
       progressBarFill.style.width = `${pct}%`;
     }

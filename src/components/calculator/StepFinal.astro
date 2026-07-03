@@ -172,10 +172,11 @@
   .budget-chart-svg {
     position: relative;
     width: 100%;
-    max-width: 200px;
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
     margin: 0 auto;
   }
-  .budget-chart-svg svg { display: block; }
+  .budget-chart-svg svg { display: block; width: 100%; height: auto; }
   .budget-chart-center {
     position: absolute;
     inset: 0;
@@ -454,7 +455,7 @@
     // Render doughnut SVG
     const budgetDiv = document.getElementById('finalBudget');
     if (budgetDiv) {
-      budgetDiv.innerHTML = generateDoughnutSVG(breakdown, 200);
+      budgetDiv.innerHTML = generateDoughnutSVG(breakdown, 260);
     }
 
     // PDF button
