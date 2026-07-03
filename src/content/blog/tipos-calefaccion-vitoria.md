@@ -108,7 +108,7 @@ Los pisos del Casco Viejo vitoriano, de la Coronación o de la parte alta de San
 
 ### Edificios de los Años 80-90
 
-Edificios del Ensanche, Lakua o对新阿罗萨 que ya cuentan con ciertas medidas de aislamiento. Suelen tener radiadores de aluminio o hierro fundido que pueden aprovecharse con un sistema de aerotermia de baja temperatura.
+Edificios del Ensanche, Lakua o Zabalgana que ya cuentan con ciertas medidas de aislamiento. Suelen tener radiadores de aluminio o hierro fundido que pueden aprovecharse con un sistema de aerotermia de baja temperatura.
 
 **Recomendación:** La aerotermia es la opción más interesante si hay radiadores existentes. Solo necesitarías cambiarlos por modelos de mayor superficie si la potencia no es suficiente.
 

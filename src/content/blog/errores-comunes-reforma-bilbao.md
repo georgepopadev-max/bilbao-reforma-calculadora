@@ -159,7 +159,7 @@ priceTables: 0
 
   <p>Sin embargo, hay matices. En Bilbao, la tipología de vivienda marca mucho. En pisos pequeños de 60-70 m² con un solo baño, <strong>reformar el baño tiene prioridad funcional</strong>: un piso sin baño usable es prácticamente inhabitable. Si solo tienes un baño, no puedes permitirte tenerlo fuera de servicio durante semanas. En cambio, en pisos con dos baños, puedes permitirte priorizar cocina.</p>
 
-  <p>另一个 factor importante: el <strong>coste por metro cuadrado</strong>. Una reforma de cocina media (cambiar muebles, encimera, electrodomésticos) suele costar entre 5.000 € y 12.000 € para una cocina de 10-12 m². Una reforma de baño completa cuesta entre 6.000 € y 14.000 € para un baño de 5-6 m². Por euro invertido, la cocina ofrece más metros reformados y más impacto visual.</p>
+  <p>Otro factor importante: el <strong>coste por metro cuadrado</strong>. Una reforma de cocina media (cambiar muebles, encimera, electrodomésticos) suele costar entre 5.000 € y 12.000 € para una cocina de 10-12 m². Una reforma de baño completa cuesta entre 6.000 € y 14.000 € para un baño de 5-6 m². Por euro invertido, la cocina ofrece más metros reformados y más impacto visual.</p>
 
   <p>Nuestro recomendación para Bilbao: si el baño tiene problemas graves (fugas, humedades, instalaciones peligrosas), empieza por ahí. Si el baño es funcional pero anticuado y la cocina está en mal estado, prioriza la cocina. Y si ambos están mal, considera una <strong>reforma escalonada</strong>: primero baño (inversión funcional) y en 12-18 meses, cocina (inversión de valor).</p>
 

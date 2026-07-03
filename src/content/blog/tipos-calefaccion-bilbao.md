@@ -55,7 +55,7 @@ priceTables: 0
 
   <h2>¿Por Qué Es Importante Elegir Bien tu Sistema de Calefacción en Bilbao?</h2>
 
-  <p>Vivir en Bizkaia tiene sus particularidades. Los edificios del centro de Bilbao, muchos de ellos construidos entre los años 60 y 80, presentan características únicas que condicionan la elección del sistema de calefacción. La normativa energética cada vez más exigente y el alza مستمرة de los precios de la energía hacen que una elección acertada pueda ahorrarte miles de euros a lo largo de los años.</p>
+  <p>Vivir en Bizkaia tiene sus particularidades. Los edificios del centro de Bilbao, muchos de ellos construidos entre los años 60 y 80, presentan características únicas que condicionan la elección del sistema de calefacción. La normativa energética cada vez más exigente y el alza continua de los precios de la energía hacen que una elección acertada pueda ahorrarte miles de euros a lo largo de los años.</p>
 
   <p>Además, las ayudas y subvenciones del Gobierno Vasco para reformas energéticas en el País Vasco 2025 hacen que ahora sea un momento especialmente favorable para dar el paso. Los fondos Next Generation han reactivado las incentivos para la aerotermia y el aislamiento térmico, con ayudas que pueden alcanzar hasta el 40% de la inversión en algunos casos.</p>
 

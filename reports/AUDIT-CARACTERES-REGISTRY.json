@@ -1,0 +1,566 @@
+{
+  "last_run": "2026-07-03T13:51:46Z",
+  "pages_scanned": 107,
+  "pages_with_issues_count": 15,
+  "pages_clean_count": 93,
+  "pages_validated_clean": [
+    {
+      "path": "/aviso-legal.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/calculadora.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/empresas.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/index.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/politica-privacidad.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/presupuesto-reforma-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/reformas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/sobre-nosotros.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/donostia/blog.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/donostia/calcular-reforma.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/donostia/empresas.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/donostia/reforma-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/barrios/reforma-deusto.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/barrios/reforma-indautxu.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/barrios/reforma-santutxu.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/blog.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/calcular-reforma.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/empresas.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/reforma-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/empresas/ara-reformas.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/vitoria/empresas/renova-gasteiz.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/aerotermia-bilbao-ventajas.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/cambiar-suelo-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/cambiar-suelo-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/cambiar-suelo-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/comparativa-reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/comparativa-reforma-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/empresas-reformas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/empresas-reformas-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/empresas-reformas-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/errores-comunes-reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/errores-reforma-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/hub-reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/licencias-obra-bilbao-2026.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/licencias-obra-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/materiales-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/materiales-cocina-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/materiales-cocina-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/pintar-piso-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/pintar-piso-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/pintar-piso-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/precio-m2-reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/precio-m2-reforma-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/precio-reforma-integral-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/precio-reforma-integral-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/precio-reforma-integral-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/presupuesto-reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/presupuesto-reforma-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/presupuesto-reforma-integral-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-80m2-bilbao-ejemplo.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-80m2-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-bano-bilbao-2025.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-bano-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-bano-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-bano-pequeno-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-bano-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-cocina-bano-santutxu.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-cocina-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-cocina-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-cocina-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-integral-piso-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-integral-piso-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-personas-mayores-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-vs-comprar-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reforma-vs-reestructuracion-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reformas-bilbao-guia-2025.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/reformas-bilbao-precios.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/rehabilitacion-edificio-antiguo-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/renovar-piso-antiguo-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-accesibilidad-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-accesibilidad-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-cambio-calderas-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-cambio-ventanas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-eficiencia-energetica-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-fachadas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvencion-rehabilitacion-energetica-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvenciones-reformas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvenciones-reformas-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/subvenciones-reformas-vitoria.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/suelo-radiante-ventajas-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/suelo-radiante-vs-calefaccion.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/tendencias-reforma-bano-bilbao-2026.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/tendencias-reforma-cocina-bilbao-2026.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/tiempo-reforma-integral-bilbao.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/tipos-calefaccion-donostia.html",
+      "validated_at": "2026-07-03T11:09:00Z"
+    },
+    {
+      "path": "/blog/errores-comunes-reforma-bilbao.html",
+      "validated_at": "2026-07-03T13:51:46Z"
+    },
+    {
+      "path": "/blog/reformas-casco-viejo-bilbao.html",
+      "validated_at": "2026-07-03T13:51:46Z"
+    },
+    {
+      "path": "/blog/tipos-calefaccion-bilbao.html",
+      "validated_at": "2026-07-03T13:51:46Z"
+    },
+    {
+      "path": "/blog/tipos-calefaccion-vitoria.html",
+      "validated_at": "2026-07-03T13:51:46Z"
+    },
+    {
+      "path": "/calculadora/cocina-bilbao.html",
+      "validated_at": "2026-07-03T13:51:46Z"
+    }
+  ],
+  "pages_with_issues": {
+    "/contacto.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/donostia/calculadora.html": [
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/vitoria/calculadora.html": [
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/empresas/eraber.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/empresas/raquel-gonzalez-interiorismo.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/empresas/rb-interiores.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/empresas/reformas-fernandez.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/empresas/reformas-zunzunegui.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/empresas/vascol-reformas.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      }
+    ],
+    "/blog/subvenciones-reformas-bilbao-2026.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "CTA",
+        "content": "Next",
+        "recommendation": "Traducir al espanol (ej: Enviar, Continuar, Ver mas)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/calculadora/bano-bilbao.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/calculadora/cocina-bilbao.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/calculadora/integral-bilbao.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/calculadora/pintura-bilbao.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ],
+    "/calculadora/suelo-bilbao.html": [
+      {
+        "category": "english_word",
+        "severity": "medium",
+        "location": "form",
+        "content": "Email",
+        "recommendation": "Traducir al espanol (ej: Correo electronico, Telefono)"
+      },
+      {
+        "category": "typography_mix",
+        "severity": "low",
+        "location": "texto visible",
+        "content": "em+en_dash_mixed",
+        "recommendation": "Mezcla em-dash y en-dash"
+      }
+    ]
+  },
+  "summary_by_category": {
+    "non_latin_alphabet": 20,
+    "mojibake": 0,
+    "english_word": 13,
+    "emojis": 0,
+    "typography_mix": 8
+  }
+}
