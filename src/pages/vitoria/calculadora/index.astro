@@ -464,4 +464,30 @@ import Calculator from '../../../components/calculator/Calculator.astro';
   document.getElementById('downloadPdfBtn')?.addEventListener('click', () => BilbaoCalc.downloadPDF());
   document.getElementById('requestQuotesBtn')?.addEventListener('click', () => BilbaoCalc.requestQuotes());
   document.getElementById('btn-restart')?.addEventListener('click', () => BilbaoCalc.restart());
+
+  // localStorage persistence: save on nav buttons (capturing phase)
+  function saveVitoriaState() {
+    const s = (BilbaoCalc as any).state;
+    if (s && typeof (window as any).saveCalculatorState === 'function') {
+      (window as any).saveCalculatorState(s.currentStep, { data: s.data, region: s.region });
+    }
+  }
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', saveVitoriaState, true);
+  });
+
+  // Restore
+  window.addEventListener('calculator:restore', (e: Event) => {
+    const ev = e as CustomEvent<{ step: number; state: any }>;
+    if (ev.detail?.state) {
+      BilbaoCalc.restoreState?.(ev.detail.state);
+    }
+  });
+
+  // Clear storage on result shown
+  const _origShowResult = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
+  BilbaoCalc.calculateAndShowResult = function() {
+    _origShowResult();
+    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
+  };
 </script>

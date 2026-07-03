@@ -27,6 +27,17 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
 ---
 
 <div class="calculator-wizard" data-calculator-type={calculatorType} data-city={city}>
+  <!-- Progress bar -->
+  <div class="progress-bar-container" id="progressBar" role="progressbar" aria-valuemin={1} aria-valuemax={labels.length} aria-valuenow={1} aria-live="polite">
+    <div class="progress-bar-header">
+      <span class="progress-bar-text" id="progressBarText">Step 1 de {labels.length}</span>
+      <span class="progress-bar-pct" id="progressBarPct">0%</span>
+    </div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressBarFill" style="width:0%"></div>
+    </div>
+  </div>
+
   <!-- Stepper visual -->
   <div class="stepper" id="stepper">
     <div class="stepper-track">
@@ -57,6 +68,19 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     <div class="result-actions">
       <a href="tel:+34642147856" class="result-btn result-btn-primary">📞 Llamar para contratar</a>
       <a href="/empresas/" class="result-btn result-btn-secondary">Ver empresas verificadas</a>
+    </div>
+  </div>
+</div>
+
+<!-- Restore session modal -->
+<div class="restore-modal-overlay" id="restoreModal" hidden role="dialog" aria-modal="true" aria-labelledby="restoreModalTitle">
+  <div class="restore-modal" tabindex="-1">
+    <div class="restore-modal-icon">📋</div>
+    <h2 class="restore-modal-title" id="restoreModalTitle">¿Continuar donde lo dejaste?</h2>
+    <p class="restore-modal-desc">Tenemos un cálculo guardado de tu sesión anterior. ¿Quieres continuar o empezar de nuevo?</p>
+    <div class="restore-modal-actions">
+      <button class="restore-modal-btn restore-modal-btn-primary" id="restoreBtn" type="button">Continuar</button>
+      <button class="restore-modal-btn restore-modal-btn-secondary" id="restartBtn" type="button">Empezar de nuevo</button>
     </div>
   </div>
 </div>
@@ -138,6 +162,44 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     .stepper-label { display: block; }
     .stepper-bubble { width: 36px; height: 36px; font-size: 0.875rem; }
     .stepper-track::before { top: 18px; }
+  }
+
+  /* ---- IMPROVEMENT 1: PROGRESS BAR ---- */
+  .progress-bar-container {
+    background: var(--color-blanco);
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-card);
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--color-beige);
+  }
+  .progress-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-inter);
+  }
+  .progress-bar-text {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+  }
+  .progress-bar-pct {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-terracota);
+  }
+  .progress-bar-track {
+    height: 6px;
+    background: var(--color-beige);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-terracota), var(--color-terracota-hover));
+    border-radius: var(--radius-pill);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* ---- WIZARD CONTAINER ---- */
@@ -488,6 +550,74 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     font-family: var(--font-inter);
   }
 
+  /* ---- IMPROVEMENT 2: RESTORE MODAL ---- */
+  .restore-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .restore-modal-overlay[hidden] { display: none; }
+  .restore-modal {
+    background: var(--color-blanco);
+    border-radius: var(--radius-card);
+    padding: 2rem;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+    font-family: var(--font-inter);
+  }
+  .restore-modal-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .restore-modal-title {
+    font-family: var(--font-playfair);
+    font-size: 1.25rem;
+    color: var(--color-grafito);
+    margin-bottom: 0.75rem;
+  }
+  .restore-modal-desc {
+    font-size: 0.9375rem;
+    color: var(--color-gris);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .restore-modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .restore-modal-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: none;
+    font-family: var(--font-inter);
+    flex: 1;
+    min-width: 140px;
+  }
+  .restore-modal-btn-primary {
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+  }
+  .restore-modal-btn-primary:hover { background: var(--color-terracota-hover); }
+  .restore-modal-btn-secondary {
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    border: 2px solid var(--color-beige);
+  }
+  .restore-modal-btn-secondary:hover { border-color: var(--color-terracota); color: var(--color-terracota); }
+
   /* ---- RESULT SECTION (component output) ---- */
   .calculator-result {
     margin-top: 1.5rem;
@@ -635,3 +765,113 @@ const labels = stepLabels[calculatorType] || stepLabels.integral;
     font-weight: 700;
   }
 </style>
+
+<script>
+  // ============================================================
+  // IMPROVEMENTS 1 & 2: Progress bar + localStorage persistence
+  // ============================================================
+
+  (function initCalculatorShell() {
+    const wizard = document.querySelector('.calculator-wizard') as HTMLElement | null;
+    if (!wizard) return;
+
+    const calculatorType = wizard.dataset.calculatorType || 'integral';
+    const city = wizard.dataset.city || 'bilbao';
+    const STORAGE_KEY = `bilbao-reforma-calc-${calculatorType}-${city}`;
+
+    const progressBar = document.getElementById('progressBar');
+    const progressBarText = document.getElementById('progressBarText');
+    const progressBarPct = document.getElementById('progressBarPct');
+    const progressBarFill = document.getElementById('progressBarFill');
+
+    const stepperSteps = document.querySelectorAll('.stepper-step');
+    const totalSteps = stepperSteps.length;
+
+    // ---- Progress bar update ----
+    function updateProgressBar(currentStep: number) {
+      if (!progressBar || !progressBarText || !progressBarPct || !progressBarFill) return;
+      const pct = Math.round(((currentStep - 1) / (totalSteps - 1)) * 100);
+      progressBar.setAttribute('aria-valuenow', String(currentStep));
+      progressBarText.textContent = `Step ${currentStep} de ${totalSteps}`;
+      progressBarPct.textContent = `${pct}%`;
+      progressBarFill.style.width = `${pct}%`;
+    }
+
+    // Expose to pages so they can call updateProgressBar on step change
+    (window as any).updateCalcProgress = updateProgressBar;
+
+    // ---- localStorage helpers ----
+    function getStorageData(): { step: number; state: any } | null {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return null;
+        return JSON.parse(raw);
+      } catch { return null; }
+    }
+
+    function saveStateToStorage(step: number, state: any) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ step, state }));
+      } catch { /* storage blocked */ }
+    }
+
+    function clearStorage() {
+      try { localStorage.removeItem(STORAGE_KEY); } catch { /* noop */ }
+    }
+
+    // Expose save/clear for pages
+    (window as any).saveCalculatorState = (step: number, state: any) => saveStateToStorage(step, state);
+    (window as any).clearCalculatorState = () => clearStorage();
+
+    // ---- Restore modal ----
+    const restoreModal = document.getElementById('restoreModal');
+    const restoreBtn = document.getElementById('restoreBtn');
+    const restartBtn = document.getElementById('restartBtn');
+    let pendingRestore: { step: number; state: any } | null = null;
+
+    function showRestoreModal(saved: { step: number; state: any }) {
+      if (!restoreModal) return;
+      pendingRestore = saved;
+      restoreModal.removeAttribute('hidden');
+      // Focus trap
+      restoreBtn?.focus();
+    }
+
+    function hideRestoreModal() {
+      if (!restoreModal) return;
+      restoreModal.setAttribute('hidden', '');
+      pendingRestore = null;
+    }
+
+    function applyRestore() {
+      if (!pendingRestore) return;
+      // Dispatch custom event that pages listen to
+      window.dispatchEvent(new CustomEvent('calculator:restore', {
+        detail: { step: pendingRestore.step, state: pendingRestore.state }
+      }));
+      hideRestoreModal();
+    }
+
+    restoreBtn?.addEventListener('click', applyRestore);
+    restartBtn?.addEventListener('click', () => { clearStorage(); hideRestoreModal(); });
+
+    // Close on ESC / overlay click
+    restoreModal?.addEventListener('click', (e) => {
+      if (e.target === restoreModal) { clearStorage(); hideRestoreModal(); }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && restoreModal && !restoreModal.hasAttribute('hidden')) {
+        clearStorage(); hideRestoreModal();
+      }
+    });
+
+    // Check for saved state on load
+    const saved = getStorageData();
+    if (saved && saved.step > 1) {
+      showRestoreModal(saved);
+    }
+
+    // Listen for wizard complete to clear storage
+    window.addEventListener('stepfinal:back', clearStorage);
+  })();
+</script>

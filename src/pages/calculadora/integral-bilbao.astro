@@ -297,6 +297,7 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
       (step as HTMLElement).style.display = 'block';
       step.classList.add('active');
     }
+    if (typeof (window as any).updateCalcProgress === 'function') (window as any).updateCalcProgress(n);
   }
 
   function updateSqm(val: number) {
@@ -356,11 +357,10 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
       sfEl.dataset.budgetLabel = 'Reforma Integral';
     }
     // Defer reveal() so showStep(7) finishes inserting the DOM first
-    setTimeout(() => {
-      if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
-        (window as any).stepFinalReveal(low, high, 'Reforma Integral', 'integral', 'bilbao', 'Bilbao', sfEl);
-      }
-    }, 0);
+    if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
+      (window as any).stepFinalReveal(low, high, 'Reforma Integral', 'integral', 'bilbao', 'Bilbao', sfEl);
+    }
+    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
   }
 
   let currentStep = 1;
@@ -423,6 +423,22 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
   window.addEventListener('stepfinal:back', () => {
     currentStep = 6;
     showStep(currentStep);
+  });
+
+  window.addEventListener('calculator:restore', (e: Event) => {
+    const ev = e as CustomEvent<{ step: number; state: any }>;
+    if (ev.detail?.state) {
+      Object.assign(state, ev.detail.state);
+      currentStep = ev.detail.step;
+    } else { currentStep = 1; }
+    showStep(currentStep);
+  });
+
+  function saveState() {
+    if (typeof (window as any).saveCalculatorState === 'function') (window as any).saveCalculatorState(currentStep, state);
+  }
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => { if (currentStep !== 6) saveState(); }, true);
   });
 
   showStep(1);
