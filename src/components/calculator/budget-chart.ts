@@ -7,6 +7,18 @@ export interface BreakdownItem {
   label: string;
   value: number;
   color: string;
+  /** Optional absolute amount (€) — shown next to the percentage. */
+  amount?: number;
+}
+
+const eurFormatter = new Intl.NumberFormat('es-ES', {
+  style: 'currency',
+  currency: 'EUR',
+  maximumFractionDigits: 0,
+});
+
+function formatEUR(n: number): string {
+  return eurFormatter.format(n);
 }
 
 export function generateDoughnutSVG(
@@ -16,10 +28,16 @@ export function generateDoughnutSVG(
   const total = breakdown.reduce((sum, item) => sum + item.value, 0);
   if (total === 0) return '';
 
-  const strokeWidth = 28;
+  // Slimmer ring gives more air to small segments (was 28 → 24)
+  const strokeWidth = 24;
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const center = size / 2;
+
+  // Accessibility summary for screen readers
+  const summaryText = breakdown
+    .map(item => `${item.label}: ${Math.round((item.value / total) * 100)}%`)
+    .join(', ');
 
   let offset = 0;
   let paths = '';
@@ -41,24 +59,33 @@ export function generateDoughnutSVG(
         stroke-dasharray="${dashLength} ${dashGap}"
         stroke-dashoffset="${-offset}"
         transform="rotate(-90 ${center} ${center})"
-      />
+      >
+        <title>${item.label}: ${Math.round(fraction * 100)}%${typeof item.amount === 'number' ? ' (' + formatEUR(item.amount) + ')' : ''}</title>
+      </circle>
     `;
 
     offset += dashLength;
+
+    const amountLabel =
+      typeof item.amount === 'number'
+        ? `<span class="budget-legend-amount">${formatEUR(item.amount)}</span>`
+        : '';
 
     legend += `
       <div class="budget-legend-item">
         <span class="budget-legend-dot" style="background:${item.color}"></span>
         <span class="budget-legend-label">${item.label}</span>
         <span class="budget-legend-value">${Math.round(fraction * 100)}%</span>
+        ${amountLabel}
       </div>
     `;
   }
 
   return `
-    <div class="budget-chart">
+    <div class="budget-chart" role="img" aria-label="Desglose del presupuesto: ${summaryText}">
       <div class="budget-chart-svg">
-        <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+        <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" aria-hidden="true">
+          <title>Desglose del presupuesto por categoría</title>
           <circle cx="${center}" cy="${center}" r="${radius}" fill="transparent" stroke="var(--color-crema)" stroke-width="${strokeWidth}" />
           ${paths}
         </svg>
@@ -67,7 +94,7 @@ export function generateDoughnutSVG(
           <span class="budget-chart-total" data-budget-total>—</span>
         </div>
       </div>
-      <div class="budget-legend">
+      <div class="budget-legend" role="list">
         ${legend}
       </div>
     </div>

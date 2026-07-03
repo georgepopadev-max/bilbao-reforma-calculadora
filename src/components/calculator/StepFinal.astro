@@ -194,9 +194,35 @@
   }
   .budget-chart-total {
     font-family: var(--font-playfair);
-    font-size: 1.25rem;
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
     font-weight: 700;
     color: var(--color-grafito);
+    font-feature-settings: "tnum" 1;
+    margin-top: 0.25rem;
+  }
+  .budget-legend-item {
+    display: grid;
+    grid-template-columns: 12px 1fr auto auto;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.25rem 0;
+    font-size: 0.8125rem;
+  }
+  .budget-legend-label {
+    color: var(--color-grafito);
+    font-weight: 500;
+  }
+  .budget-legend-value {
+    color: var(--color-grafito);
+    font-weight: 700;
+    font-feature-settings: "tnum" 1;
+  }
+  .budget-legend-amount {
+    color: var(--color-gris);
+    font-size: 0.75rem;
+    font-feature-settings: "tnum" 1;
+    min-width: 4.5rem;
+    text-align: right;
   }
   .budget-legend { display: flex; flex-direction: column; gap: 0.5rem; }
   .budget-legend-item {
@@ -450,6 +476,7 @@
       label: item.label,
       value: Math.round(high * item.pct / 100),
       color: item.color,
+      amount: Math.round(high * item.pct / 100),
     }));
 
     // Render doughnut SVG
