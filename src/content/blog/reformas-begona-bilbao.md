@@ -89,3 +89,26 @@ Los edificios de Begoña (1950-1970) tienen fontanería y electricidad muy antic
 ### ¿Cómo afecta la pendiente de Begoña a la reforma?
 
 La pendiente de Begoña dificulta el acceso en edificios sin ascensor. Esto puede suponer un sobrecoste logístico de 500 € a 1.500 € dependiendo de la planta y la accesibilidad de la calle, especialmente para la retirada de escombros.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Begoña](/calculadora/index.html?barrio=begona)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Santutxu Bilbao](/barrios/reforma-santutxu.html)
+- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+
+### Blogs relacionados
+
+- [Reformas Santutxu Bilbao 2026](/blog/reformas-santutxu-bilbao.html)
+- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)

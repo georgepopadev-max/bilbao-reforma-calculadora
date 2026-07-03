@@ -100,3 +100,26 @@ Las reformas en Abando están sujetas a licencia de obra mayor cuando afectan a 
 ### ¿Merece la pena comprar para reformar en Abando?
 
 Comprar para reformar en Abando puede compensar si encuentras un piso en mal estado a un precio significativamente inferior al de mercado. Con un precio medio de 4.815 €/m², un piso de 80m² a reformar puede costar entre 385.000 € y 450.000 € frente a más de 500.000 € ya reformado, dejando margen para la reforma y aún así ahorrar.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en Abando Bilbao](/barrios/reforma-abando.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Abando](/calculadora/index.html?barrio=abando)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu.html)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+
+### Blogs relacionados
+
+- [Reformas Indautxu Bilbao 2026](/blog/reformas-indautxu-bilbao.html)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)

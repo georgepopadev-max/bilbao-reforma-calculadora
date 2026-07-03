@@ -87,3 +87,26 @@ Un loft en Zorrotzaurre cuesta entre 875 € y 1.650 € por m². Para un loft d
 ### ¿Qué hace diferente una reforma en Zorrotzaurre?
 
 Las reformas en Zorrotzaurre combinan elementos industriales (techos vistos, estructuras metálicas, ladrillo caravista) con instalaciones modernas. Requieren mano de obra especializada en tratamiento de hierro visto, saneado de estructuras y diseño contemporâneo que no todas las empresas de Bilbao ofrecen.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zorrotzaurre](/calculadora/index.html?barrio=zorrotzaurre)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+- [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian.html)
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
+
+### Blogs relacionados
+
+- [Reformas Deusto Bilbao 2026](/blog/reformas-deusto-bilbao.html)
+- [Reformas San Adrián Bilbao 2026](/blog/reformas-san-adrian-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)

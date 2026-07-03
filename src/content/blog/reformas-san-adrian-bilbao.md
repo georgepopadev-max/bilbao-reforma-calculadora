@@ -88,3 +88,26 @@ Las reformas parciales dominan en San Adrián: cambio de baño, renovación de c
 ### ¿Merece la pena reformar en San Adrián para vender?
 
 Sí. Con un precio medio de vivienda de 2.800 €/m², una reforma de baño (4.275-6.175 €) o cocina (7.600-11.400 €) puede aumentar el valor del inmueble en un 8-12%, con un retorno de inversión atractivo para propietarios que venden.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en San Adrián](/calculadora/index.html?barrio=san-adrian)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
+- [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre.html)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+
+### Blogs relacionados
+
+- [Reformas Basurto Bilbao 2026](/blog/reformas-basurto-bilbao.html)
+- [Reformas Zorrotzaurre Bilbao 2026](/blog/reformas-zorrotzaurre-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)

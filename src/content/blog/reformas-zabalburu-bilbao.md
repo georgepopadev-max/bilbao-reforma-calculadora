@@ -87,3 +87,26 @@ Zabalburu combina ubicación céntrica con edificios de los años 1950 a 1970 si
 ### ¿Necesito licencia para reformar en Zabalburu?
 
 Las reformas parciales (baño, cocina, pintura, cambio de suelo) no suelen requerir licencia de obra mayor. Las reformas integrales sí necesitan licencia municipal con tramitación de 2 a 4 semanas. Consulta siempre con el ayuntamiento antes de iniciar cualquier obra.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zabalburu](/calculadora/index.html?barrio=zabalburu)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Abando Bilbao](/barrios/reforma-abando.html)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
+- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu.html)
+
+### Blogs relacionados
+
+- [Reformas Abando Bilbao 2026](/blog/reformas-abando-bilbao.html)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)

@@ -98,3 +98,26 @@ En Rekalde predominan las reformas funcionales y económicas: pintura completa, 
 ### ¿Cómo ahorrar en una reforma en Rekalde?
 
 Aprovecha el multiplicador del 0.90 (10% de ahorro automático), reforma fuera de temporada alta (noviembre-marzo), evita mover la distribución de instalaciones, elige materiales de stock y pide siempre 3 presupuestos para comparar.
+
+
+## Ver También
+
+- Página de barrio: [Reformas en Rekalde Bilbao](/barrios/reforma-rekalde.html)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Rekalde](/calculadora/index.html?barrio=rekalde)
+
+### Otros barrios de Bilbao
+
+- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
+
+### Blogs relacionados
+
+- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao.html)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+
+### Sobre reforma integral en Bilbao
+
+- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
