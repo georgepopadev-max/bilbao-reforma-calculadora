@@ -1,6 +1,6 @@
 ---
 title: "Suelo Radiante Bilbao 2026 | Guía + Precio"
-description: "Suelo radiante en Bilbao: precio 70-100€/m², ventajas, instalación y subvenciones 2026."
+description: "Suelo radiante en Bilbao: precio 70-100€/m², ventajas, instalación y subvenciones vigentes."
 canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao.html"
 date: "15 enero 2025"
 category: "suelo"

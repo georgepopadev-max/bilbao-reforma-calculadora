@@ -1,6 +1,6 @@
 ---
-title: "Subvenciones Calefacción Bilbao 2026 | Ayudas"
-description: "Subvenciones calefacción Bilbao 2026: Plan Rehabilitación Next Generation, Gobierno Vasco y ayudas municipales. Hasta 6.000€."
+title: "Subvenciones Calefacción Bilbao 2026"
+description: "Subvenciones calefacción Bilbao 2026: Plan Rehabilitación, Gobierno Vasco y ayudas municipales. Hasta 6.000€."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao.html"
 date: "2026-07-03"
 category: "Calefacción"

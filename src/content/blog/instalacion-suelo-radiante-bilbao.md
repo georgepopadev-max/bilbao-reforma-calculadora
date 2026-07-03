@@ -1,6 +1,6 @@
 ---
-title: "Instalación Suelo Radiante Bilbao 2026 | Precio"
-description: "Instalación suelo radiante en Bilbao: precio 70-100€/m², proceso paso a paso y empresas instaladoras. Subvenciones 2026."
+title: "Suelo Radiante Bilbao 2026 | Instalación"
+description: "Instalación suelo radiante en Bilbao: precio 70-100€/m², proceso paso a paso y empresas instaladoras. Subvenciones vigentes."
 canonical: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao.html"
 date: "2026-07-03"
 category: "Calefacción"

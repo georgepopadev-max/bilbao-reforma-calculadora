@@ -1,6 +1,6 @@
 ---
-title: "Precio Calefacción Bilbao 2026 | Guía Completa"
-description: "Precio calefacción en Bilbao 2026: instalación completa desde 3.500€. Compara gas, aerotermia y suelo radiante. Datos reales."
+title: "Precio Calefacción Bilbao 2026 | Guía"
+description: "Precio calefacción en Bilbao: instalación desde 3.500€. Compara gas, aerotermia y suelo radiante con datos reales."
 canonical: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao.html"
 date: "2026-07-03"
 category: "Calefacción"
