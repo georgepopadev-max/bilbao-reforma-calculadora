@@ -47,6 +47,8 @@ export function generateDoughnutSVG(
     const fraction = item.value / total;
     const dashLength = circumference * fraction;
     const dashGap = circumference - dashLength;
+    const pct = Math.round(fraction * 100);
+    const tooltipText = `${item.label}: ${pct}%${typeof item.amount === 'number' ? ' (' + formatEUR(item.amount) + ')' : ''}`;
 
     paths += `
       <circle
@@ -56,11 +58,16 @@ export function generateDoughnutSVG(
         fill="transparent"
         stroke="${item.color}"
         stroke-width="${strokeWidth}"
-        stroke-dasharray="${dashLength} ${dashGap}"
+        stroke-dasharray="0 ${circumference}"
         stroke-dashoffset="${-offset}"
         transform="rotate(-90 ${center} ${center})"
+        class="budget-chart-segment"
+        data-tooltip="${tooltipText}"
+        data-pct="${pct}"
+        data-label="${item.label}"
       >
-        <title>${item.label}: ${Math.round(fraction * 100)}%${typeof item.amount === 'number' ? ' (' + formatEUR(item.amount) + ')' : ''}</title>
+        <title>${tooltipText}</title>
+        <animate attributeName="stroke-dasharray" from="0 ${circumference}" to="${dashLength} ${dashGap}" dur="1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
       </circle>
     `;
 
@@ -93,6 +100,7 @@ export function generateDoughnutSVG(
           <span class="budget-chart-label">Total</span>
           <span class="budget-chart-total" data-budget-total>—</span>
         </div>
+        <div class="budget-chart-tooltip" aria-hidden="true"></div>
       </div>
       <div class="budget-legend" role="list">
         ${legend}

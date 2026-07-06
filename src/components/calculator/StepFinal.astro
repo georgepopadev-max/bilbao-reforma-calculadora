@@ -177,6 +177,35 @@
     margin: 0 auto;
   }
   .budget-chart-svg svg { display: block; width: 100%; height: auto; }
+  .budget-chart-segment { cursor: pointer; transition: opacity 0.2s; }
+  .budget-chart-segment:hover, .budget-chart-segment.active { opacity: 0.8; }
+  .budget-chart-tooltip {
+    position: absolute;
+    background: var(--color-grafito);
+    color: var(--color-blanco);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    margin-top: -8px;
+    white-space: nowrap;
+    z-index: 10;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .budget-chart-tooltip.visible { opacity: 1; }
+  .budget-chart-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: var(--color-grafito);
+  }
   .budget-chart-center {
     position: absolute;
     inset: 0;
@@ -483,6 +512,27 @@
     const budgetDiv = document.getElementById('finalBudget');
     if (budgetDiv) {
       budgetDiv.innerHTML = generateDoughnutSVG(breakdown, 260);
+
+      // Tooltip for doughnut segments
+      const tooltip = budgetDiv.querySelector('.budget-chart-tooltip') as HTMLElement | null;
+      budgetDiv.querySelectorAll('.budget-chart-segment').forEach(segment => {
+        segment.addEventListener('click', (e) => {
+          const seg = e.currentTarget as Element;
+          if (!tooltip) return;
+          tooltip.textContent = seg.dataset.tooltip || '';
+          const parentRect = budgetDiv.getBoundingClientRect();
+          const segRect = seg.getBoundingClientRect();
+          tooltip.style.left = `${segRect.left + segRect.width / 2 - parentRect.left}px`;
+          tooltip.style.top = `${segRect.top - parentRect.top}px`;
+          tooltip.classList.add('visible');
+        });
+      });
+      budgetDiv.addEventListener('click', (e) => {
+        const target = e.target as Element;
+        if (!target.closest('.budget-chart-segment') && tooltip) {
+          tooltip.classList.remove('visible');
+        }
+      });
     }
 
     // PDF button

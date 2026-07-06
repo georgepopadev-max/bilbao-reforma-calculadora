@@ -413,7 +413,7 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
     });
   });
 
-  ['ningunos', 'rodapies', 'alisado', 'todo'].forEach(val => {
+  ['ninguno', 'rodapies', 'alisado', 'todo'].forEach(val => {
     document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
       el.addEventListener('click', () => selectOption('extrasOptions', 'extras', val));
     });

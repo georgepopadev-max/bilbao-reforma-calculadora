@@ -82,7 +82,7 @@ const totalCTAs = posts.reduce((sum, p) => {
       </div>
 
       {/* Posts grid */}
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
+      <div class="article-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
         {posts.map((post) => {
           const d = post.data || {};
           const title = d.title || 'Artículo';
@@ -155,3 +155,11 @@ const totalCTAs = posts.reduce((sum, p) => {
 
   <Footer city="bilbao" />
 </BaseLayout>
+
+<style>
+  @media (max-width: 640px) {
+    .article-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
