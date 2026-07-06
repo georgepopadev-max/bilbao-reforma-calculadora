@@ -2,14 +2,16 @@
 /**
  * Calculadora Index — Donostia
  * A3 Zone
+ * Step 6 now uses shared StepFinal.astro component.
  */
 import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
 import Calculator from '../../../components/calculator/Calculator.astro';
+import StepFinal from '../../../components/calculator/StepFinal.astro';
 ---
 
 <CalculadoraLayout
   title="Calculadora Reformas Donostia 2026"
-  description="Calcula el presupuesto orientativo de tu reforma en Donostia/San Sebastián y Gipuzkoa. Gratis, sin registro, en menos de 2 minutos."
+  description="Calcula el presupuesto orientativo de tu reforma en Donostia/San Sebastian y Gipuzkoa. Gratis, sin registro, en menos de 2 minutos."
   canonical="https://www.bilbaoreforma.es/donostia/calculadora/"
   city="donostia"
   calculatorType="integral"
@@ -20,90 +22,84 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     <p>Obtén un <strong>presupuesto orientativo para tu reforma en Donostia/San Sebastián</strong> en menos de 2 minutos. Datos basados en precios reales de empresas de reformas en Gipuzkoa, actualizados 2026.</p>
   </div>
 
-  <!-- CTA cards — fixed: using Bilbao design token colors for contrast -->
+  <!-- CTA cards -->
   <div style="max-width:800px;margin:0 auto 2rem;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
     <a href="/donostia/calculadora/index.html?type=bano" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-verde-montana,#4A6741);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
       <span>Baño</span>
-      <span>desde 4.000 € →</span>
+      <span>desde 4.000 EUR →</span>
     </a>
     <a href="/donostia/calculadora/index.html?type=cocina" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-terracota,#C45C3E);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
       <span>Cocina</span>
-      <span>desde 8.000 € →</span>
+      <span>desde 8.000 EUR →</span>
     </a>
     <a href="/donostia/calculadora/index.html?type=pintura" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-verde-txakoli,#7FA650);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
       <span>Pintura</span>
-      <span>desde 12 €/m² →</span>
+      <span>desde 12 EUR/m2 →</span>
     </a>
   </div>
 
-  <!-- Calculator using Calculator.astro shell for consistent styling -->
+  <!-- Calculator -->
   <Calculator city="donostia" calculatorType="integral" title="Reforma en Donostia" actualStepCount={6}>
-    <!-- Hidden inputs for result -->
-    <input type="hidden" id="totalPrice" name="totalPrice" value="" />
-    <input type="hidden" id="priceRange" name="priceRange" value="" />
-
     <!-- STEP 1: Reform Type -->
     <div class="wizard-step active" id="step1" data-step="1">
       <div class="step-header">
-        <h2 class="step-title">¿Qué tipo de reforma necesitas?</h2>
-        <p class="step-subtitle">Selecciona una opción o combina varias estancias</p>
+        <h2 class="step-title">¿Que tipo de reforma necesitas?</h2>
+        <p class="step-subtitle">Selecciona una opcion o combina varias estancias</p>
       </div>
 
-      <!-- Scope Cards -->
       <div class="scope-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem;margin-bottom:1.5rem;">
         <div class="age-option" data-scope="basic" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">Reforma básica</div>
-            <div class="age-option-desc">600–750 €/m²</div>
+            <div class="age-option-title">Reforma basica</div>
+            <div class="age-option-desc">600-750 EUR/m2</div>
           </div>
         </div>
         <div class="age-option" data-scope="medium" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
             <div class="age-option-title">Reforma media</div>
-            <div class="age-option-desc">750–1.000 €/m²</div>
+            <div class="age-option-desc">750-1.000 EUR/m2</div>
           </div>
         </div>
         <div class="age-option" data-scope="integral" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
             <div class="age-option-title">Reforma integral</div>
-            <div class="age-option-desc">1.000–1.400 €/m²</div>
+            <div class="age-option-desc">1.000-1.400 EUR/m2</div>
           </div>
         </div>
         <div class="age-option" data-scope="luxury" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">✨ Reforma premium</div>
-            <div class="age-option-desc">1.400–1.700 €/m²</div>
+            <div class="age-option-title">Reforma premium</div>
+            <div class="age-option-desc">1.400-1.700 EUR/m2</div>
           </div>
         </div>
       </div>
 
       <p style="text-align:center;color:#888;font-size:0.9rem;margin-bottom:1.5rem;">— o selecciona estancias individuales —</p>
 
-      <!-- Individual Room Cards -->
       <div class="type-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.75rem;">
         <div class="type-card card" data-reform="painting" role="button" tabindex="0" aria-pressed="false">
           <div class="card-icon"></div>
           <div class="card-title">Pintura</div>
-          <div class="card-desc">12–25 €/m²</div>
+          <div class="card-desc">12-25 EUR/m2</div>
         </div>
         <div class="type-card card" data-reform="flooring" role="button" tabindex="0" aria-pressed="false">
           <div class="card-icon"></div>
           <div class="card-title">Suelo</div>
-          <div class="card-desc">35–140 €/m²</div>
+          <div class="card-desc">35-140 EUR/m2</div>
         </div>
         <div class="type-card card" data-reform="bathroom" role="button" tabindex="0" aria-pressed="false">
           <div class="card-icon"></div>
           <div class="card-title">Baño</div>
-          <div class="card-desc">desde 4.000 €</div>
+          <div class="card-desc">desde 4.000 EUR</div>
         </div>
         <div class="type-card card" data-reform="kitchen" role="button" tabindex="0" aria-pressed="false">
           <div class="card-icon"></div>
           <div class="card-title">Cocina</div>
-          <div class="card-desc">desde 6.000 €</div>
+          <div class="card-desc">desde 6.000 EUR</div>
         </div>
       </div>
 
@@ -117,25 +113,25 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     <!-- STEP 2: Surface Area -->
     <div class="wizard-step" id="step2" data-step="2">
       <div class="step-header">
-        <h2 class="step-title">¿Cuántos metros cuadrados tiene la vivienda?</h2>
+        <h2 class="step-title">¿Cuantos metros cuadrados tiene la vivienda?</h2>
         <p class="step-subtitle">Indica la superficie total a reformar</p>
       </div>
       <div class="meters-input-group">
         <div class="meters-value-display">
           <span class="meters-value-number" id="metersDisplayValue">80</span>
-          <span class="meters-value-unit">m²</span>
+          <span class="meters-value-unit">m2</span>
         </div>
         <input type="number" id="metersInput" class="meters-input" value="80" min="20" max="500" aria-label="Metros cuadrados" />
         <input type="range" id="metersSlider" class="meters-slider" min="20" max="500" value="80" aria-label="Slider de metros cuadrados" />
         <div class="meters-presets">
-          <button class="meters-preset-btn" data-meters="45" type="button">Estudio (~45m²)</button>
-          <button class="meters-preset-btn" data-meters="70" type="button">Piso 2 hab (~70m²)</button>
-          <button class="meters-preset-btn" data-meters="90" type="button">Piso 3 hab (~90m²)</button>
-          <button class="meters-preset-btn" data-meters="110" type="button">Piso 4 hab (~110m²)</button>
+          <button class="meters-preset-btn" data-meters="45" type="button">Estudio (~45m2)</button>
+          <button class="meters-preset-btn" data-meters="70" type="button">Piso 2 hab (~70m2)</button>
+          <button class="meters-preset-btn" data-meters="90" type="button">Piso 3 hab (~90m2)</button>
+          <button class="meters-preset-btn" data-meters="110" type="button">Piso 4 hab (~110m2)</button>
         </div>
       </div>
       <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" id="btn-prev" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-back" id="btn-prev" type="button">← Atras</button>
         <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
       </nav>
     </div>
@@ -143,14 +139,14 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     <!-- STEP 3: Building Age -->
     <div class="wizard-step" id="step3" data-step="3">
       <div class="step-header">
-        <h2 class="step-title">¿Qué antigüedad tiene el edificio?</h2>
-        <p class="step-subtitle">Los edificios antiguos pueden necesitar renovación de instalaciones</p>
+        <h2 class="step-title">¿Que antigüedad tiene el edificio?</h2>
+        <p class="step-subtitle">Los edificios antiguos pueden necesitar renovacion de instalaciones</p>
       </div>
       <div class="age-options" id="ageOptions">
         <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">Menos de 20 años</div>
+            <div class="age-option-title">Menos de 20 anos</div>
             <div class="age-option-desc">Instalaciones modernas</div>
           </div>
           <span class="age-option-badge">×1.00</span>
@@ -158,30 +154,30 @@ import Calculator from '../../../components/calculator/Calculator.astro';
         <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">20–40 años</div>
-            <div class="age-option-desc">Posible renovación parcial</div>
+            <div class="age-option-title">20-40 anos</div>
+            <div class="age-option-desc">Posible renovacion parcial</div>
           </div>
           <span class="age-option-badge">×1.05</span>
         </div>
         <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">40–70 años</div>
-            <div class="age-option-desc">Tuberías y electricidad pueden necesitarse</div>
+            <div class="age-option-title">40-70 anos</div>
+            <div class="age-option-desc">Tuberias y electricidad pueden necesitarse</div>
           </div>
           <span class="age-option-badge">×1.15</span>
         </div>
         <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">Más de 70 años / Casco Viejo</div>
-            <div class="age-option-desc">Acceso difícil, materiales especiales</div>
+            <div class="age-option-title">Mas de 70 anos / Casco Viejo</div>
+            <div class="age-option-desc">Acceso dificil, materiales especiales</div>
           </div>
           <span class="age-option-badge">×1.30</span>
         </div>
       </div>
       <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
         <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
       </nav>
     </div>
@@ -189,14 +185,14 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     <!-- STEP 4: Quality -->
     <div class="wizard-step" id="step4" data-step="4">
       <div class="step-header">
-        <h2 class="step-title">¿Qué nivel de calidad quieres?</h2>
+        <h2 class="step-title">¿Que nivel de calidad quieres?</h2>
         <p class="step-subtitle">La calidad de los materiales determina el precio final</p>
       </div>
       <div class="age-options" id="qualityOptions">
         <div class="age-option" data-quality="basic" role="button" tabindex="0" aria-pressed="false">
           <div class="age-option-radio"></div>
           <div class="age-option-content">
-            <div class="age-option-title">Básica</div>
+            <div class="age-option-title">Basica</div>
             <div class="age-option-desc">Leroy Merlin, marca blanca</div>
           </div>
           <span class="age-option-badge">×0.80</span>
@@ -219,7 +215,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
         </div>
       </div>
       <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
         <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
       </nav>
     </div>
@@ -227,7 +223,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     <!-- STEP 5: Extras -->
     <div class="wizard-step" id="step5" data-step="5">
       <div class="step-header">
-        <h2 class="step-title">¿Algún extra?</h2>
+        <h2 class="step-title">¿Algun extra?</h2>
         <p class="step-subtitle">Selecciona elementos adicionales (opcional)</p>
       </div>
       <div class="extras-grid" id="extrasGrid">
@@ -240,7 +236,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
             <div class="extra-desc">4 unidades de media</div>
           </div>
           <div class="extra-bottom-row">
-            <span class="extra-price">400–800 €/ud</span>
+            <span class="extra-price">400-800 EUR/ud</span>
           </div>
         </div>
         <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false">
@@ -248,11 +244,11 @@ import Calculator from '../../../components/calculator/Calculator.astro';
             <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
           </div>
           <div class="extra-content">
-            <div class="extra-title">Terraza/Balcón</div>
+            <div class="extra-title">Terraza/Balcon</div>
             <div class="extra-desc">Opcional</div>
           </div>
           <div class="extra-bottom-row">
-            <span class="extra-price">300–600 €/m²</span>
+            <span class="extra-price">300-600 EUR/m2</span>
           </div>
         </div>
         <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false">
@@ -264,7 +260,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
             <div class="extra-desc">Opcional</div>
           </div>
           <div class="extra-bottom-row">
-            <span class="extra-price">80–150 €/m²</span>
+            <span class="extra-price">80-150 EUR/m2</span>
           </div>
         </div>
         <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false">
@@ -272,11 +268,11 @@ import Calculator from '../../../components/calculator/Calculator.astro';
             <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
           </div>
           <div class="extra-content">
-            <div class="extra-title">Domótica</div>
+            <div class="extra-title">Domotica</div>
             <div class="extra-desc">Opcional</div>
           </div>
           <div class="extra-bottom-row">
-            <span class="extra-price">1.200–3.500 €</span>
+            <span class="extra-price">1.200-3.500 EUR</span>
           </div>
         </div>
         <div class="extra-checkbox-item" data-extra="aerothermia" role="button" tabindex="0" aria-pressed="false">
@@ -288,64 +284,19 @@ import Calculator from '../../../components/calculator/Calculator.astro';
             <div class="extra-desc">Opcional</div>
           </div>
           <div class="extra-bottom-row">
-            <span class="extra-price">5.000–11.000 €</span>
+            <span class="extra-price">5.000-11.000 EUR</span>
           </div>
         </div>
       </div>
       <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
         <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Calcular Presupuesto →</button>
       </nav>
     </div>
 
-    <!-- STEP 6: Result -->
+    <!-- STEP 6: Result — shared StepFinal component -->
     <div class="wizard-step" id="step6" data-step="6">
-      <div class="result-container">
-        <div class="result-header">
-          <span class="result-badge">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            Presupuesto estimado
-          </span>
-          <h2 class="result-title">Tu reforma cuesta entre</h2>
-          <div class="result-range">
-            <span class="result-range-low" id="resultRangeLow">—</span>
-            <span class="result-range-separator">—</span>
-            <span class="result-range-high" id="resultRangeHigh">—</span>
-          </div>
-        </div>
-
-        <div class="result-breakdown">
-          <h2 class="result-breakdown-title">Desglose orientativo</h2>
-          <div id="resultBreakdownBars"></div>
-        </div>
-
-        <div class="result-comparison">
-          <div class="result-comparison-title">Precio medio en Donostia</div>
-          <div class="result-comparison-value" id="resultComparisonValue">— €/m²</div>
-          <div class="result-comparison-label" id="resultComparisonLabel">para reforma media</div>
-        </div>
-
-        <div class="result-ctas">
-          <button class="cta-button cta-button-primary" type="button" id="downloadPdfBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-            Descargar PDF
-          </button>
-          <button class="cta-button cta-button-secondary" type="button" id="requestQuotesBtn">
-            Solicitar 3 presupuestos
-          </button>
-        </div>
-
-        <div class="result-disclaimer">
-          ⚠️ Este presupuesto es orientativo y puede variar ±15% según las características específicas de tu reforma. Solicita presupuestos personalizados a empresas locales.
-          <br><br>
-          Precios sin IVA (10% IVA reducido para reformas de vivienda).
-        </div>
-
-        <nav class="wizard-nav">
-          <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Modificar</button>
-          <button class="wizard-nav-btn wizard-nav-btn-next" type="button" id="btn-restart">Nuevo cálculo →</button>
-        </nav>
-      </div>
+      <StepFinal city="donostia" calculatorType="integral" />
     </div>
   </Calculator>
 
@@ -356,18 +307,18 @@ import Calculator from '../../../components/calculator/Calculator.astro';
 
       <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
         <summary style="padding:1rem 1.25rem;background:white;cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-          ¿Cuánto cuesta reformar un piso en Donostia en 2026?
+          ¿Cuanto cuesta reformar un piso en Donostia en 2026?
           <span style="margin-left:1rem;flex-shrink:0;">+</span>
         </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">El precio medio de una reforma integral en Donostia/San Sebastián oscila entre <strong>750 y 1.400 €/m²</strong> en 2026, dependiendo de la calidad de materiales y el estado del edificio. Para una reforma de cocina (12-15 m²) calcula entre 8.000 y 18.000 €, y para un baño completo entre 4.000 y 10.000 €.</p>
+        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">El precio medio de una reforma integral en Donostia/San Sebastian oscila entre <strong>750 y 1.400 EUR/m2</strong> en 2026, dependiendo de la calidad de materiales y el estado del edificio. Para una reforma de cocina (12-15 m2) calcula entre 8.000 y 18.000 EUR, y para un bano completo entre 4.000 y 10.000 EUR.</p>
       </details>
 
       <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
         <summary style="padding:1rem 1.25rem;background:white;cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-          ¿Qué incluye la calculadora de reformas de Donostia?
+          ¿Que incluye la calculadora de reformas de Donostia?
           <span style="margin-left:1rem;flex-shrink:0;">+</span>
         </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">La calculadora incluye reforma completa de vivienda (básica, media o integral), reforma parcial por estancia (baño, cocina, pintura, suelo), metros cuadrados, antigüedad del edificio, calidad de materiales y extras opcionales como ventanas, aerotermia o domótica. El resultado incluye desglose por partidas y comparativa del precio medio en Donostia.</p>
+        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">La calculadora incluye reforma completa de vivienda (basica, media o integral), reforma parcial por estancia (bano, cocina, pintura, suelo), metros cuadrados, antiguedad del edificio, calidad de materiales y extras opcionales como ventanas, aerotermia o domotica. El resultado incluye desglose por partidas y comparativa del precio medio en Donostia.</p>
       </details>
 
       <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
@@ -375,11 +326,11 @@ import Calculator from '../../../components/calculator/Calculator.astro';
           ¿Necesito licencia para reformar en el Casco Viejo de Donostia?
           <span style="margin-left:1rem;flex-shrink:0;">+</span>
         </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">Sí. El Casco Viejo de Donostia tiene protección patrimonial. Para reformas integrales o que afecten a la estructura en edificios declarados, puede ser necesaria licencia del Ayuntamiento de Donostia y comunicación a Gipuzkoa. Consulta con tu empresa de reformas local.</p>
+        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">Si. El Casco Viejo de Donostia tiene proteccion patrimonial. Para reformas integrales o que afecten a la estructura en edificios declarados, puede ser necesaria licencia del Ayuntamiento de Donostia y comunicacion a Gipuzkoa. Consulta con tu empresa de reformas local.</p>
       </details>
 
       <p style="text-align:center;margin-top:1.5rem;color:var(--color-gris,#6B6B6B);font-size:0.9rem;">
-        ¿Sabías que puedes <a href="/donostia/blog/index.html">subvencionar parte de tu reforma en Donostia</a>? Consulta las ayudas disponibles para San Sebastián y Gipuzkoa.
+        ¿Sabias que puedes <a href="/donostia/blog/index.html">subvencionar parte de tu reforma en Donostia</a>? Consulta las ayudas disponibles para San Sebastian y Gipuzkoa.
       </p>
     </div>
   </section>
@@ -407,7 +358,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     });
   });
 
-  // All nav buttons (next / back on every step)
+  // Nav: next/back
   document.querySelectorAll('.wizard-nav-btn-next').forEach((btn) => {
     btn.addEventListener('click', () => {
       const step5Next = btn.closest('#step5')?.querySelector('.wizard-nav-btn-next');
@@ -436,7 +387,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     });
   });
 
-  // Building age options (step 3)
+  // Building age (step 3)
   document.querySelectorAll('#ageOptions .age-option').forEach((el) => {
     el.addEventListener('click', () => {
       const age = el.getAttribute('data-age');
@@ -444,7 +395,7 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     });
   });
 
-  // Quality options (step 4)
+  // Quality (step 4)
   document.querySelectorAll('#qualityOptions .age-option').forEach((el) => {
     el.addEventListener('click', () => {
       const quality = el.getAttribute('data-quality');
@@ -460,12 +411,46 @@ import Calculator from '../../../components/calculator/Calculator.astro';
     });
   });
 
-  // Result buttons
-  document.getElementById('downloadPdfBtn')?.addEventListener('click', () => BilbaoCalc.downloadPDF());
-  document.getElementById('requestQuotesBtn')?.addEventListener('click', () => BilbaoCalc.requestQuotes());
-  document.getElementById('btn-restart')?.addEventListener('click', () => BilbaoCalc.restart());
+  // ────────────────────────────────────────────────────────────────────────
+  // Override calculateAndShowResult to bridge BilbaoCalc → StepFinal
+  // ────────────────────────────────────────────────────────────────────────
+  const _origCalcDonostia = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
+  BilbaoCalc.calculateAndShowResult = function () {
+    _origCalcDonostia();
 
-  // localStorage persistence: save on nav buttons (capturing phase so it runs before BilbaoCalc)
+    // After recalc (150ms debounce in recalculate), stepFinalReveal fires.
+    // Use a small delay to ensure showStep(6) has finished rendering StepFinal.
+    setTimeout(() => {
+      const state = (BilbaoCalc as any).state;
+      const result = state?.result;
+      const sfEl = document.getElementById('stepFinal');
+      if (!sfEl || !result) return;
+
+      const low  = result.low  ?? 0;
+      const high = result.high ?? 0;
+      if (low <= 0 || high <= 0) return;
+
+      sfEl.dataset.budgetLow  = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Reforma Integral';
+
+      if (typeof (window as any).stepFinalReveal === 'function') {
+        (window as any).stepFinalReveal(
+          low, high,
+          'Reforma Integral',
+          'integral',
+          'donostia',
+          'Donostia',
+          sfEl
+        );
+      }
+    }, 220);
+  };
+
+  // Clear storage on result shown
+  const _origClear = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
+
+  // localStorage persistence
   function saveDonostiaState() {
     const s = (BilbaoCalc as any).state;
     if (s && typeof (window as any).saveCalculatorState === 'function') {
@@ -483,11 +468,4 @@ import Calculator from '../../../components/calculator/Calculator.astro';
       BilbaoCalc.restoreState?.(ev.detail.state);
     }
   });
-
-  // Clear storage on result shown
-  const _origShowResult = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
-  BilbaoCalc.calculateAndShowResult = function() {
-    _origShowResult();
-    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
-  };
 </script>
