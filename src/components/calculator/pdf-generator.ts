@@ -111,7 +111,7 @@ export function generateBudgetPDF(budget: BudgetInfo): void {
   doc.setFontSize(22);
   doc.text('Bilbao Reforma', ML + 4, 18);
 
-  setFont('helvetica', 'normal');
+  doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(255, 215, 195);
   doc.text('Calculadora de presupuestos  |  bilbaoreforma.es', ML + 4, 27);
