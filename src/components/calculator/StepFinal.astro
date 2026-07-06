@@ -721,9 +721,9 @@
     const config = BREAKDOWN_CONFIG[calculatorType] || BREAKDOWN_CONFIG['integral'];
     const breakdown: BreakdownItem[] = config.map(item => ({
       label: item.label,
-      value: Math.round(high * item.pct / 100),
+      value: item.pct, // porcentaje (0-100) para el chart
       color: item.color,
-      amount: Math.round(high * item.pct / 100),
+      amount: Math.round(high * item.pct / 100), // euros absolutos para el PDF y tooltip
     }));
 
     // Render doughnut SVG
