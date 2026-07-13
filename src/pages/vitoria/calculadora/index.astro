@@ -417,32 +417,29 @@ import StepFinal from '../../../components/calculator/StepFinal.astro';
   const _origCalcVitoria = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
   BilbaoCalc.calculateAndShowResult = function () {
     _origCalcVitoria();
+    const state = (BilbaoCalc as any).state;
+    const result = state?.result;
+    const sfEl = document.getElementById('stepFinal');
+    if (!sfEl || !result) return;
 
-    setTimeout(() => {
-      const state = (BilbaoCalc as any).state;
-      const result = state?.result;
-      const sfEl = document.getElementById('stepFinal');
-      if (!sfEl || !result) return;
+    const low  = result.low  ?? 0;
+    const high = result.high ?? 0;
+    if (low <= 0 || high <= 0) return;
 
-      const low  = result.low  ?? 0;
-      const high = result.high ?? 0;
-      if (low <= 0 || high <= 0) return;
+    sfEl.dataset.budgetLow  = String(low);
+    sfEl.dataset.budgetHigh = String(high);
+    sfEl.dataset.budgetLabel = 'Reforma Integral';
 
-      sfEl.dataset.budgetLow  = String(low);
-      sfEl.dataset.budgetHigh = String(high);
-      sfEl.dataset.budgetLabel = 'Reforma Integral';
-
-      if (typeof (window as any).stepFinalReveal === 'function') {
-        (window as any).stepFinalReveal(
-          low, high,
-          'Reforma Integral',
-          'integral',
-          'vitoria',
-          'Vitoria-Gasteiz',
-          sfEl
-        );
-      }
-    }, 220);
+    if (typeof (window as any).stepFinalReveal === 'function') {
+      (window as any).stepFinalReveal(
+        low, high,
+        'Reforma Integral',
+        'integral',
+        'vitoria',
+        'Vitoria-Gasteiz',
+        sfEl
+      );
+    }
   };
 
   // localStorage persistence
