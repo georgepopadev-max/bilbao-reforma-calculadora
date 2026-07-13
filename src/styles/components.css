@@ -1390,3 +1390,50 @@
   text-decoration: none;
   color: var(--color-blanco);
 }
+
+/* ---- Calculator Hub Cards ---- */
+.calc-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.calc-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  border: 1.5px solid transparent;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.calc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  text-decoration: none;
+}
+.calc-card-integral { background: var(--color-crema,#FAF7F2); border-color: var(--color-beige,#E8E0D5); }
+.calc-card-integral:hover { border-color: var(--color-terracota,#C45C3E); }
+.calc-card-bano { background: var(--color-verde-montana,#4A6741); color: white; }
+.calc-card-bano:hover { border-color: white; }
+.calc-card-cocina { background: var(--color-terracota,#C45C3E); color: white; }
+.calc-card-cocina:hover { border-color: white; }
+.calc-card-pintura { background: var(--color-verde-txakoli,#7FA650); color: white; }
+.calc-card-pintura:hover { border-color: white; }
+.calc-card-suelo { background: var(--color-grafito,#333); color: white; }
+.calc-card-suelo:hover { border-color: white; }
+.calc-card-icon { margin-bottom: 1rem; opacity: 0.85; }
+.calc-card-integral .calc-card-icon,
+.calc-card-suelo .calc-card-icon { color: var(--color-terracota,#C45C3E); }
+.calc-card-bano .calc-card-icon,
+.calc-card-cocina .calc-card-icon,
+.calc-card-pintura .calc-card-icon { color: rgba(255,255,255,0.85); }
+.calc-card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: inherit; }
+.calc-card-desc { font-size: 0.875rem; line-height: 1.5; opacity: 0.85; margin-bottom: 1rem; flex: 1; color: inherit; }
+.calc-card-price { font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 500; color: inherit; }
+.calc-card-price strong { font-weight: 700; }
+.calc-card-cta { font-size: 0.875rem; font-weight: 600; opacity: 0.8; }
+.calc-card:hover .calc-card-cta { opacity: 1; }

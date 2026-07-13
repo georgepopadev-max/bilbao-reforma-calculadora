@@ -1,12 +1,5 @@
 ---
-/**
- * Calculadora Index — Vitoria
- * A3 Zone
- * Step 6 now uses shared StepFinal.astro component.
- */
 import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
-import Calculator from '../../../components/calculator/Calculator.astro';
-import StepFinal from '../../../components/calculator/StepFinal.astro';
 ---
 
 <CalculadoraLayout
@@ -16,448 +9,68 @@ import StepFinal from '../../../components/calculator/StepFinal.astro';
   city="vitoria"
   calculatorType="integral"
 >
-  <!-- Wizard Intro -->
-  <div class="calculator-intro-editorial" style="max-width:760px;margin:2rem auto;padding:0 1.5rem;text-align:center;">
+  <!-- Header editorial -->
+  <div class="calculator-intro-editorial" style="max-width:800px;margin:2rem auto;padding:0 1.5rem;text-align:center;">
     <h1>Calculadora de Reformas en Vitoria-Gasteiz 2026</h1>
-    <p>Obtén un <strong>presupuesto orientativo para tu reforma en Vitoria-Gasteiz y Alava</strong> en menos de 2 minutos. Datos basados en precios reales de empresas de reformas en Alava, actualizados 2026.</p>
+    <p>Obtén un <strong>presupuesto orientativo para tu reforma en Vitoria-Gasteiz y Álava</strong> en menos de 2 minutos. Datos basados en precios reales de empresas de reformas en Álava, actualizados 2026.</p>
   </div>
 
-  <!-- CTA cards -->
-  <div style="max-width:800px;margin:0 auto 2rem;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
-    <a href="/vitoria/calculadora/index.html?type=bano" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-verde-montana,#4A6741);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
-      <span>Baño</span>
-      <span>desde 3.500 EUR →</span>
+  <!-- Calc-cards grid -->
+  <div class="calc-cards-grid" style="max-width:1100px;margin:0 auto;padding:0 1.5rem 4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;">
+
+    <!-- Reforma Integral -->
+    <a href="/vitoria/calculadora/integral-vitoria.html" class="calc-card calc-card-integral">
+      <div class="calc-card-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h2 class="calc-card-title">Reforma Integral</h2>
+      <p class="calc-card-desc">Renovación completa de vivienda o local. Incluye albañilería, fontanería, electricidad, suelos y acabados.</p>
+      <span class="calc-card-price">desde <strong>630 €/m²</strong></span>
+      <span class="calc-card-cta">Calcular →</span>
     </a>
-    <a href="/vitoria/calculadora/index.html?type=cocina" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-terracota,#C45C3E);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
-      <span>Cocina</span>
-      <span>desde 5.500 EUR →</span>
+
+    <!-- Reforma de Baño -->
+    <a href="/vitoria/calculadora/bano-vitoria.html" class="calc-card calc-card-bano">
+      <div class="calc-card-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h11"/><path d="M12 6h0"/><path d="M9 17v-2a2 2 0 0 1 2-2h2"/></svg></div>
+      <h2 class="calc-card-title">Reforma de Baño</h2>
+      <p class="calc-card-desc">Sanitarios, alicatado, fontanería y electricidad del baño. Incluye instalación de ducha o bañera.</p>
+      <span class="calc-card-price">desde <strong>2.250 €</strong></span>
+      <span class="calc-card-cta">Calcular →</span>
     </a>
-    <a href="/vitoria/calculadora/index.html?type=pintura" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--color-verde-txakoli,#7FA650);color:white;padding:1rem 1.5rem;border-radius:var(--radius-card,8px);text-decoration:none;font-weight:500;">
-      <span>Pintura</span>
-      <span>desde 10 EUR/m2 →</span>
+
+    <!-- Reforma de Cocina -->
+    <a href="/vitoria/calculadora/cocina-vitoria.html" class="calc-card calc-card-cocina">
+      <div class="calc-card-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg></div>
+      <h2 class="calc-card-title">Reforma de Cocina</h2>
+      <p class="calc-card-desc">Muebles, encimera, electrodomésticos, fontanería y albañilería. Distribución abierta o cerrada.</p>
+      <span class="calc-card-price">desde <strong>4.500 €</strong></span>
+      <span class="calc-card-cta">Calcular →</span>
+    </a>
+
+    <!-- Pintura -->
+    <a href="/vitoria/calculadora/pintura-vitoria.html" class="calc-card calc-card-pintura">
+      <div class="calc-card-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11h2m-2 0v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6m14 0V7a2 2 0 0 0-2-2H9L7 3v2M5 11h14"/></svg></div>
+      <h2 class="calc-card-title">Pintura</h2>
+      <p class="calc-card-desc">Paredes, techos, puertas y ventanas. Pintura ecológica, gotelé eliminado o pre-tratado.</p>
+      <span class="calc-card-price">desde <strong>7 €/m²</strong></span>
+      <span class="calc-card-cta">Calcular →</span>
+    </a>
+
+    <!-- Cambio de Suelo -->
+    <a href="/vitoria/calculadora/suelo-vitoria.html" class="calc-card calc-card-suelo">
+      <div class="calc-card-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="18" width="20" height="4" rx="1"/><path d="M4 14V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8"/></svg></div>
+      <h2 class="calc-card-title">Cambio de Suelo</h2>
+      <p class="calc-card-desc">Parqué, porcelánico, vinilo o laminado. Incluye retirada del suelo anterior si es necesario.</p>
+      <span class="calc-card-price">desde <strong>27 €/m²</strong></span>
+      <span class="calc-card-cta">Calcular →</span>
     </a>
   </div>
 
-  <!-- Calculator -->
-  <Calculator city="vitoria" calculatorType="integral" title="Reforma en Vitoria" actualStepCount={6}>
-    <!-- STEP 1: Reform Type -->
-    <div class="wizard-step active" id="step1" data-step="1">
-      <div class="step-header">
-        <h2 class="step-title">¿Que tipo de reforma necesitas?</h2>
-        <p class="step-subtitle">Selecciona una opcion o combina varias estancias</p>
-      </div>
-
-      <div class="scope-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem;margin-bottom:1.5rem;">
-        <div class="age-option" data-scope="basic" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Reforma basica</div>
-            <div class="age-option-desc">500-650 EUR/m2</div>
-          </div>
-        </div>
-        <div class="age-option" data-scope="medium" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Reforma media</div>
-            <div class="age-option-desc">650-900 EUR/m2</div>
-          </div>
-        </div>
-        <div class="age-option" data-scope="integral" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Reforma integral</div>
-            <div class="age-option-desc">850-1.200 EUR/m2</div>
-          </div>
-        </div>
-        <div class="age-option" data-scope="luxury" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Reforma premium</div>
-            <div class="age-option-desc">1.200-1.500 EUR/m2</div>
-          </div>
-        </div>
-      </div>
-
-      <p style="text-align:center;color:#888;font-size:0.9rem;margin-bottom:1.5rem;">— o selecciona estancias individuales —</p>
-
-      <div class="type-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.75rem;">
-        <a href="/vitoria/calculadora/pintura-vitoria.html" class="type-card card" data-reform="painting">
-          <div class="card-icon"></div>
-          <div class="card-title">Pintura</div>
-          <div class="card-desc">10-22 EUR/m2</div>
-        </a>
-        <a href="/vitoria/calculadora/suelo-vitoria.html" class="type-card card" data-reform="flooring">
-          <div class="card-icon"></div>
-          <div class="card-title">Suelo</div>
-          <div class="card-desc">30-120 EUR/m2</div>
-        </a>
-        <a href="/vitoria/calculadora/bano-vitoria.html" class="type-card card" data-reform="bathroom">
-          <div class="card-icon"></div>
-          <div class="card-title">Baño</div>
-          <div class="card-desc">desde 3.500 EUR</div>
-        </a>
-        <a href="/vitoria/calculadora/cocina-vitoria.html" class="type-card card" data-reform="kitchen">
-          <div class="card-icon"></div>
-          <div class="card-title">Cocina</div>
-          <div class="card-desc">desde 5.500 EUR</div>
-        </a>
-      </div>
-
-      <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-next" id="btn-next" type="button">
-          Siguiente →
-        </button>
-      </nav>
+  <!-- Help section -->
+  <div style="max-width:800px;margin:0 auto 4rem;padding:0 1.5rem;text-align:center;">
+    <h3 style="font-family:var(--font-playfair,serif);font-size:1.25rem;margin-bottom:1rem;">¿Necesitas ayuda para decidir?</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+      <a href="tel:+34642147856" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;background:var(--color-verde-montana,#4A6741);color:white;border-radius:8px;font-weight:600;text-decoration:none;">📞 Asesoramiento gratis</a>
+      <a href="/vitoria/blog/" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;background:var(--color-terracota,#C45C3E);color:white;border-radius:8px;font-weight:600;text-decoration:none;">📖 Guías completas</a>
+      <a href="/vitoria/empresas/" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;background:var(--color-grafito,#333);color:white;border-radius:8px;font-weight:600;text-decoration:none;">🏢 Empresas verificadas</a>
     </div>
-
-    <!-- STEP 2: Surface Area -->
-    <div class="wizard-step" id="step2" data-step="2">
-      <div class="step-header">
-        <h2 class="step-title">¿Cuantos metros cuadrados tiene la vivienda?</h2>
-        <p class="step-subtitle">Indica la superficie total a reformar</p>
-      </div>
-      <div class="meters-input-group">
-        <div class="meters-value-display">
-          <span class="meters-value-number" id="metersDisplayValue">80</span>
-          <span class="meters-value-unit">m2</span>
-        </div>
-        <input type="number" id="metersInput" class="meters-input" value="80" min="20" max="500" aria-label="Metros cuadrados" />
-        <input type="range" id="metersSlider" class="meters-slider" min="20" max="500" value="80" aria-label="Slider de metros cuadrados" />
-        <div class="meters-presets">
-          <button class="meters-preset-btn" data-meters="45" type="button">Estudio (~45m2)</button>
-          <button class="meters-preset-btn" data-meters="70" type="button">Piso 2 hab (~70m2)</button>
-          <button class="meters-preset-btn" data-meters="90" type="button">Piso 3 hab (~90m2)</button>
-          <button class="meters-preset-btn" data-meters="110" type="button">Piso 4 hab (~110m2)</button>
-        </div>
-      </div>
-      <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" id="btn-prev" type="button">← Atras</button>
-        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
-      </nav>
-    </div>
-
-    <!-- STEP 3: Building Age -->
-    <div class="wizard-step" id="step3" data-step="3">
-      <div class="step-header">
-        <h2 class="step-title">¿Que antigüedad tiene el edificio?</h2>
-        <p class="step-subtitle">Los edificios antiguos pueden necesitar renovacion de instalaciones</p>
-      </div>
-      <div class="age-options" id="ageOptions">
-        <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Menos de 20 anos</div>
-            <div class="age-option-desc">Instalaciones modernas</div>
-          </div>
-          <span class="age-option-badge">×1.00</span>
-        </div>
-        <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">20-40 anos</div>
-            <div class="age-option-desc">Posible renovacion parcial</div>
-          </div>
-          <span class="age-option-badge">×1.05</span>
-        </div>
-        <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">40-70 anos</div>
-            <div class="age-option-desc">Tuberias y electricidad pueden necesitarse</div>
-          </div>
-          <span class="age-option-badge">×1.15</span>
-        </div>
-        <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Mas de 70 anos / Casco Viejo</div>
-            <div class="age-option-desc">Acceso dificil, materiales especiales</div>
-          </div>
-          <span class="age-option-badge">×1.30</span>
-        </div>
-      </div>
-      <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
-        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
-      </nav>
-    </div>
-
-    <!-- STEP 4: Quality -->
-    <div class="wizard-step" id="step4" data-step="4">
-      <div class="step-header">
-        <h2 class="step-title">¿Que nivel de calidad quieres?</h2>
-        <p class="step-subtitle">La calidad de los materiales determina el precio final</p>
-      </div>
-      <div class="age-options" id="qualityOptions">
-        <div class="age-option" data-quality="basic" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Basica</div>
-            <div class="age-option-desc">Leroy Merlin, marca blanca</div>
-          </div>
-          <span class="age-option-badge">×0.80</span>
-        </div>
-        <div class="age-option selected" data-quality="medium" role="button" tabindex="0" aria-pressed="true">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Media</div>
-            <div class="age-option-desc">Cosentino, Porcelanosa media, Roca</div>
-          </div>
-          <span class="age-option-badge">×1.00</span>
-        </div>
-        <div class="age-option" data-quality="premium" role="button" tabindex="0" aria-pressed="false">
-          <div class="age-option-radio"></div>
-          <div class="age-option-content">
-            <div class="age-option-title">Premium</div>
-            <div class="age-option-desc">Dekton, Villeroy & Boch, Hansgrohe</div>
-          </div>
-          <span class="age-option-badge">×1.40</span>
-        </div>
-      </div>
-      <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
-        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Siguiente →</button>
-      </nav>
-    </div>
-
-    <!-- STEP 5: Extras -->
-    <div class="wizard-step" id="step5" data-step="5">
-      <div class="step-header">
-        <h2 class="step-title">¿Algun extra?</h2>
-        <p class="step-subtitle">Selecciona elementos adicionales (opcional)</p>
-      </div>
-      <div class="extras-grid" id="extrasGrid">
-        <div class="extra-checkbox-item" data-extra="windows" role="button" tabindex="0" aria-pressed="false">
-          <div class="extra-checkbox">
-            <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="extra-content">
-            <div class="extra-title">Ventanas PVC</div>
-            <div class="extra-desc">4 unidades de media</div>
-          </div>
-          <div class="extra-bottom-row">
-            <span class="extra-price">350-700 EUR/ud</span>
-          </div>
-        </div>
-        <div class="extra-checkbox-item" data-extra="terrace" role="button" tabindex="0" aria-pressed="false">
-          <div class="extra-checkbox">
-            <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="extra-content">
-            <div class="extra-title">Terraza/Balcon</div>
-            <div class="extra-desc">Opcional</div>
-          </div>
-          <div class="extra-bottom-row">
-            <span class="extra-price">250-550 EUR/m2</span>
-          </div>
-        </div>
-        <div class="extra-checkbox-item" data-extra="radiantFloor" role="button" tabindex="0" aria-pressed="false">
-          <div class="extra-checkbox">
-            <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="extra-content">
-            <div class="extra-title">Suelo radiante</div>
-            <div class="extra-desc">Opcional</div>
-          </div>
-          <div class="extra-bottom-row">
-            <span class="extra-price">70-140 EUR/m2</span>
-          </div>
-        </div>
-        <div class="extra-checkbox-item" data-extra="domotics" role="button" tabindex="0" aria-pressed="false">
-          <div class="extra-checkbox">
-            <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="extra-content">
-            <div class="extra-title">Domotica</div>
-            <div class="extra-desc">Opcional</div>
-          </div>
-          <div class="extra-bottom-row">
-            <span class="extra-price">1.000-3.000 EUR</span>
-          </div>
-        </div>
-        <div class="extra-checkbox-item" data-extra="aerothermia" role="button" tabindex="0" aria-pressed="false">
-          <div class="extra-checkbox">
-            <svg class="extra-checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="extra-content">
-            <div class="extra-title">Aerotermia</div>
-            <div class="extra-desc">Opcional</div>
-          </div>
-          <div class="extra-bottom-row">
-            <span class="extra-price">4.500-10.000 EUR</span>
-          </div>
-        </div>
-      </div>
-      <nav class="wizard-nav">
-        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atras</button>
-        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Calcular Presupuesto →</button>
-      </nav>
-    </div>
-
-    <!-- STEP 6: Result — shared StepFinal component -->
-    <div class="wizard-step" id="step6" data-step="6">
-      <StepFinal city="vitoria" calculatorType="integral" />
-    </div>
-  </Calculator>
-
-  <!-- FAQ Section -->
-  <section class="faq-section" style="background:var(--color-crema,#FAF7F2);padding:3rem 1.5rem;border-top:1px solid var(--color-beige,#E8E0D5);">
-    <div style="max-width:800px;margin:0 auto;">
-      <h2 style="font-family:var(--font-playfair,'Playfair Display',serif);font-size:1.75rem;font-weight:600;color:var(--color-grafito,#2D2D2D);margin-bottom:1.5rem;text-align:center;">Preguntas Frecuentes sobre Reformas en Vitoria</h2>
-
-      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
-        <summary style="padding:1rem 1.25rem;background:white;cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-          ¿Cuanto cuesta reformar un piso en Vitoria en 2026?
-          <span style="margin-left:1rem;flex-shrink:0;">+</span>
-        </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">El precio medio de una reforma integral en Vitoria-Gasteiz oscila entre <strong>850 y 1.200 EUR/m2</strong> en 2026, dependiendo de la calidad de materiales y el estado del edificio. Para una reforma de cocina (12-15 m2) calcula entre 5.500 y 17.000 EUR, y para un bano completo entre 3.500 y 13.000 EUR.</p>
-      </details>
-
-      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
-        <summary style="padding:1rem 1.25rem;background:white;cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-          ¿Que incluye la calculadora de reformas de Vitoria?
-          <span style="margin-left:1rem;flex-shrink:0;">+</span>
-        </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">La calculadora incluye reforma completa de vivienda (basica, media o integral), reforma parcial por estancia (bano, cocina, pintura, suelo), metros cuadrados, antiguedad del edificio, calidad de materiales y extras opcionales como ventanas, aerotermia o domotica. El resultado incluye desglose por partidas y comparativa del precio medio en Vitoria.</p>
-      </details>
-
-      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-beige,#E8E0D5);border-radius:8px;overflow:hidden;">
-        <summary style="padding:1rem 1.25rem;background:white;cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-          ¿Necesito licencia para reformar en Vitoria?
-          <span style="margin-left:1rem;flex-shrink:0;">+</span>
-        </summary>
-        <p style="padding:1rem 1.25rem;background:white;margin:0;line-height:1.6;border-top:1px solid var(--color-beige,#E8E0D5);">En Vitoria-Gasteiz las licencias de obra menor las gestiona el Ayuntamiento. Para reformas integrales o que afecten a la estructura, es necesaria licencia de obra mayor. Los edificios del Casco Viejo pueden tener protecciones patrimoniales adicionales. Consulta con tu empresa de reformas local.</p>
-      </details>
-
-      <p style="text-align:center;margin-top:1.5rem;color:var(--color-gris,#6B6B6B);font-size:0.9rem;">
-        ¿Sabias que puedes <a href="/vitoria/blog/index.html">subvencionar parte de tu reforma en Vitoria</a>? Consulta las ayudas disponibles para Alava y el Pais Vasco.
-      </p>
-    </div>
-  </section>
+  </div>
 </CalculadoraLayout>
-
-<script>
-  import BilbaoCalc from '../../../scripts/calculator/core.ts';
-  BilbaoCalc.setRegion('vitoria');
-  BilbaoCalc.setTotalSteps(7); // 6 wizard steps + 1 result
-  BilbaoCalc.init();
-
-  // Scope cards (step 1)
-  document.querySelectorAll('[data-scope]').forEach((el) => {
-    el.addEventListener('click', () => {
-      const scope = el.getAttribute('data-scope');
-      if (scope) BilbaoCalc.selectScope(scope as any);
-    });
-  });
-
-  // Type cards (step 1)
-  document.querySelectorAll('[data-reform]').forEach((el) => {
-    el.addEventListener('click', () => {
-      const type = el.getAttribute('data-reform');
-      if (type) BilbaoCalc.toggleReformType(type as any);
-    });
-  });
-
-  // Nav: next/back
-  document.querySelectorAll('.wizard-nav-btn-next').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const step5Next = btn.closest('#step5')?.querySelector('.wizard-nav-btn-next');
-      if (btn === step5Next) {
-        BilbaoCalc.calculateAndShowResult();
-      } else {
-        BilbaoCalc.nextStep();
-      }
-    });
-  });
-
-  document.querySelectorAll('.wizard-nav-btn-back').forEach((btn) => {
-    btn.addEventListener('click', () => BilbaoCalc.prevStep());
-  });
-
-  // Meters (step 2)
-  const metersInput = document.getElementById('metersInput') as HTMLInputElement | null;
-  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement | null;
-  metersInput?.addEventListener('input', () => BilbaoCalc.updateSqm(metersInput.value));
-  metersSlider?.addEventListener('input', () => BilbaoCalc.updateSqm(metersSlider.value));
-
-  document.querySelectorAll('.meters-preset-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const m = parseInt((btn as HTMLButtonElement).dataset.meters ?? '80', 10);
-      BilbaoCalc.updateSqm(m);
-    });
-  });
-
-  // Building age (step 3)
-  document.querySelectorAll('#ageOptions .age-option').forEach((el) => {
-    el.addEventListener('click', () => {
-      const age = el.getAttribute('data-age');
-      if (age) BilbaoCalc.updateBuildingAge(age as any);
-    });
-  });
-
-  // Quality (step 4)
-  document.querySelectorAll('#qualityOptions .age-option').forEach((el) => {
-    el.addEventListener('click', () => {
-      const quality = el.getAttribute('data-quality');
-      if (quality) BilbaoCalc.updateQuality(quality as any);
-    });
-  });
-
-  // Extras (step 5)
-  document.querySelectorAll('.extra-checkbox-item').forEach((el) => {
-    el.addEventListener('click', () => {
-      const key = el.getAttribute('data-extra');
-      if (key) BilbaoCalc.toggleExtra(key);
-    });
-  });
-
-  // ────────────────────────────────────────────────────────────────────────
-  // Override calculateAndShowResult to bridge BilbaoCalc → StepFinal
-  // ────────────────────────────────────────────────────────────────────────
-  const _origCalcVitoria = BilbaoCalc.calculateAndShowResult.bind(BilbaoCalc);
-  BilbaoCalc.calculateAndShowResult = function () {
-    _origCalcVitoria();
-    const state = (BilbaoCalc as any).state;
-    const result = state?.result;
-    const sfEl = document.getElementById('stepFinal');
-    if (!sfEl || !result) return;
-
-    const low  = result.low  ?? 0;
-    const high = result.high ?? 0;
-    if (low <= 0 || high <= 0) return;
-
-    sfEl.dataset.budgetLow  = String(low);
-    sfEl.dataset.budgetHigh = String(high);
-    sfEl.dataset.budgetLabel = 'Reforma Integral';
-
-    if (typeof (window as any).stepFinalReveal === 'function') {
-      (window as any).stepFinalReveal(
-        low, high,
-        'Reforma Integral',
-        'integral',
-        'vitoria',
-        'Vitoria-Gasteiz',
-        sfEl
-      );
-    }
-  };
-
-  // localStorage persistence
-  function saveVitoriaState() {
-    const s = (BilbaoCalc as any).state;
-    if (s && typeof (window as any).saveCalculatorState === 'function') {
-      (window as any).saveCalculatorState(s.currentStep, { data: s.data, region: s.region });
-    }
-  }
-  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
-    btn.addEventListener('click', saveVitoriaState, true);
-  });
-
-  // Restore
-  window.addEventListener('calculator:restore', (e: Event) => {
-    const ev = e as CustomEvent<{ step: number; state: any }>;
-    if (ev.detail?.state) {
-      BilbaoCalc.restoreState?.(ev.detail.state);
-    }
-  });
-</script>
