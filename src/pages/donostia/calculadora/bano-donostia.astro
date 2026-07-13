@@ -1,0 +1,500 @@
+---
+/**
+ * Calculadora Baño Donostia — Specialized bathroom calculator
+ * A3 Zone
+ *
+ * CLAMP: MIN_BATHROOM = 2750 EUR
+ * This clamp MUST be preserved exactly.
+ */
+import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
+import Calculator from '../../../components/calculator/Calculator.astro';
+import StepFinal from '../../../components/calculator/StepFinal.astro';
+---
+
+<CalculadoraLayout
+  title="Calculadora Reforma Baño Donostia 2026"
+  description="Calculadora de Reforma de Baño en Donostia/San Sebastián 2026 — Presupuesto orientativo desde 2.750 € hasta 13.200 €. Calcula el coste con materiales y mano de obra."
+  canonical="https://www.bilbaoreforma.es/donostia/calculadora/bano-donostia.html"
+  city="donostia"
+  calculatorType="bano"
+  minPrice={2750}
+>
+  <!-- CTA banner -->
+  <div class="calculator-cta-banner">
+    <a href="/donostia/calculadora/index.html">
+      <span>🛁 ¿Quieres comparar con reforma integral completa? Usa nuestra calculadora general</span>
+      <span>→ Calcular</span>
+    </a>
+  </div>
+
+  <!-- Editorial intro -->
+  <div class="calculator-intro-editorial">
+    <h1>Reforma de Baño en Donostia: presupuestos desde 2.750 € hasta 13.200 €</h1>
+    <p>La reforma de un baño en Donostia/San Sebastián incluye varios conceptos: sanitarios, alicatado, fontanería y electricidad. Dependiendo del tamaño y la calidad, el presupuesto oscila entre <strong>2.750 €</strong> para un baño básico y <strong>13.200 €</strong> para un baño completo con acabados premium.</p>
+    <p><a href="/blog/reforma-bano-bilbao.html">Leer artículo: Guía completa para reformar un baño en Donostia</a></p>
+  </div>
+
+  <!-- Wizard -->
+  <Calculator
+    title="Reforma de Baño en Donostia"
+    city="donostia"
+    calculatorType="bano"
+    minPrice={2750}
+  >
+    <!-- STEP 1: Metros -->
+    <div class="wizard-step active" id="step1" data-step="1">
+      <div class="step-header">
+        <h2>¿Cuántos metros tiene tu baño?</h2>
+        <p class="step-subtitle">Indica los metros cuadrados del baño a reformar</p>
+      </div>
+      <div class="meters-input-group">
+        <label class="meters-label" for="metersInput">Metros cuadrados</label>
+        <div class="meters-value-display">
+          <span class="meters-value-number" id="metersDisplayValue">6</span>
+          <span class="meters-value-unit">m²</span>
+        </div>
+        <input type="number" id="metersInput" class="meters-input" value="6" min="3" max="20" placeholder="3–20" aria-label="Metros cuadrados del baño" />
+        <input type="range" id="metersSlider" class="meters-slider" min="3" max="20" value="6" aria-label="Slider de metros cuadrados" />
+        <div class="meters-presets">
+          <button class="meters-preset-btn" data-meters="4" type="button">Baño pequeño<br><small>~4–5 m²</small></button>
+          <button class="meters-preset-btn" data-meters="7" type="button">Baño estándar<br><small>~6–8 m²</small></button>
+          <button class="meters-preset-btn" data-meters="11" type="button">Baño grande<br><small>~10–12 m²</small></button>
+          <button class="meters-preset-btn" data-meters="16" type="button">Baño master<br><small>&gt;15 m²</small></button>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 2: Elemento Principal -->
+    <div class="wizard-step" id="step2" data-step="2">
+      <div class="step-header">
+        <h2>¿Qué elemento principal quieres instalar?</h2>
+      </div>
+      <div class="age-options" id="mainElementOptions">
+        <div class="age-option selected" data-value="ducha" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Solo ducha</div>
+            <div class="age-option-desc">Plato de ducha o walk-in</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="banera" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Solo bañera</div>
+            <div class="age-option-desc">Bañera estándar o de hidromasaje</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="ducha_banera" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Ducha + bañera</div>
+            <div class="age-option-desc">Ambos elementos</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="sanitarios" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Cambio de sanitarios sin obra</div>
+            <div class="age-option-desc">Solo cambiar inodoro, lavabo</div>
+          </div>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 3: Tipo Ducha -->
+    <div class="wizard-step" id="step3" data-step="3">
+      <div class="step-header">
+        <h2>¿Qué tipo de ducha quieres?</h2>
+      </div>
+      <div class="age-options" id="duchaTypeOptions">
+        <div class="age-option selected" data-value="plato_convencional" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Plato de ducha convencional</div>
+          </div>
+          <span class="age-option-badge">+440–880 €</span>
+        </div>
+        <div class="age-option" data-value="walk_in" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Ducha a ras de suelo (walk-in)</div>
+          </div>
+          <span class="age-option-badge">+880–2.200 €</span>
+        </div>
+        <div class="age-option" data-value="banera_acero" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Bañera de acero/acrílico</div>
+          </div>
+          <span class="age-option-badge">+660–1.320 €</span>
+        </div>
+        <div class="age-option" data-value="banera_hidro" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Bañera de hidromasaje / exenta</div>
+          </div>
+          <span class="age-option-badge">+2.200–5.500 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 4: Revestimiento -->
+    <div class="wizard-step" id="step4" data-step="4">
+      <div class="step-header">
+        <h2>¿Qué revestimiento quieres para las paredes?</h2>
+      </div>
+      <div class="age-options" id="revestimientoOptions">
+        <div class="age-option selected" data-value="no_cambiar" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">No se cambia azulejo</div>
+        </div>
+        <div class="age-option" data-value="azulejo_parcial" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Azulejo parcial (hasta 1m)</div>
+        </div>
+        <div class="age-option" data-value="azulejo_completo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Azulejo completo</div>
+        </div>
+        <div class="age-option" data-value="gresite" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gresite</div>
+          </div>
+          <span class="age-option-badge">+30–50%</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 5: Suelo -->
+    <div class="wizard-step" id="step5" data-step="5">
+      <div class="step-header">
+        <h2>¿Qué suelo quieres para el baño?</h2>
+      </div>
+      <div class="age-options" id="sueloOptions">
+        <div class="age-option selected" data-value="gres_antideslizante" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Gres antideslizante</div>
+          <span class="age-option-badge">Incluido</span>
+        </div>
+        <div class="age-option" data-value="gresite_suelo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Gresite</div>
+          <span class="age-option-badge">+44–66 €/m²</span>
+        </div>
+        <div class="age-option" data-value="microcemento" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Microcemento</div>
+          <span class="age-option-badge">+77–132 €/m²</span>
+        </div>
+        <div class="age-option" data-value="piedra_natural" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Piedra natural</div>
+          <span class="age-option-badge">+110–220 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 6: Tipo Edificio -->
+    <div class="wizard-step" id="step6" data-step="6">
+      <div class="step-header">
+        <h2>¿Qué tipo de edificio?</h2>
+        <p class="step-subtitle">La antigüedad afecta al coste</p>
+      </div>
+      <div class="age-options" id="ageOptions">
+        <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Menos de 20 años</div>
+          <span class="age-option-badge">×1.00</span>
+        </div>
+        <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 20 y 40 años</div>
+          <span class="age-option-badge">×1.05</span>
+        </div>
+        <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 40 y 70 años</div>
+          <span class="age-option-badge">×1.15</span>
+        </div>
+        <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Más de 70 años / Casco Viejo</div>
+          <span class="age-option-badge">×1.30</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 7: Resultado -->
+    <div class="wizard-step" id="step7" data-step="7">
+      <StepFinal calculatorType="bano" city="donostia" />
+    </div>
+  </Calculator>
+</CalculadoraLayout>
+
+<script>
+  import { BARRIO_MULTIPLIERS, BARRIO_LABELS, formatCurrency } from '/src/scripts/calculator/index.ts';
+
+  const MIN_BATHROOM = 2750;
+
+  // Read ?barrio= from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const barrio = urlParams.get('barrio');
+
+  // Inject barrio badge if present
+  if (barrio && BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS]) {
+    const step3Header = document.querySelector('#step3 .step-header');
+    if (step3Header) {
+      const badge = document.createElement('div');
+      badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:var(--color-blanco);padding:0.25rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;font-family:var(--font-inter);';
+      badge.textContent = 'Barrio: ' + BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS];
+      step3Header.insertBefore(badge, step3Header.firstChild);
+    }
+  }
+
+  // State
+  const state = {
+    metros: 6,
+    mainElement: 'ducha',
+    duchaType: 'plato_convencional',
+    revestimiento: 'no_cambiar',
+    suelo: 'gres_antideslizante',
+    edificio: 1.0,
+  };
+
+  // Helpers
+  function showStep(n: number) {
+    // Update stepper
+    document.querySelectorAll('.stepper-step').forEach(el => {
+      const step = parseInt((el as HTMLElement).dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (step < n) el.classList.add('completed');
+      if (step === n) el.classList.add('active');
+    });
+
+    document.querySelectorAll('.wizard-step').forEach(el => {
+      (el as HTMLElement).style.display = 'none';
+      el.classList.remove('active');
+    });
+    const step = document.querySelector(`.wizard-step[data-step="${n}"]`);
+    if (step) {
+      (step as HTMLElement).style.display = 'block';
+      step.classList.add('active');
+    }
+    // Update progress bar
+    if (typeof (window as any).updateCalcProgress === 'function') (window as any).updateCalcProgress(n);
+  }
+
+  function updateSqm(val: number) {
+    state.metros = val;
+    const display = document.getElementById('metersDisplayValue');
+    const input = document.getElementById('metersInput') as HTMLInputElement;
+    const slider = document.getElementById('metersSlider') as HTMLInputElement;
+    if (display) display.textContent = String(val);
+    if (input) input.value = String(val);
+    if (slider) slider.value = String(val);
+  }
+
+  function selectOption(containerId: string, key: string, value: string) {
+    state[key as keyof typeof state] = value as any;
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-value') === value;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function selectAge(age: string) {
+    const multipliers: Record<string, number> = { new: 1.0, moderate: 1.05, old: 1.15, historic: 1.30 };
+    state.edificio = multipliers[age] || 1.0;
+    const container = document.getElementById('ageOptions');
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-age') === age;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function calculateBathroom() {
+    const m2 = state.metros;
+    let base = 0;
+
+    // Donostia prices (x1.1 from Bilbao)
+    const precioM2: Record<string, number> = { ducha: 495, banera: 605, ducha_banera: 825, sanitarios: 220 };
+    base += m2 * (precioM2[state.mainElement] || 440);
+
+    const precioDucha: Record<string, number> = {
+      plato_convencional: 660, walk_in: 1540, mampara_corredera: 935,
+      banera_acero: 990, banera_hidro: 3850
+    };
+    if (state.duchaType && precioDucha[state.duchaType]) {
+      base += precioDucha[state.duchaType];
+    }
+
+    const precioRev: Record<string, number> = {
+      no_cambiar: 0, azulejo_parcial: m2 * 50, azulejo_completo: m2 * 93, gresite: m2 * 132
+    };
+    base += precioRev[state.revestimiento] || 0;
+
+    const precioSuelo: Record<string, number> = {
+      gres_antideslizante: 0, gresite_suelo: m2 * 55, microcemento: m2 * 104, piedra_natural: m2 * 165
+    };
+    base += precioSuelo[state.suelo] || 0;
+
+    base *= state.edificio;
+
+    // Apply barrio multiplier
+    if (barrio && BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS]) {
+      base *= BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS];
+    }
+
+    // Apply MIN_BATHROOM clamp — MUST BE PRESERVED
+    const low = Math.max(Math.round(base * 0.85), MIN_BATHROOM);
+    const high = Math.round(base * 1.15);
+
+    return { low, high };
+  }
+
+  function showResult() {
+    const { low, high } = calculateBathroom();
+    showStep(7);
+
+    // Populate StepFinal and reveal it
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Reforma de Baño';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
+      (window as any).stepFinalReveal(low, high, 'Reforma de Baño', 'bano', 'donostia', 'Donostia', sfEl);
+    }
+    // Clear localStorage on wizard complete
+    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
+  }
+
+  // Event bindings
+  let currentStep = 1;
+
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    (btn as HTMLButtonElement).addEventListener('click', () => {
+      if (currentStep === 6) {
+        showResult();
+      } else {
+        currentStep++;
+        showStep(currentStep);
+      }
+    });
+  });
+
+  document.querySelectorAll('.wizard-nav-btn-back').forEach(btn => {
+    (btn as HTMLButtonElement).addEventListener('click', () => {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    });
+  });
+
+  // Meters
+  const metersInput = document.getElementById('metersInput') as HTMLInputElement;
+  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement;
+  metersInput?.addEventListener('input', () => updateSqm(parseInt(metersInput.value)));
+  metersSlider?.addEventListener('input', () => updateSqm(parseInt(metersSlider.value)));
+
+  document.querySelectorAll('.meters-preset-btn').forEach(btn => {
+    (btn as HTMLButtonElement).addEventListener('click', () => {
+      const m = parseInt((btn as HTMLButtonElement).dataset.meters || '6');
+      updateSqm(m);
+    });
+  });
+
+  // Options
+  ['ducha', 'banera', 'ducha_banera', 'sanitarios'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('mainElementOptions', 'mainElement', val));
+    });
+  });
+
+  ['plato_convencional', 'walk_in', 'mampara_corredera', 'banera_acero', 'banera_hidro'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('duchaTypeOptions', 'duchaType', val));
+    });
+  });
+
+  ['no_cambiar', 'azulejo_parcial', 'azulejo_completo', 'gresite'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('revestimientoOptions', 'revestimiento', val));
+    });
+  });
+
+  ['gres_antideslizante', 'gresite_suelo', 'microcemento', 'piedra_natural'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('sueloOptions', 'suelo', val));
+    });
+  });
+
+  ['new', 'moderate', 'old', 'historic'].forEach(age => {
+    document.querySelectorAll(`[data-age="${age}"]`).forEach(el => {
+      el.addEventListener('click', () => selectAge(age));
+    });
+  });
+
+  // Back from StepFinal
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
+  });
+
+  // Restore from localStorage
+  window.addEventListener('calculator:restore', (e: Event) => {
+    const ev = e as CustomEvent<{ step: number; state: any }>;
+    if (ev.detail?.state) {
+      Object.assign(state, ev.detail.state);
+      currentStep = ev.detail.step;
+    } else {
+      currentStep = 1;
+    }
+    showStep(currentStep);
+  });
+
+  // Save state on every step change
+  function saveState() {
+    if (typeof (window as any).saveCalculatorState === 'function') {
+      (window as any).saveCalculatorState(currentStep, state);
+    }
+  }
+  // Intercept nav buttons to save state
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => { if (currentStep !== 6) saveState(); }, true);
+  });
+
+  // Init — show step 1
+  showStep(1);
+</script>

@@ -1,0 +1,442 @@
+---
+/**
+ * Calculadora Pintura Vitoria — Painting calculator
+ * A3 Zone
+ * No minimum clamp
+ */
+import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
+import Calculator from '../../../components/calculator/Calculator.astro';
+import StepFinal from '../../../components/calculator/StepFinal.astro';
+---
+
+<CalculadoraLayout
+  title="Calculadora de Pintura en Vitoria 2026"
+  description="Calculadora de Pintura en Vitoria-Gasteiz 2026 — Presupuesto orientativo desde 7 €/m². Precios con mano de obra incluida."
+  canonical="https://www.bilbaoreforma.es/vitoria/calculadora/pintura-vitoria.html"
+  city="vitoria"
+  calculatorType="pintura"
+>
+  <!-- CTA banner -->
+  <div class="calculator-cta-banner">
+    <a href="/vitoria/calculadora/index.html">
+      <span>🎨 ¿Necesitas algo más que pintura? Usa la calculadora general</span>
+      <span>→ Calcular</span>
+    </a>
+  </div>
+
+  <!-- Editorial intro -->
+  <div class="calculator-intro-editorial">
+    <h1>Pintura de Piso en Vitoria: desde 7 €/m²</h1>
+    <p>Precios de pintura con mano de obra incluida en Vitoria-Gasteiz y Álava. Incluye preparación de pared, dos manos de pintura y acabado. Los precios varían según el estado de las paredes y el tipo de pintura.</p>
+    <p><a href="/blog/pintura-bilbao.html">Leer artículo: Guía de precios de pintura en Vitoria</a></p>
+  </div>
+
+  <!-- Wizard -->
+  <Calculator
+    title="Pintura en Vitoria"
+    city="vitoria"
+    calculatorType="pintura"
+  >
+    <!-- STEP 1: Metros -->
+    <div class="wizard-step active" id="step1" data-step="1">
+      <div class="step-header">
+        <h2>¿Cuántos metros quieres pintar?</h2>
+        <p class="step-subtitle">Metros cuadrados de pared/techo a pintar</p>
+      </div>
+      <div class="meters-input-group">
+        <label class="meters-label" for="metersInput">Metros cuadrados</label>
+        <div class="meters-value-display">
+          <span class="meters-value-number" id="metersDisplayValue">80</span>
+          <span class="meters-value-unit">m²</span>
+        </div>
+        <input type="number" id="metersInput" class="meters-input" value="80" min="20" max="500" placeholder="20–500" aria-label="Metros cuadrados a pintar" />
+        <input type="range" id="metersSlider" class="meters-slider" min="20" max="500" value="80" aria-label="Slider de metros cuadrados" />
+        <div class="meters-presets">
+          <button class="meters-preset-btn" data-meters="45" type="button">Piso pequeño<br><small>~35–50 m²</small></button>
+          <button class="meters-preset-btn" data-meters="80" type="button">Piso medio<br><small>~65–90 m²</small></button>
+          <button class="meters-preset-btn" data-meters="130" type="button">Piso grande<br><small>~110–150 m²</small></button>
+          <button class="meters-preset-btn" data-meters="220" type="button">Ático/Casa<br><small>&gt;180 m²</small></button>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 2: Tipo de paredes -->
+    <div class="wizard-step" id="step2" data-step="2">
+      <div class="step-header">
+        <h2>¿Qué tipo de paredes tienes?</h2>
+      </div>
+      <div class="age-options" id="paredesOptions">
+        <div class="age-option selected" data-value="liso" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Paredes lisas (yeso)</div>
+            <div class="age-option-desc">Superficie lisa, poca preparación</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="gotele" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gotelé /-textura</div>
+            <div class="age-option-desc">Paredes con gotelé que hay que alisar</div>
+          </div>
+          <span class="age-option-badge">+3 €/m²</span>
+        </div>
+        <div class="age-option" data-value="pintadas" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Ya pintadas, en buen estado</div>
+            <div class="age-option-desc">Solo dar una capa nueva</div>
+          </div>
+          <span class="age-option-badge">×0.7</span>
+        </div>
+        <div class="age-option" data-value="humedad" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Con manchas o humedad</div>
+            <div class="age-option-desc">Necesita tratamiento anti-humedad</div>
+          </div>
+          <span class="age-option-badge">×1.3</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 3: Techos -->
+    <div class="wizard-step" id="step3" data-step="3">
+      <div class="step-header">
+        <h2>¿Pintamos también los techos?</h2>
+      </div>
+      <div class="age-options" id="techosOptions">
+        <div class="age-option selected" data-value="si" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Sí, pintar techos también</div>
+        </div>
+        <div class="age-option" data-value="no" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">No, solo paredes</div>
+        </div>
+        <div class="age-option" data-value="blanco" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Techo blanco (cocina/baño)</div>
+            <div class="age-option-desc">Pintura específica antihumedad</div>
+          </div>
+          <span class="age-option-badge">+1 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 4: Tipo de pintura -->
+    <div class="wizard-step" id="step4" data-step="4">
+      <div class="step-header">
+        <h2>¿Qué tipo de pintura prefieres?</h2>
+      </div>
+      <div class="age-options" id="tipoPinturaOptions">
+        <div class="age-option selected" data-value="plastica" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Pintura plástica estándar</div>
+            <div class="age-option-desc">Mate, lavable, colores neutros</div>
+          </div>
+          <span class="age-option-badge">7 €/m²</span>
+        </div>
+        <div class="age-option" data-value="premium" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Pintura premium (Titan, Bruguer)</div>
+            <div class="age-option-desc">Mayor cobertura, mejor acabado</div>
+          </div>
+          <span class="age-option-badge">11 €/m²</span>
+        </div>
+        <div class="age-option" data-value="ecologica" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Pintura ecológica / mineral</div>
+            <div class="age-option-desc">Sin COVs, transpirable</div>
+          </div>
+          <span class="age-option-badge">16 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 5: Carpintería -->
+    <div class="wizard-step" id="step5" data-step="5">
+      <div class="step-header">
+        <h2>¿Pintamos puertas y ventanas?</h2>
+      </div>
+      <div class="age-options" id="carpinteriaOptions">
+        <div class="age-option selected" data-value="no" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">No, solo paredes</div>
+        </div>
+        <div class="age-option" data-value="puertas" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Puertas (incluye barniz si es madera)</div>
+            <div class="age-option-desc">Cantos, marcos y puertas</div>
+          </div>
+          <span class="age-option-badge">+315 €</span>
+        </div>
+        <div class="age-option" data-value="completo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Puertas + ventanas + radiadores</div>
+            <div class="age-option-desc">Tratamiento completo de carpintería</div>
+          </div>
+          <span class="age-option-badge">+630 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 6: Estado del edificio -->
+    <div class="wizard-step" id="step6" data-step="6">
+      <div class="step-header">
+        <h2>¿Qué tipo de edificio?</h2>
+        <p class="step-subtitle">Afecta al acceso y complejidad del trabajo</p>
+      </div>
+      <div class="age-options" id="edificioOptions">
+        <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Edificio moderno (&lt;30 años)</div>
+          <span class="age-option-badge">×1.0</span>
+        </div>
+        <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Edificio de 30–60 años</div>
+          <span class="age-option-badge">×1.1</span>
+        </div>
+        <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Edificio antiguo / Casco Viejo</div>
+          <span class="age-option-badge">×1.2</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 7: Resultado -->
+    <div class="wizard-step" id="step7" data-step="7">
+      <StepFinal calculatorType="pintura" city="vitoria" />
+    </div>
+  </Calculator>
+</CalculadoraLayout>
+
+<script>
+  import { BARRIO_MULTIPLIERS, BARRIO_LABELS, formatCurrency } from '/src/scripts/calculator/index.ts';
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const barrio = urlParams.get('barrio');
+
+  if (barrio && BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS]) {
+    const stepHeader = document.querySelector('#step1 .step-header');
+    if (stepHeader) {
+      const badge = document.createElement('div');
+      badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:var(--color-blanco);padding:0.25rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;font-family:var(--font-inter);';
+      badge.textContent = 'Barrio: ' + BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS];
+      stepHeader.insertBefore(badge, stepHeader.firstChild);
+    }
+  }
+
+  const state = {
+    metros: 80,
+    paredes: 'liso',
+    techos: 'si',
+    tipoPintura: 'plastica',
+    carpinteria: 'no',
+    edificio: 1.0,
+  };
+
+  function showStep(n: number) {
+    document.querySelectorAll('.stepper-step').forEach(el => {
+      const step = parseInt((el as HTMLElement).dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (step < n) el.classList.add('completed');
+      if (step === n) el.classList.add('active');
+    });
+    document.querySelectorAll('.wizard-step').forEach(el => {
+      (el as HTMLElement).style.display = 'none';
+      el.classList.remove('active');
+    });
+    const step = document.querySelector(`.wizard-step[data-step="${n}"]`);
+    if (step) {
+      (step as HTMLElement).style.display = 'block';
+      step.classList.add('active');
+    }
+    if (typeof (window as any).updateCalcProgress === 'function') (window as any).updateCalcProgress(n);
+  }
+
+  function updateSqm(val: number) {
+    state.metros = val;
+    const display = document.getElementById('metersDisplayValue');
+    const input = document.getElementById('metersInput') as HTMLInputElement;
+    const slider = document.getElementById('metersSlider') as HTMLInputElement;
+    if (display) display.textContent = String(val);
+    if (input) input.value = String(val);
+    if (slider) slider.value = String(val);
+  }
+
+  function selectOption(containerId: string, key: string, value: string) {
+    state[key as keyof typeof state] = value as any;
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-value') === value;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function selectAge(age: string) {
+    const multipliers: Record<string, number> = { new: 1.0, moderate: 1.1, old: 1.2 };
+    state.edificio = multipliers[age] || 1.0;
+    const container = document.getElementById('edificioOptions');
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-age') === age;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function calculatePintura() {
+    const m2 = state.metros;
+    // Vitoria prices (x0.9 from Bilbao)
+    const rateMap: Record<string, number> = { plastica: 7, premium: 11, ecologica: 16 };
+    const paredesMult: Record<string, number> = { liso: 1.0, gotele: 1.3, pintadas: 0.7, humedad: 1.3 };
+    const techoExtra: Record<string, number> = { si: m2 * 4, no: 0, blanco: m2 * 5 };
+    const carpExtra: Record<string, number> = { no: 0, puertas: 315, completo: 630 };
+
+    const rate = rateMap[state.tipoPintura] || 7;
+    const paredes = paredesMult[state.paredes] || 1.0;
+    const techo = techoExtra[state.techos] || 0;
+    const carp = carpExtra[state.carpinteria] || 0;
+
+    let base = m2 * rate * paredes + techo + carp;
+    base *= state.edificio;
+
+    if (barrio && BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS]) {
+      base *= BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS];
+    }
+
+    const low = Math.round(base * 0.85);
+    const high = Math.round(base * 1.15);
+
+    return { low, high };
+  }
+
+  function showResult() {
+    const { low, high } = calculatePintura();
+    showStep(7);
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Pintura';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
+      (window as any).stepFinalReveal(low, high, 'Pintura', 'pintura', 'vitoria', 'Vitoria', sfEl);
+    }
+    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
+  }
+
+  let currentStep = 1;
+
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep === 6) { showResult(); }
+      else { currentStep++; showStep(currentStep); }
+    });
+  });
+
+  document.querySelectorAll('.wizard-nav-btn-back').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 1) { currentStep--; showStep(currentStep); }
+    });
+  });
+
+  const metersInput = document.getElementById('metersInput') as HTMLInputElement;
+  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement;
+  metersInput?.addEventListener('input', () => updateSqm(parseInt(metersInput.value)));
+  metersSlider?.addEventListener('input', () => updateSqm(parseInt(metersSlider.value)));
+
+  document.querySelectorAll('.meters-preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const m = parseInt((btn as HTMLButtonElement).dataset.meters || '80');
+      updateSqm(m);
+    });
+  });
+
+  ['liso', 'gotele', 'pintadas', 'humedad'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('paredesOptions', 'paredes', val));
+    });
+  });
+
+  ['si', 'no', 'blanco'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('techosOptions', 'techos', val));
+    });
+  });
+
+  ['plastica', 'premium', 'ecologica'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('tipoPinturaOptions', 'tipoPintura', val));
+    });
+  });
+
+  ['no', 'puertas', 'completo'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('carpinteriaOptions', 'carpinteria', val));
+    });
+  });
+
+  ['new', 'moderate', 'old'].forEach(age => {
+    document.querySelectorAll(`[data-age="${age}"]`).forEach(el => {
+      el.addEventListener('click', () => selectAge(age));
+    });
+  });
+
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
+  });
+
+  window.addEventListener('calculator:restore', (e: Event) => {
+    const ev = e as CustomEvent<{ step: number; state: any }>;
+    if (ev.detail?.state) {
+      Object.assign(state, ev.detail.state);
+      currentStep = ev.detail.step;
+    } else { currentStep = 1; }
+    showStep(currentStep);
+  });
+
+  function saveState() {
+    if (typeof (window as any).saveCalculatorState === 'function') (window as any).saveCalculatorState(currentStep, state);
+  }
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => { if (currentStep !== 6) saveState(); }, true);
+  });
+
+  showStep(1);
+</script>

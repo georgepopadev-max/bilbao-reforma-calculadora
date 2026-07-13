@@ -46,7 +46,17 @@
     { "source": "/donostia/empresas/index.html", "destination": "/donostia/empresas.html" },
     { "source": "/donostia/blog/index.html", "destination": "/donostia/blog.html" },
     { "source": "/vitoria/calculadora/index.html", "destination": "/vitoria/calculadora.html" },
-    { "source": "/vitoria/empresas/index.html", "destination": "/vitoria/empresas.html" }
+    { "source": "/vitoria/empresas/index.html", "destination": "/vitoria/empresas.html" },
+    { "source": "/donostia/calculadora/bano", "destination": "/donostia/calculadora/bano-donostia.html" },
+    { "source": "/donostia/calculadora/cocina", "destination": "/donostia/calculadora/cocina-donostia.html" },
+    { "source": "/donostia/calculadora/pintura", "destination": "/donostia/calculadora/pintura-donostia.html" },
+    { "source": "/donostia/calculadora/suelo", "destination": "/donostia/calculadora/suelo-donostia.html" },
+    { "source": "/donostia/calculadora/integral", "destination": "/donostia/calculadora/integral-donostia.html" },
+    { "source": "/vitoria/calculadora/bano", "destination": "/vitoria/calculadora/bano-vitoria.html" },
+    { "source": "/vitoria/calculadora/cocina", "destination": "/vitoria/calculadora/cocina-vitoria.html" },
+    { "source": "/vitoria/calculadora/pintura", "destination": "/vitoria/calculadora/pintura-vitoria.html" },
+    { "source": "/vitoria/calculadora/suelo", "destination": "/vitoria/calculadora/suelo-vitoria.html" },
+    { "source": "/vitoria/calculadora/integral", "destination": "/vitoria/calculadora/integral-vitoria.html" }
   ],
   "headers": [
     {
