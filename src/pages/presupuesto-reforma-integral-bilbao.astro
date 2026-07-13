@@ -1,0 +1,243 @@
+---
+/**
+ * Landing SEO: Presupuesto Reforma Integral Bilbao
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Calculator from '../components/calculator/Calculator.astro';
+
+const canonical = 'https://www.bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta una reforma integral en Bilbao por metro cuadrado?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En Bilbao y Bizkaia, una reforma integral de vivienda oscila entre 700 €/m² y 1.200 €/m² según el nivel de acabado. Un piso de 80 m² puede costar entre 56.000 € y 96.000 €. Los precios varían según la antigüedad del edificio, los permisos necesarios y la calidad de los materiales seleccionados.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo dura una reforma integral en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Una reforma integral de una vivienda de tamaño medio (80-100 m²) suele durar entre 2 y 4 meses. Edificios antiguos del Casco Viejo o zonas protegidas pueden requerir más tiempo por los trámites de licencias y la posible necesidad de refuerzos estructurales.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué incluye una reforma integral en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Una reforma integral incluye: redistribución de tabiquería, renovación completa de instalaciones eléctricas y de fontanería, sustitución de ventanas, puertas y pavimentos, alicatados, pintura, renovación de cocina y baños, y acabados generales. Es la reforma más completa que se puede hacer en una vivienda.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Necesito licencia para una reforma integral en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. Para reformas integrales en Bilbao generalmente se necesita una licencia de obra mayor del Ayuntamiento de Bilbao. El plazo de tramitación suele ser de 1 a 3 meses. Si el edificio está protegido o está en el Casco Viejo, pueden aplicarse normas urbanísticas adicionales que compliquen el proceso.',
+      },
+    },
+  ],
+};
+
+const priceRanges = [
+  { m2: '50 m²', low: 35000, high: 60000 },
+  { m2: '80 m²', low: 56000, high: 96000 },
+  { m2: '100 m²', low: 70000, high: 120000 },
+  { m2: '120 m²', low: 84000, high: 144000 },
+];
+---
+
+<BaseLayout
+  title="Presupuesto Reforma Integral Bilbao 2026 | Desde 700€/m²"
+  description="Calcula el presupuesto orientativo de tu reforma integral en Bilbao y Bizkaia. Precio real desde 700€/m² según tamaño y acabados. Sin registro, en 2 minutos."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-landing" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span> › </span>
+      <a href="/calculadora/index.html">Calculadora</a>
+      <span> › </span>
+      <span>Reforma Integral Bilbao</span>
+    </nav>
+
+    <!-- Hero -->
+    <section class="landing-hero">
+      <h1>Presupuesto Reforma Integral Bilbao 2026 — Desde 700€/m²</h1>
+      <p>Usa nuestra calculadora para obtener un presupuesto orientativo de reforma integral en Bilbao y Bizkaia. Datos basados en precios reales de empresas locales de reformas, actualizados 2026.</p>
+    </section>
+
+    <!-- Calculator -->
+    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+      <Calculator city="bilbao" calculatorType="integral" />
+    </section>
+
+    <!-- Guide -->
+    <section class="landing-guide">
+      <h2>Guía de precios para reforma integral en Bilbao y Bizkaia</h2>
+
+      <p>La reforma integral de una vivienda es el proyecto más completo que puedes abordar como propietario en Bilbao. A diferencia de una reforma parcial que se centra en una estancia, la reforma integral abarca todas las instalaciones, acabados y estructura no portante de la casa. Los precios en Bilbao y Bizkaia para 2026 se sitúan entre <strong>700 €/m²</strong> para acabados estándar y <strong>1.200 €/m²</strong> para calidades premium.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Factores que influyen en el precio de tu reforma integral</h3>
+      <ul>
+        <li><strong>Antigüedad del edificio:</strong> Los edificios de más de 40 años suelen requerir refuerzos en instalaciones y pueden ocultar problemas estructurales. Los edificios de menos de 20 años tienen instalaciones más modernas y un precio de reforma inferior.</li>
+        <li><strong>Nivel de acabado:</strong> Desde básico (700-850 €/m²) hasta premium con materiales de diseño (1.000-1.200 €/m²). La diferencia se nota en encimeras, pavimentos, griferías y carpintería.</li>
+        <li><strong>Licencias y permisos:</strong> Bilbao requiere licencia de obra mayor para reformas integrales. Los edificios protegidos del Casco Viejo pueden necesitar proyectos específicos y autorizaciones adicionales.</li>
+        <li><strong>Redistribución de espacios:</strong> Mover tabiques, combinar habitaciones o abrir la cocina al salón multiplica el coste. Cada metro de tabiquería nueva implica obra, albañilería, pintura y often new instalaciones eléctricas.</li>
+        <li><strong>Estado de las instalaciones:</strong> Si la instalación eléctrica data de hace más de 30 años o la fontanería es de plomo, el coste de la reforma integral aumenta al tener que sustituir canalizaciones completas.</li>
+        <li><strong>Acceso al edificio:</strong> Los edificios sin ascensor o con portal estrecho dificultan la entrada de materiales y generan costes adicionales en logística.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Precios orientativos por metros cuadrados</h3>
+      <p>La tabla siguiente ofrece una horquilla de presupuesto total según la superficie de la vivienda, multiplicando metros cuadrados por el rango de precio por m². Son cantidades orientativas para una reforma integral con acabado estándar a medio.</p>
+
+      <table class="price-table" style="margin:1.5rem 0;">
+        <caption>Precios orientativos reforma integral Bilbao 2026</caption>
+        <thead>
+          <tr>
+            <th>Superficie vivienda</th>
+            <th>Presupuesto orientativo (estándar)</th>
+            <th>Presupuesto orientativo (medio)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>50 m²</td>
+            <td>35.000 € – 42.500 €</td>
+            <td>42.500 € – 60.000 €</td>
+          </tr>
+          <tr>
+            <td>80 m²</td>
+            <td>56.000 € – 68.000 €</td>
+            <td>68.000 € – 96.000 €</td>
+          </tr>
+          <tr>
+            <td>100 m²</td>
+            <td>70.000 € – 85.000 €</td>
+            <td>85.000 € – 120.000 €</td>
+          </tr>
+          <tr>
+            <td>120 m²</td>
+            <td>84.000 € – 102.000 €</td>
+            <td>102.000 € – 144.000 €</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Diferencia entre reforma integral y reforma parcial</h3>
+      <p>Una reforma parcial se centra en una o dos estancias: por ejemplo, cambiar solo el baño o pintar toda la casa. La reforma integral abarca la vivienda completa, incluyendo estructura no portante, todas las instalaciones (electricidad, fontanería, climatización), pavimentos, carpintería interior, pintura general y renovación de cocinas y baños de forma coordinada.</p>
+      <p>La ventaja de la reforma integral frente a hacer varias reformas parciales escalonadas es el ahorro en movilizaciones de la empresa (una sola obra, una sola limpieza粗, un solo período de incertidumbre). Además, al abrir todo a la vez se pueden optimizar trazados de instalaciones y redistribuciones que no serían viables en una reforma parcial.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Duración de una reforma integral en Bilbao</h3>
+      <p>Para una vivienda de entre 80 y 100 m², la duración media de una reforma integral en Bilbao es de <strong>2 a 4 meses</strong>. El desglose orientativo es: proyecto y licencia (1-2 meses si se necesita), obra de demolición y albañilería (2-4 semanas), instalaciones (2-3 semanas), albañilería de cierre (2-3 semanas),油漆 y acabados (2-3 semanas), y instalación de cocina y baños (1-2 semanas).</p>
+      <p>Los edificios del Casco Viejo de Bilbao, por su特殊的构造要求和许可证处理，可能需要额外的时间。 También las comunidades de vecinos pueden imponer restricciones de horarios de obra que alarguen el calendario.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Zonas de Bilbao con mayor demanda de reformas integrales</h3>
+      <ul>
+        <li><strong>Casco Viejo:</strong> Edificios centenarios con encanto pero que requieren rehabilitaciones profundas. Precios por m² más altos por la complejidad.</li>
+        <li><strong>Indautxu y Abando:</strong> Barrio administrativo con viviendas de los años 50-70. Edificios de calidad media-alta, reformas frecuentes.</li>
+        <li><strong>Santutxu y San Francisco:</strong> Bairros con muchas viviendas de 60-80 m² perfectas para reformas integrales que maximicen el espacio.</li>
+        <li><strong>Begoña y Rekalde:</strong> Zonas residenciales con promociones de los 80-90. Buena relación calidad-precio para reformas.</li>
+        <li><strong>Getxo y Erandio (Área metropolitana):</strong> Viviendas unifamiliares y pisos grandes donde la reforma integral alcanza los rangos de precio más altos.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="landing-faq">
+      <h2>Preguntas frecuentes sobre reforma integral en Bilbao</h2>
+
+      <div class="faq-item">
+        <strong>¿Cuánto cuesta una reforma integral en Bilbao por metro cuadrado?</strong>
+        <p>En Bilbao y Bizkaia los precios van de 700 €/m² a 1.200 €/m² dependiendo del acabado. Un piso de 80 m² puede necesitar entre 56.000 € y 96.000 €. Los edificios antiguos del Casco Viejo o con protecciones pueden superar esos rangos por la complejidad de las licencias y la necesidad de intervenciones especiales.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Qué duración tiene una reforma integral en Bilbao?</strong>
+        <p>Para una vivienda media de 80-100 m², una reforma integral dura entre 2 y 4 meses. Los factores que más influyen en el plazo son: si se necesita licencia de obra mayor (1-3 meses de tramitación), la complejidad de la redistribución, el nivel de acabado seleccionado y las restricciones de horarios que imponga la comunidad de vecinos.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Necesito proyecto y licencia para una reforma integral en Bilbao?</strong>
+        <p>Sí. Para una reforma integral en Bilbao generalmente se requiere licencia de obra mayor, que implica proyecto técnico firmado por un arquitecto. El Ayuntamiento de Bilbao tramita estas licencias en plazos que oscilan entre 1 y 3 meses. Los edificios protegidos o situados en el Casco Viejo pueden necesitar además autorizaciones urbanísticas específicas.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Cuándo conviene hacer reforma integral en lugar de varias reformas parciales?</strong>
+        <p>La reforma integral es la opción más eficiente cuando necesitas redistribuir espacios, cuando las instalaciones (electricidad, fontanería) tienen más de 30-40 años, o cuando quieres cambiar la configuración de cocina y baños simultáneamente. Ejecutar una reforma integral antes que tres parciales sucesivas evita tripled cost of mobilizaciones y permite optimizar trazados de instalaciones.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="landing-cta" style="margin-bottom:3rem;">
+      <h2>¿Necesitas 3 presupuestos de empresas verificadas?</h2>
+      <p>Recibe propuestas de empresas de reforma integral en Bilbao y Bizkaia que han sido verificadas por nuestros clientes. Sin compromiso, gratuito y en 48 horas.</p>
+      <a href="/empresas/index.html" class="cta-button">
+        Solicita 3 presupuestos →
+      </a>
+    </section>
+
+    <!-- Related -->
+    <section class="landing-related">
+      <h2>Otras calculadoras de presupuesto en Bilbao</h2>
+      <div class="landing-related-grid">
+        <a href="/presupuesto-reforma-bano-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🚿</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Baño</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 2.500 €</p>
+        </a>
+        <a href="/presupuesto-reforma-cocina-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🍳</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Cocina</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 5.000 €</p>
+        </a>
+        <a href="/presupuesto-pintura-piso-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎨</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Pintura</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 8 €/m²</p>
+        </a>
+        <a href="/presupuesto-cambio-suelo-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏠</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Cambio de Suelo</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 25 €/m²</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

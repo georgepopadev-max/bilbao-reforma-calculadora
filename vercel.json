@@ -56,7 +56,12 @@
     { "source": "/vitoria/calculadora/cocina", "destination": "/vitoria/calculadora/cocina-vitoria.html" },
     { "source": "/vitoria/calculadora/pintura", "destination": "/vitoria/calculadora/pintura-vitoria.html" },
     { "source": "/vitoria/calculadora/suelo", "destination": "/vitoria/calculadora/suelo-vitoria.html" },
-    { "source": "/vitoria/calculadora/integral", "destination": "/vitoria/calculadora/integral-vitoria.html" }
+    { "source": "/vitoria/calculadora/integral", "destination": "/vitoria/calculadora/integral-vitoria.html" },
+    { "source": "/presupuesto-reforma-integral-bilbao", "destination": "/presupuesto-reforma-integral-bilbao.html" },
+    { "source": "/presupuesto-reforma-bano-bilbao", "destination": "/presupuesto-reforma-bano-bilbao.html" },
+    { "source": "/presupuesto-reforma-cocina-bilbao", "destination": "/presupuesto-reforma-cocina-bilbao.html" },
+    { "source": "/presupuesto-pintura-piso-bilbao", "destination": "/presupuesto-pintura-piso-bilbao.html" },
+    { "source": "/presupuesto-cambio-suelo-bilbao", "destination": "/presupuesto-cambio-suelo-bilbao.html" }
   ],
   "headers": [
     {

@@ -1562,3 +1562,150 @@
   .calculator-selector { padding: 2rem 1rem; }
   .calculator-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   Landing Pages — SEO Landing Styles
+   ============================================ */
+
+/* ---- Breadcrumb ---- */
+.breadcrumb-landing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  color: var(--color-gris);
+}
+.breadcrumb-landing a {
+  color: var(--color-terracota);
+  text-decoration: none;
+}
+.breadcrumb-landing span {
+  color: var(--color-gris);
+}
+
+/* ---- Landing Hero ---- */
+.landing-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--color-crema);
+  border-bottom: 1px solid var(--color-beige);
+}
+.landing-hero h1 {
+  font-family: var(--font-playfair);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-grafito);
+  margin-bottom: 1rem;
+}
+.landing-hero p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--color-gris);
+  line-height: 1.7;
+}
+
+/* ---- Landing Guide ---- */
+.landing-guide {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+.landing-guide h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-grafito);
+  margin-bottom: 1rem;
+}
+.landing-guide p {
+  color: var(--color-gris);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.landing-guide ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  color: var(--color-gris);
+}
+.landing-guide li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ---- Landing FAQ ---- */
+.landing-faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.landing-faq h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.5rem;
+  color: var(--color-grafito);
+  margin-bottom: 1.5rem;
+}
+.landing-faq .faq-item {
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Landing CTA ---- */
+.landing-cta {
+  background: linear-gradient(135deg, var(--color-terracota), var(--color-terracota-hover));
+  padding: 3rem 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 12px;
+}
+.landing-cta h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.75rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.landing-cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.landing-cta .cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: white;
+  color: var(--color-terracota);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.landing-cta .cta-button:hover {
+  background: var(--color-crema);
+  text-decoration: none;
+}
+
+/* ---- Landing Related ---- */
+.landing-related {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--color-beige);
+}
+.landing-related h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.25rem;
+  color: var(--color-grafito);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.landing-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .landing-hero { padding: 2rem 1rem; }
+  .landing-guide { padding: 2rem 1rem; }
+  .landing-cta { padding: 2rem 1rem; }
+  .landing-related-grid { grid-template-columns: 1fr; }
+}

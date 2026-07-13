@@ -1,0 +1,195 @@
+---
+/**
+ * Landing SEO: Presupuesto Reforma de Cocina Bilbao
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Calculator from '../components/calculator/Calculator.astro';
+
+const canonical = 'https://www.bilbaoreforma.es/presupuesto-reforma-cocina-bilbao.html';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta reformar una cocina en Bilbao en 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El presupuesto para reformar una cocina en Bilbao oscila entre 5.000 € y 18.000 € dependiendo del tamaño, la calidad de los materiales y la profundidad de la reforma. Una cocina de 8-10 m² con muebles estándar, encimera de laminado y electrodomésticos básicos parte de 5.000-8.000 €. Una cocina con muebles lacados, encimera de Silestone y electrodomésticos premium puede superar los 15.000-18.000 €.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo tarda la reforma de una cocina en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Una reforma de cocina completa en Bilbao dura entre 2 y 5 semanas. Los factores principales son: si se cambian las instalaciones de gas o electricidad (añade 3-7 días), la disponibilidad de los muebles de cocina (2-6 semanas según fabricante), y si se modifica la distribución (mover islas, campanas o puntos de gas).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cocina abierta o cerrada? ¿Qué es mejor en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'La cocina abierta al salón multiplica el espacio visual y la luz natural, pero requiere una campana extractora más potente (idealmente de recirculación con filtros de carbón activo) y genera más olores y ruido en la zona de estar. En Bilbao, la opción abierta es muy popular en pisos nuevos o reformados integralmente. La cocina cerrada es preferable si se cocina frecuentemente con fuertes olores o si se quiere separación visual de zonas.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuándo hay que cambiar las instalaciones de gas o electricidad en la cocina?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Se deben actualizar las instalaciones cuando tienen más de 20-30 años, cuando se van a mover los puntos de cooking (cocina, horno, caldera) a otra ubicación, o cuando la instalación no cumple la normativa actual (las normas de gas han cambiado significativamente desde 2017). En楼层 antiguos del Casco Viejo, es frecuente que la instalación de gas sea de baterías comunitarias y haya que individualizarla.',
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Presupuesto Reforma Cocina Bilbao 2026 | Desde 5.000€"
+  description="Calcula el presupuesto orientativo de tu reforma de cocina en Bilbao. Precio real desde 5.000€ según tamaño y acabados. Sin registro, en 2 minutos."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb-landing" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span> › </span>
+      <a href="/calculadora/index.html">Calculadora</a>
+      <span> › </span>
+      <span>Reforma de Cocina Bilbao</span>
+    </nav>
+
+    <section class="landing-hero">
+      <h1>Presupuesto Reforma Cocina Bilbao 2026 — Desde 5.000€</h1>
+      <p>Calcula el presupuesto orientativo de tu reforma de cocina en Bilbao. Datos basados en precios reales de empresas locales de reformas, actualizados 2026.</p>
+    </section>
+
+    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+      <Calculator city="bilbao" calculatorType="cocina" />
+    </section>
+
+    <section class="landing-guide">
+      <h2>Guía de precios para reforma de cocina en Bilbao</h2>
+
+      <p>La cocina es la estancia de la casa donde más tiempo se pasa y donde las decisiones de diseño tienen un impacto directo en el día a día. En Bilbao, la reforma de cocina suele ser uno de los primeros proyectos que abordan los propietarios cuando compran un piso para rehabilitar, o cuando la cocina actual tiene más de 15-20 años y ha quedado anticuada tanto en estética como en funcionalidad. Los precios para 2026 parten de 5.000 € para reformas básicas y pueden superar los 18.000 € para cocinas de diseño completo.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Comparativa: cocina abierta vs cocina cerrada</h3>
+      <p>La tendencia mayoritaria en Bilbao en los últimos 10 años es la cocina abierta al salón o al comedor, especialmente en pisos de menos de 90 m² donde cada metro cuenta. La cocina abierta genera sensación de espacio, mejora la luminosidad y permite cocinar interactuando con la familia o los invitados. Sin embargo, requiere una campana extractora potente (idealmente de recirculación con filtros de carbón activo, ya que en楼层 comunitarios no siempre hay salida de humos directa) y implica mayor exposición a olores, vapores y ruido.</p>
+      <p>La cocina cerrada mantiene la separación funcional, algo que quienes cocinan mucho valoran especialmente. También facilita cumplir la normativa de ventilación de locales de gas si la cocina tiene caldera o cocina de gas individual. En viviendas grandes (más de 120 m²) o casas unifamiliares, la cocina cerrada sigue siendo la opción más racional.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Tipos de encimera: comparativa de precios y durabilidad</h3>
+      <ul>
+        <li><strong>Laminado (Formica, Ivasi, etc.):</strong> Desde 30-60 €/m². Amplia variedad de diseños, resistente a manchas si es buena calidad, pero sensible a golpes y rayaduras. Durabilidad media de 10-15 años.</li>
+        <li><strong>Granito:</strong> Desde 80-150 €/m². Piedra natural muy resistente a golpes y calor. Cada planche es única. Requiere sellado периодически. Muy popular en Bilbao.</li>
+        <li><strong>Silestone y cuarzos Compuestos:</strong> Desde 120-250 €/m². No poroso, resistente a manchas, amplia gama de colores. No tolera calor extremo directa.</li>
+        <li><strong>Dekton:</strong> Desde 150-300 €/m². Material ultracompacto de última generación, extremadamente resistente a todo. La opción más premium del mercado.</li>
+        <li><strong>Acero inoxidable:</strong> Desde 100-200 €/m². Profesional, hygienic, resistente al calor. Marcadamente industrial en estética. Muy usado en cocinas de diseño loft.</li>
+        <li><strong>Mármol:</strong> Desde 100-250 €/m². Estética lujosa pero poroso y sensível a ácidos. Precisa mantenimiento periódico.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Electrodomésticos: qué presupuestar</h3>
+      <p>En una reforma de cocina estándar se incluyen: cocina (placa de inducción o gas), horno, campana extractora, frigorífico y lavavajillas. Un set de electrodomésticos de gama media cuesta entre 2.500 € y 4.500 € instalado. La gama alta (marcas como Miele, Gaggenau, Thermador) puede superar los 10.000-15.000 € solo en electrodomésticos.</p>
+      <p>La placa de inducción está substituyendo rápidamente a la de gas en Bilbao por eficiencia energética y seguridad. Muchas comunidades en Bilbao ya no admiten instalaciones de gas nuevas dentro de las cocinas, así que es importante consultar antes de planificar.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Instalaciones necesarias en la reforma</h3>
+      <ul>
+        <li><strong>Electricidad:</strong> Actualizar el cuadro eléctrico, añadir circuitos dedicados para electrodomésticos potentes (horno, lavavajillas, placa), y redistribuir puntos de luz y enchufes. Coste orientativo: 600-1.500 €.</li>
+        <li><strong>Fontanería:</strong> Mover tomas de agua para fregadero, lavavajillas o lavadora si cambia la distribución. Coste: 400-1.000 €.</li>
+        <li><strong>Gas:</strong> Si hay cocina o caldera de gas y se muda de ubicación, requiere instalación nueva por gasista autorizado. Coste: 800-2.000 €.</li>
+        <li><strong>Ventilación:</strong> La campana necesita salida al exterior o sistema de recirculación. Instalar un conducto puede costar 300-800 € adicionales.</li>
+        <li><strong>Pintura y techo:</strong> Después de las instalaciones se pintan paredes y techo. Coste: 300-700 €.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">¿Se necesita licencia para reformar cocina en Bilbao?</h3>
+      <p>Para reformas de cocina que no impliquen modificación estructural ni cambios en instalaciones de gas, generalmente basta con una licencia de obra menor o comunicación previa. Ahora bien, si se va a mover la cocina a otro的位置 (donde antes no había tomas de agua, gas o electricidad), se considera obra mayor y requiere proyecto técnico y licencia del Ayuntamiento de Bilbao.</p>
+    </section>
+
+    <section class="landing-faq">
+      <h2>Preguntas frecuentes sobre reforma de cocina en Bilbao</h2>
+
+      <div class="faq-item">
+        <strong>¿Cuánto tarda una reforma de cocina en Bilbao?</strong>
+        <p>Una reforma de cocina completa (muebles, encimera, instalaciones) suele durar entre 2 y 5 semanas. El plazo más largo lo marcan los muebles de cocina: desde 2-3 semanas para formatos modulares estándar hasta 5-8 semanas para cocinas a medida lacadas o con acabados especiales. Las instalaciones (electricidad, fontanería, gas) requieren entre 3 y 7 días laborables dependiendo de la complejidad.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Es mejor cocina abierta o cerrada? ¿Qué me conviene?</strong>
+        <p>Depende del uso y la distribución. La cocina abierta al salón es ideal para pisos pequeños (menos de 80 m²), familias con niños pequeños que quieren supervisar, y quienes valoran la sensación de espacio. La cocina cerrada es preferable si cocinas a diario con fuertes olores o humo, si trabajas desde casa y necesitas separación, o si tienes animales que no quieres en la zona de cooking. En Bilbao, la normativa de comunidades para instalaciones de gas puede condicionar la opción abierta.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Cuándo debo cambiar las instalaciones de la cocina?</strong>
+        <p>Renovar instalaciones (electricidad, fontanería, gas) es obligatorio cuando tienen más de 20-30 años o no cumplen la normativa vigente. Cambia electriciad si el cuadro es de fuses de plomo, si no hay tierra, o si faltan circuitos dedicados para electrodomésticos. Renueva fontanería si es de plomo o hierro galvanizado. Consulta con un profesional sobre gas: las normas han cambiado mucho desde 2017 y las instalaciones antiguas pueden no ser validas.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Necesito licencia para mi reforma de cocina en Bilbao?</strong>
+        <p>Para reformas de cocina que no modifiquen estructura ni instalaciones de gas ni cambie la ubicación de la cocina a otro punto de la vivienda, generalmente se tramita como obra menor o comunicación previa. Si vas a mover la cocina a una zona sin tomas existentes o vas a tocar instalaciones de gas comunitarias, necesitarás licencia de obra mayor con proyecto técnico. Consulta siempre con tu empresa de reformas o el Ayuntamiento de Bilbao antes de empezar.</p>
+      </div>
+    </section>
+
+    <section class="landing-cta" style="margin-bottom:3rem;">
+      <h2>¿Necesitas presupuestos de empresas de reformas de cocina?</h2>
+      <p>Recibe propuestas de empresas especializadas en reformas de cocina en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
+      <a href="/empresas/index.html" class="cta-button">
+        Solicita 3 presupuestos →
+      </a>
+    </section>
+
+    <section class="landing-related">
+      <h2>Otras calculadoras de presupuesto en Bilbao</h2>
+      <div class="landing-related-grid">
+        <a href="/presupuesto-reforma-integral-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏗️</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma Integral</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 700 €/m²</p>
+        </a>
+        <a href="/presupuesto-reforma-bano-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🚿</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Baño</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 2.500 €</p>
+        </a>
+        <a href="/presupuesto-pintura-piso-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎨</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Pintura</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 8 €/m²</p>
+        </a>
+        <a href="/presupuesto-cambio-suelo-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏠</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Cambio de Suelo</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 25 €/m²</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

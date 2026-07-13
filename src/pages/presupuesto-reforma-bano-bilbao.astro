@@ -1,0 +1,193 @@
+---
+/**
+ * Landing SEO: Presupuesto Reforma de Baño Bilbao
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Calculator from '../components/calculator/Calculator.astro';
+
+const canonical = 'https://www.bilbaoreforma.es/presupuesto-reforma-bano-bilbao.html';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta reformar un baño completo en Bilbao en 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio de una reforma de baño completo en Bilbao oscila entre 2.500 € y 12.000 € dependiendo del tamaño, los materiales y el nivel de acabado. Los factores más determinantes son: tipo de ducha o bañera, extensión del alicatado, calidad de los sanitarios y si se sustituye o no la fontanería existente.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo tarda la reforma de un baño en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Una reforma de baño en Bilbao dura entre 1 y 3 semanas para un baño completo de tamaño medio. Los factores que más influyen en el plazo son: si se cambia la instalación de fontanería (suma 3-5 días), la complejidad del revestimiento elegido, y los plazos de entrega de sanitarios o platos de ducha si son bajo medida.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Merece más la pena cambiar bañera por ducha o mantener la bañera?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Cambiar bañera por ducha reduce el coste entre 800 € y 2.000 € respecto a instalar una bañera nueva. La ducha a ras de suelo (walk-in) es la opción más accesible y moderna, pero requiere obra de fontanería y可能会改动地面防水. Si el baño es pequeño (menos de 4 m²), cambiar bañera por ducha libera mucho espacio usable.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuándo hay que reemplazar las tuberías en una reforma de baño?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Se recomienda sustituir la fontanería del baño cuando las tuberías son de plomo, hierro galvanizado o tienen más de 30-40 años. También cuando se cambia la distribución del baño (mover inodoro o lavabo a otra pared). En edificios de menos de 20 años con tuberías de cobre o PVC, generalmente no es necesario reemplazarlas salvo que haya manchas de humedad o presiones deficientes.',
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Presupuesto Reforma Baño Bilbao 2026 | Desde 2.500€"
+  description="Calcula el presupuesto orientativo de tu reforma de baño en Bilbao. Precio real desde 2.500€ para baño completo. Sin registro, en 2 minutos."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb-landing" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span> › </span>
+      <a href="/calculadora/index.html">Calculadora</a>
+      <span> › </span>
+      <span>Reforma de Baño Bilbao</span>
+    </nav>
+
+    <section class="landing-hero">
+      <h1>Presupuesto Reforma de Baño Bilbao 2026 — Desde 2.500€</h1>
+      <p>Calcula el presupuesto orientativo de tu reforma de baño en Bilbao. Datos basados en precios reales de empresas locales de reformas en Bizkaia, actualizados 2026.</p>
+    </section>
+
+    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+      <Calculator city="bilbao" calculatorType="bano" minPrice={2500} />
+    </section>
+
+    <section class="landing-guide">
+      <h2>Guía de precios para reforma de baño en Bilbao</h2>
+
+      <p>La reforma de un baño en Bilbao puede responder a necesidades muy distintas: desde un cambio estético completo con sustitución de sanitarios hasta una adaptación por accesibilidad o una redistribución del espacio. Entender cómo se desglosa el presupuesto te ayudará a tomar decisiones informadas y a priorizar dónde invertir más y dónde ahorrar.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Partidas principales de una reforma de baño</h3>
+      <ul>
+        <li><strong>Sanitarios (inodoro, lavabo, bidé):</strong> Desde 400 € para un conjunto básico hasta 2.500 € para marcas premium. Los inodoros suspendidos son más caros de instalar porque requieren bastidor empotrado.</li>
+        <li><strong>Ducha o bañera:</strong> El plato de ducha convencional parte de 400-600 € instalado. Una ducha walk-in a ras de suelo cuesta entre 1.200 € y 2.500 €. Una bañera estándar está en 800-1.500 €, mientras que las de hidromasaje pueden superar los 4.000 €.</li>
+        <li><strong>Alicatado y revestimiento:</strong> El azulejo completo de un baño medio (8-12 m² de pared) sale por 800-2.500 € según el material. El gresite es más económico (60-100 €/m²) pero requiere mano de obra especializada. El porcelánico de gran formato, más premium, puede llegar a 150-200 €/m².</li>
+        <li><strong>Fontanería:</strong> Si las tuberías son viejas y hay que substituirlas, añade 800-2.000 € dependiendo de la complejidad. Mover puntos de agua (shiftriar el inodoro de sitio, por ejemplo) implica obra de albañilería adicional.</li>
+        <li><strong>Electricidad:</strong> Actualizar el punto de luz, añadir extractores, cambiar mecanismos o instalar suelo radiante eléctrico oscila entre 300 € y 1.200 €.</li>
+        <li><strong>Pintura y acabados:</strong> Techo, rodapiés y sellados añaden 200-500 € al presupuesto final.</li>
+        <li><strong>Demolición y retirada:</strong> Quitar el baño existente y gestionar los escombros cuesta entre 300 € y 700 € según el volumen.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Baño completo vs baño parcial</h3>
+      <p>Un baño completo —con cambio de sanitarios, revestimientos, fontanería y electricidad— suele costar entre 4.000 € y 12.000 € en Bilbao para un baño de tamaño medio (6-10 m²). Un baño parcial, donde solo se cambian los sanitarios o solo el alicatado, puede quedar entre 1.500 € y 3.500 €.</p>
+      <p>La decisión entre completo o parcial depende del estado de las instalaciones. Si las tuberías tienen más de 30 años o hay humedades, es preferable hacer la reforma completa para evitar tener que abrir paredes recién acabadas en pocos años.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Baño nuevo vs reforma: ¿cuándo hacer cada uno?</h3>
+      <p>Un baño nuevo (crear un baño donde no existía) es sensiblemente más caro que una reforma porque implica llevar Saneamientos, agua fría y caliente desde los conductos existentes, lo que puede significar obra de albañilería en tabiques y forjados. El coste de crear un baño nuevo en Bilbao parte de 8.000 € y puede superar los 15.000 € si hay que hacer obra civil importante.</p>
+      <p>La reforma, en cambio, trabaja sobre un baño existente con saneamiento, alimentación y desagüe ya colocados, lo que reduce el coste de fontanería significativamente.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Tendencias en reformas de baño en Bilbao</h3>
+      <ul>
+        <li><strong>Duchas a ras de suelo (walk-in):</strong> Cada vez más demandadas, especialmente en baños pequeños. Ocupan menos espacio visual y facilitan la accesibilidad.</li>
+        <li><strong>Azulejos de gran formato (120×120 cm o más):</strong> Reducen juntas y dan sensación de espacio. El porcelánico efecto piedra o mármol es el más solicitado.</li>
+        <li><strong>Muebles suspendidos:</strong> Los lavabos suspendidos dan sensación de más espacio y facilitan la limpieza del suelo.</li>
+        <li><strong>Griferías termostáticas:</strong> Aunque más caras (200-500 € frente a 80-150 € de una grifería convencional), ofrecen confort y ahorro de agua.</li>
+        <li><strong>Iluminación empotrada en techo:</strong> Reemplaza a las luminarias de superficie y crea ambiente más sofisticado.</li>
+      </ul>
+    </section>
+
+    <section class="landing-faq">
+      <h2>Preguntas frecuentes sobre reforma de baño en Bilbao</h2>
+
+      <div class="faq-item">
+        <strong>¿Cuánto tarda la reforma de un baño en Bilbao?</strong>
+        <p>Un reforma de baño completo para un baño de tamaño medio (6-10 m²) suele tardar entre 1 y 3 semanas. El factor que más condiciona el plazo es si se sustituye la fontanería: si las tuberías son vieislamathrightarrow-fontanería nueva, suma entre 3 y 5 días laborables. Los sanitarios bajo pedido o los platos de ducha a medida pueden añadir 1-2 semanas de espera adicional.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Merece la pena cambiar bañera por ducha?</strong>
+        <p>Sí, en la mayoría de los casos. Cambiar bañera por ducha reduce el coste entre 800 € y 2.000 €, libera espacio en el baño, y la ducha a ras de suelo es más accesible para personas mayores. La única razón para mantener o instalar bañera es si hay niños pequeños en casa o si se valora especialmente la posibilidad de baños relajantes. Incluso en ese caso, una bañera de acero esmaltado es más económica que una de hidromasaje.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Necesito licencia para reformar un baño en Bilbao?</strong>
+        <p>Para una reforma de baño que no modifique la estructura ni las instalaciones básicas del edificio, generalmente basta con una comunicación previa o licencia de obra menor. Ahora bien, si se mueven saneamiento o instalaciones verticales del edificio, o si el baño está en un edificio protegido, puede requerirse licencia de obra mayor. Consulta con tu empresa de reformas o con el Ayuntamiento de Bilbao.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Cuándo debo reemplazar las tuberías en una reforma de baño?</strong>
+        <p>Reemplaza las tuberías cuando sean de plomo, hierro galvanizado, o tengan más de 30-40 años. También cuando haya manchas de humedad en paredes o suelos colindantes, presiones de agua deficientes, o cuando la distribución del baño vaya a cambiar significativamente (mover el inodoro o el lavabo a другой muro). En edificios posteriores a 1990 con tuberías de cobre o PVC, generalmente no es necesario substituirlas salvo anomalías concretas.</p>
+      </div>
+    </section>
+
+    <section class="landing-cta" style="margin-bottom:3rem;">
+      <h2>¿Necesitas presupuestos de empresas de reformas de baño?</h2>
+      <p>Recibe propuestas de empresas especializadas en reformas de baño en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
+      <a href="/empresas/index.html" class="cta-button">
+        Solicita 3 presupuestos →
+      </a>
+    </section>
+
+    <section class="landing-related">
+      <h2>Otras calculadoras de presupuesto en Bilbao</h2>
+      <div class="landing-related-grid">
+        <a href="/presupuesto-reforma-integral-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏗️</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma Integral</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 700 €/m²</p>
+        </a>
+        <a href="/presupuesto-reforma-cocina-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🍳</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Cocina</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 5.000 €</p>
+        </a>
+        <a href="/presupuesto-pintura-piso-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎨</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Pintura</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 8 €/m²</p>
+        </a>
+        <a href="/presupuesto-cambio-suelo-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏠</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Cambio de Suelo</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 25 €/m²</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

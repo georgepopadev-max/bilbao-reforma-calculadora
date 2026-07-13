@@ -1,0 +1,204 @@
+---
+/**
+ * Landing SEO: Presupuesto Cambio de Suelo Bilbao
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Calculator from '../components/calculator/Calculator.astro';
+
+const canonical = 'https://www.bilbaoreforma.es/presupuesto-cambio-suelo-bilbao.html';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta cambiar el suelo de un piso en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio de cambiar el suelo de un piso en Bilbao oscila entre 25 €/m² y 130 €/m² según el material elegido. A esto hay que añadir el coste de retirada del suelo existente (8-20 €/m²) y la instalación del nuevo pavimento. Para un piso medio de 80 m², el presupuesto total suele estar entre 4.000 € y 15.000 €.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué suelo es mejor: parqué o porcelánico?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Depende de la estancia y el uso. El parqué (madera o laminado) aporta calidez y es más cálido al tacto, pero es más sensible a la humedad y los arañazos. El porcelánico imitación madera combina la estética de la madera con la resistencia del cerámica: impermeable, resistente al desgaste y fácil de mantener. Para cocinas, baños y zonas de alto tráfico, el porcelánico es más práctico. Para dormitorios y salones, el parqué ofrece mayor confort y valor percibido.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Se puede instalar suelo radiante debajo del nuevo pavimento?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. El suelo radiante es perfectamente compatible con la mayoría de pavimentos excepto parqué macizo de grosor superior a 15mm. El porcelánico y el stoneware son ideales porque transmiten bien el calor. El laminado de HDF también es compatible con grosores de 8-12mm. Instalar suelo radiante es más caro (40-80 €/m² adicional) pero genera un confort térmico muy superior y reduce facturas de calefacción.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué suelo es más caro: parqué macizo o porcelánico premium?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El parqué macizo de calidad (roble, iroko, teka) es generalmente más caro que el porcelánico estándar, con precios desde 60 €/m² hasta más de 150 €/m² dependiendo de la especie y el acabado. El porcelánico premium con digitalizaciones de alta gama puede superar los 120 €/m². En términos de valor a largo plazo, el parqué macizo puede ser lijado y renovado varias veces, mientras que el porcelánico tiene una vida útil prácticamente ilimitada sin mantenimiento.',
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Presupuesto Cambio de Suelo Bilbao 2026 | Desde 25€/m²"
+  description="Calcula el presupuesto para cambiar el suelo de tu piso en Bilbao. Precio real desde 25€/m². Incluye retirada del anterior. Sin registro, en 2 minutos."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb-landing" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span> › </span>
+      <a href="/calculadora/index.html">Calculadora</a>
+      <span> › </span>
+      <span>Cambio de Suelo Bilbao</span>
+    </nav>
+
+    <section class="landing-hero">
+      <h1>Presupuesto Cambio de Suelo Bilbao 2026 — Desde 25€/m²</h1>
+      <p>Calcula el presupuesto para cambiar el suelo de tu piso en Bilbao. Datos basados en precios reales de empresas de pavimentación, actualizados 2026.</p>
+    </section>
+
+    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+      <Calculator city="bilbao" calculatorType="suelo" />
+    </section>
+
+    <section class="landing-guide">
+      <h2>Guía de precios para cambio de suelo en Bilbao</h2>
+
+      <p>Cambiar el suelo de un piso es una de las reformas con mayor impacto visual inmediato en una vivienda. El pavimento define el carácter de los espacios y, junto con la pintura, es lo primero que nota cualquier visitante. En Bilbao y Bizkaia, los precios de cambio de suelo varían enormemente según el material: desde 25 €/m² para un laminado económico hasta más de 130 €/m² para parqué macizo de alta gama o stoneware premium. A esto hay que sumar entre 8 €/m² y 20 €/m² por la retirada del suelo anterior.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Tipos de suelo: comparativa completa</h3>
+      <ul>
+        <li><strong>Parqué laminado:</strong> Desde 15-35 €/m². Tablero HDF con capa decorativa de madera. Fácil de instalar (sistema click), amplio catálogo de diseños. No toleran bem wet ni inmersión. Durabilidad de 10-20 años según calidad. ElAC5 o AC6 son las clases de uso más recomendables para residencial intensivo.</li>
+        <li><strong>Parqué multicapa (flotante):</strong> Desde 35-80 €/m². Capa superior de madera noble (3-6mm) sobre tablero multicapa. Se puede lijar 1-3 veces. Acepta instalación flotante o pegada. Más cálido que el laminado y con mayor valor percibido.</li>
+        <li><strong>Parqué macizo:</strong> Desde 60-150 €/m². Tablón entero de madera. Se puede lijar y restaurar múltiples veces (hasta 6-8 lijados). Requiere instalación pegada al suelo y mantenimiento periódico con aceites o barnices. La opción más noble pero también la más delicada.</li>
+        <li><strong>Porcelánico:</strong> Desde 20-80 €/m². Cerámica prensada de alta densidad. Impermeable, resistente al desgaste, fácil mantenimiento. El gres porcelánico rectificado de 10mm es el estándar actual. Los formatos grandes (120×120, 150×75) están muy de moda en Bilbao por su estética minimalista.</li>
+        <li><strong>Porcelánico imitación madera:</strong> Desde 30-100 €/m². Combina la estética de la madera con la practicidad del porcelánico. Formato lama (15×90, 20×120). Muy demandado en Bilbao como alternativa al parqué.</li>
+        <li><strong>Vinilo (LVT):</strong> Desde 20-60 €/m². Suelo flexible de PVC de alta calidad. Waterproof, blando al pisar, amplio diseño. Se instala tanto en click como en pegado. La opción más práctica para baños y cocinas.</li>
+        <li><strong>Microcemento:</strong> Desde 60-120 €/m². Revestimiento continuo sin juntas. Estética moderna y minimalista. Se puede aplicar sobre suelo existente si está en buen estado. Requiere profesional especializado.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">¿Cuándo cambiar el suelo?</h3>
+      <p>Hay señales claras de que es hora de cambiar el suelo:</p>
+      <ul>
+        <li>El suelo actual tiene más de 20-30 años y está muy desgastado, rayado o descolorido.</li>
+        <li>Hay humedades que han dañado el parquet o el suelo de madera desde abajo.</li>
+        <li>Los azulejos están rotos, desencajados o muy anticuados (baldosa hidraulica en mal estado, por ejemplo).</li>
+        <li>Estás haciendo una reforma integral y quieres coherencia estética con paredes y techos nuevos.</li>
+        <li>Quieres instalar suelo radiante y el pavimento actual no es compatible.</li>
+        <li>Vas a vender o alquilar y quieres aumentar el valor de la vivienda con un acabado moderno.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Suelo radiante: ¿merece la pena?</h3>
+      <p>El suelo radiante (generalmente de agua caliente) es un sistema de calefacción que se instala bajo el pavimento y emite calor uniforme desde el suelo. En Bilbao, donde los inviernos son húmedos y frescos, el suelo radiante ofrece un confort térmico muy superior al de los radiadores convencionales. El coste de instalación está entre 40 €/m² y 80 €/m² adicional sobre el pavimento, dependiendo del sistema (obra nueva o reforma).</p>
+      <p>Los pavimentos más compatibles con suelo radiante son el porcelánico y el stoneware ( conductividad térmica excelente), seguidos del laminado de bajo grosor y el vinilo LVT. El parqué macizo grueso (más de 15mm) tiene mayor resistencia térmica y no es recomendable sin consultar con el fabricante del sistema.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Retirada del suelo existente</h3>
+      <p>El primer paso antes de instalar el nuevo suelo es retirar el anterior. El coste depende del material:</p>
+      <ul>
+        <li><strong>Retirada de parqué o laminado:</strong> 5-10 €/m². Suelo ligero que se levanta con relativa facilidad.</li>
+        <li><strong>Retirada de azulejo o suelo de cerámica:</strong> 12-20 €/m². Requiere piqueta y genera mucho polvo y escombros. Es la retirada más costosa.</li>
+        <li><strong>Retirada de moqueta o suelo textil:</strong> 3-6 €/m². Proceso rápido y limpio.</li>
+        <li><strong>Retirada de старое бетонное покрытие:</strong> 15-25 €/m². Solo en casos de solera muy antigua o muy dañada.</li>
+      </ul>
+      <p>Gestionarte tú mismo la retirada del suelo old puede ahorrar entre 400 € y 1.200 € en un piso medio. Hay empresas de桶ciones y contenedores en Bilbao que proporcionan un contenedor de 5-8 m³ por 200-400 € incluyendo gestión de residuos.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Instalación: pegada vs flotante</h3>
+      <p>Los suelos flotantes (laminado, parqué multicapa con sistema click) se instalan sin pegar al suelo, descansando sobre una capa de isolante. Son más rápidos de instalar (80-150 m²/día para un profesional) y permiten repair easily replacing tablas dañadas. Los suelos pegados (parqué macizo, muchos porcelánicos) requieren adhesivo y una preparación más exhaustiva del soporte, pero ofrecen mayor estabilidad y menor risco de filtraciones.</p>
+    </section>
+
+    <section class="landing-faq">
+      <h2>Preguntas frecuentes sobre cambio de suelo en Bilbao</h2>
+
+      <div class="faq-item">
+        <strong>¿Cuánto tarda el cambio de suelo de un piso?</strong>
+        <p>Para un piso de 80-100 m², el cambio de suelo completo (retirada + instalación) suele durar entre 3 y 7 días laborables si se trata de un suelo flotante (laminado o parqué click). La cerámica o el porcelánico pegado requiere entre 5 y 10 días por el tiempo de secado del adhesivo y las juntas. El factor que más condiciona el plazo es si hay que piqueitar baldosas viejas (1-3 días adicionales).</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Parqué o porcelánico? ¿Qué me conviene más?</strong>
+        <p>Para cocinas y baños, el porcelánico es prácticamente obligatorio por su impermeabilidad. Para salones y dormitorios, la elección depende de tu estilo de vida: si tienes niños pequeños, animales domésticos o alto tráfico, el porcelánico imitación madera es más práctico. Si valoras la calidez, el tacto cálido de la madera y la posibilidad de lijar y renovar el suelo en el futuro, el parqué (multicapa o macizo) es la mejor elección.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Se puede instalar suelo radiante con el nuevo pavimento?</strong>
+        <p>Sí, es una combinación excelente. El porcelánico y el gres son los pavimentos con mejor conductividad térmica para suelo radiante. El laminado también es compatible si tiene grosor inferior a 12mm y marca AC5 o superior. El parqué macizo de más de 15mm tiene mayor resistencia térmica y puede no ser eficiente con suelo radiante. Consult always con el fabricante del sistema de suelo radiante.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Qué suelo es más caro: parqué o porcelánico premium?</strong>
+        <p>Depende del tipo de parqué. El parqué macizo de roble de calidad media (80-120 €/m²) es comparable al porcelánico premium (80-120 €/m²). El parqué multicapa está en el rango de 40-80 €/m², similar al porcelánico de gama media. El porcelánico de diseño ultra-premium con digitalizaciones artísticas puede superar los 150 €/m², haciéndolo más caro que la mayoría de parqués. A largo plazo, el parqué macizo puede ser más económico porque se restaura lijándolo; el porcelánico, aunque no necesita mantenimiento, no se puede reparar si se daña.</p>
+      </div>
+    </section>
+
+    <section class="landing-cta" style="margin-bottom:3rem;">
+      <h2>¿Necesitas presupuestos de empresas para cambiar el suelo?</h2>
+      <p>Recibe propuestas de empresas especializadas en pavimentación en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
+      <a href="/empresas/index.html" class="cta-button">
+        Solicita 3 presupuestos →
+      </a>
+    </section>
+
+    <section class="landing-related">
+      <h2>Otras calculadoras de presupuesto en Bilbao</h2>
+      <div class="landing-related-grid">
+        <a href="/presupuesto-reforma-integral-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏗️</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma Integral</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 700 €/m²</p>
+        </a>
+        <a href="/presupuesto-reforma-bano-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🚿</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Baño</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 2.500 €</p>
+        </a>
+        <a href="/presupuesto-reforma-cocina-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🍳</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Cocina</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 5.000 €</p>
+        </a>
+        <a href="/presupuesto-pintura-piso-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎨</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Pintura</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 8 €/m²</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

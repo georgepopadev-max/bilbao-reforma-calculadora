@@ -1,0 +1,194 @@
+---
+/**
+ * Landing SEO: Presupuesto Pintura Piso Bilbao
+ * A3 Zone
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Calculator from '../components/calculator/Calculator.astro';
+
+const canonical = 'https://www.bilbaoreforma.es/presupuesto-pintura-piso-bilbao.html';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta pintar un piso en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio de pintar un piso en Bilbao y Bizkaia oscila entre 8 €/m² y 20 €/m² según el tipo de pintura, el estado de las paredes y si se requiere alisado. Para un piso medio de 80 m², el presupuesto orientativo va de 2.000 € a 5.000 € incluyendo materiales y mano de obra. Los precios varían según la calidad de la pintura (económica, plástica estándar, ecológica de石灰), el número de manos, y si hay que tratar humedades o moho.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuántas manos de pintura necesita una pared?</strong>',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En la mayoría de los casos son necesarias dos manos de pintura para un acabado uniforme y duradero. La primera mano (capa de imprimación o fondo) iguala la absorció del soporte. La segunda mano aporta el color final. En paredes muy oscuras que se van a pintar de claro, a veces es necesario una tercera mano de pintura. Las pinturas de calidad cubren mejor y reducen la diferencia a dos manos.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo tarda pintar un piso?</strong>',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Pintar un piso de tamaño medio (80-100 m²) requiere entre 3 y 7 días laborables. El desglose típico es: preparación de superficies y protección de muebles (1-2 días), aplicación de imprimación si es necesario (medio día), primera mano (1 día), lija y repaso (medio día), segunda mano (1 día), y secado y ventilación (1-2 días). Los pisos vacíos se pintan más rápido que los habitados porque no hay que proteger muebles.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cuándo es necesario alisar las paredes antes de pintar?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El alisado de paredes es necesario cuando la superficie tiene gota (temple fleje), desniveles significativos,шумо iz好玩ements profundos, o cuando se quiere un acabado liso perfecto (pintura satinada o lacada). El alisado de una pared de 12 m² puede costar entre 80 € y 200 € dependiendo del estado. En pisos nuevos de obra reciente geralmente no es necesario. En edificios antiguos del Casco Viejo con paredes de carga de más de 50 años, el alisado completo puede ser muy costoso.',
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Presupuesto Pintura Piso Bilbao 2026 | Desde 8€/m²"
+  description="Calcula el presupuesto de pintura de tu piso en Bilbao y Bizkaia. Precio real desde 8€/m² con acabado profesional. Sin registro, en 2 minutos."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/index.html" class="header-logo">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="header-logo-text">Bilbao Reforma</span>
+      </a>
+      <nav class="header-nav">
+        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
+        <a href="/blog/index.html" class="header-nav-link">Blog</a>
+        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
+        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb-landing" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span> › </span>
+      <a href="/calculadora/index.html">Calculadora</a>
+      <span> › </span>
+      <span>Pintura Bilbao</span>
+    </nav>
+
+    <section class="landing-hero">
+      <h1>Presupuesto Pintura Piso Bilbao 2026 — Desde 8€/m²</h1>
+      <p>Calcula el presupuesto de pintura de tu piso en Bilbao y Bizkaia. Datos basados en precios reales de pintores profesionales, actualizados 2026.</p>
+    </section>
+
+    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+      <Calculator city="bilbao" calculatorType="pintura" />
+    </section>
+
+    <section class="landing-guide">
+      <h2>Guía de precios para pintura de piso en Bilbao</h2>
+
+      <p>Pintar un piso es la reforma más inmediata y económica para dar un aire nuevo a la vivienda. A diferencia de obras mayores, la pintura no requiere licencias complicadas y puede completarse en menos de una semana. En Bilbao y Bizkaia, los precios por m² para pintura con mano de obra incluida oscilan entre 8 €/m² para pinturas económicas sobre paredes en buen estado y 20 €/m² para acabados premium con preparación exhaustiva. El factor que más eleva el precio no es la pintura en sí, sino la preparación de las superficies.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Tipos de pintura para paredes interiores</h3>
+      <ul>
+        <li><strong>Pintura acrílica:</strong> La más común y económica (3-8 €/m² con manos). Base agua, seca rápido, olor moderado. Disponible en mate, sedoso y brillante. Bueno para la mayoría de estancias.</li>
+        <li><strong>Pintura plástica:</strong> Variante de acrílico con mayor resistencia al roce. Ideal para paredes de dormitorios y salones. Acabado mate o satinado. Buena lavabilidad en gamas medias y altas.</li>
+        <li><strong>Pintura ecológica (cal, mineral):</strong> Desde 12-25 €/m². Libre de COVs (compuestos orgánicos volátiles), transpirable, antibacteriana. Muy adecuada para personas con alergias o asma. En Bilbao hay creciente demanda por pinturas de cal como Revacal o类产品.</li>
+        <li><strong>Pintura lavable o premium:</strong> 8-18 €/m². Gama media-alta con resistencia alta al lavado. Indicada para cocinas, baños, pasillos y paredes con niños.</li>
+        <li><strong>Esmalte y pintura satinada:</strong> Para puertas, ventanas, radiadores y elementos de madera. Acabado brillante o satinado, muy duradero.</li>
+      </ul>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Alisado de paredes: cuándo sí y cuándo no</h3>
+      <p>El alisado de paredes o enfoscado fino es el proceso de aplicar una capa de pasta de alisar para corregir irregularidades antes de pintar. Es necesario cuando:</p>
+      <ul>
+        <li>La pared tiene gota (temple fleje o gotelé): el relief debe nivelarse antes de pintar si se quiere acabado liso. Esto multiplica el coste por 3-5x.</li>
+        <li>Hay grietas o fisuras que se han tratado multiple times y siguen apareciendo.</li>
+        <li>Los desniveles son visibles a simple vista bajo luz lateral.</li>
+        <li>Se va a pintar con pintura satinada, lacada o de tono oscuro, que resalta cualquier defecto.</li>
+      </ul>
+      <p>No es necesario alisar cuando las paredes están en buen estado (obra nueva o pintura reciente en relativo buen estado), cuando se va a aplicar pintura mate sobre temple mate sin gota, o cuando se trata de un piso que se va a alquilar o vender y el acabado no precisa de nivel óptimo.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Temple vs gotelé: cómo tratar cada superficie</h3>
+      <p>El <em>temple</em> (pintura de cal) es el acabado más común en edificios antiguos del Casco Viejo y barrios这样的情况 de Bilbao. Se reconoce porque al pasar la mano suelta polvo. Antes de pintar sobre temple hay que aplicar una mano de fijador o imprimación selladora; de lo contrario, la pintura nueva se desprenderá. El coste de tratamiento de paredes de temple es de 4-8 €/m² adicional sobre el precio base de pintura.</p>
+      <p>El <em>gotelé</em> es un relieve plástico aplicado sobre el temple que estuvo de moda en los años 70-90. Para pintar gotelé sin eliminarlo, se necesita要么 una pintura de suficiente cuerpo (plástica de alta densidad) aplicada con rodillo de pelo largo,要么 cubrir con papel vinyl o无形纱网 que nivele el relieve. Eliminar el gotelé mediante alisado cuesta 8-15 €/m² adicional.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Alturas y accesibilidad</h3>
+      <p>Bilbao tiene muchos pisos altos (edificios de 5-8 plantas sin ascensor en barrios como Santutxu, San Francisco, Otxarkoaga) donde el acceso a techos y paredes altas requiere andamios o plataformas elevadoras. Esto añade un coste de 200-600 € al presupuesto total. Los techos de 3 metros o más también encarecen la pintura de forma proporcional porque requieren equipamiento adicional.</p>
+
+      <h3 style="font-family:var(--font-playfair);font-size:1.125rem;color:var(--color-grafito);margin-bottom:0.5rem;">Preparación de superficies</h3>
+      <p>La preparación es lo que distingue un trabajo de pintura profesional de uno apresurado. Incluye: proteger suelos, interruptores, rodapiés y muebles con пластик и cinta de carrocero; lavar paredes con водой или desengrasante; tapar grietas y agujeros con masilla; lijar superficies entre manos; y aplicar imprimación donde corresponda. Una preparación completa puede representar entre el 30% y el 50% del tiempo total del trabajo.</p>
+    </section>
+
+    <section class="landing-faq">
+      <h2>Preguntas frecuentes sobre pintura en Bilbao</h2>
+
+      <div class="faq-item">
+        <strong>¿Cuántas manos de pintura necesita una pared?</strong>
+        <p>Lo estándar son dos manos de pintura para un acabado uniforme. La primera mano iguala la absorció del soporte y sella la superficie. La segunda mano aporta el color final con cobertura completa. En paredes muy porosas (temple), muy oscuras que se van a pintar de color claro, o con manchas, puede ser necesaria una tercera mano. Las pinturas de gama alta tienen mayor poder de cobertura y a menudo reducen la diferencia a dos manos incluso en这些 casos.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Cuánto tiempo tarda pintar un piso?</strong>
+        <p>Para un piso de 80-100 m² habitado, pintar todas las paredes y techos de un piso completo suele necesitar entre 3 y 7 días laborables. El desglose típico: protección de muebles y superficies (4-8 horas), preparación de paredes (1-2 días), primera mano (1 día), secado y repaso (medio día), segunda mano (1 día), y ventilación y retirada de protección (medio-1 día). Los pisos vacíos se pintan más rápido porque no hay que proteger mobiliario.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Hay que alisar las paredes antes de pintar?</strong>
+        <p>El alisado es necesario cuando las paredes tienen gota (gotelé), desniveles significativos, grietas que han reaparecido tras múltiples reparaciones, o cuando quieres un acabado liso perfecto. Si las paredes están en buen estado (obra nueva o pintura reciente mate sobre temple en buen estado), no es necesario alisar. El alisado completo de un piso medio puede costar entre 800 € y 2.500 € adicionales, dependiendo del estado de las paredes.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>¿Se puede pintar la fachada o exterior del piso en Bilbao?</strong>
+        <p>Sí, pero las fachadas de edificios en Bilbao están sujetas a la normativa de comunidades de propietarios y al Plan General de Ordenación Urbana. Cambiar el color de una fachada requiere autorización de la comunidad y, en edificios protegidos o en el Casco Viejo, autorización del Ayuntamiento. La pintura de fachada exterior cuesta entre 15 €/m² y 40 €/m² según si se necesitan andamios y tratamiento de grietas.</p>
+      </div>
+    </section>
+
+    <section class="landing-cta" style="margin-bottom:3rem;">
+      <h2>¿Necesitas presupuestos de pintores profesionales?</h2>
+      <p>Recibe propuestas de empresas de pintura en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
+      <a href="/empresas/index.html" class="cta-button">
+        Solicita 3 presupuestos →
+      </a>
+    </section>
+
+    <section class="landing-related">
+      <h2>Otras calculadoras de presupuesto en Bilbao</h2>
+      <div class="landing-related-grid">
+        <a href="/presupuesto-reforma-integral-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏗️</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma Integral</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 700 €/m²</p>
+        </a>
+        <a href="/presupuesto-reforma-bano-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🚿</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Baño</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 2.500 €</p>
+        </a>
+        <a href="/presupuesto-reforma-cocina-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🍳</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Reforma de Cocina</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 5.000 €</p>
+        </a>
+        <a href="/presupuesto-cambio-suelo-bilbao.html" style="display:block;padding:1.25rem;background:var(--color-blanco);border:2px solid var(--color-beige);border-radius:var(--radius-card);text-decoration:none;color:inherit;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏠</div>
+          <strong style="font-size:0.9375rem;color:var(--color-grafito);">Cambio de Suelo</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0;">Desde 25 €/m²</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>
