@@ -51,6 +51,13 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
   <title>{fullTitle}</title>
   <meta name="description" content={description}>
   <link rel="canonical" href={canonicalUrl}>
+  <!-- hreflang for multi-city SEO -->
+  <link rel="alternate" hreflang="es-ES" href={canonicalUrl}>
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`}>
+  <link rel="alternate" hreflang="eu-ES" href={`${siteUrl}/donostia`}>
+  <link rel="alternate" hreflang="es-ES" href={`${siteUrl}/donostia`}>
+  <link rel="alternate" hreflang="eu-ES" href={`${siteUrl}/vitoria`}>
+  <link rel="alternate" hreflang="es-ES" href={`${siteUrl}/vitoria`}>
 
   <!-- Open Graph -->
   <meta property="og:title" content={ogTitle || fullTitle}>
