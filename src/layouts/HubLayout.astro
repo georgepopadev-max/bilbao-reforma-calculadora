@@ -22,6 +22,8 @@ export interface Props {
   items?: HubChild[];
   faqs?: Array<{ q: string; a: string }>;
   jsonSchemas?: any[];
+  ogImage?: string;
+  ogImageAlt?: string;
 }
 
 const {
@@ -35,6 +37,8 @@ const {
   items = [],
   faqs = [],
   jsonSchemas = [],
+  ogImage,
+  ogImageAlt,
 } = Astro.props;
 
 const siteUrl = 'https://www.bilbaoreforma.es';
@@ -106,6 +110,8 @@ const allSchemas = [collectionSchema, breadcrumbSchema, faqSchema, articleSchema
   canonical={canonical}
   ogType="article"
   jsonSchemas={allSchemas}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Header city={city} section="blog" />
   <slot />

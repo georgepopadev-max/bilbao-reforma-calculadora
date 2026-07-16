@@ -17,6 +17,8 @@ interface Props {
   city: 'donostia' | 'vitoria';
   section?: 'root' | 'blog' | 'calculadora' | 'empresas';
   schemaData?: Record<string, any>;
+  ogImage?: string;
+  ogImageAlt?: string;
 }
 
 const {
@@ -26,6 +28,8 @@ const {
   city,
   section = 'root',
   schemaData,
+  ogImage,
+  ogImageAlt,
 } = Astro.props;
 
 const cityNames: Record<string, string> = {
@@ -58,6 +62,8 @@ const schema = schemaData ?? {
   description={description}
   canonical={canonical}
   jsonSchemas={[schema]}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Header city={city} section={section} />
 

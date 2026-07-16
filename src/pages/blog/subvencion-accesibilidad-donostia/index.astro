@@ -11,7 +11,9 @@ const canonical = 'https://www.bilbaoreforma.es/blog/subvencion-accesibilidad-do
 const date = 'Actualizado: 28 de junio de 2026 · 8 min de lectura';
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical}>
+<BaseLayout title={title} description={description} canonical={canonical}
+  ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg"
+  ogImageAlt={title}>
   <main style="max-width:860px;margin:0 auto;padding:2rem 1rem">
     <nav style="display:flex;gap:.5rem;font-size:.8125rem;color:#6B6B6B;margin-bottom:1.5rem;flex-wrap:wrap">
       <a href="/index.html" style="color:#C45C3E;text-decoration:none">Inicio</a>

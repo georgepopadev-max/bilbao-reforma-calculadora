@@ -14,6 +14,8 @@ export interface Props {
   breadcrumbs: Array<{ name: string; href: string }>;
   faqs?: Array<{ q: string; a: string }>;
   jsonSchemas?: any[];
+  ogImage?: string;
+  ogImageAlt?: string;
 }
 
 const {
@@ -27,6 +29,8 @@ const {
   breadcrumbs,
   faqs = [],
   jsonSchemas = [],
+  ogImage,
+  ogImageAlt,
 } = Astro.props;
 
 // Build FAQPage schema
@@ -60,6 +64,8 @@ const allSchemas = [breadcrumbSchema, faqSchema, ...jsonSchemas].filter(Boolean)
   canonical={canonical}
   ogType="article"
   jsonSchemas={allSchemas}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Header city={city} section="blog" />
   <slot />

@@ -17,6 +17,8 @@ interface Props {
   city?: 'bilbao' | 'donostia' | 'vitoria';
   calculatorType?: 'integral' | 'bano' | 'cocina' | 'pintura' | 'suelo';
   minPrice?: number;
+  ogImage?: string;
+  ogImageAlt?: string;
 }
 
 const {
@@ -26,6 +28,8 @@ const {
   city = 'bilbao',
   calculatorType = 'integral',
   minPrice,
+  ogImage,
+  ogImageAlt,
 } = Astro.props;
 
 const calculatorLabels: Record<string, string> = {
@@ -43,6 +47,8 @@ const currentCalculator = calculatorLabels[calculatorType] ?? 'Reforma';
   title={title.includes("Bilbao Reforma") ? title : `${title} | Bilbao Reforma`}
   description={description}
   canonical={canonical}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Header city={city} section="calculadora" />
 

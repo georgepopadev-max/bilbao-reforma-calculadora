@@ -2,4 +2,4 @@
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
 const empresa = { name: 'Eraber', slug: 'eraber', phone: '+34 627 40 70 90', email: 'info@eraber.com', address: 'Gran Vía de Don Diego López de Haro 81, Planta 6ª, Bilbao 48001', services: ['Albañilería', 'Pintura', 'Reformas integrales', 'Decoración', 'Interiorismo'], description: 'Empresa de reformas integrales en Bilbao. Albañilería, pintura, decoración e interiorismo en Santutxu y Bilbao.', location: 'Santutxu', ratingValue: '4.6', reviewCount: '29', coordinates: { lat: 43.2680, lng: -2.9340 } };
 ---
-<EmpresaLayout empresa={empresa} />
+<EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

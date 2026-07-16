@@ -2,4 +2,4 @@
 import EmpresaLayout from '../../../layouts/EmpresaLayout.astro';
 const empresa = { name: 'Renova Gasteiz S.L.', slug: 'renova-gasteiz', phone: '+34 945 04 13 40', address: 'Barratxi Kalea 19, 01013 Vitoria-Gasteiz', services: ['Reformas integrales', 'Albañilería', 'Fontanería', 'Electricidad', 'Pintura', 'Reforma de locales'], description: 'Empresa de reformas integrales profesionales en Vitoria-Gasteiz. Más de 10 años de experiencia.', location: 'Vitoria-Gasteiz', ratingValue: '4.7', reviewCount: '38', coordinates: { lat: 42.8650, lng: -2.6720 } };
 ---
-<EmpresaLayout empresa={empresa} />
+<EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

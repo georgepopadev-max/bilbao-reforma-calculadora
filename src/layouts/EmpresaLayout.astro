@@ -28,9 +28,11 @@ interface Props {
     reviewCount?: string;
     coordinates?: { lat: number; lng: number };
   };
+  ogImage?: string;
+  ogImageAlt?: string;
 }
 
-const { empresa } = Astro.props;
+const { empresa, ogImage, ogImageAlt } = Astro.props;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -85,6 +87,8 @@ const schema = {
   title={`${empresa.name} | ${empresa.location} 2026`}
   description={`${empresa.description} Tel y servicios. Reseñas verificadas.`}
   canonical={`https://www.bilbaoreforma.es/empresas/${empresa.slug}.html`}
+  ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />

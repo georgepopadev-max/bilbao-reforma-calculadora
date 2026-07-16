@@ -2,4 +2,4 @@
 import EmpresaLayout from '../../../layouts/EmpresaLayout.astro';
 const empresa = { name: 'Ara Reformas', slug: 'ara-reformas', phone: '+34 945 XX XX XX', address: 'Vitoria-Gasteiz, Álava', services: ['Reformas integrales', 'Albañilería', 'Reformas de cocinas', 'Reformas de baños', 'Rehabilitación'], description: 'Empresa de reformas integrales en Vitoria-Gasteiz con más de 20 años de experiencia.', location: 'Vitoria-Gasteiz', ratingValue: '4.5', reviewCount: '25' };
 ---
-<EmpresaLayout empresa={empresa} />
+<EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />
