@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const jsonSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cuánto cuesta una reforma de cocina en Donostia en 2026?", "acceptedAnswer": { "@type": "Answer", "text": "El precio de una reforma de cocina en Donostia oscila entre 6.000 € y 18.000 € según el nivel de calidad. Para una cocina de 10 m²: reforma básica de 6.000 € a 10.000 €, reforma media de 10.000 € a 15.000 € y reforma premium de 15.000 € a 18.000 €. Donostia es la ciudad más cara del País Vasco para reformas." } },
+      { "@type": "Question", "name": "¿Qué incluye una reforma de cocina completa?", "acceptedAnswer": { "@type": "Answer", "text": "Una reforma de cocina completa incluye: demolición de acabados existentes, albañilería y preparación de paredes, fontanería nueva para fregadero, lavavajillas y lavadora, electricidad con nuevos puntos de luz, encimera y muebles nuevos, electrodomésticos, encimera nueva y pintura o revestimiento de paredes." } },
+      { "@type": "Question", "name": "¿Cuánto tarda una reforma de cocina en Donostia?", "acceptedAnswer": { "@type": "Answer", "text": "Una reforma parcial de cocina (cambiar muebles y electrodomésticos sin tocar instalaciones) tarda entre 1 y 2 semanas. Una reforma completa con cambio de fontanería y electricidad requiere entre 3 y 5 semanas. Si incluye redistribución de la cocina, puede alargarse hasta 6-8 semanas." } },
+      { "@type": "Question", "name": "¿Puedo hacer la cocina abierta al salón en Donostia?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, es posible en muchos casos, pero requiere licencia de obra mayor si se elimina un tabique estructural. En Donostia, los edificios del Centro y Parte Vieja suelen tener muros de carga gruesos que limitan las aperturas. Consulta siempre con un arquitecto antes de tirar tabiques." } },
+      { "@type": "Question", "name": "¿Qué permisos necesito para reformar la cocina en Donostia?", "acceptedAnswer": { "@type": "Answer", "text": "Si no se toca la estructura ni las instalaciones principales, basta con comunicación previa al Ayuntamiento. Para redistribución con cambio de fontanería o electricidad, se necesita licencia de obra menor. Para abrir la cocina al salón (eliminar tabique), se requiere licencia de obra mayor con proyecto técnico." } },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/donostia/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.bilbaoreforma.es/donostia/blog/index.html" },
+      { "@type": "ListItem", "position": 3, "name": "Reforma Cocina Donostia: Consejos Prácticos", "item": "https://www.bilbaoreforma.es/donostia/blog/reforma-cocina-donostia-consejos.html" },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Reforma Cocina Donostia 2026: Consejos Prácticos y Precios"
+  description="Reforma cocina Donostia 2026: consejos prácticos, precios por m², errores a evitar y guía completa para planificar tu cocina en San Sebastián."
+  canonical="https://www.bilbaoreforma.es/donostia/blog/reforma-cocina-donostia-consejos.html"
+  ogType="article"
+  jsonSchemas={jsonSchemas}
+>
+  <Header city="donostia" section="blog" />
+
+  <div class="article-layout">
+    <main class="article-main">
+      <header class="article-header">
+        <nav class="article-breadcrumb">
+          <a href="../../index.html">Bilbao Reforma</a>
+          <span>/</span>
+          <a href="../index.html">Blog</a>
+          <span>/</span>
+          <span>Reforma Cocina Donostia</span>
+        </nav>
+        <span class="article-category">Reforma Cocina</span>
+        <h1 class="article-title">Reforma Cocina Donostia 2026: Consejos Prácticos para tu Proyecto</h1>
+        <div class="article-meta">
+          <span class="article-meta-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Enero 2026
+          </span>
+          <span class="article-meta-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            11 min de lectura
+          </span>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <p>La cocina es la estancia más utilizada de la casa y, en muchas viviendas de Donostia-San Sebastián, también una de las más anticuadas. Cocinas originales de los años 70 y 80 con muebles de maderaoscuros, encimeras de formica, extractores insuficientes y una distribución en forma de ele que no se aprovecha bien son el punto de partida habitual de muchas reformas.</p>
+
+        <p>Reformar la cocina en Donostia es una inversión importante, pero también una de las reformas que mayor retorno de valor genera. Según estudios del sector inmobiliario, una cocina renovada puede aumentar el precio de venta de un piso entre un 5% y un 10%. En Donostia, donde el mercado inmobiliario es especialmente dinámico, este porcentaje puede ser incluso mayor.</p>
+
+        <p>En esta guía te damos <strong>consejos prácticos para planificar tu reforma de cocina en Donostia</strong>, con información de precios, errores a evitar y trucos para que tu proyecto salga bien.</p>
+
+        <div class="in-content-cta">
+          <span class="in-content-cta-label">📊 Herramienta recomendada</span>
+          <a href="../../calculadora/index.html">Calculadora de presupuesto reforma cocina Donostia →</a>
+          <a href="../blog/reforma-integral-donostia-guia-completa.html">Guía reforma integral Donostia 2026 →</a>
+        </div>
+
+        <h2>Precios reforma cocina Donostia 2026</h2>
+
+        <p>Los precios de reforma de cocina en Donostia varían mucho según el alcance de los trabajos y las calidades elegidas. Aquí tienes los rangos orientativos para 2026:</p>
+
+        <table class="price-table">
+          <caption>Precios orientativos reforma cocina Donostia 2026 (material + mano de obra)</caption>
+          <thead>
+            <tr>
+              <th>Tipo de reforma</th>
+              <th>Descripción</th>
+              <th>Cocina 8 m²</th>
+              <th>Cocina 12 m²</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Básica</strong></td>
+              <td>Cambio de muebles, encimera, electrodomésticos y pintura. Instalaciones existentes.</td>
+              <td>6.000 – 10.000 €</td>
+              <td>8.000 – 13.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Media</strong></td>
+              <td>Además: cambio parcial de fontanería y electricidad, nuevos puntos de luz.</td>
+              <td>10.000 – 13.000 €</td>
+              <td>13.000 – 17.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Premium</strong></td>
+              <td>Además: redistribución, isla de cocina, electrodomésticos de gama alta, materiales premium.</td>
+              <td>13.000 – 16.000 €</td>
+              <td>17.000 – 22.000 €</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Recuerda que Donostia es la ciudad más cara del País Vasco para reformas, con precios entre un 10% y un 15% superiores a Bilbao. Estos precios incluyen IVA y mano de obra especializada.</p>
+
+        <h2>Planificación paso a paso de tu reforma de cocina</h2>
+
+        <h3>Paso 1: Define tu presupuesto y prioridades</h3>
+        <p>Antes de hablar con empresas, define qué quieres conseguir. ¿Cocina completamente nueva o solo actualizar muebles? ¿Cambio de distribucción o misma distribución? ¿Electrodomésticos nuevos o puedes reutilizar algunos? Las respuestas a estas preguntas marcan la diferencia entre una reforma de 6.000 € y una de 18.000 €.</p>
+
+        <h3>Paso 2: Mide tu cocina con precisión</h3>
+        <p>En Donostia, muchas cocinas tienen formas irregulares o medidas que no son múltiplos estándar. Mide todas las paredes con precisión, anota la posición de ventanas, puertas, pilares y出过口 de instalaciones. Un plano en planta con todas las medidas es el punto de partida para cualquier diseño.</p>
+
+        <h3>Paso 3: Elige la distribución</h3>
+        <p>La distribución más eficiente es la que sigue el llamado triángulo de trabajo: fogones, fregadero y frigorífico. Las tres estaciones principales deben formar un triángulo sin obstáculos entre ellas. Las distribuciones más comunes en Donostia son:</p>
+
+        <ul>
+          <li><strong>Lineal:</strong> Todo en una pared. Ideal para cocinas estrechas y largas, muy comunes en pisos de Amara y Centro.</li>
+          <li><strong>En L:</strong> Dos paredes contiguas. Aprovecha rincones y es muy funcional.</li>
+          <li><strong>En U:</strong> Tres paredes. La más completa y espaciosa, habitual en pisos grandes de Gros y Aiete.</li>
+          <li><strong>Con isla:</strong> Mesa o zona de trabajo central. Requiere cocina amplia y, en Donostia, a menudo implica abrir la cocina al salón.</li>
+        </ul>
+
+        <h3>Paso 4: Selecciona los materiales</h3>
+        <p>En la cocina, los tres elementos más importantes por durability y coste son:</p>
+
+        <p><strong>Muebles:</strong> Los hay deDMF (tablero de fibra), MDF (tablero de fibra de media densidad) y madera maciza. EI DMF es el más económico pero menos resistente a la humedad. EI MDF lacado es el más popular por su relación calidad-precio. La madera maciza es la opción más premium y duradera.</p>
+
+        <p><strong>Encimera:</strong> En Donostia predominan las encimeras de granito (resistentes y con variedad de acabados), quarzo oCompac (no poroso, fácil limpieza) y resinas (cada vez más populares por su diseño). EI gres porcelánico es una opción económica y resistente.</p>
+
+        <p><strong>Suelo:</strong> EI gres porcelánico antideslizante es la opción más práctica para cocinas donostiarras. También hay opciones de tarima vinílica (cómoda y cálida al tacto) o piedra natural en cocinas premium.</p>
+
+        <h2>Errores comunes en la reforma de cocina en Donostia</h2>
+
+        <p><strong>No planificar enough storage:</strong> Uno de los mayores arrepentimientos en reformas de cocina es quedarse corto de espacio de almacenamiento. Añade siempre un armario más de los que crees necesitar. En Donostia, donde los pisos son pequeños, cada metro de almacenamiento cuenta.</p>
+
+        <p><strong>No pensar en la iluminación:</strong> La cocina necesita al menos tres capas de luz: general (techo), funcional (sobre la zona de trabajo) y decorativa (vitrinillas o estanterías abiertas). No planificar la iluminación lleva a una cocina bonita pero poco práctica.</p>
+
+        <p><strong>Elegir encimera por estética sin pensar en uso:</strong> EI mármol blanco es muy bonito pero se mancha con facilidad. EI acero inoxidable es práctico pero muestra arañazos. EI quarzo ofrece el mejor equilíbrio para la mayoría de hogares donostiarras.</p>
+
+        <p><strong>No dejar suficiente ventilación:</strong> EI extractor es fundamental en Donostia, donde la humedad exterior es alta y las ventanas a menudo son pequeñas. Un extractor potente (mínimo 500 m³/h) y que vuelque al exterior (no al patio interior) es imprescindible.</p>
+
+        <p><strong>Olvidar losenchufes:</strong> En una cocina moderna se usan muchos aparatos simultáneamente. Plana al menos 8-10 tomas de corriente en la zona de trabajo, además de las tomas específicas para frigorífico, lavavajillas, horno y placa.</p>
+
+        <h2>La cocina abierta al salón: tendencias en Donostia</h2>
+
+        <p>Una de las tendencias más solicitadas en Donostia es abrir la cocina al salón o al comedor. Esto aporta luz natural, sensación de espacio y permite cocinar mientras se interactúa con la familia o los invitados.</p>
+
+        <p>Sin embargo, hay consideraciones importantes:</p>
+
+        <ul>
+          <li><strong>Normativa:</strong> Eliminar un tabique requiere licencia de obra mayor y, en edificios protegidos de Donostia, informe favorable de patrimonio. Los muros de carga no se pueden tocar sin refuerzo estructural.</li>
+          <li><strong>Ventilación:</strong> Sin puerta de cierre, los olores y humos de cocinavan directamente al salón. Un extractor potente es aún más importante.</li>
+          <li><strong>Ruidos:</strong> EI ruido del lavavajillas, el extractor y los utensilios se transmite al salón. Considera silenciadores en los electrodomésticos y acabados acolchados.</li>
+          <li><strong>Agua:</strong> Si la cocina y el salón tienen distintos niveles de suelo por normativa de fontanería, la apertura puede ser complicada.</li>
+        </ul>
+
+        <h2>Cocinas pequeñas en Donostia: cómo aprovechar cada m²</h2>
+
+        <p>Muchas cocinas de los pisos donostiarras del Centro, Amara y la Parte Vieja tienen menos de 8 m². Aquí van trucos para aprovechar al máximo espacios reducidos:</p>
+
+        <ul>
+          <li><strong>Muebles hasta el techo:</strong> Aprovecha la vertical. Los armarios altos dan mucho almacenamiento adicional.</li>
+          <li><strong>Puertas correderas:</strong> En lugar de puertas abatibles que ocupan espacio, instala puertas correderas o plegables para acceder a armarios y frigorífico.</li>
+          <li><strong>Encimera extensible:</strong> Una mesa o encimera que se pliega o despliega cuando la necesitas ocupa cero espacio cuando no la usas.</li>
+          <li><strong>Colores claros:</strong> Los tonos claros en muebles y paredes dan sensación de amplitud. EI blanco, beige y gris claro son los favoritos en Donostia.</li>
+          <li><strong>Iluminación empotrada:</strong> Spots LED empotrados en el techo en lugar de lámparas colgantes no ocupan espacio visual.</li>
+        </ul>
+
+        <h2>¿Cuándo reformarla cocina y cuándo esperar?</h2>
+
+        <p>Hay señales claras de que tu cocina necesita reforma:</p>
+
+        <ul>
+          <li>Tuberías de plomo o hierro galvanizado (más de 40 años).</li>
+          <li>Cableado eléctrico sin toma de tierra ni diferenciales.</li>
+          <li>Muebles hinchados por humedad o termite.</li>
+          <li>Encimera agrietada o muy desgastada.</li>
+          <li>Ausencia de extractor o extractor que no funciona.</li>
+          <li>Frigorífico o congelador en el pasillo porque no caben en la cocina.</li>
+        </ul>
+
+        <div class="in-content-cta">
+          <span class="in-content-cta-label">🔗 Más información</span>
+          <a href="../blog/reforma-bano-donostia-precios-2026.html">Precio reforma baño Donostia 2026 →</a>
+          <a href="../blog/pintura-piso-donostia-costes.html">Pintura de piso en Donostia: precios →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <Footer city="donostia" />
+</BaseLayout>
+
+<style>
+  .article-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  .article-main {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(45,30,15,.08);
+    overflow: hidden;
+  }
+  .article-header {
+    background: linear-gradient(135deg, #2D6A4F 0%, #1b4d35 100%);
+    padding: 2.5rem 2rem 2rem;
+    color: white;
+  }
+  .article-breadcrumb {
+    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+    opacity: 0.85;
+  }
+  .article-breadcrumb a { color: white; text-decoration: none; }
+  .article-breadcrumb a:hover { text-decoration: underline; }
+  .article-category {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.25rem 0.875rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.875rem;
+  }
+  .article-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+  .article-meta {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+  .article-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  .article-content {
+    padding: 2rem;
+    line-height: 1.75;
+    color: #2D2D2D;
+  }
+  .article-content p {
+    margin: 0 0 1.25rem;
+    font-size: 1.0625rem;
+  }
+  .article-content h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #E8E2D9;
+  }
+  .article-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .article-content ul, .article-content ol {
+    margin: 0 0 1.25rem 1.5rem;
+    font-size: 1.0625rem;
+  }
+  .article-content li { margin-bottom: 0.5rem; }
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9375rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(45,30,15,.08);
+  }
+  .price-table caption {
+    font-weight: 600;
+    background: #2D6A4F;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+  .price-table thead th {
+    background: #1b4d35;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8125rem;
+  }
+  .price-table tbody tr:nth-child(even) { background: #FAF7F2; }
+  .price-table tbody tr:nth-child(odd) { background: #fff; }
+  .price-table td { padding: 0.875rem 1rem; border-bottom: 1px solid #E8E2D9; }
+  .in-content-cta {
+    background: #FAF7F2;
+    border-left: 4px solid #2D6A4F;
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .in-content-cta-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #6B6B6B;
+    margin-bottom: 0.25rem;
+  }
+  .in-content-cta a {
+    color: #2D6A4F;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9375rem;
+  }
+  .in-content-cta a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .article-content { padding: 1.5rem 1rem; }
+    .article-header { padding: 1.5rem 1rem 1.25rem; }
+  }
+</style>
