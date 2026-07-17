@@ -138,9 +138,14 @@ const breadcrumbSchema = {
   .article-content :global(ul), .article-content :global(ol) { margin: 1rem 0 1.5rem 1.5rem; }
   .article-content :global(li) { margin-bottom: 0.5rem; }
   .article-content :global(strong) { font-weight: 600; }
-  .article-content :global(table) { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9375rem; }
+  .article-content :global(table) { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9375rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
   .article-content :global(th) { background: #4A6741; color: #FFFFFF; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem; }
-  .article-content :global(td) { padding: 0.75rem 1rem; border-bottom: 1px solid #E8E2D9; }
+  .article-content :global(td) { padding: 0.75rem 1rem; border-bottom: 1px solid #E8E2D9; white-space: nowrap; }
   .article-content :global(tr:nth-child(even) td) { background: #FAF7F2; }
   .article-content :global(.table-wrap) { overflow-x: auto; margin: 1.5rem 0; }
+
+  @media (max-width: 640px) {
+    .article-content :global(table) { font-size: 0.75rem; white-space: nowrap; }
+    .article-content :global(th), .article-content :global(td) { padding: 0.625rem 0.5rem; }
+  }
 </style>

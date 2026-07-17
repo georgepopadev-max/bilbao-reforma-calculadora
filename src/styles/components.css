@@ -117,6 +117,35 @@
   overflow: hidden;
   box-shadow: var(--shadow-card);
 }
+@media (max-width: 640px) {
+  .price-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+  .price-table th,
+  .price-table td {
+    padding: 0.625rem 0.5rem;
+    white-space: nowrap;
+  }
+  .price-table th:first-child,
+  .price-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+  .price-table th:first-child {
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+  }
+  .price-table td:first-child {
+    background: var(--color-blanco);
+    font-weight: 600;
+  }
+}
 .price-table caption {
   font-size: 0.75rem;
   color: var(--color-gris);
