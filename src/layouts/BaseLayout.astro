@@ -73,23 +73,7 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content={resolvedOgImage}>
 
-  <!-- Google Tag Manager -->
-  <script is:inline>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MJNJJ3L6');
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STSLR4MMDQ"></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-STSLR4MMDQ');
-  </script>
+  <!-- Google tag (gtag.js) — loaded dynamically only after cookie consent -->
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -112,11 +96,74 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
   <slot name="head" />
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJNJJ3L6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
   <slot />
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#FAF7F2;border-top:1px solid #E8E2D9;padding:1rem 1.5rem;box-shadow:0 -2px 8px rgba(45,30,15,0.08);font-family:'Inter',system-ui,sans-serif;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+      <p style="margin:0;color:#2D2D2D;font-size:0.875rem;flex:1;min-width:280px;">
+        Utilizamos cookies técnicas y, con tu consentimiento, cookies analíticas (Google Analytics) para mejorar tu experiencia.
+        <a href="/politica-privacidad.html" style="color:#C45C3E;text-decoration:underline;font-size:0.875rem;">Más información</a>
+      </p>
+      <div style="display:flex;gap:0.5rem;flex-shrink:0;">
+        <button id="cookie-reject" style="background:#6B6B6B;color:#fff;border:none;border-radius:8px;padding:0.5rem 1rem;cursor:pointer;font-size:0.875rem;font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:background 0.2s;">Rechazar</button>
+        <button id="cookie-accept" style="background:#C45C3E;color:#fff;border:none;border-radius:8px;padding:0.5rem 1rem;cursor:pointer;font-size:0.875rem;font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:background 0.2s;">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function() {
+      var banner = document.getElementById('cookie-banner');
+      var btnAccept = document.getElementById('cookie-accept');
+      var btnReject = document.getElementById('cookie-reject');
+
+      function loadGtag() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-STSLR4MMDQ');
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-STSLR4MMDQ';
+        document.head.appendChild(script);
+      }
+
+      function showBanner() {
+        if (banner) banner.style.display = 'block';
+      }
+
+      function hideBanner() {
+        if (banner) banner.style.display = 'none';
+      }
+
+      function handleAccept() {
+        localStorage.setItem('cookie_consent', 'accepted');
+        hideBanner();
+        loadGtag();
+      }
+
+      function handleReject() {
+        localStorage.setItem('cookie_consent', 'rejected');
+        hideBanner();
+      }
+
+      // Init
+      var consent = localStorage.getItem('cookie_consent');
+      if (consent === 'accepted') {
+        hideBanner();
+        loadGtag();
+      } else if (consent === 'rejected') {
+        hideBanner();
+      } else {
+        showBanner();
+      }
+
+      if (btnAccept) btnAccept.addEventListener('click', handleAccept);
+      if (btnReject) btnReject.addEventListener('click', handleReject);
+    })();
+  </script>
 
   <!-- Mobile menu: handled by src/scripts/header-mobile.js -->
 </body>
