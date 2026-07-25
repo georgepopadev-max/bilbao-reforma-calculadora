@@ -1,5 +1,30 @@
 ---
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
-const empresa = { name: 'Vascol Reformas', slug: 'vascol-reformas', phone: '+34 677 88 99 00', email: 'vascolreformas@email.com', address: 'Calle Colon de Larreategui 26, Bilbao 48009', services: ['Reformas de locales', 'Reformas comerciales', 'Albañilería', 'Fontanería', 'Electricidad'], description: 'Reformas de locales comerciales y oficinas en Bilbao. Hostelería, tiendas y oficinas.', location: 'Bilbao', ratingValue: '4.3', reviewCount: '18', coordinates: { lat: 43.2610, lng: -2.9360 } };
+const empresa = {
+  name: 'Vascol Reformas',
+  slug: 'vascol-reformas',
+  phone: '+34 677 88 99 00',
+  email: 'vascolreformas@email.com',
+  address: 'Calle Colón de Larreategui 26, Bilbao 48009',
+  services: [
+    'Reformas de locales',
+    'Reformas comerciales',
+    'Albañilería',
+    'Fontanería',
+    'Electricidad',
+    'Climatización',
+    'Instalaciones de Hostelería',
+    'Reformas de oficinas',
+    'Diseño comercial',
+    'Certificados de apertura',
+  ],
+  description: 'Reformas de locales comerciales y oficinas en Bilbao. Especialistas en hostelería, tiendas y oficinas. Gestionamos licencias de apertura y proyectos completos de reforma.',
+  history: 'Vascol Reformas es la opción especializada para quienes necesitan transformar un espacio comercial o de negocio en Bilbao. A diferencia de las empresas generalistas, Vascol concentra toda su experiencia en el sector terciario: hostelería, comercio, oficinas y espacios de trabajo. Esta especialización les permite conocer en profundidad la normativa de licencias de apertura en Bizkaia, los requisitos de seguridad contra incendios para locales de pública concurrencia, y las necesidades específicas de cada sector — desde la instalación de una cocina industrial en un restaurante hasta el montaje de un sistema de climatización eficiente en una tienda. El equipo de Vascol incluye profesionales de fontanería, electricidad y climatización, lo que permite ejecutar proyectos completos sin subcontractar. Su sede en el centro de Bilbao les da acceso rápido a los principales ejes comerciales de la ciudad, y trabajan habitualmente en la zona de Abando, Indautxu y el Ensanche.',
+  location: 'Bilbao',
+  ratingValue: '4.3',
+  reviewCount: '18',
+  areas: ['Abando', 'Indautxu', 'Ensanche', 'Bilbao', 'Bizkaia'],
+  coordinates: { lat: 43.2610, lng: -2.9360 }
+};
 ---
 <EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

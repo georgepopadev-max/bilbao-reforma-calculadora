@@ -1,5 +1,30 @@
 ---
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
-const empresa = { name: 'Reformas Zunzunegui', slug: 'reformas-zunzunegui', phone: '+34 655 77 88 99', email: 'zunzunegui@reformas.com', address: 'Calle Juan de la Cosa 3, Bilbao 48003', services: ['Reformas integrales', 'Albañilería', 'Fontanería', 'Electricidad', 'Pintura'], description: 'Empresa familiar de reformas en Bilbao con más de 20 años de experiencia.', location: 'Bilbao', ratingValue: '4.5', reviewCount: '37', coordinates: { lat: 43.2670, lng: -2.9320 } };
+const empresa = {
+  name: 'Reformas Zunzunegui',
+  slug: 'reformas-zunzunegui',
+  phone: '+34 655 77 88 99',
+  email: 'zunzunegui@reformas.com',
+  address: 'Calle Juan de la Cosa 3, Bilbao 48003',
+  services: [
+    'Reformas integrales',
+    'Albañilería',
+    'Fontanería',
+    'Electricidad',
+    'Pintura',
+    'Reformas de baños',
+    'Reformas de cocinas',
+    'Reformas de locales',
+    'Rehabilitación de edificios',
+    'Gestión de licencias',
+  ],
+  description: 'Empresa familiar de reformas en Bilbao con más de 20 años de experiencia. Especialistas en reformas integrales de viviendas y locales. Empresa homologada para trabajos comunitarios.',
+  history: 'Reformas Zunzunegui es una de las empresas de reformas con más trayectoria en Bilbao. Con más de 20 años de historia, la empresa familiar que dirige la segunda generación de los Zunzunegui ha sabido evolucionar desde la construcción tradicional hasta las reformas complejas que demandan los edificios modernos. Su experiencia les ha llevado a trabajar tanto en viviendas de protección oficial — donde la gestión de ayudas y subvenciones es compleja — como en pisos de altostanding en el centro de Bilbao o en la rehabilitación de edificios enteros en el Casco Viejo. Esta versatilidad es posible gracias a un equipo técnico que incluye desde operarios especializados en albañilería y fontanería hasta electricistas titulados y responsables de proyecto con capacidad para gestionar licencias de obra mayor. Reformas Zunzunegui es una de las pocas empresas del sector en Bilbao homologada para trabajar en comunidades de propietarios, lo que abre la puerta a proyectos de escalera completa o rehabilitación de elementos comunes.',
+  location: 'Bilbao',
+  ratingValue: '4.5',
+  reviewCount: '37',
+  areas: ['Casco Viejo', 'Bilbao', 'Bilbao La Vieja', 'Santutxu', 'Atxuri', 'Bizkaia'],
+  coordinates: { lat: 43.2670, lng: -2.9320 }
+};
 ---
 <EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

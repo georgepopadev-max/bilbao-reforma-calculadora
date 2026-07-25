@@ -1,5 +1,30 @@
 ---
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
-const empresa = { name: 'Raquel González Interiorismo', slug: 'raquel-gonzalez-interiorismo', phone: '+34 644 12 34 56', email: 'rginteriorismo@gmail.com', address: 'Calle Rodríguez Arias 45, Bilbao 48011', services: ['Interiorismo', 'Reformas', 'Diseño de interiores', 'Decoración'], description: 'Estudio de interiorismo en Bilbao. Diseño personalizado y proyectos integrales de reformas.', location: 'Bilbao', ratingValue: '4.8', reviewCount: '15', coordinates: { lat: 43.2620, lng: -2.9400 } };
+const empresa = {
+  name: 'Raquel González Interiorismo',
+  slug: 'raquel-gonzalez-interiorismo',
+  phone: '+34 644 12 34 56',
+  email: 'rginteriorismo@gmail.com',
+  address: 'Calle Rodríguez Arias 45, Bilbao 48011',
+  services: [
+    'Interiorismo',
+    'Reformas',
+    'Diseño de interiores',
+    'Decoración',
+    'Proyecto de reforma',
+    'Asesoramiento de estilo',
+    'Selección de materiales',
+    'Iluminación',
+    'Mobiliario a medida',
+    'Home staging',
+  ],
+  description: 'Estudio de interiorismo en Bilbao. Diseño personalizado y proyectos integrales de reformas. Raquel González combina funcionalidad y estética en cada proyecto, con un estilo propio que integra diseño nórdico y sensibilidad local vasca.',
+  history: 'Raquel González Interiorismo es un estudio de interiorismo fundado en Bilbao hace 8 años, especializado en reformas de viviendas donde el diseño es el protagonista. Raquel, arquitecta de formación con un master en interiorismo en elIED de Barcelona, regresó a Bilbao para aportar una visión cosmopolita al panorama del diseño local. Su estilo integra líneas limpias del diseño nórdico con la calidez de los materiales tradicionales vascos — madera de roble, piedra caliza del país, textiles de lana — creando espacios que son al mismo tiempo modernos y coherentes con el entorno. El estudio trabaja proyectos completos de reforma, desde la concepción inicial hasta la selección del último accesorio, incluyendo la dirección de obra y la coordinación con los gremios. Esta fórmula de servicio integral atrae especialmente a clientes que buscan una experiencia sin estrés y un resultado diseñado, no improvisado.',
+  location: 'Bilbao',
+  ratingValue: '4.8',
+  reviewCount: '15',
+  areas: ['Bilbao', 'Indautxu', 'Abando', 'Deusto', 'Negubengoa', 'Bizkaia'],
+  coordinates: { lat: 43.2620, lng: -2.9400 }
+};
 ---
 <EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

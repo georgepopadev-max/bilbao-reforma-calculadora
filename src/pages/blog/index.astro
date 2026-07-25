@@ -49,24 +49,30 @@ const totalCTAs = posts.reduce((sum, p) => {
 
   <main>
     <div style="max-width:1200px;margin:0 auto;padding:2rem 1rem">
-      {/* Header */}
-      <header style="text-align:center;margin-bottom:3rem;padding:2rem 0">
+
+      {/* Introductory section */}
+      <section style="max-width:860px;margin:0 auto 3rem;text-align:center">
         <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:2.25rem;font-weight:700;color:#2D2D2D;margin-bottom:1rem">
           Blog de Reformas Bilbao
         </h1>
-        <p style="font-size:1.0625rem;color:#6B6B6B;max-width:640px;margin:0 auto 1.5rem">
-          Guías prácticas, comparativas de precios y consejos para planificar tu reforma en Bilbao con éxito. Actualizado para 2026.
+        <p style="font-size:1.0625rem;color:#6B6B6B;max-width:640px;margin:0 auto 1.5rem;line-height:1.7">
+          Guías prácticas, comparativas de precios y consejos para planificar tu reforma en Bilbao con éxito. Aquí encontrarás información actualizada sobre costes de reformas, trucos para ahorrar, y todo lo que necesitas saber sobre las ayudas y subvenciones disponibles en 2026.
         </p>
-        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;font-size:.875rem;color:#6B6B6B">
-          <span>{totalPosts} artículos</span>
-          <span>·</span>
-          <span>{categories.length} categorías</span>
-          <span>·</span>
-          <span>{totalFAQs} FAQs</span>
-          <span>·</span>
-          <span>{totalCTAs} CTAs</span>
-        </div>
-      </header>
+        <p style="font-size:0.9375rem;color:#6B6B6B;max-width:580px;margin:0 auto;line-height:1.6">
+          Bilbao tiene uno de los parques inmobiliarios más envejecidos de España. Muchas viviendas necesitan reformas urgentes de baños, cocinas, fachadas e instalaciones. Si estás pensando en reformbar, este es tu punto de partida: información práctica basada en datos reales del mercado de reformas en el País Vasco.
+        </p>
+      </section>
+
+      {/* Stats bar */}
+      <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:.875rem;color:#6B6B6B;margin-bottom:2rem;padding:1rem;background:#FAF7F2;border-radius:12px">
+        <span style="font-weight:600;color:#2D2D2D">{totalPosts} artículos</span>
+        <span>·</span>
+        <span style="font-weight:600;color:#2D2D2D">{categories.length} categorías</span>
+        <span>·</span>
+        <span style="font-weight:600;color:#2D2D2D">{totalFAQs} preguntas frecuentes</span>
+        <span>·</span>
+        <span style="font-weight:600;color:#2D2D2D">Actualizado 2026</span>
+      </div>
 
       {/* Category filter pills */}
       <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2rem;justify-content:center">
@@ -82,6 +88,21 @@ const totalCTAs = posts.reduce((sum, p) => {
           </a>
         ))}
       </div>
+
+      {/* Popular topics */}
+      <section style="background:#FFFFFF;border-radius:12px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 2px 8px rgba(45,30,15,.08)">
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:700;color:#2D2D2D;margin-bottom:1rem">
+          Temas más buscados
+        </h2>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <a href="/blog/subvenciones-reformas-bilbao-2026/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Subvenciones Bilbao 2026</a>
+          <a href="/blog/subvencion-cambio-ventanas-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Cambio ventanas</a>
+          <a href="/blog/subvencion-accesibilidad-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Accesibilidad</a>
+          <a href="/blog/subvencion-fachadas-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Fachadas</a>
+          <a href="/blog/subvencion-eficiencia-energetica-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Eficiencia energética</a>
+          <a href="/blog/subvencion-cambio-calderas-vitoria/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Calderas Vitoria</a>
+        </div>
+      </section>
 
       {/* Posts grid */}
       <div class="article-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">

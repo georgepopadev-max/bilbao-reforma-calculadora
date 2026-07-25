@@ -1,5 +1,30 @@
 ---
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
-const empresa = { name: 'RB Interiores', slug: 'rb-interiores', phone: '+34 622 11 22 33', email: 'info@rbinteriores.com', address: 'Avenida Madariaga 12, Bilbao 48014', services: ['Reformas de interiores', 'Albañilería', 'Fontanería', 'Electricidad', 'Pintura'], description: 'Reformas de interiores en Bilbao. Especialistas en reformas parciales y completas.', location: 'Bilbao', ratingValue: '4.4', reviewCount: '22', coordinates: { lat: 43.2590, lng: -2.9440 } };
+const empresa = {
+  name: 'RB Interiores',
+  slug: 'rb-interiores',
+  phone: '+34 622 11 22 33',
+  email: 'info@rbinteriores.com',
+  address: 'Avenida Madariaga 12, Bilbao 48014',
+  services: [
+    'Reformas de interiores',
+    'Albañilería',
+    'Fontanería',
+    'Electricidad',
+    'Pintura',
+    'Reformas de baños',
+    'Reformas de cocinas',
+    'PladUR',
+    'Suelos',
+    'Puertas y carpintería',
+  ],
+  description: 'Reformas de interiores en Bilbao. Especialistas en reformas parciales y completas de viviendas. Presupuesto gratuito y visita sin compromiso.',
+  history: 'RB Interiores lleva más de 12 años centrada exclusivamente en la reforma de interiores de viviendas en Bilbao. Esta especialización les ha permitido acumular un conocimiento profundo de las particularidades de los pisos bilbaínos: los edificios de estructura de hormigón de los años 60 y 70, los pisos de calle con fachadas de piedra, los áticos con limitaciones de carga estructural. Cada tipo de vivienda presenta sus propios desafíos a la hora de redistribuir espacios, cambiar tuberías o cambiar acabados, y el equipo de RB Interiores conoce bien cómo abordarlos. La empresa se distingue por su política de transparencia en los presupuestos: cada partida está detallada, sin costes ocultos ni sorpresas desagradables una vez iniciada la obra. RB Interiores también ofrece un servicio de gestión de residuos y limpieza diaria de obra, una atención al cliente que muchos clientes valoran especialmente.',
+  location: 'Bilbao',
+  ratingValue: '4.4',
+  reviewCount: '22',
+  areas: ['Bilbao', 'San Ignacio', 'La Peña', 'Otxarkoaga', 'Txurdinaga', 'Bizkaia'],
+  coordinates: { lat: 43.2590, lng: -2.9440 }
+};
 ---
 <EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

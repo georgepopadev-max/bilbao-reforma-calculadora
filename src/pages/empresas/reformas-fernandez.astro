@@ -1,5 +1,30 @@
 ---
 import EmpresaLayout from '../../layouts/EmpresaLayout.astro';
-const empresa = { name: 'Reformas Fernández', slug: 'reformas-fernandez', phone: '+34 633 44 55 66', email: 'fernandezreformas@email.com', address: 'Calle Rodriguez de San Pedro 2, Bilbao 48013', services: ['Reformas generales', 'Albañilería', 'Reformas de baños', 'Reformas de cocinas', 'Pintura'], description: 'Empresa de reformas en Bilbao. Más de 15 años de experiencia en albañilería y pintura.', location: 'Bilbao', ratingValue: '4.7', reviewCount: '41', coordinates: { lat: 43.2640, lng: -2.9380 } };
+const empresa = {
+  name: 'Reformas Fernández',
+  slug: 'reformas-fernandez',
+  phone: '+34 633 44 55 66',
+  email: 'fernandezreformas@email.com',
+  address: 'Calle Rodríguez de San Pedro 2, Bilbao 48013',
+  services: [
+    'Reformas generales',
+    'Albañilería',
+    'Reformas de baños',
+    'Reformas de cocinas',
+    'Pintura interior y exterior',
+    'Instalación de plaster',
+    'Reformas parciales',
+    'Reforma de viviendas',
+    'Trabajos de electricidad básica',
+    'Fontanería básica',
+  ],
+  description: 'Empresa de reformas en Bilbao con más de 15 años de experiencia en albañilería, pintura y reformas de baños y cocinas. Trabajo de calidad con presupuestos sin compromiso.',
+  history: 'Reformas Fernández es una empresa familiar fundada en Bilbao hace más de 15 años. Nacida de la tradición artesana del sector de la construcción en el País Vasco, la empresa ha crecido de forma sostenida gracias a la recomendación de sus clientes y a la calidad de sus acabados. Su fundador, con más de 25 años de experiencia en el sector, apostó desde el inicio por la formación continua y el uso de materiales de primera calidad. Hoy, el equipo de Reformas Fernández está compuesto por profesionales especializados en cada área de la reforma — albañilería, pintura, fontanería y electricidad — lo que permite ofrecer un servicio integral sin necesidad de subcontractar terceros. La empresa trabaja principalmente en viviendas de Bilbao y los municipios cercanos de Bizkaia, con especial experiencia en reformas de baños y cocinas, donde la atención al detalle y la gestión del espacio son fundamentales.',
+  location: 'Bilbao',
+  ratingValue: '4.7',
+  reviewCount: '41',
+  areas: ['Bizkaia', 'Santutxu', 'Deusto', 'Begoña', 'Txurdinaga'],
+  coordinates: { lat: 43.2640, lng: -2.9380 }
+};
 ---
 <EmpresaLayout empresa={empresa} ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg" ogImageAlt={empresa.name} />

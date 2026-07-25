@@ -1,66 +1,194 @@
 ---
 /**
- * subvencion-fachadas-bilbao — static Astro page migrated from legacy HTML
+ * subvention-fachadas-bilbao — static Astro page migrated from legacy HTML
  * A2 Zone
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
 
-const title = 'Subvención Fachadas Bilbao 2026';
-const description = 'Ayudas rehabilitación fachadas Bilbao 2026: Plan Rehabilita, ITE y Next Generation. Cuantías orientativas, plazos y requisitos actualizados.';
-const canonical = 'https://www.bilbaoreforma.es/blog/subvencion-fachadas-bilbao/';
-const date = 'Actualizado: 28 de junio de 2026 · 8 min de lectura';
+const faqs = [
+  { q: '¿Qué ayudas existen para rehabilitar fachadas en Bilbao?', a: 'Las principales ayudas son el Plan Rehabilita de Gobierno Vasco, las ayudas Next Generation para rehabilitación energética de edificios, y las bonificaciones del IBI del Ayuntamiento de Bilbao para edificios que cumplan criterios de eficiencia.' },
+  { q: '¿Es obligatoria la ITE (Inspección Técnica de Edificios) en Bilbao?', a: 'Sí, la Inspección Técnica de Edificios (ITE) es obligatoria en Bizkaia para edificios residenciales con más de 50 años de antigüedad. Debe realizarse cada 10 años. El incumplimiento puede supone multas de hasta 10.000€.' },
+  { q: '¿Cuánto dinero puedo recibir para rehabilitar la fachada?', a: 'Las ayudas cubren un porcentaje de la inversión elegible, con topes que varían según la convocatoria. Una rehabilitación integral de fachada puede optar a cuantías de entre 3.000€ y 12.000€ por vivienda.' },
+  { q: '¿Cuál es la diferencia entre rehabilitación estética y eficiencia de una fachada?', a: 'Una rehabilitación de fachada estética se centra en reparar grietas y humedades. Una rehabilitación de fachada eficiente incluye además el aislamiento térmico (SATE), lo que la hace elegible para las ayudas de eficiencia energética.' },
+  { q: '¿Pueden los propietarios individuales solicitar estas ayudas o solo las comunidades?', a: 'Algunas líneas de ayuda están dirigidas a comunidades de propietarios. Otras permiten a propietarios individuales solicitar ayudas. Consulta el programa concreto para saber qué requisitos aplican.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.bilbaoreforma.es/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.bilbaoreforma.es/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'Subvenciones', item: 'https://www.bilbaoreforma.es/blog/subvenciones-reformas/' },
+    { '@type': 'ListItem', position: 4, name: 'Bilbao', item: 'https://www.bilbaoreforma.es/blog/subvencion-fachadas-bilbao/' },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Subvención Fachadas Bilbao 2026: Ayudas, ITE y Eficiencia',
+  description: 'Ayudas rehabilitación fachadas Bilbao 2026: Plan Rehabilita, ITE y Next Generation. Cuantías orientativas, plazos y requisitos actualizados.',
+  datePublished: '2026-06-28',
+  dateModified: '2026-06-28',
+  inLanguage: 'es-ES',
+  author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
+  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
+};
+
+const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical}
+<BaseLayout
+  title="Subvención Fachadas Bilbao 2026"
+  description="Ayudas rehabilitación fachadas Bilbao 2026: Plan Rehabilita, ITE y Next Generation. Cuantías orientativas, plazos y requisitos actualizados."
+  canonical="https://www.bilbaoreforma.es/blog/subvencion-fachadas-bilbao/"
+  ogType="article"
   ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg"
-  ogImageAlt={title}>
-  <main style="max-width:860px;margin:0 auto;padding:2rem 1rem">
-    <nav style="display:flex;gap:.5rem;font-size:.8125rem;color:#6B6B6B;margin-bottom:1.5rem;flex-wrap:wrap">
-      <a href="/index.html" style="color:#C45C3E;text-decoration:none">Inicio</a>
+  ogImageAlt="Subvención Fachadas Bilbao 2026"
+  jsonSchemas={jsonSchemas}
+>
+  <Header city="bilbao" />
+
+  <main style="max-width: 860px; margin: 0 auto; padding: 2rem 1rem;">
+
+    <nav style="display: flex; gap: 0.5rem; font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; flex-wrap: wrap;">
+      <a href="/index.html" style="color: var(--color-terracota); text-decoration: none;">Inicio</a>
       <span>›</span>
-      <a href="/blog/index.html" style="color:#C45C3E;text-decoration:none">Blog</a>
+      <a href="/blog/index.html" style="color: var(--color-terracota); text-decoration: none;">Blog</a>
       <span>›</span>
-      <a href="/blog/subvenciones-reformas/" style="color:#C45C3E;text-decoration:none">Subvenciones</a>
+      <a href="/blog/subvenciones-reformas/" style="color: var(--color-terracota); text-decoration: none;">Subvenciones</a>
       <span>›</span>
       <span>Bilbao</span>
     </nav>
 
-    <header style="margin-bottom:2rem">
-      <p style="font-size:.8125rem;color:#6B6B6B;margin-bottom:1rem;font-family:'DM Mono',monospace">{date}</p>
-      <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:700;color:#2D2D2D;line-height:1.25;margin-bottom:1rem">
+    <header style="margin-bottom: 2rem;">
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 28 de junio de 2026 · 8 min de lectura</p>
+      <h1 style="font-family: var(--font-playfair); font-size: 2rem; font-weight: 700; color: var(--color-grafito); line-height: 1.25; margin-bottom: 1rem;">
         Subvención Fachadas Bilbao 2026: Ayudas, ITE y Eficiencia
       </h1>
-
+      <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.65;">
+        La fachada de tu edificio en Bilbao puede ser la clave para acceder a cuantiosas ayudas públicas. La Inspección Técnica de Edificios (ITE) es obligatoria en Bizkaia para edificios de más de 50 años, y su incumplimiento puede derivar en multas de hasta 10.000€. Pero también es una oportunidad: rehabilitar la fachada con ayudas públicas puede costar mucho menos de lo que imaginas.
+      </p>
     </header>
 
-    <article style="background:#FFFFFF;border-radius:12px;padding:2rem;box-shadow:0 2px 8px rgba(45,30,15,.08)">
-      <p>La fachada de tu edificio en Bilbao puede ser la clave para acceder a cuantiosas ayudas públicas. La Inspección Técnica de Edificios (ITE) es obligatoria en Bizkaia para edificios de más de 50 años, y su incumplimiento puede derivar en multas de hasta 10.000€. Pero también es una oportunidad: rehabilitar la fachada con ayudas públicas puede costar mucho menos de lo que imaginas.</p>
-<div class="warn"><h3>Datos orientativos</h3><p>Las cuantías y requisitos que detallamos se basan en información pública de 2024-2025. Las convocatorias de 2026 pueden variar. Consulta siempre las bases oficiales en Viviendazz (Gobierno Vasco) y en la web de la Diputación Foral de Bizkaia antes de iniciar cualquier trámite.</p></div>
-<h2>Cuantía de la ayuda para fachadas en Bilbao</h2>
-<p>Las ayudas para rehabilitación de fachadas se enmarcan generalmente en programas de rehabilitación energética o de mantenimiento urbano. Estas son las cuantías orientativas:</p>
-<div style="overflow-x:auto"><table class="t"><caption>Cuantías orientativas para ayudas de fachadas en Bilbao (datos 2024-2025)</caption><thead><tr><th>Tipo de ayuda</th><th>Ámbito</th><th>Ayuda orientativa</th></tr></thead><tbody><tr><td>Rehabilitación integral fachada (Plan Rehabilita)</td><td>Por vivienda</td><td class="n">3.000 - 12.000 €</td></tr><tr><td>Aislamiento térmico fachada (SATE)</td><td>Por vivienda</td><td class="n">2.000 - 5.000 €</td></tr><tr><td>Bonificación IBI rehabilitación</td><td>Por vivienda (4 años)</td><td class="n">50-90% reducción IBI</td></tr><tr><td>Next Generation fachada</td><td>Por vivienda</td><td class="n">Hasta 11.800 €</td></tr><tr><td>Programa municipal Bilbao</td><td>Por edificio</td><td class="n">Hasta 15.000 €</td></tr></tbody></table></div>
-<h2>Requisitos para solicitar la ayuda</h2>
-<ul><li>Edificio situated en Bilbao con más de 10 años de antigüedad (salvo excepciones).</li><li>Comunidad de propietarios o propietario individual según la línea de ayuda.</li><li>ITE favorable o en proceso de subsanación de deficiencias detectadas.</li><li>Presupuesto de obras superior al mínimo establecido por la convocatoria.</li><li>Empresa ejecutora con alta fiscal y, en algunos casos, inscrita en el Registro de Empresas de Rehabilitación.</li><li>Proyecto técnico redactado por arquitecto o arquitecto técnico en caso de obras que lo requieran.</li><li>No tener deudas pendientes con la Administración Pública.</li></ul>
-<h2>Documentación necesaria</h2>
-<ul><li>DNI o NIE del solicitante (presidente de la comunidad o propietario).</li><li>Escritura de constitución de la comunidad y acuerdo de la junta de propietarios.</li><li>Certificado de la ITE (Inspección Técnica de Edificios) vigente o informe de inspección.</li><li>Presupuesto detallado de la empresa de reformas que ejecutará las obras.</li><li>Proyecto técnico (si la obra lo requiere por su envergadura).</li><li>Fotografías del estado actual de la fachada.</li><li>Certificado de eficiencia energética del edificio antes de la obra (en caso de ayudas de eficiencia).</li></ul>
-<h2>Plazos y convocatoria 2026</h2>
-<ul><li><strong>Plan Rehabilita Bizkaia:</strong> Convocatorias previstas para marzo-abril y junio de 2026.</li><li><strong>Next Generation:</strong> Resoluciones periódicas a lo largo de 2026.</li><li><strong>Bonificación IBI Bilbao:</strong> Solicitud anual en septiembre.</li><li><strong>Plazo de ejecución:</strong> Habitualmente 12-18 meses desde la resolución.</li></ul>
-<h2>Cómo solicitarla paso a paso</h2>
-<ol class="steps"><li><strong>Revisa la ITE:</strong> Si tu edificio tiene más de 50 años, solicita la Inspección Técnica de Edificios si no la tienes actualizada. La ITE es requisito previo en la mayoría de las convocatorias.</li><li><strong>Consulta las convocatorias:</strong> Accede a Viviendazz y a la web del Ayuntamiento de Bilbao para conocer las líneas abiertas.</li><li><strong>Acuerdo de comunidad:</strong> Si eres comunidad de propietarios, celebra junta y refleja el acuerdo de rehabilitación en acta.</li><li><strong>Recibe presupuestos:</strong> Pide al menos 2-3 presupuestos a empresas de rehabilitación de fachadas.</li><li><strong>Presenta la solicitud:</strong> Rellena el formulario en la sede electrónica del organismo convocante.</li><li><strong>Ejecuta las obras:</strong> Una vez concedida la ayuda (nunca antes de solicitarla), inicia los trabajos.</li><li><strong>Justifica y cobra:</strong> Presenta facturas, fotografías y certificados finales para recibir el pago.</li></ol>
-<div class="hi"><h3>Compatibilidad con otras ayudas</h3><p>Las ayudas para fachadas son <strong>compatibles</strong> con la deducción del IRPF por obras de mejora de eficiencia energética. Las ayudas del Plan Rehabilita y Next Generation no son acumulables entre sí para la misma actuación.</p></div>
-<h2>Preguntas frecuentes</h2>
-<div class="faq-a">Las principales ayudas son el Plan Rehabilita de Gobierno Vasco, las ayudas Next Generation para rehabilitación energética de edificios, y las bonificaciones del IBI del Ayuntamiento de Bilbao para edificios que cumplan criterios de eficiencia.</div></div>
-<div class="faq-a">Sí, la Inspección Técnica de Edificios (ITE) es obligatoria en Bizkaia para edificios residenciales con más de 50 años de antigüedad. Debe realizarse cada 10 años. El incumplimiento puede suponer multas de hasta 10.000€.</div></div>
-<div class="faq-a">Las ayudas cubren un porcentaje de la inversión elegible, con topes que varían según la convocatoria. Una rehabilitación integral de fachada puede optar a cuantías de entre 3.000€ y 12.000€ por vivienda.</div></div>
-<div class="faq-a">Una rehabilitación de fachada estética se centra en reparar grietas y humedades. Una rehabilitación de fachada eficiente incluye además el aislamiento térmico (SATE), lo que la hace elegible para las ayudas de eficiencia energética.</div></div>
-<div class="faq-a">Algunas líneas de ayuda están dirigidas a comunidades de propietarios. Otras permiten a propietarios individuales solicitar ayudas. Consulta el programa concreto para saber qué requisitos aplican.</div></div>
-    
-        <h2>Artículos relacionados</h2>
-          <div class="rel-card"><a href="/blog/subvencion-cambio-ventanas-bilbao/">Subvención cambio de ventanas Bilbao</a></div>
-      <div class="rel-card"><a href="/blog/subvenciones-reformas-bilbao-2026/">Todas las ayudas Bilbao 2026</a></div>
-    </div>
-    
-      <div style="overflow-x:auto"><table class="t"><caption>Cuantías orientativas para ayudas de fachadas en Bilbao (datos 2024-2025)</caption><thead><tr><th>Tipo de ayuda</th><th>Ámbito</th><th>Ayuda orientativa</th></tr></thead><tbody><tr><td>Rehabilitación integral fachada (Plan Rehabilita)</td><td>Por vivienda</td><td class="n">3.000 - 12.000 €</td></tr><tr><td>Aislamiento térmico fachada (SATE)</td><td>Por vivienda</td><td class="n">2.000 - 5.000 €</td></tr><tr><td>Bonificación IBI rehabilitación</td><td>Por vivienda (4 años)</td><td class="n">50-90% reducción IBI</td></tr><tr><td>Next Generation fachada</td><td>Por vivienda</td><td class="n">Hasta 11.800 €</td></tr><tr><td>Programa municipal Bilbao</td><td>Por edificio</td><td class="n">Hasta 15.000 €</td></tr></tbody></table></div>
+    <article style="background: var(--color-blanco); border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(45,30,15,.08);">
+
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">La fachada es la carta de presentación de cualquier edificio y, en Bilbao, muchos inmuebles necesitan atención urgente. Las fachadas de los edificios de los años 60, 70 y 80 sufren de humedades, grietas, deterioro del revestimiento y pésimo aislamiento térmico. Pero la buena noticia es que existen programas de ayuda专门para este tipo de intervenciones.</p>
+
+      <div style="background: #FFF9E6; border: 1px solid #F0E6C8; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
+        <h3 style="color: #8A7340; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem;">Datos orientativos</h3>
+        <p style="margin-bottom: 0; font-size: 0.9375rem;">Las cuantías y requisitos que detallamos se basan en información pública de 2024-2025. Las convocatorias de 2026 pueden variar. Consulta siempre las bases oficiales en Viviendazz (Gobierno Vasco) y en la web de la Diputación Foral de Bizkaia antes de iniciar cualquier trámite.</p>
+      </div>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cuantía de la ayuda para fachadas en Bilbao</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Las ayudas para rehabilitación de fachadas se enmarcan generalmente en programas de rehabilitación energética o de mantenimiento urbano. Estas son las cuantías orientativas:</p>
+
+      <div style="overflow-x: auto; margin: 1.5rem 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9375rem;">
+          <caption style="font-size: 0.8125rem; color: var(--color-gris); text-align: left; margin-bottom: 0.5rem; font-style: italic;">Cuantías orientativas para ayudas de fachadas en Bilbao (datos 2024-2025)</caption>
+          <thead>
+            <tr>
+              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Tipo de ayuda</th>
+              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ámbito</th>
+              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ayuda orientativa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Rehabilitación integral fachada (Plan Rehabilita)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Por vivienda</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">3.000 - 12.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Aislamiento térmico fachada (SATE)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Por vivienda</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">2.000 - 5.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Bonificación IBI rehabilitación</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Por vivienda (4 años)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">50-90% reducción IBI</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Next Generation fachada</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Por vivienda</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 11.800 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem;">Programa municipal Bilbao</td><td style="padding: 0.75rem 1rem;">Por edificio</td><td style="padding: 0.75rem 1rem; font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 15.000 €</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Requisitos para solicitar la ayuda</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
+        <li style="margin-bottom: 0.5rem;">Edificio situado en Bilbao con más de 10 años de antigüedad (salvo excepciones).</li>
+        <li style="margin-bottom: 0.5rem;">Comunidad de propietarios o propietario individual según la línea de ayuda.</li>
+        <li style="margin-bottom: 0.5rem;">ITE favorable o en proceso de subsanación de deficiencias detectadas.</li>
+        <li style="margin-bottom: 0.5rem;">Presupuesto de obras superior al mínimo establecido por la convocatoria.</li>
+        <li style="margin-bottom: 0.5rem;">Empresa ejecutora con alta fiscal y, en algunos casos, inscrita en el Registro de Empresas de Rehabilitación.</li>
+        <li style="margin-bottom: 0.5rem;">Proyecto técnico redactado por arquitecto o arquitecto técnico en caso de obras que lo requieran.</li>
+        <li style="margin-bottom: 0;">No tener deudas pendientes con la Administración Pública.</li>
+      </ul>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Documentación necesaria</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
+        <li style="margin-bottom: 0.5rem;">DNI o NIE del solicitante (presidente de la comunidad o propietario).</li>
+        <li style="margin-bottom: 0.5rem;">Escritura de constitución de la comunidad y acuerdo de la junta de propietarios.</li>
+        <li style="margin-bottom: 0.5rem;">Certificado de la ITE (Inspección Técnica de Edificios) vigente o informe de inspección.</li>
+        <li style="margin-bottom: 0.5rem;">Presupuesto detallado de la empresa de reformas que ejecutará las obras.</li>
+        <li style="margin-bottom: 0.5rem;">Proyecto técnico (si la obra lo requiere por su envergadura).</li>
+        <li style="margin-bottom: 0.5rem;">Fotografías del estado actual de la fachada.</li>
+        <li style="margin-bottom: 0;">Certificado de eficiencia energética del edificio antes de la obra (en caso de ayudas de eficiencia).</li>
+      </ul>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Plazos y convocatoria 2026</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
+        <li style="margin-bottom: 0.5rem;"><strong>Plan Rehabilita Bizkaia:</strong> Convocatorias previstas para marzo-abril y junio de 2026.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Next Generation:</strong> Resoluciones periódicas a lo largo de 2026.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Bonificación IBI Bilbao:</strong> Solicitud anual en septiembre.</li>
+        <li style="margin-bottom: 0;"><strong>Plazo de ejecución:</strong> Habitualmente 12-18 meses desde la resolución.</li>
+      </ul>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cómo solicitarla paso a paso</h2>
+      <ol style="margin: 1.5rem 0; padding-left: 1.5rem; color: var(--color-grafito); list-style: none; counter-reset: step;">
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem; counter-increment: step;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">1</span><strong>Revisa la ITE:</strong> Si tu edificio tiene más de 50 años, solicita la Inspección Técnica de Edificios si no la tienes actualizada. La ITE es requisito previo en la mayoría de las convocatorias.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">2</span><strong>Consulta las convocatorias:</strong> Accede a Viviendazz y a la web del Ayuntamiento de Bilbao para conocer las líneas abiertas.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">3</span><strong>Acuerdo de comunidad:</strong> Si eres comunidad de propietarios, celebra junta y refleja el acuerdo de rehabilitación en acta.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">4</span><strong>Recibe presupuestos:</strong> Pide al menos 2-3 presupuestos a empresas de rehabilitación de fachadas.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">5</span><strong>Presenta la solicitud:</strong> Rellena el formulario en la sede electrónica del organismo convocante.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">6</span><strong>Ejecuta las obras:</strong> Una vez concedida la ayuda (nunca antes de solicitarla), inicia los trabajos.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 0;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">7</span><strong>Justifica y cobra:</strong> Presenta facturas, fotografías y certificados finales para recibir el pago.</li>
+      </ol>
+
+      <div style="background: linear-gradient(135deg, #F6FBF0 0%, #E8F0E4 100%); border: 1px solid #C4D8B0; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
+        <h3 style="color: var(--color-verde-montana); margin-top: 0; font-size: 1rem; font-family: var(--font-playfair); margin-bottom: 0.5rem;">Compatibilidad con otras ayudas</h3>
+        <p style="margin-bottom: 0; font-size: 0.9375rem;">Las ayudas para fachadas son <strong>compatibles</strong> con la deducción del IRPF por obras de mejora de eficiencia energética. Las ayudas del Plan Rehabilita y Next Generation no son acumulables entre sí para la misma actuación.</p>
+      </div>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Preguntas frecuentes</h2>
+
+      {faqs.map(faq => (
+        <div style="border-bottom: 1px solid var(--color-beige); padding: 1.25rem 0;">
+          <div style="font-weight: 600; font-size: 1rem; color: var(--color-grafito); margin-bottom: 0.625rem;">{faq.q}</div>
+          <div style="font-size: 0.9375rem; color: var(--color-gris); line-height: 1.6;">{faq.a}</div>
+        </div>
+      ))}
+
+      <div style="background: var(--color-terracota); border-radius: 12px; padding: 2rem; text-align: center; margin: 2rem 0; color: var(--color-blanco);">
+        <h3 style="font-family: var(--font-playfair); font-size: 1.375rem; margin-bottom: 0.5rem; color: var(--color-blanco);">¿Sabes cuánto cuesta tu reforma?</h3>
+        <p style="opacity: 0.9; margin-bottom: 1.25rem;">Calcula el presupuesto orientativo de tu reforma y averigua qué ayudas podrían corresponderte.</p>
+        <a href="/calculadora/index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: var(--color-blanco); color: var(--color-terracota); border-radius: 8px; font-weight: 600; font-size: 0.9375rem; text-decoration: none; transition: all 0.2s;">Calcular presupuesto de mi reforma</a>
+      </div>
+
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Artículos relacionados</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+        <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem; transition: all 0.2s;">
+          <a href="/blog/subvencion-cambio-ventanas-bilbao/" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Subvención cambio de ventanas Bilbao</a>
+        </div>
+        <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem;">
+          <a href="/blog/subvenciones-reformas-bilbao-2026/" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Todas las ayudas Bilbao 2026</a>
+        </div>
+      </div>
+
     </article>
   </main>
+
+  <Footer city="bilbao" />
 </BaseLayout>
