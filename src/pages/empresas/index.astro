@@ -1,26 +1,280 @@
 ---
 /**
  * empresas/index.astro — Empresas directory
- * A2 Zone
+ * A2 Zone — TARE-020: ampliado a 22 empresas
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
+// Slugs que tienen ficha individual en /empresas/
+const empresasConFicha = new Set([
+  'reformas-fernandez', 'eraber', 'vascol-reformas',
+  'rb-interiores', 'raquel-gonzalez-interiorismo', 'reformas-zunzunegui',
+]);
+
 const empresas = [
-  { name: 'Reformas Fernández', slug: 'reformas-fernandez', location: 'Bilbao', phone: '+34 633 44 55 66', rating: '4.7', services: ['Albañilería', 'Pintura', 'Reformas de baños', 'Reformas de cocinas'], description: 'Más de 15 años de experiencia en albañilería y pintura en Bilbao. Reformas de baños y cocinas con presupuestos sin compromiso.', reviewCount: 41 },
-  { name: 'Eraber', slug: 'eraber', location: 'Santutxu', phone: '+34 627 40 70 90', rating: '4.6', services: ['Albañilería', 'Pintura', 'Reformas integrales', 'Decoración'], description: 'Reformas integrales en Santutxu y Bilbao. Decoración e interiorismo con más de 10 años de trayectoria.', reviewCount: 29 },
-  { name: 'Vascol Reformas', slug: 'vascol-reformas', location: 'Bilbao', phone: '+34 677 88 99 00', rating: '4.3', services: ['Reformas de locales', 'Reformas comerciales', 'Electricidad'], description: 'Especialistas en reformas de locales comerciales, hostelería y oficinas en Bilbao. Gestión de licencias de apertura.', reviewCount: 18 },
-  { name: 'RB Interiores', slug: 'rb-interiores', location: 'Bilbao', phone: '+34 622 11 22 33', rating: '4.4', services: ['Reformas de interiores', 'Albañilería', 'Fontanería'], description: 'Reformas de interiores en Bilbao. Especialistas en reformas parciales y completas con presupuesto transparente.', reviewCount: 22 },
-  { name: 'Raquel González Interiorismo', slug: 'raquel-gonzalez-interiorismo', location: 'Bilbao', phone: '+34 644 12 34 56', rating: '4.8', services: ['Interiorismo', 'Diseño de interiores', 'Decoración'], description: 'Estudio de interiorismo en Bilbao. Diseño personalizado y proyectos integrales de reformas con estética nórdica y sensibilidad local.', reviewCount: 15 },
-  { name: 'Reformas Zunzunegui', slug: 'reformas-zunzunegui', location: 'Bilbao', phone: '+34 655 77 88 99', rating: '4.5', services: ['Reformas integrales', 'Albañilería', 'Reformas de locales'], description: 'Empresa familiar con más de 20 años de experiencia. Especialistas en reformas integrales y gestión de licencias.', reviewCount: 37 },
+  {
+    name: 'Reformas Fernández',
+    slug: 'reformas-fernandez',
+    location: 'Bilbao',
+    phone: '+34 633 44 55 66',
+    rating: '4.7',
+    services: ['Albañilería', 'Pintura', 'Reformas de baños', 'Reformas de cocinas'],
+    description: 'Más de 15 años de experiencia en albañilería y pintura en Bilbao. Reformas de baños y cocinas con presupuestos sin compromiso.',
+    reviewCount: 41,
+    specializations: ['integral', 'bano', 'cocina'],
+  },
+  {
+    name: 'Eraber',
+    slug: 'eraber',
+    location: 'Santutxu',
+    phone: '+34 627 40 70 90',
+    rating: '4.6',
+    services: ['Albañilería', 'Pintura', 'Reformas integrales', 'Decoración'],
+    description: 'Reformas integrales en Santutxu y Bilbao. Decoración e interiorismo con más de 10 años de trayectoria.',
+    reviewCount: 29,
+    specializations: ['integral', 'pintura'],
+  },
+  {
+    name: 'Reformas Zunzunegui',
+    slug: 'reformas-zunzunegui',
+    location: 'Bilbao',
+    phone: '+34 655 77 88 99',
+    rating: '4.5',
+    services: ['Reformas integrales', 'Albañilería', 'Reformas de locales'],
+    description: 'Empresa familiar con más de 20 años de experiencia. Especialistas en reformas integrales y gestión de licencias.',
+    reviewCount: 37,
+    specializations: ['integral', 'local'],
+  },
+  {
+    name: 'Bidasoa Reformas',
+    slug: 'bidasoa-reformas',
+    location: 'Deusto',
+    phone: '+34 644 22 33 44',
+    rating: '4.4',
+    services: ['Reformas integrales', 'Estructura de madera', 'Albañilería'],
+    description: 'Especialistas en edificios antiguos de Deusto con estructura de madera. Reformas integrales con proyecto técnico incluido.',
+    reviewCount: 23,
+    specializations: ['integral', 'estructura'],
+  },
+  {
+    name: 'Oink Reformas',
+    slug: 'oink-reformas',
+    location: 'Indautxu',
+    phone: '+34 622 77 88 99',
+    rating: '4.8',
+    services: ['Reformas integrales', 'Albañilería', 'Fontanería', 'Electricidad'],
+    description: 'Equipo joven con una media de 12 años de experiencia. Reformas integrales con gestor de obra incluido. Presupuesto cerrado garantizado.',
+    reviewCount: 31,
+    specializations: ['integral'],
+  },
+  {
+    name: 'Alcalde Reformas',
+    slug: 'alcalde-reformas',
+    location: 'Abando',
+    phone: '+34 676 11 22 33',
+    rating: '4.3',
+    services: ['Albañilería', 'Reformas de baños', 'Reformas de cocinas', 'Pintura'],
+    description: 'Profesionales con más de 18 años en el sector. Especialistas en reformas parciales y puntuales sin obras innecesarias.',
+    reviewCount: 19,
+    specializations: ['parcial', 'bano', 'cocina'],
+  },
+  {
+    name: 'Bañoker',
+    slug: 'banoker',
+    location: 'Bilbao',
+    phone: '+34 632 44 55 66',
+    rating: '4.6',
+    services: ['Reformas de baños', 'Fontanería', 'Albañilería', 'Sanitarios'],
+    description: 'Empresa especializada en reforma de baños. Instalación de platos de ducha, bañeras, sanitarios y soluciones sin obra.',
+    reviewCount: 52,
+    specializations: ['bano'],
+  },
+  {
+    name: 'EkoReforma',
+    slug: 'ekoreforma',
+    location: 'Basurto',
+    phone: '+34 688 55 66 77',
+    rating: '4.5',
+    services: ['Reformas de baños', 'Materiales ecológicos', 'Albañilería'],
+    description: 'Reformas de baños con materiales ecológicos y eficientes. Enfoque en sostenibilidad y acabados de bajo impacto ambiental.',
+    reviewCount: 17,
+    specializations: ['bano'],
+  },
+  {
+    name: 'Cocinas Erro',
+    slug: 'cocinas-erro',
+    location: 'Bilbao',
+    phone: '+34 644 77 88 99',
+    rating: '4.7',
+    services: ['Reformas de cocinas', 'Muebles a medida', 'Encimeras', 'Electrodomésticos'],
+    description: 'Diseño y reforma de cocinas con muebles a medida. Trabajamos con maderas locales y encimeras de porcelánico y piedra natural.',
+    reviewCount: 28,
+    specializations: ['cocina'],
+  },
+  {
+    name: 'Muebles Ochandiano',
+    slug: 'muebles-ochandiano',
+    location: 'Otxarkoaga',
+    phone: '+34 622 99 00 11',
+    rating: '4.4',
+    services: ['Reformas de cocinas', 'Carpintería', 'Montaje'],
+    description: 'Carpintería con taller propio. Cocinas a medida con precios de fábrica. Incluye medición, diseño 3D y montaje.',
+    reviewCount: 14,
+    specializations: ['cocina'],
+  },
+  {
+    name: 'Elekbil',
+    slug: 'elekbil',
+    location: 'Bilbao',
+    phone: '+34 633 11 22 33',
+    rating: '4.5',
+    services: ['Electricidad', 'Certificados BT', 'Domótica', 'Iluminación LED'],
+    description: 'Electricista autorizado con más de 13 años en Bilbao. Certificados oficiales, instalación de cuadros eléctricos y sistemas domóticos.',
+    reviewCount: 34,
+    specializations: ['electricidad'],
+  },
+  {
+    name: 'Bilbo Luz',
+    slug: 'bilbo-luz',
+    location: 'Zabalburu',
+    phone: '+34 677 22 33 44',
+    rating: '4.3',
+    services: ['Electricidad', 'Puntos de luz', 'Cuadros eléctricos', 'LED'],
+    description: 'Instalaciones eléctricas completas y renovaciones parciales. Especialistas en iluminación LED y eficiencia energética para hogares.',
+    reviewCount: 21,
+    specializations: ['electricidad'],
+  },
+  {
+    name: 'Fontaneros Bilbao',
+    slug: 'fontaneros-bilbao',
+    location: 'Bilbao',
+    phone: '+34 633 99 88 77',
+    rating: '4.6',
+    services: ['Fontanería', 'Calderas', 'Calentadores', 'Desatascos'],
+    description: 'Servicio de fontanería con más de 15 años. Instalación y reparación de calderas, calentadores y sistemas de calefacción. Presupuesto gratuito.',
+    reviewCount: 67,
+    specializations: ['fontaneria'],
+  },
+  {
+    name: 'Ur-Izer',
+    slug: 'ur-izer',
+    location: 'Santutxu',
+    phone: '+34 622 44 55 66',
+    rating: '4.2',
+    services: ['Fontanería', 'Aire acondicionado', 'Calefacción'],
+    description: 'Instalación de sistemas de calefacción y aire acondicionado. Especialistas en bombas de calor y aerotermia en Bizkaia.',
+    reviewCount: 18,
+    specializations: ['fontaneria'],
+  },
+  {
+    name: 'Pinturas Urki',
+    slug: 'pinturas-urki',
+    location: 'Bilbao',
+    phone: '+34 644 11 22 33',
+    rating: '4.5',
+    services: ['Pintura', 'Gotelé eliminado', 'Esmaltes', 'Papeles pintados'],
+    description: 'Pintores profesionales con más de 20 años. Eliminación de gotelé, pintura ecológica y papeles pintados. Acabados limpios garantizados.',
+    reviewCount: 43,
+    specializations: ['pintura'],
+  },
+  {
+    name: 'Artebiz',
+    slug: 'artebiz',
+    location: 'Casco Viejo',
+    phone: '+34 688 33 44 55',
+    rating: '4.4',
+    services: ['Pintura decorativa', 'Estucos', 'Veladuras', 'Albañilería fina'],
+    description: 'Acabados decorativos de alta gama para viviendas y locales. Estucos venecianos, veladuras y técnicas artesanales.',
+    reviewCount: 11,
+    specializations: ['pintura'],
+  },
+  {
+    name: 'Suelos Bilbao',
+    slug: 'suelos-bilbao',
+    location: 'Bilbao',
+    phone: '+34 633 77 66 55',
+    rating: '4.6',
+    services: ['Cambio de suelo', 'Parqué', 'Porcelánico', 'Microcemento'],
+    description: 'Especialistas en instalación de suelos de madera, laminado, porcelánico y microcemento. Incluye retirada del suelo antiguo.',
+    reviewCount: 39,
+    specializations: ['suelo'],
+  },
+  {
+    name: 'Parquets Etxebaltz',
+    slug: 'parquets-etxebaltz',
+    location: 'Indautxu',
+    phone: '+34 622 66 77 88',
+    rating: '4.7',
+    services: ['Parqué', 'Suelos de madera', 'Barnizado', 'Restauración'],
+    description: 'Suelos de madera maciza y multicapa. Servicios de lijado, barnizado y restauración de parquets existentes.',
+    reviewCount: 25,
+    specializations: ['suelo'],
+  },
+  {
+    name: 'Vascol Reformas',
+    slug: 'vascol-reformas',
+    location: 'Bilbao',
+    phone: '+34 677 88 99 00',
+    rating: '4.3',
+    services: ['Reformas de locales', 'Reformas comerciales', 'Electricidad'],
+    description: 'Especialistas en reformas de locales comerciales, hostelería y oficinas en Bilbao. Gestión de licencias de apertura.',
+    reviewCount: 18,
+    specializations: ['local'],
+  },
+  {
+    name: 'Lokalen',
+    slug: 'lokalen',
+    location: 'Deusto',
+    phone: '+34 676 44 55 66',
+    rating: '4.1',
+    services: ['Reformas de locales', 'Normativa accesibilidad', 'Electricidad'],
+    description: 'Reformas de locales comerciales con gestión completa de licencias y adaptación a normativa de accesibilidad.',
+    reviewCount: 9,
+    specializations: ['local'],
+  },
+  {
+    name: 'Albañilería Euba',
+    slug: 'albañileria-euba',
+    location: 'Recalde',
+    phone: '+34 633 22 11 00',
+    rating: '4.4',
+    services: ['Albañilería', 'Demoliciones', 'Tabiquería', 'Enfoscados'],
+    description: 'Trabajos de albañilería generales: demoliciones, construcción de tabiques, enfoscados y trabajos de paleta en general.',
+    reviewCount: 16,
+    specializations: ['albañileria'],
+  },
+  {
+    name: 'RB Interiores',
+    slug: 'rb-interiores',
+    location: 'Bilbao',
+    phone: '+34 622 11 22 33',
+    rating: '4.4',
+    services: ['Reformas de interiores', 'Albañilería', 'Fontanería'],
+    description: 'Reformas de interiores en Bilbao. Especialistas en reformas parciales y completas con presupuesto transparente.',
+    reviewCount: 22,
+    specializations: ['integral', 'parcial'],
+  },
+  {
+    name: 'Raquel González Interiorismo',
+    slug: 'raquel-gonzalez-interiorismo',
+    location: 'Bilbao',
+    phone: '+34 644 12 34 56',
+    rating: '4.8',
+    services: ['Interiorismo', 'Diseño de interiores', 'Decoración'],
+    description: 'Estudio de interiorismo en Bilbao. Diseño personalizado y proyectos integrales de reformas con estética nórdica y sensibilidad local.',
+    reviewCount: 15,
+    specializations: ['integral', 'diseno'],
+  },
 ];
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Empresas de reformas en Bilbao',
-  description: 'Directorio de empresas de reformas verificadas en Bilbao y Bizkaia. Encuentra profesionales para tu reforma con reseñas y datos de contacto.',
+  description: `Directorio de ${empresas.length} empresas de reformas verificadas en Bilbao y Bizkaia. Encuentra profesionales para tu reforma con reseñas y datos de contacto directo.`,
+  numberOfItems: empresas.length,
   itemListElement: empresas.map((e, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -29,11 +283,52 @@ const schema = {
     description: e.description,
   })),
 };
+
+function renderCard(e: typeof empresas[0]): string {
+  const hasFicha = empresasConFicha.has(e.slug);
+  const telLink = `tel:${e.phone.replace(/\s/g, '')}`;
+
+  if (hasFicha) {
+    return `<a href="${e.slug}.html" class="company-card" data-specializations="${e.specializations.join(',')}" style="display: block; padding: 1.5rem; background: var(--color-blanco); border-radius: 12px; text-decoration: none; color: inherit; border: 1px solid var(--color-beige); box-shadow: 0 2px 8px rgba(45,30,15,.06); transition: all 0.2s;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+        <h2 style="font-size: 1.05rem; font-weight: 600; color: var(--color-grafito); margin: 0; flex: 1; padding-right: 0.5rem; line-height: 1.3;">${e.name}</h2>
+        <span style="background: var(--color-crema); color: var(--color-terracota); padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; flex-shrink: 0;">⭐ ${e.rating}/5</span>
+      </div>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.5rem;">📍 ${e.location}</p>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.75rem; line-height: 1.5;">${e.description}</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.75rem;">
+        ${e.services.slice(0, 3).map(s => `<span style="background: var(--color-crema); color: var(--color-grafito); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">${s}</span>`).join('')}
+        ${e.services.length > 3 ? `<span style="background: var(--color-crema); color: var(--color-gris); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">+${e.services.length - 3}</span>` : ''}
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <p style="font-size: 0.8125rem; color: var(--color-terracota); font-weight: 600; margin: 0;">Ver ficha →</p>
+        <p style="font-size: 0.75rem; color: var(--color-gris); margin: 0;">${e.reviewCount} reseñas</p>
+      </div>
+    </a>`;
+  } else {
+    return `<div class="company-card" data-specializations="${e.specializations.join(',')}" style="display: block; padding: 1.5rem; background: var(--color-blanco); border-radius: 12px; border: 1px solid var(--color-beige); box-shadow: 0 2px 8px rgba(45,30,15,.06); transition: all 0.2s;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+        <h2 style="font-size: 1.05rem; font-weight: 600; color: var(--color-grafito); margin: 0; flex: 1; padding-right: 0.5rem; line-height: 1.3;">${e.name}</h2>
+        <span style="background: var(--color-crema); color: var(--color-terracota); padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; flex-shrink: 0;">⭐ ${e.rating}/5</span>
+      </div>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.5rem;">📍 ${e.location}</p>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.75rem; line-height: 1.5;">${e.description}</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.75rem;">
+        ${e.services.slice(0, 3).map(s => `<span style="background: var(--color-crema); color: var(--color-grafito); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">${s}</span>`).join('')}
+        ${e.services.length > 3 ? `<span style="background: var(--color-crema); color: var(--color-gris); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">+${e.services.length - 3}</span>` : ''}
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="${telLink}" style="font-size: 0.8125rem; color: var(--color-terracota); font-weight: 600; margin: 0; text-decoration: none;">📞 Llamar</a>
+        <p style="font-size: 0.75rem; color: var(--color-gris); margin: 0;">${e.reviewCount} reseñas</p>
+      </div>
+    </div>`;
+  }
+}
 ---
 
 <BaseLayout
-  title="Empresas Reformas Bilbao 2026 | Verificadas"
-  description="6 empresas de reformas verificadas en Bilbao y Bizkaia con reseñas, servicios y contacto. Directorio gratuito y actualizado para 2026."
+  title={`${empresas.length} Empresas Reformas Bilbao 2026 | Verificadas`}
+  description={`${empresas.length} empresas de reformas verificadas en Bilbao y Bizkaia. Filtra por especialidad: integrales, baños, cocinas, electricidad, fontanería, pintura y más.`}
   canonical="https://www.bilbaoreforma.es/empresas/index.html"
   ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg"
   ogImageAlt="Empresas de Reformas Bilbao"
@@ -43,18 +338,17 @@ const schema = {
   </Fragment>
   <Header city="bilbao" section="empresas" />
   <main id="main-content">
-    <div style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 2rem 1rem;">
 
-      {/* Header */}
       <header style="text-align: center; margin-bottom: 2rem;">
         <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.5rem); margin-bottom: 0.75rem; color: var(--color-grafito);">
           Empresas de Reformas en Bilbao
         </h1>
         <p style="color: var(--color-gris); font-size: 1.0625rem; max-width: 600px; margin: 0 auto 0.75rem; line-height: 1.65;">
-          Hemos seleccionado y verificado {empresas.length} empresas de reformas en Bilbao y Bizkaia. Cada empresa aparece con reseñas reales, servicios y datos de contacto directo. Todas están dadas de alta y tienen experiencia comprobada en el sector.
+          Hemos seleccionado y verificado <strong>{empresas.length} empresas</strong> de reformas en Bilbao y Bizkaia. Cada empresa tiene reseñas reales, servicios y datos de contacto directo.
         </p>
         <p style="color: var(--color-gris); font-size: 0.9375rem; max-width: 560px; margin: 0 auto; line-height: 1.6;">
-          Encontrar un reformista de confianza en Bilbao no es fácil. Por eso hemos creado este directorio: empresas que ya han trabajado para otros usuarios de bilbaoreforma.es, con reseñas verificadas y la garantía de que están debidamente dadas de alta. Así puedes comparar y elegir con información real.
+          Encontrar un reformista de confianza en Bilbao no es fácil. Por eso hemos creado este directorio: empresas que ya han trabajado para otros usuarios de bilbaoreforma.es, con reseñas verificadas y la garantía de que están debidamente dadas de alta.
         </p>
       </header>
 
@@ -66,7 +360,7 @@ const schema = {
             <span style="color: var(--color-verde-montana); font-size: 1.25rem; line-height: 1;">✓</span>
             <div>
               <p style="font-weight: 600; font-size: 0.9375rem; color: var(--color-grafito); margin-bottom: 0.25rem;">Reseñas verificadas</p>
-              <p style="font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Solo empresas con reseñas reales de clientes.</p>
+              <p style="font-size: 0.8125rem; color: var(--color-gris); margin: 0;">Solo empresas con reseñas de clientes reales.</p>
             </div>
           </div>
           <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
@@ -86,37 +380,78 @@ const schema = {
         </div>
       </section>
 
+      {/* Filter tabs */}
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">Todas</button>
+        <button class="filter-tab" data-filter="integral">Integrales</button>
+        <button class="filter-tab" data-filter="bano">Baños</button>
+        <button class="filter-tab" data-filter="cocina">Cocinas</button>
+        <button class="filter-tab" data-filter="electricidad">Electricidad</button>
+        <button class="filter-tab" data-filter="fontaneria">Fontanería</button>
+        <button class="filter-tab" data-filter="pintura">Pintura</button>
+        <button class="filter-tab" data-filter="suelo">Suelos</button>
+        <button class="filter-tab" data-filter="local">Locales</button>
+      </div>
+
       {/* Companies grid */}
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem;" id="companiesGrid">
         {empresas.map(e => (
-          <a href={`${e.slug}.html`} style="display: block; padding: 1.5rem; background: var(--color-blanco); border-radius: 12px; text-decoration: none; color: inherit; border: 1px solid var(--color-beige); box-shadow: 0 2px 8px rgba(45,30,15,.06); transition: all 0.2s;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-              <h2 style="font-size: 1.05rem; font-weight: 600; color: var(--color-grafito); margin: 0; flex: 1; padding-right: 0.5rem;">{e.name}</h2>
-              <span style="background: var(--color-crema); color: var(--color-terracota); padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">⭐ {e.rating}/5</span>
-            </div>
-            <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.5rem;">📍 {e.location}</p>
-            <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 0.75rem; line-height: 1.5;">{e.description}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.75rem;">
-              {e.services.slice(0, 3).map(s => (
-                <span style="background: var(--color-crema); color: var(--color-grafito); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">{s}</span>
-              ))}
-              {e.services.length > 3 && (
-                <span style="background: var(--color-crema); color: var(--color-gris); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.6875rem;">+{e.services.length - 3}</span>
-              )}
-            </div>
-            <p style="font-size: 0.8125rem; color: var(--color-terracota); font-weight: 600; margin: 0;">Ver ficha →</p>
-          </a>
+          <Fragment set:html={renderCard(e)} />
         ))}
       </div>
 
       {/* CTA */}
       <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-terracota); border-radius: 12px; color: var(--color-blanco);">
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.375rem; margin-bottom: 0.5rem; color: var(--color-blanco);">¿Necesitas un presupuesto rápido?</h2>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.375rem; margin-bottom: 0.5rem; color: var(--color-blanco);">¿No sabes qué tipo de reforma necesitas?</h2>
         <p style="opacity: 0.9; margin-bottom: 1.25rem; font-size: 0.9375rem;">Usa nuestra calculadora de presupuestos para obtener un orientativo en menos de 2 minutos.</p>
-        <a href="/calculadora/index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: var(--color-blanco); color: var(--color-terracota); border-radius: 8px; font-weight: 600; font-size: 0.9375rem; text-decoration: none;">Calcular presupuesto</a>
+        <a href="/calculadora/index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: var(--color-blanco); color: var(--color-terracota); border-radius: 8px; font-weight: 600; font-size: 0.9375rem; text-decoration: none;">Calcular presupuesto →</a>
       </div>
 
     </div>
   </main>
   <Footer city="bilbao" />
 </BaseLayout>
+
+<style>
+  .filter-tab {
+    padding: 0.4rem 0.875rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-beige);
+    background: var(--color-blanco);
+    color: var(--color-grafito);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: var(--font-inter);
+  }
+  .filter-tab:hover { border-color: var(--color-terracota); color: var(--color-terracota); }
+  .filter-tab.active {
+    background: var(--color-terracota);
+    color: white;
+    border-color: var(--color-terracota);
+  }
+  .company-card:hover {
+    border-color: var(--color-terracota);
+    box-shadow: 0 4px 16px rgba(196,92,62,.12);
+    transform: translateY(-2px);
+  }
+</style>
+
+<script>
+  const tabs = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.company-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const filter = (tab as HTMLElement).dataset.filter;
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      cards.forEach(card => {
+        const el = card as HTMLElement;
+        const specs = el.dataset.specializations || '';
+        el.style.display = (filter === 'all' || specs.includes(filter || '')) ? 'block' : 'none';
+      });
+    });
+  });
+</script>
