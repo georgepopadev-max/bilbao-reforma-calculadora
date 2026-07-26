@@ -1,12 +1,29 @@
 ---
 // TestimonialsCity — user testimonials for Donostia/Vitoria
 interface Props {
-  city: 'donostia' | 'vitoria';
+  city: 'bilbao' | 'donostia' | 'vitoria';
 }
 
 const { city } = Astro.props;
 
 const testimonials = {
+  bilbao: [
+    {
+      quote: "Me dio una cifra muy realista para reformar mi piso en Indautxu. Luego pedí presupuestos a tres empresas y la diferencia fue mínima.",
+      author: "Mikel R.",
+      location: "Indautxu",
+    },
+    {
+      quote: "Para comparar presupuestos de cocina fue genial. Sabía qué precio era razonable antes de firmar con nadie.",
+      author: "Ana L.",
+      location: "Santutxu",
+    },
+    {
+      quote: "La calculadora nos ayudó a planificar la reforma de nuestro apartamento en el Casco Viejo. Los precios de empresas en Bizkaia son muy variados.",
+      author: "Pedro y Maribel",
+      location: "Casco Viejo",
+    },
+  ],
   donostia: [
     {
       quote: "Me dio una cifra muy realista para reformar mi piso en Ondarreta. Luego pedí presupuestos a tres empresas y la diferencia fue mínima.",

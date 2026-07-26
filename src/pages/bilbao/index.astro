@@ -1,0 +1,203 @@
+---
+/**
+ * Bilbao Index — Bilbao Reforma
+ * EPIC-2 TARE-010 — clon de donostia/index.astro para sección Bilbao
+ */
+import CityLayout from '../../layouts/CityLayout.astro';
+import HeroCity from '../../components/home/HeroCity.astro';
+import HowItWorks from '../../components/home/HowItWorks.astro';
+import WhyUs from '../../components/home/WhyUs.astro';
+import TestimonialsCity from '../../components/home/TestimonialsCity.astro';
+import PopularArticles from '../../components/home/PopularArticles.astro';
+import VerifiedCompaniesCity from '../../components/home/VerifiedCompaniesCity.astro';
+import FAQCity from '../../components/home/FAQCity.astro';
+import FinalCTA from '../../components/home/FinalCTA.astro';
+
+// Schemas específicos Bilbao
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://www.bilbaoreforma.es/#business-bilbao',
+  'name': 'Reforma Bilbao',
+  description: 'Calculadora de presupuestos de reformas en Bilbao y Bizkaia. Precios orientativos en menos de 2 minutos.',
+  url: 'https://www.bilbaoreforma.es/bilbao/',
+  logo: 'https://www.bilbaoreforma.es/images/logo.png',
+  image: 'https://www.bilbaoreforma.es/images/og/home-og.jpg',
+  telephone: '+34 642 147 856',
+  priceRange: '€€',
+  address: {
+    '@type': 'PostalAddress',
+    'addressLocality': 'Bilbao',
+    'addressRegion': 'Bizkaia',
+    'addressCountry': 'ES'
+  },
+  areaServed: [
+    { '@type': 'City', 'name': 'Bilbao' },
+    { '@type': 'State', 'name': 'Bizkaia' }
+  ],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'],
+      opens: '09:00',
+      closes: '18:00'
+    }
+  ],
+  sameAs: []
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Reformas integrales y presupuestos online',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.bilbaoreforma.es/#business-bilbao'
+  },
+  areaServed: [
+    { '@type': 'City', 'name': 'Bilbao' },
+    { '@type': 'State', 'name': 'Bizkaia' }
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de reforma',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma integral' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma de baño' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Reforma de cocina' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cambio de suelo' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pintura de piso' } }
+    ]
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto cuesta una reforma integral en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'El precio medio de una reforma integral en Bilbao oscila entre 700€ y 1.400€ por metro cuadrado, dependiendo del nivel de calidad elegido. Para un piso de 80m², el presupuesto orientativo se sitúa entre 56.000€ y 112.000€. Usa nuestra calculadora para obtener un desglose personalizado por partidas.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿La calculadora de presupuestos es gratuita?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, completamente gratuita. La calculadora de reformas de Bilbao Reforma te ofrece un presupuesto orientativo en menos de 2 minutos sin necesidad de registro, teléfono ni email. Es una herramienta informativa para ayudarte a planificar tu reforma en Bilbao o Bizkaia.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Los precios se actualizan con el coste actual en Bilbao?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. Los precios de la calculadora se basan en datos reales de empresas de reformas activas en Bilbao y Bizkaia, no en tablas genéricas de internet. Actualizamos las tarifas regularmente para reflejar el mercado local de 2026.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo contratar directamente a una empresa desde la web?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'La calculadora te da un presupuesto orientativo. Si lo deseas, puedes solicitar presupuestos personalizados a empresas de reformas en Bilbao y Bizkaia a través de nuestro directorio de empresas verificadas.'
+      }
+    }
+  ]
+};
+---
+
+<CityLayout
+  title="Reformas Bilbao 2026 | Presupuesto Gratis"
+  description="Calcula tu reforma en Bilbao y Bizkaia en 2 min, gratis. Compara empresas verificadas de Bizkaia. Precios reales y actualizados."
+  canonical="https://www.bilbaoreforma.es/bilbao/"
+  city="bilbao"
+  ogImage="https://www.bilbaoreforma.es/images/og/home-og.jpg"
+  ogImageAlt="Reformas Bilbao 2026"
+>
+  <!-- JSON-LD Schemas -->
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <HeroCity city="bilbao" />
+
+  <div class="home-content-layout">
+    <div class="home-content">
+      <HowItWorks />
+      <WhyUs city="bilbao" />
+      <TestimonialsCity city="bilbao" />
+    </div>
+    <aside class="home-sidebar">
+      <div class="sidebar-sticky">
+        <PopularArticles city="bilbao" />
+      </div>
+    </aside>
+  </div>
+
+  <VerifiedCompaniesCity city="bilbao" />
+  <FAQCity city="bilbao" />
+
+  <!-- Enlaces internos: Calculadora + Blog Bilbao -->
+  <section style="background:var(--color-crema);padding:2.5rem 0;margin:0">
+    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem">
+      <h2 style="font-family:var(--font-playfair);font-size:1.5rem;font-weight:700;color:var(--color-grafito);text-align:center;margin-bottom:1.5rem">Calcula tu reforma en Bilbao</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
+        <a href="/bilbao/calculadora/integral-bilbao.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+          <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma Integral Bilbao</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 700€/m² →</p>
+        </a>
+        <a href="/bilbao/calculadora/bano-bilbao.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+          <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma de Baño Bilbao</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 2.500 € →</p>
+        </a>
+        <a href="/blog/" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+          <strong style="font-size:0.9375rem;color:var(--color-grafito)">Blog de Reformas Bilbao</strong>
+          <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">Guías y precios 2026 →</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FinalCTA />
+</CityLayout>
+
+<style>
+  .home-content-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    align-items: start;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home-sidebar {
+    min-width: 0;
+  }
+  .sidebar-sticky {
+    position: sticky;
+    top: 6rem;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(45,30,15,0.06);
+  }
+  @media (max-width: 1024px) {
+    .home-content-layout {
+      grid-template-columns: 1fr;
+    }
+    .sidebar-sticky {
+      position: static;
+    }
+  }
+</style>

@@ -1,12 +1,30 @@
 ---
 // FAQCity — Preguntas Frecuentes section for Donostia/Vitoria
 interface Props {
-  city: 'donostia' | 'vitoria';
+  city: 'bilbao' | 'donostia' | 'vitoria';
 }
 
 const { city } = Astro.props;
 
 const faqs = {
+  bilbao: [
+    {
+      q: `¿Cuánto cuesta una reforma integral en Bilbao?`,
+      a: `El precio medio de una reforma integral en Bilbao oscila entre <strong>700€ y 1.400€ por metro cuadrado</strong>, dependiendo del nivel de calidad elegido. Para un piso de 80m², el presupuesto orientativo se sitúa entre 56.000€ y 112.000€. Usa nuestra calculadora para obtener un desglose personalizado por partidas.`,
+    },
+    {
+      q: `¿La calculadora de presupuestos es gratuita?`,
+      a: `Sí, completamente gratuita. La calculadora de reformas de Bilbao Reforma te ofrece un presupuesto orientativo en <strong>menos de 2 minutos</strong> sin necesidad de registro, teléfono ni email. Es una herramienta informativa para ayudarte a planificar tu reforma en Bilbao o Bizkaia.`,
+    },
+    {
+      q: `¿Los precios se actualizan con el coste actual en Bilbao?`,
+      a: `Sí. Los precios de la calculadora se basan en datos reales de empresas de reformas activas en Bilbao y Bizkaia, no en tablas genéricas de internet. Actualizamos las tarifas regularmente para reflejar el mercado local de 2026.`,
+    },
+    {
+      q: `¿Puedo contratar directamente a una empresa desde la web?`,
+      a: `La calculadora te da un presupuesto orientativo. Si lo deseas, puedes solicitar presupuestos personalizados a empresas de reformas en Bilbao y Bizkaia a través de nuestro <a href="/empresas/index.html" style="color: var(--color-terracota);">directorio de empresas verificadas</a>, todas con experiencia local demostrada.`,
+    },
+  ],
   donostia: [
     {
       q: `¿Cuánto cuesta una reforma integral en Donostia?`,
@@ -46,7 +64,7 @@ const faqs = {
 };
 
 const items = faqs[city];
-const cityLabel = city === 'donostia' ? 'Donostia' : 'Vitoria';
+const cityLabel = city === 'bilbao' ? 'Bilbao' : city === 'donostia' ? 'Donostia' : 'Vitoria';
 ---
 
 <section class="home-section" style="padding: 3rem 1.5rem; max-width: 1200px; margin: 0 auto;">

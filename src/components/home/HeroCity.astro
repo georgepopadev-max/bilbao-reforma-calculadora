@@ -1,12 +1,21 @@
 ---
 // HeroCity — Homepage hero for Donostia/Vitoria city pages
 interface Props {
-  city: 'donostia' | 'vitoria';
+  city: 'bilbao' | 'donostia' | 'vitoria';
 }
 
 const { city } = Astro.props;
 
 const cityConfig = {
+  bilbao: {
+    name: 'Bilbao',
+    region: 'Bizkaia',
+    year: '2026',
+    badge: 'Precios actualizados Bilbao 2026',
+    h1: 'Calculadora de Reformas en Bilbao',
+    subtitle: 'Obtén un presupuesto orientativo en menos de 2 minutos, sin registro. Con datos reales de precios de empresas de reformas en Bilbao y Bizkaia.',
+    calculatorUrl: '/bilbao/calculadora/index.html',
+  },
   donostia: {
     name: 'Donostia-San Sebastián',
     region: 'Gipuzkoa',

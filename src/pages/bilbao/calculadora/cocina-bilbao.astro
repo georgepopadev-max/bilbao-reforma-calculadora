@@ -1,0 +1,472 @@
+---
+/**
+ * Calculadora Cocina Bilbao — Specialized kitchen calculator
+ * A3 Zone
+ *
+ * CLAMP: MIN_KITCHEN = 5000 EUR
+ * This clamp MUST be preserved exactly.
+ */
+import CalculadoraLayout from '../../../layouts/CalculadoraLayout.astro';
+import Calculator from '../../../components/calculator/Calculator.astro';
+import StepFinal from '../../../components/calculator/StepFinal.astro';
+---
+
+<CalculadoraLayout
+  title="Calculadora Reforma Cocina Bilbao 2026"
+  description="Calculadora de Reforma de Cocina en Bilbao 2026 — Presupuesto orientativo desde 5.000 € hasta 16.000 €. Calcula el coste con materiales y mano de obra."
+  canonical="https://www.bilbaoreforma.es/bilbao/calculadora/cocina-bilbao.html"
+  city="bilbao"
+  calculatorType="cocina"
+  minPrice={5000}
+  ogImage="https://www.bilbaoreforma.es/images/og/bilbao-cocina-og.jpg"
+  ogImageAlt="Calculadora Reforma Cocina Bilbao 2026"
+>
+  <!-- CTA banner -->
+  <div class="calculator-cta-banner">
+    <a href="/bilbao/calculadora/index.html">
+      <span>🍳 ¿Quieres comparar con reforma integral completa? Usa nuestra calculadora general</span>
+      <span>→ Calcular</span>
+    </a>
+  </div>
+
+  <!-- Editorial intro -->
+  <div class="calculator-intro-editorial">
+    <h1>Reforma de Cocina en Bilbao: presupuestos desde 5.000 € hasta 16.000 €</h1>
+    <p>La reforma de una cocina en Bilbao incluye muebles de cocina, encimera, fontanería, electricidad y albañilería. Para una cocina de 8–10 m² con reforma media el presupuesto es de <strong>8.000–10.000 €</strong>.</p>
+    <p><a href="/blog/reforma-cocina-bilbao.html">Leer artículo: Guía completa para reformar una cocina en Bilbao</a></p>
+  </div>
+
+  <!-- Wizard -->
+  <Calculator
+    title="Reforma de Cocina en Bilbao"
+    city="bilbao"
+    calculatorType="cocina"
+    minPrice={5000}
+  >
+    <!-- STEP 1: Metros -->
+    <div class="wizard-step active" id="step1" data-step="1">
+      <div class="step-header">
+        <h2>¿Cuántos metros tiene tu cocina?</h2>
+        <p class="step-subtitle">Indica los metros cuadrados de la cocina a reformar</p>
+      </div>
+      <div class="meters-input-group">
+        <label class="meters-label" for="metersInput">Metros cuadrados</label>
+        <div class="meters-value-display">
+          <span class="meters-value-number" id="metersDisplayValue">9</span>
+          <span class="meters-value-unit">m²</span>
+        </div>
+        <input type="number" id="metersInput" class="meters-input" value="9" min="4" max="25" placeholder="4–25" aria-label="Metros cuadrados de la cocina" />
+        <input type="range" id="metersSlider" class="meters-slider" min="4" max="25" value="9" aria-label="Slider de metros cuadrados" />
+        <div class="meters-presets">
+          <button class="meters-preset-btn" data-meters="6" type="button">Cocina pequeña<br><small>~4–7 m²</small></button>
+          <button class="meters-preset-btn" data-meters="9" type="button">Cocina estándar<br><small>~8–10 m²</small></button>
+          <button class="meters-preset-btn" data-meters="14" type="button">Cocina grande<br><small>~12–16 m²</small></button>
+          <button class="meters-preset-btn" data-meters="20" type="button">Cocina master<br><small>&gt;18 m²</small></button>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 2: Distribución -->
+    <div class="wizard-step" id="step2" data-step="2">
+      <div class="step-header">
+        <h2>¿Qué distribución tiene la cocina?</h2>
+      </div>
+      <div class="age-options" id="distribOptions">
+        <div class="age-option selected" data-value="lineal" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Lineal (una pared)</div>
+            <div class="age-option-desc">Todo en un solo muro</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="pared_doble" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Pared doble (en L)</div>
+            <div class="age-option-desc">Dos paredes enfrentadas</div>
+          </div>
+        </div>
+        <div class="age-option" data-value="isla" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Con isla central</div>
+            <div class="age-option-desc">Mayor espacio de trabajo</div>
+          </div>
+          <span class="age-option-badge">+1.500 €</span>
+        </div>
+        <div class="age-option" data-value="americana" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Abierta al salón</div>
+            <div class="age-option-desc">Estilo americano, conectado al salón</div>
+          </div>
+          <span class="age-option-badge">+2.000 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 3: Muebles -->
+    <div class="wizard-step" id="step3" data-step="3">
+      <div class="step-header">
+        <h2>¿Qué tipo de muebles de cocina quieres?</h2>
+      </div>
+      <div class="age-options" id="mueblesOptions">
+        <div class="age-option selected" data-value="basico" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Básico ( Leroy Merlin / marca blanca )</div>
+            <div class="age-option-desc">Muebles nuevos, frentes MDF</div>
+          </div>
+          <span class="age-option-badge">×1.0</span>
+        </div>
+        <div class="age-option" data-value="medio" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Calidad media ( Cosentino, Bosch )</div>
+            <div class="age-option-desc">Muebles DM lacado, electropom Bosch</div>
+          </div>
+          <span class="age-option-badge">×1.4</span>
+        </div>
+        <div class="age-option" data-value="premium" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Premium ( a medida, Gaggenau )</div>
+            <div class="age-option-desc">Diseño a medida, electrodomésticos de gama alta</div>
+          </div>
+          <span class="age-option-badge">×2.0</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 4: Encimera -->
+    <div class="wizard-step" id="step4" data-step="4">
+      <div class="step-header">
+        <h2>¿Qué material de encimera prefieres?</h2>
+      </div>
+      <div class="age-options" id="encimeraOptions">
+        <div class="age-option selected" data-value="gres" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Gres / porcelánico</div>
+          <span class="age-option-badge">+30 €/m²</span>
+        </div>
+        <div class="age-option" data-value="silestone" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Silestone / Dekton</div>
+            <div class="age-option-desc">Surface de alta gama</div>
+          </div>
+          <span class="age-option-badge">+100 €/m²</span>
+        </div>
+        <div class="age-option" data-value="madera" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Madera natural</div>
+          <span class="age-option-badge">+80 €/m²</span>
+        </div>
+        <div class="age-option" data-value="granito" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Granito natural</div>
+          <span class="age-option-badge">+120 €/m²</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 5: Electrodomésticos -->
+    <div class="wizard-step" id="step5" data-step="5">
+      <div class="step-header">
+        <h2>¿Qué electrodomésticos incluyes?</h2>
+      </div>
+      <div class="age-options" id="electroOptions">
+        <div class="age-option selected" data-value="existing" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Reutilizo los existentes</div>
+            <div class="age-option-desc">Solo reforma de muebles y encimera</div>
+          </div>
+          <span class="age-option-badge">+0 €</span>
+        </div>
+        <div class="age-option" data-value="basico" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Equipamiento básico</div>
+            <div class="age-option-desc">Horno, placa, campana, frigorífico</div>
+          </div>
+          <span class="age-option-badge">+2.000 €</span>
+        </div>
+        <div class="age-option" data-value="completo" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Equipamiento completo</div>
+            <div class="age-option-desc">+ lavavajillas, microondas, vinoteca</div>
+          </div>
+          <span class="age-option-badge">+4.500 €</span>
+        </div>
+        <div class="age-option" data-value="gama_alta" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div>
+            <div class="age-option-title">Gama alta (Gaggenau, Miele)</div>
+            <div class="age-option-desc">Electrodomésticos profesionales</div>
+          </div>
+          <span class="age-option-badge">+8.000 €</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Continuar →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 6: Estado del edificio -->
+    <div class="wizard-step" id="step6" data-step="6">
+      <div class="step-header">
+        <h2>¿Qué tipo de edificio?</h2>
+        <p class="step-subtitle">La antigüedad afecta al coste de fontanería y electricidad</p>
+      </div>
+      <div class="age-options" id="edificioOptions">
+        <div class="age-option selected" data-age="new" role="button" tabindex="0" aria-pressed="true">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Menos de 20 años</div>
+          <span class="age-option-badge">×1.00</span>
+        </div>
+        <div class="age-option" data-age="moderate" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 20 y 40 años</div>
+          <span class="age-option-badge">×1.08</span>
+        </div>
+        <div class="age-option" data-age="old" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Entre 40 y 70 años</div>
+          <span class="age-option-badge">×1.18</span>
+        </div>
+        <div class="age-option" data-age="historic" role="button" tabindex="0" aria-pressed="false">
+          <div class="age-option-radio"></div>
+          <div class="age-option-title">Más de 70 años / Casco Viejo</div>
+          <span class="age-option-badge">×1.30</span>
+        </div>
+      </div>
+      <nav class="wizard-nav">
+        <button class="wizard-nav-btn wizard-nav-btn-back" type="button">← Atrás</button>
+        <button class="wizard-nav-btn wizard-nav-btn-next" type="button">Ver presupuesto →</button>
+      </nav>
+    </div>
+
+    <!-- STEP 7: Resultado -->
+    <div class="wizard-step" id="step7" data-step="7">
+      <StepFinal calculatorType="cocina" city="bilbao" />
+    </div>
+  </Calculator>
+</CalculadoraLayout>
+
+<script>
+  import { BARRIO_MULTIPLIERS, BARRIO_LABELS, formatCurrency } from '/src/scripts/calculator/index.ts';
+
+  const MIN_KITCHEN = 5000;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const barrio = urlParams.get('barrio');
+
+  if (barrio && BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS]) {
+    const stepHeader = document.querySelector('#step1 .step-header');
+    if (stepHeader) {
+      const badge = document.createElement('div');
+      badge.style.cssText = 'display:inline-block;background:var(--color-verde-montana);color:var(--color-blanco);padding:0.25rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8125rem;font-weight:600;margin-bottom:0.75rem;font-family:var(--font-inter);';
+      badge.textContent = 'Barrio: ' + BARRIO_LABELS[barrio as keyof typeof BARRIO_LABELS];
+      stepHeader.insertBefore(badge, stepHeader.firstChild);
+    }
+  }
+
+  const state = {
+    metros: 9,
+    distrib: 'lineal',
+    muebles: 'basico',
+    encimera: 'gres',
+    electro: 'existing',
+    edificio: 1.0,
+  };
+
+  function showStep(n: number) {
+    document.querySelectorAll('.stepper-step').forEach(el => {
+      const step = parseInt((el as HTMLElement).dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (step < n) el.classList.add('completed');
+      if (step === n) el.classList.add('active');
+    });
+    document.querySelectorAll('.wizard-step').forEach(el => {
+      (el as HTMLElement).style.display = 'none';
+      el.classList.remove('active');
+    });
+    const step = document.querySelector(`.wizard-step[data-step="${n}"]`);
+    if (step) {
+      (step as HTMLElement).style.display = 'block';
+      step.classList.add('active');
+    }
+    if (typeof (window as any).updateCalcProgress === 'function') (window as any).updateCalcProgress(n);
+  }
+
+  function updateSqm(val: number) {
+    state.metros = val;
+    const display = document.getElementById('metersDisplayValue');
+    const input = document.getElementById('metersInput') as HTMLInputElement;
+    const slider = document.getElementById('metersSlider') as HTMLInputElement;
+    if (display) display.textContent = String(val);
+    if (input) input.value = String(val);
+    if (slider) slider.value = String(val);
+  }
+
+  function selectOption(containerId: string, key: string, value: string) {
+    state[key as keyof typeof state] = value as any;
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-value') === value;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function selectAge(age: string) {
+    const multipliers: Record<string, number> = { new: 1.0, moderate: 1.08, old: 1.18, historic: 1.30 };
+    state.edificio = multipliers[age] || 1.0;
+    const container = document.getElementById('edificioOptions');
+    if (!container) return;
+    container.querySelectorAll('.age-option').forEach(opt => {
+      const isSelected = opt.getAttribute('data-age') === age;
+      opt.classList.toggle('selected', isSelected);
+      opt.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function calculateKitchen() {
+    const m2 = state.metros;
+    const muebleMult: Record<string, number> = { basico: 1.0, medio: 1.4, premium: 2.0 };
+    const encimeraExtra: Record<string, number> = { gres: 30, silestone: 100, madera: 80, granito: 120 };
+    const electroExtra: Record<string, number> = { existing: 0, basico: 2000, completo: 4500, gama_alta: 8000 };
+    const distribExtra: Record<string, number> = { lineal: 0, pared_doble: 600, isla: 1500, americana: 2000 };
+
+    const base = m2 * 550 * (muebleMult[state.muebles] || 1.0)
+      + m2 * (encimeraExtra[state.encimera] || 30)
+      + (electroExtra[state.electro] || 0)
+      + (distribExtra[state.distrib] || 0);
+
+    let adjusted = base * state.edificio;
+
+    if (barrio && BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS]) {
+      adjusted *= BARRIO_MULTIPLIERS[barrio as keyof typeof BARRIO_MULTIPLIERS];
+    }
+
+    // MIN_KITCHEN clamp — MUST BE PRESERVED
+    const low = Math.max(Math.round(adjusted * 0.85), MIN_KITCHEN);
+    const high = Math.round(adjusted * 1.15);
+
+    return { low, high };
+  }
+
+  function showResult() {
+    const { low, high } = calculateKitchen();
+    showStep(7);
+    const sfEl = document.getElementById('stepFinal');
+    if (sfEl) {
+      sfEl.dataset.budgetLow = String(low);
+      sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.budgetLabel = 'Reforma de Cocina';
+    }
+    if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
+      (window as any).stepFinalReveal(low, high, 'Reforma de Cocina', 'cocina', 'bilbao', 'Bilbao', sfEl);
+    }
+    if (typeof (window as any).clearCalculatorState === 'function') (window as any).clearCalculatorState();
+  }
+
+  let currentStep = 1;
+
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep === 6) { showResult(); }
+      else { currentStep++; showStep(currentStep); }
+    });
+  });
+
+  document.querySelectorAll('.wizard-nav-btn-back').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (currentStep > 1) { currentStep--; showStep(currentStep); }
+    });
+  });
+
+  const metersInput = document.getElementById('metersInput') as HTMLInputElement;
+  const metersSlider = document.getElementById('metersSlider') as HTMLInputElement;
+  metersInput?.addEventListener('input', () => updateSqm(parseInt(metersInput.value)));
+  metersSlider?.addEventListener('input', () => updateSqm(parseInt(metersSlider.value)));
+
+  document.querySelectorAll('.meters-preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const m = parseInt((btn as HTMLButtonElement).dataset.meters || '9');
+      updateSqm(m);
+    });
+  });
+
+  ['lineal', 'pared_doble', 'isla', 'americana'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('distribOptions', 'distrib', val));
+    });
+  });
+
+  ['basico', 'medio', 'premium'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('mueblesOptions', 'muebles', val));
+    });
+  });
+
+  ['gres', 'silestone', 'madera', 'granito'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('encimeraOptions', 'encimera', val));
+    });
+  });
+
+  ['existing', 'basico', 'completo', 'gama_alta'].forEach(val => {
+    document.querySelectorAll(`[data-value="${val}"]`).forEach(el => {
+      el.addEventListener('click', () => selectOption('electroOptions', 'electro', val));
+    });
+  });
+
+  ['new', 'moderate', 'old', 'historic'].forEach(age => {
+    document.querySelectorAll(`[data-age="${age}"]`).forEach(el => {
+      el.addEventListener('click', () => selectAge(age));
+    });
+  });
+
+  window.addEventListener('stepfinal:back', () => {
+    currentStep = 6;
+    showStep(currentStep);
+  });
+
+  window.addEventListener('calculator:restore', (e: Event) => {
+    const ev = e as CustomEvent<{ step: number; state: any }>;
+    if (ev.detail?.state) {
+      Object.assign(state, ev.detail.state);
+      currentStep = ev.detail.step;
+    } else { currentStep = 1; }
+    showStep(currentStep);
+  });
+
+  function saveState() {
+    if (typeof (window as any).saveCalculatorState === 'function') (window as any).saveCalculatorState(currentStep, state);
+  }
+  document.querySelectorAll('.wizard-nav-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => { if (currentStep !== 6) saveState(); }, true);
+  });
+
+  showStep(1);
+</script>

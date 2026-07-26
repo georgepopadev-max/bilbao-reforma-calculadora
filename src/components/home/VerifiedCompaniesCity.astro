@@ -1,12 +1,18 @@
 ---
 // VerifiedCompaniesCity — Empresas de Reformas Verificadas for Donostia/Vitoria
 interface Props {
-  city: 'donostia' | 'vitoria';
+  city: 'bilbao' | 'donostia' | 'vitoria';
 }
 
 const { city } = Astro.props;
 
 const cityConfig = {
+  bilbao: {
+    region: 'Bilbao / Bizkaia',
+    heading: 'Empresas de Reformas Verificadas en Bilbao',
+    ctaText: 'Ver todas las empresas de Bilbao',
+    ctaHref: '/empresas/index.html',
+  },
   donostia: {
     region: 'Donostia / Gipuzkoa',
     heading: 'Empresas de Reformas Verificadas en Donostia',

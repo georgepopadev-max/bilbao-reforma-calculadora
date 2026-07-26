@@ -14,7 +14,7 @@ interface Props {
   title: string;
   description?: string;
   canonical?: string;
-  city: 'donostia' | 'vitoria';
+  city: 'bilbao' | 'donostia' | 'vitoria';
   section?: 'root' | 'blog' | 'calculadora' | 'empresas';
   schemaData?: Record<string, any>;
   ogImage?: string;
@@ -33,13 +33,21 @@ const {
 } = Astro.props;
 
 const cityNames: Record<string, string> = {
+  bilbao: 'Bilbao',
   donostia: 'Donostia-San Sebastián',
   vitoria: 'Vitoria-Gasteiz',
 };
 
 const citySlugs: Record<string, string> = {
+  bilbao: 'bilbao',
   donostia: 'donostia',
   vitoria: 'vitoria',
+};
+
+const regionNames: Record<string, string> = {
+  bilbao: 'Bizkaia',
+  donostia: 'Gipuzkoa',
+  vitoria: 'Álava',
 };
 
 const currentCity = cityNames[city] ?? city;
@@ -48,11 +56,11 @@ const schema = schemaData ?? {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: `Reforma ${currentCity}`,
-  description: description ?? `Calculadora de presupuestos de reformas en ${currentCity} y ${city === 'donostia' ? 'Gipuzkoa' : 'Álava'}.`,
+  description: description ?? `Calculadora de presupuestos de reformas en ${currentCity} y ${regionNames[city]}.`,
   url: `https://www.bilbaoreforma.es/${citySlugs[city]}/`,
   areaServed: {
     '@type': 'State',
-    name: city === 'donostia' ? 'Gipuzkoa' : 'Álava',
+    name: regionNames[city],
   },
 };
 ---
