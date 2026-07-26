@@ -1,26 +1,99 @@
 ---
-import CityLayout from '../../layouts/CityLayout.astro';
+/**
+ * Reforma Donostia — City hub
+ * A3 Zone — expanded TARE-051
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Reformas Donostia',
+  description: 'Guía completa de reformas en Donostia-San Sebastián 2026. Precios, empresas y consejos.',
+  url: 'https://www.bilbaoreforma.es/donostia/',
+  areaServed: { '@type': 'City', name: 'Donostia-San Sebastián' },
+};
+
+const servicios = [
+  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Edificios del Casco Viejo, Gros y Egia.', precio: 'Desde 750 €/m²', href: '/donostia/calculadora/integral-donostia.html', icono: '🏠' },
+  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, alicatados y fontanería. Los pisos antiguos de Donostia suelen tener baños de 3-4 m².', precio: 'Desde 2.800 €', href: '/donostia/calculadora/bano-donostia.html', icono: '🚿' },
+  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Donostia tiene物价 similar a Bilbo con mano de obra especializada.', precio: 'Desde 5.500 €', href: '/donostia/calculadora/cocina-donostia.html', icono: '🍳' },
+  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Donostia el precio incluye tratamiento antimoho por la humedad costera.', precio: 'Desde 9 €/m²', href: '/donostia/calculadora/pintura-donostia.html', icono: '🎨' },
+  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios con terrazas en Gros y Miramon tienen particularidades de acceso.', precio: 'Desde 38 €/m²', href: '/donostia/calculadora/suelo-donostia.html', icono: '🪵' },
+];
+
+const pasos = [
+  { num: '1', titulo: 'Usa la calculadora', descripcion: 'Selecciona el tipo de reforma, introduce los metros cuadrados y responde 5 preguntas sobre el estado actual.' },
+  { num: '2', titulo: 'Recibe tu informe', descripcion: 'Recibe un PDF con el desglose por partidas adaptado a precios de Donostia y recomendaciones de empresas.' },
+  { num: '3', titulo: 'Contacta empresas', descripcion: 'Llamas directamente a las empresas recomendadas. Sin intermediarios ni compromiso.' },
+];
 ---
-<CityLayout title="Reformas en Donostia-San Sebastián 2026 | Bilbao Reforma" description="Guía completa de reformas en Donostia y Gipuzkoa. Calcula presupuestos y descubre precios." canonical="https://www.bilbaoreforma.es/donostia/reforma-donostia.html" city="donostia" ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg" ogImageAlt="Reformas en Donostia-San Sebastián 2026">
-  <section style="max-width:800px;margin:4rem auto;padding:0 1.5rem;">
-    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:1rem;">Reformas en Donostia-San Sebastián 2026</h1>
-    <p style="font-size:1.1rem;color:#555;margin-bottom:2rem;">Guía completa de reformas en Donostia y Gipuzkoa.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
-      <a href="/donostia/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-        <h3 style="font-size:1.1rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.4rem;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C45C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Reforma Integral
-        </h3>
-        <p style="font-size:0.9rem;color:#666;">Desde 700 €/m²</p>
-      </a>
-      <a href="/donostia/calculadora/index.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-        <h3 style="font-size:1.1rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.4rem;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C45C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-          Reforma de Baño
-        </h3>
-        <p style="font-size:0.9rem;color:#666;">Desde 2.500 €</p>
-      </a>
-    </div>
-    <a href="/donostia/calculadora/index.html" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">Calcular presupuesto →</a>
-  </section>
-</CityLayout>
+
+<BaseLayout
+  title="Reformas Donostia 2026: Guía Completa y Precios Orientativos"
+  description="Guía completa de reformas en Donostia-San Sebastián 2026. Calcula presupuestos, compara precios y encuentra empresas verificadas en Gipuzkoa."
+  canonical="https://www.bilbaoreforma.es/donostia/"
+  ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg"
+  ogImageAlt="Reformas Donostia 2026"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+
+  <Header city="donostia" section="reformas" />
+  <main id="main-content">
+
+    <section style="background: var(--color-crema); padding: 3rem 1.5rem;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-grafito); margin-bottom: 1rem; line-height: 1.25;">Reformas en Donostia 2026</h1>
+        <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.7; max-width: 640px; margin-bottom: 1.5rem;">Donostia-San Sebastián tiene un parque inmobiliario envejecido, especialmente en el Casco Viejo, Gros, Egia y Amara. Esta guía te ayuda a calcular presupuestos orientativos y encontrar empresas de reformas verificadas en Gipuzkoa.</p>
+        <a href="/donostia/calculadora/integral-donostia.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
+      </div>
+    </section>
+
+    <section style="max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 2rem; text-align: center;">¿Qué tipo de reforma necesitas?</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem;">
+        {servicios.map(s => (
+          <a href={s.href} style="display: block; padding: 1.5rem; background: var(--color-blanco); border: 1px solid var(--color-beige); border-radius: 12px; text-decoration: none; color: inherit; transition: all 0.2s; box-shadow: 0 2px 8px rgba(45,30,15,.06);">
+            <div style="font-size: 2rem; margin-bottom: 0.75rem;">{s.icono}</div>
+            <h3 style="font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem;">{s.titulo}</h3>
+            <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.6; margin-bottom: 0.75rem;">{s.descripcion}</p>
+            <p style="font-size: 0.9375rem; font-weight: 700; color: var(--color-terracota);">{s.precio}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section style="background: var(--color-blanco); padding: 3rem 1.5rem;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 2rem; text-align: center;">Cómo funciona</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+          {pasos.map(p => (
+            <div style="text-align: center;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-terracota); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 700; margin: 0 auto 0.75rem;">{p.num}</div>
+              <h3 style="font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem;">{p.titulo}</h3>
+              <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.6;">{p.descripcion}</p>
+            </div>
+          ))}
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/donostia/calculadora/integral-donostia.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 1.5rem; text-align: center;">Barrios de Donostia</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+        {['Casco Viejo', 'Gros', 'Egia', 'Amara Nuevo', 'Amara Viejo', 'Miracampo', 'Miramon', 'Antiguo', 'Ibaeta', 'Loiola'].map(n => (
+          <span style="padding: 0.4rem 0.875rem; background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 999px; font-size: 0.8125rem; color: var(--color-gris);">{n}</span>
+        ))}
+      </div>
+    </section>
+
+  </main>
+  <Footer city="donostia" />
+</BaseLayout>

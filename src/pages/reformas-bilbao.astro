@@ -1,9 +1,11 @@
 ---
 /**
  * Reformas Bilbao — Bilbao Reforma hub
- * A3 Zone
+ * A3 Zone — expanded TARE-051
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -13,11 +15,26 @@ const schema = {
   url: 'https://www.bilbaoreforma.es/reformas-bilbao.html',
   areaServed: { '@type': 'City', name: 'Bilbao' },
 };
+
+const servicios = [
+  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Desde 700 €/m².', precio: 'Desde 700 €/m²', href: '/calculadora/integral-bilbao.html', icono: '🏠' },
+  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, Alicatados,fontanería y pintura. Típico en baños de los años 60-80 en Bilbao.', precio: 'Desde 2.500 €', href: '/calculadora/bano-bilbao.html', icono: '🚿' },
+  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Los pisos de Bilbao suelen tener cocinas de 6-10 m².', precio: 'Desde 5.000 €', href: '/calculadora/cocina-bilbao.html', icono: '🍳' },
+  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Bilbao el precio incluye retirada de gotelé si lo hay. Pintores desde 8 €/m².', precio: 'Desde 8 €/m²', href: '/calculadora/pintura-bilbao.html', icono: '🎨' },
+  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios antiguos de Bilbao suelen tener pallanda de madera que puede reutilizarse.', precio: 'Desde 35 €/m²', href: '/calculadora/suelo-bilbao.html', icono: '🪵' },
+  { titulo: 'Calefacción', descripcion: 'Radiadores, caldera, aerotermia o suelo radiante. Bilbao tiene clima húmedo que exige buena ventilación y deshumidificación.', precio: 'Desde 3.500 €', href: '/calefaccion-bilbao.html', icono: '🔥' },
+];
+
+const pasos = [
+  { num: '1', titulo: 'Usa la calculadora', descripcion: 'Selecciona el tipo de reforma, introduce los metros cuadrados y responde 5 preguntas sobre el estado actual. El presupuesto orientativo sale en menos de 2 minutos.' },
+  { num: '2', titulo: 'Recibe tu informe', descripcion: 'Recibe un PDF con el desglose por partidas, comparativa de precios en Bilbao y 4-5 recomendaciones de empresas verificadas.' },
+  { num: '3', titulo: 'Contacta empresas', descripcion: 'Llamas directamente a las empresas que te recomendamos. Sin intermediarios, sin compromiso.' },
+];
 ---
 
 <BaseLayout
-  title="Reformas Bilbao 2026: Guía y Precios"
-  description="Guía completa de reformas en Bilbao 2026. Calcula presupuestos, compara empresas y descubre precios por tipo de reforma."
+  title="Reformas Bilbao 2026: Guía Completa y Precios Orientativos"
+  description="Guía completa de reformas en Bilbao 2026. Calcula presupuestos orientativos, compara precios por tipo de reforma y encuentra empresas verificadas en Bizkaia."
   canonical="https://www.bilbaoreforma.es/reformas-bilbao.html"
   ogImage="https://www.bilbaoreforma.es/images/og/reformas-bilbao-og.jpg"
   ogImageAlt="Reformas Bilbao 2026"
@@ -26,64 +43,71 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>
 
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/index.html" class="header-logo">
-        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <span class="header-logo-text">Bilbao Reforma</span>
-      </a>
-      <nav class="header-nav">
-        <a href="/calculadora/index.html" class="header-nav-link">Calculadora</a>
-        <a href="/blog/index.html" class="header-nav-link">Blog</a>
-        <a href="/empresas/index.html" class="header-nav-link">Empresas</a>
-        <a href="/contacto.html" class="header-nav-link header-nav-link-cta">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
+  <Header city="bilbao" section="reformas" />
   <main id="main-content">
-    <section style="max-width:800px;margin:4rem auto;padding:0 1.5rem;">
-      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:1rem;">Reformas en Bilbao 2026</h1>
-      <p style="font-size:1.1rem;line-height:1.7;color:#555;margin-bottom:2rem;">Guía completa para reformas en Bilbao y Bizkaia. Encuentra presupuestos orientativos, empresas verificadas y consejos para tu reforma.</p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:3rem;">
-        <a href="/calculadora/integral-bilbao.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">🏗️ Reforma Integral</h3>
-          <p style="font-size:0.9rem;color:#666;">Desde 700 €/m²</p>
-        </a>
-        <a href="/calculadora/bano-bilbao.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">🚿 Reforma de Baño</h3>
-          <p style="font-size:0.9rem;color:#666;">Desde 2.500 €</p>
-        </a>
-        <a href="/calculadora/cocina-bilbao.html" style="padding:1.5rem;background:#f5f5f5;border-radius:12px;text-decoration:none;color:inherit;">
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">🍳 Reforma de Cocina</h3>
-          <p style="font-size:0.9rem;color:#666;">Desde 5.000 €</p>
-        </a>
+    {/* Hero */}
+    <section style="background: var(--color-crema); padding: 3rem 1.5rem;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-grafito); margin-bottom: 1rem; line-height: 1.25;">Reformas en Bilbao 2026</h1>
+        <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.7; max-width: 640px; margin-bottom: 1.5rem;">Bilbao tiene uno de los parques inmobiliarios más envejecidos del País Vasco. La mayoría de los pisos de más de 40 años necesitan algún tipo de reforma. Aquí encuentras precios orientativos, calculadora gratuita y empresas de reformas verificadas en Bilbao y Bizkaia.</p>
+        <a href="/calculadora/integral-bilbao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
       </div>
-
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:1rem;">Precios por tipo de reforma en Bilbao</h2>
-      <table style="width:100%;border-collapse:collapse;margin-bottom:2rem;">
-        <thead><tr style="background:#f5f5f5;"><th style="padding:0.75rem;text-align:left;">Tipo</th><th style="padding:0.75rem;text-align:left;">Precio orientativo</th></tr></thead>
-        <tbody>
-          <tr><td style="padding:0.75rem;border-bottom:1px solid #eee;">Reforma integral</td><td style="padding:0.75rem;border-bottom:1px solid #eee;"><strong>700–1.400 €/m²</strong></td></tr>
-          <tr><td style="padding:0.75rem;border-bottom:1px solid #eee;">Reforma de baño</td><td style="padding:0.75rem;border-bottom:1px solid #eee;"><strong>3.000–12.000 €</strong></td></tr>
-          <tr><td style="padding:0.75rem;border-bottom:1px solid #eee;">Reforma de cocina</td><td style="padding:0.75rem;border-bottom:1px solid #eee;"><strong>5.000–16.000 €</strong></td></tr>
-          <tr><td style="padding:0.75rem;border-bottom:1px solid #eee;">Pintura</td><td style="padding:0.75rem;border-bottom:1px solid #eee;"><strong>8–20 €/m²</strong></td></tr>
-          <tr><td style="padding:0.75rem;">Cambio de suelo</td><td style="padding:0.75rem;"><strong>25–130 €/m²</strong></td></tr>
-        </tbody>
-      </table>
-
-      <a href="/calculadora/index.html" class="cta-button cta-button-primary" style="display:inline-flex;align-items:center;gap:0.5rem;padding:1rem 2rem;background:#C45C3E;color:white;border-radius:8px;font-weight:600;text-decoration:none;">
-        Calcular presupuesto gratis →
-      </a>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2025–2026 Bilbao Reforma.</p>
+    {/* Tipos de reforma */}
+    <section style="max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 2rem; text-align: center;">¿Qué tipo de reforma necesitas?</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem;">
+        {servicios.map(s => (
+          <a href={s.href} style="display: block; padding: 1.5rem; background: var(--color-blanco); border: 1px solid var(--color-beige); border-radius: 12px; text-decoration: none; color: inherit; transition: all 0.2s; box-shadow: 0 2px 8px rgba(45,30,15,.06);">
+            <div style="font-size: 2rem; margin-bottom: 0.75rem;">{s.icono}</div>
+            <h3 style="font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem;">{s.titulo}</h3>
+            <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.6; margin-bottom: 0.75rem;">{s.descripcion}</p>
+            <p style="font-size: 0.9375rem; font-weight: 700; color: var(--color-terracota);">{s.precio}</p>
+          </a>
+        ))}
       </div>
-    </div>
-  </footer>
+    </section>
+
+    {/* Cómo funciona */}
+    <section style="background: var(--color-blanco); padding: 3rem 1.5rem;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 2rem; text-align: center;">Cómo funciona</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+          {pasos.map(p => (
+            <div style="text-align: center;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-terracota); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 700; margin: 0 auto 0.75rem;">{p.num}</div>
+              <h3 style="font-size: 1rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem;">{p.titulo}</h3>
+              <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.6;">{p.descripcion}</p>
+            </div>
+          ))}
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/calculadora/integral-bilbao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
+        </div>
+      </div>
+    </section>
+
+    {/* Barrios */}
+    <section style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 1.5rem; text-align: center;">Reformas por barrio en Bilbao</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+        {[
+          { nombre: 'Santutxu', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.95' },
+          { nombre: 'Indautxu', href: '/bilbao/barrios/indautxu.html', multiplicador: '×1.15' },
+          { nombre: 'Deusto', href: '/bilbao/barrios/deusto.html', multiplicador: '×1.00' },
+          { nombre: 'Casco Viejo', href: '/bilbao/barrios/casco-viejo.html', multiplicador: '×1.25' },
+          { nombre: 'Errekalde', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.90' },
+          { nombre: 'Abando', href: '/bilbao/barrios/indautxu.html', multiplicador: '×1.10' },
+          { nombre: 'Basurto', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.90' },
+          { nombre: 'Zabalburu', href: '/bilbao/barrios/indautxu.html', multiplicador: '×0.95' },
+        ].map(b => (
+          <a href={b.href} style="padding: 0.4rem 0.875rem; background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 999px; font-size: 0.8125rem; color: var(--color-grafito); text-decoration: none; font-weight: 500;">{b.nombre}</a>
+        ))}
+      </div>
+    </section>
+
+  </main>
+  <Footer city="bilbao" />
 </BaseLayout>
