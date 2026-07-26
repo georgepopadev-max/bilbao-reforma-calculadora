@@ -27,13 +27,6 @@ const schema = {
     name: e.name,
     url: `https://www.bilbaoreforma.es/empresas/${e.slug}.html`,
     description: e.description,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: e.rating,
-      reviewCount: String(e.reviewCount),
-      bestRating: '5',
-      worstRating: '1',
-    },
   })),
 };
 ---
