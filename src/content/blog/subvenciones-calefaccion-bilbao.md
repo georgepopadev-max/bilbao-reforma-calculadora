@@ -186,10 +186,10 @@ inContentCTAs:
 <p>Los programas de financiación europea tienen fecha de finalización vinculada a la disponibilidad de fondos. En 2026, los programas activos son:</p>
 <ul>
 <li><strong>PREE Next Generation:</strong> Plazo de solicitud abierto hasta agotar fondos (previsto para 2026-2027)</li>
-<li><strong>Plan Renove 2026:</strong> Convocatoria abierta de enero a diciembre de 2026 o hasta agotar funds</li>
+<li><strong>Plan Renove 2026:</strong> Convocatoria abierta de enero a diciembre de 2026 o hasta agotar fondos</li>
 <li><strong>Bonificaciones IBI:</strong> Solicitable en cualquier momento del año fiscal</li>
 </ul>
-<p><strong>Consejo:</strong> Las ayudas se agotan rápidamente porque la demanda es muy alta. No dejes para mañana lo que puedas solicitar hoy. Apúntate a las listas de ожидания de las gestorías especializadas.</p>
+<p><strong>Consejo:</strong> Las ayudas se agotan rápidamente porque la demanda es muy alta. No dejes para mañana lo que puedas solicitar hoy. Apúntate a las listas de espera de las gestorías especializadas.</p>
 
 <h2>Empresas instaladoras en Bilbao</h2>
 <ul>
@@ -203,7 +203,7 @@ inContentCTAs:
 
 <h2>Preguntas Frecuentes sobre Subvenciones de Calefacción</h2>
 
-<h3>¿Qué субсидии hay para calefacción en Bilbao en 2026?</h3>
+<h3>¿Qué subvenciones hay para calefacción en Bilbao en 2026?</h3>
 <p>En 2026 hay tres niveles de ayudas: Plan Rehabilitación Next Generation (hasta 40% de la inversión), Gobierno Vasco PREE (hasta 12.000€/vivienda para aerotermia) y Ayuntamiento de Bilbao (bonificación IBI hasta 50% durante 5 años). En total, las ayudas pueden superar el 50% de la inversión en sistemas de aerotermia o biomasa.</p>
 
 <h3>¿Cuánto dinero puedo obtener de las subvenciones para calefacción?</h3>

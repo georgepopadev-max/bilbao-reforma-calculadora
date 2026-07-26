@@ -217,7 +217,7 @@ priceTables: 1
 
   <p>La ventaja de un baño pequeño es que la partida de demolición es más barata (menos superficie que picar), pero las partidas de fontanería y electricidad no bajan proporcionalmente: un baño de 3 m² necesita los mismos puntos de agua y electricidad que uno de 6 m². Eso hace que el <strong>coste por metro cuadrado sea superior</strong> en baños pequeños que en baños grandes.</p>
 
-  <p>Para ganar espacio en un baño pequeño bilbaino, las estrategias más efectivas son: sustituir la bañera por plato de ducha a ras de suelo (ahorra 0,5-1 m² de площадь), usar un mueble de lavabo de reducidas dimensiones con espejo壁挂 (ahorra espacio en el suelo), instalar un inodoro suspend (el módulo se oculta en un nicho y ocupa menos), y elegir azulejos de formato grande (el 80x80 cm da sensación de amplitud por el menor número de juntas).</p>
+  <p>Para ganar espacio en un baño pequeño bilbaino, las estrategias más efectivas son: sustituir la bañera por plato de ducha a ras de suelo (ahorra 0,5-1 m² de superficie), usar un mueble de lavabo de reducidas dimensiones con espejo de pared (ahorra espacio en el suelo), instalar un inodoro suspendido (el módulo se oculta en un nicho y ocupa menos), y elegir azulejos de formato grande (el 80x80 cm da sensación de amplitud por el menor número de juntas).</p>
 
   <h2>¿Cuánto tiempo tarda una reforma de baño en Bilbao?</h2>
 
