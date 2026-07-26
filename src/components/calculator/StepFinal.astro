@@ -767,7 +767,8 @@
 
     // PDF button
     const pdfBtn = document.getElementById('downloadPdfBtn');
-    pdfBtn?.addEventListener('click', () => {
+    pdfBtn?.addEventListener('click', async () => {
+      const { generateBudgetPDF } = await import('./pdf-generator');
       const budget: BudgetInfo = {
         city: cityLabel,
         calculatorType: calculatorType as BudgetInfo['calculatorType'],
