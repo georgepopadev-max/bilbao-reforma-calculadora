@@ -43,10 +43,10 @@ priceTables: 0
   <p>Para entender la comparativa, primero hay que conocer el punto de partida. Bilbao ha experimentado una revalorización inmobiliaria significativa desde la transformers de la Ría. En 2025, los precios de la vivienda en la capital vizcaína se mantienen en niveles altos aunque con cierta estabilidad:</p>
 
   <ul>
-  <li><strong>Casco Viejo y fines de semana:</strong>3.500 - 4.500 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a> y fines de semana:</strong>3.500 - 4.500 €/m²</li>
   <li><strong>Indautxu y Errekalde:</strong>2.800 - 3.800 €/m²</li>
-  <li><strong>Santutxu y Bolueta:</strong>2.200 - 3.000 €/m²</li>
-  <li><strong>Deusto:</strong>2.400 - 3.200 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a> y Bolueta:</strong>2.200 - 3.000 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/deusto.html">Deusto</a>:</strong>2.400 - 3.200 €/m²</li>
   <li><strong>Zonas periféricas (Barakaldo, Basauri, Erandio):</strong>1.500 - 2.200 €/m²</li>
   </ul>
 

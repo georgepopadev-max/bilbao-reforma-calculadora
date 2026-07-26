@@ -146,7 +146,7 @@ priceTables: 2
 
   <h2>Tendencias en Baños Bilbainos 2025</h2>
 
-  <p>El mercado de reformas en Bilbao tiene sus propias particularidades. No es lo mismo un baño en un piso de <strong>Santutxu</strong> de los años 60 que uno en un ático reformado de <strong>Abando</strong>. Pero hay tendencias que se repiten:</p>
+  <p>El mercado de reformas en Bilbao tiene sus propias particularidades. No es lo mismo un baño en un piso de <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong> de los años 60 que uno en un ático reformado de <strong>Abando</strong>. Pero hay tendencias que se repiten:</p>
 
   <h3>Baños Pequeños: El Reto Bilbaino por Excelencia</h3>
 
@@ -195,7 +195,7 @@ priceTables: 2
 
   <p>Cada zona de Bilbao tiene sus particularidades constructivas que afectan directamente a la reforma del baño:</p>
 
-  <h3>Casco Viejo: Baños Pequeños y Problemas de Humedad</h3>
+  <h3><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a>: Baños Pequeños y Problemas de Humedad</h3>
 
   <p>Los edificios del Casco Viejo de Bilbao - muchos de ellos del siglo XIX o principios del XX - tienen baños históricos: pequeños (3-3,5 m²), con problemas de humedad por capilaridad y ventilación deficiente. Las reformas en esta zona suelen requerir:</p>
 
@@ -206,7 +206,7 @@ priceTables: 2
   <li>Posible necesidad de regularizar instalaciones eléctricas antiguas</li>
   </ul>
 
-  <h3>Indautxu: Baños de los 70-80 con Necesidad de Update</h3>
+  <h3><a href="/bilbao/barrios/indautxu.html">Indautxu</a>: Baños de los 70-80 con Necesidad de Update</h3>
 
   <p>Los pisos de Indautxu construidos entre los años 70 y 80 suelen tener baños más grandes (4,5-6 m²), pero con estándares de hace 40-50 años: bañera empotrada, azulejo de la época, grifería monomando vieja. Es la zona donde más se pide el cambio bañera por ducha y la modernización completa de instalaciones.</p>
 

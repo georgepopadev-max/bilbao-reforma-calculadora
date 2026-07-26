@@ -164,15 +164,15 @@ priceTables: 1
 
   <div class="neighborhood-grid">
   <div class="neighborhood-card">
-  <h3>Casco Viejo</h3>
+  <h3><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a></h3>
   <p>Edificios de más de 100 años con baños originales de los años 40-60. Tuberías de plomo, ausencia de ventilación y humedades estructurales. La reforma suele ser completa. Acceso complicado por calles estrechas y sin ascensor.</p>
   </div>
   <div class="neighborhood-card">
-  <h3>Indautxu</h3>
+  <h3><a href="/bilbao/barrios/indautxu.html">Indautxu</a></h3>
   <p>Viviendas de los años 60-80 con baños funcionales pero anticuados. Predominan las bañeras antiguas y los azulejos de la época. Es la zona con mayor volumen de reformas parciales: cambio de sanitarios y suelo sin tocar instalaciones.</p>
   </div>
   <div class="neighborhood-card">
-  <h3>Santutxu</h3>
+  <h3><a href="/bilbao/barrios/santutxu.html">Santutxu</a></h3>
   <p>Pisos modestos de los años 60-70 con baños pequeños (3-4 m²). Alta demanda de reformas para ganar espacio, sustituir bañera por ducha y actualizar instalaciones. Precios algo más contenidos por la proximidad a talleres industriales.</p>
   </div>
   <div class="neighborhood-card">

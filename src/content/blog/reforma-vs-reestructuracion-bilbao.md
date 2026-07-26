@@ -15,7 +15,7 @@ faqs:
   - q: "¿Puedo hacer reestructuración sin arquitecto en Bilbao?"
     a: "Para obra menor (reforma simple) no es obligatorio arquitecto. Pero si hay cambio de distribución con paredes de carga, modificación de instalaciones eléctricas de alta potencia, o intervenciones que "
   - q: "¿La reestructuración de un piso en el Casco Viejo de Bilbao es más compleja?"
-    a: "Sí, significativamente. El Casco Viejo tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobiern"
+    a: "Sí, significativamente. El <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobiern"
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -77,7 +77,7 @@ priceTables: 2
   <li><strong>Cambio de fachada o elementos visibles</strong>: ventanas, balcones, elementos estructurales visibles desde la calle</li>
   </ul>
 
-  <p>La reestructuración requiere <strong>licencia de obra mayor</strong> en Bilbao. Esto implica proyecto técnico firmado por arquitecto, dirección de obra por aparejador o arquitecto, y tramitación ante el Ayuntamiento de Bilbao con plazos que pueden ir de 4 a 12 semanas dependiendo de la complejidad. Si estás en el Casco Viejo o en un edificio protegido, necesitas también autorización del Gobierno Vasco.</p>
+  <p>La reestructuración requiere <strong>licencia de obra mayor</strong> en Bilbao. Esto implica proyecto técnico firmado por arquitecto, dirección de obra por aparejador o arquitecto, y tramitación ante el Ayuntamiento de Bilbao con plazos que pueden ir de 4 a 12 semanas dependiendo de la complejidad. Si estás en el <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> o en un edificio protegido, necesitas también autorización del Gobierno Vasco.</p>
 
   <blockquote>
   <p><strong>Dato importante</strong>: según la normativa urbanística del Gobierno Vasco (<a href="https://www.euskadi.eus/planeamiento-urbanistico/web01-a3ing/es/" target="_blank" rel="noopener">Plan General de Ordenación Urbana de Bilbao</a>), cualquier intervención que modifique la estructura, envolvente o uso de una vivienda necesita un proyecto técnico regularizado. No es opcional.</p>
@@ -189,20 +189,20 @@ priceTables: 2
   <h2>Ejemplos Reales: Cuándo Es Reforma y Cuándo Es Reestructuración</h2>
   <p>La mejor forma de entender la diferencia es con casos reales de pisos en Bilbao:</p>
 
-  <h3>Caso 1: Piso en Indautxu (Reforma)</h3>
+  <h3>Caso 1: Piso en <a href=\"/bilbao/barrios/indautxu.html\">Indautxu</a> (Reforma)</h3>
   <p><strong>Situación inicial</strong>: Piso de 75m² de los años 80, cuarto de baño originales con bañera, cocina funcional pero anticuada, paredes con pintura descascarillada y suelo de terrazo.</p>
   <p><strong>Intervención</strong>: Cambio completo de baño (ducha a ras de suelo, sanitarios modernos, nuevo alicatado), reforma de cocina con muebles nuevos sin mover tomas, cambio de suelo en toda la vivienda a parqué AC5, pintura total de paredes y techos.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reforma</strong>. Comunicación previa, sin proyecto técnico obligatorio.</p>
   <p><strong>Presupuesto orientativo</strong>: 45.000-55.000 € (calidad media).</p>
 
-  <h3>Caso 2: Piso en Deusto (Reestructuración parcial)</h3>
+  <h3>Caso 2: Piso en <a href=\"/bilbao/barrios/deusto.html\">Deusto</a> (Reestructuración parcial)</h3>
   <p><strong>Situación inicial</strong>: Piso de 85m² con tres habitaciones pequeñas, cocina cerrada y baño estrecho. Los tabiques no son de carga.</p>
   <p><strong>Intervención</strong>: Derribo del tabique que separa cocina y salón para crear espacio abierto, unificación del pasillo para dar más amplitud, cambio completo de baño ampliándolo con eliminación de un armario dormitorio. Toda la electricidad nueva con cuadro actualizado.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reestructuración parcial</strong>. Licencia de obra mayor, proyecto de arquitecto, dirección de aparejador.</p>
   <p><strong>Presupuesto orientativo</strong>: 65.000-85.000 € (calidad media-alta).</p>
   <p>Puedes ver más detalles sobre costes de cocina en nuestro artículo sobre <a href="reforma-cocina-bilbao.html">reforma de cocina en Bilbao</a>.</p>
 
-  <h3>Caso 3: Piso en el Casco Viejo (Reestructuración completa)</h3>
+  <h3>Caso 3: Piso en el <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> (Reestructuración completa)</h3>
   <p><strong>Situación inicial</strong>: Piso de 70m² en edificio de los años 40 con protección patrimonial parcial. Tuberías de plomo, instalación eléctrica sin tierra, muros de carga en parte de la distribución.</p>
   <p><strong>Intervención</strong>: Redistribución completa de la vivienda con nuevo proyecto de arquitecto, sustitución de todas las instalaciones (fontanería, electricidad, gas), refuerzo estructural de un muro de carga con viga de acero vista, nuevas ventanas de madera según normativa de Patrimonio.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reestructuración completa</strong>. Licencia de obra mayor + autorización del Gobierno Vasco. Proyecto completo obligatorio.</p>
@@ -223,7 +223,7 @@ priceTables: 2
   <p>Para obra menor (reforma simple) no es obligatorio arquitecto. Pero si hay cambio de distribución con paredes de carga, modificación de instalaciones eléctricas de alta potencia, o intervenciones que afectan a la estructura del edificio, el proyecto arquitectónico es obligatorio. El aparejador puede dirigir obra menor, pero no proyecto de reestructuración.</p>
 
   <h3>¿La reestructuración de un piso en el Casco Viejo de Bilbao es más compleja?</h3>
-  <p>Sí, significativamente. El Casco Viejo tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística.</p>
+  <p>Sí, significativamente. El <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>

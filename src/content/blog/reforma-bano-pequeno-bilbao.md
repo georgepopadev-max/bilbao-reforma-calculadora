@@ -38,7 +38,7 @@ inContentCTAs:
 priceTables: 0
 ---
 
-<p>Los pisos bilbainos no son conocidos por sus baños generosos. Un baño de 3,5 metros cuadrados - medida habitual en bloques de <strong>Santutxu</strong>, <strong>Errekalde</strong> y los edificios de los años 60-70 en <strong>Deusto</strong> - es el escenario donde muchos propietarios se enfrentan al dilema: ¿cómo convertir este espacio mínimo en algo funcional y moderno sin disparar el presupuesto?</p>
+<p>Los pisos bilbainos no son conocidos por sus baños generosos. Un baño de 3,5 metros cuadrados - medida habitual en bloques de <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, <strong>Errekalde</strong> y los edificios de los años 60-70 en <strong><a href="/bilbao/barrios/deusto.html">Deusto</a></strong> - es el escenario donde muchos propietarios se enfrentan al dilema: ¿cómo convertir este espacio mínimo en algo funcional y moderno sin disparar el presupuesto?</p>
 
   <p>La buena noticia es que un baño pequeño tiene ventajas que uno grande no tiene: menos superficie de alicatado, menos metros de suelo, menos fontanería visible. Y con la planificación adecuada, puedes conseguir un resultado espectacular por menos de lo que imaginas. En esta guía te cuento <strong>cuánto cuesta reformar un baño pequeño en Bilbao en 2025-2026</strong>, qué decisiones tomar y qué errores evitar.</p>
 <div class="in-content-cta">
@@ -86,7 +86,7 @@ priceTables: 0
 
   <h3>Demolición y Gestión de Residuos</h3>
 
-  <p>En un baño pequeño la demolición es más rápida, pero hay un factor que puede complicarla: los edificios bilbainos antiguos tienen ascensores estrechos o nada de ascensor en portales de 4-5 plantas. Si reformas un baño en un quinto piso sin ascensor del <strong>Casco Viejo</strong>, el coste de sacar los escombros puede multiplicarse. Presupuesto orientativo: <strong>300-600 €</strong>.</p>
+  <p>En un baño pequeño la demolición es más rápida, pero hay un factor que puede complicarla: los edificios bilbainos antiguos tienen ascensores estrechos o nada de ascensor en portales de 4-5 plantas. Si reformas un baño en un quinto piso sin ascensor del <strong><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a></strong>, el coste de sacar los escombros puede multiplicarse. Presupuesto orientativo: <strong>300-600 €</strong>.</p>
 
   <h3>Fontanería</h3>
 
@@ -120,7 +120,7 @@ priceTables: 0
 
   <h3>Estanterías empotradas en el nicho</h3>
 
-  <p>Si tienes una pared que puedas abrir, un nicho empotrado de 30x30 cm con estanterías internas es una forma elegante de añadir almacenamiento sin sacrificar espacio. Muy popular en reformas de baños pequeños en <strong>Indautxu</strong> y <strong>Deusto</strong>.</p>
+  <p>Si tienes una pared que puedas abrir, un nicho empotrado de 30x30 cm con estanterías internas es una forma elegante de añadir almacenamiento sin sacrificar espacio. Muy popular en reformas de baños pequeños en <strong><a href="/bilbao/barrios/indautxu.html">Indautxu</a></strong> y <strong>Deusto</strong>.</p>
 
   <h3>Puerta corredera o plegable</h3>
 

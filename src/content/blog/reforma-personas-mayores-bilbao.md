@@ -204,10 +204,10 @@ priceTables: 1
   <p>No hay nada como ver el resultado. Estas son situaciones reales - resumidas y anónimas - de reformas de accesibilidad en Bilbao:</p>
 
   <h3>Caso: Bañera eliminada, autonomía recuperada</h3>
-  <p>María, 78 años, vivía en un piso de los años 70 en Deusto. La bañera era un obstáculo infranqueable: necesitaba ayuda para entrar y salir, y acababa duchándose con una esponja porque la bañera le daba miedo. Después de la reforma (sustitución de bañera por ducha walk-in, barras, suelo antideslizante), María recupera su ducha diaria sin ayuda. "Pensé que nunca podría ducharme sola otra vez", dice. La reforma le costò 5.800 €; las ayudas PADIS cubrieron 3.600 €.</p>
+  <p>María, 78 años, vivía en un piso de los años 70 en <a href="/bilbao/barrios/deusto.html">Deusto</a>. La bañera era un obstáculo infranqueable: necesitaba ayuda para entrar y salir, y acababa duchándose con una esponja porque la bañera le daba miedo. Después de la reforma (sustitución de bañera por ducha walk-in, barras, suelo antideslizante), María recupera su ducha diaria sin ayuda. "Pensé que nunca podría ducharme sola otra vez", dice. La reforma le costò 5.800 €; las ayudas PADIS cubrieron 3.600 €.</p>
 
   <h3>Caso: Puertas ensanchadas, libertad de movimiento</h3>
-  <p>Pedro, 81 años, usa andador desde hace tres años. Su piso en Santutxu tenía puertas de 70 cm. Cada vez que pasaba con el andador, tenía que hacer maniobras imposibles. Ensanchar las tres puertas más importantes (baño, dormitorio, cocina) costó 1.800 € y le devolvió la autonomía dentro de casa. Ahora pasa de una habitación a otra sin tener que pedir ayuda.</p>
+  <p>Pedro, 81 años, usa andador desde hace tres años. Su piso en <a href="/bilbao/barrios/santutxu.html">Santutxu</a> tenía puertas de 70 cm. Cada vez que pasaba con el andador, tenía que hacer maniobras imposibles. Ensanchar las tres puertas más importantes (baño, dormitorio, cocina) costó 1.800 € y le devolvió la autonomía dentro de casa. Ahora pasa de una habitación a otra sin tener que pedir ayuda.</p>
 
   <h3>Caso: Iluminación y suelo, prevención de caídas</h3>
   <p>El piso de Carmen y José, ambos mayores de 75, en San Ignacio, tenía moqueta en todo el piso, cables por el suelo y una iluminación muy tenue. La reforma (retirada de moqueta, instalación de suelo vinílico antideslizante, iluminación LED con detectores de movimiento) costó 3.200 € y eliminó los principales factores de riesgo de caída. "Ya no tenemos miedo a tropezar de noche", dicen.</p>

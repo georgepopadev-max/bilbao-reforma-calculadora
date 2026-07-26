@@ -38,7 +38,7 @@ inContentCTAs:
 priceTables: 0
 ---
 
-<p>Una de las mejores formas de entender cuánto costará tu reforma es ver un caso real. En este artículo te presento el proyecto de reforma de los García (nombre ficticio) para su piso de 80m² en <strong>Santutxu</strong>, Bilbao. Es un piso de tres dormitorios en un edificio de los años 70 que llevaron a reforma media hace dos años.</p>
+<p>Una de las mejores formas de entender cuánto costará tu reforma es ver un caso real. En este artículo te presento el proyecto de reforma de los García (nombre ficticio) para su piso de 80m² en <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, Bilbao. Es un piso de tres dormitorios en un edificio de los años 70 que llevaron a reforma media hace dos años.</p>
 
   <p>El presupuesto real fue de <strong>34.600 euros</strong> (IVA incluido, materiales de gama media). He desglosado cada partida para que puedas usarlo como referencia y entender cómo se estructura un presupuesto de reforma en Bilbao. Con las variaciones de mercado de 2025, el mismo proyecto costaría entre <strong>32.000 y 38.000 euros</strong>.</p>
 <div class="in-content-cta">
@@ -50,7 +50,7 @@ priceTables: 0
 
   <h2>Contexto del Proyecto: El Piso de los García</h2>
 
-  <p>El piso está situado en un edificio de los años 70 en <strong>Santutxu</strong>, una de las zonas más cotizadas de Bilbao para familias. Características:</p>
+  <p>El piso está situado en un edificio de los años 70 en <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, una de las zonas más cotizadas de Bilbao para familias. Características:</p>
 
   <ul>
   <li><strong>Superficie:</strong>80 m² útiles (aproximadamente 95 m² construidos)</li>

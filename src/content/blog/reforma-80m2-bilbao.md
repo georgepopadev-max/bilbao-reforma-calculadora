@@ -68,7 +68,7 @@ priceTables: 2
 
   <h2>Ejemplo real: reforma integral piso 80m² en Bilbao</h2>
 
-  <p>Este ejemplo corresponde a un piso real reformado en el barrio de Indautxu (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
+  <p>Este ejemplo corresponde a un piso real reformado en el barrio de <a href="/bilbao/barrios/indautxu.html">Indautxu</a> (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
   <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>

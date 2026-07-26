@@ -192,15 +192,15 @@ priceTables: 1
 
   <div class="neighborhood-grid">
   <div class="neighborhood-card">
-  <h3>Casco Viejo</h3>
+  <h3><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a></h3>
   <p>Cocinas estrechas y alargadas, típicas de viviendas históricas. Muebles originales de los años 40-50, muchos de ellos empotrados en obra. Las reformas suelen ser completas y requieren tratamiento de humedades y refuerzo de paredes. Logística complicada.</p>
   </div>
   <div class="neighborhood-card">
-  <h3>Indautxu</h3>
+  <h3><a href="/bilbao/barrios/indautxu.html">Indautxu</a></h3>
   <p>Las cocinas de Indautxu son de las más reformadas de Bilbao. Pisos de los años 60-80 con cocinas de 6-8 m² en forma de ele o pasillo. Predominan las reformas medias: cambio de muebles, encimera y electrodomésticos, aprovechando la instalación existente.</p>
   </div>
   <div class="neighborhood-card">
-  <h3>Santutxu</h3>
+  <h3><a href="/bilbao/barrios/santutxu.html">Santutxu</a></h3>
   <p>Cocinas pequeñas de 5-7 m², muchas de ellas con acceso a galerías cerradas. Alta demanda de reformas para integrar la galeria y ganar superficie útil. Las obras suelen incluir desplazamiento de la caldera y gestión de la ventilación.</p>
   </div>
   <div class="neighborhood-card">
@@ -208,7 +208,7 @@ priceTables: 1
   <p>Similar tipología a Santutxu. Cocinas de pasillo con problemas de iluminación y ventilación. Muchas reformas incluyen apertura de la cocina al salón (cocina americana), lo que requiere trabajo de albañilería estructural significativo y, a menudo, licencia.</p>
   </div>
   <div class="neighborhood-card">
-  <h3>Deusto</h3>
+  <h3><a href="/bilbao/barrios/deusto.html">Deusto</a></h3>
   <p>Zona con muchas edificios de los años 50-70. Cocinas de tamaño medio con posibilidad de ampliación hacia terrazas o galerías. Las reformas de cocina en Deusto suelen incluir también mejora de la eficiencia energética (ventanas, aislamiento).</p>
   </div>
   <div class="neighborhood-card">
