@@ -1,0 +1,225 @@
+---
+/**
+ * bilbao/blog/index.astro — Blog listing page for Bilbao
+ * A2 Zone: Lists Bilbao blog posts
+ * Uses frontmatter city as authoritative filter (slug suffix unreliable for Bilbao)
+ */
+import { getCollection } from 'astro:content';
+import CityLayout from '../../../layouts/CityLayout.astro';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter(p => {
+    // Trust frontmatter city for Bilbao articles
+    // Only exclude articles explicitly tagged as donostia or vitoria
+    const slug = p.slug || p.id || '';
+    const hasDonostiaSuffix = slug.endsWith('-donostia');
+    const hasVitoriaSuffix = slug.endsWith('-vitoria');
+    if (hasDonostiaSuffix || hasVitoriaSuffix) return false;
+    return p.data.city === 'bilbao' || !p.data.city;
+  })
+  .sort((a, b) => {
+    const dateA = new Date(a.data?.date || 0).getTime();
+    const dateB = new Date(b.data?.date || 0).getTime();
+    return dateB - dateA;
+  });
+
+const categories = [...new Set(posts.map(p => p.data.category).filter(Boolean))];
+const totalPosts = posts.length;
+---
+
+<CityLayout
+  title="Blog de Reformas Bilbao 2026 | Bilbao Reforma"
+  description="Guías, precios y consejos para reformar tu piso en Bilbao y Bizkaia. Artículos actualizados para 2026: baños, cocinas, suelos, subvenciones y más."
+  canonical="https://www.bilbaoreforma.es/bilbao/blog/"
+  city="bilbao"
+  ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg"
+  ogImageAlt="Blog de Reformas Bilbao"
+>
+  <main id="main-content" class="blog-index">
+    <div class="container">
+      <header class="blog-header">
+        <h1>Blog de Reformas Bilbao</h1>
+        <p><span id="blog-count">{totalPosts}</span> artículos sobre reformas en Bilbao y Bizkaia. Guías de precios, tendencias y consejos para 2026.</p>
+      </header>
+
+      {categories.length > 1 && (
+        <section class="blog-filters">
+          <div class="filter-group">
+            <h3>Categoría</h3>
+            <div class="filter-buttons" id="filter-category">
+              <button data-filter="category" data-value="all" class="filter-btn active">Todas</button>
+              {categories.map(cat => (
+                <button data-filter="category" data-value={cat} class="filter-btn">{cat}</button>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section class="blog-list" id="blog-list">
+        {posts.map(post => {
+          const d = post.data || {};
+          const title = d.title || post.slug;
+          const description = d.description;
+          const date = d.date;
+          const readTime = d.readTime;
+          const category = d.category || '';
+          const href = `/blog/${post.slug}.html`;
+          return (
+            <article class="blog-card" data-category={category}>
+              <a href={href}>
+                <div class="blog-card-badges">
+                  <span class="city-badge city-bilbao">Bilbao</span>
+                  {category && <span class="category-badge">{category}</span>}
+                </div>
+                <h2>{title}</h2>
+                {description && <p class="blog-excerpt">{description}</p>}
+                <div class="blog-meta">
+                  {date && <time>{new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>}
+                  {readTime && <span>{readTime}</span>}
+                </div>
+              </a>
+            </article>
+          );
+        })}
+      </section>
+    </div>
+  </main>
+</CityLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+  .blog-index { padding: 3rem 0 5rem; }
+  .blog-header { text-align: center; margin-bottom: 3rem; }
+  .blog-header h1 {
+    font-family: var(--font-playfair);
+    font-size: 2.5rem;
+    color: var(--color-grafito);
+    margin-bottom: 0.75rem;
+  }
+  .blog-header p { color: var(--color-gris); font-size: 1.125rem; }
+
+  .blog-filters {
+    background: var(--color-crema);
+    border: 1px solid var(--color-beige);
+    border-radius: var(--radius-card);
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .filter-group h3 {
+    font-family: var(--font-playfair);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+    margin-bottom: 0.625rem;
+  }
+  .filter-buttons { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    background: var(--color-blanco);
+    border: 1.5px solid var(--color-terracota);
+    color: var(--color-terracota);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+  }
+  .filter-btn:hover { background: var(--color-terracota-light); }
+  .filter-btn.active { background: var(--color-terracota); color: white; }
+
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .blog-card {
+    background: var(--color-blanco);
+    border: 1px solid var(--color-beige);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    transition: all var(--transition-base);
+  }
+  .blog-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+  }
+  .blog-card a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .blog-card-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .city-badge {
+    padding: 0.25rem 0.625rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .city-badge.city-bilbao { background: var(--color-terracota); color: var(--color-blanco); }
+  .category-badge {
+    padding: 0.25rem 0.625rem;
+    background: var(--color-crema);
+    border: 1px solid var(--color-beige);
+    color: var(--color-gris);
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 500;
+  }
+  .blog-card h2 {
+    font-family: var(--font-playfair);
+    font-size: 1.125rem;
+    color: var(--color-grafito);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  .blog-excerpt {
+    color: var(--color-gris);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-beige);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('#filter-category button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#filter-category button').forEach(b => b.classList.toggle('active', b === btn));
+      const catFilter = (document.querySelector('#filter-category button.active') as HTMLElement)?.dataset.value || 'all';
+      const cards = document.querySelectorAll('.blog-card');
+      let visible = 0;
+      cards.forEach(card => {
+        const cat = (card as HTMLElement).dataset.category || '';
+        const match = catFilter === 'all' || cat === catFilter;
+        (card as HTMLElement).style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      const counter = document.getElementById('blog-count');
+      if (counter) counter.textContent = String(visible);
+    });
+  });
+</script>

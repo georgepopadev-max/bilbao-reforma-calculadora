@@ -1,0 +1,115 @@
+---
+import CityLayout from '../../../../layouts/CityLayout.astro';
+import HeroCity from '../../../../components/home/HeroCity.astro';
+import HowItWorks from '../../../../components/home/HowItWorks.astro';
+import WhyUs from '../../../../components/home/WhyUs.astro';
+import TestimonialsCity from '../../../../components/home/TestimonialsCity.astro';
+import PopularArticles from '../../../../components/home/PopularArticles.astro';
+import FAQCity from '../../../../components/home/FAQCity.astro';
+import FinalCTA from '../../../../components/home/FinalCTA.astro';
+
+const ciudad = 'bilbao';
+const barrio = 'Indautxu';
+const barrioSlug = 'indautxu';
+
+---
+
+<CityLayout
+  title="Reformas en Indautxu Bilbao 2026"
+  description="Reformas en Indautxu Bilbao. Calcula el presupuesto con multiplicador ×1.15. Empresas verificadas del barrio. Rápido y gratis."
+  canonical="https://www.bilbaoreforma.es/bilbao/barrios/indautxu/"
+  city="bilbao"
+  ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg"
+  ogImageAlt="Reformas en Indautxu Bilbao 2026"
+ 
+>
+  <HeroCity city="bilbao" titulo="Reformas en Indautxu, Bilbao" frase="La zona prime de Bilbao, con servicios de reforma al nivel que mereces." />
+
+  <section class="barrio-calculator-strip">
+    <div class="container">
+      <div class="barrio-calc-card">
+        <div class="barrio-calc-info">
+          <span class="barrio-calc-badge">×1.15</span>
+          <div>
+            <strong>Calculadora de reformas Indautxu</strong>
+            <p>Precio base × 1.15 — el multiplicador de Indautxu ya aplicado automáticamente.</p>
+          </div>
+        </div>
+        <a href="/bilbao/calculadora/integral-bilbao.html?barrio=indautxu" class="btn-barrio-calc">Calcular presupuesto →</a>
+      </div>
+    </div>
+  </section>
+
+  <HowItWorks city="bilbao" />
+  <WhyUs city="bilbao" />
+  <TestimonialsCity city="bilbao" />
+  <PopularArticles city="bilbao" />
+
+  <section class="barrio-content-section">
+    <div class="container">
+      <div class="barrio-content-grid">
+        <article class="barrio-content-article">
+          <h2>¿Por qué Indautxu es la zona prime de reformas?</h2>
+          <p>Indautxu concentra la mayor parte de la actividad comercial y de servicios de Bilbao. Los edificios de esta zona —construidos principalmente entre 1950 y 1980— requieren reformas que combinen la modernización de instalaciones con el respeto a la estructura original del edificio.</p>
+          <p>El precio medio de reforma integral en Indautxu se sitúa entre <strong>800 y 1.400 €/m²</strong>, dependiendo del nivel de acabados. La calculadora aplica automáticamente el multiplicador ×1.15 sobre el precio base de Bilbao.</p>
+          <h3>Licencias en Indautxu</h3>
+          <p>Indautxu incluye parte del casco urbano protegido de Bilbao. our team gestiona las licencias de obra menor y obra mayor ante el Ayuntamiento de Bilbao. our team recomienda iniciar los trámites con al menos <strong>4–6 semanas de antelación</strong>.</p>
+          <h3>Empresas de reforma en Indautxu</h3>
+          <p>Directorio de empresas de reformas verificadas que trabajan activamente en Indautxu y barrios cercanos: Abando, Rekalde y San Pedro de Deusto.</p>
+        </article>
+        <aside class="barrio-content-sidebar">
+          <div class="barrio-quick-facts">
+            <h3>Datos del barrio</h3>
+            <ul>
+              <li><strong>Zona:</strong> Bilbao centro-este</li>
+              <li><strong>Multiplicador:</strong> ×1.15</li>
+              <li><strong>Tipo edificios:</strong> Años 50–80, hormigón</li>
+              <li><strong>Precio integral:</strong> 800–1.400 €/m²</li>
+              <li><strong>Licencia:</strong> Ayuntamiento Bilbao</li>
+            </ul>
+          </div>
+          <div class="barrio-calc-mini">
+            <h3>Calculadora rápida</h3>
+            <p>Usa el multiplicador de Indautxu automáticamente:</p>
+            <a href="/bilbao/calculadora/integral-bilbao.html?barrio=indautxu" class="btn-sidebar-calc">Calcular →</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <FAQCity city="bilbao" />
+  <FinalCTA city="bilbao" />
+</CityLayout>
+
+<style>
+  .barrio-calculator-strip { background: var(--color-verde-montana, #7D8B6A); padding: 1.5rem 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+  .barrio-calc-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+  .barrio-calc-info { display: flex; align-items: center; gap: 1rem; color: white; }
+  .barrio-calc-badge { background: white; color: #7D8B6A; font-weight: 800; font-size: 1.25rem; padding: 0.5rem 0.75rem; border-radius: 8px; }
+  .barrio-calc-info p { margin: 0.25rem 0 0; font-size: 0.9rem; opacity: 0.9; }
+  .btn-barrio-calc { background: white; color: #7D8B6A; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .btn-barrio-calc:hover { background: #f0f0f0; }
+
+  .barrio-content-section { padding: 4rem 0; background: white; }
+  .barrio-content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 3rem; }
+  .barrio-content-article h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 1rem; color: #1a1a1a; }
+  .barrio-content-article h3 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: #333; }
+  .barrio-content-article p { line-height: 1.8; color: #444; margin-bottom: 1rem; }
+  .barrio-quick-facts { background: #f8f7f4; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
+  .barrio-quick-facts h3 { font-size: 1rem; margin-bottom: 0.75rem; color: #333; }
+  .barrio-quick-facts ul { list-style: none; padding: 0; margin: 0; }
+  .barrio-quick-facts li { font-size: 0.875rem; padding: 0.4rem 0; border-bottom: 1px solid #e8e8e8; color: #555; }
+  .barrio-quick-facts li:last-child { border-bottom: none; }
+  .barrio-calc-mini { background: var(--color-terracota, #C45C3E); border-radius: 12px; padding: 1.25rem; color: white; }
+  .barrio-calc-mini h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .barrio-calc-mini p { font-size: 0.875rem; margin-bottom: 1rem; opacity: 0.9; }
+  .btn-sidebar-calc { display: block; background: white; color: var(--color-terracota, #C45C3E); text-align: center; padding: 0.6rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 0.9rem; }
+
+  @media (max-width: 768px) {
+    .barrio-content-grid { grid-template-columns: 1fr; }
+    .barrio-calc-card { flex-direction: column; align-items: flex-start; }
+    .barrio-calc-info { flex-direction: column; align-items: flex-start; }
+  }
+</style>
