@@ -1,6 +1,6 @@
 ---
-title: "Subvenciones Bilbao 2026"
-description: "Subvenciones reformas Bilbao 2026: guía de ayudas autonómicas, municipales y estatales para rehabilitar vivienda. Cuantías, plazos y cómo solicitarlas."
+title: "Subvenciones para Reformas Bilbao 2026 | Guía Actualizada"
+description: "Todas las ayudas y grants para reformas en Bilbao 2026. IDAE, Gobierno Vasco y Ayuntamiento. Solicita antes del cierre de convocatoria."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026.html"
 date: "21 junio 2026"
 readTime: "10 min"

@@ -1,6 +1,6 @@
 ---
-title: "Reforma Baño Donostia 2026"
-description: "Precio reforma baño Donostia 2026. Cuánto cuesta reformar tu baño según metros y calidades. Presupuesto orientativo gratis en 2 minutos."
+title: "Reforma de Baño en Donostia 2026: Precios y Guía"
+description: "Cuánto cuesta reformar un baño en Donostia. Guía de precios por m², calidades y errores comunes. Solicita 3 presupuestos sin compromiso."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia.html"
 readTime: "9 min"
 category: "bano"

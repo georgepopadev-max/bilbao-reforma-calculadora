@@ -1,6 +1,6 @@
 ---
-title: "Duración Reforma Integral Bilbao 2026"
-description: "Cuánto tarda una reforma integral en Bilbao: timeline realista de 8 a 20 semanas. Fases, plazos y cómo acelerar tu proyecto."
+title: "Cuánto tarda una Reforma Integral en Bilbao | Plazos 2026"
+description: "Descubre cuánto tarda una reforma integral en Bilbao según tipo de obra. Plazos reales de 2 a 6 meses. Incluye licencias y tiempo de obra por m²."
 canonical: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao.html"
 date: "4 junio 2026"
 category: "integral"

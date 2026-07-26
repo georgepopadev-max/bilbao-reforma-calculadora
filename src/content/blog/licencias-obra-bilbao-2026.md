@@ -1,6 +1,6 @@
 ---
-title: "Licencias Obra Bilbao 2026: Tipos y Costes"
-description: "Guía completa de licencias de obra Bilbao 2026: obra mayor, menor, comunicación previa, declaración responsable, costes, ICIO y plazos. Actualizado."
+title: "Licencias de Obra Bilbao 2026: Guía y Precios"
+description: "Todo sobre licencias de obra en Bilbao: tipos, precios, plazos y qué obras requieren proyecto técnico. Actualizado 2026."
 canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026.html"
 date: "21 junio 2026"
 readTime: "9 min"

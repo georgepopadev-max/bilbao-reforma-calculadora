@@ -1,6 +1,6 @@
 ---
-title: "Pintar Piso Vitoria: Precios por m² 2026"
-description: "Precio pintar piso Vitoria 2026: €/m² según tipo de pintura, preparación de paredes, diferencia entre vinílica y acrílica, y coste de alisar gotelé en el mercado alavés."
+title: "Pintar un Piso en Vitoria 2026: Precios por m²"
+description: "Precio de pintar un piso en Vitoria: desde 8€/m². Alisado de paredes, acabados y cuánto cuesta cada habitación. Presupuesto gratis."
 canonical: https://www.bilbaoreforma.es/blog/pintar-piso-vitoria.html
 city: vitoria
 category: Acabados

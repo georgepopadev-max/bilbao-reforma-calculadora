@@ -1,6 +1,6 @@
 ---
-title: "Reforma para Mayores Bilbao 2026"
-description: "Reforma para personas mayores en Bilbao: elimina barreras arquitectónicas. Ayudas PADIS, Precios orientativos para adaptaciones de accesibilidad en Bizkaia."
+title: "Reforma para Mayores en Bilbao | Accesibilidad y Ayudas 2026"
+description: "Reformas adaptadas para personas mayores en Bilbao. Subtítulo con ayudas, grants y soluciones sin barreras. Consulta precio orientativo gratis."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao.html"
 date: "4 junio 2026"
 category: "general"
