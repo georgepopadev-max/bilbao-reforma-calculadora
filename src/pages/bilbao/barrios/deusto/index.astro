@@ -1,108 +1,314 @@
 ---
-import CityLayout from '../../../../layouts/CityLayout.astro';
-import HeroCity from '../../../../components/home/HeroCity.astro';
-import HowItWorks from '../../../../components/home/HowItWorks.astro';
-import WhyUs from '../../../../components/home/WhyUs.astro';
-import TestimonialsCity from '../../../../components/home/TestimonialsCity.astro';
-import PopularArticles from '../../../../components/home/PopularArticles.astro';
-import FAQCity from '../../../../components/home/FAQCity.astro';
-import FinalCTA from '../../../../components/home/FinalCTA.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Header from '../../../../components/Header.astro';
+import Footer from '../../../../components/Footer.astro';
 
-const ciudad = 'bilbao';
-const barrio = 'Deusto';
-
+const jsonSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cuánto cuesta reformar un piso en Deusto, Bilbao?", "acceptedAnswer": { "@type": "Answer", "text": "El precio de reforma en Deusto oscila entre 700 €/m² y 1.200 €/m² según calidades. Para un piso de 80 m²: reforma básica entre 56.000 € y 72.000 €, reforma media entre 72.000 € y 96.000 € y reforma premium entre 96.000 € y 112.000 €. El multiplicador de barrio es x1.00." } },
+      { "@type": "Question", "name": "¿Qué tiene de particular reformar en Deusto?", "acceptedAnswer": { "@type": "Answer", "text": "Deusto tiene particularidades importantes: edificios con estructura de madera en las zonas más antiguas (San Pedro de Deusto), necesidad de apeos en reformas integrales de edificios viejos, buena comunicación con el resto de Bilbao por metro y autobús, y un tejido urbano mixto con universidades, edificios residenciales y zonas comerciales." } },
+      { "@type": "Question", "name": "¿Hay empresas de reformas especializadas en Deusto?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. En Deusto operan varias empresas de reformas con experiencia demostrable en el barrio. Our calculadora de presupuestos conecta con empresas verificadas que conocen las particularidades de los edificios de la zona, incluyendo las estructuras de madera de San Pedro de Deusto y los edificios de los años 60-70." } },
+      { "@type": "Question", "name": "¿Qué edificios hay en Deusto?", "acceptedAnswer": { "@type": "Answer", "text": "Deusto tiene tres tipos principales de edificios: edificios antiguos con estructura de madera (especialmente cerca de San Pedro de Deusto), edificios de los años 60-70 con estructura de hormigón y fachadas de obra vista, y edificios modernos reformados cerca del campus universitario y la estación de Renfe. Cada tipo requiere un enfoque diferente en la reforma." } },
+      { "@type": "Question", "name": "¿Cómo afecta el multiplicador de barrio al precio de reforma en Deusto?", "acceptedAnswer": { "@type": "Answer", "text": "El multiplicador de Deusto es x1.00, el mismo que el centro de Bilbao. Esto significa que los precios de reforma en Deusto se alinean con la media de Bilbao, sin sobrecostes significativos por ubicación. La excepción son los edificios de madera de San Pedro de Deusto, que pueden requerir trabajos estructurales adicionales." } },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Reformas en Deusto, Bilbao",
+    "description": "Empresas de reformas verificadas con experiencia en Deusto, San Pedro de Deusto y barrios cercanos de Ibaiondo. Multiplicador x1.00.",
+    "url": "https://www.bilbaoreforma.es/bilbao/barrios/deusto/",
+    "areaServed": { "@type": "Neighborhood", "name": "Deusto", "containedInPlace": { "@type": "City", "name": "Bilbao" } },
+    "address": { "@type": "PostalAddress", "addressLocality": "Deusto", addressRegion: "Bizkaia", addressCountry: "ES" },
+    "priceRange": "€€",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/" },
+      { "@type": "ListItem", "position": 3, "name": "Barrios", "item": "https://www.bilbaoreforma.es/bilbao/barrios/" },
+      { "@type": "ListItem", "position": 4, "name": "Deusto", "item": "https://www.bilbaoreforma.es/bilbao/barrios/deusto/" },
+    ],
+  },
+];
 ---
-
-<CityLayout
-  title="Reformas en Deusto Bilbao 2026"
-  description="Reformas en Deusto Bilbao. Calcula tu presupuesto con el multiplicador del barrio. Empresas verificadas con experiencia en Deusto."
+<BaseLayout
+  title="Reforma en Deusto Bilbao | Precios y Empresas Especializadas 2026"
+  description="Reformar un piso en Deusto (Bilbao): precios orientativos por m², empresas especializadas y testimonios de vecinos. Calcula tu presupuesto en 2 minutos."
   canonical="https://www.bilbaoreforma.es/bilbao/barrios/deusto/"
-  city="bilbao"
+  jsonSchemas={jsonSchemas}
   ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg"
   ogImageAlt="Reformas en Deusto Bilbao 2026"
- 
 >
-  <HeroCity city="bilbao" titulo="Reformas en Deusto, Bilbao" frase="Al lado del Nervión, bien comunicado y con una mezcla única de edificios." />
+  <Header city="bilbao" section="barrios" />
 
-  <section class="barrio-calculator-strip">
-    <div class="container">
-      <div class="barrio-calc-card">
-        <div class="barrio-calc-info">
-          <span class="barrio-calc-badge">×1.00</span>
-          <div>
-            <strong>Calculadora de reformas Deusto</strong>
-            <p>Precio base × 1.00 — el multiplicador de Deusto ya aplicado.</p>
-          </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-barrio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Barrio de Bilbao</span>
+        <h1 class="hero-title">Reforma de piso en Deusto Bilbao 2026</h1>
+        <p class="hero-subtitle">Al lado del Nervión, bien comunicado y con una mezcla única de edificios.</p>
+        <div class="hero-cta">
+          <a href="#calculadora" class="btn-primary">Calcular presupuesto →</a>
+          <a href="#contenido" class="btn-secondary">Ver información</a>
         </div>
-        <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-barrio-calc">Calcular presupuesto →</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <HowItWorks city="bilbao" />
-  <WhyUs city="bilbao" />
-  <TestimonialsCity city="bilbao" />
-  <PopularArticles city="bilbao" />
+    <!-- Calculadora Strip -->
+    <section class="calc-strip" id="calculadora">
+      <div class="container">
+        <div class="calc-card">
+          <div class="calc-info">
+            <span class="calc-badge">×1.00</span>
+            <div>
+              <strong>Calculadora de reformas Deusto</strong>
+              <p>Precio base × 1.00 — el multiplicador de Deusto ya aplicado.</p>
+            </div>
+          </div>
+          <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-calc">Calcular presupuesto →</a>
+        </div>
+      </div>
+    </section>
 
-  <section class="barrio-content-section">
-    <div class="container">
-      <div class="barrio-content-grid">
-        <article class="barrio-content-article">
-          <h2>Deusto: la universidad, el Nervión y reformas con identidad propia</h2>
-          <p>Deusto es uno de los barrios más característicos de Bilbao, dividido por el Puente de Deusto sobre el Nervión. Su cercanía al campus universitario, la estación de Renfe y el centro comercial Zubiarte lo convierten en una zona con <strong>demanda constante de reformas</strong>, tanto de pisos de estudiantes como de viviendas familiares.</p>
-          <p>El precio medio de reforma integral en Deusto se sitúa entre <strong>700 y 1.200 €/m²</strong>, en línea con la media de Bilbao.</p>
-          <h3>Particularidades de los edificios de Deusto</h3>
-          <p>Una característica importante de Deusto es la presencia de edificios con <strong>estructura de madera</strong> en las zonas más antiguas, especialmente cerca de San Pedro de Deusto. Estas reformas requieren un tratamiento especial por parte de arquitectos e ingenieros, lo que puede incrementar el coste entre un 10 % y un 20 %.</p>
-          <h3>Empresas de reforma en Deusto</h3>
-          <p>Directorio de empresas de reformas verificadas que trabajan en Deusto, San Pedro de Deusto y los barrios cercanos de Ibaiondo.</p>
-        </article>
-        <aside class="barrio-content-sidebar">
-          <div class="barrio-quick-facts">
-            <h3>Datos del barrio</h3>
+    <!-- Content Section -->
+    <section class="content-section" id="contenido">
+      <div class="container">
+        <div class="content-grid">
+          <article class="content-main">
+            <h2>Deusto: la universidad, el Nervión y reformas con identidad propia</h2>
+
+            <p>Deusto es uno de los barrios más característicos de Bilbao, dividido por el Puente de Deusto sobre el Nervión. Su cercanía al campus universitario, la estación de Renfe y el centro comercial Zubiarte lo convierten en una zona con <strong>demanda constante de reformas</strong>, tanto de pisos de estudiantes como de viviendas familiares.</p>
+
+            <p>El precio medio de reforma integral en Deusto se sitúa entre <strong>700 y 1.200 €/m²</strong>, en línea con la media de Bilbao. El multiplicador de barrio para Deusto es de <strong>x1.00</strong>, el mismo que el centro, lo que significa que no hay sobrecoste adicional por ubicación respecto a otras zonas de Bilbao.</p>
+
+            <h3>Particularidades de los edificios de Deusto</h3>
+
+            <p>Una característica importante de Deusto es la presencia de edificios con <strong>estructura de madera</strong> en las zonas más antiguas, especialmente cerca de San Pedro de Deusto. Estas reformas requieren un tratamiento especial por parte de arquitectos e ingenieros, lo que puede incrementar el coste entre un 10% y un 20%.</p>
+
+            <p>Además de los edificios antiguos, Deusto cuenta con construcciones de los años 60 y 70 con estructura de hormigón y fachadas de obra vista, que presentan sus propios desafíos de reforma, y con edificios más modernos cerca del campus universitario que han sido reformados recientemente y sirven como referente de lo que puede conseguirse con una buena rehabilitación.</p>
+
+            <h3>Tipos de edificios y reformas más habituales en Deusto</h3>
+
+            <p>En Deusto podemos identificar tres perfiles de edificios con necesidades de reforma diferenciadas:</p>
+
             <ul>
-              <li><strong>Zona:</strong> Bilbao oeste</li>
-              <li><strong>Multiplicador:</strong> ×1.00</li>
-              <li><strong>Tipo edificios:</strong> Mixto: madera + hormigón</li>
-              <li><strong>Precio integral:</strong> 700–1.200 €/m²</li>
-              <li><strong>Distancia centro:</strong> ~5 minutos metro</li>
+              <li><strong>Edificios de estructura de madera (San Pedro de Deusto):</strong> construidos antes de los años 40, requieren valoración estructural obligatoria antes de cualquier obra. La rehabilitación integral necesita proyecto de arquitecto e ingeniero, y los costes son entre un 10% y un 25% superiores a los de un edificio de hormigón.</li>
+              <li><strong>Edificios de hormigón de los años 60-70:</strong> la mayoría del parque inmobiliario de Deusto. Las instalaciones de fontanería y electricidad están al final de su vida útil. Las reformas integrales son habituales y el coste se alinea con la media de Bilbao.</li>
+              <li><strong>Edificios cerca del campus y Renfe:</strong> muchos han sido reformados recientemente. Son pisos con buena demanda de alquiler universitario, lo que hace rentable una reforma de calidad para ponerlos en el mercado de alquiler.</li>
             </ul>
-          </div>
-          <div class="barrio-calc-mini">
-            <h3>Calculadora rápida</h3>
-            <p>Usa el multiplicador de Deusto automáticamente:</p>
-            <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-sidebar-calc">Calcular →</a>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
 
-  <FAQCity city="bilbao" />
-  <FinalCTA city="bilbao" />
-</CityLayout>
+            <h3>Barrios cercanos y su relación con Deusto</h3>
+
+            <p>Deusto limita con varios neighborhoods de Bilbao que también influyen en el mercado de reformas de la zona:</p>
+
+            <ul>
+              <li><strong>San Pedro de Deusto:</strong> la zona más antigua, con edificios singulares y estructuras de madera. Multiplicador x1.00 pero con sobrecostes estructurales.</li>
+              <li><strong>Ibaiondo:</strong> barrio administrativo que incluye San Pedro de Deusto y parte del Casco Viejo. Buena conectividad con Deusto.</li>
+              <li><strong>Santutxu:</strong> al otro lado del Túnez, con buena comunicación por metro. Precios de reforma similares.</li>
+              <li><strong>Indautxu:</strong> zona comercial y residencial, una de las más valoradas de Bilbao, con precios de reforma en el tramo alto.</li>
+            </ul>
+
+            <h3>Precio de reforma por metros cuadrados en Deusto</h3>
+
+            <p>Los siguientes precios son orientativos para <strong>reformas en Deusto</strong>, con el multiplicador de barrio ya aplicado:</p>
+
+            <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+<table class="price-table">
+              <caption>Precios orientativos reforma en Deusto Bilbao 2026 (material + mano de obra, IVA incluido)</caption>
+              <thead>
+                <tr>
+                  <th>Tipo de reforma</th>
+                  <th>Precio €/m²</th>
+                  <th>Piso 60 m²</th>
+                  <th>Piso 80 m²</th>
+                  <th>Piso 100 m²</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Básico</strong></td>
+                  <td>700 – 900 €/m²</td>
+                  <td>42.000 – 54.000 €</td>
+                  <td>56.000 – 72.000 €</td>
+                  <td>70.000 – 90.000 €</td>
+                </tr>
+                <tr>
+                  <td><strong>Medio</strong></td>
+                  <td>900 – 1.200 €/m²</td>
+                  <td>54.000 – 72.000 €</td>
+                  <td>72.000 – 96.000 €</td>
+                  <td>90.000 – 120.000 €</td>
+                </tr>
+                <tr>
+                  <td><strong>Alto</strong></td>
+                  <td>1.200 – 1.400 €/m²</td>
+                  <td>72.000 – 84.000 €</td>
+                  <td>96.000 – 112.000 €</td>
+                  <td>120.000 – 140.000 €</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+            <p>Nota: Los edificios con estructura de madera de San Pedro de Deusto pueden tener costes adicionales del 10-20% por trabajos estructurales y proyectos de ingeniería.</p>
+
+            <h3>Empresas de reforma en Deusto</h3>
+
+            <p>Bilbao Reforma trabaja con un directorio de <strong>empresas de reformas verificadas</strong> que tienen experiencia demostrable en Deusto, San Pedro de Deusto y los barrios cercanos de Ibaiondo. Estas empresas conocen las particularidades de los edificios de la zona y pueden hacer valoraciones realistas del estado de las viviendas antes de presentar un presupuesto.</p>
+
+            <div class="in-content-cta">
+              <span class="in-content-cta-label">📊 Calculadora recomendada</span>
+              <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto">Calcula tu presupuesto de reforma en Deusto con empresas de la zona →</a>
+            </div>
+
+            <h3>Preguntas frecuentes sobre reformas en Deusto</h3>
+
+            <div class="faq-block">
+              <details>
+                <summary><strong>¿Cuánto cuesta una reforma de cocina en Deusto?</strong></summary>
+                <p>Una reforma de cocina en Deusto oscila entre 5.000 € y 18.000 € según calidades y metros cuadrados. Para una cocina de 10 m² en calidad media, el presupuesto orientativo es de 9.000 € a 13.000 €. Si incluye cambio de distribución o移设 de instalaciones, el coste puede aumentar entre 1.500 € y 4.000 €.</p>
+              </details>
+              <details>
+                <summary><strong>¿Necesito licencia para reformar en Deusto?</strong></summary>
+                <p>Sí. Toda reforma integral en Bilbao, incluido Deusto, requiere licencia de obra mayor del Ayuntamiento de Bilbao. Para reformas parciales que no toquen instalaciones generales ni estructura, generalmente no se requiere licencia, aunque sí comunicación previa. Consulta con el Área de Urbanismo del Ayuntamiento para tu caso concreto.</p>
+              </details>
+              <details>
+                <summary><strong>¿Cuánto tarda una reforma integral en Deusto?</strong></summary>
+                <p>Una reforma integral de un piso de 80 m² en Deusto requiere entre 45 y 90 días hábiles. Los edificios de madera de San Pedro de Deusto suelen requerir más tiempo por la complejidad de los trabajos estructurales. Los edificios de los años 60-70 con estructura de hormigón presentan plazos similares al resto de Bilbao.</p>
+              </details>
+              <details>
+                <summary><strong>¿Merece la pena comprar un piso antiguo en Deusto para reformar?</strong></summary>
+                <p>Sí, especialmente cerca del campus universitario y la estación de Renfe. Los pisos antiguos de Deusto tienen precios de compra inferiores a los de Indautxu o el Ensanche, y el coste de reforma integral es asumible. Un piso reformado en Deusto puede alquilarse bien gracias a la demanda universitaria, con rendimientos del 4-6% bruto anual.</p>
+              </details>
+              <details>
+                <summary><strong>¿Qué barrios de Deusto tienen más demanda de reformas?</strong></summary>
+                <p>Las zonas con mayor demanda de reformas en Deusto son: San Pedro de Deusto (por la antigüedad de su parque inmobiliario), el entorno de la estación de Renfe (por su dinamismo comercial y de alquiler) y la zona de吃到玩 cerca del campus (por la demanda de pisos de estudiantes). Los precios de reforma son similares en todas las zonas; la diferencia está en el estado previo del edificio.</p>
+              </details>
+            </div>
+          </article>
+
+          <aside class="content-sidebar">
+            <div class="sidebar-card quick-facts">
+              <h3>Datos del barrio</h3>
+              <ul>
+                <li><strong>Zona:</strong> Bilbao oeste</li>
+                <li><strong>Multiplicador:</strong> ×1.00</li>
+                <li><strong>Tipo edificios:</strong> Mixto: madera + hormigón</li>
+                <li><strong>Precio integral:</strong> 700–1.200 €/m²</li>
+                <li><strong>Distancia centro:</strong> ~5 minutos metro</li>
+                <li><strong>Edificios madera:</strong> Sí (San Pedro)</li>
+                <li><strong>Demanda:</strong> Alta (universitaria + residencial)</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card calc-mini">
+              <h3>Calculadora rápida</h3>
+              <p>Usa el multiplicador de Deusto automáticamente:</p>
+              <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-sidebar-calc">Calcular →</a>
+            </div>
+
+            <div class="sidebar-card related-articles">
+              <h3>Artículos relacionados</h3>
+              <ul>
+                <li><a href="/bilbao/blog/cuanto-cuesta-reforma-integral-bilbao.html">Cuánto cuesta reforma integral Bilbao</a></li>
+                <li><a href="/bilbao/calculadora/integral-bilbao.html">Calculadora reforma Bilbao</a></li>
+                <li><a href="/bilbao/barrios/santutxu/index.html">Reformas en Santutxu</a></li>
+                <li><a href="/bilbao/barrios/indautxu/index.html">Reformas en Indautxu</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>¿Quieres saber cuánto cuesta tu reforma en Deusto?</h2>
+        <p>Nuestra calculadora aplica el multiplicador de Deusto automáticamente y te conecta con empresas de la zona.</p>
+        <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-cta">Calcular mi presupuesto →</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer city="bilbao" />
+</BaseLayout>
 
 <style>
-  .barrio-calculator-strip { background: var(--color-verde-montana, #7D8B6A); padding: 1.5rem 0; }
+  .hero-barrio { position: relative; background: linear-gradient(135deg, #2D5016 0%, #4A6741 50%, #2D5016 100%); min-height: 420px; display: flex; align-items: center; padding: 0 2rem; }
+  .hero-overlay { position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
+  .hero-content { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; color: white; }
+  .hero-badge { display: inline-block; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.25rem 0.75rem; border-radius: 999px; margin-bottom: 1rem; }
+  .hero-title { font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: white; }
+  .hero-subtitle { font-size: 1.125rem; opacity: 0.9; margin-bottom: 2rem; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: #C45C3E; color: white; padding: 0.875rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1rem; }
+  .btn-primary:hover { background: #A34A2E; }
+  .btn-secondary { background: rgba(255,255,255,0.15); color: white; padding: 0.875rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 1rem; border: 1px solid rgba(255,255,255,0.3); }
+  .btn-secondary:hover { background: rgba(255,255,255,0.25); }
+  .calc-strip { background: #4A6741; padding: 1.5rem 0; }
   .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
-  .barrio-calc-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
-  .barrio-calc-info { display: flex; align-items: center; gap: 1rem; color: white; }
-  .barrio-calc-badge { background: white; color: #7D8B6A; font-weight: 800; font-size: 1.25rem; padding: 0.5rem 0.75rem; border-radius: 8px; }
-  .barrio-calc-info p { margin: 0.25rem 0 0; font-size: 0.9rem; opacity: 0.9; }
-  .btn-barrio-calc { background: white; color: #7D8B6A; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; white-space: nowrap; }
-  .btn-barrio-calc:hover { background: #f0f0f0; }
-  .barrio-content-section { padding: 4rem 0; background: white; }
-  .barrio-content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 3rem; }
-  .barrio-content-article h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 1rem; color: #1a1a1a; }
-  .barrio-content-article h3 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: #333; }
-  .barrio-content-article p { line-height: 1.8; color: #444; margin-bottom: 1rem; }
-  .barrio-quick-facts { background: #f8f7f4; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
-  .barrio-quick-facts h3 { font-size: 1rem; margin-bottom: 0.75rem; color: #333; }
-  .barrio-quick-facts ul { list-style: none; padding: 0; margin: 0; }
-  .barrio-quick-facts li { font-size: 0.875rem; padding: 0.4rem 0; border-bottom: 1px solid #e8e8e8; color: #555; }
-  .barrio-quick-facts li:last-child { border-bottom: none; }
-  .barrio-calc-mini { background: var(--color-terracota, #C45C3E); border-radius: 12px; padding: 1.25rem; color: white; }
-  .barrio-calc-mini h3 { font-size: 1rem; margin-bottom: 0.5rem; }
-  .barrio-calc-mini p { font-size: 0.875rem; margin-bottom: 1rem; opacity: 0.9; }
-  .btn-sidebar-calc { display: block; background: white; color: var(--color-terracota, #C45C3E); text-align: center; padding: 0.6rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 0.9rem; }
-  @media (max-width: 768px) { .barrio-content-grid { grid-template-columns: 1fr; } .barrio-calc-card { flex-direction: column; align-items: flex-start; } }
+  .calc-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+  .calc-info { display: flex; align-items: center; gap: 1rem; color: white; }
+  .calc-badge { background: white; color: #4A6741; font-weight: 800; font-size: 1.25rem; padding: 0.5rem 0.75rem; border-radius: 8px; }
+  .calc-info strong { display: block; color: white; font-size: 1rem; }
+  .calc-info p { margin: 0.25rem 0 0; font-size: 0.875rem; opacity: 0.85; }
+  .btn-calc { background: white; color: #4A6741; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; white-space: nowrap; font-size: 0.9375rem; }
+  .btn-calc:hover { background: #f0f0f0; }
+  .content-section { padding: 4rem 0; background: white; }
+  .content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 3rem; }
+  .content-main h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; margin-bottom: 1rem; color: #1a1a1a; }
+  .content-main h3 { font-size: 1.15rem; margin: 2rem 0 0.75rem; color: #333; font-weight: 600; }
+  .content-main p { line-height: 1.8; color: #444; margin-bottom: 1rem; }
+  .content-main ul { margin: 1rem 0 1.5rem 1.5rem; }
+  .content-main li { line-height: 1.7; margin-bottom: 0.5rem; color: #444; }
+  .content-main :global(table) { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.875rem; }
+  .content-main :global(th) { background: #4A6741; color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem; }
+  .content-main :global(td) { padding: 0.75rem 1rem; border-bottom: 1px solid #E8E2D9; }
+  .content-main :global(tr:nth-child(even) td) { background: #FAF7F2; }
+  .in-content-cta { background: #FAF7F2; border-left: 3px solid #C45C3E; padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+  .in-content-cta-label { display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #C45C3E; margin-bottom: 0.25rem; }
+  .in-content-cta a { font-size: 0.9375rem; color: #2D2D2D; font-weight: 500; text-decoration: none; }
+  .in-content-cta a:hover { text-decoration: underline; }
+  .faq-block { margin: 2rem 0; }
+  .faq-block details { border-bottom: 1px solid #E8E2D9; padding: 1rem 0; }
+  .faq-block details:first-child { border-top: 1px solid #E8E2D9; }
+  .faq-block summary { font-weight: 600; color: #2D2D2D; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-block summary::-webkit-details-marker { display: none; }
+  .faq-block summary::after { content: '+'; font-size: 1.25rem; color: #C45C3E; font-weight: 300; }
+  .faq-block details[open] summary::after { content: '−'; }
+  .faq-block p { margin-top: 0.75rem; font-size: 0.9375rem; color: #6B6B6B; line-height: 1.65; }
+  .content-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+  .sidebar-card { background: #f8f7f4; border-radius: 12px; padding: 1.25rem; }
+  .sidebar-card h3 { font-size: 1rem; margin-bottom: 0.75rem; color: #333; font-weight: 600; }
+  .quick-facts ul { list-style: none; padding: 0; margin: 0; }
+  .quick-facts li { font-size: 0.875rem; padding: 0.4rem 0; border-bottom: 1px solid #e8e8e8; color: #555; }
+  .quick-facts li:last-child { border-bottom: none; }
+  .calc-mini { background: #C45C3E; color: white; }
+  .calc-mini p { font-size: 0.875rem; margin-bottom: 1rem; opacity: 0.9; }
+  .btn-sidebar-calc { display: block; background: white; color: #C45C3E; text-align: center; padding: 0.6rem; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 0.9rem; }
+  .btn-sidebar-calc:hover { background: #f0f0f0; }
+  .related-articles ul { list-style: none; padding: 0; margin: 0; }
+  .related-articles li { margin-bottom: 0.5rem; }
+  .related-articles a { font-size: 0.875rem; color: #C45C3E; text-decoration: none; }
+  .related-articles a:hover { text-decoration: underline; }
+  .final-cta { background: linear-gradient(135deg, #2D5016, #4A6741); padding: 4rem 0; text-align: center; color: white; }
+  .final-cta h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem; color: white; }
+  .final-cta p { font-size: 1.0625rem; opacity: 0.9; margin-bottom: 2rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+  .btn-cta { display: inline-block; background: white; color: #4A6741; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.0625rem; }
+  .btn-cta:hover { background: #f0f0f0; }
+  @media (max-width: 768px) {
+    .hero-title { font-size: 1.875rem; }
+    .content-grid { grid-template-columns: 1fr; }
+    .calc-card { flex-direction: column; align-items: flex-start; }
+    .content-main :global(table) { font-size: 0.75rem; white-space: nowrap; }
+  }
 </style>
