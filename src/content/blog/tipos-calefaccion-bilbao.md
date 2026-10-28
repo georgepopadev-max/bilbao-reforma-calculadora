@@ -1,20 +1,22 @@
 ---
 title: "Tipos Calefacción Bilbao 2026 | Guía"
 description: "Tipos de calefacción en Bilbao 2026: gas, aerotermia, suelo radiante, biomasa. Compara precios."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 category: "calefaccion"
 city: "bilbao"
 faqs:
   - q: "¿Cuál es el mejor sistema de calefacción para un piso en Bilbao?"
-    a: "Depende del edificio y tu presupuesto. Para edificios con acometida de gas, la caldera de gas natural sigue siendo la opción más económica a nivel de consumo mensual. Para quien busque la máxima efici"
+    a: "Depende del edificio y tu presupuesto. Para edificios con acometida de gas, la caldera de gas natural sigue siendo la opción más económica a nivel de consumo mensual. Para quien busque la máxima eficiencia, la aerotermia consume entre un 60 y un 70 % menos que el gas, aunque la inversión inicial es mayor (6.000-12.000 €). En el clima húmedo de Bilbao, combinarla con suelo radiante da el mejor confort."
   - q: "¿Cuánto cuesta instalar aerotermia en un piso de 80m² en Bilbao?"
-    a: "La instalación de aerotermia para un piso de 80m² en Bilbao cuesta entre 6.000 y 12.000 € (equipo completo con unidad interior). El consumo mensual se reduce a 40-60 € frente a los 80-120 € de gas nat"
+    a: "La instalación de aerotermia para un piso de 80m² en Bilbao cuesta entre 6.000 y 12.000 € (equipo completo con unidad interior). El consumo mensual se reduce a 40-60 € frente a los 80-120 € de gas natural en invierno, y la instalación se amortiza en unos 6-10 años."
   - q: "¿Se puede instalar suelo radiante en un piso bilbaino ya construido?"
-    a: "Sí, pero requiere levantar el pavimento completo y suele necesitar una altura adicional de 5-10 cm. La inversión es de 70-120 €/m² solo en suelo radiante, sin incluir el equipo generador. Es más habit"
+    a: "Sí, pero requiere levantar el pavimento completo y suele necesitar una altura adicional de 5-10 cm. La inversión es de 70-120 €/m² solo en suelo radiante, sin incluir el equipo generador. Es más habitual en reformas integrales, cuando ya se va a levantar el suelo."
   - q: "¿Qué problemas de calefacción tienen los pisos antiguos de Bilbao?"
-    a: "Los pisos de más de 40 años en Bilbao suelen tener problemas de aislamiento (ventanas de madera simple, fachadas sin aislar), lo que hace que cualquier sistema de calefacción pierda eficiencia. Muchos"
+    a: "Los pisos de más de 40 años en Bilbao suelen tener problemas de aislamiento (ventanas de madera simple, fachadas sin aislar), lo que hace que cualquier sistema de calefacción pierda eficiencia. Muchos pisos tienen además calderas antiguas o radiadores mal dimensionados, y mejorar ventanas y aislamiento suele ser la primera inversión que más se nota."
   - q: "¿Cuánto gasta mensual un piso de 80m² en Bilbao con gas natural?"
-    a: "Un piso de 80m² en Bilbao con caldera de gas natural y uso razonable gasta entre 80 y 120 € mensuales en los meses de invierno. El consumo real depende del aislamiento del edificio, la temperatura obj"
+    a: "Un piso de 80m² en Bilbao con caldera de gas natural y uso razonable gasta entre 80 y 120 € mensuales en los meses de invierno. El consumo real depende del aislamiento del edificio, la temperatura objetivo y las horas de uso."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -25,31 +27,31 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"
-    href: "aerotermia-bilbao-ventajas"
+    href: "/blog/aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion"
+    href: "/blog/suelo-radiante-vs-calefaccion"
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"
-    href: "aerotermia-bilbao-ventajas"
+    href: "/blog/aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion"
+    href: "/blog/suelo-radiante-vs-calefaccion"
 priceTables: 0
 ---
 
 <header class="blog-header">
-  <p class="blog-meta">Actualizado: 2025 · Tiempo de lectura: 8 minutos · Categoría: Instalaciones</p>
+  <p class="blog-meta">Actualizado: 2026 · Tiempo de lectura: 8 minutos · Categoría: Instalaciones</p>
   </header>
 
   <div class="blog-content">
   <p>Cuando arrives a vivir a un piso en el Casco Viejo de Bilbao o has comprado tu primer apartamento en Indautxu, una de las primeras decisiones que tomarás es qué sistema de calefacción instalar. El clima bilbaino, con sus inviernos húmedos y frescos pero sin temperaturas extremas, merece una reflexión cuidadosa. La ría del Nervión marca un microclima particular que influye directamente en el consumo energético de tu hogar.</p>
 
-  <p>En esta guía completa analizamos todos los sistemas de calefacción disponibles en Bilbao para 2025: desde el clásico gas natural hasta la moderna aerotermia, pasando por el suelo radiante y los radiadores de última generación. Te ayudamos a comparar costes de instalación, consumo real y qué conviene según el tipo de edificio donde vivas.</p>
+  <p>En esta guía completa analizamos todos los sistemas de calefacción disponibles en Bilbao para 2026: desde el clásico gas natural hasta la moderna aerotermia, pasando por el suelo radiante y los radiadores de última generación. Te ayudamos a comparar costes de instalación, consumo real y qué conviene según el tipo de edificio donde vivas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
-  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="/blog/aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
+  <a href="/blog/suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 
 
@@ -57,7 +59,7 @@ priceTables: 0
 
   <p>Vivir en Bizkaia tiene sus particularidades. Los edificios del centro de Bilbao, muchos de ellos construidos entre los años 60 y 80, presentan características únicas que condicionan la elección del sistema de calefacción. La normativa energética cada vez más exigente y el alza continua de los precios de la energía hacen que una elección acertada pueda ahorrarte miles de euros a lo largo de los años.</p>
 
-  <p>Además, las ayudas y subvenciones del Gobierno Vasco para reformas energéticas en el País Vasco 2025 hacen que ahora sea un momento especialmente favorable para dar el paso. Los fondos Next Generation han reactivado las incentivos para la aerotermia y el aislamiento térmico, con ayudas que pueden alcanzar hasta el 40% de la inversión en algunos casos.</p>
+  <p>Además, las ayudas y subvenciones del Gobierno Vasco para reformas energéticas en el País Vasco 2026 hacen que ahora sea un momento especialmente favorable para dar el paso. Los fondos Next Generation han reactivado las incentivos para la aerotermia y el aislamiento térmico, con ayudas que pueden alcanzar hasta el 40% de la inversión en algunos casos.</p>
 
   <h3>Factores Clave que Influyen en tu Decisión</h3>
 
@@ -71,7 +73,7 @@ priceTables: 0
   <li><strong>Presupuesto disponible:</strong> Hay que separar la inversión inicial del coste operativo a 10-15 años vista.</li>
   </ul>
 
-  <h2>Comparativa de Sistemas de Calefacción en Bilbao 2025</h2>
+  <h2>Comparativa de Sistemas de Calefacción en Bilbao 2026</h2>
 
   <h3>1. Gas Natural: El Clásico Bilbaino</h3>
 
@@ -193,7 +195,7 @@ priceTables: 0
   <li>¿Necesitas permiso de la comunidad de propietarios? ¿Existe acuerdo de mayoria simple?</li>
   <li>¿Has solicitado presupuestos a al menos 3 empresas instaladoras de Bizkaia?</li>
   <li>¿Has calculado el aislamiento térmico de tu vivienda? ¿Necesitas mejoras previas?</li>
-  <li>¿Conoces las ayudas y subventions del País Vasco 2025 para tu tipo de instalación?</li>
+  <li>¿Conoces las ayudas y subsubvenciones del País Vasco 2026 para tu tipo de instalación?</li>
   <li>¿El instalador está homologado y da garantía mínima de 2 años?</li>
   <li>¿Has revisado el contrato de mantenimiento y piezas de recambio?</li>
   </ul>
@@ -201,8 +203,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
-  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="/blog/aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
+  <a href="/blog/suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 <h2>Conclusión: Invierte en Eficiencia, No Solo en Calor</h2>
 
@@ -214,10 +216,10 @@ priceTables: 0
   <div class="blog-cta">
   <h3>¿Sabes qué sistema de calefacción necesitas?</h3>
   <p>Usa nuestra calculadora gratuita para estimar el coste de tu reforma de calefacción en Bilbao.</p>
-  <a href="../calculadora">Calcular presupuesto gratis -></a>
+  <a href="/calculadora">Calcular presupuesto gratis -></a>
   </div>
 
   <nav class="blog-nav">
-  <a href="licencias-obra-bilbao-2026">← Licencias de obra en Bilbao</a>
-  <a href="materiales-cocina-bilbao">Encimeras de cocina -></a>
+  <a href="/blog/licencias-obra-bilbao-2026">← Licencias de obra en Bilbao</a>
+  <a href="/blog/materiales-cocina-bilbao">Encimeras de cocina -></a>
   </nav>

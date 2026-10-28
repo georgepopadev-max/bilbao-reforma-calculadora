@@ -2,7 +2,8 @@
 title: "Reformas San Adrián Bilbao 2026"
 description: "Reformas San Adrián Bilbao 2026. Precios por m², multiplicador ×0.95 y empresas del barrio. La zona más asequible de Bilbao."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "7 min"
@@ -26,7 +27,7 @@ inContentCTAs:
     href: "/calculadora?barrio=san-adrian"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Guía de Precios"
-    href: "comparativa-reforma-bano-bilbao"
+    href: "/blog/comparativa-reforma-bano-bilbao"
 ---
 
 ## Reformas San Adrián Bilbao 2026
@@ -92,18 +93,18 @@ Sí. Con un precio medio de vivienda de 2.800 €/m², una reforma de baño (4.2
 
 ## Ver También
 
-- Página de barrio: [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian)
+- Página de barrio: [Reformas en San Adrián Bilbao](/blog/reformas-san-adrian-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en San Adrián](/calculadora?barrio=san-adrian)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
-- [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
+- [Reformas en Basurto Bilbao](/blog/reformas-san-adrian-bilbao)
+- [Reformas en Zorrotzaurre Bilbao](/blog/reformas-zorrotzaurre-bilbao)
+- [Reformas en Deusto Bilbao](/bilbao/barrios/deusto)
 
 ### Blogs relacionados
 
-- [Reformas Basurto Bilbao 2026](/barrios/reforma-basurto)
+- [Reformas Basurto Bilbao 2026](/blog/reformas-san-adrian-bilbao)
 - [Reformas Zorrotzaurre Bilbao 2026](/blog/reformas-zorrotzaurre-bilbao)
 
 ### Sobre reforma integral en Bilbao

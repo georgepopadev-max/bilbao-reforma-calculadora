@@ -2,31 +2,32 @@
 title: "Reforma Piso 80m² Bilbao 2026"
 description: "Ejemplo real de reforma integral de un piso de 80m² en Bilbao. Presupuesto desglosado de 52.668€ con 18 partidas detalladas, precios 2026 y factores clave."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
-date: "15 junio 2026"
+date: "2026-06-15"
+updated: "2026-10-28"
 readTime: "14 min"
 category: "presupuesto"
 city: "bilbao"
 faqs:
   - q: "¿52.000 € es caro para una reforma integral de 80m² en Bilbao?"
-    a: "No. 52.000 € para una reforma integral de 80m² en Bilbao con acabados de gama media es un precio razonable y alineado con el mercado actual. El rango medio en Bilbao para 2026 está entre 48.000 y 55.0"
+    a: "No. 52.000 € para una reforma integral de 80m² en Bilbao con acabados de gama media es un precio razonable y alineado con el mercado actual. El rango medio en Bilbao para 2026 está entre 48.000 y 55.000 € para un piso de 80 m² con calidades medias, así que el presupuesto entra dentro de lo normal."
   - q: "¿Se puede hacer una reforma integral por 30.000 €?"
     a: "Es posible pero difícil en Bilbao para un piso de 80m². Con 30.000 € estarías en el rango de reforma básica: sin cambiar la distribución, con materiales económicos y sin abordar instalaciones viejas. "
   - q: "¿Qué partida puedo eliminar para ahorrar?"
-    a: "Si necesitas apretar presupuesto, estas son las partidas que puedes postergar sin comprometer la habitabilidad: la climatización (puedes preinstalar ahora y poner los splits después), la iluminación e"
+    a: "Si necesitas apretar presupuesto, estas son las partidas que puedes postergar sin comprometer la habitabilidad: la climatización (puedes preinstalar ahora y poner los splits después), la iluminación e decorativa y algunos muebles a medida. Lo que no conviene recortar son las instalaciones de agua y electricidad, porque cambiarlas después cuesta mucho más."
   - q: "¿Necesito licencia de obra para una reforma integral en Bilbao?"
-    a: "Depende del alcance. Una reforma integral con cambio de instalaciones, tabiques y distribución requiere licencia de obra menor (comunicación previa) o mayor si hay cambios estructurales. Esto supone e"
+    a: "Depende del alcance. Una reforma integral con cambio de instalaciones, tabiques y distribución requiere licencia de obra menor (comunicación previa) o mayor si hay cambios estructurales. Esto supone entre 100 y 300 € de tasas en obra menor, y bastante más con proyecto técnico si es obra mayor."
   - q: "¿Cuánto tiempo tengo que estar fuera de casa durante la reforma?"
-    a: "En una reforma integral de 80m² en Bilbao, lo habitual es estar entre 2 y 4 meses fuera de casa. Los primeros días se dedica a demolición y desmantelamiento (ruidoso y polvoriento). Luego viene el per"
+    a: "En una reforma integral de 80m² en Bilbao, lo habitual es estar entre 2 y 4 meses fuera de casa. Los primeros días se dedica a demolición y desmantelamiento (ruidoso y polvoriento). Luego viene el periodo de instalaciones, albañilería y acabados, en el que la vivienda no es habitable."
   - q: "¿Merece la pena cambiar las ventanas en una reforma integral?"
-    a: "Sí, rotundamente sí. Las ventanas son la inversión que más se paga sola en una reforma. El 25-40% del calor de un piso se escapa por ventanas antiguas de cristal simple o marcos de madera deteriorados"
+    a: "Sí, rotundamente sí. Las ventanas son la inversión que más se paga sola en una reforma. El 25-40% del calor de un piso se escapa por ventanas antiguas de cristal simple o marcos de madera deteriorados. Con ventanas nuevas de doble acristalamiento se nota en la factura y en el confort desde el primer invierno."
   - q: "¿Cómo sé si el presupuesto que me dan es justo?"
-    a: "Lo primero: compara al menos 3 presupuestos. Las diferencias entre empresas para la misma obra pueden llegar al 30%, y eso no siempre se explica por calidad diferente. Fíjate en que cada presupuesto i"
+    a: "Lo primero: compara al menos 3 presupuestos. Las diferencias entre empresas para la misma obra pueden llegar al 30%, y eso no siempre se explica por calidad diferente. Fíjate en que cada presupuesto incluya las mismas partidas, con marcas y cantidades, para poder compararlos de verdad."
   - q: "¿Hay ayudas para reformar en Bilbao en 2026?"
-    a: "Sí, hay varias líneas activas. SURBISA (Ayuntamiento de Bilbao) ofrece ayudas para rehabilitación de inmuebles, mejora de fachadas, cubiertas, eficiencia energética y accesibilidad. El Gobierno Vasco "
+    a: "Sí, hay varias líneas activas. SURBISA (Ayuntamiento de Bilbao) ofrece ayudas para rehabilitación de inmuebles, mejora de fachadas, cubiertas, eficiencia energética y accesibilidad. El Gobierno Vasco, a través del programa de rehabilitación y de los fondos europeos, complementa esas ayudas. Conviene revisar las convocatorias abiertas antes de empezar la obra."
   - q: "¿Qué certificado necesito después de la reforma?"
-    a: "Tras una reforma integral necesitarás: el Certificado de Final de Obra (que emite el arquitecto técnico o aparejador si ha dirigido la obra), el Certificado de Eficiencia Energética del edificio refor"
+    a: "Tras una reforma integral necesitarás: el Certificado de Final de Obra (que emite el arquitecto técnico o aparejador si ha dirigido la obra), el Certificado de Eficiencia Energética del edificio reformado y, si se ha cambiado la instalación eléctrica o de gas, los boletines de esas instalaciones firmados por un instalador autorizado."
   - q: "¿Por qué varían tanto los presupuestos entre empresas?"
-    a: "Las diferencias de hasta 30% entre presupuestos para la misma obra se explican por varios factores: calidad de materiales (una encimera de cuarzo de Silestone no cuesta lo mismo que una de granito eco"
+    a: "Las diferencias de hasta 30% entre presupuestos para la misma obra se explican por varios factores: calidad de materiales (una encimera de cuarzo de Silestone no cuesta lo mismo que una de granito económico), la mano de obra, la carga de trabajo de cada empresa y lo que incluye o deja fuera cada presupuesto."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -36,17 +37,17 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
 inContentCTAs:
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Caso Práctico: Reforma 80m² Bilbao"
-    href: "reforma-80m2-bilbao-ejemplo"
+    href: "/blog/reforma-80m2-bilbao"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Caso Práctico: Reforma 80m² Bilbao"
-    href: "reforma-80m2-bilbao-ejemplo"
+    href: "/blog/reforma-80m2-bilbao"
 priceTables: 2
 ---
 
@@ -71,8 +72,8 @@ priceTables: 2
   <p>Este ejemplo corresponde a un piso real reformado en el barrio de <a href="/bilbao/barrios/indautxu">Indautxu</a> (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao-ejemplo">Caso Práctico: Reforma 80m² Bilbao</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
+  <a href="/blog/reforma-80m2-bilbao">Caso Práctico: Reforma 80m² Bilbao</a>
 </div>
 
 
@@ -337,13 +338,13 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Quieres un presupuesto personalizado para tu reforma?</h3>
   <p>Usa nuestra calculadora para estimar el coste de tu reforma de 80m² en Bilbao y compara hasta 3 empresas locales especializadas.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto -></a>
   </div>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao-ejemplo">Caso Práctico: Reforma 80m² Bilbao</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
+  <a href="/blog/reforma-80m2-bilbao">Caso Práctico: Reforma 80m² Bilbao</a>
 </div>
 <h2>Preguntas frecuentes</h2>
 

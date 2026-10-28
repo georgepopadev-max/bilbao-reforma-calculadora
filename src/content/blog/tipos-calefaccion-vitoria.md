@@ -4,7 +4,8 @@ description: "Tipos de calefacción en Vitoria 2026: gas natural, aerotermia, su
 canonical: https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria
 city: vitoria
 category: Instalaciones
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Cuál es el mejor sistema de calefacción para un piso en Vitoria?"
     a: "Depende del edificio y tu presupuesto. Para edificios con acometida de gas, la caldera de gas natural sigue siendo la opción más económica. Para quien busque máxima eficiencia, la aerotermia ofrece un consumo un 60-70% inferior al gas, con mayor inversión inicial (6.000-12.000 €). En el clima alavés, la humedad del norte hace que el aislamiento sea clave antes de elegir sistema."

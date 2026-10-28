@@ -1,20 +1,22 @@
 ---
 title: "Reforma Cocina y Baño Santutxu 2026"
-description: "Reforma cocina y baño Santutxu 2025-2026: precios orientativos, consejos para planificar ambas reformas a la vez y ahorrar, y particularidades de los pisos de este barrio de Bilbao."
+description: "Reformar cocina y baño en Santutxu en 2026: precios orientativos, cómo planificar las dos obras a la vez y qué tienen de especial los pisos del barrio."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 category: "bano"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta reformar cocina y baño en Santutxu?"
-    a: "Para un piso típico de Santutxu (cocina de 8-12 m² y baño de 4-5 m²), la reforma media de ambas estancias cuesta entre 18.000 y 30.000 euros llave en mano. Reformar solo la cocina ronda los 8.000-15.0"
+    a: "Para un piso típico de Santutxu (cocina de 8-12 m² y baño de 4-5 m²), la reforma media de ambas estancias cuesta entre 18.000 y 30.000 euros llave en mano. Reformar solo la cocina ronda los 8.000-15.000 € y solo el baño, 5.000-9.000 €."
   - q: "¿Merece la pena hacer cocina y baño a la vez?"
-    a: "Sí, si el presupuesto lo permite. Hacer ambas reformas simultáneamente permite ahorrar en gremios (una sola obra), reducir el tiempo total de inconvenience y optimizar el orden de los trabajos (fontan"
+    a: "Sí, si el presupuesto lo permite. Hacer ambas reformas simultáneamente permite ahorrar en gremios (una sola obra), reducir el tiempo total de molestias y optimizar el orden de los trabajos (fontanería y electricidad de las dos estancias a la vez). Suele salir entre un 10 % y un 15 % más barato que hacerlas por separado."
   - q: "¿Cuánto tiempo se tarda en reformar cocina y baño en Santutxu?"
-    a: "Cocina y baño reformados simultáneamente requieren entre 25 y 45 días laborables. Si se hacen por separado, cada estancia necesita entre 15 y 25 días. Ambas reformas a la vez suelen estar listas en 30"
+    a: "Cocina y baño reformados simultáneamente requieren entre 25 y 45 días laborables. Si se hacen por separado, cada estancia necesita entre 15 y 25 días. Ambas reformas a la vez suelen estar listas en 30 y 40 días laborables."
   - q: "¿Qué particularidades tienen los pisos de Santutxu para reformar?"
-    a: "Santutxu tiene un parque de vivienda muy heterogéneo: bloques de los años 60-70 con tuberías de plomo y estructura de madera, junto a edificios de los 80-90 con mayor calidad de construcción. Las coci"
+    a: "Santutxu tiene un parque de vivienda muy heterogéneo: bloques de los años 60-70 con tuberías de plomo y estructura de madera, junto a edificios de los 80-90 con mayor calidad de construcción. Las cocinas suelen ser estrechas y los baños pequeños, así que los cambios de distribución dan mucho juego."
   - q: "¿Se puede vivir en el piso mientras se reforman cocina y baño?"
-    a: "Es extremadamente incómodo. Sin cocina usable y sin baño usable, necesitarás depender de comida para llevar, platos desechables y el baño de un vecino o familiar. Lo más práctico es coordinar la refor"
+    a: "Es extremadamente incómodo. Sin cocina usable y sin baño usable, necesitarás depender de comida para llevar, platos desechables y el baño de un vecino o familiar. Lo más práctico es coordinar la reforma con vacaciones o pasar esas semanas en casa de familiares."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -24,17 +26,17 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 inContentCTAs:
   - type: "leer"
-    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"
+    href: "/blog/reforma-cocina-bilbao"
   - type: "leer"
-    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
-    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"
+    href: "/blog/reforma-cocina-bilbao"
   - type: "leer"
-    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"
+    href: "/blog/reforma-bano-bilbao"
 priceTables: 0
 ---
 
@@ -43,8 +45,8 @@ priceTables: 0
   <p>Si estás pensando en reformar cocina y baño en Santutxu, este artículo te interesa. Te cuento <strong>cuánto cuesta hacerlo en 2025-2026</strong>, qué particularidades tiene este barrio para las reformas, y cómo puedes planificar ambas obras para que el resultado valga la pena y el presupuesto no se te escape de las manos.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="/blog/reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2026</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2026</a>
 </div>
 
 
@@ -268,8 +270,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="/blog/reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2026</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2026</a>
 </div>
 <h2>Conclusión</h2>
 
@@ -277,7 +279,7 @@ priceTables: 0
 
   <p>La clave está en no escatimar en fontanería (las tuberías de plomo son el enemigo silencioso) y en planificar bien la logística del contenedor y los escombros. Santutxu tiene calles complicadas para esto, pero con el permiso de estacionamiento adecuado y una buena empresa de reformas, se puede gestionar sin problemas.</p>
 
-  <p>Usa nuestra <a href="../calculadora">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros cuadrados de tu cocina y baño y la calidad de materiales que busques.</p>
+  <p>Usa nuestra <a href="/calculadora">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros cuadrados de tu cocina y baño y la calidad de materiales que busques.</p>
 
   <div class="cta-box">
   <h3>¿Quieres saber cuánto costaría tu reforma de cocina y baño?</h3>

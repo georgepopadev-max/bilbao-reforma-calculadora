@@ -1,23 +1,25 @@
 ---
 title: "Precio m² Cocina Bilbao 2026"
 description: "Descubre el precio por m² de una reforma de cocina en Bilbao. Costes reales 2026 según tipo de reforma. Guía completa con tabla de precios y consejos."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/precio-m2-reforma-cocina-bilbao"
 readTime: "13 min"
 category: "cocina"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta el m² de reforma de cocina en Bilbao?"
-    a: "El precio por m² de reforma de cocina en Bilbao oscila entre 600 y 1.400 €/m² dependiendo del tipo de reforma. Una reforma parcial ronda los 600-900 €/m², mientras que una reforma completa con cambio "
+    a: "El precio por m² de reforma de cocina en Bilbao oscila entre 600 y 1.400 €/m² dependiendo del tipo de reforma. Una reforma parcial ronda los 600-900 €/m², mientras que una reforma completa con cambio de instalaciones puede llegar a 1.000-1.400 €/m². Para una cocina estándar de 10-12 m², el presupuesto orientativo es de 8.000 € a 16.000 €."
   - q: "¿Qué incluye una reforma de cocina completa?"
-    a: "Una reforma de cocina completa incluye: demolición y retirada de escombros, fontanería nueva (tuberías de agua fría, caliente y desagües), electricidad (cableado, mecanismos, puntos de luz, enchufes, "
+    a: "Una reforma de cocina completa incluye: demolición y retirada de escombros, fontanería nueva (tuberías de agua fría, caliente y desagües), electricidad (cableado, mecanismos, puntos de luz, enchufes, vitrocerámica), albañilería (enfoscar, preparar paredes y suelo), alicatado y solado, instalación de muebles de cocina, encimera, fregadero, grifería, electrodomésticos y pintura de acabados."
   - q: "¿Cuál es la diferencia entre reforma parcial y completa de cocina?"
-    a: "La reforma parcial cambia elementos visibles (muebles, encimera, electrodomésticos, pintura) sin tocar instalaciones. La reforma completa incluye demolición total, cambio de fontanería, electricidad, "
+    a: "La reforma parcial cambia elementos visibles (muebles, encimera, electrodomésticos, pintura) sin tocar instalaciones. La reforma completa incluye demolición total, cambio de fontanería, electricidad, nuevo alicatado, solado y redistribución si es necesario. La parcial cuesta entre 3.000-8.000 €; la completa, entre 10.000-20.000 € para una cocina de 10-12 m²."
   - q: "¿Cuánto cuesta mudar una cocina en Bilbao?"
-    a: "Mudar una cocina implica mover las tres instalaciones principales (agua, electricidad y desagües), lo que encarece significativamente la reforma. El coste adicional por cambiar la ubicación de fregade"
+    a: "Mudar una cocina implica mover las tres instalaciones principales (agua, electricidad y desagües), lo que encarece significativamente la reforma. El coste adicional por cambiar la ubicación de fregadero, isla o placa oscila entre 2.000 € y 5.000 € por elemento movido. Siempre que sea posible, se recomienda mantener la ubicación original de los puntos de agua para ahorrar en fontanería."
   - q: "¿Cuánto tiempo tarda una reforma de cocina en Bilbao?"
-    a: "Una reforma parcial de cocina suele tardar entre 2 y 3 semanas. Una reforma completa requiere entre 3 y 5 semanas, incluyendo demolición, instalaciones, albañilería y acabados. Si se necesita licencia"
+    a: "Una reforma parcial de cocina suele tardar entre 2 y 3 semanas. Una reforma completa requiere entre 3 y 5 semanas, incluyendo demolición, instalaciones, albañilería y acabados. Si se necesita licencia de obra menor, añade 1-3 semanas de trámites en el Ayuntamiento de Bilbao."
   - q: "¿Necesito licencia para reformar la cocina en Bilbao?"
-    a: "Si la reforma incluye modificación de fontanería, electricidad o cambio de distribución, necesitas licencia de obra menor. Si solo cambias muebles, encimera y pintura sin tocar instalaciones, generalm"
+    a: "Si la reforma incluye modificación de fontanería, electricidad o cambio de distribución, necesitas licencia de obra menor. Si solo cambias muebles, encimera y pintura sin tocar instalaciones, generalmente no se necesita licencia. Consulta siempre en el Ayuntamiento de Bilbao antes de empezar, especialmente en edificios protegidos del Casco Viejo."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -28,16 +30,16 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber"
-    href: "reforma-cocina-bilbao"
+    href: "/blog/reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reformas de Cocina en Bilbao"
-    href: "errores-reforma-cocina-bilbao"
+    href: "/blog/errores-reforma-cocina-bilbao"
   - type: "leer"
     label: "Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber"
-    href: "reforma-cocina-bilbao"
+    href: "/blog/reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reformas de Cocina en Bilbao"
-    href: "errores-reforma-cocina-bilbao"
+    href: "/blog/errores-reforma-cocina-bilbao"
 priceTables: 2
 ---
 
@@ -48,8 +50,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
-  <a href="errores-reforma-cocina-bilbao">Errores Comunes en Reformas de Cocina en Bilbao</a>
+  <a href="/blog/reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
+  <a href="/blog/errores-reforma-cocina-bilbao">Errores Comunes en Reformas de Cocina en Bilbao</a>
   </div>
 
   <h2>¿Por qué el precio por m² es clave para presupuestar tu reforma de cocina?</h2>
@@ -332,8 +334,8 @@ priceTables: 2
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
-  <a href="errores-reforma-cocina-bilbao">Errores Comunes en Reformas de Cocina en Bilbao</a>
+  <a href="/blog/reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
+  <a href="/blog/errores-reforma-cocina-bilbao">Errores Comunes en Reformas de Cocina en Bilbao</a>
   </div>
   <h2>Preguntas Frecuentes sobre Precio m² Reforma Cocina Bilbao</h2>
 

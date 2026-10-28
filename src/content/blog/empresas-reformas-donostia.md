@@ -1,20 +1,22 @@
 ---
 title: "Empresas Reformas Donostia 2026"
 description: "Empresas de reformas en Donostia-San Sebastián 2026: guía local con las mejores empresas, precios medios y consejos para elegir sin errores. Actualizado."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-donostia"
 category: "empresas"
 city: "donostia"
 faqs:
   - q: "¿Cómo encontrar una empresa de reformas fiable en Donostia?"
-    a: "Pide al menos 3 presupuestos con desglose por partidas, verifica que tenga seguro de responsabilidad civil vigente, solicita referencias de trabajos recientes y confirma que esté dada de alta fiscalme"
+    a: "Pide al menos 3 presupuestos con desglose por partidas, verifica que tenga seguro de responsabilidad civil vigente, solicita referencias de trabajos recientes y confirma que esté dada de alta fiscalmente. También ayuda ver obras terminadas parecidas a la tuya."
   - q: "¿Cuánto cuesta una reforma integral en Donostia-San Sebastián?"
-    a: "En Donostia, una reforma integral de vivienda se sitúa entre 650 y 1.000 €/m² para calidades estándar. Un piso de 80 m² puede costar entre 52.000 € y 80.000 € dependiendo del estado inicial y los acab"
+    a: "En Donostia, una reforma integral de vivienda se sitúa entre 650 y 1.000 €/m² para calidades estándar. Un piso de 80 m² puede costar entre 52.000 € y 80.000 € dependiendo del estado inicial y los acabados elegidos."
   - q: "¿Qué preguntas debo hacer antes de contratar una empresa de reformas en Donostia?"
-    a: "Cinco preguntas imprescindibles: 1) ¿Tiene seguro de responsabilidad civil? 2) ¿Quién hará el trabajo día a día?3) ¿Tiene experiencia en edificios del centro histórico de Donostia? 4) ¿Qué garantía of"
+    a: "Cinco preguntas imprescindibles: 1) ¿Tiene seguro de responsabilidad civil? 2) ¿Quién hará el trabajo día a día? 3) ¿Tiene experiencia en edificios del centro histórico de Donostia? 4) ¿Qué garantía ofrece y por cuánto tiempo? 5) ¿Cómo se gestionan los imprevistos y los cambios sobre el presupuesto?"
   - q: "¿Necesito licencia para hacer una reforma en Donostia?"
-    a: "Depende del tipo de obra. Las reformas menores (pintura, cambio de suelo, baño) suelen requerir comunicación previa. Las reformas integrales, cambios de fachada o intervenciones en edificios protegido"
+    a: "Depende del tipo de obra. Las reformas menores (pintura, cambio de suelo, baño) suelen requerir comunicación previa. Las reformas integrales, cambios de fachada o intervenciones en edificios protegidos necesitan licencia de obra y, a veces, informes adicionales. Conviene consultarlo en el Ayuntamiento de Donostia antes de empezar."
   - q: "¿Cuánto se paga por adelantado a una empresa de reformas en Gipuzkoa?"
-    a: "La práctica habitual es un anticipo del 20-30% a la firma del contrato, un segundo pago del 40-50% a mitad de obra, y el resto (20-30%) a la entrega final. Desconfía de empresas que pidan más del 50% "
+    a: "La práctica habitual es un anticipo del 20-30% a la firma del contrato, un segundo pago del 40-50% a mitad de obra, y el resto (20-30%) a la entrega final. Desconfía de empresas que pidan más del 50% antes de empezar."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -25,26 +27,26 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Empresas de Reformas en Bilbao"
-    href: "empresas-reformas-bilbao"
+    href: "/blog/empresas-reformas-bilbao"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Empresas de Reformas en Bilbao"
-    href: "empresas-reformas-bilbao"
+    href: "/blog/empresas-reformas-bilbao"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
 priceTables: 0
 ---
 
-<p>Donostia-San Sebastián es una de las ciudades más caras de España para reformas de vivienda. El mercado inmobiliario alavés, la alta demanda de alquileres turísticos y la calidad de vida de la ciudad mantienen los precios de reforma por encima de la media estatal. Si estás pensando en reformar en el centro de Donostia, en<strong>Gros</strong>, <strong>Amara</strong>, <strong>Erdialde</strong> o cualquier pueblo de Gipuzkoa, esta guía te ayuda a encontrar la empresa adecuada y a entender qué deberías pagar.</p>
+<p>Donostia-San Sebastián es una de las ciudades más caras de España para reformas de vivienda. El mercado inmobiliario guipuzcoano, la alta demanda de alquileres turísticos y la calidad de vida de la ciudad mantienen los precios de reforma por encima de la media estatal. Si estás pensando en reformar en el centro de Donostia, en<strong>Gros</strong>, <strong>Amara</strong>, <strong>Erdialde</strong> o cualquier pueblo de Gipuzkoa, esta guía te ayuda a encontrar la empresa adecuada y a entender qué deberías pagar.</p>
 
   <p>Hemos seleccionado empresas locales con trayectoria verificable, con datos de contacto y especialidad para que puedas comparar. No aparecen ordenadas por precio ni por publicidad: el orden es simplemente aleatorio, como debería ser siempre.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-bilbao">Empresas de Reformas en Bilbao</a>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="/blog/empresas-reformas-bilbao">Empresas de Reformas en Bilbao</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
 </div>
 
 
@@ -142,12 +144,12 @@ priceTables: 0
   <p><strong>Trayectoria:</strong> Servicio integral con precios justos, cumplimiento de plazos y atención personalizada. Trabajan en toda Gipuzkoa.</p>
   </div>
 
-  <h2>Precios Medios de Reformas en Donostia-San Sebastián 2025</h2>
+  <h2>Precios Medios de Reformas en Donostia-San Sebastián 2026</h2>
 
-  <p>Donostia se sitúa en el tramo alto de precios de reforma en España, al nivel de las capitales de provincia más caras. La cercanía con Francia, el mercado turístico y el precio del suelo mantienen los costes elevados. Estos son los rangos orientativos para2025:</p>
+  <p>Donostia se sitúa en el tramo alto de precios de reforma en España, al nivel de las capitales de provincia más caras. La cercanía con Francia, el mercado turístico y el precio del suelo mantienen los costes elevados. Estos son los rangos orientativos para2026:</p>
 
   <table class="price-table">
-  <caption>Precios orientativos de mercado para reformas en Donostia-San Sebastián 2025. Incluye materiales y mano de obra. IVA no incluido.</caption>
+  <caption>Precios orientativos de mercado para reformas en Donostia-San Sebastián 2026. Incluye materiales y mano de obra. IVA no incluido.</caption>
   <thead>
   <tr>
   <th>Tipo de Reforma</th>
@@ -188,7 +190,7 @@ priceTables: 0
 
   <h2>Preguntas Imprescindibles Antes de Contratar</h2>
 
-  <p>Donostia tiene particularidades que no encontrarás en otras ciudades de Bizkaia. Los edificios de la Parte Vieja, los pisos de los años 60-70 en Gros y Amara, y los chalés de la zona de Aiete o Ibaeta tienen necesidades distintas. Antes de firmar, haz estas preguntas:</p>
+  <p>Donostia tiene particularidades que no encontrarás en otras ciudades de Euskadi. Los edificios de la Parte Vieja, los pisos de los años 60-70 en Gros y Amara, y los chalés de la zona de Aiete o Ibaeta tienen necesidades distintas. Antes de firmar, haz estas preguntas:</p>
 
   <h3>1. ¿Tiene seguro de responsabilidad civil?</h3>
 
@@ -235,8 +237,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-bilbao">Empresas de Reformas en Bilbao</a>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="/blog/empresas-reformas-bilbao">Empresas de Reformas en Bilbao</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
 </div>
 <h2>Contrato de Reformas: Qué Debe Incluir como Mínimo</h2>
 
@@ -286,7 +288,7 @@ priceTables: 0
   <div class="article-cta">
   <h3>¿Cuánto costaría tu reforma en Donostia?</h3>
   <p>Usa nuestra calculadora gratuita para estimar el presupuesto en menos de 2 minutos.</p>
-  <a href="../calculadora">Calcular presupuesto -></a>
+  <a href="/calculadora">Calcular presupuesto -></a>
   </div>
 
   </a>

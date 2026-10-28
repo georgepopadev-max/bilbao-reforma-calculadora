@@ -2,20 +2,21 @@
 title: "Precio Reforma Integral Vitoria 2026"
 description: "Precio reforma integral Vitoria 2026. Cuánto cuesta reformar un piso entero. Factores, precios por m² y ejemplos reales en Álava."
 canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-vitoria"
-date: "18 junio 2026"
+date: "2026-06-18"
+updated: "2026-10-28"
 category: "integral"
 city: "vitoria"
 faqs:
   - q: "¿Cuánto cuesta una reforma integral en Vitoria por metro cuadrado?"
-    a: "En Vitoria, el precio de una reforma integral en 2025 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de caracterís"
+    a: "En Vitoria, el precio de una reforma integral en 2026 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de características normales en un edificio de entre 30 y 50 años."
   - q: "¿Cuánto cuesta la reforma integral de un piso de 80m² en Vitoria?"
-    a: "Un piso de 80m² en Vitoria puede costar entre 56.000 € (básico) y 120.000 € (premium), con un punto medio alrededor de 82.000-90.000 €. Estos precios incluyen materiales, mano de obra, licencia y direc"
+    a: "Un piso de 80m² en Vitoria puede costar entre 60.000 € (básico) y 130.000 € (premium), con un punto medio alrededor de 85.000-95.000 €. Estos precios incluyen materiales, mano de obra, licencia y dirección de arquitecto técnico, pero no electrodomésticos ni muebles de decoración."
   - q: "¿Qué factores hacen que suba el precio de una reforma integral en Vitoria?"
-    a: "Los principales factores que disparan el presupuesto son: la antigüedad del edificio (edificios de más de 50 años necesitan renovar tuberías y cableado), la ubicación en el Casco Viejo (hasta +30% por"
+    a: "Los principales factores que disparan el presupuesto son: la antigüedad del edificio (edificios de más de 50 años necesitan renovar tuberías y cableado), la ubicación en el Casco Viejo (hasta +30% por restricciones patrimoniales y acceso), cambiar la distribución tocando muros de carga, y la calidad de acabados elegida."
   - q: "¿Necesito licencia para hacer una reforma integral en Vitoria?"
-    a: "Sí. Para una reforma integral se necesita como mínimo una licencia de obra menor (comunicación previa), que tarda 2-3 semanas. Si hay cambios estructurales, eliminación de muros de carga o modificacio"
+    a: "Sí. Para una reforma integral se necesita como mínimo una licencia de obra menor (comunicación previa), que tarda 2-3 semanas. Si hay cambios estructurales, eliminación de muros de carga o modificaciones en la fachada, necesitas licencia de obra mayor, que puede tardar 4-8 semanas. No hacer obra sin licencia puede acarrear multas de 1.000 € a 10.000 €."
   - q: "¿Cuánto tiempo se tarda en hacer una reforma integral en Vitoria?"
-    a: "Una reforma integral de un piso de 80m² en Vitoria dura entre 10 y 20 semanas, dependiendo de la complejidad. En edificios modernos puede estar lista en 10-12 semanas. En el Casco Viejo o edificios ant"
+    a: "Una reforma integral de un piso de 80m² en Vitoria dura entre 10 y 20 semanas, dependiendo de la complejidad. En edificios modernos puede estar lista en 10-12 semanas. En el Casco Viejo o edificios antiguos con licencias de obra mayor, puede extenderse a 16-20 semanas."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -26,21 +27,18 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Reforma 80m² Vitoria: Guía Completa con Presupuesto Detallado"
-    href: "reforma-80m2-bilbao"
+    href: "/blog/reforma-80m2-bilbao"
   - type: "leer"
     label: "Cuánto Tarda una Reforma Integral en Vitoria: Timeline Realista"
-    href: "tiempo-reforma-integral-bilbao"
+    href: "/blog/tiempo-reforma-integral-bilbao"
   - type: "leer"
     label: "Licencias de Obra en Vitoria: Todo lo que Necesitas Saber"
-    href: "licencias-obra-bilbao-2026"
-  - type: "leer"
-    label: "Reformas en el Casco Viejo de Vitoria: Guía Especial"
-    href: "reformas-casco-viejo-bilbao"
+    href: "/blog/licencias-obra-bilbao-2026"
 priceTables: 4
 ---
 
 <div class="article-content">
-  <p>Cuando decides dar el paso de <strong>reformar tu piso en Vitoria de forma integral</strong>, la primera pregunta que surge es siempre la misma: <strong>¿cuánto va a costar?</strong> Y es una pregunta legítima, porque una reforma integral no es una mano de pintura: implica tocar la estructura, las instalaciones, los acabados. En esta guía te damos los <strong>precios reales de reforma integral en Vitoria en 2025</strong>, con datos actualizados por metro cuadrado y ejemplos concretos para que puedas hacer números antes de pedir un solo presupuesto.</p>
+  <p>Cuando decides dar el paso de <strong>reformar tu piso en Vitoria de forma integral</strong>, la primera pregunta que surge es siempre la misma: <strong>¿cuánto va a costar?</strong> Y es una pregunta legítima, porque una reforma integral no es una mano de pintura: implica tocar la estructura, las instalaciones, los acabados. En esta guía te damos los <strong>precios reales de reforma integral en Vitoria en 2026</strong>, con datos actualizados por metro cuadrado y ejemplos concretos para que puedas hacer números antes de pedir un solo presupuesto.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
@@ -56,8 +54,8 @@ priceTables: 4
   </ul>
   <p>La reforma integral es necesaria cuando el piso tiene más de 30-40 años, las instalaciones están obsoletas (tuberías de plomo, cableado sin tierra), o quieres cambiar radicalmente la distribución. En Vitoria, la mayor parte del stock de vivienda tiene entre 40 y 70 años, así que la reforma integral es una necesidad recurrente.</p>
 
-  <h2>Precio Reforma Integral Vitoria por m² en 2025</h2>
-  <p>Los <strong>precios por metro cuadrado para reforma integral en Vitoria</strong> en 2025 se mueven en tres horquillas claramente diferenciadas según la calidad de acabados:</p>
+  <h2>Precio Reforma Integral Vitoria por m² en 2026</h2>
+  <p>Los <strong>precios por metro cuadrado para reforma integral en Vitoria</strong> en 2026 se mueven en tres horquillas claramente diferenciadas según la calidad de acabados:</p>
 
   <table class="price-table">
   <thead>
@@ -87,7 +85,7 @@ priceTables: 4
   </table>
 
   <blockquote>
-  <p><strong>Importante</strong>: Estos precios son orientativos para Vitoria y Álava en 2025 e incluyen materiales y mano de obra con IVA del 10% (reforma de vivienda de más de 2 años). No incluyen licencias municipales, honorarios de arquitecto ni electrodomésticos.</p>
+  <p><strong>Importante</strong>: Estos precios son orientativos para Vitoria y Álava en 2026 e incluyen materiales y mano de obra con IVA del 10% (reforma de vivienda de más de 2 años). No incluyen licencias municipales, honorarios de arquitecto ni electrodomésticos.</p>
   </blockquote>
 
   <h2>Ejemplo Real: Reforma Integral Piso 80m² en Vitoria</h2>
@@ -236,7 +234,7 @@ priceTables: 4
   </tbody>
   </table>
 
-  <p>En resumen: <strong>reformar en Vitoria sale entre un 10% y un 25% más barato que en Madrid o Barcelona</strong>, pero más caro que en ciudades medianas del entorno. La buena noticia es que la calidad de los profesionales  alavéss es alta y la competencia entre empresas ha ido forzando precios más ajustados que en la capital.</p>
+  <p>En resumen: <strong>reformar en Vitoria sale entre un 10% y un 25% más barato que en Madrid o Barcelona</strong>, pero más caro que en ciudades medianas del entorno. La buena noticia es que la calidad de los profesionales alaveses es alta y la competencia entre empresas ha ido forzando precios más ajustados que en la capital.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
@@ -247,7 +245,7 @@ priceTables: 4
   <h2>Preguntas Frecuentes sobre el Precio de Reforma Integral en Vitoria</h2>
 
   <h3>¿Cuánto cuesta una reforma integral en Vitoria por metro cuadrado?</h3>
-  <p>En Vitoria, el precio de una reforma integral en 2025 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de características normales en un edificio de entre 30 y 50 años.</p>
+  <p>En Vitoria, el precio de una reforma integral en 2026 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de características normales en un edificio de entre 30 y 50 años.</p>
 
   <h3>¿Cuánto cuesta la reforma integral de un piso de 80m² en Vitoria?</h3>
   <p>Un piso de 80m² en Vitoria puede costar entre 60.000 € (básico) y 130.000 € (premium), con un punto medio alrededor de 85.000-95.000 €. Estos precios incluyen materiales, mano de obra, licencia y dirección de arquitecto técnico, pero no electrodomésticos ni muebles de decoración.</p>
@@ -264,6 +262,6 @@ priceTables: 4
   <div class="article-cta">
   <h3>Calcula el presupuesto de tu reforma integral en Vitoria</h3>
   <p>Usa la calculadora para obtener una estimación personalizada según m², barrio y tipo de reforma. Sin compromiso.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

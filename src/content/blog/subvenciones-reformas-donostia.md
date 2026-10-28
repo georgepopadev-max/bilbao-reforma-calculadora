@@ -2,20 +2,21 @@
 title: "Subvenciones Reformas Donostia 2026"
 description: "Subvenciones reforma Donostia 2026: ayudas del Gobierno Vasco, Ayuntamiento, rehabilitación energética, qué obras son elegibles y cómo solicitarlas."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-donostia"
-date: "6 abril 2025"
+date: "2025-04-06"
+updated: "2026-10-28"
 category: "subvenciones"
 city: "donostia"
 faqs:
-  - q: "¿Qué ayudas y subvenciones existen para reformas en Donostia en 2025?"
-    a: "En Donostia y Gipuzkoa existen varias líneas: Plan de Vivienda del Gobierno Vasco (hasta 11.400 € por vivienda según ingresos), fondos Next Generation para rehabilitación energética (40-75% del coste), s"
+  - q: "¿Qué ayudas y subvenciones existen para reformas en Donostia en 2026?"
+    a: "En Donostia y Gipuzkoa existen varias líneas: Plan de Vivienda del Gobierno Vasco (hasta 11.400 € por vivienda según ingresos), fondos Next Generation para rehabilitación energética (40-75% del coste), subvenciones municipales del Ayuntamiento de Donostia y deducciones en el IRPF foral de Gipuzkoa."
   - q: "¿Cuánto puedo cobrar del Gobierno Vasco para una reforma integral de mi piso?"
-    a: "Depende de tus ingresos y el tipo de obra. Para rehabilitación de vivienda, los fondos del Plan de Vivienda van desde 4.500 € (ingresos altos) hasta 11.400 € (ingresos bajos). Para mejoras de eficienc"
+    a: "Depende de tus ingresos y el tipo de obra. Para rehabilitación de vivienda, los fondos del Plan de Vivienda van desde 4.500 € (ingresos altos) hasta 11.400 € (ingresos bajos). Para mejoras de eficiencia energética se suman los fondos europeos, que pueden cubrir una parte importante del coste de aislamiento, ventanas o aerotermia."
   - q: "¿Qué incluye el programa de rehabilitación energética Next Generation en Donostia?"
-    a: "Los fondos Next Generation cubren: mejora de envolvente térmica (aislamiento, ventanas) con 40-75% del coste, instalación de climatización eficiente (aerotermia, caldera de condensación) con 40-65%, p"
+    a: "Los fondos Next Generation cubren: mejora de envolvente térmica (aislamiento, ventanas) con 40-75% del coste, instalación de climatización eficiente (aerotermia, caldera de condensación) con 40-65%, placas solares y otras renovables con porcentajes variables. Los importes exactos dependen de la convocatoria vigente."
   - q: "¿Cómo solicito las subvenciones para reformas en Donostia?"
-    a: "El proceso es: 1) Infórmate del estado de tu edificio y qué ayudas aplican, 2) Consulta en la Oficina de Vivienda de Donostia (Zaramaga, Amara) o en Eusko Jaurlaritza, 3) Pide 2-3 presupuestos de emp"
+    a: "El proceso es: 1) Infórmate del estado de tu edificio y qué ayudas aplican, 2) Consulta en la Oficina de Vivienda de Donostia o en Eusko Jaurlaritza, 3) Pide 2-3 presupuestos de empresas que te den el presupuesto desglosado, 4) Presenta la solicitud antes de empezar la obra, y 5) Justifica los gastos con facturas al terminar."
   - q: "¿Tengo deducciones fiscales además de las subvenciones para mi reforma?"
-    a: "Sí, además de las subvenciones puedes aplicar deducciones en tu IRPF: obras de rehabilitación energética permiten deducir entre el 20% y el 40% de la inversión (hasta 5.000 € base), obras para elimina"
+    a: "Sí, además de las subvenciones puedes aplicar deducciones en tu IRPF: obras de rehabilitación energética permiten deducir entre el 20% y el 40% de la inversión (hasta 5.000 € base), obras para eliminar barreras de accesibilidad también tienen deducción. Consulta las condiciones vigentes en la Hacienda Foral de Gipuzkoa."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -25,17 +26,17 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-donostia"
 inContentCTAs:
   - type: "leer"
-    label: "Precio Reforma Integral Donostia: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Donostia: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
-    label: "Reformas Donostia: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025"
+    label: "Reformas Donostia: Guía Completa 2026"
+    href: "/blog/reformas-bilbao-precios"
   - type: "leer"
-    label: "Precio Reforma Integral Donostia: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Donostia: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
-    label: "Reformas Donostia: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025"
+    label: "Reformas Donostia: Guía Completa 2026"
+    href: "/blog/reformas-bilbao-precios"
 priceTables: 5
 ---
 
@@ -45,8 +46,8 @@ priceTables: 5
   <p>No son conocidos ni fáciles de encontrar. Por eso hemos creado esta guía: para que sepas qué existe, qué obras son elegibles, cuánto puedes cobrar y cómo solicitarlas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-donostia">Precio Reforma Integral Donostia: Guía 2025 con €/m²</a>
-  <a href="/donostia/blog/reforma-integral-donostia-guia-completa">Reformas Donostia: Guía Completa 2025</a>
+  <a href="/blog/precio-reforma-integral-donostia">Precio Reforma Integral Donostia: Guía 2026 con €/m²</a>
+  <a href="/donostia/blog/reforma-integral-donostia-guia-completa">Reformas Donostia: Guía Completa 2026</a>
 </div>
 
 
@@ -61,7 +62,7 @@ priceTables: 5
   <li><strong>Facilitar el acceso a la vivienda</strong> en condiciones adecuadas</li>
   </ul>
 
-  <h2>Ayudas del Gobierno Vasco para Reformas 2025</h2>
+  <h2>Ayudas del Gobierno Vasco para Reformas 2026</h2>
 
   <h3>Plan de Vivienda de Álava, Gipuzkoa y Gipuzkoa 2022-2025</h3>
   <p>El Gobierno Vasco tiene vigente un <strong>Plan de Vivienda 2022-2025</strong> que incluye líneas de ayuda para rehabilitación. Las principales:</p>
@@ -109,7 +110,7 @@ priceTables: 5
   </blockquote>
 
   <h3>Programa de Rehabilitación Energética de Edificios (Next Generation EU)</h3>
-  <p>En 2025, el <strong>Gobierno Vasco ha destinado 92,3 millones de euros</strong> a la rehabilitación y mejora energética de edificios residenciales, canalizados a través de los fondos europeos Next Generation. Estas ayudas están pensadas para obras que impulsen la eficiencia, accesibilidad y conservación de los inmuebles.</p>
+  <p>En 2026, el <strong>Gobierno Vasco ha destinado 92,3 millones de euros</strong> a la rehabilitación y mejora energética de edificios residenciales, canalizados a través de los fondos europeos Next Generation. Estas ayudas están pensadas para obras que impulsen la eficiencia, accesibilidad y conservación de los inmuebles.</p>
 
   <p>Para viviendas individuales, las ayudas pueden alcanzar <strong>hasta 18.800 € por vivienda</strong> en función de la mejora energética achieved. Los porcentajes de ayuda sobre el coste de obra varían según el tipo de intervención:</p>
 
@@ -176,7 +177,7 @@ priceTables: 5
   </tbody>
   </table>
 
-  <h2>Subvenciones del Ayuntamiento de Donostia 2025</h2>
+  <h2>Subvenciones del Ayuntamiento de Donostia 2026</h2>
 
   <h3>Subvenciones para la Mejora de la Convivencia y la Salubridad</h3>
   <p>Para reformas en viviendas que presenten problemas de:</p>
@@ -231,7 +232,7 @@ priceTables: 5
   </ul>
 
   <h3>Paso 2: Consulta en el Área de Vivienda de Gipuzkoa</h3>
-  <p><strong>Oficina de Vivienda de Donostia</strong> (Zaramaga): C/ Zaramaga, 1 (Amara). Puedes pedir cita o acudir en horario de oficina.</p>
+  <p><strong>Oficina de Vivienda del Ayuntamiento de Donostia</strong>: consulta en la web municipal la dirección y el horario de atención, y pide cita previa antes de ir.</p>
 
   <p>También puedes consultar en la web de <strong>Eusko Jaurlaritza</strong> (Gobierno Vasco) en el apartado de Vivienda: <code>www.euskadi.eus/vivienda</code></p>
 
@@ -273,8 +274,8 @@ priceTables: 5
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-donostia">Precio Reforma Integral Donostia: Guía 2025 con €/m²</a>
-  <a href="/donostia/blog/reforma-integral-donostia-guia-completa">Reformas Donostia: Guía Completa 2025</a>
+  <a href="/blog/precio-reforma-integral-donostia">Precio Reforma Integral Donostia: Guía 2026 con €/m²</a>
+  <a href="/donostia/blog/reforma-integral-donostia-guia-completa">Reformas Donostia: Guía Completa 2026</a>
 </div>
 <h2>Deducciones Fiscales: Además de las Subvenciones</h2>
   <p>No olvides las <strong>deducciones fiscales</strong> que puedes aplicar en tu IRPF:</p>
@@ -314,11 +315,11 @@ priceTables: 5
   </ul>
   </div>
 
-  <p><strong>Fuentes consultadas:</strong> Los datos sobre ayudas del Gobierno Vasco para rehabilitación en 2025 están basados en la información publicada por <a href="https://comunidadeseuskadi.com/ayudas-del-gobierno-vasco-para-la-rehabilitacion-de-fachadas-2025/" target="_blank" rel="noopener">Comunidades de Euskadi</a> y el portal oficial de <a href="https://www.euskadi.eus/web01-a1next/es/" target="_blank" rel="noopener">Vivienda del Gobierno Vasco</a>.</p>
+  <p><strong>Fuentes consultadas:</strong> Los datos sobre ayudas del Gobierno Vasco para rehabilitación en 2026 están basados en la información publicada por <a href="https://comunidadeseuskadi.com/ayudas-del-gobierno-vasco-para-la-rehabilitacion-de-fachadas-2025/" target="_blank" rel="noopener">Comunidades de Euskadi</a> y el portal oficial de <a href="https://www.euskadi.eus/web01-a1next/es/" target="_blank" rel="noopener">Vivienda del Gobierno Vasco</a>.</p>
 
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en Donostia?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

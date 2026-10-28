@@ -173,6 +173,151 @@
       "permanent": true
     },
     {
+      "source": "/blog/reforma-bano-bilbao-2025(\\.html)?",
+      "destination": "/blog/reforma-bano-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/reforma-bano-bilbao-2025(\\.html)?",
+      "destination": "/blog/reforma-bano-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/blog/presupuesto-reforma-bano-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-bano-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/presupuesto-reforma-bano-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-bano-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/blog/presupuesto-reforma-integral-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-integral-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/presupuesto-reforma-integral-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-integral-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cuanto-cuesta-reforma-integral-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-integral-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/cuanto-cuesta-reforma-integral-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-integral-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/blog/presupuesto-reforma-cocina-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-cocina-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/presupuesto-reforma-cocina-bilbao(\\.html)?",
+      "destination": "/presupuesto-reforma-cocina-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/blog/subvenciones-reformas-bilbao(\\.html)?",
+      "destination": "/blog/subvenciones-reformas-bilbao-2026",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/subvenciones-reformas-bilbao(\\.html)?",
+      "destination": "/blog/subvenciones-reformas-bilbao-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reformas-bilbao-guia-2025(\\.html)?",
+      "destination": "/blog/reformas-bilbao-precios",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/reformas-bilbao-guia-2025(\\.html)?",
+      "destination": "/blog/reformas-bilbao-precios",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reforma-80m2-bilbao-ejemplo(\\.html)?",
+      "destination": "/blog/reforma-80m2-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/bilbao/blog/reforma-80m2-bilbao-ejemplo(\\.html)?",
+      "destination": "/blog/reforma-80m2-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/reformas-bilbao(\\.html)?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/presupuesto-reforma-bilbao(\\.html)?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-deusto(\\.html)?",
+      "destination": "/bilbao/barrios/deusto",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-indautxu(\\.html)?",
+      "destination": "/bilbao/barrios/indautxu",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-santutxu(\\.html)?",
+      "destination": "/bilbao/barrios/santutxu",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-abando(\\.html)?",
+      "destination": "/blog/reformas-abando-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-begona(\\.html)?",
+      "destination": "/blog/reformas-begona-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-rekalde(\\.html)?",
+      "destination": "/blog/reformas-rekalde-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-san-adrian(\\.html)?",
+      "destination": "/blog/reformas-san-adrian-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-zabalburu(\\.html)?",
+      "destination": "/blog/reformas-zabalburu-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-zorrotzaurre(\\.html)?",
+      "destination": "/blog/reformas-zorrotzaurre-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-basurto(\\.html)?",
+      "destination": "/blog/reformas-san-adrian-bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/barrios/reforma-otxarkoaga(\\.html)?",
+      "destination": "/bilbao",
+      "permanent": true
+    },
+    {
       "source": "/bilbao/blog/(.+?)(\\.html)?",
       "destination": "/blog/$1",
       "permanent": true

@@ -1,23 +1,25 @@
 ---
 title: "Errores Reforma Baño Bilbao 2026"
 description: "Descubre los 10 errores más comunes en la reforma de un baño en Bilbao. Evita sorpresas, sobrecostes y problemas. Guía actualizada 2026."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bano-bilbao"
 readTime: "10 min"
 category: "bano"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto dinero puedo ahorrar evitando los errores comunes en la reforma de mi baño?"
-    a: "Evitar los 10 errores más comunes puede ahorrarte entre 2.000 € y 6.000 € en sobrecostes, retrabajos y reparaciones. El error más caro es no impermeabilizar correctamente: reparar una filtración a un "
+    a: "Evitar los 10 errores más comunes puede ahorrarte entre 2.000 € y 6.000 € en sobrecostes, retrabajos y reparaciones. El error más caro es no impermeabilizar correctamente: reparar una filtración a un vecino puede costar 3.000 € o más. Comparar presupuestos y no mover las instalaciones sin necesidad urgente son las dos prácticas que más dinero ahorran."
   - q: "¿Cuánto tiempo se retrasa una reforma de baño en Bilbao por errores evitables?"
-    a: "Los errores evitables pueden añadir entre 5 y 15 días hábiles a una reforma de baño. Cambiar de opinión sobre materiales cuando la obra ya ha empezado es la causa más frecuente de retrasos. Sin plan B"
+    a: "Los errores evitables pueden añadir entre 5 y 15 días hábiles a una reforma de baño. Cambiar de opinión sobre materiales cuando la obra ya ha empezado es la causa más frecuente de retrasos. Sin plan B ni plazos claros en el contrato, es habitual que una reforma de 10 días se convierta en 25-30 días."
   - q: "¿Es obligatorio pedir licencia para reformar un baño en Bilbao?"
-    a: "Depende del alcance de la obra. Si la reforma incluye cambio de fontanería, modificación de electricidad, cambio de distribución o sustitución de bañera por ducha, necesitas licencia de obra menor. So"
+    a: "Depende del alcance de la obra. Si la reforma incluye cambio de fontanería, modificación de electricidad, cambio de distribución o sustitución de bañera por ducha, necesitas licencia de obra menor. Solo si cambias sanitarios, pintas y pones nuevos azulejos sin tocar instalaciones, generalmente no se necesita licencia. Consulta siempre en el Ayuntamiento de Bilbao antes de empezar."
   - q: "¿Qué materiales son los más recomendados para baños en Bilbao por su durabilidad?"
-    a: "Para azulejos, el gres porcelánico es la opción con mejor relación calidad-precio: resistente, no absorbe agua y disponible en imitación piedra o madera. Para el suelo, elige antideslizante (clase 3 m"
+    a: "Para azulejos, el gres porcelánico es la opción con mejor relación calidad-precio: resistente, no absorbe agua y disponible en imitación piedra o madera. Para el suelo, elige antideslizante (clase 3 mínimo). Los sanitarios de doble descarga (4,5/3 litros) ahorran agua. Evita materiales muy porosos o de absorción alta, porque la humedad bilbaina los deteriora rápidamente."
   - q: "¿Cómo sé si el presupuesto que me dan para la reforma del baño es justo?"
-    a: "Pide siempre al menos 3 presupuestos desglosados por partidas. Un presupuesto sin detalle es una señal de alarma. Compara el precio por m² de alicatado, el coste de fontanería por punto, el precio del"
+    a: "Pide siempre al menos 3 presupuestos desglosados por partidas. Un presupuesto sin detalle es una señal de alarma. Compara el precio por m² de alicatado, el coste de fontanería por punto, el precio del desagüe nuevo y la instalación de sanitarios. Si un presupuesto es un 40% más bajo que los demás, pregunta por qué: probablemente esté quitando partidas importantes como la impermeabilización."
   - q: "¿Qué debo hacer antes de empezar la obra del baño para evitar problemas?"
-    a: "Antes de empezar: (1) Verifica el estado de las tuberías viejas pinchando con un alambre - si sale agua marrón, hay óxido y hay que cambiarlas. (2) Comprueba que la instalación eléctrica tiene toma de"
+    a: "Antes de empezar: (1) Verifica el estado de las tuberías viejas pinchando con un alambre - si sale agua marrón, hay óxido y hay que cambiarlas. (2) Comprueba que la instalación eléctrica tiene toma de tierra. (3) Asegúrate de que hay ventilación suficiente (ventana o extractor al exterior). (4) Decide con el profesional si vais a impermeabilizar ducha o bañera. (5) Ten un plan B para dónde ducharte durante la obra. (6) Ten el dinero reservado y un 15% de colchón para imprevistos."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -28,22 +30,22 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
     label: "Cómo Pedir Presupuestos de Reforma de Baño en Bilbao"
-    href: "presupuesto-reforma-bano-bilbao"
+    href: "/presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de Reforma de Baño en Bilbao"
-    href: "precio-m2-reforma-bano-bilbao"
+    href: "/blog/precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
     label: "Cómo Pedir Presupuestos de Reforma de Baño en Bilbao"
-    href: "presupuesto-reforma-bano-bilbao"
+    href: "/presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de Reforma de Baño en Bilbao"
-    href: "precio-m2-reforma-bano-bilbao"
+    href: "/blog/precio-m2-reforma-bano-bilbao"
 priceTables: 0
 ---
 
@@ -55,9 +57,9 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
-  <a href="presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
-  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="/presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
+  <a href="/blog/precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
   </div>
 
   <h2>¿Por qué conocer estos errores antes de reformar tu baño?</h2>
@@ -280,15 +282,15 @@ priceTables: 0
   <div class="article-cta">
   <h3>¿Ya tienes claro qué tipo de reforma de baño necesitas?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/bano-bilbao" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora/bano-bilbao" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
-  <a href="presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
-  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="/presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
+  <a href="/blog/precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
   </div>
   <h2>Preguntas Frecuentes sobre Errores en la Reforma de Baño</h2>
 

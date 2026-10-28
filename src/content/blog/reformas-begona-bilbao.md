@@ -2,7 +2,8 @@
 title: "Reformas Begoña Bilbao 2026"
 description: "Reformas Begoña Bilbao 2026. Precios por m², multiplicador ×1.05 y empresas especializadas en el barrio. Guía práctica."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "7 min"
@@ -25,8 +26,8 @@ inContentCTAs:
     label: "Calcula tu reforma en Begoña"
     href: "/calculadora?barrio=begona"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao 2026: €/m² y Presupuesto"
+    href: "/blog/precio-reforma-integral-bilbao"
 ---
 
 ## Reformas Begoña Bilbao 2026: Guía Local
@@ -93,14 +94,14 @@ La pendiente de Begoña dificulta el acceso en edificios sin ascensor. Esto pued
 
 ## Ver También
 
-- Página de barrio: [Reformas en Begoña Bilbao](/barrios/reforma-begona)
+- Página de barrio: [Reformas en Begoña Bilbao](/blog/reformas-begona-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en Begoña](/calculadora?barrio=begona)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Santutxu Bilbao](/barrios/reforma-santutxu)
-- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
+- [Reformas en Santutxu Bilbao](/bilbao/barrios/santutxu)
+- [Reformas en Zabalburu Bilbao](/blog/reformas-zabalburu-bilbao)
+- [Reformas en Deusto Bilbao](/bilbao/barrios/deusto)
 
 ### Blogs relacionados
 

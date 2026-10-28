@@ -2,7 +2,8 @@
 title: "Reformas Zabalburu Bilbao 2026"
 description: "Reformas Zabalburu Bilbao 2026. Multiplicador ×1.10, precios integrales y empresas del barrio. Guía actualizada."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "8 min"
@@ -25,8 +26,8 @@ inContentCTAs:
     label: "Calcula tu reforma en Zabalburu"
     href: "/calculadora?barrio=zabalburu"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao 2026: €/m² y Presupuesto"
+    href: "/blog/precio-reforma-integral-bilbao"
 ---
 
 ## Reformas Zabalburu Bilbao 2026
@@ -91,14 +92,14 @@ Las reformas parciales (baño, cocina, pintura, cambio de suelo) no suelen reque
 
 ## Ver También
 
-- Página de barrio: [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
+- Página de barrio: [Reformas en Zabalburu Bilbao](/blog/reformas-zabalburu-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en Zabalburu](/calculadora?barrio=zabalburu)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Abando Bilbao](/barrios/reforma-abando)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
-- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu)
+- [Reformas en Abando Bilbao](/blog/reformas-abando-bilbao)
+- [Reformas en Begoña Bilbao](/blog/reformas-begona-bilbao)
+- [Reformas en Indautxu Bilbao](/bilbao/barrios/indautxu)
 
 ### Blogs relacionados
 

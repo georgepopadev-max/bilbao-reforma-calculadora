@@ -1,23 +1,25 @@
 ---
 title: "Reforma Cocina Donostia 2026"
 description: "Precio reforma cocina Donostia 2026. Averigua cuánto cuesta reformar tu cocina en Donostia según metros y calidades. Presupuesto orientativo en 2 minutos."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia"
 readTime: "10 min"
 category: "cocina"
 city: "donostia"
 faqs:
-  - q: "¿Cuánto cuesta reformar una cocina en Donostia en 2025?"
-    a: "El precio de una reforma de cocina en Donostia oscila entre 500 €/m² para una reforma parcial y 1.600 €/m² para una reforma completa con cambio de distribución. Para una cocina estándar de 8 m², una ref"
+  - q: "¿Cuánto cuesta reformar una cocina en Donostia en 2026?"
+    a: "El precio de una reforma de cocina en Donostia oscila entre 500 €/m² para una reforma parcial y 1.600 €/m² para una reforma completa con cambio de distribución. Para una cocina estándar de 8 m², una reforma parcial cuesta entre 4.000 y 7.000 €; una reforma media, entre 7.000 y 12.000 €; y una reforma completa, entre 12.000 y 20.000 €."
   - q: "¿Qué partidas incluye una reforma de cocina completa en Donostia?"
-    a: "Una reforma de cocina completa incluye: derribo de muebles y acabados existentes, albañilería y preparación de paredes, electricidad nueva (cableado, mecanismos, puntos de luz, extractor), fontanería "
+    a: "Una reforma de cocina completa incluye: derribo de muebles y acabados existentes, albañilería y preparación de paredes, electricidad nueva (cableado, mecanismos, puntos de luz, extractor), fontanería nueva (tomas de agua para lavavajillas, fregadero, lavadora), instalación de gas si se cambia caldera o encampana, nuevos muebles de cocina (armarios superiores e inferiores), encimera, electrodomésticos, aislamiento y pintura o revestimiento de paredes."
   - q: "¿Cuánto tiempo se tarda en reformar una cocina en Donostia?"
-    a: "Una reforma de cocina parcial (cambio de muebles y encimera sin tocar instalaciones) dura entre 10 y 15 días hábiles. Una reforma de cocina completa requiere entre 20 y 35 días hábiles, incluyendo dem"
+    a: "Una reforma de cocina parcial (cambio de muebles y encimera sin tocar instalaciones) dura entre 10 y 15 días hábiles. Una reforma de cocina completa requiere entre 20 y 35 días hábiles, incluyendo demolición, nuevas instalaciones, albañilería, mueblaje e instalación de electrodomésticos. Los plazos se pueden alargar si se requiere licencia de obra."
   - q: "¿Necesito licencia para reformar la cocina en Donostia?"
-    a: "Si la reforma de cocina no modifica la estructura ni las instalaciones de gas o saneamiento, solo necesitas licencia de obra menor (100-300 €). Si vas a mover el gas, la campana extractora va a exteri"
+    a: "Si la reforma de cocina no modifica la estructura ni las instalaciones de gas o saneamiento, solo necesitas licencia de obra menor (100-300 €). Si vas a mover el gas, la campana extractora va a exterior (ventilación forzada) o cambias la posición del fregadero modificando las tuberías de saneamiento, necesitarás licencia de obra mayor. Consulta siempre con tu Ayuntamiento de Donostia o el área de licencias."
   - q: "¿Merece la pena invertir en una reforma de cocina antes de vender un piso en Donostia?"
-    a: "Sí. La cocina es la estancia que más influye en la decisión de compra de un inmueble. Una cocina moderna puede aumentar el valor de venta entre un 5 % y un 10 % del precio total del piso. Una reforma "
+    a: "Sí. La cocina es la estancia que más influye en la decisión de compra de un inmueble. Una cocina moderna puede aumentar el valor de venta entre un 5 % y un 10 % del precio total del piso. Una reforma de cocina de 10.000-15.000 € puede traducirse en una revalorización de 15.000-25.000 € dependiendo de la zona de Donostia."
   - q: "¿Puedo reformar solo los muebles de cocina sin tocar las instalaciones?"
-    a: "Sí, es posible una reforma parcial de cocina que limite a cambiar los muebles, la encimera, el fregadero y los electrodomésticos sin tocar la fontanería ni la electricidad existentes. Esta opción es m"
+    a: "Sí, es posible una reforma parcial de cocina que limite a cambiar los muebles, la encimera, el fregadero y los electrodomésticos sin tocar la fontanería ni la electricidad existentes. Esta opción es más económica (4.000-7.000 € para 8 m²) pero tiene un límite: si las tuberías o el cableado tienen más de 30 años, tendrás que actualizarlos en pocos años, triplicando el coste total al tener que desmontar lo recién instalado."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -31,28 +33,28 @@ inContentCTAs:
     href: "/calculadora"
   - type: "herramienta"
     label: "Guía de presupuestos para reforma de cocina Donostia"
-    href: "presupuesto-reforma-cocina-bilbao"
+    href: "/presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto reforma cocina Donostia - guía completa para pedir precios"
-    href: "presupuesto-reforma-cocina-bilbao"
+    href: "/presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio por m² reforma cocina Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-cocina-bilbao"
+    href: "/blog/precio-m2-reforma-cocina-bilbao"
   - type: "leer"
-    label: "Mejores materiales para cocinas en Donostia - guía 2025"
-    href: "materiales-cocina-bilbao"
+    label: "Mejores materiales para cocinas en Donostia - guía 2026"
+    href: "/blog/materiales-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto reforma cocina Donostia - guía para pedir precios sin sorpresas"
-    href: "presupuesto-reforma-cocina-bilbao"
+    href: "/presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio por m² reforma cocina Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-cocina-bilbao"
+    href: "/blog/precio-m2-reforma-cocina-bilbao"
   - type: "leer"
-    label: "Mejores materiales para cocinas Donostia 2025"
-    href: "materiales-cocina-bilbao"
+    label: "Mejores materiales para cocinas Donostia 2026"
+    href: "/blog/materiales-cocina-bilbao"
   - type: "leer"
     label: "Errores más comunes en reformas de cocina Donostia"
-    href: "errores-reforma-cocina-bilbao"
+    href: "/blog/errores-reforma-cocina-bilbao"
 priceTables: 1
 ---
 
@@ -65,16 +67,16 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📊 Herramienta recomendada</span>
-  <a href="../calculadora">Calculadora de presupuesto reforma cocina Donostia -></a>
+  <a href="/calculadora">Calculadora de presupuesto reforma cocina Donostia -></a>
   <a href="/donostia/calculadora/cocina-donostia">Guía de presupuestos para reforma de cocina Donostia</a>
   </div>
 
-  <h2>Precios por m² para reforma de cocina en Donostia 2025</h2>
+  <h2>Precios por m² para reforma de cocina en Donostia 2026</h2>
 
   <p>Los siguientes precios son <strong>orientativos para Donostia capital y área metropolitana</strong>, incluyen material y mano de obra (IVA excluded) y se basan en proyectos reales ejecutados en 2024-2025. El coste final depende del estado actual de la cocina, la antigüedad del edificio y las calidades elegidas.</p>
 
   <table class="price-table">
-  <caption>Precios orientativos reforma cocina Donostia 2025 (material + mano de obra)</caption>
+  <caption>Precios orientativos reforma cocina Donostia 2026 (material + mano de obra)</caption>
   <thead>
   <tr>
   <th>Tipo de reforma</th>
@@ -183,7 +185,7 @@ priceTables: 1
   <span class="in-content-cta-label">📖 Leer también</span>
   <a href="/donostia/calculadora/cocina-donostia">Presupuesto reforma cocina Donostia - guía completa para pedir precios</a>
   <a href="/donostia/calculadora/cocina-donostia">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
-  <a href="materiales-cocina-donostia">Mejores materiales para cocinas en Donostia - guía 2025</a>
+  <a href="/blog/materiales-cocina-donostia">Mejores materiales para cocinas en Donostia - guía 2026</a>
   </div>
 
   <h2>Barrios de Donostia con mayor demanda de cocinas reformadas</h2>
@@ -217,9 +219,9 @@ priceTables: 1
   </div>
   </div>
 
-  <h2>Tendencias en reformas de cocina en Donostia 2025</h2>
+  <h2>Tendencias en reformas de cocina en Donostia 2026</h2>
 
-  <p>La cocina bilbaina de 2025 ha evolucionado notablemente. Las tendencias más demandas en reformas de cocina en Donostia son:</p>
+  <p>La cocina bilbaina de 2026 ha evolucionado notablemente. Las tendencias más demandas en reformas de cocina en Donostia son:</p>
 
   <ul>
   <li><strong>Cocina abierta al salón:</strong> La eliminación de la pared divisoria entre cocina y salón es la reforma más solicitada en pisos bilbainos de 2 y 3 dormitorios. Requiere permiso de comunidad y, en algunos casos, licencia de obra si se toca estructura.</li>
@@ -237,14 +239,14 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará tu reforma de cocina en Donostia?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos, sin compromiso.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <h2>Preguntas Frecuentes sobre Reforma de Cocina en Donostia</h2>
 
   <div class="faq-item">
-  <strong>¿Cuánto cuesta reformar una cocina en Donostia en 2025?</strong>
+  <strong>¿Cuánto cuesta reformar una cocina en Donostia en 2026?</strong>
   <p>El precio de una reforma de cocina en Donostia oscila entre 500 €/m² para una reforma parcial y 1.600 €/m² para una reforma completa con cambio de distribución. Para una cocina estándar de 8 m², una reforma parcial cuesta entre 4.000 y 7.000 €; una reforma media, entre 7.000 y 12.000 €; y una reforma completa, entre 12.000 y 20.000 €.</p>
   </div>
 
@@ -278,7 +280,7 @@ priceTables: 1
   <span class="in-content-cta-label">📖 Leer también</span>
   <a href="/donostia/calculadora/cocina-donostia">Presupuesto reforma cocina Donostia - guía para pedir precios sin sorpresas</a>
   <a href="/donostia/calculadora/cocina-donostia">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
-  <a href="materiales-cocina-donostia">Mejores materiales para cocinas Donostia 2025</a>
+  <a href="/blog/materiales-cocina-donostia">Mejores materiales para cocinas Donostia 2026</a>
   <a href="/blog/materiales-cocina-donostia">Errores más comunes en reformas de cocina Donostia</a>
   </div>
   </div>

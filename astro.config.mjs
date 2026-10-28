@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import { readdirSync, readFileSync } from 'node:fs';
 
 const SITE = 'https://www.bilbaoreforma.es';
 
@@ -17,6 +18,18 @@ function canonicalUrl(url) {
   return SITE + (path === '/' ? '/' : path);
 }
 
+// lastmod de los artículos del blog, desde updated/date del frontmatter
+const BLOG_LASTMOD = Object.fromEntries(
+  readdirSync('./src/content/blog')
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => {
+      const src = readFileSync(`./src/content/blog/${f}`, 'utf8');
+      const date = src.match(/^updated: "?([\d-]+)"?/m)?.[1] || src.match(/^date: "?([\d-]+)"?/m)?.[1];
+      return [`${SITE}/blog/${f.replace(/\.md$/, '')}`, date];
+    })
+    .filter(([, date]) => date)
+);
+
 export default defineConfig({
   site: SITE,
   output: 'static',
@@ -30,7 +43,10 @@ export default defineConfig({
     }),
     sitemap({
       filter: (page) => !SITEMAP_EXCLUDE.has(new URL(canonicalUrl(page)).pathname),
-      serialize: (item) => ({ ...item, url: canonicalUrl(item.url) }),
+      serialize: (item) => {
+        const url = canonicalUrl(item.url);
+        return BLOG_LASTMOD[url] ? { ...item, url, lastmod: BLOG_LASTMOD[url] } : { ...item, url };
+      },
     }),
   ],
   markdown: {

@@ -3,16 +3,17 @@ title: "Fontanero Bilbao 2026 | Precios y Servicios"
 description: "Fontanero en Bilbao: precio 30-50€/h. Servicios urgentes, instalación calefacción, reformas baño. Empresas verificadas 24h."
 canonical: "https://www.bilbaoreforma.es/blog/fontanero-bilbao"
 date: "2026-07-03"
+updated: "2026-10-28"
 category: "Fontanería"
 city: "bilbao"
 readTime: "8 min"
 faqs:
   - q: "¿Cuánto cuesta un fontanero en Bilbao?"
-    a: "El precio medio de un fontanero en Bilbao oscila entre 30€ y 50€ por hora, más materiales. Los servicios urgentes (noches, festivos) pueden llegar a 60-80€/h. Un presupuesto cerrado para intervenciones comunes (grifo, inodoro, tuberias) suele estar entre 80€ y 250€."
+    a: "El precio medio de un fontanero en Bilbao oscila entre 30€ y 50€ por hora, más materiales. Los servicios urgentes (noches, festivos) pueden llegar a 60-80€/h. Un presupuesto cerrado para intervenciones comunes como cambio de grifo, reparación de cisterna o atasco simple suele estar entre 80€ y 250€."
   - q: "¿Qué servicios ofrece un fontanero en Bilbao?"
-    a: "Los fontaneros en Bilbao ofrecen: reparación de fugas y averías, instalación de grifería y sanitarios, desatascos, detección de humedades, instalación de calefacción y caldera, reformas de baño y cocina, tratamiento de aguas y sistemas de osmosis."
+    a: "Los fontaneros en Bilbao ofrecen: reparación de fugas y averías, instalación de grifería y sanitarios, desatascos, detección de humedades con cámara, instalación de calefacción y caldera, reformas de baño y cocina, instalación de agua caliente sanitaria y tratamiento de aguas (descalcificadores, osmosis)."
   - q: "¿Cómo elegir un buen fontanero en Bilbao?"
-    a: "Para elegir fontanero: verifica que esté dado de alta como empresa instaladora, comprueba que tiene seguro de responsabilidad civil, pide al menos 3 presupuestos detallados, solicita referencias verificables y desconfía de precios muy bajos que no incluyan garantía."
+    a: "Para elegir fontanero: verifica que esté dado de alta como empresa instaladora, comprueba que tiene seguro de responsabilidad civil (pide copia de la póliza), pide al menos 3 presupuestos detallados por escrito, solicita referencias verificables (Google Maps, portales de opinión), y desconfía de precios muy bajos que no incluyan garantía."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -26,10 +27,10 @@ inContentCTAs:
     href: "/blog/reforma-bano-bilbao"
   - type: "leer"
     label: "Precio Calefacción Bilbao 2026"
-    href: "precio-calefaccion-bilbao"
+    href: "/blog/precio-calefaccion-bilbao"
   - type: "leer"
     label: "Cambiar Caldera Bilbao 2026"
-    href: "cambio-caldera-bilbao"
+    href: "/blog/cambio-caldera-bilbao"
 ---
 
 <div class="article-content">
@@ -202,7 +203,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Necesitas una reforma de fontanería?</h3>
 <p>Usa nuestra calculadora para estimar el presupuesto de tu reforma de baño o cocina en Bilbao.</p>
-<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+<a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

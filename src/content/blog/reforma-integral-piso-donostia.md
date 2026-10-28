@@ -1,22 +1,23 @@
 ---
 
 title: "Reforma Integral Donostia 2026: Precios"
-description: Precio reforma integral Donostia 2026. Cuánto cuesta reformar un piso entero en Donostia. Factores que influyen, precios por m² y calculadora de presupuesto gratis.
+description: "Cuánto cuesta reformar un piso entero en Donostia en 2026: precios por m², factores que influyen y calculadora de presupuesto gratis."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-integral-piso-donostia"
 city: donostia
 category: Reforma Integral
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Cuánto cuesta una reforma integral en Donostia por metro cuadrado?"
     a: "En Donostia, el precio de una reforma integral en 2026 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de características normales en un edificio de entre 30 y 50 años."
   - q: "¿Cuánto cuesta la reforma integral de un piso de 80m² en Donostia?"
     a: "Un piso de 80m² en Donostia puede costar entre 56.000 € (básico) y 120.000 € (premium), con un punto medio alrededor de 82.000-90.000 €. Estos precios incluyen materiales, mano de obra, licencia y dirección de arquitecto técnico, pero no electrodomésticos ni muebles de decoración."
   - q: "¿Qué factores hacen que suba el precio de una reforma integral en Donostia?"
-    a: "Los principales factores que disparan el presupuesto son: la antigüedad del edificio (edificios de más de 50 años necesitan renovar tuberías y cableado), la ubicación en el Casco Viejo (hasta +30% por restricciones patrimoniales y acceso), cambiar la distribución tocando muros de carga, y la calidad de acabados elegida."
+    a: "Los principales factores que disparan el presupuesto son: la antigüedad del edificio (edificios de más de 50 años necesitan renovar tuberías y cableado), la ubicación en el Parte Vieja (hasta +30% por restricciones patrimoniales y acceso), cambiar la distribución tocando muros de carga, y la calidad de acabados elegida."
   - q: "¿Necesito licencia para hacer una reforma integral en Donostia?"
     a: "Sí. Para una reforma integral se necesita como mínimo una licencia de obra menor (comunicación previa), que tarda 2-3 semanas. Si hay cambios estructurales, eliminación de muros de carga o modificaciones en la fachada, necesitas licencia de obra mayor, que puede tardar 4-8 semanas. No hacer obra sin licencia puede acarrear multas de 1.000 € a 10.000 €."
   - q: "¿Cuánto tiempo se tarda en hacer una reforma integral en Donostia?"
-    a: "Una reforma integral de un piso de 80m² en Donostia dura entre 10 y 20 semanas, dependiendo de la complejidad. En edificios modernos puede estar lista en 10-12 semanas. En el Casco Viejo o edificios antiguos con licencias de obra mayor, puede extenderse a 16-20 semanas."
+    a: "Una reforma integral de un piso de 80m² en Donostia dura entre 10 y 20 semanas, dependiendo de la complejidad. En edificios modernos puede estar lista en 10-12 semanas. En el Parte Vieja o edificios antiguos con licencias de obra mayor, puede extenderse a 16-20 semanas."
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
