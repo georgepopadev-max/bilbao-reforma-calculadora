@@ -9,6 +9,7 @@ export interface Props {
   title?: string;
   description?: string;
   source?: string;
+  location?: string;
 }
 
 const SERVICES = [
@@ -27,6 +28,7 @@ const {
   title = 'Recibe 3 presupuestos de empresas de tu zona',
   description = 'Cuéntanos qué obra quieres hacer y te ponemos en contacto con empresas verificadas. Gratis y sin compromiso.',
   source = 'bilbao-reforma-form',
+  location = '',
 } = Astro.props;
 
 const selected = SERVICES.some((s) => s.value === service) ? service : 'otros';
@@ -47,7 +49,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
       </label>
       <label class="lf-field">
         <span class="lf-label">Barrio o municipio</span>
-        <input type="text" name="location" required placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
+        <input type="text" name="location" required value={location} placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
       </label>
     </div>
     <div class="lf-row">
