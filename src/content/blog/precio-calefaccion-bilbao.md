@@ -3,16 +3,17 @@ title: "Precio Calefacción Bilbao 2026 | Guía"
 description: "Precio calefacción en Bilbao: instalación desde 3.500€. Compara gas, aerotermia y suelo radiante con datos reales."
 canonical: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 date: "2026-07-03"
+updated: "2026-10-28"
 category: "Calefacción"
 city: "bilbao"
 readTime: "9 min"
 faqs:
   - q: "¿Cuánto cuesta instalar calefacción en un piso de 80m² en Bilbao?"
-    a: "El precio varía mucho según el sistema. Para un piso de 80m² en Bilbao: radiadores de gas natural desde 4.500€; aerotermia desde 12.000€; suelo radiante desde 6.400€ (solo instalación, sin equipo emisor)."
+    a: "El precio varía mucho según el sistema. Para un piso de 80m² en Bilbao: radiadores de gas natural desde 4.500€; aerotermia desde 12.000€; suelo radiante desde 6.400€ (solo instalación, sin equipo emisor). El coste total con aerotermia y suelo radiante puede alcanzar los 18.000-22.000€."
   - q: "¿Qué sistema de calefacción es más barato en Bilbao a largo plazo?"
-    a: "La aerotermia ofrece el menor coste de uso (hasta 70% menos que gas natural) y se amortiza en 6-10 años. El suelo radiante con aerotermia es la combinación más eficiente para climatización completa."
+    a: "La aerotermia ofrece el menor coste de uso (hasta 70% menos que gas natural) y se amortiza en 6-10 años. Combinada con suelo radiante, es la opción más eficiente. El gas natural tiene el menor coste de instalación inicial pero un consumo más alto."
   - q: "¿Hay subvenciones para instalar calefacción en Bilbao en 2026?"
-    a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión. El Gobierno Vasco añade ayudas de hasta 12.000€ por vivienda para sistemas de aerotermia y suelo radiante."
+    a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en aerotermia y suelo radiante. El Gobierno Vasco añade ayudas de hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -23,13 +24,13 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao 2026"
-    href: "tipos-calefaccion-bilbao"
+    href: "/blog/tipos-calefaccion-bilbao"
   - type: "leer"
     label: "Aerotermia en Bilbao: Precio y Ventajas"
-    href: "aerotermia-precio-bilbao"
+    href: "/blog/aerotermia-precio-bilbao"
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026"
-    href: "suelo-radiante-ventajas-bilbao"
+    href: "/blog/suelo-radiante-ventajas-bilbao"
 ---
 
 <div class="article-content">
@@ -193,7 +194,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto de calefacción?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría instalar tu sistema de calefacción en Bilbao.</p>
-<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+<a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

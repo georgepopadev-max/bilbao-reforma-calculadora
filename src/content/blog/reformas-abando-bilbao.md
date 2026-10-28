@@ -2,7 +2,8 @@
 title: "Reformas Abando Bilbao 2026"
 description: "Reformas Abando Bilbao 2026. Precios por m², multiplicador ×1.20 y empresas especializadas en el barrio. Calcula tu presupuesto."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "8 min"
@@ -26,7 +27,7 @@ inContentCTAs:
     href: "/calculadora?barrio=abando"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao: Guía Especial"
-    href: "reformas-casco-viejo-bilbao"
+    href: "/blog/reformas-casco-viejo-bilbao"
 ---
 
 ## Reformas Abando Bilbao 2026: Guía de Precios y Empresas
@@ -104,14 +105,14 @@ Comprar para reformar en Abando puede compensar si encuentras un piso en mal est
 
 ## Ver También
 
-- Página de barrio: [Reformas en Abando Bilbao](/barrios/reforma-abando)
+- Página de barrio: [Reformas en Abando Bilbao](/blog/reformas-abando-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en Abando](/calculadora?barrio=abando)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
+- [Reformas en Indautxu Bilbao](/bilbao/barrios/indautxu)
+- [Reformas en Begoña Bilbao](/blog/reformas-begona-bilbao)
+- [Reformas en Deusto Bilbao](/bilbao/barrios/deusto)
 
 ### Blogs relacionados
 

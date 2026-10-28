@@ -1,21 +1,23 @@
 ---
 title: "Reforma de Baño en Donostia 2026: Precios y Guía"
 description: "Cuánto cuesta reformar un baño en Donostia. Guía de precios por m², calidades y errores comunes. Solicita 3 presupuestos sin compromiso."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia"
 readTime: "9 min"
 category: "bano"
 city: "donostia"
 faqs:
-  - q: "¿Cuánto cuesta reformar un baño en Donostia en 2025?"
-    a: "El precio de una reforma de baño en Donostia oscila entre 450 €/m² para una reforma parcial y 1.400 €/m² para una reforma completa con cambio de instalaciones. Para un baño estándar de 5 m², una reforma"
+  - q: "¿Cuánto cuesta reformar un baño en Donostia en 2026?"
+    a: "El precio de una reforma de baño en Donostia oscila entre 450 €/m² para una reforma parcial y 1.400 €/m² para una reforma completa con cambio de instalaciones. Para un baño estándar de 5 m², una reforma parcial cuesta entre 2.000 y 3.500 €; una reforma media, entre 3.500 y 6.000 €; y una reforma completa, entre 6.000 y 9.500 €."
   - q: "¿Qué partidas incluye una reforma de baño completa en Donostia?"
-    a: "Una reforma de baño completa incluye: demolición y retirada de escombros, albañilería y preparación de paredes, fontanería nueva (tuberías de agua fría y caliente), electricidad (nuevo cableado, mecan"
+    a: "Una reforma de baño completa incluye: demolición y retirada de escombros, albañilería y preparación de paredes, fontanería nueva (tuberías de agua fría y caliente), electricidad (nuevo cableado, mecanismos y luces), impermeabilización, alicatado de paredes y solado, instalación de sanitarios (inodoro, lavabo, ducha o bañera), grifería, mueble lavabo, espejo, iluminación y pintura de techo."
   - q: "¿Cuánto tiempo dura una reforma de baño en Donostia?"
-    a: "Una reforma de baño parcial suele durar entre 5 y 10 días hábiles. Una reforma de baño completa, con cambio de instalaciones, requiere entre 15 y 25 días hábiles, dependiendo del tamaño del baño, la c"
+    a: "Una reforma de baño parcial suele durar entre 5 y 10 días hábiles. Una reforma de baño completa, con cambio de instalaciones, requiere entre 15 y 25 días hábiles, dependiendo del tamaño del baño, la complejidad de las instalaciones y la disponibilidad de los profesionales."
   - q: "¿Necesito licencia para reformar un baño en Donostia?"
-    a: "Para una reforma de baño que no modifique la estructura ni la distribución, se necesita una licencia de obra menor, con un coste aproximado de 100 a 300 € en Donostia. Si la reforma implica cambiar la p"
+    a: "Para una reforma de baño que no modifique la estructura ni la distribución, se necesita una licencia de obra menor, con un coste aproximado de 100 a 300 € en Donostia. Si la reforma implica cambiar la posición del baño o modificar las instalaciones de agua o saneamiento, puede requerir licencia de obra mayor. Tu empresa de reformas debería gestionar el papeleo."
   - q: "¿Merece la pena reformar el baño antes de vender un piso en Donostia?"
-    a: "Sí. Un baño renovado puede aumentar el valor de venta de un piso entre un 3 % y un 8 % según la zona de Donostia. Un baño en mal estado es uno de los principales motivos de descuento en el precio de com"
+    a: "Sí. Un baño renovado puede aumentar el valor de venta de un piso entre un 3 % y un 8 % según la zona de Donostia. Un baño en mal estado es uno de los principales motivos de descuento en el precio de compra. Invertir 5.000-8.000 € en una reforma de baño puede traducirse en una revalorización de 10.000-15.000 € en el precio final del inmueble."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -26,28 +28,28 @@ breadcrumbs:
 inContentCTAs:
   - type: "herramienta"
     label: "Calculadora de presupuesto reforma baño Donostia ->"
-    href: "../calculadora/bano-bilbao"
+    href: "/calculadora/bano-bilbao"
   - type: "herramienta"
     label: "Guía de presupuestos para reforma de baño en Donostia"
-    href: "presupuesto-reforma-bano-bilbao"
+    href: "/presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de reforma de baño Donostia - comparativa detallada"
-    href: "precio-m2-reforma-bano-bilbao"
+    href: "/blog/precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores más comunes en reformas de baño en Donostia"
-    href: "errores-comunes-reforma-bano-bilbao"
+    href: "/blog/errores-comunes-reforma-bano-bilbao"
   - type: "leer"
     label: "Comparativa: reforma parcial vs completa de baño"
-    href: "comparativa-reforma-bano-bilbao"
+    href: "/blog/comparativa-reforma-bano-bilbao"
   - type: "leer"
     label: "Presupuesto reforma baño Donostia - guía completa para pedir precios"
-    href: "presupuesto-reforma-bano-bilbao"
+    href: "/presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² reforma baño Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-bano-bilbao"
+    href: "/blog/precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores comunes en reformas de baño Donostia - cómo evitarlos"
-    href: "errores-comunes-reforma-bano-bilbao"
+    href: "/blog/errores-comunes-reforma-bano-bilbao"
 priceTables: 1
 ---
 
@@ -62,12 +64,12 @@ priceTables: 1
   <a href="/donostia/calculadora/bano-donostia">Guía de presupuestos para reforma de baño en Donostia</a>
   </div>
 
-  <h2>Precios por m² para reforma de baño en Donostia 2025</h2>
+  <h2>Precios por m² para reforma de baño en Donostia 2026</h2>
 
   <p>Los siguientes precios son <strong>orientativos para Donostia capital y área metropolitana</strong>, e incluyen material y mano de obra con IVA excluded. Los costes varían según el estado actual del baño, la antigüedad del edificio y las calidades elegidas.</p>
 
   <table class="price-table">
-  <caption>Precios orientativos reforma baño Donostia 2025 (material + mano de obra)</caption>
+  <caption>Precios orientativos reforma baño Donostia 2026 (material + mano de obra)</caption>
   <thead>
   <tr>
   <th>Tipo de reforma</th>
@@ -189,9 +191,9 @@ priceTables: 1
   </div>
   </div>
 
-  <h2>Tendencias en reformas de baño en Donostia 2025</h2>
+  <h2>Tendencias en reformas de baño en Donostia 2026</h2>
 
-  <p>El baño donostiarra de 2025 se caracteriza por varias tendencias claras:</p>
+  <p>El baño donostiarra de 2026 se caracteriza por varias tendencias claras:</p>
 
   <ul>
   <li><strong>Ducha a ras de suelo:</strong> La eliminación del plato de ducha y la creación de zona de ducha a ras de suelo gana terreno, especialmente en baños pequeños donde se busca ganar espacio visual.</li>
@@ -204,14 +206,14 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Ya sabes qué tipo de reforma de baño necesitas?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <h2>Preguntas Frecuentes sobre Reforma de Baño en Donostia</h2>
 
   <div class="faq-item">
-  <strong>¿Cuánto cuesta reformar un baño en Donostia en 2025?</strong>
+  <strong>¿Cuánto cuesta reformar un baño en Donostia en 2026?</strong>
   <p>El precio de una reforma de baño en Donostia oscila entre 450 €/m² para una reforma parcial y 1.400 €/m² para una reforma completa con cambio de instalaciones. Para un baño estándar de 5 m², una reforma parcial cuesta entre 2.000 y 3.500 €; una reforma media, entre 3.500 y 6.000 €; y una reforma completa, entre 6.000 y 9.500 €.</p>
   </div>
 

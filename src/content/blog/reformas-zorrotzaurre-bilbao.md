@@ -2,7 +2,8 @@
 title: "Reformas Zorrotzaurre Bilbao 2026"
 description: "Reformas Zorrotzaurre Bilbao 2026. Multiplicador ×1.25, precios loft e integrales en la isla urbana en transformación. Guía local."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "9 min"
@@ -26,7 +27,7 @@ inContentCTAs:
     href: "/calculadora?barrio=zorrotzaurre"
   - type: "leer"
     label: "Tendencias Reforma Cocina Bilbao 2026"
-    href: "tendencias-reforma-cocina-bilbao-2026"
+    href: "/blog/tendencias-reforma-cocina-bilbao-2026"
 ---
 
 ## Reformas Zorrotzaurre Bilbao 2026: Lofts e Integrales
@@ -91,14 +92,14 @@ Las reformas en Zorrotzaurre combinan elementos industriales (techos vistos, est
 
 ## Ver También
 
-- Página de barrio: [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre)
+- Página de barrio: [Reformas en Zorrotzaurre Bilbao](/blog/reformas-zorrotzaurre-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en Zorrotzaurre](/calculadora?barrio=zorrotzaurre)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
-- [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian)
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
+- [Reformas en Deusto Bilbao](/bilbao/barrios/deusto)
+- [Reformas en San Adrián Bilbao](/blog/reformas-san-adrian-bilbao)
+- [Reformas en Basurto Bilbao](/blog/reformas-san-adrian-bilbao)
 
 ### Blogs relacionados
 

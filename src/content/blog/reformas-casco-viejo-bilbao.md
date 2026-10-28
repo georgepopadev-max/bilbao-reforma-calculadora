@@ -2,18 +2,19 @@
 title: "Reformas Casco Viejo Bilbao 2026"
 description: "Reforma Casco Viejo Bilbao 2026: licencias Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
-date: "6 abril 2025"
+date: "2025-04-06"
+updated: "2026-10-28"
 category: "presupuesto"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta reformar un piso en el Casco Viejo de Bilbao?"
-    a: "El precio medio de una reforma integral en el Casco Viejo de Bilbao oscila entre 850€ y 1.600€ por metro cuadrado en 2026, algo más caro que en otros barrios. Para un piso de 80m², el presupuesto orie"
+    a: "El precio medio de una reforma integral en el Casco Viejo de Bilbao oscila entre 850€ y 1.600€ por metro cuadrado en 2026, algo más caro que en otros barrios. Para un piso de 80m², el presupuesto orientativo va de 68.000 € a 128.000 €, según el estado del edificio y los acabados."
   - q: "¿Qué características tiene reformar en el Casco Viejo de Bilbao?"
-    a: "El Casco Viejo presenta características únicas: edificios protegidos (fachadas, portales, escaleras), instalaciones muy antiguas, muros de carga de gran espesor, falta de ascensor en muchos casos, y neces"
+    a: "El Casco Viejo presenta características únicas: edificios protegidos (fachadas, portales, escaleras), instalaciones muy antiguas, muros de carga de gran espesor, falta de ascensor en muchos casos, y necesidad de coordinar la obra con la comunidad y con los horarios de carga y descarga de la zona peatonal."
   - q: "¿Necesito permisos especiales para reformar en el Casco Viejo?"
-    a: "Sí, la mayoría de las obras en el Casco Viejo requieren permisos especiales: el plan urbanístico del Casco Viejo de Bilbao es más restrictivo. Cualquier intervención en fachada, estructura o elementos"
+    a: "Sí, la mayoría de las obras en el Casco Viejo requieren permisos especiales: el plan urbanístico del Casco Viejo de Bilbao es más restrictivo. Cualquier intervención en fachada, estructura o elementos visibles desde la calle necesita autorización previa, y conviene contar con un técnico que conozca el barrio."
   - q: "¿Cuánto tarda una reforma integral en el Casco Viejo?"
-    a: "Una reforma integral en el Casco Viejo tarda entre 12 y 20 semanas para un piso de 70-90m², frente a las 8-14 de otros barrios. El sobrecoste en plazos se debe a la complejidad estructural, gestión de"
+    a: "Una reforma integral en el Casco Viejo tarda entre 12 y 20 semanas para un piso de 70-90m², frente a las 8-14 de otros barrios. El sobrecoste en plazos se debe a la complejidad estructural, gestión de permisos y logística (calles peatonales y horarios restringidos de acceso)."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -24,16 +25,16 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao"
+    href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao"
+    href: "/blog/rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao"
+    href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao"
+    href: "/blog/rehabilitacion-edificio-antiguo-bilbao"
 priceTables: 3
 ---
 
@@ -43,8 +44,8 @@ priceTables: 3
   <p>Las reformas en el Casco Viejo de Bilbao no son como las de un piso en Deusto, Errekalde o cualquier barrio moderno. Hay licencias especiales, accesos imposibles, materiales obligatorios y una logística que puede disparar el presupuesto entre un 20% y un 40% respecto a una reforma equivalente en otro barrio.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="/blog/renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="/blog/rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
 </div>
 
 
@@ -255,8 +256,8 @@ priceTables: 3
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="/blog/renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="/blog/rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
 </div>
 <h2>Resumen: Lo Que Necesitas Saber</h2>
   <ul>
@@ -270,6 +271,6 @@ priceTables: 3
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en el Casco Viejo de Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada. Selecciona "Casco Viejo" como ubicación para aplicar el factor multiplicador de sobrecoste.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

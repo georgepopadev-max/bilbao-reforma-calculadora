@@ -2,20 +2,21 @@
 title: "Reforma para Mayores en Bilbao | Accesibilidad y Ayudas 2026"
 description: "Reformas adaptadas para personas mayores en Bilbao. Subtítulo con ayudas, grants y soluciones sin barreras. Consulta precio orientativo gratis."
 canonical: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
-date: "4 junio 2026"
+date: "2026-06-04"
+updated: "2026-10-28"
 category: "general"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta adaptar un piso para personas mayores en Bilbao?"
-    a: "Una adaptación de accesibilidad en Bilbao para personas mayores cuesta entre 4.000 € y 25.000 € dependiendo de la intensidad de la reforma. Los trabajos más habituales - ducha accesible, puertas más a"
+    a: "Una adaptación de accesibilidad en Bilbao para personas mayores cuesta entre 4.000 € y 25.000 € dependiendo de la intensidad de la reforma. Los trabajos más habituales - ducha accesible, puertas más anchas y suelos antideslizantes - suelen estar entre 6.000 € y 12.000 €. Las reformas parciales puntuales (una barandilla, un suelo) pueden salir por 1.500 € a 3.000 €."
   - q: "¿Qué ayudas y subsidios existen para adaptar un piso de persona mayor en Bizkaia?"
-    a: "Las principales ayudas son: PADIS del Gobierno Vasco (hasta 6.000 € para personas con movilidad reducida), subsidies del IVV (Instituto Vasco de la Vivienda) para accesibilidad, y ayudas municipales d"
+    a: "Las principales ayudas son: PADIS del Gobierno Vasco (hasta 6.000 € para personas con movilidad reducida), ayudas del IVV (Instituto Vasco de la Vivienda) para accesibilidad, y ayudas municipales de accesibilidad del Ayuntamiento de Bilbao. Los requisitos y los importes cambian cada año, así que conviene consultarlos antes de empezar la obra."
   - q: "¿Se necesita licencia para adaptar un baño para personas mayores en Bilbao?"
-    a: "Para adaptaciones menores (cambiar bañera por ducha, instalar barras, cambiar suelo) se necesita una licencia de obra menor (comunicación previa). Si se toca la fontanería o la estructura, puede reque"
+    a: "Para adaptaciones menores (cambiar bañera por ducha, instalar barras, cambiar suelo) se necesita una licencia de obra menor (comunicación previa). Si se toca la fontanería o la estructura, puede requerir licencia de obra mayor. El Ayuntamiento de Bilbao tiene un procedimiento específico para obras de accesibilidad."
   - q: "¿Cuánto tiempo tarda una reforma de adaptación para personas mayores?"
-    a: "Una adaptación de baño (sustituir bañera por ducha walk-in, instalar barras, cambiar suelo) suele durar entre 5 y 10 días hábiles. Una reforma de accesibilidad completa de toda la vivienda (puertas, s"
+    a: "Una adaptación de baño (sustituir bañera por ducha walk-in, instalar barras, cambiar suelo) suele durar entre 5 y 10 días hábiles. Una reforma de accesibilidad completa de toda la vivienda (puertas, suelos, baño, cocina) puede extenderse entre 3 y 6 semanas. Los tiempos dependen de la disponibilidad de materiales y de la complejidad de la obra."
   - q: "¿Quién puede solicitar las ayudas PADIS para accesibilidad en el País Vasco?"
-    a: "Las ayudas PADIS van dirigidas a personas con grado de discapacidad reconocida igual o superior al 33%, o personas mayores de 65 años con movilidad reducida. Se requieren ingresos anuales por debajo d"
+    a: "Las ayudas PADIS van dirigidas a personas con grado de discapacidad reconocida igual o superior al 33%, o personas mayores de 65 años con movilidad reducida. Se requieren ingresos anuales por debajo de ciertos umbrales (consultar convocatoria). La solicitud se hace a través del Departamento de Vivienda del Gobierno Vasco."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -26,16 +27,16 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao"
+    href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Pintar Piso en Bilbao: Guía y Precios"
-    href: "pintar-piso-bilbao"
+    href: "/blog/pintar-piso-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao"
+    href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Pintar Piso en Bilbao: Guía y Precios"
-    href: "pintar-piso-bilbao"
+    href: "/blog/pintar-piso-bilbao"
 priceTables: 1
 ---
 
@@ -45,8 +46,8 @@ priceTables: 1
   <p>La buena noticia es que <strong>adaptar un piso para personas mayores en Bilbao</strong> es más accesible de lo que mucha gente piensa. Hay ayudas públicas, empresas especializadas y precios que, con planificación, caben en un presupuesto razonable. En esta guía te contamos qué reformas son las más importantes, cuánto cuestan y qué ayudas puedes pedir.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
-  <a href="pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
+  <a href="/blog/renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="/blog/pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
 </div>
 
 
@@ -214,8 +215,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
-  <a href="pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
+  <a href="/blog/renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="/blog/pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
 </div>
 <h2>Preguntas frecuentes sobre reformas de accesibilidad para personas mayores en Bilbao</h2>
 
@@ -249,6 +250,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costaría adaptar tu piso en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada de tu proyecto de accesibilidad.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto de reforma</a>
+  <a href="/calculadora" class="btn">Calcular presupuesto de reforma</a>
   </div>
   </div>

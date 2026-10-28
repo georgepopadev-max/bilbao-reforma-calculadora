@@ -1,6 +1,8 @@
 ---
 title: "Empresas Reformas Vitoria: Cómo Elegir"
 description: "Guía para elegir empresas de reformas en Vitoria. Compara presupuestos, evita estafas y aprende a distinguir profesionales con esta guía actualizada."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-vitoria"
 readTime: "12 min"
 category: "empresas"
@@ -9,15 +11,15 @@ faqs:
   - q: "¿Cuánto cuesta una reforma de piso en Vitoria?"
     a: "Una reforma parcial (baño + cocina) oscila entre 8.000-25.000 €. Una reforma integral de un piso de 80m² puede costar entre 50.000-120.000 €, dependiendo del estado inicial y calidades elegidas."
   - q: "¿Necesito licencia para reformar mi baño en Vitoria?"
-    a: "Para una reforma de baño que incluya fontanería nueva o cambio de distribución, se necesita licencia de obra menor. Si solo se cambian sanitarios y azulejos sin modificar instalaciones, puede ser obra"
+    a: "Para una reforma de baño que incluya fontanería nueva o cambio de distribución, se necesita licencia de obra menor. Si solo se cambian sanitarios y azulejos sin modificar instalaciones, puede ser obra menor de trámite rápido. Consulta siempre en el Ayuntamiento de Vitoria."
   - q: "¿Cómo sé si una empresa de reformas es fiable?"
-    a: "Verifica que tenga CIF/NIF activo, alta en Seguridad Social, seguro de RC vigente, y pide al menos 3 presupuestos escritos. Contrasta reseñas en Google y solicita referencias de obras anteriores simil"
+    a: "Verifica que tenga CIF/NIF activo, alta en Seguridad Social, seguro de RC vigente, y pide al menos 3 presupuestos escritos. Contrasta reseñas en Google y solicita referencias de obras anteriores similares a la tuya."
   - q: "¿Qué porcentaje se paga por adelantado a una empresa de reformas?"
     a: "Nunca más del 30% por adelantado. Lo habitual es 20-30% al inicio, 40-50% a mitad de obra, y el resto a la entrega con conformidad firmada."
   - q: "¿Cuánto tarda una reforma de baño en Vitoria?"
     a: "Una reforma completa de baño suele tardar entre 10 y 20 días hábiles, dependiendo de la complejidad (demolición, cambio de ubicación de sanitarios, electricidad, etc.)."
   - q: "¿Qué garantía tiene una reforma de baño?"
-    a: "La garantía legal mínima es de 1 año para elementos de instalación y 2 años para equipos electrodomésticos instalados. Un buen profesional además ofrece garantía de ejecución de obra de al menos 1 año"
+    a: "La garantía legal mínima es de 1 año para elementos de instalación y 2 años para equipos electrodomésticos instalados. Un buen profesional además ofrece garantía de ejecución de obra de al menos 1 año."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -28,16 +30,16 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Empresas de Reformas en Donostia"
-    href: "empresas-reformas-donostia"
+    href: "/blog/empresas-reformas-donostia"
   - type: "leer"
-    label: "Precio Reforma Integral Vitoria: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Vitoria: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Empresas de Reformas en Donostia"
-    href: "empresas-reformas-donostia"
+    href: "/blog/empresas-reformas-donostia"
   - type: "leer"
-    label: "Precio Reforma Integral Vitoria: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Vitoria: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
 priceTables: 1
 ---
 
@@ -47,8 +49,8 @@ priceTables: 1
   <p>Y no lo decimos nosotros: según datos del sector, <strong>el 35% de las denuncias de consumidores</strong> relacionadas con reformas de vivienda en el País Vasco tienen que ver con presupuestos imprecisos, plazos incumplidos o trabajos de mala calidad. La buena noticia es que todos esos problemas se evitan si sabes qué preguntar y qué exigir antes de firmar ningún contrato.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
-  <a href="precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
+  <a href="/blog/empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
+  <a href="/blog/precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2026 con €/m²</a>
 </div>
 
 
@@ -68,7 +70,7 @@ priceTables: 1
 
   <h3>El mercado de reformas en Vitoria y Álava en 2025-2026</h3>
 
-  <p>Álava tiene una particularidad que influye directamente en el sector de las reformas: <strong>más del 60% de las viviendas tienen más de 40 años</strong>, según datos del INE y Eustat. Esto significa que una proporción enorme del parque inmobiliario  alavés necesita actualizaciones en fontanería, electricidad, fachada, cubierta y acabados.</p>
+  <p>Álava tiene una particularidad que influye directamente en el sector de las reformas: <strong>más del 60% de las viviendas tienen más de 40 años</strong>, según datos del INE y Eustat. Esto significa que una proporción enorme del parque inmobiliario alavés necesita actualizaciones en fontanería, electricidad, fachada, cubierta y acabados.</p>
 
   <p>Barrios como <strong>Bilbo La Vieja</strong>, <strong>San Francisco</strong>, <strong>Olabeaga</strong> o <strong>San Martín</strong> están llenos de edificios de los años 50, 60 y 70 que requieren rehabilitaciones que van más allá del simple pintado de paredes. Muchas de estas estructuras de madera o hierro necesitan una evaluación técnica antes de tocar nada.</p>
 
@@ -285,14 +287,14 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Ya sabes qué tipo de reforma necesitas?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos y comparar rangos de precio.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
-  <a href="precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
+  <a href="/blog/empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
+  <a href="/blog/precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2026 con €/m²</a>
 </div>
 <h2>Preguntas Frecuentes</h2>
 

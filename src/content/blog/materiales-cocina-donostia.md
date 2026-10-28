@@ -1,11 +1,12 @@
 ---
 
 title: "Encimeras Cocina Donostia: Materiales 2026"
-description: "Guía definitiva de encimeras de cocina en Donostia 2026: Silestone, Dekton, granito y madera. Compara precios, durabilidad y descubre qué encimera conviene a tu cocina donostiarra."
+description: "Encimeras de cocina en Donostia 2026: Silestone, Dekton, granito y madera. Compara precios y durabilidad y elige la mejor para tu cocina."
 canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-donostia"
 city: donostia
 category: Cocinas
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Qué material elijo para la encimera de mi cocina en Donostia: Silestone, Dekton o granito?"
     a: "Para una cocina familiar donostiarra con mucho uso, el Silestone o Dekton ofrecen la mejor relación practicidad-durabilidad. El Silestone (250-450 €/ml instalado) es el más popular por su buena relación precio-rendimiento y variedad de colores. El Dekton (350-600 €/ml) es más resistente al calor extremo pero más caro. El granito es más económico (200-400 €/ml) pero requiere sellado periódico."

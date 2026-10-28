@@ -1,10 +1,11 @@
 ---
 title: "Reforma Integral Vitoria 2026: Precios"
-description: "Precio reforma integral Vitoria 2026. Cuánto cuesta reformar un piso entero en Vitoria-Gasteiz. Factores que influyen, precios por m² y calculadora de presupuesto gratis."
+description: "Cuánto cuesta reformar un piso entero en Vitoria-Gasteiz en 2026: precios por m², factores que influyen y calculadora de presupuesto gratis."
 canonical: https://www.bilbaoreforma.es/blog/reforma-integral-piso-vitoria
 city: vitoria
 category: Reformas
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Cuánto cuesta una reforma integral en Vitoria por metro cuadrado?"
     a: "En Vitoria, el precio de una reforma integral en 2026 oscila entre 700 €/m² (calidad básica) y 1.300 €/m² (acabados premium). La media habitual se sitúa en torno a 950 €/m² para un piso de características normales en un edificio de entre 30 y 50 años. El mercado alavés es algo más económico que el de Bilbao o Donostia."

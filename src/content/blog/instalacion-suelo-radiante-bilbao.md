@@ -3,16 +3,17 @@ title: "Suelo Radiante Bilbao 2026 | Instalación"
 description: "Instalación suelo radiante en Bilbao: precio 70-100€/m², proceso paso a paso y empresas instaladoras. Subvenciones vigentes."
 canonical: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
 date: "2026-07-03"
+updated: "2026-10-28"
 category: "Calefacción"
 city: "bilbao"
 readTime: "10 min"
 faqs:
   - q: "¿Cuánto cuesta instalar suelo radiante en un piso de 80m² en Bilbao?"
-    a: "El precio de instalación de suelo radiante en Bilbao oscila entre 70 y 100 € por metro cuadrado. Para un piso de 80m², el coste total de la instalación (sin incluir la fuente de calor) está entre 5.600€ y 8.000€."
+    a: "El precio de instalación de suelo radiante en Bilbao oscila entre 70 y 100 € por metro cuadrado. Para un piso de 80m², el coste total de la instalación (sin incluir la fuente de calor) está entre 5.600€ y 8.000€. Si incluyes aerotermia como fuente de calor, el total puede alcanzar los 17.000€-22.000€."
   - q: "¿Cuánto tiempo tarda la instalación de suelo radiante en un piso?"
-    a: "La instalación de suelo radiante en un piso de 80m² suele tardar entre 5 y 7 días laborables: 1-2 días para preparar el suelo e instalar el sistema de tuberías, 2-3 días para el mortero de cobertura, y 1-2 días para el solado final."
+    a: "La instalación de suelo radiante en un piso de 80m² suele tardar entre 5 y 7 días laborables: 1-2 días para preparar el suelo e instalar el sistema de tuberías, 2-3 días para el mortero de cobertura, y 1-2 días para el solado final. El mortero necesita 7-10 días de curado antes de encender el sistema."
   - q: "¿Se puede instalar suelo radiante sobre un suelo existente?"
-    a: "No, es necesario levantar el suelo existente para instalar el sistema de tuberías bajo el mortero. Existen opciones de perfil bajo (3-4cm) que minimizan el impacto en la altura del suelo y las puertas."
+    a: "No, es necesario levantar el suelo existente para instalar el sistema de tuberías bajo el mortero. Existen opciones de perfil bajo (3-4cm) que minimizan el impacto en la altura del suelo y las puertas. En edificios bilbainos con forjado de 20-25cm, esta opción es viable y no suele afectar a la habitabilidad de forma significativa."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -23,13 +24,13 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026: Ventajas"
-    href: "suelo-radiante-ventajas-bilbao"
+    href: "/blog/suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Suelo Radiante vs Radiadores"
-    href: "suelo-radiante-vs-calefaccion"
+    href: "/blog/suelo-radiante-vs-calefaccion"
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"
-    href: "aerotermia-precio-bilbao"
+    href: "/blog/aerotermia-precio-bilbao"
 ---
 
 <div class="article-content">
@@ -207,7 +208,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto con suelo radiante?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría tu reforma con suelo radiante incluido.</p>
-<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+<a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

@@ -8,6 +8,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import { SITE_URL, absoluteUrl } from '../../lib/urls';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -22,12 +23,22 @@ const { Content } = await post.render();
 const title = post.data.title || 'Artículo';
 const description = post.data.description || '';
 const canonical = post.data.canonical;
-const date = post.data.date;
+// Fechas en ISO (YAML convierte 2026-06-29 en Date)
+const isoDate = (d: unknown) => d instanceof Date ? d.toISOString().slice(0, 10) : (d ? String(d) : '');
+const datePublished = isoDate(post.data.date);
+const dateModified = isoDate(post.data.updated) || datePublished;
+const formatDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const pageUrl = absoluteUrl(canonical || `/blog/${post.slug}`);
+const ogImage = `${SITE_URL}/images/og/blog-og.jpg`;
 const readTime = post.data.readTime;
 const category = post.data.category;
 const city = post.data.city || 'bilbao';
 const faqs = (post.data.faqs && Array.isArray(post.data.faqs)) ? post.data.faqs : [];
-const inContentCTAs = (post.data.inContentCTAs && Array.isArray(post.data.inContentCTAs)) ? post.data.inContentCTAs : [];
+// Muchos artículos ya traen su bloque de FAQ en el cuerpo: no lo repetimos debajo
+const bodyHasFaq = /<h2[^>]*>\s*Preguntas frecuentes/i.test(post.body);
+// Sin enlaces repetidos ni enlaces a la propia página
+const inContentCTAs = (Array.isArray(post.data.inContentCTAs) ? post.data.inContentCTAs : [])
+  .filter((cta: any, i: number, all: any[]) => cta.href !== `/blog/${post.slug}` && all.findIndex((c: any) => c.href === cta.href) === i);
 
 // Formulario de lead adaptado a la intención del artículo
 const SERVICE_BY_CATEGORY: Record<string, string> = {
@@ -52,6 +63,20 @@ const faqPageSchema = {
   })),
 };
 
+const blogPostingSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "url": pageUrl,
+  "mainEntityOfPage": pageUrl,
+  "image": ogImage,
+  "inLanguage": "es-ES",
+  ...(datePublished && { "datePublished": datePublished, "dateModified": dateModified }),
+  "author": { "@type": "Organization", "name": "Equipo de Bilbao Reforma", "url": `${SITE_URL}/sobre-nosotros` },
+  "publisher": { "@id": `${SITE_URL}/#organization`, "@type": "Organization", "name": "Bilbao Reforma", "logo": { "@type": "ImageObject", "url": `${SITE_URL}/images/logo.png` } },
+};
+
 // Breadcrumb schema
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -59,13 +84,14 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.bilbaoreforma.es/blog" },
-    { "@type": "ListItem", "position": 3, "name": title, "item": canonical || `https://www.bilbaoreforma.es/blog/${post.slug}` },
+    { "@type": "ListItem", "position": 3, "name": title, "item": pageUrl },
   ],
 };
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} ogImage="https://www.bilbaoreforma.es/images/og/blog-og.jpg" ogImageAlt={title}>
+<BaseLayout title={title} description={description} canonical={canonical} ogType="article" ogImage={ogImage} ogImageAlt={title}>
   <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
     {faqs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />}
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
@@ -84,7 +110,8 @@ const breadcrumbSchema = {
 
       <header style="margin-bottom:2rem">
         <div style="display:flex;gap:1rem;font-size:.8125rem;color:#6B6B6B;margin-bottom:1rem;flex-wrap:wrap">
-          {date && <span>{date}</span>}
+          <span>Por <a href="/sobre-nosotros" style="color:inherit">el equipo de Bilbao Reforma</a></span>
+          {dateModified && <time datetime={dateModified}>{dateModified !== datePublished ? 'Actualizado el ' : 'Publicado el '}{formatDate(dateModified)}</time>}
           {readTime && <span>{readTime} de lectura</span>}
           {category && <span style="background:#FAF7F2;padding:.25rem .75rem;border-radius:999px;font-size:.75rem;font-weight:500">{category}</span>}
         </div>
@@ -100,7 +127,7 @@ const breadcrumbSchema = {
 
       <LeadForm service={leadService} city={city} source="bilbao-reforma-blog" {...leadCopy} />
 
-      {faqs.length > 0 && (
+      {faqs.length > 0 && !bodyHasFaq && (
         <section style="margin-top:2rem;background:#FAF7F2;border-radius:12px;padding:2rem">
           <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.375rem;font-weight:600;color:#2D2D2D;margin-bottom:1.5rem">Preguntas frecuentes</h2>
           <div style="display:flex;flex-direction:column;gap:1.25rem">

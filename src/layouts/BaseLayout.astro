@@ -36,7 +36,9 @@ const {
 } = Astro.props;
 
 const siteUrl = SITE_URL;
-const fullTitle = title.includes('Bilbao Reforma') ? title : `${title} | Bilbao Reforma`;
+// La marca solo se añade si el título sigue cabiendo en ~60 caracteres
+const BRAND_SUFFIX = ' | Bilbao Reforma';
+const fullTitle = title.includes('Bilbao Reforma') || title.length + BRAND_SUFFIX.length > 60 ? title : `${title}${BRAND_SUFFIX}`;
 // Siempre el formato canónico (sin .html ni barra final), aunque la página pase otro
 const canonicalUrl = absoluteUrl(canonical || Astro.url.pathname);
 // Default og:image — falls back to the home OG image; pages can override via ogImage prop.

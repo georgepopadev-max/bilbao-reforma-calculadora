@@ -2,12 +2,13 @@
 title: "Cuánto tarda una Reforma Integral en Bilbao | Plazos 2026"
 description: "Descubre cuánto tarda una reforma integral en Bilbao según tipo de obra. Plazos reales de 2 a 6 meses. Incluye licencias y tiempo de obra por m²."
 canonical: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
-date: "4 junio 2026"
+date: "2026-06-04"
+updated: "2026-10-28"
 category: "integral"
 city: "bilbao"
 faqs:
   - q: "¿Cuánto tiempo se tarda en una reforma integral en Bilbao?"
-    a: "Una reforma integral en Bilbao dura entre 8 y 20 semanas. Un piso de 80m² en edificio normal suele estar entre 10 y 14 semanas. En el Casco Viejo o edificios antiguos, puede extenderse a 16-20 semanas"
+    a: "Entre 8 y 20 semanas según complejidad. Un piso de 80m² en edificio normal suele estar entre 10 y 14 semanas. En el Casco Viejo o edificios antiguos, puede extenderse a 16-20 semanas."
   - q: "¿Cuánto tardan los permisos y licencias para reforma en Bilbao?"
     a: "La licencia de obra menor (comunicación previa) tarda 2-3 semanas. La licencia de obra mayor, necesaria si hay cambios estructurales, puede tardar 4-8 semanas."
   - q: "¿Qué factores pueden alargar el plazo de una reforma en Bilbao?"
@@ -15,7 +16,7 @@ faqs:
   - q: "¿Se puede vivir en el piso durante la reforma integral?"
     a: "Técnicamente es posible pero no recomendable. Durante 4-6 semanas no tendrás cocina ni baño operativos. Si te quedas, prepara cocina provisional y baño temporal."
   - q: "¿Cómo puedo acelerar mi reforma integral en Bilbao?"
-    a: "Contrata al arquitecto desde el primer día para preparar documentación en paralelo; pide presupuestos a 3 empresas y negocia plazos; elige materiales de stock; evita cambios de distribución con muros "
+    a: "Contrata al arquitecto desde el primer día para preparar documentación en paralelo; pide presupuestos a 3 empresas y negocia plazos; elige materiales de stock; evita cambios de distribución con muros de carga y decide todos los materiales antes de empezar la obra."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -25,17 +26,17 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
 inContentCTAs:
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao"
+    href: "/blog/reforma-80m2-bilbao"
   - type: "leer"
-    label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao"
+    label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"
+    href: "/blog/precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao"
+    href: "/blog/reforma-80m2-bilbao"
 priceTables: 1
 ---
 
@@ -46,8 +47,8 @@ priceTables: 1
   <p>La duración depende de tres factores: estado del piso, cambios deseados, y nivel de acabado. Como orientación:</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
+  <a href="/blog/reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
 </div>
 
 
@@ -85,7 +86,7 @@ priceTables: 1
   <li><strong>Licencia de obra menor</strong> (comunicación previa): 2-3 semanas ante el Ayuntamiento de Bilbao.</li>
   <li><strong>Licencia de obra mayor</strong>: necesaria si hay cambios estructurales. Tarda 4-8 semanas con proyecto técnico.</li>
   </ul>
-  <p>Si tu piso está en el <a href="reformas-casco-viejo-bilbao">Casco Viejo de Bilbao</a> o edificio protegido, los permisos pueden requerir informe de Patrimonio Histórico. Consulta antes de planificar. Más detalles en <a href="licencias-obra-bilbao-2026">nuestra guía de licencias</a>.</p>
+  <p>Si tu piso está en el <a href="/blog/reformas-casco-viejo-bilbao">Casco Viejo de Bilbao</a> o edificio protegido, los permisos pueden requerir informe de Patrimonio Histórico. Consulta antes de planificar. Más detalles en <a href="/blog/licencias-obra-bilbao-2026">nuestra guía de licencias</a>.</p>
 
   <h2>Fase 2: Demolición (1-2 Semanas)</h2>
   <p>Con los permisos en mano, empieza la obra. La primera fase es la demolición controlada: retirar azulejos, quitar suelos, desmontar falsos techos. En un piso de 80m², suele durar <strong>1 semana</strong> (hasta 2 semanas si hay mucho material de reformas anteriores). Durante esta fase se identifican problemas ocultos: humedades, instalaciones fuera de plano.</p>
@@ -147,8 +148,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="/blog/precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2026 con €/m²</a>
+  <a href="/blog/reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
 </div>
 <h2>Preguntas Frecuentes</h2>
 
@@ -170,6 +171,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará (y cuánto durará) tu reforma?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

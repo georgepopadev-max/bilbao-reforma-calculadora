@@ -1,20 +1,22 @@
 ---
 title: "12 Errores Comunes en una Reforma Bilbao"
 description: "Errores comunes en una reforma: los 12 fallos más costosos y cómo evitarlos. Guía actualizada para quienes reforman en Bilbao y Bizkaia sin sorpresas."
+date: "2026-06-29"
+updated: "2026-10-28"
 canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
   - q: "¿Cuál es el error más común en una reforma?"
-    a: "El error más común es no pedir suficientes presupuestos (o solo pedir uno). La diferencia entre el presupuesto más bajo y el más alto para el mismo trabajo puede ser del 30-40%. Siempre pide al menos "
+    a: "El error más común es no pedir suficientes presupuestos (o solo pedir uno). La diferencia entre el presupuesto más bajo y el más alto para el mismo trabajo puede ser del 30-40%. Siempre pide al menos 3 presupuestos desglosados por partidas para poder comparar."
   - q: "¿Cuánto presupuesto de contingencia debo tener en una reforma?"
-    a: "Siempre añade un 15-20% de presupuesto extra para imprevistos. En reformas de pisos antiguos en Bilbao (Santutxu, Casco Viejo, Indautxu), este porcentaje debería ser del 20-25% porque suelen aparecer "
+    a: "Siempre añade un 15-20% de presupuesto extra para imprevistos. En reformas de pisos antiguos en Bilbao (Santutxu, Casco Viejo, Indautxu), este porcentaje debería ser del 20-25% porque suelen aparecer tuberías de plomo, cableado antiguo o humedades ocultas al abrir paredes y suelos."
   - q: "¿Por qué no debo elegir el presupuesto más bajo?"
-    a: "Un presupuesto muy bajo suele significar materiales de baja calidad, profesionales sin experiencia, o partidas que se quedan fuera del presupuesto y aparecerán después como 'extras'. Un presupuesto pa"
+    a: "Un presupuesto muy bajo suele significar materiales de baja calidad, profesionales sin experiencia, o partidas que se quedan fuera del presupuesto y aparecerán después como 'extras'. Un presupuesto para el mismo trabajo muy por debajo de los demás suele esconder recortes que acabarás pagando."
   - q: "¿Qué problemas aparecen siempre en pisos antiguos de Bilbao?"
-    a: "En pisos de más de 40 años en Bilbao es casi seguro que encontrarás: tuberías de plomo o hierro galvanizado que hay que sustituir, cableado eléctrico sin toma de tierra ni mecanismo diferencial, y hum"
+    a: "En pisos de más de 40 años en Bilbao es casi seguro que encontrarás: tuberías de plomo o hierro galvanizado que hay que sustituir, cableado eléctrico sin toma de tierra ni mecanismo diferencial, y humedades por condensación o capilaridad en plantas bajas y fachadas sin aislar."
   - q: "¿Cuánto tiempo dura una reforma integral en Bilbao?"
-    a: "Una reforma integral de un piso de 80m² en Bilbao suele tardar entre 6 y 12 semanas, dependiendo de la complejidad. Los retrasos más comunes vienen por falta de materiales, empresas con demasiada carg"
+    a: "Una reforma integral de un piso de 80m² en Bilbao suele tardar entre 6 y 12 semanas, dependiendo de la complejidad. Los retrasos más comunes vienen por falta de materiales, empresas con demasiada carga de trabajo y cambios de última hora en los materiales."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -24,17 +26,17 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 inContentCTAs:
   - type: "leer"
-    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
-    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"
+    href: "/blog/reforma-cocina-bilbao"
   - type: "leer"
-    label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao"
+    label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
-    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao"
+    label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"
+    href: "/blog/reforma-cocina-bilbao"
 priceTables: 0
 ---
 
@@ -44,8 +46,8 @@ priceTables: 0
   <p>Después de asesorar a cientos de propietarios en Bilbao y Bizkaia durante sus reformas, hemos identificado los 12 errores que más dinero cuesta, más estrés generan y más fáciles son de evitar.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2026</a>
+  <a href="/blog/reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2026</a>
 </div>
 
 
@@ -148,8 +150,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="/blog/reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2026</a>
+  <a href="/blog/reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2026</a>
 </div>
   <h2>Reforma de baño vs reforma de cocina en Bilbao: qué merece más la pena</h2>
 
@@ -183,12 +185,12 @@ priceTables: 0
   </ul>
   </div>
 
-  <p>Una cosa más: usa nuestra <a href="../calculadora">calculadora de presupuestos</a> para obtener un rango de precios de mercado realista antes de empezar a pedir presupuestos. Así podrás detectar inmediatamente si un presupuesto es sospechosamente bajo - o sospechosamente alto.</p>
+  <p>Una cosa más: usa nuestra <a href="/calculadora">calculadora de presupuestos</a> para obtener un rango de precios de mercado realista antes de empezar a pedir presupuestos. Así podrás detectar inmediatamente si un presupuesto es sospechosamente bajo - o sospechosamente alto.</p>
 
   <div class="article-cta">
   <h3>Obtén un Presupuesto Realista Antes de Empezar tu Reforma</h3>
   <p>Usa nuestra calculadora para saber lo que debería costar una reforma en Bilbao - antes de firmar nada.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <p><strong>Fuentes:</strong> Información sobre costes de reforma basada en datos del <a href="https://observatorioinmobiliario.es/noticias/residencial/el-mercado-de-la-reforma-alcanzar%C3%A1-19-millones-de-viviendas-en-2025-y-la-rehabilitaci%C3%B3n-crecer%C3%A1-un-75/" target="_blank" rel="noopener">Observatorio Inmobiliario</a> y <a href="https://domdiseno.com/precio-reforma-integral-2025-tabla-e-m%C2%B2-por-provincia/" target="_blank" rel="noopener">Dom Diseño</a>.</p>

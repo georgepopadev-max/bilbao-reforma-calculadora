@@ -2,21 +2,22 @@
 title: "Subvenciones para Reformas Bilbao 2026 | Guía Actualizada"
 description: "Todas las ayudas y grants para reformas en Bilbao 2026. IDAE, Gobierno Vasco y Ayuntamiento. Solicita antes del cierre de convocatoria."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
-date: "21 junio 2026"
+date: "2026-06-21"
+updated: "2026-10-28"
 readTime: "10 min"
 category: "subvenciones"
 city: "bilbao"
 faqs:
   - q: "¿Puedo solicitar las ayudas del Gobierno Vasco si vivo de alquiler?"
-    a: "En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revertir en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pens"
+    a: "En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revierta en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pensadas para el propietario, así que antes de pedir nada conviene hablarlo con él y dejarlo por escrito."
   - q: "¿Me conceden la ayuda antes o después de pagar la obra?"
-    a: "Lo habitual en 2026 es que primero se concede la ayuda (resolución favorable), después ejecutas la obra y, finalmente, cobras una vez justificados los gastos. Algunas convocatorias avanzadas permiten "
+    a: "Lo habitual en 2026 es que primero se concede la ayuda (resolución favorable), después ejecutas la obra y, finalmente, cobras una vez justificados los gastos. Algunas convocatorias avanzadas permiten pedir un anticipo, pero lo habitual es adelantar el pago de la obra y cobrar la ayuda al final."
   - q: "¿Qué pasa si tras la reforma no consigo la mejora energética prometida?"
-    a: "Si la obra no alcanza el salto de letras en el CEE que justificaba la subvención, la Administración puede reclamarte la devolución proporcional. Por eso es clave no inflar las expectativas en la solic"
+    a: "Si la obra no alcanza el salto de letras en el CEE que justificaba la subvención, la Administración puede reclamarte la devolución proporcional. Por eso es clave no inflar las expectativas en la solicitud y pedir a la empresa un cálculo realista del ahorro antes de empezar."
   - q: "¿Las ayudas sirven para reformar un piso recién comprado?"
-    a: "Sí, siempre que sea tu vivienda habitual, acredites la propiedad mediante escritura reciente y cumplas los requisitos de ingresos (cuando apliquen). De hecho, muchos propietarios aprovechan la compra "
+    a: "Sí, siempre que sea tu vivienda habitual, acredites la propiedad mediante escritura reciente y cumplas los requisitos de ingresos (cuando apliquen). De hecho, muchos propietarios aprovechan la compra para hacer la reforma antes de mudarse y pedir las ayudas a la vez."
   - q: "¿Quién me ayuda a tramitar todo esto en Bilbao?"
-    a: "Puedes acudir a la Oficina de Vivienda del Ayuntamiento de Bilbao (en Zaramaga, en Santutxu), a las oficinas de Eusko Jaurlaritza y a las gestorías especializadas en rehabilitación. Muchas empresas de"
+    a: "Puedes acudir a la Oficina de Vivienda del Ayuntamiento de Bilbao, a las oficinas de Eusko Jaurlaritza y a las gestorías especializadas en rehabilitación. Muchas empresas de reformas también se ofrecen a preparar la documentación técnica."
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
@@ -26,20 +27,20 @@ breadcrumbs:
     url: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
 inContentCTAs:
   - type: "leer"
-    label: "Reformas Bilbao 2025: Guía Completa para No Cometer Errores"
-    href: "reformas-bilbao-guia-2025"
+    label: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"
+    href: "/blog/reformas-bilbao-precios"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao: Qué Hacer Antes de Reformar"
-    href: "rehabilitacion-edificio-antiguo-bilbao"
+    href: "/blog/rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Licencias necesarias en Bilbao 2026: tipos, costes y tramitación"
-    href: "licencias-obra-bilbao-2026"
+    href: "/blog/licencias-obra-bilbao-2026"
   - type: "leer"
-    label: "Reformas Bilbao 2025: Guía Completa para No Cometer Errores"
-    href: "reformas-bilbao-guia-2025"
+    label: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"
+    href: "/blog/reformas-bilbao-precios"
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Subvenciones"
-    href: "aerotermia-bilbao-ventajas"
+    href: "/blog/aerotermia-bilbao-ventajas"
 priceTables: 3
 ---
 
@@ -50,9 +51,9 @@ priceTables: 3
 
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reformas-bilbao-guia-2025">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao: Qué Hacer Antes de Reformar</a>
-  <a href="licencias-obra-bilbao-2026">Licencias necesarias en Bilbao 2026: tipos, costes y tramitación</a>
+  <a href="/blog/reformas-bilbao-precios">Reformas Bilbao 2026: Guía Completa para No Cometer Errores</a>
+  <a href="/blog/rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao: Qué Hacer Antes de Reformar</a>
+  <a href="/blog/licencias-obra-bilbao-2026">Licencias necesarias en Bilbao 2026: tipos, costes y tramitación</a>
 </div>
 
   <h2>El Mapa de Ayudas en 2026: Cuatro Niveles que Conviene Conocer</h2>
@@ -357,7 +358,7 @@ priceTables: 3
 
   <h3>Paso 1: Define tu Reforma y Calcula un Presupuesto Real</h3>
 
-  <p>Antes de mirar convocatorias, necesitas saber qué vas a hacer y cuánto costará aproximadamente. Empieza con la <a href="../calculadora">calculadora de reformas</a> para tener una cifra de partida y, a partir de ahí, pide al menos dos o tres presupuestos detallados a <a href="../empresas">empresas de reformas en Bilbao</a>.</p>
+  <p>Antes de mirar convocatorias, necesitas saber qué vas a hacer y cuánto costará aproximadamente. Empieza con la <a href="/calculadora">calculadora de reformas</a> para tener una cifra de partida y, a partir de ahí, pide al menos dos o tres presupuestos detallados a <a href="/empresas">empresas de reformas en Bilbao</a>.</p>
 
   <h3>Paso 2: Identifica Qué Ayudas Aplican a tu Caso</h3>
 
@@ -503,15 +504,15 @@ priceTables: 3
 
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reformas-bilbao-guia-2025">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
-  <a href="aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Subvenciones</a>
+  <a href="/blog/reformas-bilbao-precios">Reformas Bilbao 2026: Guía Completa para No Cometer Errores</a>
+  <a href="/blog/aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Subvenciones</a>
 </div>
 
   <h2>Preguntas Frecuentes sobre Subvenciones 2026</h2>
 
   <details class="faq-item" open>
   <summary>¿Puedo solicitar las ayudas del Gobierno Vasco si vivo de alquiler?</summary>
-  <p>En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revertir en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pensadas para el propietario, aunque las de accesibilidad son las que más fácilmente aceptan inquilinos cuando hay personas mayores o con movilidad reducida en la unidad familiar.</p>
+  <p>En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revierta en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pensadas para el propietario, aunque las de accesibilidad son las que más fácilmente aceptan inquilinos cuando hay personas mayores o con movilidad reducida en la unidad familiar.</p>
   </details>
 
   <details class="faq-item">
@@ -531,22 +532,22 @@ priceTables: 3
 
   <details class="faq-item">
   <summary>¿Quién me ayuda a tramitar todo esto en Bilbao?</summary>
-  <p>Puedes acudir a la Oficina de Vivienda del Ayuntamiento de Bilbao (en Zaramaga, en Santutxu), a las oficinas de Eusko Jaurlaritza y a las gestorías especializadas en rehabilitación. Muchas <a href="../empresas">empresas de reformas en Bilbao</a> también te acompañan en la preparación de la documentación técnica y económica.</p>
+  <p>Puedes acudir a la Oficina de Vivienda del Ayuntamiento de Bilbao, a las oficinas de Eusko Jaurlaritza y a las gestorías especializadas en rehabilitación. Muchas <a href="/empresas">empresas de reformas en Bilbao</a> también te acompañan en la preparación de la documentación técnica y económica.</p>
   </details>
 
   <div class="article-cta">
   <h3>Calcula tu Reforma y Planifica las Ayudas</h3>
   <p>Antes de pedir una subvención, necesitas una cifra realista de lo que vas a gastar. Usa nuestra calculadora gratuita y solicita presupuestos a empresas verificadas.</p>
-  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
+  <a href="/calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
-  <p>Si quieres avanzar con tu proyecto, en nuestra <a href="/">calculadora de reformas</a> obtendrás una estimación en menos de dos minutos. Y cuando tengas los números claros, solicita hasta tres presupuestos comparados a <a href="../empresas">empresas de reformas en Bilbao</a> con experiencia en obras subvencionadas. Si además quieres revisar el resto de pasos previos a una reforma, la <a href="reformas-bilbao-guia-2025">guía completa de reformas en Bilbao 2025</a> cubre precios por m², barrios, licencias y errores a evitar.</p>
+  <p>Si quieres avanzar con tu proyecto, en nuestra <a href="/">calculadora de reformas</a> obtendrás una estimación en menos de dos minutos. Y cuando tengas los números claros, solicita hasta tres presupuestos comparados a <a href="/empresas">empresas de reformas en Bilbao</a> con experiencia en obras subvencionadas. Si además quieres revisar el resto de pasos previos a una reforma, la <a href="/blog/reformas-bilbao-precios">guía completa de reformas en Bilbao 2026</a> cubre precios por m², barrios, licencias y errores a evitar.</p>
 
   <p>En conjunto, las <strong>subvenciones reformas Bilbao 2026</strong> se han consolidado como una herramienta imprescindible para quien plantea una rehabilitación. Combinadas con deducciones autonómicas y bonificación municipal, pueden recortar de forma significativa la inversión final.</p>
 
   <section class="author-bio" style="margin-top: 2.5rem; padding: 1.5rem; background: var(--color-crema); border-radius: var(--radius-card); border-left: 4px solid var(--color-terracota);">
   <h3 style="font-family: var(--font-playfair); font-size: 1.125rem; font-weight: 600; color: var(--color-grafito); margin: 0 0 0.5rem;">Sobre el autor</h3>
-  <p style="margin: 0; color: var(--color-grafito); line-height: 1.6;"><strong>Equipo Bilbao Reforma</strong> es el equipo editorial de <a href="/">bilbaoreforma.es</a>. Reunimos a técnicos, arquitectos y especialistas en rehabilitación de vivienda en Bilbao y Bizkaia que analizan al detalle las convocatorias de ayudas y subvenciones públicas vigentes cada año. Nuestra misión es ayudarte a planificar tu reforma con cifras reales, normativa actualizada y referencias oficiales. Más información en <a href="../sobre-nosotros">quiénes somos</a>.</p>
+  <p style="margin: 0; color: var(--color-grafito); line-height: 1.6;"><strong>Equipo Bilbao Reforma</strong> es el equipo editorial de <a href="/">bilbaoreforma.es</a>. Reunimos a técnicos, arquitectos y especialistas en rehabilitación de vivienda en Bilbao y Bizkaia que analizan al detalle las convocatorias de ayudas y subvenciones públicas vigentes cada año. Nuestra misión es ayudarte a planificar tu reforma con cifras reales, normativa actualizada y referencias oficiales. Más información en <a href="/sobre-nosotros">quiénes somos</a>.</p>
   </section>
 
   <p class="legal-disclaimer"><strong>Aviso legal:</strong> la información contenida en este artículo es orientativa y se basa en el marco normativo y los programas públicos conocidos a fecha de junio de 2026. Las cuantías, requisitos, plazos y procedimientos de cada ayuda pueden variar entre convocatorias y comunidades autónomas. Esta guía no constituye asesoramiento jurídico, fiscal ni técnico. Antes de tomar decisiones económicas, consulta la convocatoria oficial vigente y, si procede, a un profesional (gestoría, arquitecto técnico o asesor fiscal). Bilbao Reforma no se responsabiliza de decisiones adoptadas exclusivamente a partir de este contenido.</p>

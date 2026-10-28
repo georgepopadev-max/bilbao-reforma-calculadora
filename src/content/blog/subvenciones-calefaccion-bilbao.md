@@ -3,6 +3,7 @@ title: "Subvenciones Calefacción Bilbao 2026"
 description: "Subvenciones calefacción Bilbao 2026: Plan Rehabilitación, Gobierno Vasco y ayudas municipales. Hasta 6.000€."
 canonical: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
 date: "2026-07-03"
+updated: "2026-10-28"
 category: "Calefacción"
 city: "bilbao"
 readTime: "9 min"
@@ -10,7 +11,7 @@ faqs:
   - q: "¿Qué subventions hay para calefacción en Bilbao en 2026?"
     a: "En 2026 hay tres niveles de ayudas: Plan Rehabilitación Next Generation (hasta 40% de la inversión), Gobierno Vasco PREE (hasta 12.000€/vivienda) y Ayuntamiento de Bilbao (bonificación IBI). En total, las ayudas pueden superar el 50% de la inversión en sistemas de aerotermia o biomasa."
   - q: "¿Cuánto dinero puedo obtener de las subvenciones para calefacción?"
-    a: "Depende del sistema elegido. Para aerotermia en una vivienda de 100m² (inversión 14.000€), las ayudas pueden sumar entre 5.000€ y 7.000€. Para suelo radiante con aerotermia, hasta 8.000€ o más. Los importes varían según los programas y la disponibilidad presupuestaria."
+    a: "Depende del sistema elegido. Para aerotermia en una vivienda de 100m² (inversión 14.000€), las ayudas pueden sumar entre 5.000€ y 7.000€. Para suelo radiante con aerotermia, hasta 8.000€ o más. Los importes varían según los programas y la disponibilidad presupuestaria. Consulta con la entidad gestora para confirmar el importe final."
   - q: "¿Cuáles son los requisitos para acceder a las subventions?"
     a: "Los requisitos principales son: ser propietario o inquilino de la vivienda, que sea residencia habitual, contratar empresa instaladora habilitada, cumplir los requisitos técnicos del equipo (COP, etiquetado energético), y solicitar la ayuda antes de iniciar la obra."
 breadcrumbs:
@@ -23,13 +24,13 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"
-    href: "aerotermia-precio-bilbao"
+    href: "/blog/aerotermia-precio-bilbao"
   - type: "leer"
     label: "Instalación Suelo Radiante Bilbao"
-    href: "instalacion-suelo-radiante-bilbao"
+    href: "/blog/instalacion-suelo-radiante-bilbao"
   - type: "leer"
     label: "Cambiar Caldera Bilbao 2026"
-    href: "cambio-caldera-bilbao"
+    href: "/blog/cambio-caldera-bilbao"
 ---
 
 <div class="article-content">
@@ -215,7 +216,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres calcular tu presupuesto con subventions?</h3>
 <p>Usa nuestra calculadora para estimar el coste de tu reforma de calefacción en Bilbao, incluyendo posibles ayudas.</p>
-<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+<a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

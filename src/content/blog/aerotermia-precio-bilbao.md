@@ -3,14 +3,15 @@ title: "Aerotermia Precio Bilbao 2026 | Guía"
 description: "Aerotermia en Bilbao: precio 12.000-18.000€, ahorro hasta 70% y subvenciones Plan Rehabilitación vigentes."
 canonical: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 date: "2026-07-03"
+updated: "2026-10-28"
 category: "Calefacción"
 city: "bilbao"
 readTime: "10 min"
 faqs:
   - q: "¿Cuánto cuesta instalar aerotermia en Bilbao?"
-    a: "El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. Este precio puede reducirse significativamente gracias a las subventions del Plan Rehabilitación Energética Next Generation."
+    a: "El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. Este precio puede reducirse significativamente gracias a las subvenciones del Plan Rehabilitación Energética Next Generation (hasta 40% de la inversión) y las ayudas del Gobierno Vasco (hasta 12.000€ por vivienda)."
   - q: "¿Cuánto se ahorra con aerotermia frente al gas natural?"
-    a: "Para una vivienda de 90m² en Bilbao, la factura mensual de calefacción puede pasar de 100-150€ con gas natural a 40-70€ con aerotermia. El ahorro anual se sitúa entre 600€ y 1.000€, con lo que la inversión se amortiza en 6-10 años."
+    a: "Para una vivienda de 90m² en Bilbao, la factura mensual de calefacción puede pasar de 100-150€ con gas natural a 40-70€ con aerotermia. El ahorro anual se sitúa entre 600€ y 1.000€, con lo que la inversión se amortiza en 6-10 años considerando las subvenciones disponibles."
   - q: "¿Qué subvenciones hay para aerotermia en Bilbao en 2026?"
     a: "El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión. El Gobierno Vasco añade hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
 breadcrumbs:
@@ -23,13 +24,13 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Bilbao: Ventajas"
-    href: "aerotermia-bilbao-ventajas"
+    href: "/blog/aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026"
-    href: "suelo-radiante-ventajas-bilbao"
+    href: "/blog/suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Tipos Calefacción Bilbao 2026"
-    href: "tipos-calefaccion-bilbao"
+    href: "/blog/tipos-calefaccion-bilbao"
 ---
 
 <div class="article-content">
@@ -207,7 +208,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto con aerotermia?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría tu instalación de aerotermia en Bilbao.</p>
-<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
+<a href="/calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

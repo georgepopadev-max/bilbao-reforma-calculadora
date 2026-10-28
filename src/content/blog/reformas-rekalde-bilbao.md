@@ -2,7 +2,8 @@
 title: "Reformas Rekalde Bilbao"
 description: "Reformas Rekalde Bilbao 2026. Multiplicador ×0.90, barrio económico para reformas funcionales. Guía con precios y empresas."
 canonical: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao"
-date: "3 julio 2026"
+date: "2026-07-03"
+updated: "2026-10-28"
 category: "Reformas Bilbao"
 city: "bilbao"
 readTime: "8 min"
@@ -26,7 +27,7 @@ inContentCTAs:
     href: "/calculadora?barrio=rekalde"
   - type: "leer"
     label: "Cómo Ahorrar en tu Reforma sin Perder Calidad"
-    href: "reformas-bilbao-precios"
+    href: "/blog/reformas-bilbao-precios"
 ---
 
 ## Reformas Rekalde Bilbao: Cómo Ahorrar
@@ -102,14 +103,14 @@ Aprovecha el multiplicador del 0.90 (10% de ahorro automático), reforma fuera d
 
 ## Ver También
 
-- Página de barrio: [Reformas en Rekalde Bilbao](/barrios/reforma-rekalde)
+- Página de barrio: [Reformas en Rekalde Bilbao](/blog/reformas-rekalde-bilbao)
 - Calculadora con multiplicador aplicado: [Calcular presupuesto en Rekalde](/calculadora?barrio=rekalde)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
+- [Reformas en Zabalburu Bilbao](/blog/reformas-zabalburu-bilbao)
+- [Reformas en Begoña Bilbao](/blog/reformas-begona-bilbao)
+- [Reformas en Basurto Bilbao](/blog/reformas-san-adrian-bilbao)
 
 ### Blogs relacionados
 

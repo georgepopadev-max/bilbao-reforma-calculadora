@@ -78,11 +78,14 @@ const schema = {
     },
   }),
 };
+
+// Meta description de ~155 caracteres cortada por frases completas
+const metaDescription = empresa.description.split(/(?<=\.)\s+/).reduce((acc: string, sentence: string) => !acc ? sentence : (acc + ' ' + sentence).length <= 158 ? acc + ' ' + sentence : acc, '');
 ---
 
 <BaseLayout
   title={`${empresa.name} | ${empresa.location} 2026`}
-  description={`${empresa.description} Tel y servicios. Reseñas verificadas.`}
+  description={metaDescription}
   canonical={Astro.url.pathname}
   ogImage={ogImage}
   ogImageAlt={ogImageAlt}

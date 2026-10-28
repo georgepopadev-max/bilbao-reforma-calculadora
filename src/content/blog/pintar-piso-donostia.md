@@ -5,7 +5,8 @@ description: "Precio pintar piso Donostia 2026: €/m² según tipo de pintura, 
 canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-donostia"
 city: donostia
 category: Acabados
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Cuánto cuesta pintar un piso de 80m² en Donostia?"
     a: "Para un piso de 80m² en Donostia (aproximadamente 160-180m² de paredes), el precio oscila entre 1.360 € y 3.050 € dependiendo de la calidad de pintura y preparación de paredes. La pintura básica (vinílica) cuesta entre 8-10 €/m², mientras que una pintura premium con alisado de gotelé puede llegar a 15-20 €/m²."

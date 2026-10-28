@@ -4,7 +4,8 @@ description: "Precio de pintar un piso en Vitoria: desde 8€/m². Alisado de pa
 canonical: https://www.bilbaoreforma.es/blog/pintar-piso-vitoria
 city: vitoria
 category: Acabados
-date: 2026-06-29
+date: "2026-06-29"
+updated: "2026-10-28"
 faqs:
   - q: "¿Cuánto cuesta pintar un piso de 80m² en Vitoria?"
     a: "Para un piso de 80m² en Vitoria (aproximadamente 160-180m² de pared), el precio oscila entre 1.360-1.700 € (básico), 1.900-2.440 € (medio) y 2.340-3.050 € (premium). Los metros se calculan de pared, no de suelo."
