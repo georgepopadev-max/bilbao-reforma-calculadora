@@ -5,12 +5,6 @@ import { readdirSync, readFileSync } from 'node:fs';
 
 const SITE = 'https://www.bilbaoreforma.es';
 
-// Páginas que no son canónicas de sí mismas o no deben indexarse
-const SITEMAP_EXCLUDE = new Set([
-  '/donostia/reforma-donostia',
-  '/vitoria/reforma-vitoria',
-]);
-
 // Mismo formato que las canonicals: sin .html ni barra final
 function canonicalUrl(url) {
   let path = new URL(url).pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
@@ -42,7 +36,6 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap({
-      filter: (page) => !SITEMAP_EXCLUDE.has(new URL(canonicalUrl(page)).pathname),
       serialize: (item) => {
         const url = canonicalUrl(item.url);
         return BLOG_LASTMOD[url] ? { ...item, url, lastmod: BLOG_LASTMOD[url] } : { ...item, url };

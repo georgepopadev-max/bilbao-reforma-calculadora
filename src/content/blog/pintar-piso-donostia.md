@@ -1,131 +1,86 @@
 ---
-
-title: "Pintar Piso Donostia: Precios por m² 2026"
-description: "Precio pintar piso Donostia 2026: €/m² según tipo de pintura, preparación de paredes, diferencia entre vinílica y acrílica, y coste de alisar gotelé."
+title: "Pintar un Piso en Donostia 2026: Precios por m²"
+description: "Cuánto cuesta pintar un piso en Donostia en 2026: precio por m² de pared, alisado de gotelé, pinturas antimoho para la humedad del Cantábrico y plazos."
 canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-donostia"
-city: donostia
-category: Acabados
 date: "2026-06-29"
 updated: "2026-10-28"
+readTime: "7 min"
+category: "Acabados"
+city: "donostia"
 faqs:
-  - q: "¿Cuánto cuesta pintar un piso de 80m² en Donostia?"
-    a: "Para un piso de 80m² en Donostia (aproximadamente 160-180m² de paredes), el precio oscila entre 1.360 € y 3.050 € dependiendo de la calidad de pintura y preparación de paredes. La pintura básica (vinílica) cuesta entre 8-10 €/m², mientras que una pintura premium con alisado de gotelé puede llegar a 15-20 €/m²."
-  - q: "¿Qué tipo de pintura es mejor para un piso en Donostia?"
-    a: "La pintura acrílica es la más recomendable para viviendas en Donostia por su excelente relación calidad-precio, buena transpirabilidad y resistencia a la humedad. Para cocinas, baños o dormitorios de niños, la pintura lavable premium (Procolor W, Bruguer Expert) es la mejor opción por su resistencia al roce y lavabilidad."
-  - q: "¿Cuánto cuesta alisar el gotelé en Donostia?"
-    a: "Alisar gotelé en Donostia cuesta entre 15 y 20 €/m². Este precio incluye la aplicación de plaste sobre el relieve existente hasta dejar la superficie completamente lisa, lijado y dos manos de pintura acrílica. El gotelé fue el estándar en construcción durante los años 70, 80 y 90 en Gipuzkoa, así que es muy común en pisos de cierta antigüedad."
-  - q: "¿Los precios de pintura en Donostia son más altos que en Bilbao?"
-    a: "Los precios de pintura en Donostia son muy similares a los de Bilbao, en la franja media-alta del mercado español. Un piso de 80m² puede costar entre 1.900 € y 3.050 € con pintura de calidad media-alta. La diferencia principal respecto a ciudades más pequeñas es la disponibilidad de profesionales especializados y la mayor demanda en temporada de primavera-verano."
-  - q: "¿Se puede pintar directamente sobre gotelé?"
-    a: "Técnicamente sí, pero no es recomendable porque se sigue viendo el relieve bajo la pintura y el acabado queda deficiente. Las opciones son: pintar directamente (no recomendado, 8-10 €/m²), aplicar esmalte sobre gotelé (algo mejor, 10-12 €/m²), o alisar con plaste y pintar (resultado óptimo, 15-20 €/m²). La tercera opción es la más habitual en reformas de calidad."
+  - q: "¿Cuánto cuesta pintar un piso de 80 m² en Donostia?"
+    a: "Un piso de 80 m² tiene unos 170 m² de pared. Pintarlo en blanco con dos manos sale por 1.500-2.200 €, y con techos y pintura de mejor calidad, por 2.200-3.300 €. Si hay que alisar gotelé, el total sube a 3.000-4.500 €."
+  - q: "¿Qué pintura conviene con la humedad de Donostia?"
+    a: "Para salones y dormitorios, una pintura plástica de buena calidad y transpirable. En baños, cocinas y paredes orientadas al norte conviene una pintura antimoho o con fungicida. Si ya hay moho, primero hay que limpiar con un tratamiento específico y resolver la causa."
+  - q: "¿Cuánto cuesta quitar el gotelé en Donostia?"
+    a: "Alisar gotelé con plaste y dejarlo pintado cuesta entre 16 y 22 €/m² de pared. En un piso de 80 m² supone entre 2.700 y 3.700 € solo en paredes."
+  - q: "¿Cuánto tarda pintar un piso entero?"
+    a: "Un pintor con ayudante pinta un piso de 80 m² vacío en 3-4 días. Si hay que alisar gotelé, el trabajo se alarga a 6-8 días porque el plaste necesita secar entre capas, y en Donostia el secado es más lento los días de lluvia."
 inContentCTAs:
-  - type: calculator
-    label: 📊 Herramienta recomendada
-    href: /donostia/calculadora
+  - type: "calculator"
+    label: "Calcula el precio de pintar tu piso en Donostia"
+    href: "/donostia/calculadora/pintura-donostia"
+  - type: "leer"
+    label: "Cambiar el suelo en Donostia: precios y materiales"
+    href: "/blog/cambiar-suelo-donostia"
+  - type: "leer"
+    label: "Precio de una reforma integral en Donostia"
+    href: "/blog/precio-reforma-integral-donostia"
 ---
+Pintar es la reforma más rápida y barata para cambiar el aspecto de un piso. En Donostia hay que tener en cuenta un factor extra: la humedad. Una pintura que aguanta años en un piso seco puede llenarse de manchas en un invierno si la pared está fría o mal ventilada.
 
-Pintar un piso es la reforma más accesible y la que mayor impacto visual produce por menos dinero. Pero cuando vas a pedir presupuestos en Donostia, te encuentras con un rango de precios que va de los 8 €/m² a los 15 €/m², y no queda nada claro qué incluye uno y otro. Vamos a resolverlo.
+## Precio por m² de pintura en Donostia
 
-## Precio de Pintura en Donostia 2026: Tabla por m²
+Los precios son por metro cuadrado de pared y con mano de obra incluida. Como regla rápida, un piso tiene unas dos veces y cuarto su superficie en paredes: 80 m² de piso son unos 170-180 m² de pared.
 
-El coste de pintar un piso en Donostia depende fundamentalmente de dos variables: el **estado de las paredes** y la **calidad de la pintura** que elijas.
-
-| Tipo de pintura | €/m² (con mano de obra) | Qué incluye |
+| Trabajo | Precio orientativo | Qué incluye |
 |---|---|---|
-| **Pintura básica (vinílica)** | 8-10 €/m² | Dos manos de pintura vinílica, sin empastado, sin masilla |
-| **Pintura media (acrílica)** | 10-12 €/m² | Dos manos de acrílica mate o satinada, repaso de pequeñas grietas, protección de suelos y marcos |
-| **Pintura premium (lavable premium)** | 12-15 €/m² | Dos manos de pintura lavable de alta gama (Procolor, Titan, Bruguer Expert), empastado de pared, rodapiés protegidos, acabado perfecto |
-| **Gotelé alisado + pintura** | 15-20 €/m² | Eliminación de gotelé mediante plaste, dos manos de acrílica |
-| **Papel pintado / decoración** | 12-18 €/m² | Material + colocación de papel pintado o pintura decorativa |
+| Pintura plástica blanca, paredes en buen estado | 9-11 €/m² | Protección, pequeños repasos y dos manos |
+| Pintura de color o lavable de calidad | 11-14 €/m² | Igual, con pintura de gama media-alta |
+| Pintura antimoho (baños, cocinas, paredes frías) | 13-17 €/m² | Tratamiento fungicida y pintura específica |
+| Alisado de gotelé y pintura | 16-22 €/m² | Plaste, lijado y dos manos |
+| Techos | 9-13 €/m² | Dos manos de pintura de techos |
 
-> **Precios con mano de obra incluida en Donostia.** Los metros se calculan de pared, no de suelo. Una vivienda de 80m² tiene aproximadamente 160-180m² de pared a pintar.
+## Ejemplo: piso de 80 m² en Gros
 
-### Ejemplo para un Piso de 80m² en Donostia
-
-| Concepto | Básico | Medio | Premium |
+| Partida | Básico | Medio | Con gotelé |
 |---|---|---|---|
-| Paredes a pintar (~170m² x precio) | 1.360-1.700 € | 1.700-2.040 € | 2.040-2.550 € |
-| TechOS (si se pintan, ~65m²) | Incluido | +200-400 € | +300-500 € |
-| **TOTAL orientativo** | **1.360-1.700 €** | **1.900-2.440 €** | **2.340-3.050 €** |
+| Paredes (175 m²) | 1.600-1.900 € | 1.900-2.450 € | 2.800-3.850 € |
+| Techos (75 m²) | No incluido | 680-980 € | 680-980 € |
+| Baño y cocina antimoho | No incluido | 150-300 € | 150-300 € |
+| **Total orientativo** | **1.600-1.900 €** | **2.700-3.700 €** | **3.600-5.100 €** |
 
-## Tipos de Pintura: ¿Cuál Necesitas?
+Estos precios suponen un piso vacío o con los muebles agrupados. Si el pintor tiene que mover y proteger muebles, cuenta con un día más de trabajo.
 
-### Pintura Vinílica
+## La humedad: el problema más habitual en Donostia
 
-Es la más económica y la que todavía se usa mucho en comunidades de vecinos y viviendas de alquiler en Gipuzkoa. Buena cubrición, lavable de forma limitada, se estropea con la humedad.
+Muchos pisos de Donostia tienen manchas negras en las esquinas de los dormitorios, detrás de los armarios o en el techo del baño. Casi siempre es **condensación**: el aire húmedo se enfría al tocar una pared fría y el agua se queda ahí. Pintar encima sin más no lo resuelve.
 
-**Uso recomendado:** paredes en buen estado, habitaciones de paso, obras de bajo presupuesto.
+Antes de pintar conviene:
 
-### Pintura Acrílica
+1. **Limpiar el moho** con un producto fungicida y dejarlo actuar.
+2. **Buscar la causa**: ventanas que no ventilan, una pared de fachada sin aislar o un puente térmico en el pilar.
+3. **Usar pintura antimoho** en las zonas afectadas. No hace milagros, pero retrasa que vuelva a salir.
 
-La más habitual en viviendas de propiedad en Donostia. Excelente relación calidad-precio, lavable, buena transpirabilidad. Viene en mate, sedoso y satinado.
+Si la mancha está en la parte baja de la pared y aparece aunque ventiles, puede ser humedad por capilaridad, frecuente en plantas bajas de la Parte Vieja y de Egia. En ese caso hace falta un tratamiento de la pared antes de pintar, y el precio cambia por completo.
 
-**Recomendada para:** salones, dormitorios, pasillos. Es el estándar en reformas de calidad media.
+## Gotelé: quitarlo o pintar encima
 
-### Pintura Lavable Premium
+El gotelé fue el acabado estándar en los pisos de los años 70 y 80, y sigue en muchos bloques de Amara, Intxaurrondo o Altza. Tienes tres opciones:
 
-Pinturas de gama alta como **Procolor W**, **Bruguer Allergy** o **Titan HQ**. Resistente al roce, lavable con bayeta húmeda, acabado sedoso. Ideales para familias con niños pequeños o mascotas.
+- **Pintar encima** (9-12 €/m²): es lo más barato, pero el relieve se sigue viendo.
+- **Alisar con plaste** (16-22 €/m²): se cubre el gotelé con varias capas de pasta, se lija y se pinta. Es la opción más habitual.
+- **Raspar el gotelé**: solo funciona si es gotelé al temple, que se ablanda con agua. El plástico no se puede raspar.
 
-**Recomendada para:** cocina, baños, pasillos de alto tránsito, dormitorios infantiles.
+## Cuándo pintar en Donostia
 
-## La Clave: Preparación de Paredes
+La pintura seca peor con humedad alta. En invierno, con varios días de lluvia seguidos, el plaste y la pintura tardan más en secar, y el trabajo se alarga. Si puedes elegir, **la primavera y el principio del otoño** son buenas épocas: hay menos humedad que en invierno y los pintores tienen más disponibilidad que en verano.
 
-Aquí está la diferencia real entre un presupuesto bajo y uno alto. No es solo la pintura: es el estado en que dejan las paredes.
+## Cómo comparar presupuestos de pintura
 
-### ¿Qué Incluye una Preparación Correcta?
+- Pide que el presupuesto diga **los metros de pared**, no solo un precio cerrado.
+- Comprueba si incluye **techos, puertas, radiadores y rodapiés**, que suelen ir aparte.
+- Pregunta **qué marca y qué gama de pintura** va a usar.
+- Asegúrate de que incluye la **protección de suelos y la limpieza** final.
 
-- **Protección de suelos** (plástico, cartón): 30-50 € (o incluido)
-- **Protección de marcos de ventanas y puertas**: 20-30 €
-- **Empastado de grietas y agujeros** (masilla): pequeño incluido en precio
-- **Lija de paredes** (si hay pintura anterior en mal estado): puede añadir 2-3 €/m²
-- **Imprimación selladora** (en paredes con pintura vieja o absorción irregular): 1-2 €/m²
-
-Cuando una empresa de pintura en Donostia te ofrece 7 €/m², normalmente está excluyendo la preparación. Así que al final el precio real se acerca más a los 10-12 €/m².
-
-## El Gotelé: El Enemigo de los Presupuestos de Pintura en Donostia
-
-El gotelé fue el estándar en construcción durante los años 70, 80 y parte de los 90 en Gipuzkoa. Si tu piso en Donostia tiene más de 30 años, casi con certeza tienes gotelé en las paredes. Y pintarlo directamente (aunque sea técnica y legalmente posible) queda fatal: se ve el relieve bajo la pintura.
-
-### Opciones para Tratar el Gotelé
-
-| Tratamiento | €/m² | Resultado |
-|---|---|---|
-| **Pintar directamente** (no recomendado) | 8-10 €/m² | Se ve el relieve, mal acabado |
-| **Esmalte sobre gotelé** | 10-12 €/m² | Algo mejor, pero sigue viéndose estructura |
-| **Alisar con plaste** (alisado gotelé) | 15-18 €/m² | Resultado liso y uniforme |
-| **Empastar + lijar + pintar** | 16-20 €/m² | Acabado de máxima calidad |
-
-El **alisado de gotelé** consiste en aplicar una o varias capas de plaste sobre el relieve existente hasta dejar la superficie completamente lisa. Es un trabajo que requiere habilidad y encarece la reforma, pero el resultado es óptimo.
-
-## Mano de Obra de Pintura en Donostia: ¿Cuánto Cobra un Profesional?
-
-Los gremios de pintura en Donostia cobran entre **18-28 €/hora** dependiendo de la experiencia y la demanda. Una vivienda de 80m² (170m² de pared) requiere aproximadamente:
-
-| Tarea | Tiempo estimado | Coste |
-|---|---|---|
-| Protección de suelos y marcos | 3-4 horas | 60-100 € |
-| Preparación de paredes (empastado, lija) | 6-10 horas | 120-250 € |
-| Aplicación de dos manos de pintura | 10-16 horas | 200-400 € |
-| Acabados y limpieza | 2-3 horas | 40-80 € |
-| **Total mano de obra** | **~25-35 horas** | **420-830 €** |
-
-A esto hay que añadir el coste del material (pintura, masilla, cinta de carrocero, etc.): aproximadamente **150-300 €** para una vivienda de 80m².
-
-## Extras que Pueden Añadir al Presupuesto
-
-- **Pintura de techos**: entre 3-5 €/m² adicionales
-- **Pintura de puertas de madera**: 25-50 €/puerta (lijar + imprimación + dos manos)
-- **Pintura de radiadores**: 20-35 €/radiador
-- **Pintura de ventanas de madera**: 30-60 €/ventana
-- **Pintura decorativa (efecto vela, estuco)**: 15-25 €/m²
-- **Pintura de fachada interior (pared de carga visible)**: 12-18 €/m²
-
-## ¿Cuándo Pintar vs. Cuándo Reformar?
-
-| Situación | Recomendación |
-|---|---|
-| Pintura descascarada en alguna zona | Tocar solo, no toda la casa |
-| Manchas de humedad o moho | Resolver el problema de humedad primero (puede costar 200-2.000 € según la causa) |
-| Cambio de color total (oscuro a claro) | Dos manos de imprimación + dos de color final (encarece 2-3 €/m²) |
-| Gotelé y quieres resultado liso | Alisar + pintar (invierte en algo que enjoymentás 10+ años) |
-| Reforma integral de piso | Pintura al final de la obra |
+Con la [calculadora de pintura para Donostia](/donostia/calculadora/pintura-donostia) tienes una cifra orientativa para tu piso, y con el formulario de abajo te pasamos hasta tres presupuestos de pintores de la zona.
