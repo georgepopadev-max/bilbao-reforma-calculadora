@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bilbaoreforma.es/sitemap.xml
-
-User-agent: Googlebot-Image
-Allow: /images/
+Sitemap: https://www.bilbaoreforma.es/sitemap-index.xml

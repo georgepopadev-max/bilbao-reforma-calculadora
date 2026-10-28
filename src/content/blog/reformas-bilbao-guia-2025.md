@@ -1,7 +1,7 @@
 ---
 title: "Reformas Bilbao 2026: Guía Práctica"
 description: "Guía completa de reformas en Bilbao 2026. Precios por m², tipos de reformas, licencias en Bizkaia, cómo elegir empresa y errores a evitar. Actualizado."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-guia-2025.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-guia-2025"
 readTime: "12 min"
 category: "general"
 city: "bilbao"
@@ -20,33 +20,33 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"
-    url: "https://www.bilbaoreforma.es/blog/reformas-bilbao-guia-2025.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-bilbao-guia-2025"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Tiempo de Reforma Integral en Bilbao"
-    href: "tiempo-reforma-integral-bilbao.html"
+    href: "tiempo-reforma-integral-bilbao"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Tiempo de Reforma Integral en Bilbao"
-    href: "tiempo-reforma-integral-bilbao.html"
+    href: "tiempo-reforma-integral-bilbao"
 priceTables: 1
 ---
 
 <div class="article-content">
   <p class="intro-text">Bilbao es una ciudad con una demanda de reformas estructurales enorme. Gran parte de su parque inmobiliario está formado por edificios de más de 50 años: los pisos del Casco Viejo, los bloques de Indautxu, las viviendas de los años 60 y 70 en Santutxu, Deusto y Errekalde. Muchos de estos inmuebles necesitan actualizaciones urgentes: instalaciones eléctricas obsoletas, baños de los 70, cocinas que ya no responden a las necesidades actuales, y problemas de humedad que se arrastran desde hace décadas.</p>
 
-  <p class="intro-text">Si estás pensando en reformar en Bilbao en 2025, esta guía te da todo lo que necesitas saber para hacerlo bien: los tipos de reformas más habituales, los precios de mercado, las particularidades de cada barrio, los trámites con licencias en Bizkaia, cómo elegir una empresa de reformas Bilbao recomendada y los errores que debes evitar a toda costa. Si prefieres calcular un presupuesto orientativo, usa nuestra <a href="../index.html">calculadora de reformas</a>.</p>
+  <p class="intro-text">Si estás pensando en reformar en Bilbao en 2025, esta guía te da todo lo que necesitas saber para hacerlo bien: los tipos de reformas más habituales, los precios de mercado, las particularidades de cada barrio, los trámites con licencias en Bizkaia, cómo elegir una empresa de reformas Bilbao recomendada y los errores que debes evitar a toda costa. Si prefieres calcular un presupuesto orientativo, usa nuestra <a href="/">calculadora de reformas</a>.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="tiempo-reforma-integral-bilbao.html">Tiempo de Reforma Integral en Bilbao</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="tiempo-reforma-integral-bilbao">Tiempo de Reforma Integral en Bilbao</a>
 </div>
 
 
@@ -226,8 +226,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="tiempo-reforma-integral-bilbao.html">Tiempo de Reforma Integral en Bilbao</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="tiempo-reforma-integral-bilbao">Tiempo de Reforma Integral en Bilbao</a>
 </div>
 <h2>Errores Comunes al Reformar en Bilbao y Cómo Evitarlos</h2>
 
@@ -266,6 +266,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

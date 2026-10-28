@@ -12,17 +12,17 @@ const schema = {
   '@type': 'Service',
   name: 'Reformas Bilbao',
   description: 'Guía completa de reformas en Bilbao 2026. Precios, empresas, tipos de reforma y consejos.',
-  url: 'https://www.bilbaoreforma.es/reformas-bilbao.html',
+  url: 'https://www.bilbaoreforma.es/reformas-bilbao',
   areaServed: { '@type': 'City', name: 'Bilbao' },
 };
 
 const servicios = [
-  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Desde 700 €/m².', precio: 'Desde 700 €/m²', href: '/calculadora/integral-bilbao.html', icono: '🏠' },
-  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, Alicatados,fontanería y pintura. Típico en baños de los años 60-80 en Bilbao.', precio: 'Desde 2.500 €', href: '/calculadora/bano-bilbao.html', icono: '🚿' },
-  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Los pisos de Bilbao suelen tener cocinas de 6-10 m².', precio: 'Desde 5.000 €', href: '/calculadora/cocina-bilbao.html', icono: '🍳' },
-  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Bilbao el precio incluye retirada de gotelé si lo hay. Pintores desde 8 €/m².', precio: 'Desde 8 €/m²', href: '/calculadora/pintura-bilbao.html', icono: '🎨' },
-  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios antiguos de Bilbao suelen tener pallanda de madera que puede reutilizarse.', precio: 'Desde 35 €/m²', href: '/calculadora/suelo-bilbao.html', icono: '🪵' },
-  { titulo: 'Calefacción', descripcion: 'Radiadores, caldera, aerotermia o suelo radiante. Bilbao tiene clima húmedo que exige buena ventilación y deshumidificación.', precio: 'Desde 3.500 €', href: '/calefaccion-bilbao.html', icono: '🔥' },
+  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Desde 700 €/m².', precio: 'Desde 700 €/m²', href: '/calculadora/integral-bilbao', icono: '🏠' },
+  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, Alicatados,fontanería y pintura. Típico en baños de los años 60-80 en Bilbao.', precio: 'Desde 2.500 €', href: '/calculadora/bano-bilbao', icono: '🚿' },
+  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Los pisos de Bilbao suelen tener cocinas de 6-10 m².', precio: 'Desde 5.000 €', href: '/calculadora/cocina-bilbao', icono: '🍳' },
+  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Bilbao el precio incluye retirada de gotelé si lo hay. Pintores desde 8 €/m².', precio: 'Desde 8 €/m²', href: '/calculadora/pintura-bilbao', icono: '🎨' },
+  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios antiguos de Bilbao suelen tener pallanda de madera que puede reutilizarse.', precio: 'Desde 35 €/m²', href: '/calculadora/suelo-bilbao', icono: '🪵' },
+  { titulo: 'Calefacción', descripcion: 'Radiadores, caldera, aerotermia o suelo radiante. Bilbao tiene clima húmedo que exige buena ventilación y deshumidificación.', precio: 'Desde 3.500 €', href: '/calefaccion-bilbao', icono: '🔥' },
 ];
 
 const pasos = [
@@ -35,7 +35,7 @@ const pasos = [
 <BaseLayout
   title="Reformas Bilbao 2026: Guía Completa y Precios Orientativos"
   description="Guía completa de reformas en Bilbao 2026. Calcula presupuestos orientativos, compara precios por tipo de reforma y encuentra empresas verificadas en Bizkaia."
-  canonical="https://www.bilbaoreforma.es/reformas-bilbao.html"
+  canonical="https://www.bilbaoreforma.es/reformas-bilbao"
   ogImage="https://www.bilbaoreforma.es/images/og/reformas-bilbao-og.jpg"
   ogImageAlt="Reformas Bilbao 2026"
 >
@@ -51,7 +51,7 @@ const pasos = [
       <div style="max-width: 900px; margin: 0 auto;">
         <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-grafito); margin-bottom: 1rem; line-height: 1.25;">Reformas en Bilbao 2026</h1>
         <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.7; max-width: 640px; margin-bottom: 1.5rem;">Bilbao tiene uno de los parques inmobiliarios más envejecidos del País Vasco. La mayoría de los pisos de más de 40 años necesitan algún tipo de reforma. Aquí encuentras precios orientativos, calculadora gratuita y empresas de reformas verificadas en Bilbao y Bizkaia.</p>
-        <a href="/calculadora/integral-bilbao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
+        <a href="/calculadora/integral-bilbao" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
       </div>
     </section>
 
@@ -84,7 +84,7 @@ const pasos = [
           ))}
         </div>
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/calculadora/integral-bilbao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
+          <a href="/calculadora/integral-bilbao" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
         </div>
       </div>
     </section>
@@ -94,14 +94,14 @@ const pasos = [
       <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.375rem, 4vw, 1.875rem); color: var(--color-grafito); margin-bottom: 1.5rem; text-align: center;">Reformas por barrio en Bilbao</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
         {[
-          { nombre: 'Santutxu', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.95' },
-          { nombre: 'Indautxu', href: '/bilbao/barrios/indautxu.html', multiplicador: '×1.15' },
-          { nombre: 'Deusto', href: '/bilbao/barrios/deusto.html', multiplicador: '×1.00' },
-          { nombre: 'Casco Viejo', href: '/bilbao/barrios/casco-viejo.html', multiplicador: '×1.25' },
-          { nombre: 'Errekalde', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.90' },
-          { nombre: 'Abando', href: '/bilbao/barrios/indautxu.html', multiplicador: '×1.10' },
-          { nombre: 'Basurto', href: '/bilbao/barrios/santutxu.html', multiplicador: '×0.90' },
-          { nombre: 'Zabalburu', href: '/bilbao/barrios/indautxu.html', multiplicador: '×0.95' },
+          { nombre: 'Santutxu', href: '/bilbao/barrios/santutxu', multiplicador: '×0.95' },
+          { nombre: 'Indautxu', href: '/bilbao/barrios/indautxu', multiplicador: '×1.15' },
+          { nombre: 'Deusto', href: '/bilbao/barrios/deusto', multiplicador: '×1.00' },
+          { nombre: 'Casco Viejo', href: '/bilbao/barrios/casco-viejo', multiplicador: '×1.25' },
+          { nombre: 'Errekalde', href: '/bilbao/barrios/santutxu', multiplicador: '×0.90' },
+          { nombre: 'Abando', href: '/bilbao/barrios/indautxu', multiplicador: '×1.10' },
+          { nombre: 'Basurto', href: '/bilbao/barrios/santutxu', multiplicador: '×0.90' },
+          { nombre: 'Zabalburu', href: '/bilbao/barrios/indautxu', multiplicador: '×0.95' },
         ].map(b => (
           <a href={b.href} style="padding: 0.4rem 0.875rem; background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 999px; font-size: 0.8125rem; color: var(--color-grafito); text-decoration: none; font-weight: 500;">{b.nombre}</a>
         ))}

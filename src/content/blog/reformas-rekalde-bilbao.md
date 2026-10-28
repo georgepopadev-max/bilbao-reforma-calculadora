@@ -1,7 +1,7 @@
 ---
 title: "Reformas Rekalde Bilbao"
 description: "Reformas Rekalde Bilbao 2026. Multiplicador ×0.90, barrio económico para reformas funcionales. Guía con precios y empresas."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Rekalde Bilbao"
-    url: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Rekalde"
-    href: "/calculadora/index.html?barrio=rekalde"
+    href: "/calculadora?barrio=rekalde"
   - type: "leer"
     label: "Cómo Ahorrar en tu Reforma sin Perder Calidad"
-    href: "reformas-bilbao-precios.html"
+    href: "reformas-bilbao-precios"
 ---
 
 ## Reformas Rekalde Bilbao: Cómo Ahorrar
@@ -75,15 +75,15 @@ Rekalde ofrece un marco favorable para ahorrar en tu reforma:
 
 Empresas con experiencia en reformas en el barrio de Rekalde:
 
-- [**Vascol Reformas**](/empresas/vascol-reformas.html) — Reformas funcionales a buen precio
-- [**Reformas Fernández**](/empresas/reformas-fernandez.html) — Reformas generales con buena relación calidad-precio
-- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui.html) — Fontanería y reformas integrales
+- [**Vascol Reformas**](/empresas/vascol-reformas) — Reformas funcionales a buen precio
+- [**Reformas Fernández**](/empresas/reformas-fernandez) — Reformas generales con buena relación calidad-precio
+- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui) — Fontanería y reformas integrales
 
 ## Calcula tu Reforma en Rekalde
 
 Abre la calculadora con el multiplicador de Rekalde ya aplicado:
 
-<a href="/calculadora/index.html?barrio=rekalde" class="btn">Calcular presupuesto en Rekalde →</a>
+<a href="/calculadora?barrio=rekalde" class="btn">Calcular presupuesto en Rekalde →</a>
 
 ## Preguntas Frecuentes sobre Reformas en Rekalde
 
@@ -102,22 +102,22 @@ Aprovecha el multiplicador del 0.90 (10% de ahorro automático), reforma fuera d
 
 ## Ver También
 
-- Página de barrio: [Reformas en Rekalde Bilbao](/barrios/reforma-rekalde.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en Rekalde](/calculadora/index.html?barrio=rekalde)
+- Página de barrio: [Reformas en Rekalde Bilbao](/barrios/reforma-rekalde)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Rekalde](/calculadora?barrio=rekalde)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
+- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
 
 ### Blogs relacionados
 
-- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao.html)
-- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

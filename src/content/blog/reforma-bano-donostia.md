@@ -1,7 +1,7 @@
 ---
 title: "Reforma de Baño en Donostia 2026: Precios y Guía"
 description: "Cuánto cuesta reformar un baño en Donostia. Guía de precios por m², calidades y errores comunes. Solicita 3 presupuestos sin compromiso."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia"
 readTime: "9 min"
 category: "bano"
 city: "donostia"
@@ -20,34 +20,34 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Baño Donostia 2026: Precios, Tendencias y Presupuesto"
-    url: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia"
 inContentCTAs:
   - type: "herramienta"
     label: "Calculadora de presupuesto reforma baño Donostia ->"
-    href: "../calculadora/bano-bilbao.html"
+    href: "../calculadora/bano-bilbao"
   - type: "herramienta"
     label: "Guía de presupuestos para reforma de baño en Donostia"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de reforma de baño Donostia - comparativa detallada"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores más comunes en reformas de baño en Donostia"
-    href: "errores-comunes-reforma-bano-bilbao.html"
+    href: "errores-comunes-reforma-bano-bilbao"
   - type: "leer"
     label: "Comparativa: reforma parcial vs completa de baño"
-    href: "comparativa-reforma-bano-bilbao.html"
+    href: "comparativa-reforma-bano-bilbao"
   - type: "leer"
     label: "Presupuesto reforma baño Donostia - guía completa para pedir precios"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² reforma baño Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores comunes en reformas de baño Donostia - cómo evitarlos"
-    href: "errores-comunes-reforma-bano-bilbao.html"
+    href: "errores-comunes-reforma-bano-bilbao"
 priceTables: 1
 ---
 
@@ -58,8 +58,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📊 Herramienta recomendada</span>
-  <a href="../calculadora/bano-donostia.html">Calculadora de presupuesto reforma baño Donostia -></a>
-  <a href="presupuesto-reforma-bano-donostia.html">Guía de presupuestos para reforma de baño en Donostia</a>
+  <a href="/donostia/calculadora/bano-donostia">Calculadora de presupuesto reforma baño Donostia -></a>
+  <a href="/donostia/calculadora/bano-donostia">Guía de presupuestos para reforma de baño en Donostia</a>
   </div>
 
   <h2>Precios por m² para reforma de baño en Donostia 2025</h2>
@@ -153,9 +153,9 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-m2-reforma-bano-donostia.html">Precio por m² de reforma de baño Donostia - comparativa detallada</a>
-  <a href="errores-comunes-reforma-bano-donostia.html">Errores más comunes en reformas de baño en Donostia</a>
-  <a href="comparativa-reforma-bano-donostia.html">Comparativa: reforma parcial vs completa de baño</a>
+  <a href="/donostia/calculadora/bano-donostia">Precio por m² de reforma de baño Donostia - comparativa detallada</a>
+  <a href="/donostia/blog/reforma-bano-donostia-precios-2026">Errores más comunes en reformas de baño en Donostia</a>
+  <a href="/donostia/blog/reforma-bano-donostia-precios-2026">Comparativa: reforma parcial vs completa de baño</a>
   </div>
 
   <h2>Barrios de Donostia con más reformas de baño</h2>
@@ -204,7 +204,7 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Ya sabes qué tipo de reforma de baño necesitas?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -238,8 +238,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="presupuesto-reforma-bano-donostia.html">Presupuesto reforma baño Donostia - guía completa para pedir precios</a>
-  <a href="precio-m2-reforma-bano-donostia.html">Precio por m² reforma baño Donostia - comparativa de calidades</a>
-  <a href="errores-comunes-reforma-bano-donostia.html">Errores comunes en reformas de baño Donostia - cómo evitarlos</a>
+  <a href="/donostia/calculadora/bano-donostia">Presupuesto reforma baño Donostia - guía completa para pedir precios</a>
+  <a href="/donostia/calculadora/bano-donostia">Precio por m² reforma baño Donostia - comparativa de calidades</a>
+  <a href="/donostia/blog/reforma-bano-donostia-precios-2026">Errores comunes en reformas de baño Donostia - cómo evitarlos</a>
   </div>
   </div>

@@ -1,7 +1,7 @@
 ---
 title: "Reformar vs Comprar Piso Bilbao 2026"
 description: "Reformar piso Bilbao vs comprar: comparativa económica detallada, pros y contras. Cuándo conviene reforma vs compra. Análisis completo para Bilbao y Bizkaia 2026."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-comprar-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-comprar-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
@@ -9,22 +9,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformar Piso Bilbao vs Comprar: Guía de Comparativa Económica 2026"
-    url: "https://www.bilbaoreforma.es/blog/reforma-vs-comprar-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-vs-comprar-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
 priceTables: 0
 ---
 
@@ -33,8 +33,8 @@ priceTables: 0
   <p>En este artículo vamos a analizar la <strong>comparativa económica entre reformar y comprar</strong> en el mercado inmobiliario bilbaino de 2025. Veremos los costes reales de cada opción, los pros y contras de cada una, y los factores que deberían determinar tu decisión. Al final, tendrás un marco claro para tomar la mejor elección para tu situación particular.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
 </div>
 
 
@@ -43,10 +43,10 @@ priceTables: 0
   <p>Para entender la comparativa, primero hay que conocer el punto de partida. Bilbao ha experimentado una revalorización inmobiliaria significativa desde la transformers de la Ría. En 2025, los precios de la vivienda en la capital vizcaína se mantienen en niveles altos aunque con cierta estabilidad:</p>
 
   <ul>
-  <li><strong><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a> y fines de semana:</strong>3.500 - 4.500 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/casco-viejo">Casco Viejo</a> y fines de semana:</strong>3.500 - 4.500 €/m²</li>
   <li><strong>Indautxu y Errekalde:</strong>2.800 - 3.800 €/m²</li>
-  <li><strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a> y Bolueta:</strong>2.200 - 3.000 €/m²</li>
-  <li><strong><a href="/bilbao/barrios/deusto.html">Deusto</a>:</strong>2.400 - 3.200 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/santutxu">Santutxu</a> y Bolueta:</strong>2.200 - 3.000 €/m²</li>
+  <li><strong><a href="/bilbao/barrios/deusto">Deusto</a>:</strong>2.400 - 3.200 €/m²</li>
   <li><strong>Zonas periféricas (Barakaldo, Basauri, Erandio):</strong>1.500 - 2.200 €/m²</li>
   </ul>
 
@@ -305,8 +305,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
 </div>
 <h2>Conclusión: No Hay Una Respuesta Única</h2>
 
@@ -347,32 +347,32 @@ priceTables: 0
   <div class="cta-section">
   <h3>¿Ya Tienes Claro qué Necesitas?</h3>
   <p>Si has decidido que tu opción es reformar, usa nuestra calculadora para una estimación del presupuesto orientativo en menos de 2 minutos. Y si después de todo aún tienes dudas, consulta con un asesor inmobiliario profesional de Bilbao para tu caso concreto.</p>
-  <a href="../index.html" class="cta-btn">Calcular Presupuesto de Reforma ->
+  <a href="/" class="cta-btn">Calcular Presupuesto de Reforma ->
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
   </a>
-  <a href="empresas-reformas-bilbao.html" class="cta-btn cta-btn-secondary">Guía: Elegir Empresa de Reformas</a>
+  <a href="empresas-reformas-bilbao" class="cta-btn cta-btn-secondary">Guía: Elegir Empresa de Reformas</a>
   </div>
 
   <div class="article-cta">
   <h3>Si has decidido reformar, saber cuánto costará</h3>
   <p>Usa la calculadora para obtener una primera estimación antes de dar el paso.</p>
-  <a href="../calculadora/integral-bilbao.html">Calcular presupuesto de reforma -></a>
+  <a href="../calculadora/integral-bilbao">Calcular presupuesto de reforma -></a>
   </div>
 
   </a>
   </div>
   <div class="related-card">
-  <a href="reforma-80m2-bilbao.html">
+  <a href="reforma-80m2-bilbao">
   <div class="related-card-title">Reforma 80m² Bilbao: Guía Completa</div>
   </a>
   </div>
   <div class="related-card">
-  <a href="reforma-80m2-bilbao-ejemplo.html">
+  <a href="reforma-80m2-bilbao-ejemplo">
   <div class="related-card-title">Caso Práctico: Reforma 80m² Bilbao</div>
   </a>
   </div>
   <div class="related-card">
-  <a href="reformas-bilbao-guia-2025.html">
+  <a href="reformas-bilbao-guia-2025">
   <div class="related-card-title">Reformas Bilbao: Guía Completa 2026</div>
   </a>
   </div>

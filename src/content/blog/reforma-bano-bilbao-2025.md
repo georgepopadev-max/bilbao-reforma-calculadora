@@ -1,7 +1,7 @@
 ---
 title: "Reforma Baño Bilbao 2026"
 description: "Precio reforma baño Bilbao 2026. Costes por partidas, tendencias en baños, cómo ahorrar y qué evitar. Guía actualizada con ejemplos reales."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-bilbao-2025.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-bilbao-2025"
 readTime: "10 min"
 category: "bano"
 city: "bilbao"
@@ -20,33 +20,33 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Baño Bilbao 2026: Precios, Tendencias y Consejos"
-    url: "https://www.bilbaoreforma.es/blog/reforma-bano-bilbao-2025.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-bano-bilbao-2025"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reformas de Bilbao y Cómo Evitarlos"
-    href: "errores-comunes-reforma-bilbao.html"
+    href: "errores-comunes-reforma-bilbao"
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reformas de Bilbao y Cómo Evitarlos"
-    href: "errores-comunes-reforma-bilbao.html"
+    href: "errores-comunes-reforma-bilbao"
 priceTables: 2
 ---
 
 <div class="article-content">
   <p>El baño es, sin ninguna duda, <strong>la reforma con mayor retorno de inversión en Bilbao</strong>. Así de claro. Un baño actualizado no solo mejora tu calidad de vida cada día - primera hora de la mañana, última hora de la noche - , sino que cuando vendas o alquiles tu piso, será uno de los primeros argumentos que esgriman los compradores. En el mercado inmobiliario bilbaino actual, un baño reformado puede incrementar el valor de una vivienda entre un 5 % y un 8 %, dependiendo del barrio.</p>
 
-  <p>En esta guía te cuento <strong>cuánto cuesta una reforma de baño en Bilbao en 2025</strong>, partida por partida, con los precios reales del mercado bilbaino. También abordamos las tendencias que están pidiendo los propietarios este año, los errores más comunes y cómo ahorrar sin sacrificar calidad. Si prefieres una estimación personalizada, usa nuestra <a href="../index.html">calculadora de reforma</a>.</p>
+  <p>En esta guía te cuento <strong>cuánto cuesta una reforma de baño en Bilbao en 2025</strong>, partida por partida, con los precios reales del mercado bilbaino. También abordamos las tendencias que están pidiendo los propietarios este año, los errores más comunes y cómo ahorrar sin sacrificar calidad. Si prefieres una estimación personalizada, usa nuestra <a href="/">calculadora de reforma</a>.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="errores-comunes-reforma-bilbao.html">Errores Comunes en Reformas de Bilbao y Cómo Evitarlos</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="errores-comunes-reforma-bilbao">Errores Comunes en Reformas de Bilbao y Cómo Evitarlos</a>
 </div>
 
 
@@ -146,7 +146,7 @@ priceTables: 2
 
   <h2>Tendencias en Baños Bilbainos 2025</h2>
 
-  <p>El mercado de reformas en Bilbao tiene sus propias particularidades. No es lo mismo un baño en un piso de <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong> de los años 60 que uno en un ático reformado de <strong>Abando</strong>. Pero hay tendencias que se repiten:</p>
+  <p>El mercado de reformas en Bilbao tiene sus propias particularidades. No es lo mismo un baño en un piso de <strong><a href="/bilbao/barrios/santutxu">Santutxu</a></strong> de los años 60 que uno en un ático reformado de <strong>Abando</strong>. Pero hay tendencias que se repiten:</p>
 
   <h3>Baños Pequeños: El Reto Bilbaino por Excelencia</h3>
 
@@ -195,7 +195,7 @@ priceTables: 2
 
   <p>Cada zona de Bilbao tiene sus particularidades constructivas que afectan directamente a la reforma del baño:</p>
 
-  <h3><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a>: Baños Pequeños y Problemas de Humedad</h3>
+  <h3><a href="/bilbao/barrios/casco-viejo">Casco Viejo</a>: Baños Pequeños y Problemas de Humedad</h3>
 
   <p>Los edificios del Casco Viejo de Bilbao - muchos de ellos del siglo XIX o principios del XX - tienen baños históricos: pequeños (3-3,5 m²), con problemas de humedad por capilaridad y ventilación deficiente. Las reformas en esta zona suelen requerir:</p>
 
@@ -206,7 +206,7 @@ priceTables: 2
   <li>Posible necesidad de regularizar instalaciones eléctricas antiguas</li>
   </ul>
 
-  <h3><a href="/bilbao/barrios/indautxu.html">Indautxu</a>: Baños de los 70-80 con Necesidad de Update</h3>
+  <h3><a href="/bilbao/barrios/indautxu">Indautxu</a>: Baños de los 70-80 con Necesidad de Update</h3>
 
   <p>Los pisos de Indautxu construidos entre los años 70 y 80 suelen tener baños más grandes (4,5-6 m²), pero con estándares de hace 40-50 años: bañera empotrada, azulejo de la época, grifería monomando vieja. Es la zona donde más se pide el cambio bañera por ducha y la modernización completa de instalaciones.</p>
 
@@ -251,8 +251,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="errores-comunes-reforma-bilbao.html">Errores Comunes en Reformas de Bilbao y Cómo Evitarlos</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="errores-comunes-reforma-bilbao">Errores Comunes en Reformas de Bilbao y Cómo Evitarlos</a>
 </div>
 <h2>Errores Comunes en Reformas de Baño en Bilbao</h2>
 
@@ -285,6 +285,6 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma de baño en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/bano-bilbao.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora/bano-bilbao" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

@@ -1,7 +1,7 @@
 ---
 title: "Tipos Calefacción Vitoria 2026"
 description: "Tipos de calefacción en Vitoria 2026: gas natural, aerotermia, suelo radiante y biomasa."
-canonical: https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria.html
+canonical: https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria
 city: vitoria
 category: Instalaciones
 date: 2026-06-29
@@ -19,7 +19,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora/
+    href: /vitoria/calculadora
 ---
 
 Cuando te mudas a un piso en el Ensanche de Vitoria o has comprado tu primer apartamento en Lakua, una de las primeras decisiones que tomarás es qué sistema de calefacción instalar. El clima alavés, con sus inviernos húmedos y frescos pero sin temperaturas extremas, merece una reflexión cuidadosa. La llanura alavesa y los vientos del norte marcan un clima particular que influye directamente en el consumo energético de tu hogar.

@@ -1,4 +1,5 @@
 ---
+import { absoluteUrl, canonicalPath } from '../lib/urls';
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -49,7 +50,7 @@ const collectionSchema = {
   '@type': 'CollectionPage',
   name: title,
   description: description,
-  url: canonical || `${siteUrl}${Astro.url.pathname}`,
+  url: absoluteUrl(canonical || Astro.url.pathname),
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: items.map((child, i) => ({
@@ -64,8 +65,8 @@ const collectionSchema = {
 // BreadcrumbList schema
 const breadcrumbs = [
   { name: 'Inicio', href: '/' },
-  { name: 'Blog', href: '/blog/' },
-  { name: title, href: Astro.url.pathname },
+  { name: 'Blog', href: '/blog' },
+  { name: title, href: canonicalPath(Astro.url.pathname) },
 ];
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -74,7 +75,7 @@ const breadcrumbSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: crumb.name,
-    item: `${siteUrl}${crumb.href}`,
+    item: absoluteUrl(crumb.href),
   })),
 };
 

@@ -1,5 +1,5 @@
 ---
-import CityLayout from '../../../layouts/CityLayout.astro';
+import CityLayout from '../../layouts/CityLayout.astro';
 
 const jsonSchemas = [
   {
@@ -18,9 +18,9 @@ const jsonSchemas = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/" },
-      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/" },
-      { "@type": "ListItem", "position": 3, "name": "Blog Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/blog/" },
-      { "@type": "ListItem", "position": 4, "name": "Subvenciones cambio ventanas Bizkaia 2026", "item": "https://www.bilbaoreforma.es/bilbao/blog/subvenciones-cambio-ventanas-bizkaia.html" },
+      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao" },
+      { "@type": "ListItem", "position": 3, "name": "Blog Bilbao", "item": "https://www.bilbaoreforma.es/blog" },
+      { "@type": "ListItem", "position": 4, "name": "Subvenciones cambio ventanas Bizkaia 2026", "item": "https://www.bilbaoreforma.es/blog/subvenciones-cambio-ventanas-bizkaia" },
     ],
   },
 ];
@@ -28,7 +28,7 @@ const jsonSchemas = [
 <CityLayout
   title="Subvenciones Cambio Ventanas Bizkaia 2026 | Guía Completa"
   description="Ayudas para cambiar ventanas en Bizkaia 2026: IDAE, Gobierno Vasco, fondos Next Generation. Incluye requisitos, cuantías y cómo solicitarlas. Actualizado."
-  canonical="https://www.bilbaoreforma.es/bilbao/blog/subvenciones-cambio-ventanas-bizkaia.html"
+  canonical="https://www.bilbaoreforma.es/blog/subvenciones-cambio-ventanas-bizkaia"
   city="bilbao"
   section="blog"
   schemaData={{
@@ -46,9 +46,9 @@ const jsonSchemas = [
   <div class="article-wrapper">
     <main class="article-main">
       <nav class="article-breadcrumb">
-        <a href="/bilbao/index.html">Bilbao</a>
+        <a href="/bilbao">Bilbao</a>
         <span>/</span>
-        <a href="/bilbao/blog/index.html">Blog Bilbao</a>
+        <a href="/blog">Blog Bilbao</a>
         <span>/</span>
         <span>Subvenciones Ventanas</span>
       </nav>
@@ -68,7 +68,7 @@ const jsonSchemas = [
         <div class="cta-box">
           <strong>📊 Calculadora de reforma con ayudas</strong>
           <p>Usa nuestra calculadora para estimar el coste de cambiar ventanas en tu piso de Bizkaia, incluyendo las ayudas disponibles.</p>
-          <a href="/bilbao/calculadora/integral-bilbao.html">Calcular presupuesto con ayudas →</a>
+          <a href="/calculadora/integral-bilbao">Calcular presupuesto con ayudas →</a>
         </div>
 
         <h2>Tipos de ayudas para cambiar ventanas en Bizkaia 2026</h2>
@@ -119,7 +119,7 @@ const jsonSchemas = [
 
         <div class="in-content-cta">
           <span class="in-content-cta-label">📊 Calculadora de presupuesto</span>
-          <a href="/bilbao/calculadora/integral-bilbao.html">Calcula el coste de cambiar tus ventanas y estima las ayudas disponibles →</a>
+          <a href="/calculadora/integral-bilbao">Calcula el coste de cambiar tus ventanas y estima las ayudas disponibles →</a>
         </div>
 
         <h2>Cómo solicitar las ayudas para ventanas en Bizkaia</h2>

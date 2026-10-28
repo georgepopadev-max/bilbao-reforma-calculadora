@@ -1,7 +1,7 @@
 ---
 title: "Precio Reforma Integral Donostia 2026"
 description: "Precio reforma integral Donostia 2026. Cuánto cuesta reformar un piso entero. Factores, precios por m² y ejemplos reales en Gipuzkoa."
-canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-donostia"
 date: "18 junio 2026"
 category: "integral"
 city: "donostia"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Precio Reforma Integral Donostia 2026: Cuánto Cuesta Reformar un Piso"
-    url: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-donostia.html"
+    url: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-donostia"
 inContentCTAs:
   - type: "leer"
     label: "Reforma 80m² Donostia: Guía Completa con Presupuesto Detallado"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
   - type: "leer"
     label: "Cuánto Tarda una Reforma Integral en Donostia: Timeline Realista"
-    href: "tiempo-reforma-integral-bilbao.html"
+    href: "tiempo-reforma-integral-bilbao"
   - type: "leer"
     label: "Licencias de Obra en Donostia: Todo lo que Necesitas Saber"
-    href: "licencias-obra-bilbao-2026.html"
+    href: "licencias-obra-bilbao-2026"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Donostia: Guía Especial"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
 priceTables: 4
 ---
 
@@ -44,8 +44,8 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-80m2-donostia.html">Reforma 80m² Donostia: Guía Completa con Presupuesto Detallado</a>
-  <a href="tiempo-reforma-integral-donostia.html">Cuánto Tarda una Reforma Integral en Donostia: Timeline Realista</a>
+  <a href="/blog/reforma-integral-piso-donostia">Reforma 80m² Donostia: Guía Completa con Presupuesto Detallado</a>
+  <a href="/blog/reforma-integral-piso-donostia">Cuánto Tarda una Reforma Integral en Donostia: Timeline Realista</a>
   </div>
 
   <h2>¿Qué Diferencia una Reforma Integral de una Reforma Parcial?</h2>
@@ -240,8 +240,8 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="licencias-obra-donostia.html">Licencias de Obra en Donostia: Todo lo que Necesitas Saber</a>
-  <a href="reformas-casco-viejo-donostia.html">Reformas en el Casco Viejo de Donostia: Guía Especial</a>
+  <a href="/donostia/blog/reforma-integral-donostia-guia-completa">Licencias de Obra en Donostia: Todo lo que Necesitas Saber</a>
+  <a href="/donostia">Reformas en el Casco Viejo de Donostia: Guía Especial</a>
   </div>
 
   <h2>Preguntas Frecuentes sobre el Precio de Reforma Integral en Donostia</h2>
@@ -264,6 +264,6 @@ priceTables: 4
   <div class="article-cta">
   <h3>Calcula el presupuesto de tu reforma integral en Donostia</h3>
   <p>Usa la calculadora para obtener una estimación personalizada según m², barrio y tipo de reforma. Sin compromiso.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

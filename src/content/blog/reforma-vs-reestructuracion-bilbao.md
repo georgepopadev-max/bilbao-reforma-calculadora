@@ -1,7 +1,7 @@
 ---
 title: "Reforma vs Reestructuración Bilbao 2026"
 description: "Reforma vs reestructuración en Bilbao: qué papel necesitas para obra menor, obra mayor y redistribute tu piso. Guía 2026 con licencias, precios y ejemplos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
 date: "4 junio 2026"
 category: "general"
 city: "bilbao"
@@ -15,27 +15,27 @@ faqs:
   - q: "¿Puedo hacer reestructuración sin arquitecto en Bilbao?"
     a: "Para obra menor (reforma simple) no es obligatorio arquitecto. Pero si hay cambio de distribución con paredes de carga, modificación de instalaciones eléctricas de alta potencia, o intervenciones que "
   - q: "¿La reestructuración de un piso en el Casco Viejo de Bilbao es más compleja?"
-    a: "Sí, significativamente. El <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobiern"
+    a: "Sí, significativamente. El <a href=\"/bilbao/barrios/casco-viejo\">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobiern"
 breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma vs Reestructuración en Bilbao: Qué Papel Necesitas [2026]"
-    url: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reformas Bilbao: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reformas Bilbao: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
 priceTables: 2
 ---
 
@@ -45,8 +45,8 @@ priceTables: 2
   <p>En esta guía te explicamos claramente qué es cada cosa, qué papel necesitas en cada caso y cuánto cuesta conseguir los permisos en Bilbao y Bizkaia en 2026.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025">Reformas Bilbao: Guía Completa 2025</a>
 </div>
 
 
@@ -77,7 +77,7 @@ priceTables: 2
   <li><strong>Cambio de fachada o elementos visibles</strong>: ventanas, balcones, elementos estructurales visibles desde la calle</li>
   </ul>
 
-  <p>La reestructuración requiere <strong>licencia de obra mayor</strong> en Bilbao. Esto implica proyecto técnico firmado por arquitecto, dirección de obra por aparejador o arquitecto, y tramitación ante el Ayuntamiento de Bilbao con plazos que pueden ir de 4 a 12 semanas dependiendo de la complejidad. Si estás en el <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> o en un edificio protegido, necesitas también autorización del Gobierno Vasco.</p>
+  <p>La reestructuración requiere <strong>licencia de obra mayor</strong> en Bilbao. Esto implica proyecto técnico firmado por arquitecto, dirección de obra por aparejador o arquitecto, y tramitación ante el Ayuntamiento de Bilbao con plazos que pueden ir de 4 a 12 semanas dependiendo de la complejidad. Si estás en el <a href="/bilbao/barrios/casco-viejo">Casco Viejo</a> o en un edificio protegido, necesitas también autorización del Gobierno Vasco.</p>
 
   <blockquote>
   <p><strong>Dato importante</strong>: según la normativa urbanística del Gobierno Vasco (<a href="https://www.euskadi.eus/planeamiento-urbanistico/web01-a3ing/es/" target="_blank" rel="noopener">Plan General de Ordenación Urbana de Bilbao</a>), cualquier intervención que modifique la estructura, envolvente o uso de una vivienda necesita un proyecto técnico regularizado. No es opcional.</p>
@@ -135,7 +135,7 @@ priceTables: 2
   <li><strong>Ingeniero</strong>: necesario cuando hay instalaciones complejas (gas de alta presión, electricidad trifásica, climatización central)</li>
   </ul>
 
-  <p>Más información sobre licencias y requisitos en nuestro artículo sobre <a href="licencias-obra-bilbao-2026.html">licencias de obra en Bilbao</a>.</p>
+  <p>Más información sobre licencias y requisitos en nuestro artículo sobre <a href="licencias-obra-bilbao-2026">licencias de obra en Bilbao</a>.</p>
 
   <h2>Comparativa de Precios: Reforma vs Reestructuración en Bilbao</h2>
   <p>La diferencia de coste no es solo de licencias. Una reestructuración implica más mano de obra, más materiales, más tiempo y más gestión. Aquí tienes los datos comparativos:</p>
@@ -189,20 +189,20 @@ priceTables: 2
   <h2>Ejemplos Reales: Cuándo Es Reforma y Cuándo Es Reestructuración</h2>
   <p>La mejor forma de entender la diferencia es con casos reales de pisos en Bilbao:</p>
 
-  <h3>Caso 1: Piso en <a href=\"/bilbao/barrios/indautxu.html\">Indautxu</a> (Reforma)</h3>
+  <h3>Caso 1: Piso en <a href="/bilbao/barrios/indautxu">Indautxu</a> (Reforma)</h3>
   <p><strong>Situación inicial</strong>: Piso de 75m² de los años 80, cuarto de baño originales con bañera, cocina funcional pero anticuada, paredes con pintura descascarillada y suelo de terrazo.</p>
   <p><strong>Intervención</strong>: Cambio completo de baño (ducha a ras de suelo, sanitarios modernos, nuevo alicatado), reforma de cocina con muebles nuevos sin mover tomas, cambio de suelo en toda la vivienda a parqué AC5, pintura total de paredes y techos.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reforma</strong>. Comunicación previa, sin proyecto técnico obligatorio.</p>
   <p><strong>Presupuesto orientativo</strong>: 45.000-55.000 € (calidad media).</p>
 
-  <h3>Caso 2: Piso en <a href=\"/bilbao/barrios/deusto.html\">Deusto</a> (Reestructuración parcial)</h3>
+  <h3>Caso 2: Piso en <a href="/bilbao/barrios/deusto">Deusto</a> (Reestructuración parcial)</h3>
   <p><strong>Situación inicial</strong>: Piso de 85m² con tres habitaciones pequeñas, cocina cerrada y baño estrecho. Los tabiques no son de carga.</p>
   <p><strong>Intervención</strong>: Derribo del tabique que separa cocina y salón para crear espacio abierto, unificación del pasillo para dar más amplitud, cambio completo de baño ampliándolo con eliminación de un armario dormitorio. Toda la electricidad nueva con cuadro actualizado.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reestructuración parcial</strong>. Licencia de obra mayor, proyecto de arquitecto, dirección de aparejador.</p>
   <p><strong>Presupuesto orientativo</strong>: 65.000-85.000 € (calidad media-alta).</p>
-  <p>Puedes ver más detalles sobre costes de cocina en nuestro artículo sobre <a href="reforma-cocina-bilbao.html">reforma de cocina en Bilbao</a>.</p>
+  <p>Puedes ver más detalles sobre costes de cocina en nuestro artículo sobre <a href="reforma-cocina-bilbao">reforma de cocina en Bilbao</a>.</p>
 
-  <h3>Caso 3: Piso en el <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> (Reestructuración completa)</h3>
+  <h3>Caso 3: Piso en el <a href="/bilbao/barrios/casco-viejo">Casco Viejo</a> (Reestructuración completa)</h3>
   <p><strong>Situación inicial</strong>: Piso de 70m² en edificio de los años 40 con protección patrimonial parcial. Tuberías de plomo, instalación eléctrica sin tierra, muros de carga en parte de la distribución.</p>
   <p><strong>Intervención</strong>: Redistribución completa de la vivienda con nuevo proyecto de arquitecto, sustitución de todas las instalaciones (fontanería, electricidad, gas), refuerzo estructural de un muro de carga con viga de acero vista, nuevas ventanas de madera según normativa de Patrimonio.</p>
   <p><strong>Tipo de obra</strong>: <strong>Reestructuración completa</strong>. Licencia de obra mayor + autorización del Gobierno Vasco. Proyecto completo obligatorio.</p>
@@ -223,12 +223,12 @@ priceTables: 2
   <p>Para obra menor (reforma simple) no es obligatorio arquitecto. Pero si hay cambio de distribución con paredes de carga, modificación de instalaciones eléctricas de alta potencia, o intervenciones que afectan a la estructura del edificio, el proyecto arquitectónico es obligatorio. El aparejador puede dirigir obra menor, pero no proyecto de reestructuración.</p>
 
   <h3>¿La reestructuración de un piso en el Casco Viejo de Bilbao es más compleja?</h3>
-  <p>Sí, significativamente. El <a href=\"/bilbao/barrios/casco-viejo.html\">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística.</p>
+  <p>Sí, significativamente. El <a href="/bilbao/barrios/casco-viejo">Casco Viejo</a> tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao: Guía Completa 2025</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reformas-bilbao-guia-2025">Reformas Bilbao: Guía Completa 2025</a>
 </div>
 <h2>¿Reforma o Reestructuración? Cómo Decidir</h2>
   <p>La decisión entre reforma y reestructuración depende de tres factores principales:</p>
@@ -247,6 +247,6 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Sabes qué tipo de intervención necesitas para tu piso?</h3>
   <p>Usa la calculadora para obtener una estimación orientativa según el tipo de obra que necesitas.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

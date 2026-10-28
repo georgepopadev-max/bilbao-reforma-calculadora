@@ -1,7 +1,7 @@
 ---
 title: "Cambiar Suelo Donostia 2026"
 description: "Cambiar suelo en Donostia: precios 2026 por m², parqué, porcelánico y vinílico."
-canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-donostia"
 city: donostia
 category: Acabados
 date: 2026-06-29
@@ -25,7 +25,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /donostia/calculadora/
+    href: /donostia/calculadora
 ---
 
 Si estás pensando en **cambiar el suelo en Donostia**, seguro que tienes la misma duda que la mayoría: ¿parqué, porcelánico o vinílico? Es una de las decisiones más importantes en cualquier reforma, porque el suelo ocupa toda la superficie de la casa, condiciona el ambiente y representa un gasto considerable. En esta guía te ayudamos a decidir con datos reales de precios, ventajas e inconvenientes de cada opción, y una tabla comparativa actualizada para 2026.

@@ -23,12 +23,18 @@ const organizationSchema = {
   "logo": "https://www.bilbaoreforma.es/images/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+34-644-937-618",
+    "telephone": "+34 642 147 856",
     "contactType": "customer service",
     "areaServed": "ES",
     "availableLanguage": ["Spanish", "Basque"]
   },
-  "sameAs": []
+  "description": "Calculadora de presupuestos de reformas y directorio de empresas verificadas en Bilbao, Bizkaia y Euskadi.",
+  "areaServed": [
+    { "@type": "City", "name": "Bilbao" },
+    { "@type": "State", "name": "Bizkaia" },
+    { "@type": "City", "name": "Donostia-San Sebastián" },
+    { "@type": "City", "name": "Vitoria-Gasteiz" }
+  ]
 };
 
 const websiteSchema = {
@@ -36,65 +42,14 @@ const websiteSchema = {
   "@type": "WebSite",
   "name": "Bilbao Reforma",
   "url": "https://www.bilbaoreforma.es",
-  "publisher": { "@id": "https://www.bilbaoreforma.es/#organization" },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.bilbaoreforma.es/buscar?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  }
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://www.bilbaoreforma.es/#business",
-  "name": "Bilbao Reforma",
-  "description": "Directorio de empresas de reformas verificadas y calculadora de presupuestos online para Bilbao, Donostia y Vitoria-Gasteiz.",
-  "url": "https://www.bilbaoreforma.es",
-  "logo": "https://www.bilbaoreforma.es/images/logo.png",
-  "image": "https://www.bilbaoreforma.es/images/og/home-og.jpg",
-  "telephone": "+34 642 147 856",
-  "priceRange": "€€",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Gran Vía 1",
-    "addressLocality": "Bilbao",
-    "postalCode": "48001",
-    "addressRegion": "Bizkaia",
-    "addressCountry": "ES"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.2630,
-    "longitude": -2.9350
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Bilbao" },
-    { "@type": "City", "name": "Donostia-San Sebastián" },
-    { "@type": "City", "name": "Vitoria-Gasteiz" }
-  ],
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ],
-  "sameAs": []
+  "publisher": { "@id": "https://www.bilbaoreforma.es/#organization" }
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Reformas integrales y presupuestos online",
-  "provider": {
-    "@type": "LocalBusiness",
-    "@id": "https://www.bilbaoreforma.es/#business"
-  },
+  "provider": { "@id": "https://www.bilbaoreforma.es/#organization" },
   "areaServed": [
     { "@type": "City", "name": "Bilbao" },
     { "@type": "City", "name": "Donostia-San Sebastián" },
@@ -157,7 +112,7 @@ const faqSchema = {
   title="Calculadora de Reformas Bilbao | Gratis 2026"
   description="Calcula el presupuesto de tu reforma en Bilbao en 2 minutos. Precios reales de empresas locales. Reforma integral, cocina, baño y pintura. Sin registro."
   canonical="https://www.bilbaoreforma.es/"
-  jsonSchemas={[organizationSchema, websiteSchema, localBusinessSchema, serviceSchema, faqSchema]}
+  jsonSchemas={[organizationSchema, websiteSchema, serviceSchema, faqSchema]}
   ogImage="https://www.bilbaoreforma.es/images/og/home-og.jpg"
   ogImageAlt="Reformas Bilbao 2026"
 >
@@ -193,31 +148,31 @@ const faqSchema = {
         <h2 style="font-family:var(--font-playfair);font-size:1.75rem;font-weight:700;color:var(--color-grafito);text-align:center;margin-bottom:0.5rem">Calcula tu reforma en Bilbao</h2>
         <p style="text-align:center;color:var(--color-gris);margin-bottom:2rem;font-size:1rem">Presupuesto orientativo en 2 minutos — sin registro, sin compromiso</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
-          <a href="/presupuesto-reforma-integral-bilbao.html" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
+          <a href="/presupuesto-reforma-integral-bilbao" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
             <span style="font-size:2rem;margin-bottom:0.75rem">🏗️</span>
             <strong style="color:var(--color-grafito);font-size:0.9375rem;margin-bottom:0.25rem">Reforma Integral</strong>
             <span style="color:var(--color-terracota);font-weight:700;font-size:0.875rem">desde 700€/m²</span>
             <span style="font-size:0.8125rem;color:var(--color-gris);margin-top:0.5rem">presupuesto reforma integral bilbao →</span>
           </a>
-          <a href="/presupuesto-reforma-bano-bilbao.html" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
+          <a href="/presupuesto-reforma-bano-bilbao" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
             <span style="font-size:2rem;margin-bottom:0.75rem">🚿</span>
             <strong style="color:var(--color-grafito);font-size:0.9375rem;margin-bottom:0.25rem">Reforma de Baño</strong>
             <span style="color:var(--color-terracota);font-weight:700;font-size:0.875rem">desde 3.500 €</span>
             <span style="font-size:0.8125rem;color:var(--color-gris);margin-top:0.5rem">precio reforma baño bilbao →</span>
           </a>
-          <a href="/presupuesto-reforma-cocina-bilbao.html" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
+          <a href="/presupuesto-reforma-cocina-bilbao" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
             <span style="font-size:2rem;margin-bottom:0.75rem">🍳</span>
             <strong style="color:var(--color-grafito);font-size:0.9375rem;margin-bottom:0.25rem">Reforma de Cocina</strong>
             <span style="color:var(--color-terracota);font-weight:700;font-size:0.875rem">desde 5.000 €</span>
             <span style="font-size:0.8125rem;color:var(--color-gris);margin-top:0.5rem">presupuesto reforma cocina bilbao →</span>
           </a>
-          <a href="/presupuesto-pintura-piso-bilbao.html" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
+          <a href="/presupuesto-pintura-piso-bilbao" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
             <span style="font-size:2rem;margin-bottom:0.75rem">🎨</span>
             <strong style="color:var(--color-grafito);font-size:0.9375rem;margin-bottom:0.25rem">Pintura</strong>
             <span style="color:var(--color-terracota);font-weight:700;font-size:0.875rem">desde 800 €</span>
             <span style="font-size:0.8125rem;color:var(--color-gris);margin-top:0.5rem">precio pintura piso bilbao →</span>
           </a>
-          <a href="/presupuesto-cambio-suelo-bilbao.html" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
+          <a href="/presupuesto-cambio-suelo-bilbao" style="display:flex;flex-direction:column;align-items:center;padding:1.5rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s;text-align:center">
             <span style="font-size:2rem;margin-bottom:0.75rem">🏠</span>
             <strong style="color:var(--color-grafito);font-size:0.9375rem;margin-bottom:0.25rem">Cambio de Suelo</strong>
             <span style="color:var(--color-terracota);font-weight:700;font-size:0.875rem">desde 1.200 €</span>

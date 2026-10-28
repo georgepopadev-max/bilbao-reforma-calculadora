@@ -1,7 +1,7 @@
 ---
 title: "Licencias de Obra Bilbao 2026: Guía y Precios"
 description: "Todo sobre licencias de obra en Bilbao: tipos, precios, plazos y qué obras requieren proyecto técnico. Actualizado 2026."
-canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026.html"
+canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
 date: "21 junio 2026"
 readTime: "9 min"
 category: "presupuesto"
@@ -21,40 +21,40 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Licencias de Obra Bilbao 2026: Tipos, Costes y Trámites"
-    url: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026.html"
+    url: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
 inContentCTAs:
   - type: "leer"
     label: "Reformas Bilbao 2025: Guía Completa para No Cometer Errores"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
   - type: "leer"
     label: "Reforma vs Reestructuración en Bilbao"
-    href: "reforma-vs-reestructuracion-bilbao.html"
+    href: "reforma-vs-reestructuracion-bilbao"
   - type: "leer"
     label: "Presupuesto de Reforma de Baño en Bilbao: Guía Práctica"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Pintar tu Piso en Bilbao: Licencias y Consejos"
-    href: "pintar-piso-bilbao.html"
+    href: "pintar-piso-bilbao"
   - type: "leer"
     label: "Reformas Bilbao 2025: Guía Completa"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
   - type: "leer"
     label: "Errores Comunes al Reformar en Bilbao"
-    href: "errores-comunes-reforma-bilbao.html"
+    href: "errores-comunes-reforma-bilbao"
   - type: "leer"
     label: "Empresas de Reformas en Bilbao: Cómo Elegir Bien"
-    href: "empresas-reformas-bilbao.html"
+    href: "empresas-reformas-bilbao"
   - type: "leer"
     label: "Cambiar el Suelo en Bilbao: Precios y Tipos"
-    href: "cambiar-suelo-bilbao.html"
+    href: "cambiar-suelo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificios Antiguos en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+    href: "rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Tendencias de Reforma de Baño en Bilbao 2026"
-    href: "tendencias-reforma-bano-bilbao-2026.html"
+    href: "tendencias-reforma-bano-bilbao-2026"
 priceTables: 3
 ---
 
@@ -67,16 +67,16 @@ priceTables: 3
 
   <p class="intro-text">Pero la buena noticia es que la normativa es clara: en Bizkaia, y por tanto en Bilbao, existen tres figuras administrativas principales —<strong>Comunicación Previa</strong>, <strong>Licencia de Obra Menor</strong> y <strong>Licencia de Obra Mayor</strong>— que cubren el 99% de las reformas en vivienda. Si sabes cuál aplica a tu obra, cuánto cuesta y qué documentos necesitas, el trámite se vuelve mucho menos intimidante. Esta guía está actualizada a junio de 2026 y recoge todo lo que un propietario en Bilbao debe saber para hacer las cosas bien desde el minuto uno. Nuestra experiencia tramitando <strong>licencias de obra Bilbao</strong> nos dice que el 90% de los problemas surgen por desconocimiento, no por mala fe.</p>
 
-  <p class="intro-text">Si todavía no tienes claro el alcance de tu reforma, antes de entrar en materia de licencias te recomendamos utilizar nuestra <a href="../calculadora/">calculadora de presupuestos</a> para obtener una estimación rápida del coste y la envergadura del proyecto. Con esa cifra en la mano podrás anticipar qué tipo de <strong>licencias de obra Bilbao</strong> te corresponderá solicitar y planificar el calendario con margen suficiente.</p>
+  <p class="intro-text">Si todavía no tienes claro el alcance de tu reforma, antes de entrar en materia de licencias te recomendamos utilizar nuestra <a href="/calculadora">calculadora de presupuestos</a> para obtener una estimación rápida del coste y la envergadura del proyecto. Con esa cifra en la mano podrás anticipar qué tipo de <strong>licencias de obra Bilbao</strong> te corresponderá solicitar y planificar el calendario con margen suficiente.</p>
 
   <p>A lo largo del artículo veremos ejemplos concretos con cifras reales para que puedas anticipar cuánto pagarás en tasas y cuánto tiempo tardarás en obtener tus <strong>licencias de obra Bilbao</strong> en cada escenario.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
-  <a href="reforma-vs-reestructuracion-bilbao.html">Reforma vs Reestructuración en Bilbao</a>
-  <a href="presupuesto-reforma-bano-bilbao.html">Presupuesto de Reforma de Baño en Bilbao: Guía Práctica</a>
-  <a href="pintar-piso-bilbao.html">Pintar tu Piso en Bilbao: Licencias y Consejos</a>
+  <a href="reformas-bilbao-guia-2025">Reformas Bilbao 2025: Guía Completa para No Cometer Errores</a>
+  <a href="reforma-vs-reestructuracion-bilbao">Reforma vs Reestructuración en Bilbao</a>
+  <a href="presupuesto-reforma-bano-bilbao">Presupuesto de Reforma de Baño en Bilbao: Guía Práctica</a>
+  <a href="pintar-piso-bilbao">Pintar tu Piso en Bilbao: Licencias y Consejos</a>
 </div>
 
   <h2>Tipos de Licencias de Obra en Bilbao 2026</h2>
@@ -498,12 +498,12 @@ priceTables: 3
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reformas-bilbao-guia-2025.html">Reformas Bilbao 2025: Guía Completa</a>
-  <a href="errores-comunes-reforma-bilbao.html">Errores Comunes al Reformar en Bilbao</a>
-  <a href="empresas-reformas-bilbao.html">Empresas de Reformas en Bilbao: Cómo Elegir Bien</a>
-  <a href="cambiar-suelo-bilbao.html">Cambiar el Suelo en Bilbao: Precios y Tipos</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificios Antiguos en Bilbao</a>
-  <a href="tendencias-reforma-bano-bilbao-2026.html">Tendencias de Reforma de Baño en Bilbao 2026</a>
+  <a href="reformas-bilbao-guia-2025">Reformas Bilbao 2025: Guía Completa</a>
+  <a href="errores-comunes-reforma-bilbao">Errores Comunes al Reformar en Bilbao</a>
+  <a href="empresas-reformas-bilbao">Empresas de Reformas en Bilbao: Cómo Elegir Bien</a>
+  <a href="cambiar-suelo-bilbao">Cambiar el Suelo en Bilbao: Precios y Tipos</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificios Antiguos en Bilbao</a>
+  <a href="tendencias-reforma-bano-bilbao-2026">Tendencias de Reforma de Baño en Bilbao 2026</a>
 </div>
 
   <p>Si tu reforma afecta a fachada, estructura o instalaciones comunes, consulta también nuestra guía sobre rehabilitación de edificios antiguos: allí encontrarás detalles adicionales sobre <strong>licencias de obra Bilbao</strong> en edificios protegidos y plazos ampliados del Gobierno Vasco.</p>
@@ -630,9 +630,9 @@ priceTables: 3
 
   <p>Las sanciones van desde los 600 euros en infracciones leves hasta los 60.000 euros en las muy graves, además de la obligación de restaurar la legalidad urbanística. A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas <strong>licencias de obra Bilbao</strong> es siempre una mala decisión económica, tanto a corto como a largo plazo.</p>
 
-  <p>Si después de leer esta guía quieres explorar las <a href="subvenciones-reformas-bilbao-2026.html">subvenciones para reformas Bilbao 2026</a> disponibles para ayudarte a financiar parte de la obra (incluyendo tasas y licencias), consulta nuestra guía actualizada. Y si todavía no tienes una cifra orientativa del coste total, usa la <a href="../calculadora/">calculadora de presupuesto de reforma Bilbao</a> para obtener una primera estimación en menos de dos minutos.</p>
+  <p>Si después de leer esta guía quieres explorar las <a href="subvenciones-reformas-bilbao-2026">subvenciones para reformas Bilbao 2026</a> disponibles para ayudarte a financiar parte de la obra (incluyendo tasas y licencias), consulta nuestra guía actualizada. Y si todavía no tienes una cifra orientativa del coste total, usa la <a href="/calculadora">calculadora de presupuesto de reforma Bilbao</a> para obtener una primera estimación en menos de dos minutos.</p>
 
-  <p>Para profundizar en los costes por tipo de reforma, consulta también nuestra <a href="reformas-bilbao-precios.html">guía de precios de reformas en Bilbao</a> con €/m² actualizados para reforma de baño, cocina, pintura y reforma integral.</p>
+  <p>Para profundizar en los costes por tipo de reforma, consulta también nuestra <a href="reformas-bilbao-precios">guía de precios de reformas en Bilbao</a> con €/m² actualizados para reforma de baño, cocina, pintura y reforma integral.</p>
 
   <div class="author-bio" style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: var(--radius-card); padding: 1.5rem; margin: 2rem 0 1rem; display: flex; gap: 1.25rem; align-items: flex-start;">
     <div style="flex-shrink: 0; width: 72px; height: 72px; border-radius: 50%; background: var(--color-terracota); display: flex; align-items: center; justify-content: center; font-family: var(--font-playfair); font-size: 1.75rem; font-weight: 700; color: var(--color-blanco);">BR</div>
@@ -640,7 +640,7 @@ priceTables: 3
       <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-terracota); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.25rem; font-weight: 600;">Sobre el autor</p>
       <h3 style="font-family: var(--font-playfair); font-size: 1.125rem; font-weight: 600; color: var(--color-grafito); margin-bottom: 0.5rem;">Equipo Bilbao Reforma</h3>
       <p style="font-size: 0.9375rem; color: var(--color-grafito); line-height: 1.6; margin-bottom: 0.5rem;">El <strong>Equipo Bilbao Reforma</strong> es un grupo de profesionales del sector de la construcción y la reforma en Bilbao, Bizkaia, con más de una década de experiencia conjunta en proyectos residenciales, licencias urbanísticas y rehabilitación de edificios. Trabajamos a diario con la normativa del Ayuntamiento de Bilbao, el Gobierno Vasco y el Código Técnico de la Edificación para ayudar a los propietarios a planificar reformas con datos reales y sin sorpresas. Entre nuestras tareas habituales está la gestión integral de <strong>licencias de obra Bilbao</strong> para clientes que prefieren delegar todo el proceso administrativo.</p>
-      <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5; margin: 0;">Más información sobre el equipo en <a href="../sobre-nosotros.html" rel="noopener">bilbaoreforma.es/sobre-nosotros</a>.</p>
+      <p style="font-size: 0.875rem; color: var(--color-gris); line-height: 1.5; margin: 0;">Más información sobre el equipo en <a href="../sobre-nosotros" rel="noopener">bilbaoreforma.es/sobre-nosotros</a>.</p>
     </div>
   </div>
 
@@ -651,6 +651,6 @@ priceTables: 3
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará tu reforma en Bilbao?</h3>
   <p>Calcula un presupuesto orientativo en menos de 2 minutos, incluyendo una estimación de tasas y licencias. También puedes solicitar hasta 3 presupuestos gratis a empresas verificadas de Bilbao. Con esa información tendrás una primera aproximación al coste de las <strong>licencias de obra Bilbao</strong> que tendrás que asumir antes de empezar.</p>
-  <a href="../calculadora/" class="btn">Ir a la calculadora de presupuestos -&gt;</a>
+  <a href="/calculadora" class="btn">Ir a la calculadora de presupuestos -&gt;</a>
   </div>
   </div>

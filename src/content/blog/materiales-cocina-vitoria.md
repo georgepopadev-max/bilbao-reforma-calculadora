@@ -1,7 +1,7 @@
 ---
 title: "Encimeras Cocina Vitoria: Materiales 2026"
 description: "Guía definitiva de encimeras de cocina en Vitoria 2026: Silestone, Dekton, granito y madera. Compara precios, durabilidad y descubre qué encimera conviene a tu cocina vitoriana."
-canonical: https://www.bilbaoreforma.es/blog/materiales-cocina-vitoria.html
+canonical: https://www.bilbaoreforma.es/blog/materiales-cocina-vitoria
 city: vitoria
 category: Cocinas
 date: 2026-06-29
@@ -19,7 +19,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora/
+    href: /vitoria/calculadora
 ---
 
 La encimera de tu cocina es la superficie más utilizada de toda la casa. Sobre ella cortas, cocinas, colocas ollas calientes y, en definitiva, centralizas la actividad de uno de los espacios más importantes de tu hogar vitoriano. Elegir bien el material de tu encimera en Vitoria no es solo una cuestión estética: también determina la durabilidad, el mantenimiento y el valor añadido de tu cocina.

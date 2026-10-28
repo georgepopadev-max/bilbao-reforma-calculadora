@@ -1,7 +1,7 @@
 ---
 title: "Presupuesto Reforma Baño Bilbao 2026"
 description: "Presupuesto reforma baño Bilbao 2026 desde 2.500€. Precios reales por m², 3 ejemplos detallados y calculadora gratis. Evita los 3 errores que disparan el coste."
-canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-bano-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-bano-bilbao"
 readTime: "8 min"
 category: "bano"
 city: "bilbao"
@@ -22,39 +22,39 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Presupuesto Reforma Baño Bilbao 2026 | Precios Gratis"
-    url: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-bano-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-bano-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Guía completa de reforma de baño en Bilbao"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de reforma de baño en Bilbao"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Guía completa de reforma de baño en Bilbao - todo lo que necesitas saber"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de reforma de baño en Bilbao - comparativa detallada"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores comunes en reformas de baño en Bilbao y cómo evitarlos"
-    href: "errores-comunes-reforma-bano-bilbao.html"
+    href: "errores-comunes-reforma-bano-bilbao"
 priceTables: 1
 ---
 
 <div class="article-content">
   <p>Si estás buscando <strong>presupuesto para una reforma de baño en Bilbao</strong>, has llegado al lugar correcto. En esta guía te explicamos exactamente qué incluye un presupuesto de reforma de baño, qué factores hacen que el precio suba o baje, y te damos <strong>precios orientativos por metro cuadrado</strong> para que puedas comparar con las ofertas que recibas.</p>
 
-  <p>Solicitar <a href="../index.html">presupuestos de reforma de baño en Bilbao</a> es gratis y sin compromiso. Pero antes de pedirlo, es importante que entiendas los rangos de precio del mercado para no llevarte sorpresas. Un presupuesto bien informado es siempre más efectivo.</p>
+  <p>Solicitar <a href="/">presupuestos de reforma de baño en Bilbao</a> es gratis y sin compromiso. Pero antes de pedirlo, es importante que entiendas los rangos de precio del mercado para no llevarte sorpresas. Un presupuesto bien informado es siempre más efectivo.</p>
 
-  <p>Si ya tienes claro qué tipo de reforma necesitas, usa nuestra <a href="reforma-bano-bilbao.html">guía completa de reforma de baño en Bilbao</a> para entender las diferencias entre reforma parcial y completa antes de pedir presupuestos. Si lo que necesitas es reformar todo el piso, consulta nuestra <a href="presupuesto-reforma-integral-bilbao.html"><strong>guía de presupuesto reforma integral Bilbao 2026</strong></a>.</p>
+  <p>Si ya tienes claro qué tipo de reforma necesitas, usa nuestra <a href="reforma-bano-bilbao">guía completa de reforma de baño en Bilbao</a> para entender las diferencias entre reforma parcial y completa antes de pedir presupuestos. Si lo que necesitas es reformar todo el piso, consulta nuestra <a href="presupuesto-reforma-integral-bilbao"><strong>guía de presupuesto reforma integral Bilbao 2026</strong></a>.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Guía completa de reforma de baño en Bilbao</a>
-  <a href="precio-m2-reforma-bano-bilbao.html">Precio por m² de reforma de baño en Bilbao</a>
+  <a href="reforma-bano-bilbao">Guía completa de reforma de baño en Bilbao</a>
+  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de reforma de baño en Bilbao</a>
   </div>
 
   <h2>¿Por qué pedir presupuesto antes de reformar tu baño?</h2>
@@ -206,7 +206,7 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres una estimación personalizada de tu reforma de baño?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo en menos de 2 minutos.</p>
-  <a href="../calculadora/bano-bilbao.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora/bano-bilbao" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -245,8 +245,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Guía completa de reforma de baño en Bilbao - todo lo que necesitas saber</a>
-  <a href="precio-m2-reforma-bano-bilbao.html">Precio por m² de reforma de baño en Bilbao - comparativa detallada</a>
-  <a href="errores-comunes-reforma-bano-bilbao.html">Errores comunes en reformas de baño en Bilbao y cómo evitarlos</a>
+  <a href="reforma-bano-bilbao">Guía completa de reforma de baño en Bilbao - todo lo que necesitas saber</a>
+  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de reforma de baño en Bilbao - comparativa detallada</a>
+  <a href="errores-comunes-reforma-bano-bilbao">Errores comunes en reformas de baño en Bilbao y cómo evitarlos</a>
   </div>
   </div>

@@ -12,16 +12,16 @@ const schema = {
   '@type': 'Service',
   name: 'Reformas Donostia',
   description: 'Guía completa de reformas en Donostia-San Sebastián 2026. Precios, empresas y consejos.',
-  url: 'https://www.bilbaoreforma.es/donostia/',
+  url: 'https://www.bilbaoreforma.es/donostia',
   areaServed: { '@type': 'City', name: 'Donostia-San Sebastián' },
 };
 
 const servicios = [
-  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Edificios del Casco Viejo, Gros y Egia.', precio: 'Desde 750 €/m²', href: '/donostia/calculadora/integral-donostia.html', icono: '🏠' },
-  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, alicatados y fontanería. Los pisos antiguos de Donostia suelen tener baños de 3-4 m².', precio: 'Desde 2.800 €', href: '/donostia/calculadora/bano-donostia.html', icono: '🚿' },
-  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Donostia tiene物价 similar a Bilbo con mano de obra especializada.', precio: 'Desde 5.500 €', href: '/donostia/calculadora/cocina-donostia.html', icono: '🍳' },
-  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Donostia el precio incluye tratamiento antimoho por la humedad costera.', precio: 'Desde 9 €/m²', href: '/donostia/calculadora/pintura-donostia.html', icono: '🎨' },
-  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios con terrazas en Gros y Miramon tienen particularidades de acceso.', precio: 'Desde 38 €/m²', href: '/donostia/calculadora/suelo-donostia.html', icono: '🪵' },
+  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa del piso: electricidad, fontanería, albañilería, pintura y suelos. Edificios del Casco Viejo, Gros y Egia.', precio: 'Desde 750 €/m²', href: '/donostia/calculadora/integral-donostia', icono: '🏠' },
+  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, alicatados y fontanería. Los pisos antiguos de Donostia suelen tener baños de 3-4 m².', precio: 'Desde 2.800 €', href: '/donostia/calculadora/bano-donostia', icono: '🚿' },
+  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Donostia tiene物价 similar a Bilbo con mano de obra especializada.', precio: 'Desde 5.500 €', href: '/donostia/calculadora/cocina-donostia', icono: '🍳' },
+  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Donostia el precio incluye tratamiento antimoho por la humedad costera.', precio: 'Desde 9 €/m²', href: '/donostia/calculadora/pintura-donostia', icono: '🎨' },
+  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios con terrazas en Gros y Miramon tienen particularidades de acceso.', precio: 'Desde 38 €/m²', href: '/donostia/calculadora/suelo-donostia', icono: '🪵' },
 ];
 
 const pasos = [
@@ -34,7 +34,7 @@ const pasos = [
 <BaseLayout
   title="Reformas Donostia 2026: Guía Completa y Precios Orientativos"
   description="Guía completa de reformas en Donostia-San Sebastián 2026. Calcula presupuestos, compara precios y encuentra empresas verificadas en Gipuzkoa."
-  canonical="https://www.bilbaoreforma.es/donostia/"
+  canonical="https://www.bilbaoreforma.es/donostia"
   ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg"
   ogImageAlt="Reformas Donostia 2026"
 >
@@ -49,7 +49,7 @@ const pasos = [
       <div style="max-width: 900px; margin: 0 auto;">
         <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-grafito); margin-bottom: 1rem; line-height: 1.25;">Reformas en Donostia 2026</h1>
         <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.7; max-width: 640px; margin-bottom: 1.5rem;">Donostia-San Sebastián tiene un parque inmobiliario envejecido, especialmente en el Casco Viejo, Gros, Egia y Amara. Esta guía te ayuda a calcular presupuestos orientativos y encontrar empresas de reformas verificadas en Gipuzkoa.</p>
-        <a href="/donostia/calculadora/integral-donostia.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
+        <a href="/donostia/calculadora/integral-donostia" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
       </div>
     </section>
 
@@ -80,7 +80,7 @@ const pasos = [
           ))}
         </div>
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/donostia/calculadora/integral-donostia.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
+          <a href="/donostia/calculadora/integral-donostia" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 ---
 title: "Reformas Zorrotzaurre Bilbao 2026"
 description: "Reformas Zorrotzaurre Bilbao 2026. Multiplicador ×1.25, precios loft e integrales en la isla urbana en transformación. Guía local."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Zorrotzaurre Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Zorrotzaurre"
-    href: "/calculadora/index.html?barrio=zorrotzaurre"
+    href: "/calculadora?barrio=zorrotzaurre"
   - type: "leer"
     label: "Tendencias Reforma Cocina Bilbao 2026"
-    href: "tendencias-reforma-cocina-bilbao-2026.html"
+    href: "tendencias-reforma-cocina-bilbao-2026"
 ---
 
 ## Reformas Zorrotzaurre Bilbao 2026: Lofts e Integrales
@@ -64,15 +64,15 @@ Base: Bilbao 700-1.100 €/m² × multiplicador 1.25:
 
 Empresas con experiencia en reformas loft e integrales en Zorrotzaurre y la zona de la ría:
 
-- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo.html) — Diseño loft y reforma premium con experiencia en espacios industriales
-- [**Eraber Reformas**](/empresas/eraber.html) — Reformas integrales con capacidad para trabajos de estructura
-- [**RB Interiores**](/empresas/rb-interiores.html) — Interiorismo y reforma de viviendas con diseño contemporâneo
+- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo) — Diseño loft y reforma premium con experiencia en espacios industriales
+- [**Eraber Reformas**](/empresas/eraber) — Reformas integrales con capacidad para trabajos de estructura
+- [**RB Interiores**](/empresas/rb-interiores) — Interiorismo y reforma de viviendas con diseño contemporâneo
 
 ## Calcula tu Reforma en Zorrotzaurre
 
 Usa la calculadora con el multiplicador de Zorrotzaurre ya aplicado:
 
-<a href="/calculadora/index.html?barrio=zorrotzaurre" class="btn">Calcular presupuesto en Zorrotzaurre →</a>
+<a href="/calculadora?barrio=zorrotzaurre" class="btn">Calcular presupuesto en Zorrotzaurre →</a>
 
 ## Preguntas Frecuentes sobre Reformas en Zorrotzaurre
 
@@ -91,22 +91,22 @@ Las reformas en Zorrotzaurre combinan elementos industriales (techos vistos, est
 
 ## Ver También
 
-- Página de barrio: [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zorrotzaurre](/calculadora/index.html?barrio=zorrotzaurre)
+- Página de barrio: [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zorrotzaurre](/calculadora?barrio=zorrotzaurre)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
-- [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian.html)
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
+- [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian)
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
 
 ### Blogs relacionados
 
-- [Reformas Deusto Bilbao 2026](/blog/reformas-deusto-bilbao.html)
-- [Reformas San Adrián Bilbao 2026](/blog/reformas-san-adrian-bilbao.html)
+- [Reformas Deusto Bilbao 2026](/bilbao/barrios/deusto)
+- [Reformas San Adrián Bilbao 2026](/blog/reformas-san-adrian-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

@@ -1,7 +1,7 @@
 ---
 title: "Reformas Bilbao 2026: Precios"
 description: "Reformas Bilbao precios 2026. Cuánto cuesta pintar, cambiar suelo, reforma de baño o cocina en Bilbao. Tablas de precios y consejos para ahorrar."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios"
 date: "18 junio 2026"
 category: "presupuesto"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Bilbao Precios 2026: Guía Completa de Costes"
-    url: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Pintar un Piso en Bilbao: Precios y Consejos"
-    href: "pintar-piso-bilbao.html"
+    href: "pintar-piso-bilbao"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao: Guía Especial"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
   - type: "leer"
     label: "Empresas de Reformas en Bilbao: Directorio y Consejos"
-    href: "empresas-reformas-bilbao.html"
+    href: "empresas-reformas-bilbao"
 priceTables: 2
 ---
 
@@ -44,8 +44,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto</a>
-  <a href="pintar-piso-bilbao.html">Pintar un Piso en Bilbao: Precios y Consejos</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto</a>
+  <a href="pintar-piso-bilbao">Pintar un Piso en Bilbao: Precios y Consejos</a>
   </div>
 
   <h2>Por Qué las Reformas en Bilbao Son Más Caras que en Otras Ciudades</h2>
@@ -187,8 +187,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao: Guía Especial</a>
-  <a href="empresas-reformas-bilbao.html">Empresas de Reformas en Bilbao: Directorio y Consejos</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao: Guía Especial</a>
+  <a href="empresas-reformas-bilbao">Empresas de Reformas en Bilbao: Directorio y Consejos</a>
   </div>
 
   <h2>Cómo Ahorrar en tu Reforma en Bilbao sin Perder Calidad</h2>
@@ -202,7 +202,7 @@ priceTables: 2
   <li><strong>No toques la distribución de instalaciones</strong>: mantener los puntos de agua, electricidad y gas donde están te ahorra entre 2.000 € y 6.000 €</li>
   <li><strong>Elige materiales de stock o exposición</strong>: los azulejos, parqué o sanitarios de exposición pueden tener descuentos del 30-50%</li>
   <li><strong>Compara empresas locales vizcaínas</strong>: las empresas de Madrid o Barcelona que vienen a Bilbao suelen cobrar sobrecostes de desplazamiento</li>
-  <li><strong>Usa una calculadora de presupuestos</strong> antes de pedir presupuestos: así vas con una cifra realista y no te llevan sorpresas. <a href="../calculadora/index.html">Prueba la calculadora de Bilbao Reforma -></a></li>
+  <li><strong>Usa una calculadora de presupuestos</strong> antes de pedir presupuestos: así vas con una cifra realista y no te llevan sorpresas. <a href="../calculadora">Prueba la calculadora de Bilbao Reforma -></a></li>
   </ul>
   </div>
 
@@ -215,7 +215,7 @@ priceTables: 2
   <li><strong>Que tengan reseñas o referencias verificables</strong> (Google, redes sociales)</li>
   <li><strong>Que tramiten ellas la licencia</strong> si la reforma la requiere - muchas lo incluyen en el servicio</li>
   </ul>
-  <p>En el <a href="../empresas/index.html">directorio de empresas de Bilbao Reforma</a> puedes encontrar empresas verificadas de reformas en Bilbao y Bizkaia.</p>
+  <p>En el <a href="../empresas">directorio de empresas de Bilbao Reforma</a> puedes encontrar empresas verificadas de reformas en Bilbao y Bizkaia.</p>
 
   <h2>Preguntas Frecuentes sobre Precios de Reformas en Bilbao</h2>
 
@@ -237,6 +237,6 @@ priceTables: 2
   <div class="article-cta">
   <h3>Calcula el presupuesto de tu reforma en Bilbao</h3>
   <p>Usa la calculadora para obtener una estimación personalizada por m² y tipo de reforma. Sin compromiso.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

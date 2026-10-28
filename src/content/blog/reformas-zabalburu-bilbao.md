@@ -1,7 +1,7 @@
 ---
 title: "Reformas Zabalburu Bilbao 2026"
 description: "Reformas Zabalburu Bilbao 2026. Multiplicador ×1.10, precios integrales y empresas del barrio. Guía actualizada."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Zabalburu Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Zabalburu"
-    href: "/calculadora/index.html?barrio=zabalburu"
+    href: "/calculadora?barrio=zabalburu"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
 ---
 
 ## Reformas Zabalburu Bilbao 2026
@@ -64,15 +64,15 @@ Base: Bilbao 700-1.100 €/m² × multiplicador 1.10:
 
 Empresas con experiencia en reformas en el barrio de Zabalburu:
 
-- [**Reformas Fernández**](/empresas/reformas-fernandez.html) — Especialistas en reformas integrales en zona centro
-- [**Eraber Reformas**](/empresas/eraber.html) — Reformas con experiencia en barrios céntricos de Bilbao
-- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo.html) — Reforma integral y diseño de interiores
+- [**Reformas Fernández**](/empresas/reformas-fernandez) — Especialistas en reformas integrales en zona centro
+- [**Eraber Reformas**](/empresas/eraber) — Reformas con experiencia en barrios céntricos de Bilbao
+- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo) — Reforma integral y diseño de interiores
 
 ## Calcula tu Reforma en Zabalburu
 
 Abre la calculadora con el multiplicador de Zabalburu ya aplicado:
 
-<a href="/calculadora/index.html?barrio=zabalburu" class="btn">Calcular presupuesto en Zabalburu →</a>
+<a href="/calculadora?barrio=zabalburu" class="btn">Calcular presupuesto en Zabalburu →</a>
 
 ## Preguntas Frecuentes sobre Reformas en Zabalburu
 
@@ -91,22 +91,22 @@ Las reformas parciales (baño, cocina, pintura, cambio de suelo) no suelen reque
 
 ## Ver También
 
-- Página de barrio: [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zabalburu](/calculadora/index.html?barrio=zabalburu)
+- Página de barrio: [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Zabalburu](/calculadora?barrio=zabalburu)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Abando Bilbao](/barrios/reforma-abando.html)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
-- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu.html)
+- [Reformas en Abando Bilbao](/barrios/reforma-abando)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
+- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu)
 
 ### Blogs relacionados
 
-- [Reformas Abando Bilbao 2026](/blog/reformas-abando-bilbao.html)
-- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+- [Reformas Abando Bilbao 2026](/blog/reformas-abando-bilbao)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

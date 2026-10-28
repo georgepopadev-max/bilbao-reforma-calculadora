@@ -1,7 +1,7 @@
 ---
 title: "Reformas Casco Viejo Bilbao 2026"
 description: "Reforma Casco Viejo Bilbao 2026: licencias Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
 date: "6 abril 2025"
 category: "presupuesto"
 city: "bilbao"
@@ -18,22 +18,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas en el Casco Viejo de Bilbao: Particularidades, Precios y Consejos"
-    url: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+    href: "rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+    href: "rehabilitacion-edificio-antiguo-bilbao"
 priceTables: 3
 ---
 
@@ -43,8 +43,8 @@ priceTables: 3
   <p>Las reformas en el Casco Viejo de Bilbao no son como las de un piso en Deusto, Errekalde o cualquier barrio moderno. Hay licencias especiales, accesos imposibles, materiales obligatorios y una logística que puede disparar el presupuesto entre un 20% y un 40% respecto a una reforma equivalente en otro barrio.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
 </div>
 
 
@@ -255,8 +255,8 @@ priceTables: 3
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
 </div>
 <h2>Resumen: Lo Que Necesitas Saber</h2>
   <ul>
@@ -270,6 +270,6 @@ priceTables: 3
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en el Casco Viejo de Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada. Selecciona "Casco Viejo" como ubicación para aplicar el factor multiplicador de sobrecoste.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

@@ -16,44 +16,22 @@ import FinalCTA from '../../components/home/FinalCTA.astro';
 // Schemas specific to Donostia
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://www.bilbaoreforma.es/#business-donostia',
-  'name': 'Reforma Donostia',
+  '@type': 'Service',
+  name: 'Calculadora de presupuestos de reformas en Donostia',
   description: 'Calculadora de presupuestos de reformas en Donostia/San Sebastián y Gipuzkoa. Precios orientativos en menos de 2 minutos.',
-  url: 'https://www.bilbaoreforma.es/donostia/',
-  logo: 'https://www.bilbaoreforma.es/images/logo.png',
-  image: 'https://www.bilbaoreforma.es/images/og/home-og.jpg',
-  telephone: '+34 642 147 856',
-  priceRange: '€€',
-  address: {
-    '@type': 'PostalAddress',
-    'addressLocality': 'Donostia-San Sebastián',
-    'addressRegion': 'Gipuzkoa',
-    'addressCountry': 'ES'
-  },
+  url: 'https://www.bilbaoreforma.es/donostia',
+  provider: { '@type': 'Organization', '@id': 'https://www.bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
   areaServed: [
     { '@type': 'City', 'name': 'Donostia-San Sebastián' },
     { '@type': 'State', 'name': 'Gipuzkoa' }
   ],
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'],
-      opens: '09:00',
-      closes: '18:00'
-    }
-  ],
-  sameAs: []
 };
 
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Reformas integrales y presupuestos online',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://www.bilbaoreforma.es/#business-donostia'
-  },
+  provider: { '@type': 'Organization', '@id': 'https://www.bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
   areaServed: [
     { '@type': 'City', 'name': 'Donostia-San Sebastián' },
     { '@type': 'State', 'name': 'Gipuzkoa' }
@@ -114,7 +92,7 @@ const faqSchema = {
 <CityLayout
   title="Reformas Donostia 2026 | Presupuesto Gratis"
   description="Calcula tu reforma en Donostia-San Sebastián en 2 min, gratis. Compara empresas verificadas de Gipuzkoa. Precios reales y actualizados."
-  canonical="https://www.bilbaoreforma.es/donostia/"
+  canonical="https://www.bilbaoreforma.es/donostia"
   city="donostia"
   ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg"
   ogImageAlt="Reformas Donostia 2026"
@@ -147,15 +125,15 @@ const faqSchema = {
     <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem">
       <h2 style="font-family:var(--font-playfair);font-size:1.5rem;font-weight:700;color:var(--color-grafito);text-align:center;margin-bottom:1.5rem">Calcula tu reforma en Donostia</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
-        <a href="/donostia/calculadora/integral-donostia.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/donostia/calculadora/integral-donostia" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma Integral Donostia</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 750€/m² →</p>
         </a>
-        <a href="/donostia/calculadora/bano-donostia.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/donostia/calculadora/bano-donostia" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma de Baño Donostia</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 3.000 € →</p>
         </a>
-        <a href="/donostia/blog/index.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/donostia/blog" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Blog de Reformas Donostia</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">Guías y precios 2026 →</p>
         </a>

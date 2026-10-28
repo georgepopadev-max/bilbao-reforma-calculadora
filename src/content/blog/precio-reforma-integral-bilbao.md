@@ -1,7 +1,7 @@
 ---
 title: "Precio Reforma Integral Bilbao 2026"
 description: "Precio reforma integral Bilbao 2026. Cuánto cuesta reformar un piso entero en Bilbao. Factores que influyen, precios por m² y calculadora de presupuesto gratis."
-canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
 date: "18 junio 2026"
 category: "integral"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Precio Reforma Integral Bilbao 2026: Cuánto Cuesta Reformar un Piso"
-    url: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa con Presupuesto Detallado"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
   - type: "leer"
     label: "Cuánto Tarda una Reforma Integral en Bilbao: Timeline Realista"
-    href: "tiempo-reforma-integral-bilbao.html"
+    href: "tiempo-reforma-integral-bilbao"
   - type: "leer"
     label: "Licencias de Obra en Bilbao: Todo lo que Necesitas Saber"
-    href: "licencias-obra-bilbao-2026.html"
+    href: "licencias-obra-bilbao-2026"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao: Guía Especial"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
 priceTables: 4
 ---
 
@@ -44,8 +44,8 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa con Presupuesto Detallado</a>
-  <a href="tiempo-reforma-integral-bilbao.html">Cuánto Tarda una Reforma Integral en Bilbao: Timeline Realista</a>
+  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa con Presupuesto Detallado</a>
+  <a href="tiempo-reforma-integral-bilbao">Cuánto Tarda una Reforma Integral en Bilbao: Timeline Realista</a>
   </div>
 
   <h2>¿Qué Diferencia una Reforma Integral de una Reforma Parcial?</h2>
@@ -240,8 +240,8 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="licencias-obra-bilbao-2026.html">Licencias de Obra en Bilbao: Todo lo que Necesitas Saber</a>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao: Guía Especial</a>
+  <a href="licencias-obra-bilbao-2026">Licencias de Obra en Bilbao: Todo lo que Necesitas Saber</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao: Guía Especial</a>
   </div>
 
   <h2>Preguntas Frecuentes sobre el Precio de Reforma Integral en Bilbao</h2>
@@ -264,6 +264,6 @@ priceTables: 4
   <div class="article-cta">
   <h3>Calcula el presupuesto de tu reforma integral en Bilbao</h3>
   <p>Usa la calculadora para obtener una estimación personalizada según m², barrio y tipo de reforma. Sin compromiso.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
   </div>

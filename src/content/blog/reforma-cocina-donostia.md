@@ -1,7 +1,7 @@
 ---
 title: "Reforma Cocina Donostia 2026"
 description: "Precio reforma cocina Donostia 2026. Averigua cuánto cuesta reformar tu cocina en Donostia según metros y calidades. Presupuesto orientativo en 2 minutos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia"
 readTime: "10 min"
 category: "cocina"
 city: "donostia"
@@ -22,37 +22,37 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Cocina Donostia 2026: Precios y Presupuesto"
-    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia"
 inContentCTAs:
   - type: "herramienta"
     label: "Calculadora de presupuesto reforma cocina Donostia ->"
-    href: "../calculadora/index.html"
+    href: "/calculadora"
   - type: "herramienta"
     label: "Guía de presupuestos para reforma de cocina Donostia"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto reforma cocina Donostia - guía completa para pedir precios"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio por m² reforma cocina Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-cocina-bilbao.html"
+    href: "precio-m2-reforma-cocina-bilbao"
   - type: "leer"
     label: "Mejores materiales para cocinas en Donostia - guía 2025"
-    href: "materiales-cocina-bilbao.html"
+    href: "materiales-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto reforma cocina Donostia - guía para pedir precios sin sorpresas"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio por m² reforma cocina Donostia - comparativa de calidades"
-    href: "precio-m2-reforma-cocina-bilbao.html"
+    href: "precio-m2-reforma-cocina-bilbao"
   - type: "leer"
     label: "Mejores materiales para cocinas Donostia 2025"
-    href: "materiales-cocina-bilbao.html"
+    href: "materiales-cocina-bilbao"
   - type: "leer"
     label: "Errores más comunes en reformas de cocina Donostia"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
 priceTables: 1
 ---
 
@@ -65,8 +65,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📊 Herramienta recomendada</span>
-  <a href="../calculadora/index.html">Calculadora de presupuesto reforma cocina Donostia -></a>
-  <a href="presupuesto-reforma-cocina-donostia.html">Guía de presupuestos para reforma de cocina Donostia</a>
+  <a href="../calculadora">Calculadora de presupuesto reforma cocina Donostia -></a>
+  <a href="/donostia/calculadora/cocina-donostia">Guía de presupuestos para reforma de cocina Donostia</a>
   </div>
 
   <h2>Precios por m² para reforma de cocina en Donostia 2025</h2>
@@ -181,9 +181,9 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="presupuesto-reforma-cocina-donostia.html">Presupuesto reforma cocina Donostia - guía completa para pedir precios</a>
-  <a href="precio-m2-reforma-cocina-donostia.html">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
-  <a href="materiales-cocina-donostia.html">Mejores materiales para cocinas en Donostia - guía 2025</a>
+  <a href="/donostia/calculadora/cocina-donostia">Presupuesto reforma cocina Donostia - guía completa para pedir precios</a>
+  <a href="/donostia/calculadora/cocina-donostia">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
+  <a href="materiales-cocina-donostia">Mejores materiales para cocinas en Donostia - guía 2025</a>
   </div>
 
   <h2>Barrios de Donostia con mayor demanda de cocinas reformadas</h2>
@@ -237,7 +237,7 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costará tu reforma de cocina en Donostia?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos, sin compromiso.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -276,9 +276,9 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="presupuesto-reforma-cocina-donostia.html">Presupuesto reforma cocina Donostia - guía para pedir precios sin sorpresas</a>
-  <a href="precio-m2-reforma-cocina-donostia.html">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
-  <a href="materiales-cocina-donostia.html">Mejores materiales para cocinas Donostia 2025</a>
-  <a href="errores-reforma-cocina-donostia.html">Errores más comunes en reformas de cocina Donostia</a>
+  <a href="/donostia/calculadora/cocina-donostia">Presupuesto reforma cocina Donostia - guía para pedir precios sin sorpresas</a>
+  <a href="/donostia/calculadora/cocina-donostia">Precio por m² reforma cocina Donostia - comparativa de calidades</a>
+  <a href="materiales-cocina-donostia">Mejores materiales para cocinas Donostia 2025</a>
+  <a href="/blog/materiales-cocina-donostia">Errores más comunes en reformas de cocina Donostia</a>
   </div>
   </div>

@@ -1,7 +1,7 @@
 ---
 title: "Encimera Cocina Bilbao 2026"
 description: "Guía definitiva de encimeras de cocina en Bilbao 2026: Silestone, Dekton, granito y madera. Compara precios, durabilidad y descubre qué encimera conviene a tu cocina bilbaina."
-canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao"
 category: "cocina"
 city: "bilbao"
 faqs:
@@ -19,22 +19,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Encimera de Cocina en Bilbao 2026: Materiales, Precios y Marcas Disponibles"
-    url: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores en Reforma de Cocina en Bilbao"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores en Reforma de Cocina en Bilbao"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
 priceTables: 0
 ---
 
@@ -48,8 +48,8 @@ priceTables: 0
   <p>En los últimos años, los showrooms de cocinas en Bilbao y Bizkaia han ampliado enormemente su oferta. Desde el clásico granito biselado que predominaba en los pisos del Casco Viejo hasta los modernos Dekton de gran formato que triunfan en cocinas de Indautxu y Deusto, las opciones son cada vez más diversas. Pero, ¿cuál conviene realmente a tu cocina?</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="errores-reforma-cocina-bilbao.html">Errores en Reforma de Cocina en Bilbao</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="errores-reforma-cocina-bilbao">Errores en Reforma de Cocina en Bilbao</a>
 </div>
 
 
@@ -210,8 +210,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="errores-reforma-cocina-bilbao.html">Errores en Reforma de Cocina en Bilbao</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="errores-reforma-cocina-bilbao">Errores en Reforma de Cocina en Bilbao</a>
 </div>
 <h2>Conclusión: Tu Encimera, tu Decisión</h2>
 
@@ -223,10 +223,10 @@ priceTables: 0
   <div class="blog-cta">
   <h3>¿Ya sabes qué encimera necesitas?</h3>
   <p>Usa nuestra calculadora para estimar el coste total de tu reforma de cocina en Bilbao, incluyendo materiales y mano de obra.</p>
-  <a href="../calculadora/cocina-bilbao.html">Calcular presupuesto de reforma -></a>
+  <a href="../calculadora/cocina-bilbao">Calcular presupuesto de reforma -></a>
   </div>
 
   <nav class="blog-nav">
-  <a href="tipos-calefaccion-bilbao.html">← Tipos de calefacción Bilbao</a>
-  <a href="renovar-piso-antiguo-bilbao.html">Reformas piso antiguo -></a>
+  <a href="tipos-calefaccion-bilbao">← Tipos de calefacción Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Reformas piso antiguo -></a>
   </nav>

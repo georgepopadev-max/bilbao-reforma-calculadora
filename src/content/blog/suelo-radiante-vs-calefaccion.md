@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante vs Radiadores Bilbao"
 description: "Suelo radiante vs radiadores en Bilbao: comparativa real, precio, eficiencia y cuándo conviene."
-canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion.html"
+canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
 date: "20 enero 2025"
 category: "suelo"
 city: "bilbao"
@@ -22,22 +22,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Suelo Radiante vs Calefacción Tradicional: Guía Comparativa 2026"
-    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion.html"
+    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante en Bilbao: Ventajas, Precios y Guía"
-    href: "suelo-radiante-ventajas-bilbao.html"
+    href: "suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao"
-    href: "tipos-calefaccion-bilbao.html"
+    href: "tipos-calefaccion-bilbao"
   - type: "leer"
     label: "Suelo Radiante en Bilbao: Ventajas, Precios y Guía"
-    href: "suelo-radiante-ventajas-bilbao.html"
+    href: "suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao"
-    href: "tipos-calefaccion-bilbao.html"
+    href: "tipos-calefaccion-bilbao"
 priceTables: 4
 ---
 
@@ -47,8 +47,8 @@ priceTables: 4
   <p>En esta guía vamos a comparar ambos sistemas sin filtros, con datos reales y orientado al contexto de Bilbao y su clima húmedo del Cantábrico.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="suelo-radiante-ventajas-bilbao.html">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
-  <a href="tipos-calefaccion-bilbao.html">Tipos de Calefacción en Bilbao</a>
+  <a href="suelo-radiante-ventajas-bilbao">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
+  <a href="tipos-calefaccion-bilbao">Tipos de Calefacción en Bilbao</a>
 </div>
 
 
@@ -338,8 +338,8 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="suelo-radiante-ventajas-bilbao.html">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
-  <a href="tipos-calefaccion-bilbao.html">Tipos de Calefacción en Bilbao</a>
+  <a href="suelo-radiante-ventajas-bilbao">Suelo Radiante en Bilbao: Ventajas, Precios y Guía</a>
+  <a href="tipos-calefaccion-bilbao">Tipos de Calefacción en Bilbao</a>
 </div>
 <h2>Preguntas Frecuentes</h2>
 
@@ -364,6 +364,6 @@ priceTables: 4
   <div class="article-cta">
   <h3>¿Quieres comparar presupuestos con y sin suelo radiante?</h3>
   <p>Usa nuestra calculadora para ver la diferencia de inversión y consumo a largo plazo.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto con suelo radiante</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto con suelo radiante</a>
   </div>
   </div>

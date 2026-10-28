@@ -1,7 +1,7 @@
 ---
 title: "12 Errores Comunes en una Reforma Bilbao"
 description: "Errores comunes en una reforma: los 12 fallos más costosos y cómo evitarlos. Guía actualizada para quienes reforman en Bilbao y Bizkaia sin sorpresas."
-canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
@@ -19,22 +19,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "12 Errores Comunes en una Reforma (y Cómo Evitarlos)"
-    url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
 priceTables: 0
 ---
 
@@ -44,8 +44,8 @@ priceTables: 0
   <p>Después de asesorar a cientos de propietarios en Bilbao y Bizkaia durante sus reformas, hemos identificado los 12 errores que más dinero cuesta, más estrés generan y más fáciles son de evitar.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
 </div>
 
 
@@ -148,8 +148,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
 </div>
   <h2>Reforma de baño vs reforma de cocina en Bilbao: qué merece más la pena</h2>
 
@@ -183,12 +183,12 @@ priceTables: 0
   </ul>
   </div>
 
-  <p>Una cosa más: usa nuestra <a href="../calculadora/index.html">calculadora de presupuestos</a> para obtener un rango de precios de mercado realista antes de empezar a pedir presupuestos. Así podrás detectar inmediatamente si un presupuesto es sospechosamente bajo - o sospechosamente alto.</p>
+  <p>Una cosa más: usa nuestra <a href="../calculadora">calculadora de presupuestos</a> para obtener un rango de precios de mercado realista antes de empezar a pedir presupuestos. Así podrás detectar inmediatamente si un presupuesto es sospechosamente bajo - o sospechosamente alto.</p>
 
   <div class="article-cta">
   <h3>Obtén un Presupuesto Realista Antes de Empezar tu Reforma</h3>
   <p>Usa nuestra calculadora para saber lo que debería costar una reforma en Bilbao - antes de firmar nada.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <p><strong>Fuentes:</strong> Información sobre costes de reforma basada en datos del <a href="https://observatorioinmobiliario.es/noticias/residencial/el-mercado-de-la-reforma-alcanzar%C3%A1-19-millones-de-viviendas-en-2025-y-la-rehabilitaci%C3%B3n-crecer%C3%A1-un-75/" target="_blank" rel="noopener">Observatorio Inmobiliario</a> y <a href="https://domdiseno.com/precio-reforma-integral-2025-tabla-e-m%C2%B2-por-provincia/" target="_blank" rel="noopener">Dom Diseño</a>.</p>

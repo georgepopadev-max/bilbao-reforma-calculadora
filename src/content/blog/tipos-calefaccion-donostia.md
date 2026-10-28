@@ -2,7 +2,7 @@
 
 title: "Tipos Calefacción Donostia 2026"
 description: "Tipos de calefacción en Donostia 2026: gas, aerotermia, suelo radiante. Compara precios."
-canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-donostia"
 city: donostia
 category: Instalaciones
 date: 2026-06-29
@@ -20,7 +20,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /donostia/calculadora/
+    href: /donostia/calculadora
 ---
 
 Cuando llegas a vivir a un piso en el Casco Viejo de Donostia o has comprado tu primer apartamento en Amara Nuevo, una de las primeras decisiones que tomarás es qué sistema de calefacción instalar. El clima donostiarra, con sus inviernos húmedos y frescos pero sin temperaturas extremas, merece una reflexión cuidadosa. La cercanía del Cantábrico y la bahía de La Concha marcan un microclima particular que influye directamente en el consumo energético de tu hogar.

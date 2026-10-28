@@ -1,7 +1,7 @@
 ---
 title: "Aerotermia Precio Bilbao 2026 | Guía"
 description: "Aerotermia en Bilbao: precio 12.000-18.000€, ahorro hasta 70% y subvenciones Plan Rehabilitación vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 date: "2026-07-03"
 category: "Calefacción"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Aerotermia Precio Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Bilbao: Ventajas"
-    href: "aerotermia-bilbao-ventajas.html"
+    href: "aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026"
-    href: "suelo-radiante-ventajas-bilbao.html"
+    href: "suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Tipos Calefacción Bilbao 2026"
-    href: "tipos-calefaccion-bilbao.html"
+    href: "tipos-calefaccion-bilbao"
 ---
 
 <div class="article-content">
@@ -185,12 +185,12 @@ inContentCTAs:
 
 <h2>Empresas instaladoras de aerotermia en Bilbao</h2>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con calefacción</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con calefacción</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Aerotermia</h2>
@@ -207,7 +207,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto con aerotermia?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría tu instalación de aerotermia en Bilbao.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

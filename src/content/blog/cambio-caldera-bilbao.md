@@ -1,7 +1,7 @@
 ---
 title: "Cambiar Caldera Bilbao 2026 | Precios"
 description: "Cambiar caldera en Bilbao: precio 3.500-7.000€, tipos (gas, gasoil, biomasa) y ayudas vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao"
 date: "2026-07-03"
 category: "Calefacción"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Cambiar Caldera Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Tipos Calefacción Bilbao 2026"
-    href: "tipos-calefaccion-bilbao.html"
+    href: "tipos-calefaccion-bilbao"
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"
-    href: "aerotermia-precio-bilbao.html"
+    href: "aerotermia-precio-bilbao"
   - type: "leer"
     label: "Precio Calefacción Bilbao 2026"
-    href: "precio-calefaccion-bilbao.html"
+    href: "precio-calefaccion-bilbao"
 ---
 
 <div class="article-content">
@@ -161,12 +161,12 @@ inContentCTAs:
 
 <h2>Empresas especializadas en calderas en Bilbao</h2>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con calefacción</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con calefacción</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Cambiar Caldera</h2>
@@ -183,7 +183,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres saber cuánto costaría cambiar tu caldera?</h3>
 <p>Usa nuestra calculadora para obtener una estimación de presupuesto para tu reforma de calefacción.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

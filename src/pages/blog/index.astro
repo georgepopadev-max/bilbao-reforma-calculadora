@@ -41,7 +41,7 @@ const totalCTAs = posts.reduce((sum, p) => {
 <BaseLayout
   title="Blog Reformas Bilbao — Precios y Consejos"
   description="Blog con guías prácticas sobre reformas en Bilbao: precios de baños, cocinas, suelos, pintura y más. Información actualizada para 2026."
-  canonical="https://www.bilbaoreforma.es/blog.html"
+  canonical="https://www.bilbaoreforma.es/blog"
   ogImage="https://www.bilbaoreforma.es/images/og/blog-og.jpg"
   ogImageAlt="Blog Reformas Bilbao"
 >
@@ -76,12 +76,12 @@ const totalCTAs = posts.reduce((sum, p) => {
 
       {/* Category filter pills */}
       <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2rem;justify-content:center">
-        <a href="/blog/" style="background:#C45C3E;color:#FFFFFF;padding:.5rem 1.25rem;border-radius:999px;font-size:.875rem;font-weight:600;text-decoration:none">
+        <a href="/blog" style="background:#C45C3E;color:#FFFFFF;padding:.5rem 1.25rem;border-radius:999px;font-size:.875rem;font-weight:600;text-decoration:none">
           Todos
         </a>
         {categories.map((cat) => (
           <a
-            href={`/blog/?category=${cat}`}
+            href={`/blog?category=${cat}`}
             style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1.25rem;border-radius:999px;font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid #E8E2D9"
           >
             {cat}
@@ -95,12 +95,12 @@ const totalCTAs = posts.reduce((sum, p) => {
           Temas más buscados
         </h2>
         <div style="display:flex;gap:.75rem;flex-wrap:wrap">
-          <a href="/blog/subvenciones-reformas-bilbao-2026/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Subvenciones Bilbao 2026</a>
-          <a href="/blog/subvencion-cambio-ventanas-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Cambio ventanas</a>
-          <a href="/blog/subvencion-accesibilidad-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Accesibilidad</a>
-          <a href="/blog/subvencion-fachadas-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Fachadas</a>
-          <a href="/blog/subvencion-eficiencia-energetica-bilbao/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Eficiencia energética</a>
-          <a href="/blog/subvencion-cambio-calderas-vitoria/" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Calderas Vitoria</a>
+          <a href="/blog/subvenciones-reformas-bilbao-2026" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Subvenciones Bilbao 2026</a>
+          <a href="/blog/subvencion-cambio-ventanas-bilbao" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Cambio ventanas</a>
+          <a href="/blog/subvencion-accesibilidad-bilbao" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Accesibilidad</a>
+          <a href="/blog/subvencion-fachadas-bilbao" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Fachadas</a>
+          <a href="/blog/subvencion-eficiencia-energetica-bilbao" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Eficiencia energética</a>
+          <a href="/blog/subvencion-cambio-calderas-vitoria" style="background:#FAF7F2;color:#2D2D2D;padding:.5rem 1rem;border-radius:8px;font-size:.875rem;text-decoration:none;border:1px solid #E8E2D9">Calderas Vitoria</a>
         </div>
       </section>
 
@@ -115,7 +115,7 @@ const totalCTAs = posts.reduce((sum, p) => {
           const category = d.category;
           const city = d.city;
           const faqs = (d.faqs && Array.isArray(d.faqs)) ? d.faqs : [];
-          const href = `/blog/${post.slug}.html`;
+          const href = `/blog/${post.slug}`;
           return (
             <article style="background:#FFFFFF;border-radius:12px;padding:1.5rem;box-shadow:0 2px 8px rgba(45,30,15,.08);display:flex;flex-direction:column">
               {/* Category + city badges */}
@@ -167,11 +167,11 @@ const totalCTAs = posts.reduce((sum, p) => {
           ¿Ya sabes qué reforma necesitas?
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-bottom:1rem">
-          <a href="/presupuesto-reforma-integral-bilbao.html" style="background:#C45C3E;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Presupuesto reforma integral Bilbao</a>
-          <a href="/presupuesto-reforma-bano-bilbao.html" style="background:#4A90B8;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Precio reforma baño Bilbao</a>
-          <a href="/presupuesto-reforma-cocina-bilbao.html" style="background:#8B6F47;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Presupuesto reforma cocina Bilbao</a>
+          <a href="/presupuesto-reforma-integral-bilbao" style="background:#C45C3E;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Presupuesto reforma integral Bilbao</a>
+          <a href="/presupuesto-reforma-bano-bilbao" style="background:#4A90B8;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Precio reforma baño Bilbao</a>
+          <a href="/presupuesto-reforma-cocina-bilbao" style="background:#8B6F47;color:#fff;padding:.625rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:.875rem">Presupuesto reforma cocina Bilbao</a>
         </div>
-        <p style="font-size:.8125rem;color:#6B6B6B;margin:0">o usa la <a href="/calculadora/index.html" style="color:#C45C3E;font-weight:600;text-decoration:none">calculadora general →</a></p>
+        <p style="font-size:.8125rem;color:#6B6B6B;margin:0">o usa la <a href="/calculadora" style="color:#C45C3E;font-weight:600;text-decoration:none">calculadora general →</a></p>
       </div>
     </div>
   </main>

@@ -1,7 +1,7 @@
 ---
 title: "Reforma Baño Pequeño Bilbao 2026"
 description: "Reforma baño pequeño Bilbao 2025-2026: precios para baños de 3 a 5 m², consejos para aprovechar cada metro, errores comunes y tendencias en espacios reducidos bilbainos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
 category: "bano"
 city: "bilbao"
 faqs:
@@ -19,32 +19,32 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Baño Pequeño Bilbao 2025-2026: Precios y Guía para Baños de 3 a 5 m²"
-    url: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao-2025.html"
+    href: "reforma-bano-bilbao-2025"
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao-2025.html"
+    href: "reforma-bano-bilbao-2025"
 priceTables: 0
 ---
 
-<p>Los pisos bilbainos no son conocidos por sus baños generosos. Un baño de 3,5 metros cuadrados - medida habitual en bloques de <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, <strong>Errekalde</strong> y los edificios de los años 60-70 en <strong><a href="/bilbao/barrios/deusto.html">Deusto</a></strong> - es el escenario donde muchos propietarios se enfrentan al dilema: ¿cómo convertir este espacio mínimo en algo funcional y moderno sin disparar el presupuesto?</p>
+<p>Los pisos bilbainos no son conocidos por sus baños generosos. Un baño de 3,5 metros cuadrados - medida habitual en bloques de <strong><a href="/bilbao/barrios/santutxu">Santutxu</a></strong>, <strong>Errekalde</strong> y los edificios de los años 60-70 en <strong><a href="/bilbao/barrios/deusto">Deusto</a></strong> - es el escenario donde muchos propietarios se enfrentan al dilema: ¿cómo convertir este espacio mínimo en algo funcional y moderno sin disparar el presupuesto?</p>
 
   <p>La buena noticia es que un baño pequeño tiene ventajas que uno grande no tiene: menos superficie de alicatado, menos metros de suelo, menos fontanería visible. Y con la planificación adecuada, puedes conseguir un resultado espectacular por menos de lo que imaginas. En esta guía te cuento <strong>cuánto cuesta reformar un baño pequeño en Bilbao en 2025-2026</strong>, qué decisiones tomar y qué errores evitar.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-bano-bilbao-2025.html">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-bano-bilbao-2025">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
 </div>
 
 
@@ -86,7 +86,7 @@ priceTables: 0
 
   <h3>Demolición y Gestión de Residuos</h3>
 
-  <p>En un baño pequeño la demolición es más rápida, pero hay un factor que puede complicarla: los edificios bilbainos antiguos tienen ascensores estrechos o nada de ascensor en portales de 4-5 plantas. Si reformas un baño en un quinto piso sin ascensor del <strong><a href="/bilbao/barrios/casco-viejo.html">Casco Viejo</a></strong>, el coste de sacar los escombros puede multiplicarse. Presupuesto orientativo: <strong>300-600 €</strong>.</p>
+  <p>En un baño pequeño la demolición es más rápida, pero hay un factor que puede complicarla: los edificios bilbainos antiguos tienen ascensores estrechos o nada de ascensor en portales de 4-5 plantas. Si reformas un baño en un quinto piso sin ascensor del <strong><a href="/bilbao/barrios/casco-viejo">Casco Viejo</a></strong>, el coste de sacar los escombros puede multiplicarse. Presupuesto orientativo: <strong>300-600 €</strong>.</p>
 
   <h3>Fontanería</h3>
 
@@ -120,7 +120,7 @@ priceTables: 0
 
   <h3>Estanterías empotradas en el nicho</h3>
 
-  <p>Si tienes una pared que puedas abrir, un nicho empotrado de 30x30 cm con estanterías internas es una forma elegante de añadir almacenamiento sin sacrificar espacio. Muy popular en reformas de baños pequeños en <strong><a href="/bilbao/barrios/indautxu.html">Indautxu</a></strong> y <strong>Deusto</strong>.</p>
+  <p>Si tienes una pared que puedas abrir, un nicho empotrado de 30x30 cm con estanterías internas es una forma elegante de añadir almacenamiento sin sacrificar espacio. Muy popular en reformas de baños pequeños en <strong><a href="/bilbao/barrios/indautxu">Indautxu</a></strong> y <strong>Deusto</strong>.</p>
 
   <h3>Puerta corredera o plegable</h3>
 
@@ -233,14 +233,14 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
-  <a href="reforma-bano-bilbao-2025.html">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-bano-bilbao-2025">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
 </div>
 <h2>Conclusión</h2>
 
   <p>Reformar un baño pequeño en Bilbao es más económico de lo que muchos piensan, especialmente si se compara con un baño grande. La clave está en priorizar las decisiones que más impacto tienen: una buena impermeabilización, una ducha walk-in que maximice el espacio perceptible, y una iluminación bien planificada. Con un presupuesto de <strong>5.000 a 7.000 euros</strong> puedes transformar por completo un baño de 4 m² en Santutxu, Errekalde o Deusto.</p>
 
-  <p>Usa nuestra <a href="../calculadora/index.html">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros y la calidad de materiales que busques.</p>
+  <p>Usa nuestra <a href="../calculadora">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros y la calidad de materiales que busques.</p>
 
   <div class="cta-box">
   <h3>¿Quieres saber cuánto costaría tu reforma de baño?</h3>

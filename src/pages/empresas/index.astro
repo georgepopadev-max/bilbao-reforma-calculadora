@@ -279,7 +279,7 @@ const schema = {
     '@type': 'ListItem',
     position: i + 1,
     name: e.name,
-    url: `https://www.bilbaoreforma.es/empresas/${e.slug}.html`,
+    url: `https://www.bilbaoreforma.es/empresas/${e.slug}`,
     description: e.description,
   })),
 };
@@ -289,7 +289,7 @@ function renderCard(e: typeof empresas[0]): string {
   const telLink = `tel:${e.phone.replace(/\s/g, '')}`;
 
   if (hasFicha) {
-    return `<a href="${e.slug}.html" class="company-card" data-specializations="${e.specializations.join(',')}" style="display: block; padding: 1.5rem; background: var(--color-blanco); border-radius: 12px; text-decoration: none; color: inherit; border: 1px solid var(--color-beige); box-shadow: 0 2px 8px rgba(45,30,15,.06); transition: all 0.2s;">
+    return `<a href="/empresas/${e.slug}" class="company-card" data-specializations="${e.specializations.join(',')}" style="display: block; padding: 1.5rem; background: var(--color-blanco); border-radius: 12px; text-decoration: none; color: inherit; border: 1px solid var(--color-beige); box-shadow: 0 2px 8px rgba(45,30,15,.06); transition: all 0.2s;">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
         <h2 style="font-size: 1.05rem; font-weight: 600; color: var(--color-grafito); margin: 0; flex: 1; padding-right: 0.5rem; line-height: 1.3;">${e.name}</h2>
         <span style="background: var(--color-crema); color: var(--color-terracota); padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; flex-shrink: 0;">⭐ ${e.rating}/5</span>
@@ -329,7 +329,7 @@ function renderCard(e: typeof empresas[0]): string {
 <BaseLayout
   title={`${empresas.length} Empresas Reformas Bilbao 2026 | Verificadas`}
   description={`${empresas.length} empresas de reformas verificadas en Bilbao y Bizkaia. Filtra por especialidad: integrales, baños, cocinas, electricidad, fontanería, pintura y más.`}
-  canonical="https://www.bilbaoreforma.es/empresas/index.html"
+  canonical="https://www.bilbaoreforma.es/empresas"
   ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg"
   ogImageAlt="Empresas de Reformas Bilbao"
 >
@@ -404,7 +404,7 @@ function renderCard(e: typeof empresas[0]): string {
       <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-terracota); border-radius: 12px; color: var(--color-blanco);">
         <h2 style="font-family: 'Playfair Display', serif; font-size: 1.375rem; margin-bottom: 0.5rem; color: var(--color-blanco);">¿No sabes qué tipo de reforma necesitas?</h2>
         <p style="opacity: 0.9; margin-bottom: 1.25rem; font-size: 0.9375rem;">Usa nuestra calculadora de presupuestos para obtener un orientativo en menos de 2 minutos.</p>
-        <a href="/calculadora/index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: var(--color-blanco); color: var(--color-terracota); border-radius: 8px; font-weight: 600; font-size: 0.9375rem; text-decoration: none;">Calcular presupuesto →</a>
+        <a href="/calculadora" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: var(--color-blanco); color: var(--color-terracota); border-radius: 8px; font-weight: 600; font-size: 0.9375rem; text-decoration: none;">Calcular presupuesto →</a>
       </div>
 
     </div>

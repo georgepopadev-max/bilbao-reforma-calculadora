@@ -2,7 +2,7 @@
 
 title: "Encimeras Cocina Donostia: Materiales 2026"
 description: "Guía definitiva de encimeras de cocina en Donostia 2026: Silestone, Dekton, granito y madera. Compara precios, durabilidad y descubre qué encimera conviene a tu cocina donostiarra."
-canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-donostia"
 city: donostia
 category: Cocinas
 date: 2026-06-29
@@ -20,7 +20,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /donostia/calculadora/
+    href: /donostia/calculadora
 ---
 
 La encimera de tu cocina es la superficie más utilizada de toda la casa. Sobre ella cortas, cocinas, colocas ollas calientes y, en definitiva, centralizas la actividad de uno de los espacios más importantes de tu hogar donostiarra. Elegir bien el material de tu encimera en Donostia no es solo una cuestión estética: también determina la durabilidad, el mantenimiento y el valor añadido de tu cocina.

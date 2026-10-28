@@ -1,6 +1,7 @@
 ---
 import '../styles/tailwind.css';
 import '../styles/components.css';
+import { SITE_URL, absoluteUrl } from '../lib/urls';
 
 export interface Props {
   title: string;
@@ -34,9 +35,10 @@ const {
   jsonSchemas = [],
 } = Astro.props;
 
-const siteUrl = 'https://www.bilbaoreforma.es';
+const siteUrl = SITE_URL;
 const fullTitle = title.includes('Bilbao Reforma') ? title : `${title} | Bilbao Reforma`;
-const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+// Siempre el formato canónico (sin .html ni barra final), aunque la página pase otro
+const canonicalUrl = absoluteUrl(canonical || Astro.url.pathname);
 // Default og:image — falls back to the home OG image; pages can override via ogImage prop.
 const defaultOgImage = `${siteUrl}/images/og/home-og.jpg`;
 const resolvedOgImage = ogImage || defaultOgImage;
@@ -51,13 +53,6 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
   <title>{fullTitle}</title>
   <meta name="description" content={description}>
   <link rel="canonical" href={canonicalUrl}>
-  <!-- hreflang for multi-city SEO -->
-  <link rel="alternate" hreflang="es-ES" href={canonicalUrl}>
-  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`}>
-  <link rel="alternate" hreflang="eu-ES" href={`${siteUrl}/donostia`}>
-  <link rel="alternate" hreflang="es-ES" href={`${siteUrl}/donostia`}>
-  <link rel="alternate" hreflang="eu-ES" href={`${siteUrl}/vitoria`}>
-  <link rel="alternate" hreflang="es-ES" href={`${siteUrl}/vitoria`}>
 
   <!-- Open Graph -->
   <meta property="og:title" content={ogTitle || fullTitle}>
@@ -103,7 +98,7 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
     <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
       <p style="margin:0;color:#2D2D2D;font-size:0.875rem;flex:1;min-width:280px;">
         Utilizamos cookies técnicas y, con tu consentimiento, cookies analíticas (Google Analytics) para mejorar tu experiencia.
-        <a href="/politica-privacidad.html" style="color:#C45C3E;text-decoration:underline;font-size:0.875rem;">Más información</a>
+        <a href="/politica-privacidad" style="color:#C45C3E;text-decoration:underline;font-size:0.875rem;">Más información</a>
       </p>
       <div style="display:flex;gap:0.5rem;flex-shrink:0;">
         <button id="cookie-reject" style="background:#6B6B6B;color:#fff;border:none;border-radius:8px;padding:0.5rem 1rem;cursor:pointer;font-size:0.875rem;font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:background 0.2s;">Rechazar</button>
