@@ -1,7 +1,7 @@
 ---
 title: "Comparativa Reforma Cocina Bilbao 2026"
 description: "Compara precios y acabados de reforma de cocina en Bilbao vs otras ciudades. Descubre qué ofrece Bilbao, Madrid y Barcelona. Guía actualizada 2026."
-canonical: "https://www.bilbaoreforma.es/blog/comparativa-reforma-cocina-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/comparativa-reforma-cocina-bilbao"
 readTime: "15 min"
 category: "cocina"
 city: "bilbao"
@@ -22,48 +22,48 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Comparativa Cocina Bilbao 2026: Bilbao vs Madrid, Barcelona"
-    url: "https://www.bilbaoreforma.es/blog/comparativa-reforma-cocina-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/comparativa-reforma-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto Reforma Cocina Bilbao 2026 - Precios Orientativos"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio m² Reforma Cocina Bilbao 2026 - Guía de Costes"
-    href: "precio-m2-reforma-cocina-bilbao.html"
+    href: "precio-m2-reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reforma de Cocina - Cómo Evitarlos"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
   - type: "leer"
     label: "Guía Completa Reforma Cocina Bilbao"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Presupuesto Reforma Cocina Bilbao 2026"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
   - type: "leer"
     label: "Precio m² Reforma Cocina Bilbao"
-    href: "precio-m2-reforma-cocina-bilbao.html"
+    href: "precio-m2-reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reforma de Cocina"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
 priceTables: 1
 ---
 
 <div class="article-content">
   <p>Antes de contratar una <strong>reforma de cocina en Bilbao</strong>, es inteligente comparar qué ofrece tu ciudad frente a otras urbes españolas. No se trata solo de buscar el precio más bajo, sino de entender qué valor añadido obtienes según dónde contrates. En esta guía analizamos en profundidad <strong>Bilbao frente a Madrid, Barcelona, San Sebastián y Valencia</strong> en cinco dimensiones clave: precio, calidad artesanal, disponibilidad de profesionales, plazos y acceso a materiales.</p>
 
-  <p>Si estás planificando tu reforma de cocina y quieres una estimación personalizada para tu caso concreto, puedes usar nuestra <a href="../index.html">calculadora de presupuestos de reforma de cocina en Bilbao</a> para obtener una primera orientación en menos de dos minutos.</p>
+  <p>Si estás planificando tu reforma de cocina y quieres una estimación personalizada para tu caso concreto, puedes usar nuestra <a href="/">calculadora de presupuestos de reforma de cocina en Bilbao</a> para obtener una primera orientación en menos de dos minutos.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
-  <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto Reforma Cocina Bilbao 2026 - Precios Orientativos</a>
-  <a href="precio-m2-reforma-cocina-bilbao.html">Precio m² Reforma Cocina Bilbao 2026 - Guía de Costes</a>
-  <a href="errores-reforma-cocina-bilbao.html">Errores Comunes en Reforma de Cocina - Cómo Evitarlos</a>
+  <a href="reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao - Todo lo que Necesitas Saber</a>
+  <a href="presupuesto-reforma-cocina-bilbao">Presupuesto Reforma Cocina Bilbao 2026 - Precios Orientativos</a>
+  <a href="precio-m2-reforma-cocina-bilbao">Precio m² Reforma Cocina Bilbao 2026 - Guía de Costes</a>
+  <a href="errores-reforma-cocina-bilbao">Errores Comunes en Reforma de Cocina - Cómo Evitarlos</a>
   </div>
 
   <h2>Por qué comparar antes de reformar tu cocina</h2>
@@ -225,16 +225,16 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber qué presupuesto es razonable para tu cocina en Bilbao?</h3>
   <p>Obtén una estimación personalizada en menos de 2 minutos con nuestra calculadora.</p>
-  <a href="../calculadora/cocina-bilbao.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora/cocina-bilbao" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Guía Completa Reforma Cocina Bilbao</a>
-  <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto Reforma Cocina Bilbao 2026</a>
-  <a href="precio-m2-reforma-cocina-bilbao.html">Precio m² Reforma Cocina Bilbao</a>
-  <a href="errores-reforma-cocina-bilbao.html">Errores Comunes en Reforma de Cocina</a>
+  <a href="reforma-cocina-bilbao">Guía Completa Reforma Cocina Bilbao</a>
+  <a href="presupuesto-reforma-cocina-bilbao">Presupuesto Reforma Cocina Bilbao 2026</a>
+  <a href="precio-m2-reforma-cocina-bilbao">Precio m² Reforma Cocina Bilbao</a>
+  <a href="errores-reforma-cocina-bilbao">Errores Comunes en Reforma de Cocina</a>
   </div>
 
   <h2>Preguntas Frecuentes sobre Comparativa de Reforma de Cocina</h2>

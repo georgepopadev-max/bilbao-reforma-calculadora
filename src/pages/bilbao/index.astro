@@ -16,44 +16,22 @@ import FinalCTA from '../../components/home/FinalCTA.astro';
 // Schemas específicos Bilbao
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://www.bilbaoreforma.es/#business-bilbao',
-  'name': 'Reforma Bilbao',
+  '@type': 'Service',
+  name: 'Calculadora de presupuestos de reformas en Bilbao',
   description: 'Calculadora de presupuestos de reformas en Bilbao y Bizkaia. Precios orientativos en menos de 2 minutos.',
-  url: 'https://www.bilbaoreforma.es/bilbao/',
-  logo: 'https://www.bilbaoreforma.es/images/logo.png',
-  image: 'https://www.bilbaoreforma.es/images/og/home-og.jpg',
-  telephone: '+34 642 147 856',
-  priceRange: '€€',
-  address: {
-    '@type': 'PostalAddress',
-    'addressLocality': 'Bilbao',
-    'addressRegion': 'Bizkaia',
-    'addressCountry': 'ES'
-  },
+  url: 'https://www.bilbaoreforma.es/bilbao',
+  provider: { '@type': 'Organization', '@id': 'https://www.bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
   areaServed: [
     { '@type': 'City', 'name': 'Bilbao' },
     { '@type': 'State', 'name': 'Bizkaia' }
   ],
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'],
-      opens: '09:00',
-      closes: '18:00'
-    }
-  ],
-  sameAs: []
 };
 
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Reformas integrales y presupuestos online',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://www.bilbaoreforma.es/#business-bilbao'
-  },
+  provider: { '@type': 'Organization', '@id': 'https://www.bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
   areaServed: [
     { '@type': 'City', 'name': 'Bilbao' },
     { '@type': 'State', 'name': 'Bizkaia' }
@@ -114,7 +92,7 @@ const faqSchema = {
 <CityLayout
   title="Reformas Bilbao 2026 | Presupuesto Gratis"
   description="Calcula tu reforma en Bilbao y Bizkaia en 2 min, gratis. Compara empresas verificadas de Bizkaia. Precios reales y actualizados."
-  canonical="https://www.bilbaoreforma.es/bilbao/"
+  canonical="https://www.bilbaoreforma.es/bilbao"
   city="bilbao"
   ogImage="https://www.bilbaoreforma.es/images/og/home-og.jpg"
   ogImageAlt="Reformas Bilbao 2026"
@@ -147,15 +125,15 @@ const faqSchema = {
     <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem">
       <h2 style="font-family:var(--font-playfair);font-size:1.5rem;font-weight:700;color:var(--color-grafito);text-align:center;margin-bottom:1.5rem">Calcula tu reforma en Bilbao</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
-        <a href="/bilbao/calculadora/integral-bilbao.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/calculadora/integral-bilbao" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma Integral Bilbao</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 700€/m² →</p>
         </a>
-        <a href="/bilbao/calculadora/bano-bilbao.html" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/calculadora/bano-bilbao" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Reforma de Baño Bilbao</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">desde 2.500 € →</p>
         </a>
-        <a href="/blog/" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
+        <a href="/blog" style="display:block;padding:1.25rem;background:#fff;border-radius:12px;border:2px solid var(--color-beige);text-decoration:none;color:inherit;transition:all 0.2s">
           <strong style="font-size:0.9375rem;color:var(--color-grafito)">Blog de Reformas Bilbao</strong>
           <p style="font-size:0.8125rem;color:var(--color-gris);margin:0.25rem 0 0">Guías y precios 2026 →</p>
         </a>

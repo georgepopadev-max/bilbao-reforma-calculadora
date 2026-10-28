@@ -1,7 +1,7 @@
 ---
 title: "Reforma Baño Vitoria 2026"
 description: "Precio reforma baño Vitoria 2026. Cuánto cuesta reformar tu baño según metros y calidades. Presupuesto orientativo gratis en 2 minutos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-vitoria.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-vitoria"
 readTime: "9 min"
 category: "bano"
 city: "vitoria"
@@ -20,34 +20,34 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Baño Vitoria 2026: Precios, Tendencias y Presupuesto"
-    url: "https://www.bilbaoreforma.es/blog/reforma-bano-vitoria.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-bano-vitoria"
 inContentCTAs:
   - type: "herramienta"
     label: "Calculadora de presupuesto reforma baño Vitoria ->"
-    href: "../calculadora/bano-bilbao.html"
+    href: "../calculadora/bano-bilbao"
   - type: "herramienta"
     label: "Guía de presupuestos para reforma de baño en Vitoria"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de reforma de baño Vitoria - comparativa detallada"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores más comunes en reformas de baño en Vitoria"
-    href: "errores-comunes-reforma-bano-bilbao.html"
+    href: "errores-comunes-reforma-bano-bilbao"
   - type: "leer"
     label: "Comparativa: reforma parcial vs completa de baño"
-    href: "comparativa-reforma-bano-bilbao.html"
+    href: "comparativa-reforma-bano-bilbao"
   - type: "leer"
     label: "Presupuesto reforma baño Vitoria - guía completa para pedir precios"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² reforma baño Vitoria - comparativa de calidades"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Errores comunes en reformas de baño Vitoria - cómo evitarlos"
-    href: "errores-comunes-reforma-bano-bilbao.html"
+    href: "errores-comunes-reforma-bano-bilbao"
 priceTables: 1
 ---
 
@@ -58,8 +58,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📊 Herramienta recomendada</span>
-  <a href="../calculadora/bano-vitoria.html">Calculadora de presupuesto reforma baño Vitoria -></a>
-  <a href="presupuesto-reforma-bano-vitoria.html">Guía de presupuestos para reforma de baño en Vitoria</a>
+  <a href="/vitoria/calculadora/bano-vitoria">Calculadora de presupuesto reforma baño Vitoria -></a>
+  <a href="/vitoria/calculadora/bano-vitoria">Guía de presupuestos para reforma de baño en Vitoria</a>
   </div>
 
   <h2>Precios por m² para reforma de baño en Vitoria 2025</h2>
@@ -153,9 +153,9 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-m2-reforma-bano-vitoria.html">Precio por m² de reforma de baño Vitoria - comparativa detallada</a>
-  <a href="errores-comunes-reforma-bano-vitoria.html">Errores más comunes en reformas de baño en Vitoria</a>
-  <a href="comparativa-reforma-bano-vitoria.html">Comparativa: reforma parcial vs completa de baño</a>
+  <a href="/vitoria/calculadora/bano-vitoria">Precio por m² de reforma de baño Vitoria - comparativa detallada</a>
+  <a href="/vitoria/blog/reforma-bano-vitoria-precios-2026">Errores más comunes en reformas de baño en Vitoria</a>
+  <a href="/vitoria/blog/reforma-bano-vitoria-precios-2026">Comparativa: reforma parcial vs completa de baño</a>
   </div>
 
   <h2>Barrios de Vitoria con más reformas de baño</h2>
@@ -204,7 +204,7 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Ya sabes qué tipo de reforma de baño necesitas?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo personalizado en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
@@ -238,8 +238,8 @@ priceTables: 1
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="presupuesto-reforma-bano-vitoria.html">Presupuesto reforma baño Vitoria - guía completa para pedir precios</a>
-  <a href="precio-m2-reforma-bano-vitoria.html">Precio por m² reforma baño Vitoria - comparativa de calidades</a>
-  <a href="errores-comunes-reforma-bano-vitoria.html">Errores comunes en reformas de baño Vitoria - cómo evitarlos</a>
+  <a href="/vitoria/calculadora/bano-vitoria">Presupuesto reforma baño Vitoria - guía completa para pedir precios</a>
+  <a href="/vitoria/calculadora/bano-vitoria">Precio por m² reforma baño Vitoria - comparativa de calidades</a>
+  <a href="/vitoria/blog/reforma-bano-vitoria-precios-2026">Errores comunes en reformas de baño Vitoria - cómo evitarlos</a>
   </div>
   </div>

@@ -1,5 +1,6 @@
 ---
 import CitySwitcher from './CitySwitcher.astro';
+import { cityPath } from '../lib/urls';
 
 export interface Props {
   city?: 'bilbao' | 'donostia' | 'vitoria';
@@ -8,22 +9,12 @@ export interface Props {
 
 const { city = 'bilbao', section = 'root' } = Astro.props;
 
-// Calculate path depth based on city and current section
-// Bilbao root: depth = ''
-// Bilbao section (blog/calculadora/empresas): depth = '../'
-// Donostia/Vitoria any section: depth = '../../'
-const depth = city === 'bilbao' && section === 'root' ? '' :
-              city === 'bilbao' && section !== 'root' ? '../' :
-              '../../'; // donostia or vitoria, any section
-
-// Build nav links using depth
-const calcHref = `${depth}calculadora/index.html`;
-const blogHref = `${depth}blog/index.html`;
-const empresasHref = `${depth}empresas/index.html`;
-const contactoHref = section === 'root' ? 'contacto.html' : `${depth}contacto.html`;
-
-// Logo always goes to city index
-const cityIndexHref = city === 'bilbao' ? `${depth}index.html` : `${depth}../index.html`;
+// Rutas absolutas por ciudad; el contacto es común a todas
+const calcHref = cityPath(city, 'calculadora');
+const blogHref = cityPath(city, 'blog');
+const empresasHref = cityPath(city, 'empresas');
+const contactoHref = '/contacto';
+const cityIndexHref = cityPath(city);
 
 const currentPath = Astro.url.pathname;
 const isBlogActive = currentPath.includes('/blog');
@@ -81,7 +72,7 @@ const isEmpresasActive = currentPath.includes('/empresas');
     <a href={contactoHref} class="mobile-nav-link mobile-nav-link-cta">Contacto</a>
   </nav>
   <div class="mobile-drawer-city">
-    <CitySwitcher currentCity={city} depth={depth} />
+    <CitySwitcher currentCity={city} />
   </div>
 </aside>
 

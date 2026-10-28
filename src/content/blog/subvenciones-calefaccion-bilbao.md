@@ -1,7 +1,7 @@
 ---
 title: "Subvenciones Calefacción Bilbao 2026"
 description: "Subvenciones calefacción Bilbao 2026: Plan Rehabilitación, Gobierno Vasco y ayudas municipales. Hasta 6.000€."
-canonical: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
 date: "2026-07-03"
 category: "Calefacción"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Subvenciones Calefacción Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"
-    href: "aerotermia-precio-bilbao.html"
+    href: "aerotermia-precio-bilbao"
   - type: "leer"
     label: "Instalación Suelo Radiante Bilbao"
-    href: "instalacion-suelo-radiante-bilbao.html"
+    href: "instalacion-suelo-radiante-bilbao"
   - type: "leer"
     label: "Cambiar Caldera Bilbao 2026"
-    href: "cambio-caldera-bilbao.html"
+    href: "cambio-caldera-bilbao"
 ---
 
 <div class="article-content">
@@ -193,12 +193,12 @@ inContentCTAs:
 
 <h2>Empresas instaladoras en Bilbao</h2>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización con gestión de ayudas</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con calefacción</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización con gestión de ayudas</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con calefacción</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Subvenciones de Calefacción</h2>
@@ -215,7 +215,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres calcular tu presupuesto con subventions?</h3>
 <p>Usa nuestra calculadora para estimar el coste de tu reforma de calefacción en Bilbao, incluyendo posibles ayudas.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

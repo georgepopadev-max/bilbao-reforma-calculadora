@@ -1,5 +1,5 @@
 ---
-import CityLayout from '../../../layouts/CityLayout.astro';
+import CityLayout from '../../layouts/CityLayout.astro';
 
 const jsonSchemas = [
   {
@@ -18,9 +18,9 @@ const jsonSchemas = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/" },
-      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/" },
-      { "@type": "ListItem", "position": 3, "name": "Blog Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/blog/" },
-      { "@type": "ListItem", "position": 4, "name": "Cuánto cuesta una reforma integral en Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/blog/cuanto-cuesta-reforma-integral-bilbao.html" },
+      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao" },
+      { "@type": "ListItem", "position": 3, "name": "Blog Bilbao", "item": "https://www.bilbaoreforma.es/blog" },
+      { "@type": "ListItem", "position": 4, "name": "Cuánto cuesta una reforma integral en Bilbao", "item": "https://www.bilbaoreforma.es/blog/cuanto-cuesta-reforma-integral-bilbao" },
     ],
   },
 ];
@@ -28,7 +28,7 @@ const jsonSchemas = [
 <CityLayout
   title="Cuánto Cuesta Reforma Integral Bilbao | Precios 2026"
   description="Descubre el precio real de una reforma integral en Bilbao según metros cuadrados y calidades. Desde 700€/m² hasta +1.400€/m². Datos actualizados 2026."
-  canonical="https://www.bilbaoreforma.es/bilbao/blog/cuanto-cuesta-reforma-integral-bilbao.html"
+  canonical="https://www.bilbaoreforma.es/blog/cuanto-cuesta-reforma-integral-bilbao"
   city="bilbao"
   section="blog"
   schemaData={{
@@ -46,9 +46,9 @@ const jsonSchemas = [
   <div class="article-wrapper">
     <main class="article-main">
       <nav class="article-breadcrumb">
-        <a href="/bilbao/index.html">Bilbao</a>
+        <a href="/bilbao">Bilbao</a>
         <span>/</span>
-        <a href="/bilbao/blog/index.html">Blog Bilbao</a>
+        <a href="/blog">Blog Bilbao</a>
         <span>/</span>
         <span>Reforma Integral</span>
       </nav>
@@ -70,7 +70,7 @@ const jsonSchemas = [
         <div class="cta-box">
           <strong>📊 Calculadora de Reforma Integral Bilbao</strong>
           <p>Obtén un presupuesto orientativo personalizado para tu piso en Bilbao en menos de 2 minutos.</p>
-          <a href="/bilbao/calculadora/integral-bilbao.html">Calcular ahora →</a>
+          <a href="/calculadora/integral-bilbao">Calcular ahora →</a>
         </div>
 
         <h2>Precios de reforma integral en Bilbao 2026 por m²</h2>
@@ -149,7 +149,7 @@ const jsonSchemas = [
 
         <div class="in-content-cta">
           <span class="in-content-cta-label">📊 Calculadora de Reforma Integral Bilbao</span>
-          <a href="/bilbao/calculadora/integral-bilbao.html">Usa nuestra calculadora para obtener un presupuesto en 2 minutos →</a>
+          <a href="/calculadora/integral-bilbao">Usa nuestra calculadora para obtener un presupuesto en 2 minutos →</a>
         </div>
 
         <h2>Cómo ahorrar en tu reforma integral en Bilbao</h2>

@@ -1,7 +1,7 @@
 ---
 title: "Reforma Cocina y Baño Santutxu 2026"
 description: "Reforma cocina y baño Santutxu 2025-2026: precios orientativos, consejos para planificar ambas reformas a la vez y ahorrar, y particularidades de los pisos de este barrio de Bilbao."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 category: "bano"
 city: "bilbao"
 faqs:
@@ -19,22 +19,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Cocina y Baño Santutxu 2025-2026: Precios Reales y Guía Local"
-    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2025"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
 priceTables: 0
 ---
 
@@ -43,8 +43,8 @@ priceTables: 0
   <p>Si estás pensando en reformar cocina y baño en Santutxu, este artículo te interesa. Te cuento <strong>cuánto cuesta hacerlo en 2025-2026</strong>, qué particularidades tiene este barrio para las reformas, y cómo puedes planificar ambas obras para que el resultado valga la pena y el presupuesto no se te escape de las manos.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
 </div>
 
 
@@ -268,8 +268,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="reforma-bano-bilbao.html">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="reforma-bano-bilbao">Reforma Baño Bilbao: Precios y Guía Completa 2025</a>
 </div>
 <h2>Conclusión</h2>
 
@@ -277,7 +277,7 @@ priceTables: 0
 
   <p>La clave está en no escatimar en fontanería (las tuberías de plomo son el enemigo silencioso) y en planificar bien la logística del contenedor y los escombros. Santutxu tiene calles complicadas para esto, pero con el permiso de estacionamiento adecuado y una buena empresa de reformas, se puede gestionar sin problemas.</p>
 
-  <p>Usa nuestra <a href="../calculadora/index.html">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros cuadrados de tu cocina y baño y la calidad de materiales que busques.</p>
+  <p>Usa nuestra <a href="../calculadora">calculadora de presupuestos</a> para obtener una estimación personalizada según los metros cuadrados de tu cocina y baño y la calidad de materiales que busques.</p>
 
   <div class="cta-box">
   <h3>¿Quieres saber cuánto costaría tu reforma de cocina y baño?</h3>

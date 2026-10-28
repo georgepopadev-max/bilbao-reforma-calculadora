@@ -1,7 +1,7 @@
 ---
 title: "Presupuesto Reforma Integral Bilbao 2026"
 description: "Presupuesto reforma integral Bilbao 2026: precios reales por m² (700€-1.400€/m²), ejemplos por tipo de piso y calculadora gratis en 2 min. Todo lo que incluye."
-canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-integral-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-integral-bilbao"
 readTime: "12 min"
 category: "integral"
 city: "bilbao"
@@ -22,13 +22,13 @@ breadcrumbs:
 inContentCTAs:
   - type: "leer"
     label: "Calculadora de reformas Bilbao (gratis, 2 min)"
-    href: "../index.html"
+    href: "/"
   - type: "leer"
     label: "Presupuesto reforma de baño"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Presupuesto reforma de cocina"
-    href: "presupuesto-reforma-cocina-bilbao.html"
+    href: "presupuesto-reforma-cocina-bilbao"
 priceTables: 1
 ---
 
@@ -37,13 +37,13 @@ priceTables: 1
 
       <p>El <strong>precio de una reforma integral en Bilbao</strong> oscila entre <strong>700 €/m² y 1.400 €/m²</strong> dependiendo de la calidad elegida. Para un piso de 80 m², eso significa un presupuesto de entre <strong>56.000 € y 112.000 €</strong>. No es un rango arbitrario: son precios basados en datos reales de empresas activas en Bilbao y Bizkaia durante 2026.</p>
 
-      <p>Si quieres ir directo al cálculo, usa nuestra <a href="../index.html"><strong>calculadora de presupuestos gratis</strong></a>. Si prefieres entender todos los detalles antes de decidir, sigue leyendo.</p>
+      <p>Si quieres ir directo al cálculo, usa nuestra <a href="/"><strong>calculadora de presupuestos gratis</strong></a>. Si prefieres entender todos los detalles antes de decidir, sigue leyendo.</p>
 
       <div class="in-content-cta">
         <span class="in-content-cta-label">📐 Calcula tu presupuesto</span>
-        <a href="../index.html">Calculadora de reformas Bilbao (gratis, 2 min)</a>
-        <a href="presupuesto-reforma-bano-bilbao.html">Presupuesto reforma de baño</a>
-        <a href="presupuesto-reforma-cocina-bilbao.html">Presupuesto reforma de cocina</a>
+        <a href="/">Calculadora de reformas Bilbao (gratis, 2 min)</a>
+        <a href="presupuesto-reforma-bano-bilbao">Presupuesto reforma de baño</a>
+        <a href="presupuesto-reforma-cocina-bilbao">Presupuesto reforma de cocina</a>
       </div>
 
       <h2>¿Qué incluye una reforma integral?</h2>
@@ -170,7 +170,7 @@ priceTables: 1
       <div class="article-cta">
         <h3>📐 Calcula tu presupuesto personalizado</h3>
         <p>Usa nuestra calculadora gratis para obtener un presupuesto orientativo de tu reforma integral en Bilbao en menos de 2 minutos. Sin registro, sin compromiso.</p>
-        <a href="../index.html" class="btn">Calcular Presupuesto Gratis →</a>
+        <a href="/" class="btn">Calcular Presupuesto Gratis →</a>
       </div>
 
       <h2>Factores que afectan al precio final</h2>
@@ -194,7 +194,7 @@ priceTables: 1
 
       <h2>Cómo usar la calculadora de presupuestos</h2>
 
-      <p>Nuestra <a href="../index.html"><strong>calculadora de reformas Bilbao</strong></a> es la forma más rápida de obtener un presupuesto orientativo personalizado:</p>
+      <p>Nuestra <a href="/"><strong>calculadora de reformas Bilbao</strong></a> es la forma más rápida de obtener un presupuesto orientativo personalizado:</p>
 
       <ol>
         <li><strong>Indica los metros cuadrados</strong> del piso (m² útiles, no construidos).</li>
@@ -220,7 +220,7 @@ priceTables: 1
 
       <h2>Cómo elegir empresa de reformas en Bilbao</h2>
 
-      <p>Una vez tengas el presupuesto orientativo, el siguiente paso es <a href="../empresas/index.html">contactar con empresas de reformas en Bilbao</a>. Consejos:</p>
+      <p>Una vez tengas el presupuesto orientativo, el siguiente paso es <a href="../empresas">contactar con empresas de reformas en Bilbao</a>. Consejos:</p>
 
       <ul>
         <li><strong>Pide al menos 3 presupuestos</strong> detallados por escrito.</li>
@@ -250,25 +250,25 @@ priceTables: 1
       <div class="article-cta">
         <h3>📐 ¿Listo para calcular tu presupuesto?</h3>
         <p>Usa nuestra calculadora gratis y obtén un presupuesto orientativo personalizado para tu reforma integral en Bilbao en menos de 2 minutos.</p>
-        <a href="../index.html" class="btn">Calcular Presupuesto Gratis →</a>
+        <a href="/" class="btn">Calcular Presupuesto Gratis →</a>
       </div>
 
       <h2>Artículos relacionados</h2>
 
       <div class="related-grid">
-        <a href="presupuesto-reforma-bano-bilbao.html" class="related-card">
+        <a href="presupuesto-reforma-bano-bilbao" class="related-card">
           <h4>Presupuesto Reforma Baño Bilbao</h4>
           <p>Precios específicos para reforma de baño: desde 2.500 € en Bilbao 2026.</p>
         </a>
-        <a href="presupuesto-reforma-cocina-bilbao.html" class="related-card">
+        <a href="presupuesto-reforma-cocina-bilbao" class="related-card">
           <h4>Presupuesto Reforma Cocina Bilbao</h4>
           <p>Precios específicos para reforma de cocina: desde 5.000 € en Bilbao 2026.</p>
         </a>
-        <a href="precio-reforma-integral-bilbao.html" class="related-card">
+        <a href="precio-reforma-integral-bilbao" class="related-card">
           <h4>Precio Reforma Integral Bilbao</h4>
           <p>Análisis detallado de precios por partidas y factores que afectan al coste.</p>
         </a>
-        <a href="reforma-80m2-bilbao-ejemplo.html" class="related-card">
+        <a href="reforma-80m2-bilbao-ejemplo" class="related-card">
           <h4>Reforma Piso 80m² Bilbao</h4>
           <p>Ejemplo real completo con presupuesto desglosado de un piso de 80 m².</p>
         </a>

@@ -1,7 +1,7 @@
 ---
 title: "Pintar un Piso en Vitoria 2026: Precios por m²"
 description: "Precio de pintar un piso en Vitoria: desde 8€/m². Alisado de paredes, acabados y cuánto cuesta cada habitación. Presupuesto gratis."
-canonical: https://www.bilbaoreforma.es/blog/pintar-piso-vitoria.html
+canonical: https://www.bilbaoreforma.es/blog/pintar-piso-vitoria
 city: vitoria
 category: Acabados
 date: 2026-06-29
@@ -21,7 +21,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora/
+    href: /vitoria/calculadora
 ---
 
 Pintar un piso es la reforma más accesible y la que mayor impacto visual produce por menos dinero. Pero cuando vas a pedir presupuestos en Vitoria, te encuentras con un rango de precios que va de los 8 €/m² a los 15 €/m², y no queda nada claro qué incluye uno y otro. Vamos a resolverlo.

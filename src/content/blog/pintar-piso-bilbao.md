@@ -1,7 +1,7 @@
 ---
 title: "Pintar Piso Bilbao 2026: Precios por m²"
 description: "Precio pintar piso Bilbao 2026: €/m² según tipo de pintura, preparación de paredes, diferencia entre vinílica y acrílica, y coste de alisar gotelé."
-canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao"
 date: "6 abril 2025"
 category: "pintura"
 city: "bilbao"
@@ -10,22 +10,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Pintar un Piso en Bilbao: Precios por m² 2026"
-    url: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Reformas para Personas Mayores en Bilbao"
-    href: "reforma-personas-mayores-bilbao.html"
+    href: "reforma-personas-mayores-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Reformas para Personas Mayores en Bilbao"
-    href: "reforma-personas-mayores-bilbao.html"
+    href: "reforma-personas-mayores-bilbao"
 priceTables: 5
 ---
 
@@ -36,8 +36,8 @@ priceTables: 5
   <p>El coste de pintar un piso en Bilbao depende fundamentalmente de dos variables: el <strong>estado de las paredes</strong> y la <strong>calidad de la pintura</strong> que elijas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="reforma-personas-mayores-bilbao.html">Reformas para Personas Mayores en Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reforma-personas-mayores-bilbao">Reformas para Personas Mayores en Bilbao</a>
 </div>
 
 
@@ -237,8 +237,8 @@ priceTables: 5
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="reforma-personas-mayores-bilbao.html">Reformas para Personas Mayores en Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reforma-personas-mayores-bilbao">Reformas para Personas Mayores en Bilbao</a>
 </div>
 <h2>¿Cuándo Pintar vs. Cuándo Reformar?</h2>
   <table>
@@ -275,6 +275,6 @@ priceTables: 5
   <div class="article-cta">
   <h3>¿Tienes un proyecto de pintura en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

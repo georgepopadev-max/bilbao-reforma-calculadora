@@ -1,7 +1,7 @@
 ---
 title: "Renovar Piso Antiguo Bilbao 2026"
 description: "Todo sobre reformas de pisos antiguos en Bilbao: problemas comunes (tuberías de plomo, electricidad vieja), licencias especiales en casco urbano y cómo planificar tu reforma integral."
-canonical: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
@@ -19,22 +19,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma de Piso Antiguo en Bilbao: Guía Completa 2026"
-    url: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+    href: "rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
-    href: "rehabilitacion-edificio-antiguo-bilbao.html"
+    href: "rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
 priceTables: 0
 ---
 
@@ -48,8 +48,8 @@ priceTables: 0
   <p>Si has adquirido un piso en el Casco Viejo, estás barajando comprar en Santutxu o Begoña, o simplemente heredaste el apartamento familiar de toda la vida, esta guía te ayudará a entender qué te espera. Las reformas de pisos antiguos en Bizkaia tienen particularidades legales, técnicas y administrativas que conviene conocer antes de meter mano.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao</a>
 </div>
 
 
@@ -213,8 +213,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="rehabilitacion-edificio-antiguo-bilbao.html">Rehabilitación de Edificio Antiguo en Bilbao</a>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+  <a href="rehabilitacion-edificio-antiguo-bilbao">Rehabilitación de Edificio Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao</a>
 </div>
 <h2>Conclusión: Patience y Planificación</h2>
 
@@ -226,10 +226,10 @@ priceTables: 0
   <div class="blog-cta">
   <h3>¿Necesitas estimar el coste de tu reforma?</h3>
   <p>Usa nuestra calculadora gratuita para obtener un presupuesto orientativo de tu reforma integral en Bilbao.</p>
-  <a href="../calculadora/index.html">Calcular presupuesto gratis -></a>
+  <a href="../calculadora">Calcular presupuesto gratis -></a>
   </div>
 
   <nav class="blog-nav">
-  <a href="materiales-cocina-bilbao.html">← Encimeras de cocina Bilbao</a>
-  <a href="licencias-obra-bilbao-2026.html">Licencias de obra Bilbao -></a>
+  <a href="materiales-cocina-bilbao">← Encimeras de cocina Bilbao</a>
+  <a href="licencias-obra-bilbao-2026">Licencias de obra Bilbao -></a>
   </nav>

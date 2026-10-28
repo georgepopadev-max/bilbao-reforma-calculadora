@@ -1,7 +1,7 @@
 ---
 title: "Reforma para Mayores en Bilbao | Accesibilidad y Ayudas 2026"
 description: "Reformas adaptadas para personas mayores en Bilbao. Subtítulo con ayudas, grants y soluciones sin barreras. Consulta precio orientativo gratis."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
 date: "4 junio 2026"
 category: "general"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma para personas mayores en Bilbao: elimina barreras arquitectónicas [2026]"
-    url: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Pintar Piso en Bilbao: Guía y Precios"
-    href: "pintar-piso-bilbao.html"
+    href: "pintar-piso-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Pintar Piso en Bilbao: Guía y Precios"
-    href: "pintar-piso-bilbao.html"
+    href: "pintar-piso-bilbao"
 priceTables: 1
 ---
 
@@ -45,8 +45,8 @@ priceTables: 1
   <p>La buena noticia es que <strong>adaptar un piso para personas mayores en Bilbao</strong> es más accesible de lo que mucha gente piensa. Hay ayudas públicas, empresas especializadas y precios que, con planificación, caben en un presupuesto razonable. En esta guía te contamos qué reformas son las más importantes, cuánto cuestan y qué ayudas puedes pedir.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="pintar-piso-bilbao.html">Pintar Piso en Bilbao: Guía y Precios</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
 </div>
 
 
@@ -204,18 +204,18 @@ priceTables: 1
   <p>No hay nada como ver el resultado. Estas son situaciones reales - resumidas y anónimas - de reformas de accesibilidad en Bilbao:</p>
 
   <h3>Caso: Bañera eliminada, autonomía recuperada</h3>
-  <p>María, 78 años, vivía en un piso de los años 70 en <a href="/bilbao/barrios/deusto.html">Deusto</a>. La bañera era un obstáculo infranqueable: necesitaba ayuda para entrar y salir, y acababa duchándose con una esponja porque la bañera le daba miedo. Después de la reforma (sustitución de bañera por ducha walk-in, barras, suelo antideslizante), María recupera su ducha diaria sin ayuda. "Pensé que nunca podría ducharme sola otra vez", dice. La reforma le costò 5.800 €; las ayudas PADIS cubrieron 3.600 €.</p>
+  <p>María, 78 años, vivía en un piso de los años 70 en <a href="/bilbao/barrios/deusto">Deusto</a>. La bañera era un obstáculo infranqueable: necesitaba ayuda para entrar y salir, y acababa duchándose con una esponja porque la bañera le daba miedo. Después de la reforma (sustitución de bañera por ducha walk-in, barras, suelo antideslizante), María recupera su ducha diaria sin ayuda. "Pensé que nunca podría ducharme sola otra vez", dice. La reforma le costò 5.800 €; las ayudas PADIS cubrieron 3.600 €.</p>
 
   <h3>Caso: Puertas ensanchadas, libertad de movimiento</h3>
-  <p>Pedro, 81 años, usa andador desde hace tres años. Su piso en <a href="/bilbao/barrios/santutxu.html">Santutxu</a> tenía puertas de 70 cm. Cada vez que pasaba con el andador, tenía que hacer maniobras imposibles. Ensanchar las tres puertas más importantes (baño, dormitorio, cocina) costó 1.800 € y le devolvió la autonomía dentro de casa. Ahora pasa de una habitación a otra sin tener que pedir ayuda.</p>
+  <p>Pedro, 81 años, usa andador desde hace tres años. Su piso en <a href="/bilbao/barrios/santutxu">Santutxu</a> tenía puertas de 70 cm. Cada vez que pasaba con el andador, tenía que hacer maniobras imposibles. Ensanchar las tres puertas más importantes (baño, dormitorio, cocina) costó 1.800 € y le devolvió la autonomía dentro de casa. Ahora pasa de una habitación a otra sin tener que pedir ayuda.</p>
 
   <h3>Caso: Iluminación y suelo, prevención de caídas</h3>
   <p>El piso de Carmen y José, ambos mayores de 75, en San Ignacio, tenía moqueta en todo el piso, cables por el suelo y una iluminación muy tenue. La reforma (retirada de moqueta, instalación de suelo vinílico antideslizante, iluminación LED con detectores de movimiento) costó 3.200 € y eliminó los principales factores de riesgo de caída. "Ya no tenemos miedo a tropezar de noche", dicen.</p>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="pintar-piso-bilbao.html">Pintar Piso en Bilbao: Guía y Precios</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="pintar-piso-bilbao">Pintar Piso en Bilbao: Guía y Precios</a>
 </div>
 <h2>Preguntas frecuentes sobre reformas de accesibilidad para personas mayores en Bilbao</h2>
 
@@ -249,6 +249,6 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costaría adaptar tu piso en Bilbao?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada de tu proyecto de accesibilidad.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto de reforma</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto de reforma</a>
   </div>
   </div>

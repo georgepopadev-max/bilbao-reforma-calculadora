@@ -1,7 +1,7 @@
 ---
 title: "Presupuesto Reforma Cocina Bilbao 2026"
 description: "Presupuesto reforma cocina Bilbao 2026 desde 5.000€. Precios reales por m², 3 ejemplos detallados y calculadora gratis. Materiales, mobiliario y plazos reales."
-canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-cocina-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-cocina-bilbao"
 readTime: "10 min"
 category: "cocina"
 city: "bilbao"
@@ -22,28 +22,28 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Presupuesto Reforma Cocina Bilbao 2026 | Precios Orientativos Gratis"
-    url: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-cocina-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/presupuesto-reforma-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma de Cocina en Bilbao: Guía Completa 2026"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Errores Comunes en Reformas de Cocina en Bilbao"
-    href: "errores-reforma-cocina-bilbao.html"
+    href: "errores-reforma-cocina-bilbao"
 priceTables: 1
 ---
 
 <div class="article-content">
   <p>Pedir un <strong>presupuesto para tu reforma de cocina en Bilbao</strong> es el primer paso antes de invertir en uno de los espacios más importantes de tu vivienda. La cocina es el corazón del hogar bilbaino: donde se cocina el bacalao al pil-pil, se prepara el pintxo-pote del viernes y se reúne la familia los domingos. Pero antes de lanzarte a la reforma, necesitas saber <strong>cuánto cuesta realmente</strong> una reforma de cocina en Bilbao en 2026.</p>
 
-  <p>En esta guía te damos los presupuestos orientativos por metro cuadrado, ejemplos reales para cocinas de diferentes tamaños, y todo lo que necesitas saber para pedir tu presupuesto sin compromiso. Si prefieres una estimación personalizada para tu caso, usa nuestra <a href="../index.html">calculadora de presupuestos de reforma de cocina en Bilbao</a>. Si vas a reformar todo el piso, consulta nuestra <a href="presupuesto-reforma-integral-bilbao.html"><strong>guía de presupuesto reforma integral Bilbao 2026</strong></a>.</p>
+  <p>En esta guía te damos los presupuestos orientativos por metro cuadrado, ejemplos reales para cocinas de diferentes tamaños, y todo lo que necesitas saber para pedir tu presupuesto sin compromiso. Si prefieres una estimación personalizada para tu caso, usa nuestra <a href="/">calculadora de presupuestos de reforma de cocina en Bilbao</a>. Si vas a reformar todo el piso, consulta nuestra <a href="presupuesto-reforma-integral-bilbao"><strong>guía de presupuesto reforma integral Bilbao 2026</strong></a>.</p>
 
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma de Cocina en Bilbao: Guía Completa 2026</a>
-  <a href="errores-reforma-cocina-bilbao.html">Errores Comunes en Reformas de Cocina en Bilbao</a>
+  <a href="reforma-cocina-bilbao">Reforma de Cocina en Bilbao: Guía Completa 2026</a>
+  <a href="errores-reforma-cocina-bilbao">Errores Comunes en Reformas de Cocina en Bilbao</a>
 </div>
 
   <h2>¿Por qué pedir presupuesto antes de reformar la cocina?</h2>

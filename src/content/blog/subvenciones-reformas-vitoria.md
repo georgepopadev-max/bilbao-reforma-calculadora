@@ -1,7 +1,7 @@
 ---
 title: "Subvenciones Reformas Vitoria 2026"
 description: "Subvenciones reforma Vitoria 2026: ayudas del Gobierno Vasco, Ayuntamiento, rehabilitación energética, qué obras son elegibles y cómo solicitarlas."
-canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-vitoria.html"
+canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-vitoria"
 date: "6 abril 2025"
 category: "subvenciones"
 city: "vitoria"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Subvenciones y Ayudas para Reformas en Vitoria y Álava 2026"
-    url: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-vitoria.html"
+    url: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-vitoria"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Vitoria: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reformas Vitoria: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
   - type: "leer"
     label: "Precio Reforma Integral Vitoria: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reformas Vitoria: Guía Completa 2025"
-    href: "reformas-bilbao-guia-2025.html"
+    href: "reformas-bilbao-guia-2025"
 priceTables: 5
 ---
 
@@ -45,8 +45,8 @@ priceTables: 5
   <p>No son conocidos ni fáciles de encontrar. Por eso hemos creado esta guía: para que sepas qué existe, qué obras son elegibles, cuánto puedes cobrar y cómo solicitarlas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-vitoria.html">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
-  <a href="reformas-vitoria-guia-2025.html">Reformas Vitoria: Guía Completa 2025</a>
+  <a href="precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
+  <a href="/vitoria/blog/reforma-integral-vitoria-guia-completa">Reformas Vitoria: Guía Completa 2025</a>
 </div>
 
 
@@ -273,8 +273,8 @@ priceTables: 5
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-vitoria.html">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
-  <a href="reformas-vitoria-guia-2025.html">Reformas Vitoria: Guía Completa 2025</a>
+  <a href="precio-reforma-integral-vitoria">Precio Reforma Integral Vitoria: Guía 2025 con €/m²</a>
+  <a href="/vitoria/blog/reforma-integral-vitoria-guia-completa">Reformas Vitoria: Guía Completa 2025</a>
 </div>
 <h2>Deducciones Fiscales: Además de las Subvenciones</h2>
   <p>No olvides las <strong>deducciones fiscales</strong> que puedes aplicar en tu IRPF:</p>
@@ -319,6 +319,6 @@ priceTables: 5
   <div class="article-cta">
   <h3>¿Tienes un proyecto de reforma en Vitoria?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

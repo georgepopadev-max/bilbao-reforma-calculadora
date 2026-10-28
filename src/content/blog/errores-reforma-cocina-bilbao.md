@@ -1,7 +1,7 @@
 ---
 title: "7 Errores Reforma Cocina Bilbao 2026"
 description: "7 errores al reformarla cocina en Bilbao y cómo evitarlos. Guía práctica con presupuestos reales 2026 para no cometer fallos costosos."
-canonical: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
 date: "4 junio 2026"
 category: "cocina"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "7 errores al reformarla cocina en Bilbao (y cómo evitarlos) [2026]"
-    url: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Materiales para Cocina en Bilbao"
-    href: "materiales-cocina-bilbao.html"
+    href: "materiales-cocina-bilbao"
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2025"
-    href: "reforma-cocina-bilbao.html"
+    href: "reforma-cocina-bilbao"
   - type: "leer"
     label: "Materiales para Cocina en Bilbao"
-    href: "materiales-cocina-bilbao.html"
+    href: "materiales-cocina-bilbao"
 priceTables: 2
 ---
 
@@ -45,8 +45,8 @@ priceTables: 2
   <p>En Bilbao, donde muchos edificios tienen más de 50 años y las instalaciones están al límite de su vida útil, estos errores son especialmente comunes. Después de analizar cientos de reformas de cocinas en Bizkaia, hemos identificado los 7 fallos que más frecuentemente generan sorpresas desagradables. Te los contamos - y cómo evitarlos.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="materiales-cocina-bilbao.html">Materiales para Cocina en Bilbao</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="materiales-cocina-bilbao">Materiales para Cocina en Bilbao</a>
 </div>
 
 
@@ -212,13 +212,13 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Quieres saber cuánto costaría tu reforma de cocina?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-cocina-bilbao.html">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
-  <a href="materiales-cocina-bilbao.html">Materiales para Cocina en Bilbao</a>
+  <a href="reforma-cocina-bilbao">Reforma Cocina Bilbao: Guía Completa de Precios 2025</a>
+  <a href="materiales-cocina-bilbao">Materiales para Cocina en Bilbao</a>
 </div>
 <h2>Preguntas frecuentes</h2>
 
@@ -237,5 +237,5 @@ priceTables: 2
   <h3>¿Puedo vivir en el piso mientras reformo la cocina?</h3>
   <p>Es posible pero muy incómodo. La reforma dura 3-6 semanas sin cocina funcional. Necesitarás un plan alternativo: kitchenette temporal, comer fuera o quedarte en otro sitio. Si tienes niños pequeños o trabajas desde casa, considera mudarte temporalmente durante las semanas más intensas de la obra.</p>
 
-  <p>Si te interesa este tema, también puedes leer nuestra guía completa sobre <a href="reforma-cocina-bilbao.html">cuánto cuesta reformarla cocina en Bilbao</a> y nuestro artículo sobre <a href="materiales-cocina-bilbao.html">materiales recomendados para cocinas en Bilbao</a>.</p>
+  <p>Si te interesa este tema, también puedes leer nuestra guía completa sobre <a href="reforma-cocina-bilbao">cuánto cuesta reformarla cocina en Bilbao</a> y nuestro artículo sobre <a href="materiales-cocina-bilbao">materiales recomendados para cocinas en Bilbao</a>.</p>
   </div>

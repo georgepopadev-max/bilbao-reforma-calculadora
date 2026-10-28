@@ -17,22 +17,21 @@ const jsonSchemas = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Service",
     "name": "Reformas en Deusto, Bilbao",
-    "description": "Empresas de reformas verificadas con experiencia en Deusto, San Pedro de Deusto y barrios cercanos de Ibaiondo. Multiplicador x1.00.",
-    "url": "https://www.bilbaoreforma.es/bilbao/barrios/deusto/",
+    "provider": { "@type": "Organization", "@id": "https://www.bilbaoreforma.es/#organization", "name": "Bilbao Reforma", "url": "https://www.bilbaoreforma.es/" },
+    "description": "Empresas de reformas verificadas con experiencia en Deusto, San Pedro de Deusto y barrios cercanos de Ibaiondo.",
+    "url": "https://www.bilbaoreforma.es/bilbao/barrios/deusto",
     "areaServed": { "@type": "Neighborhood", "name": "Deusto", "containedInPlace": { "@type": "City", "name": "Bilbao" } },
-    "address": { "@type": "PostalAddress", "addressLocality": "Deusto", addressRegion: "Bizkaia", addressCountry: "ES" },
-    "priceRange": "€€",
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.bilbaoreforma.es/" },
-      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao/" },
-      { "@type": "ListItem", "position": 3, "name": "Barrios", "item": "https://www.bilbaoreforma.es/bilbao/barrios/" },
-      { "@type": "ListItem", "position": 4, "name": "Deusto", "item": "https://www.bilbaoreforma.es/bilbao/barrios/deusto/" },
+      { "@type": "ListItem", "position": 2, "name": "Bilbao", "item": "https://www.bilbaoreforma.es/bilbao" },
+      { "@type": "ListItem", "position": 3, "name": "Barrios", "item": "https://www.bilbaoreforma.es/bilbao/barrios" },
+      { "@type": "ListItem", "position": 4, "name": "Deusto", "item": "https://www.bilbaoreforma.es/bilbao/barrios/deusto" },
     ],
   },
 ];
@@ -40,7 +39,7 @@ const jsonSchemas = [
 <BaseLayout
   title="Reforma en Deusto Bilbao | Precios y Empresas Especializadas 2026"
   description="Reformar un piso en Deusto (Bilbao): precios orientativos por m², empresas especializadas y testimonios de vecinos. Calcula tu presupuesto en 2 minutos."
-  canonical="https://www.bilbaoreforma.es/bilbao/barrios/deusto/"
+  canonical="https://www.bilbaoreforma.es/bilbao/barrios/deusto"
   jsonSchemas={jsonSchemas}
   ogImage="https://www.bilbaoreforma.es/images/og/bilbao-og.jpg"
   ogImageAlt="Reformas en Deusto Bilbao 2026"
@@ -73,7 +72,7 @@ const jsonSchemas = [
               <p>Precio base × 1.00 — el multiplicador de Deusto ya aplicado.</p>
             </div>
           </div>
-          <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-calc">Calcular presupuesto →</a>
+          <a href="/calculadora/integral-bilbao?barrio=deusto" class="btn-calc">Calcular presupuesto →</a>
         </div>
       </div>
     </section>
@@ -166,7 +165,7 @@ const jsonSchemas = [
 
             <div class="in-content-cta">
               <span class="in-content-cta-label">📊 Calculadora recomendada</span>
-              <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto">Calcula tu presupuesto de reforma en Deusto con empresas de la zona →</a>
+              <a href="/calculadora/integral-bilbao?barrio=deusto">Calcula tu presupuesto de reforma en Deusto con empresas de la zona →</a>
             </div>
 
             <h3>Preguntas frecuentes sobre reformas en Deusto</h3>
@@ -212,16 +211,16 @@ const jsonSchemas = [
             <div class="sidebar-card calc-mini">
               <h3>Calculadora rápida</h3>
               <p>Usa el multiplicador de Deusto automáticamente:</p>
-              <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-sidebar-calc">Calcular →</a>
+              <a href="/calculadora/integral-bilbao?barrio=deusto" class="btn-sidebar-calc">Calcular →</a>
             </div>
 
             <div class="sidebar-card related-articles">
               <h3>Artículos relacionados</h3>
               <ul>
-                <li><a href="/bilbao/blog/cuanto-cuesta-reforma-integral-bilbao.html">Cuánto cuesta reforma integral Bilbao</a></li>
-                <li><a href="/bilbao/calculadora/integral-bilbao.html">Calculadora reforma Bilbao</a></li>
-                <li><a href="/bilbao/barrios/santutxu/index.html">Reformas en Santutxu</a></li>
-                <li><a href="/bilbao/barrios/indautxu/index.html">Reformas en Indautxu</a></li>
+                <li><a href="/blog/cuanto-cuesta-reforma-integral-bilbao">Cuánto cuesta reforma integral Bilbao</a></li>
+                <li><a href="/calculadora/integral-bilbao">Calculadora reforma Bilbao</a></li>
+                <li><a href="/bilbao/barrios/santutxu">Reformas en Santutxu</a></li>
+                <li><a href="/bilbao/barrios/indautxu">Reformas en Indautxu</a></li>
               </ul>
             </div>
           </aside>
@@ -234,7 +233,7 @@ const jsonSchemas = [
       <div class="container">
         <h2>¿Quieres saber cuánto cuesta tu reforma en Deusto?</h2>
         <p>Nuestra calculadora aplica el multiplicador de Deusto automáticamente y te conecta con empresas de la zona.</p>
-        <a href="/bilbao/calculadora/integral-bilbao.html?barrio=deusto" class="btn-cta">Calcular mi presupuesto →</a>
+        <a href="/calculadora/integral-bilbao?barrio=deusto" class="btn-cta">Calcular mi presupuesto →</a>
       </div>
     </section>
   </main>

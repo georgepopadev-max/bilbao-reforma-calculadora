@@ -1,7 +1,7 @@
 ---
 title: "Empresas Reformas Bilbao: Cómo Elegir"
 description: "Guía para elegir empresas de reformas en Bilbao. Compara presupuestos, evita estafas y aprende a distinguir profesionales con esta guía actualizada."
-canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-bilbao"
 readTime: "12 min"
 category: "empresas"
 city: "bilbao"
@@ -22,22 +22,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Empresas de Reformas en Bilbao: Cómo Elegir la Mejor"
-    url: "https://www.bilbaoreforma.es/blog/empresas-reformas-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/empresas-reformas-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Empresas de Reformas en Donostia"
-    href: "empresas-reformas-donostia.html"
+    href: "empresas-reformas-donostia"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Empresas de Reformas en Donostia"
-    href: "empresas-reformas-donostia.html"
+    href: "empresas-reformas-donostia"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
 priceTables: 1
 ---
 
@@ -47,8 +47,8 @@ priceTables: 1
   <p>Y no lo decimos nosotros: según datos del sector, <strong>el 35% de las denuncias de consumidores</strong> relacionadas con reformas de vivienda en el País Vasco tienen que ver con presupuestos imprecisos, plazos incumplidos o trabajos de mala calidad. La buena noticia es que todos esos problemas se evitan si sabes qué preguntar y qué exigir antes de firmar ningún contrato.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-donostia.html">Empresas de Reformas en Donostia</a>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
 </div>
 
 
@@ -285,14 +285,14 @@ priceTables: 1
   <div class="article-cta">
   <h3>¿Ya sabes qué tipo de reforma necesitas?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos y comparar rangos de precio.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="empresas-reformas-donostia.html">Empresas de Reformas en Donostia</a>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="empresas-reformas-donostia">Empresas de Reformas en Donostia</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
 </div>
 <h2>Preguntas Frecuentes</h2>
 

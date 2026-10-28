@@ -12,16 +12,16 @@ const schema = {
   '@type': 'Service',
   name: 'Reformas Vitoria',
   description: 'Guía completa de reformas en Vitoria-Gasteiz 2026. Precios, empresas y consejos.',
-  url: 'https://www.bilbaoreforma.es/vitoria/',
+  url: 'https://www.bilbaoreforma.es/vitoria',
   areaServed: { '@type': 'City', name: 'Vitoria-Gasteiz' },
 };
 
 const servicios = [
-  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa: electricidad, fontanería, albañilería, pintura y suelos. Vitoria tiene construcciones de los años 60-80 que necesitan actualización.', precio: 'Desde 650 €/m²', href: '/vitoria/calculadora/integral-vitoria.html', icono: '🏠' },
-  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, alicatados y fontanería. Los pisos vitorianos suelen tener baños de 3-5 m² con buena札会更好.', precio: 'Desde 2.300 €', href: '/vitoria/calculadora/bano-vitoria.html', icono: '🚿' },
-  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Los pisos de Lakua y Salburua suelen tener cocinas de 8-12 m² amplios.', precio: 'Desde 4.800 €', href: '/vitoria/calculadora/cocina-vitoria.html', icono: '🍳' },
-  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Vitoria el aislamiento térmico de los edificios nuevos hace que la pintura sea más económica que en edificios antiguos.', precio: 'Desde 7 €/m²', href: '/vitoria/calculadora/pintura-vitoria.html', icono: '🎨' },
-  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios de los 70 en Coronación y San Martín tienen pallanda de madera que puede rehabilitarse.', precio: 'Desde 32 €/m²', href: '/vitoria/calculadora/suelo-vitoria.html', icono: '🪵' },
+  { titulo: 'Reforma Integral', descripcion: 'Reconversión completa: electricidad, fontanería, albañilería, pintura y suelos. Vitoria tiene construcciones de los años 60-80 que necesitan actualización.', precio: 'Desde 650 €/m²', href: '/vitoria/calculadora/integral-vitoria', icono: '🏠' },
+  { titulo: 'Reforma de Baño', descripcion: 'Cambio de sanitarios, platos de ducha, alicatados y fontanería. Los pisos vitorianos suelen tener baños de 3-5 m² con buena札会更好.', precio: 'Desde 2.300 €', href: '/vitoria/calculadora/bano-vitoria', icono: '🚿' },
+  { titulo: 'Reforma de Cocina', descripcion: 'Cambio de muebles, encimera, electrodomésticos y distribución. Los pisos de Lakua y Salburua suelen tener cocinas de 8-12 m² amplios.', precio: 'Desde 4.800 €', href: '/vitoria/calculadora/cocina-vitoria', icono: '🍳' },
+  { titulo: 'Pintura Integral', descripcion: 'Paredes, techos y puertas. En Vitoria el aislamiento térmico de los edificios nuevos hace que la pintura sea más económica que en edificios antiguos.', precio: 'Desde 7 €/m²', href: '/vitoria/calculadora/pintura-vitoria', icono: '🎨' },
+  { titulo: 'Cambio de Suelo', descripcion: 'Parqué, porcelánico o laminado. Los edificios de los 70 en Coronación y San Martín tienen pallanda de madera que puede rehabilitarse.', precio: 'Desde 32 €/m²', href: '/vitoria/calculadora/suelo-vitoria', icono: '🪵' },
 ];
 
 const pasos = [
@@ -34,7 +34,7 @@ const pasos = [
 <BaseLayout
   title="Reformas Vitoria 2026: Guía Completa y Precios Orientativos"
   description="Guía completa de reformas en Vitoria-Gasteiz 2026. Calcula presupuestos, compara precios y encuentra empresas verificadas en Álava."
-  canonical="https://www.bilbaoreforma.es/vitoria/"
+  canonical="https://www.bilbaoreforma.es/vitoria"
   ogImage="https://www.bilbaoreforma.es/images/og/vitoria-og.jpg"
   ogImageAlt="Reformas Vitoria 2026"
 >
@@ -49,7 +49,7 @@ const pasos = [
       <div style="max-width: 900px; margin: 0 auto;">
         <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--color-grafito); margin-bottom: 1rem; line-height: 1.25;">Reformas en Vitoria-Gasteiz 2026</h1>
         <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.7; max-width: 640px; margin-bottom: 1.5rem;">Vitoria-Gasteiz tiene uno de los parques inmobiliarios más modernos del País Vasco, pero los edificios de los años 60 a 90 necesitan reformas. Esta guía te ayuda a calcular presupuestos orientativos y encontrar empresas de reformas verificadas en Álava.</p>
-        <a href="/vitoria/calculadora/integral-vitoria.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
+        <a href="/vitoria/calculadora/integral-vitoria" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Calcular presupuesto gratis →</a>
       </div>
     </section>
 
@@ -80,7 +80,7 @@ const pasos = [
           ))}
         </div>
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/vitoria/calculadora/integral-vitoria.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
+          <a href="/vitoria/calculadora/integral-vitoria" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.5rem; background: var(--color-terracota); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9375rem;">Empezar ahora →</a>
         </div>
       </div>
     </section>

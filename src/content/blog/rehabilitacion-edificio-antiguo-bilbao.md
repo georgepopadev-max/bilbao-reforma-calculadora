@@ -1,7 +1,7 @@
 ---
 title: "Rehabilitación Edificio Antiguo Bilbao 2026"
 description: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao en 2026. Precios €/m², ayudas, licencias y plazos para reformas de edificios de los años 20-60."
-canonical: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
 date: "4 junio 2026"
 category: "general"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao [2026]"
-    url: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
-    href: "renovar-piso-antiguo-bilbao.html"
+    href: "renovar-piso-antiguo-bilbao"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
 priceTables: 2
 ---
 
@@ -45,8 +45,8 @@ priceTables: 2
   <p>La respuesta honesta es: depende. Depende del estado de la estructura, de si hay protección patrimonial, de la época del edificio y de las intervenciones que requiera. En esta guía te damos cifras concretas basadas en datos reales de obras rehabilitadas en Bizkaia para que puedas hacer números antes de tomar decisiones.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao</a>
 </div>
 
 
@@ -99,7 +99,7 @@ priceTables: 2
   <p><strong>Ejemplo práctico:</strong> Un edificio de 1.200 m² construidos (10 viviendas de 90m² + zonas comunes) en Deusto que requiere rehabilitación media costaría entre <strong>960.000 € y 1.320.000 €</strong> en obra. Por vivienda, eso supone unos <strong>96.000-132.000 €</strong>.</p>
   </div>
 
-  <p>Para entender mejor cómo se desglosa una <a href="precio-reforma-integral-bilbao.html">reforma integral de un piso</a> en un edificio antiguo, consulta nuestra guía específica con €/m² por niveles de calidad.</p>
+  <p>Para entender mejor cómo se desglosa una <a href="precio-reforma-integral-bilbao">reforma integral de un piso</a> en un edificio antiguo, consulta nuestra guía específica con €/m² por niveles de calidad.</p>
 
   <h2>¿Qué edificios antiguos pueden rehabilitarse en Bilbao?</h2>
   <p>Prácticamente cualquier edificio de los años 20 a los 60 puede rehabilitarse en Bilbao, pero la complejidad varía enormemente según la época constructiva:</p>
@@ -136,7 +136,7 @@ priceTables: 2
   <li><strong>Fachada de piedra (limpieza, rejuntado, sellado)</strong>: 250-500 €/m²</li>
   <li><strong>Andamios (coste mensual en Bilbao)</strong>: 800-1.500 €/mes para un edificio de 4-5 plantas</li>
   </ul>
-  <p>En el Casco Viejo, donde la mayoría de edificios tienen protección, cualquier intervención en fachada necesita <a href="licencias-obra-bilbao-2026.html">licencia de obra mayor y informe de Patrimonio</a>, lo que añade 2-4 meses de tramitación y un sobrecoste del 10-15% en materiales (deben ser homologados).</p>
+  <p>En el Casco Viejo, donde la mayoría de edificios tienen protección, cualquier intervención en fachada necesita <a href="licencias-obra-bilbao-2026">licencia de obra mayor y informe de Patrimonio</a>, lo que añade 2-4 meses de tramitación y un sobrecoste del 10-15% en materiales (deben ser homologados).</p>
 
   <h3>3. Rewiring eléctrico (10-15% del presupuesto)</h3>
   <p>La instalación eléctrica de un edificio de los años 50-60 está muy lejos de cumplir el actual <strong>Reglamento electrotécnico de baja tensión</strong>. En una rehabilitación integral se suele substituir:</p>
@@ -238,8 +238,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="renovar-piso-antiguo-bilbao.html">Renovar Piso Antiguo en Bilbao</a>
-  <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao</a>
+  <a href="renovar-piso-antiguo-bilbao">Renovar Piso Antiguo en Bilbao</a>
+  <a href="reformas-casco-viejo-bilbao">Reformas en el Casco Viejo de Bilbao</a>
 </div>
 <h2>Preguntas frecuentes sobre rehabilitación de edificios antiguos en Bilbao</h2>
 
@@ -261,6 +261,6 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Necesitas una estimación para tu proyecto de rehabilitación?</h3>
   <p>Usa la calculadora para obtener un presupuesto orientativo en función de los metros cuadrados y el tipo de edificio.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto de rehabilitación</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto de rehabilitación</a>
   </div>
   </div>

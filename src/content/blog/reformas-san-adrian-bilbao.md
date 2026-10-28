@@ -1,7 +1,7 @@
 ---
 title: "Reformas San Adrián Bilbao 2026"
 description: "Reformas San Adrián Bilbao 2026. Precios por m², multiplicador ×0.95 y empresas del barrio. La zona más asequible de Bilbao."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas San Adrián Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en San Adrián"
-    href: "/calculadora/index.html?barrio=san-adrian"
+    href: "/calculadora?barrio=san-adrian"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Guía de Precios"
-    href: "comparativa-reforma-bano-bilbao.html"
+    href: "comparativa-reforma-bano-bilbao"
 ---
 
 ## Reformas San Adrián Bilbao 2026
@@ -65,15 +65,15 @@ Base: Bilbao 700-1.100 €/m² × multiplicador 0.95:
 
 Empresas con experiencia en reformas en el barrio de San Adrián:
 
-- [**Vascol Reformas**](/empresas/vascol-reformas.html) — Reformas generales a buen precio
-- [**Reformas Fernández**](/empresas/reformas-fernandez.html) — Especialistas en reforma de baño y cocina
-- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui.html) — Fontanería y reformas integrales
+- [**Vascol Reformas**](/empresas/vascol-reformas) — Reformas generales a buen precio
+- [**Reformas Fernández**](/empresas/reformas-fernandez) — Especialistas en reforma de baño y cocina
+- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui) — Fontanería y reformas integrales
 
 ## Calcula tu Reforma en San Adrián
 
 Abre la calculadora con el multiplicador de San Adrián ya aplicado:
 
-<a href="/calculadora/index.html?barrio=san-adrian" class="btn">Calcular presupuesto en San Adrián →</a>
+<a href="/calculadora?barrio=san-adrian" class="btn">Calcular presupuesto en San Adrián →</a>
 
 ## Preguntas Frecuentes sobre Reformas en San Adrián
 
@@ -92,22 +92,22 @@ Sí. Con un precio medio de vivienda de 2.800 €/m², una reforma de baño (4.2
 
 ## Ver También
 
-- Página de barrio: [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en San Adrián](/calculadora/index.html?barrio=san-adrian)
+- Página de barrio: [Reformas en San Adrián Bilbao](/barrios/reforma-san-adrian)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en San Adrián](/calculadora?barrio=san-adrian)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Basurto Bilbao](/barrios/reforma-basurto.html)
-- [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre.html)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+- [Reformas en Basurto Bilbao](/barrios/reforma-basurto)
+- [Reformas en Zorrotzaurre Bilbao](/barrios/reforma-zorrotzaurre)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
 
 ### Blogs relacionados
 
-- [Reformas Basurto Bilbao 2026](/blog/reformas-basurto-bilbao.html)
-- [Reformas Zorrotzaurre Bilbao 2026](/blog/reformas-zorrotzaurre-bilbao.html)
+- [Reformas Basurto Bilbao 2026](/barrios/reforma-basurto)
+- [Reformas Zorrotzaurre Bilbao 2026](/blog/reformas-zorrotzaurre-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

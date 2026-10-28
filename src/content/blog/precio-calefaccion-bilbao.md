@@ -1,7 +1,7 @@
 ---
 title: "Precio Calefacción Bilbao 2026 | Guía"
 description: "Precio calefacción en Bilbao: instalación desde 3.500€. Compara gas, aerotermia y suelo radiante con datos reales."
-canonical: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 date: "2026-07-03"
 category: "Calefacción"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Precio Calefacción Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao 2026"
-    href: "tipos-calefaccion-bilbao.html"
+    href: "tipos-calefaccion-bilbao"
   - type: "leer"
     label: "Aerotermia en Bilbao: Precio y Ventajas"
-    href: "aerotermia-precio-bilbao.html"
+    href: "aerotermia-precio-bilbao"
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026"
-    href: "suelo-radiante-ventajas-bilbao.html"
+    href: "suelo-radiante-ventajas-bilbao"
 ---
 
 <div class="article-content">
@@ -171,12 +171,12 @@ inContentCTAs:
 <h2>Empresas especializadas en calefacción en Bilbao</h2>
 <p>Estas empresas de reformas en Bilbao están especializadas en instalación de calefacción:</p>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con calefacción</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Climatización en reformas de interiors</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con calefacción</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Climatización en reformas de interiors</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Precio de Calefacción</h2>
@@ -193,7 +193,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto de calefacción?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría instalar tu sistema de calefacción en Bilbao.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

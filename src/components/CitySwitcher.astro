@@ -1,9 +1,9 @@
 ---
+import { cityPath, type City } from '../lib/urls';
 export interface Props {
   currentCity?: 'bilbao' | 'donostia' | 'vitoria';
-  depth?: string;
 }
-const { currentCity = 'bilbao', depth = '' } = Astro.props;
+const { currentCity = 'bilbao' } = Astro.props;
 
 const cities = [
   { id: 'bilbao', name: 'Bilbao', subpath: '' },
@@ -11,11 +11,10 @@ const cities = [
   { id: 'vitoria', name: 'Vitoria', subpath: 'vitoria' },
 ];
 
-// Build href for each city
-function cityHref(cityId: string, subpath: string): string {
+// Enlace absoluto a la portada de cada ciudad
+function cityHref(cityId: string): string {
   if (cityId === currentCity) return '#';
-  if (!subpath) return `${depth}index.html`;
-  return `${depth}${subpath}/index.html`;
+  return cityPath(cityId as City);
 }
 ---
 
@@ -25,7 +24,7 @@ function cityHref(cityId: string, subpath: string): string {
     <span class="sr-only">Seleccionar ciudad</span>
     <select class="city-switcher-select" id="citySelect">
       {cities.map(city => (
-        <option value={cityHref(city.id, city.subpath)} selected={city.id === currentCity}>
+        <option value={cityHref(city.id)} selected={city.id === currentCity}>
           {city.name}
         </option>
       ))}
@@ -39,7 +38,7 @@ function cityHref(cityId: string, subpath: string): string {
   <div class="city-switcher-buttons" role="group" aria-label="Cambiar ciudad">
     {cities.map(city => (
       <a
-        href={cityHref(city.id, city.subpath)}
+        href={cityHref(city.id)}
         class={`city-btn ${city.id === currentCity ? 'city-btn-active' : ''}`}
         aria-current={city.id === currentCity ? 'page' : undefined}
       >

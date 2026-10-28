@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante Bilbao 2026 | Guía + Precio"
 description: "Suelo radiante en Bilbao: precio 70-100€/m², ventajas, instalación y subvenciones vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
 date: "15 enero 2025"
 category: "suelo"
 city: "bilbao"
@@ -20,22 +20,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "¿Por Qué Poner Suelo Radiante? 7 Razones que te Sorprenderán"
-    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Cambiar Suelo en Bilbao: Guía Completa de Precios 2025"
-    href: "cambiar-suelo-bilbao.html"
+    href: "cambiar-suelo-bilbao"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion.html"
+    href: "suelo-radiante-vs-calefaccion"
   - type: "leer"
     label: "Cambiar Suelo en Bilbao: Guía Completa de Precios 2025"
-    href: "cambiar-suelo-bilbao.html"
+    href: "cambiar-suelo-bilbao"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion.html"
+    href: "suelo-radiante-vs-calefaccion"
 priceTables: 2
 ---
 
@@ -46,8 +46,8 @@ priceTables: 2
   <p>El suelo radiante es un sistema de calefacción que utiliza el suelo de tu vivienda como emisor de calor. Funciona mediante una red de tuberías (generalmente de polietileno reticulado) por las que circula agua a baja temperatura (entre 35°C y 45°C), frente a los 70-90°C que necesitan los radiadores tradicionales.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="cambiar-suelo-bilbao.html">Cambiar Suelo en Bilbao: Guía Completa de Precios 2025</a>
-  <a href="suelo-radiante-vs-calefaccion.html">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="cambiar-suelo-bilbao">Cambiar Suelo en Bilbao: Guía Completa de Precios 2025</a>
+  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 
 
@@ -195,8 +195,8 @@ priceTables: 2
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="cambiar-suelo-bilbao.html">Cambiar Suelo en Bilbao: Guía Completa de Precios 2025</a>
-  <a href="suelo-radiante-vs-calefaccion.html">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="cambiar-suelo-bilbao">Cambiar Suelo en Bilbao: Guía Completa de Precios 2025</a>
+  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 <h2>Preguntas Frecuentes sobre el Suelo Radiante</h2>
 
@@ -218,6 +218,6 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Quieres una estimación de presupuesto con suelo radiante?</h3>
   <p>Usa nuestra calculadora para saber cuánto costaría tu reforma con suelo radiante incluido.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+  <a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
   </div>
   </div>

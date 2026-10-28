@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante Bilbao 2026 | Instalación"
 description: "Instalación suelo radiante en Bilbao: precio 70-100€/m², proceso paso a paso y empresas instaladoras. Subvenciones vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
 date: "2026-07-03"
 category: "Calefacción"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Instalación Suelo Radiante Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026: Ventajas"
-    href: "suelo-radiante-ventajas-bilbao.html"
+    href: "suelo-radiante-ventajas-bilbao"
   - type: "leer"
     label: "Suelo Radiante vs Radiadores"
-    href: "suelo-radiante-vs-calefaccion.html"
+    href: "suelo-radiante-vs-calefaccion"
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"
-    href: "aerotermia-precio-bilbao.html"
+    href: "aerotermia-precio-bilbao"
 ---
 
 <div class="article-content">
@@ -185,12 +185,12 @@ inContentCTAs:
 
 <h2>Empresas instaladoras de suelo radiante en Bilbao</h2>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con calefacción</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Aerotermia y suelo radiante</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con calefacción</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Climatización en reformas de interiores</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Instalación de Suelo Radiante</h2>
@@ -207,7 +207,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto con suelo radiante?</h3>
 <p>Usa nuestra calculadora para saber cuánto costaría tu reforma con suelo radiante incluido.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

@@ -1,7 +1,7 @@
 ---
 title: "Errores Reforma Baño Bilbao 2026"
 description: "Descubre los 10 errores más comunes en la reforma de un baño en Bilbao. Evita sorpresas, sobrecostes y problemas. Guía actualizada 2026."
-canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bano-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bano-bilbao"
 readTime: "10 min"
 category: "bano"
 city: "bilbao"
@@ -22,28 +22,28 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Errores Reforma Baño Bilbao 2026 | 10 Fallos que Evitar"
-    url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bano-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bano-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Cómo Pedir Presupuestos de Reforma de Baño en Bilbao"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de Reforma de Baño en Bilbao"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
   - type: "leer"
     label: "Reforma de Baño en Bilbao: Precios Reales 2025-2026"
-    href: "reforma-bano-bilbao.html"
+    href: "reforma-bano-bilbao"
   - type: "leer"
     label: "Cómo Pedir Presupuestos de Reforma de Baño en Bilbao"
-    href: "presupuesto-reforma-bano-bilbao.html"
+    href: "presupuesto-reforma-bano-bilbao"
   - type: "leer"
     label: "Precio por m² de Reforma de Baño en Bilbao"
-    href: "precio-m2-reforma-bano-bilbao.html"
+    href: "precio-m2-reforma-bano-bilbao"
 priceTables: 0
 ---
 
@@ -55,9 +55,9 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
-  <a href="presupuesto-reforma-bano-bilbao.html">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
-  <a href="precio-m2-reforma-bano-bilbao.html">Precio por m² de Reforma de Baño en Bilbao</a>
+  <a href="reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
+  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
   </div>
 
   <h2>¿Por qué conocer estos errores antes de reformar tu baño?</h2>
@@ -280,15 +280,15 @@ priceTables: 0
   <div class="article-cta">
   <h3>¿Ya tienes claro qué tipo de reforma de baño necesitas?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/bano-bilbao.html" class="btn">Calcular presupuesto gratis -></a>
+  <a href="../calculadora/bano-bilbao" class="btn">Calcular presupuesto gratis -></a>
   </div>
 
   <div class="faq-section">
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-bano-bilbao.html">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
-  <a href="presupuesto-reforma-bano-bilbao.html">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
-  <a href="precio-m2-reforma-bano-bilbao.html">Precio por m² de Reforma de Baño en Bilbao</a>
+  <a href="reforma-bano-bilbao">Reforma de Baño en Bilbao: Precios Reales 2025-2026</a>
+  <a href="presupuesto-reforma-bano-bilbao">Cómo Pedir Presupuestos de Reforma de Baño en Bilbao</a>
+  <a href="precio-m2-reforma-bano-bilbao">Precio por m² de Reforma de Baño en Bilbao</a>
   </div>
   <h2>Preguntas Frecuentes sobre Errores en la Reforma de Baño</h2>
 

@@ -1,7 +1,7 @@
 ---
 title: "Fontanero Bilbao 2026 | Precios y Servicios"
 description: "Fontanero en Bilbao: precio 30-50€/h. Servicios urgentes, instalación calefacción, reformas baño. Empresas verificadas 24h."
-canonical: "https://www.bilbaoreforma.es/blog/fontanero-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/fontanero-bilbao"
 date: "2026-07-03"
 category: "Fontanería"
 city: "bilbao"
@@ -17,19 +17,19 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Fontanero Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/fontanero-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/fontanero-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao 2026"
-    href: "../pages/blog/reforma-bano-bilbao.html"
+    href: "/blog/reforma-bano-bilbao"
   - type: "leer"
     label: "Precio Calefacción Bilbao 2026"
-    href: "precio-calefaccion-bilbao.html"
+    href: "precio-calefaccion-bilbao"
   - type: "leer"
     label: "Cambiar Caldera Bilbao 2026"
-    href: "cambio-caldera-bilbao.html"
+    href: "cambio-caldera-bilbao"
 ---
 
 <div class="article-content">
@@ -180,12 +180,12 @@ inContentCTAs:
 
 <h2>Empresas de fontanería en Bilbao</h2>
 <ul>
-<li><a href="/empresas/eraber.html">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
-<li><a href="/empresas/reformas-fernandez.html">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
-<li><a href="/empresas/vascol-reformas.html">Vascol Reformas</a> — Reformas de baño y fontanería</li>
-<li><a href="/empresas/rb-interiores.html">RB Interiores</a> — Reformas integrales con fontanería</li>
-<li><a href="/empresas/reformas-zunzunegui.html">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
-<li><a href="/empresas/raquel-gonzalez-interiorismo.html">Raquel González Interiorismo</a> — Reformas de baño con fontanería</li>
+<li><a href="/empresas/eraber">Eraber Reformas</a> — Instalaciones de climatización y fontanería</li>
+<li><a href="/empresas/reformas-fernandez">Reformas Fernández</a> — Calderas y sistemas de calefacción</li>
+<li><a href="/empresas/vascol-reformas">Vascol Reformas</a> — Reformas de baño y fontanería</li>
+<li><a href="/empresas/rb-interiores">RB Interiores</a> — Reformas integrales con fontanería</li>
+<li><a href="/empresas/reformas-zunzunegui">Reformas Zunzunegui</a> — Instalaciones de fontanería y calefacción</li>
+<li><a href="/empresas/raquel-gonzalez-interiorismo">Raquel González Interiorismo</a> — Reformas de baño con fontanería</li>
 </ul>
 
 <h2>Preguntas Frecuentes sobre Fontaneros en Bilbao</h2>
@@ -202,7 +202,7 @@ inContentCTAs:
 <div class="article-cta">
 <h3>¿Necesitas una reforma de fontanería?</h3>
 <p>Usa nuestra calculadora para estimar el presupuesto de tu reforma de baño o cocina en Bilbao.</p>
-<a href="../calculadora/index.html" class="btn">Calcular presupuesto gratis</a>
+<a href="../calculadora" class="btn">Calcular presupuesto gratis</a>
 </div>
 
 </div>

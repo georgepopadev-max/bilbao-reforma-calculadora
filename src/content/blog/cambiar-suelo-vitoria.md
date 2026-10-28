@@ -1,7 +1,7 @@
 ---
 title: "Cambiar Suelo Vitoria 2026 | Precio"
 description: "Cambiar suelo en Vitoria 2026: precios por m², materiales y empresas locales."
-canonical: https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria.html
+canonical: https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria
 city: vitoria
 category: Acabados
 date: 2026-06-29
@@ -25,7 +25,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora/
+    href: /vitoria/calculadora
 ---
 
 Si estás pensando en **cambiar el suelo en Vitoria**, seguro que tienes la misma duda que la mayoría: ¿parqué, porcelánico o vinílico? Es una de las decisiones más importantes en cualquier reforma, porque el suelo ocupa toda la superficie de la casa, condiciona el ambiente y representa un gasto considerable. En esta guía te ayudamos a decidir con datos reales de precios, ventajas e inconvenientes de cada opción, y una tabla comparativa actualizada para 2026.

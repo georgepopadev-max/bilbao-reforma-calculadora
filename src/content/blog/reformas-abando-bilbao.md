@@ -1,7 +1,7 @@
 ---
 title: "Reformas Abando Bilbao 2026"
 description: "Reformas Abando Bilbao 2026. Precios por m², multiplicador ×1.20 y empresas especializadas en el barrio. Calcula tu presupuesto."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Abando Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Abando"
-    href: "/calculadora/index.html?barrio=abando"
+    href: "/calculadora?barrio=abando"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao: Guía Especial"
-    href: "reformas-casco-viejo-bilbao.html"
+    href: "reformas-casco-viejo-bilbao"
 ---
 
 ## Reformas Abando Bilbao 2026: Guía de Precios y Empresas
@@ -77,15 +77,15 @@ Antes de planificar tu reforma, es recomendable solicitar un informe de estado d
 
 Estas empresas tienen experiencia en reformas en el barrio de Abando y edificios protegidos:
 
-- [**Reformas Fernández**](/empresas/reformas-fernandez.html) — Especialistas en reformas integrales en zona centro y edificios protegidos
-- [**Eraber Reformas**](/empresas/eraber.html) — Reformas con experiencia en el entorno de Abando y licencias de obra mayor
-- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo.html) — Reforma integral premium con diseño de interiores
+- [**Reformas Fernández**](/empresas/reformas-fernandez) — Especialistas en reformas integrales en zona centro y edificios protegidos
+- [**Eraber Reformas**](/empresas/eraber) — Reformas con experiencia en el entorno de Abando y licencias de obra mayor
+- [**Raquel González Interiorismo**](/empresas/raquel-gonzalez-interiorismo) — Reforma integral premium con diseño de interiores
 
 ## Calcula tu Reforma en Abando
 
 Usa la calculadora con el multiplicador de Abando ya aplicado para obtener una estimación orientativa de tu reforma:
 
-<a href="/calculadora/index.html?barrio=abando" class="btn">Calcular presupuesto en Abando →</a>
+<a href="/calculadora?barrio=abando" class="btn">Calcular presupuesto en Abando →</a>
 
 ## Preguntas Frecuentes sobre Reformas en Abando
 
@@ -104,22 +104,22 @@ Comprar para reformar en Abando puede compensar si encuentras un piso en mal est
 
 ## Ver También
 
-- Página de barrio: [Reformas en Abando Bilbao](/barrios/reforma-abando.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en Abando](/calculadora/index.html?barrio=abando)
+- Página de barrio: [Reformas en Abando Bilbao](/barrios/reforma-abando)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Abando](/calculadora?barrio=abando)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu.html)
-- [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+- [Reformas en Indautxu Bilbao](/barrios/reforma-indautxu)
+- [Reformas en Begoña Bilbao](/barrios/reforma-begona)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
 
 ### Blogs relacionados
 
-- [Reformas Indautxu Bilbao 2026](/blog/reformas-indautxu-bilbao.html)
-- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao.html)
+- [Reformas Indautxu Bilbao 2026](/bilbao/barrios/indautxu)
+- [Reformas Begoña Bilbao 2026](/blog/reformas-begona-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

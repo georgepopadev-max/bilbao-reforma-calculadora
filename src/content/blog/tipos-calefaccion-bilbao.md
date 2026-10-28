@@ -1,7 +1,7 @@
 ---
 title: "Tipos Calefacción Bilbao 2026 | Guía"
 description: "Tipos de calefacción en Bilbao 2026: gas, aerotermia, suelo radiante, biomasa. Compara precios."
-canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 category: "calefaccion"
 city: "bilbao"
 faqs:
@@ -19,22 +19,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Tipos de Calefacción en Bilbao 2026: Guía Completa para tu Reforma"
-    url: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"
-    href: "aerotermia-bilbao-ventajas.html"
+    href: "aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion.html"
+    href: "suelo-radiante-vs-calefaccion"
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"
-    href: "aerotermia-bilbao-ventajas.html"
+    href: "aerotermia-bilbao-ventajas"
   - type: "leer"
     label: "Suelo Radiante vs Calefacción Convencional"
-    href: "suelo-radiante-vs-calefaccion.html"
+    href: "suelo-radiante-vs-calefaccion"
 priceTables: 0
 ---
 
@@ -48,8 +48,8 @@ priceTables: 0
   <p>En esta guía completa analizamos todos los sistemas de calefacción disponibles en Bilbao para 2025: desde el clásico gas natural hasta la moderna aerotermia, pasando por el suelo radiante y los radiadores de última generación. Te ayudamos a comparar costes de instalación, consumo real y qué conviene según el tipo de edificio donde vivas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="aerotermia-bilbao-ventajas.html">Aerotermia en Bilbao: Ventajas y Precios</a>
-  <a href="suelo-radiante-vs-calefaccion.html">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
+  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 
 
@@ -201,8 +201,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="aerotermia-bilbao-ventajas.html">Aerotermia en Bilbao: Ventajas y Precios</a>
-  <a href="suelo-radiante-vs-calefaccion.html">Suelo Radiante vs Calefacción Convencional</a>
+  <a href="aerotermia-bilbao-ventajas">Aerotermia en Bilbao: Ventajas y Precios</a>
+  <a href="suelo-radiante-vs-calefaccion">Suelo Radiante vs Calefacción Convencional</a>
 </div>
 <h2>Conclusión: Invierte en Eficiencia, No Solo en Calor</h2>
 
@@ -214,10 +214,10 @@ priceTables: 0
   <div class="blog-cta">
   <h3>¿Sabes qué sistema de calefacción necesitas?</h3>
   <p>Usa nuestra calculadora gratuita para estimar el coste de tu reforma de calefacción en Bilbao.</p>
-  <a href="../calculadora/index.html">Calcular presupuesto gratis -></a>
+  <a href="../calculadora">Calcular presupuesto gratis -></a>
   </div>
 
   <nav class="blog-nav">
-  <a href="licencias-obra-bilbao-2026.html">← Licencias de obra en Bilbao</a>
-  <a href="materiales-cocina-bilbao.html">Encimeras de cocina -></a>
+  <a href="licencias-obra-bilbao-2026">← Licencias de obra en Bilbao</a>
+  <a href="materiales-cocina-bilbao">Encimeras de cocina -></a>
   </nav>

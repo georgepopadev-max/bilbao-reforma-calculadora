@@ -1,7 +1,7 @@
 ---
 title: "Reforma Piso 80m² Bilbao: Caso Práctico"
 description: "Reforma piso 80m2 Bilbao: caso práctico real con presupuesto desglosado. Tabla de precios por partida para reforma media en piso típico bilbaino. Ejemplo completo 2026."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo"
 category: "presupuesto"
 city: "bilbao"
 faqs:
@@ -19,38 +19,38 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Piso 80m² Bilbao: Caso Práctico Real con Presupuesto Desglosado 2026"
-    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao-ejemplo"
 inContentCTAs:
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa"
-    href: "reforma-80m2-bilbao.html"
+    href: "reforma-80m2-bilbao"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
 priceTables: 0
 ---
 
-<p>Una de las mejores formas de entender cuánto costará tu reforma es ver un caso real. En este artículo te presento el proyecto de reforma de los García (nombre ficticio) para su piso de 80m² en <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, Bilbao. Es un piso de tres dormitorios en un edificio de los años 70 que llevaron a reforma media hace dos años.</p>
+<p>Una de las mejores formas de entender cuánto costará tu reforma es ver un caso real. En este artículo te presento el proyecto de reforma de los García (nombre ficticio) para su piso de 80m² en <strong><a href="/bilbao/barrios/santutxu">Santutxu</a></strong>, Bilbao. Es un piso de tres dormitorios en un edificio de los años 70 que llevaron a reforma media hace dos años.</p>
 
   <p>El presupuesto real fue de <strong>34.600 euros</strong> (IVA incluido, materiales de gama media). He desglosado cada partida para que puedas usarlo como referencia y entender cómo se estructura un presupuesto de reforma en Bilbao. Con las variaciones de mercado de 2025, el mismo proyecto costaría entre <strong>32.000 y 38.000 euros</strong>.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
 </div>
 
 
   <h2>Contexto del Proyecto: El Piso de los García</h2>
 
-  <p>El piso está situado en un edificio de los años 70 en <strong><a href="/bilbao/barrios/santutxu.html">Santutxu</a></strong>, una de las zonas más cotizadas de Bilbao para familias. Características:</p>
+  <p>El piso está situado en un edificio de los años 70 en <strong><a href="/bilbao/barrios/santutxu">Santutxu</a></strong>, una de las zonas más cotizadas de Bilbao para familias. Características:</p>
 
   <ul>
   <li><strong>Superficie:</strong>80 m² útiles (aproximadamente 95 m² construidos)</li>
@@ -456,8 +456,8 @@ priceTables: 0
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="reforma-80m2-bilbao.html">Reforma 80m² Bilbao: Guía Completa</a>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao">Reforma 80m² Bilbao: Guía Completa</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
 </div>
 <h2>Lecciones de Este Caso Práctico</h2>
 
@@ -494,7 +494,7 @@ priceTables: 0
   <div class="cta-section">
   <h3>Calcula el Presupuesto de tu Reforma en Minutos</h3>
   <p>Usa nuestra calculadora para obtener una estimación personalizada para tu piso. Configura tipo de reforma, metros cuadrados, antigüedad del edificio y calidad de materiales.</p>
-  <a href="../index.html" class="cta-btn">Calcular Presupuesto ->
+  <a href="/" class="cta-btn">Calcular Presupuesto ->
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
   </a>
   </div>
@@ -502,23 +502,23 @@ priceTables: 0
   <div class="article-cta">
   <h3>¿Cuánto costaría tu reforma?</h3>
   <p>Usa la calculadora para obtener una estimación personalizada en menos de 2 minutos.</p>
-  <a href="../calculadora/integral-bilbao.html">Calcular mi presupuesto -></a>
+  <a href="../calculadora/integral-bilbao">Calcular mi presupuesto -></a>
   </div>
 
   </a>
   </div>
   <div class="related-card">
-  <a href="reforma-80m2-bilbao.html">
+  <a href="reforma-80m2-bilbao">
   <div class="related-card-title">Reforma 80m² Bilbao: Guía Completa</div>
   </a>
   </div>
   <div class="related-card">
-  <a href="reforma-vs-comprar-bilbao.html">
+  <a href="reforma-vs-comprar-bilbao">
   <div class="related-card-title">Reforma Integral vs Comprar Piso Nuevo</div>
   </a>
   </div>
   <div class="related-card">
-  <a href="reformas-bilbao-guia-2025.html">
+  <a href="reformas-bilbao-guia-2025">
   <div class="related-card-title">Reformas Bilbao: Guía Completa 2026</div>
   </a>
   </div>

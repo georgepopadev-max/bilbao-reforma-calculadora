@@ -1,4 +1,5 @@
 ---
+import { absoluteUrl } from '../lib/urls';
 /**
  * EmpresaLayout — Para fichas de empresa individual
  * A3 Zone
@@ -42,7 +43,7 @@ const schema = {
   '@type': 'LocalBusiness',
   name: empresa.name,
   description: empresa.description,
-  url: `https://www.bilbaoreforma.es/empresas/${empresa.slug}.html`,
+  url: absoluteUrl(Astro.url.pathname),
   telephone: empresa.phone,
   address: {
     '@type': 'PostalAddress',
@@ -82,7 +83,7 @@ const schema = {
 <BaseLayout
   title={`${empresa.name} | ${empresa.location} 2026`}
   description={`${empresa.description} Tel y servicios. Reseñas verificadas.`}
-  canonical={`https://www.bilbaoreforma.es/empresas/${empresa.slug}.html`}
+  canonical={Astro.url.pathname}
   ogImage={ogImage}
   ogImageAlt={ogImageAlt}
 >
@@ -100,11 +101,11 @@ const schema = {
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol class="breadcrumb-list">
           <li class="breadcrumb-item">
-            <a href="/index.html">Bilbao Reforma</a>
+            <a href="/">Bilbao Reforma</a>
           </li>
           <li class="breadcrumb-sep" aria-hidden="true">›</li>
           <li class="breadcrumb-item">
-            <a href="/empresas/index.html">Empresas</a>
+            <a href="/empresas">Empresas</a>
           </li>
           <li class="breadcrumb-sep" aria-hidden="true">›</li>
           <li class="breadcrumb-item is-current" aria-current="page">{empresa.name}</li>
@@ -209,7 +210,7 @@ const schema = {
             </svg>
             Llamar ahora
           </a>
-          <a href="/calculadora/index.html" class="cta-button cta-button-secondary">
+          <a href="/calculadora" class="cta-button cta-button-secondary">
             Calcular presupuesto
           </a>
         </div>

@@ -1,7 +1,7 @@
 ---
 title: "Reformas Begoña Bilbao 2026"
 description: "Reformas Begoña Bilbao 2026. Precios por m², multiplicador ×1.05 y empresas especializadas en el barrio. Guía práctica."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao"
 date: "3 julio 2026"
 category: "Reformas Bilbao"
 city: "bilbao"
@@ -17,16 +17,16 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reformas Begoña Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Begoña"
-    href: "/calculadora/index.html?barrio=begona"
+    href: "/calculadora?barrio=begona"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao 2025: €/m² y Presupuesto"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
 ---
 
 ## Reformas Begoña Bilbao 2026: Guía Local
@@ -66,15 +66,15 @@ Base: Bilbao 700-1.100 €/m² × multiplicador 1.05:
 
 Empresas con experiencia en reformas en el barrio de Begoña:
 
-- [**Vascol Reformas**](/empresas/vascol-reformas.html) — Reformas generales con buena relación calidad-precio
-- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui.html) — Especialistas en fontanería y reformas de baño y cocina
-- [**RB Interiores**](/empresas/rb-interiores.html) — Interiorismo y reformas de vivienda
+- [**Vascol Reformas**](/empresas/vascol-reformas) — Reformas generales con buena relación calidad-precio
+- [**Reformas Zunzunegui**](/empresas/reformas-zunzunegui) — Especialistas en fontanería y reformas de baño y cocina
+- [**RB Interiores**](/empresas/rb-interiores) — Interiorismo y reformas de vivienda
 
 ## Calcula tu Reforma en Begoña
 
 Abre la calculadora con el multiplicador de Begoña ya aplicado:
 
-<a href="/calculadora/index.html?barrio=begona" class="btn">Calcular presupuesto en Begoña →</a>
+<a href="/calculadora?barrio=begona" class="btn">Calcular presupuesto en Begoña →</a>
 
 ## Preguntas Frecuentes sobre Reformas en Begoña
 
@@ -93,22 +93,22 @@ La pendiente de Begoña dificulta el acceso en edificios sin ascensor. Esto pued
 
 ## Ver También
 
-- Página de barrio: [Reformas en Begoña Bilbao](/barrios/reforma-begona.html)
-- Calculadora con multiplicador aplicado: [Calcular presupuesto en Begoña](/calculadora/index.html?barrio=begona)
+- Página de barrio: [Reformas en Begoña Bilbao](/barrios/reforma-begona)
+- Calculadora con multiplicador aplicado: [Calcular presupuesto en Begoña](/calculadora?barrio=begona)
 
 ### Otros barrios de Bilbao
 
-- [Reformas en Santutxu Bilbao](/barrios/reforma-santutxu.html)
-- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu.html)
-- [Reformas en Deusto Bilbao](/barrios/reforma-deusto.html)
+- [Reformas en Santutxu Bilbao](/barrios/reforma-santutxu)
+- [Reformas en Zabalburu Bilbao](/barrios/reforma-zabalburu)
+- [Reformas en Deusto Bilbao](/barrios/reforma-deusto)
 
 ### Blogs relacionados
 
-- [Reformas Santutxu Bilbao 2026](/blog/reformas-santutxu-bilbao.html)
-- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao.html)
+- [Reformas Santutxu Bilbao 2026](/bilbao/barrios/santutxu)
+- [Reformas Zabalburu Bilbao 2026](/blog/reformas-zabalburu-bilbao)
 
 ### Sobre reforma integral en Bilbao
 
-- [Calculadora de reformas Bilbao 2026](/calculadora/index.html) — presupuesto orientativo en 2 minutos
-- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao.html) — guía completa con €/m² reales
-- [Empresas de reformas verificadas en Bilbao](/empresas/index.html)
+- [Calculadora de reformas Bilbao 2026](/calculadora) — presupuesto orientativo en 2 minutos
+- [Precio reforma integral Bilbao 2026](/blog/precio-reforma-integral-bilbao) — guía completa con €/m² reales
+- [Empresas de reformas verificadas en Bilbao](/empresas)

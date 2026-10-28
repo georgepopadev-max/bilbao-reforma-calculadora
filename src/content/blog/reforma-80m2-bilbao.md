@@ -1,7 +1,7 @@
 ---
 title: "Reforma Piso 80m² Bilbao 2026"
 description: "Ejemplo real de reforma integral de un piso de 80m² en Bilbao. Presupuesto desglosado de 52.668€ con 18 partidas detalladas, precios 2026 y factores clave."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao.html"
+canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
 date: "15 junio 2026"
 readTime: "14 min"
 category: "presupuesto"
@@ -31,22 +31,22 @@ breadcrumbs:
   - name: "Inicio"
     url: "https://www.bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog/"
+    url: "https://www.bilbaoreforma.es/blog"
   - name: "Reforma Piso 80m² Bilbao: Ejemplo Real con Presupuesto Desglosado 2026"
-    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao.html"
+    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Caso Práctico: Reforma 80m² Bilbao"
-    href: "reforma-80m2-bilbao-ejemplo.html"
+    href: "reforma-80m2-bilbao-ejemplo"
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2025 con €/m²"
-    href: "precio-reforma-integral-bilbao.html"
+    href: "precio-reforma-integral-bilbao"
   - type: "leer"
     label: "Caso Práctico: Reforma 80m² Bilbao"
-    href: "reforma-80m2-bilbao-ejemplo.html"
+    href: "reforma-80m2-bilbao-ejemplo"
 priceTables: 2
 ---
 
@@ -68,11 +68,11 @@ priceTables: 2
 
   <h2>Ejemplo real: reforma integral piso 80m² en Bilbao</h2>
 
-  <p>Este ejemplo corresponde a un piso real reformado en el barrio de <a href="/bilbao/barrios/indautxu.html">Indautxu</a> (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
+  <p>Este ejemplo corresponde a un piso real reformado en el barrio de <a href="/bilbao/barrios/indautxu">Indautxu</a> (Bilbao) en 2026. La vivienda tenía 80m² útiles, era de un edificio de los años 80, y se reformó con acabados de gama media-alta. No se tocó la distribución original (se mantuvo la posición de cocina, baño y tabiques).</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao-ejemplo.html">Caso Práctico: Reforma 80m² Bilbao</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao-ejemplo">Caso Práctico: Reforma 80m² Bilbao</a>
 </div>
 
 
@@ -337,13 +337,13 @@ priceTables: 2
   <div class="article-cta">
   <h3>¿Quieres un presupuesto personalizado para tu reforma?</h3>
   <p>Usa nuestra calculadora para estimar el coste de tu reforma de 80m² en Bilbao y compara hasta 3 empresas locales especializadas.</p>
-  <a href="../calculadora/index.html" class="btn">Calcular presupuesto -></a>
+  <a href="../calculadora" class="btn">Calcular presupuesto -></a>
   </div>
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="precio-reforma-integral-bilbao.html">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
-  <a href="reforma-80m2-bilbao-ejemplo.html">Caso Práctico: Reforma 80m² Bilbao</a>
+  <a href="precio-reforma-integral-bilbao">Precio Reforma Integral Bilbao: Guía 2025 con €/m²</a>
+  <a href="reforma-80m2-bilbao-ejemplo">Caso Práctico: Reforma 80m² Bilbao</a>
 </div>
 <h2>Preguntas frecuentes</h2>
 

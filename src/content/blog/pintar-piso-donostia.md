@@ -2,7 +2,7 @@
 
 title: "Pintar Piso Donostia: Precios por m² 2026"
 description: "Precio pintar piso Donostia 2026: €/m² según tipo de pintura, preparación de paredes, diferencia entre vinílica y acrílica, y coste de alisar gotelé."
-canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-donostia.html"
+canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-donostia"
 city: donostia
 category: Acabados
 date: 2026-06-29
@@ -20,7 +20,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /donostia/calculadora/
+    href: /donostia/calculadora
 ---
 
 Pintar un piso es la reforma más accesible y la que mayor impacto visual produce por menos dinero. Pero cuando vas a pedir presupuestos en Donostia, te encuentras con un rango de precios que va de los 8 €/m² a los 15 €/m², y no queda nada claro qué incluye uno y otro. Vamos a resolverlo.

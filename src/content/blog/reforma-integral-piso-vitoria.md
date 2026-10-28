@@ -1,7 +1,7 @@
 ---
 title: "Reforma Integral Vitoria 2026: Precios"
 description: "Precio reforma integral Vitoria 2026. Cuánto cuesta reformar un piso entero en Vitoria-Gasteiz. Factores que influyen, precios por m² y calculadora de presupuesto gratis."
-canonical: https://www.bilbaoreforma.es/blog/reforma-integral-piso-vitoria.html
+canonical: https://www.bilbaoreforma.es/blog/reforma-integral-piso-vitoria
 city: vitoria
 category: Reformas
 date: 2026-06-29
@@ -19,7 +19,7 @@ faqs:
 inContentCTAs:
   - type: calculator
     label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora/
+    href: /vitoria/calculadora
 ---
 
 Cuando decides dar el paso de **reformar tu piso en Vitoria de forma integral**, la primera pregunta que surge es siempre la misma: **¿cuánto va a costar?** Y es una pregunta legítima, porque una reforma integral no es una mano de pintura: implica tocar la estructura, las instalaciones, los acabados. En esta guía te damos los **precios reales de reforma integral en Vitoria en 2026**, con datos actualizados por metro cuadrado y ejemplos concretos para que puedas hacer números antes de pedir un solo presupuesto.
