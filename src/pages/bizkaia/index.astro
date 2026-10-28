@@ -1,0 +1,64 @@
+---
+/**
+ * Hub de municipios de Bizkaia
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { MUNICIPIOS } from '../../data/municipios';
+import { SITE_URL } from '../../lib/urls';
+
+const comarcas = [...new Set(MUNICIPIOS.map((m) => m.comarca))];
+
+const jsonSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Bizkaia', item: `${SITE_URL}/bizkaia` },
+    ],
+  },
+];
+---
+
+<BaseLayout title="Reformas en Bizkaia: Precios por Municipio" description="Reformas en los municipios de Bizkaia: Getxo, Barakaldo, Portugalete, Santurtzi, Basauri, Leioa, Galdakao, Sestao, Durango y Erandio. Precios y presupuestos." canonical={`${SITE_URL}/bizkaia`} jsonSchemas={jsonSchemas}>
+  <Header city="bilbao" />
+
+  <main class="hub">
+    <nav class="hub-breadcrumb" aria-label="Breadcrumb"><a href="/">Inicio</a> <span>›</span> <span>Bizkaia</span></nav>
+    <h1>Reformas en Bizkaia</h1>
+    <p>Además de en <a href="/bilbao">Bilbao</a>, trabajamos con empresas de reformas en los principales municipios de Bizkaia. Cada uno tiene su tipo de vivienda y sus particularidades: elige el tuyo para ver precios orientativos, las reformas más habituales y los trámites con su Ayuntamiento.</p>
+
+    {comarcas.map((comarca) => (
+      <section>
+        <h2>{comarca}</h2>
+        <ul class="hub-list">
+          {MUNICIPIOS.filter((m) => m.comarca === comarca).map((m) => (
+            <li>
+              <a href={`/bizkaia/${m.slug}`}>Reformas en {m.name}</a>
+              <p>{m.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <LeadForm city="bilbao" source="bilbao-reforma-municipio" title="¿Tu municipio no está en la lista? Pide presupuesto igualmente" />
+  </main>
+
+  <Footer city="bilbao" />
+</BaseLayout>
+
+<style>
+  .hub { box-sizing: border-box; max-width: 860px; margin: 0 auto; padding: 2rem 1rem 3rem; font-family: var(--font-inter); color: var(--color-grafito); line-height: 1.7; }
+  .hub-breadcrumb { display: flex; gap: 0.5rem; font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1rem; }
+  .hub-breadcrumb a, .hub a { color: var(--color-terracota); }
+  .hub h1 { font-family: var(--font-playfair); font-size: clamp(1.75rem, 5vw, 2.5rem); margin: 0 0 1rem; }
+  .hub h2 { font-family: var(--font-playfair); font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+  .hub-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+  .hub-list li { background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: var(--radius-card); padding: 1rem 1.25rem; }
+  .hub-list a { font-weight: 600; text-decoration: none; }
+  .hub-list p { margin: 0.25rem 0 0; font-size: 0.875rem; color: var(--color-gris); }
+</style>

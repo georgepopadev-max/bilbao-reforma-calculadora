@@ -26,6 +26,7 @@ const { city = 'bilbao', variant = 'default' } = Astro.props;
           <a href={cityPath(city, 'calculadora')} class="footer-nav-link">Calculadora</a>
           <a href={cityPath(city, 'blog')} class="footer-nav-link">Blog</a>
           <a href={cityPath(city, 'empresas')} class="footer-nav-link">Empresas</a>
+          {city === 'bilbao' && <a href="/bizkaia" class="footer-nav-link">Municipios de Bizkaia</a>}
           <a href="/contacto" class="footer-nav-link">Contacto</a>
         </nav>
       </div>

@@ -1,0 +1,154 @@
+---
+/**
+ * Página de reformas por municipio de Bizkaia (datos en src/data/municipios.ts)
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { MUNICIPIOS, type Municipio } from '../../data/municipios';
+import { SITE_URL } from '../../lib/urls';
+
+export function getStaticPaths() {
+  return MUNICIPIOS.map((municipio) => ({ params: { municipio: municipio.slug }, props: { municipio } }));
+}
+
+const { municipio } = Astro.props as { municipio: Municipio };
+const pageUrl = `${SITE_URL}/bizkaia/${municipio.slug}`;
+const vecinos = MUNICIPIOS.filter((m) => m.slug !== municipio.slug && m.comarca === municipio.comarca);
+
+// Referencia de precios para Bizkaia; el texto de cada municipio explica cómo se desvía
+const PRECIOS = [
+  { obra: 'Reforma integral (calidades medias)', precio: '850-1.150 €/m²' },
+  { obra: 'Baño completo de 4-5 m²', precio: '5.500-9.500 €' },
+  { obra: 'Cocina completa de 8 m²', precio: '8.000-14.000 €' },
+  { obra: 'Cambio de bañera por ducha', precio: '1.400-3.000 €' },
+  { obra: 'Pintar un piso de 80 m²', precio: '1.500-3.500 €' },
+  { obra: 'Cambiar el suelo (material y colocación)', precio: '20-100 €/m²' },
+];
+
+const jsonSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `Reformas en ${municipio.name}`,
+    serviceType: 'Reformas de viviendas',
+    url: pageUrl,
+    areaServed: { '@type': 'City', name: municipio.name, containedInPlace: { '@type': 'AdministrativeArea', name: 'Bizkaia' } },
+    provider: { '@id': `${SITE_URL}/#organization` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: municipio.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Bizkaia', item: `${SITE_URL}/bizkaia` },
+      { '@type': 'ListItem', position: 3, name: municipio.name, item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout title={municipio.title} description={municipio.description} canonical={pageUrl} jsonSchemas={jsonSchemas} ogImage={`${SITE_URL}/images/og/bilbao-og.jpg`} ogImageAlt={`Reformas en ${municipio.name}`}>
+  <Header city="bilbao" />
+
+  <main class="muni">
+    <nav class="muni-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> <span>›</span> <a href="/bizkaia">Bizkaia</a> <span>›</span> <span>{municipio.name}</span>
+    </nav>
+
+    <header class="muni-hero">
+      <p class="muni-kicker">{municipio.comarca} · Bizkaia</p>
+      <h1>Reformas en {municipio.name}</h1>
+      {municipio.intro.map((p) => <p>{p}</p>)}
+    </header>
+
+    <LeadForm city="bilbao" location={municipio.name} source="bilbao-reforma-municipio" title={`Recibe hasta 3 presupuestos para tu reforma en ${municipio.name}`} />
+
+    <section>
+      <h2>Zonas y tipos de vivienda</h2>
+      <div class="muni-zonas">
+        {municipio.zonas.map((z) => (
+          <article>
+            <h3>{z.name}</h3>
+            <p>{z.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2>Las reformas más pedidas en {municipio.name}</h2>
+      <ul>{municipio.obras.map((o) => <li>{o}</li>)}</ul>
+    </section>
+
+    <section>
+      <h2>Precios orientativos</h2>
+      <p>{municipio.precio}</p>
+      <div class="muni-table-wrap">
+        <table>
+          <thead><tr><th>Obra</th><th>Precio orientativo en Bizkaia</th></tr></thead>
+          <tbody>{PRECIOS.map((r) => <tr><td>{r.obra}</td><td>{r.precio}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p class="muni-note">Precios con materiales y mano de obra. Para una cifra ajustada a tu vivienda, usa la <a href="/calculadora">calculadora de reformas</a>.</p>
+    </section>
+
+    <section>
+      <h2>Licencias y trámites</h2>
+      <p>{municipio.tramites}</p>
+      <p>Para más detalle sobre qué obra necesita licencia y cuál solo comunicación, consulta la <a href="/blog/licencias-obra-bilbao-2026">guía de licencias de obra</a>. Si tu reforma mejora la eficiencia o la accesibilidad, revisa también las <a href="/blog/subvenciones-reformas-bilbao-2026">ayudas para reformar en Bizkaia</a>.</p>
+    </section>
+
+    <section>
+      <h2>Preguntas frecuentes</h2>
+      {municipio.faqs.map((f) => (
+        <div class="muni-faq">
+          <h3>{f.q}</h3>
+          <p>{f.a}</p>
+        </div>
+      ))}
+    </section>
+
+    {vecinos.length > 0 && (
+      <section>
+        <h2>Otros municipios de {municipio.comarca}</h2>
+        <ul class="muni-links">{vecinos.map((m) => <li><a href={`/bizkaia/${m.slug}`}>Reformas en {m.name}</a></li>)}</ul>
+      </section>
+    )}
+  </main>
+
+  <Footer city="bilbao" />
+</BaseLayout>
+
+<style>
+  .muni { box-sizing: border-box; max-width: 860px; margin: 0 auto; padding: 2rem 1rem 3rem; font-family: var(--font-inter); color: var(--color-grafito); line-height: 1.7; }
+  .muni-breadcrumb { display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1rem; }
+  .muni-breadcrumb a { color: var(--color-terracota); text-decoration: none; }
+  .muni-kicker { font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-verde-montana); margin: 0 0 0.25rem; }
+  .muni h1 { font-family: var(--font-playfair); font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.2; margin: 0 0 1rem; }
+  .muni h2 { font-family: var(--font-playfair); font-size: 1.375rem; margin: 2.5rem 0 0.75rem; }
+  .muni h3 { font-size: 1.0625rem; margin: 0 0 0.375rem; }
+  .muni p { margin: 0 0 1rem; }
+  .muni a { color: var(--color-terracota); }
+  .muni ul { margin: 0 0 1rem 1.25rem; padding: 0; }
+  .muni li { margin-bottom: 0.375rem; }
+  .muni-zonas { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  @media (min-width: 640px) { .muni-zonas { grid-template-columns: 1fr 1fr; } }
+  .muni-zonas article { background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: var(--radius-card); padding: 1rem 1.25rem; }
+  .muni-zonas article p { margin: 0; font-size: 0.9375rem; }
+  .muni-table-wrap { overflow-x: auto; }
+  .muni table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin: 0.5rem 0 1rem; }
+  .muni th { background: var(--color-verde-montana); color: var(--color-blanco); text-align: left; padding: 0.625rem 0.75rem; font-size: 0.8125rem; }
+  .muni td { padding: 0.625rem 0.75rem; border-bottom: 1px solid var(--color-beige); }
+  .muni td:last-child { white-space: nowrap; }
+  .muni-note { font-size: 0.875rem; color: var(--color-gris); }
+  .muni-faq { border-bottom: 1px solid var(--color-beige); padding: 0.75rem 0; }
+  .muni-faq p { margin: 0; color: var(--color-gris); }
+  .muni-links { list-style: none; margin-left: 0 !important; display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+</style>
