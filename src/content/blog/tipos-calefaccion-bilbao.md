@@ -218,6 +218,6 @@ priceTables: 0
   </div>
 
   <nav class="blog-nav">
-  <a href="licencias-obra-bilbao.html">← Licencias de obra en Bilbao</a>
+  <a href="licencias-obra-bilbao-2026.html">← Licencias de obra en Bilbao</a>
   <a href="materiales-cocina-bilbao.html">Encimeras de cocina -></a>
   </nav>

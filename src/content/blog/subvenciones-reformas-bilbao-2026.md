@@ -5,7 +5,7 @@ canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026.
 date: "21 junio 2026"
 readTime: "10 min"
 category: "subvenciones"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Puedo solicitar las ayudas del Gobierno Vasco si vivo de alquiler?"
     a: "En algunas líneas sí, pero necesitas el consentimiento expreso del propietario y, en muchos casos, que la mejora revertir en la vivienda a través del contrato. Las ayudas autonómicas suelen estar pens"

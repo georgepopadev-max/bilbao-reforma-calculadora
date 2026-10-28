@@ -5,6 +5,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Calculator from '../components/calculator/Calculator.astro';
+import LeadForm from '../components/LeadForm.astro';
 
 const canonical = 'https://www.bilbaoreforma.es/presupuesto-reforma-cocina-bilbao.html';
 
@@ -152,13 +153,7 @@ title="Presupuesto Cocina Bilbao 2026 | Calcula el Precio Real"
       </div>
     </section>
 
-    <section class="landing-cta" style="margin-bottom:3rem;">
-      <h2>¿Necesitas presupuestos de empresas de reformas de cocina?</h2>
-      <p>Recibe propuestas de empresas especializadas en reformas de cocina en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
-      <a href="/empresas/index.html" class="cta-button">
-        Solicita 3 presupuestos →
-      </a>
-    </section>
+    <LeadForm service="cocina" city="bilbao" source="bilbao-reforma-landing" title="¿Necesitas presupuestos de empresas de reformas de cocina?" description="Recibe hasta 3 propuestas de empresas especializadas en reformas de cocina en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas." />
 
     <section class="landing-related">
       <h2>Otras calculadoras de presupuesto en Bilbao</h2>

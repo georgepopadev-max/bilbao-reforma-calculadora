@@ -135,7 +135,7 @@ priceTables: 2
   <li><strong>Ingeniero</strong>: necesario cuando hay instalaciones complejas (gas de alta presión, electricidad trifásica, climatización central)</li>
   </ul>
 
-  <p>Más información sobre licencias y requisitos en nuestro artículo sobre <a href="licencias-obra-bilbao.html">licencias de obra en Bilbao</a>.</p>
+  <p>Más información sobre licencias y requisitos en nuestro artículo sobre <a href="licencias-obra-bilbao-2026.html">licencias de obra en Bilbao</a>.</p>
 
   <h2>Comparativa de Precios: Reforma vs Reestructuración en Bilbao</h2>
   <p>La diferencia de coste no es solo de licencias. Una reestructuración implica más mano de obra, más materiales, más tiempo y más gestión. Aquí tienes los datos comparativos:</p>

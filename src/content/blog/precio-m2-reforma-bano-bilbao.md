@@ -4,7 +4,7 @@ description: "Descubre el precio por m² de una reforma de baño en Bilbao. Cost
 canonical: "https://www.bilbaoreforma.es/blog/precio-m2-reforma-bano-bilbao.html"
 readTime: "8 min"
 category: "bano"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta el m² de reforma de baño en Bilbao?"
     a: "El precio por m² de reforma de baño en Bilbao oscila entre 500 € y 1.500 €/m² dependiendo del tipo de reforma. Una reforma parcial cuesta entre 300-500 €/m², una reforma media entre 500-800 €/m², y un"

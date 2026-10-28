@@ -273,6 +273,6 @@ priceTables: 0
   </div>
 
   <nav class="blog-nav">
-  <a href="licencias-obra-bilbao.html">← Licencias de obra Bilbao</a>
+  <a href="licencias-obra-bilbao-2026.html">← Licencias de obra Bilbao</a>
   <a href="tipos-calefaccion-bilbao.html">Tipos de calefacción Bilbao -></a>
   </nav>

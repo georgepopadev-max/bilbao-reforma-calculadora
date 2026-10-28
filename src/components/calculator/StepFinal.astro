@@ -609,6 +609,7 @@
 <script>
   import { generateDoughnutSVG, type BreakdownItem } from './budget-chart';
   import { generateBudgetPDF, type BudgetInfo } from './pdf-generator';
+  import { sendLead } from '../../lib/lead-capture';
 
   // ---------------------------------------------------------------------------
   // Breakdown config: label + color + percentage of high budget
@@ -843,27 +844,20 @@
       submitBtn.textContent = 'Enviando...';
       feedback.textContent = '';
 
-      const payload = {
-        email: emailInput.value.trim(),
-        phone: phoneInput.value.trim(),
-        source: 'bilbao-reforma-calculadora',
-        calculator_type: calculatorType,
-        city: city,
-        budget_min: low,
-        budget_max: high,
-        budget_label: calcLabel,
-        consent: consentInput.checked,
-        utm_source: new URLSearchParams(window.location.search).get('utm_source') || '',
-      };
-
       try {
-        const res = await fetch('https://api.axonflow.es/public/lead-capture', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
+        const ok = await sendLead({
+          email: emailInput.value.trim(),
+          phone: phoneInput.value.trim(),
+          source: 'bilbao-reforma-calculadora',
+          calculator_type: calculatorType,
+          city: city,
+          budget_min: low,
+          budget_max: high,
+          budget_label: calcLabel,
+          consent: consentInput.checked,
         });
 
-        if (res.ok) {
+        if (ok) {
           feedback.textContent = 'Datos enviados. Te contactaremos pronto con tu desglose.';
           feedback.className = 'lf-feedback success';
           form.reset();

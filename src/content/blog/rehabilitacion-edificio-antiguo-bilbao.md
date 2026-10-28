@@ -136,7 +136,7 @@ priceTables: 2
   <li><strong>Fachada de piedra (limpieza, rejuntado, sellado)</strong>: 250-500 €/m²</li>
   <li><strong>Andamios (coste mensual en Bilbao)</strong>: 800-1.500 €/mes para un edificio de 4-5 plantas</li>
   </ul>
-  <p>En el Casco Viejo, donde la mayoría de edificios tienen protección, cualquier intervención en fachada necesita <a href="licencias-obra-bilbao.html">licencia de obra mayor y informe de Patrimonio</a>, lo que añade 2-4 meses de tramitación y un sobrecoste del 10-15% en materiales (deben ser homologados).</p>
+  <p>En el Casco Viejo, donde la mayoría de edificios tienen protección, cualquier intervención en fachada necesita <a href="licencias-obra-bilbao-2026.html">licencia de obra mayor y informe de Patrimonio</a>, lo que añade 2-4 meses de tramitación y un sobrecoste del 10-15% en materiales (deben ser homologados).</p>
 
   <h3>3. Rewiring eléctrico (10-15% del presupuesto)</h3>
   <p>La instalación eléctrica de un edificio de los años 50-60 está muy lejos de cumplir el actual <strong>Reglamento electrotécnico de baja tensión</strong>. En una rehabilitación integral se suele substituir:</p>

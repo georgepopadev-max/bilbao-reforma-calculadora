@@ -7,6 +7,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import LeadForm from '../../components/LeadForm.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -27,6 +28,18 @@ const category = post.data.category;
 const city = post.data.city || 'bilbao';
 const faqs = (post.data.faqs && Array.isArray(post.data.faqs)) ? post.data.faqs : [];
 const inContentCTAs = (post.data.inContentCTAs && Array.isArray(post.data.inContentCTAs)) ? post.data.inContentCTAs : [];
+
+// Formulario de lead adaptado a la intención del artículo
+const SERVICE_BY_CATEGORY: Record<string, string> = {
+  bano: 'bano', cocina: 'cocina', cocinas: 'cocina', integral: 'integral', 'reforma integral': 'integral',
+  pintura: 'pintura', acabados: 'pintura', suelo: 'suelo', calefaccion: 'calefaccion', 'calefacción': 'calefaccion',
+};
+const leadService = SERVICE_BY_CATEGORY[String(category || '').toLowerCase()] || 'integral';
+const leadCopy = category === 'subvenciones'
+  ? { title: '¿Vas a reformar con ayudas? Te pasamos 3 presupuestos', description: 'Para pedir la mayoría de ayudas necesitas un presupuesto de la obra. Te ponemos en contacto con hasta 3 empresas de tu zona, gratis y sin compromiso.' }
+  : /licencia/.test(post.slug)
+  ? { title: 'Pide el presupuesto que necesitas para la licencia', description: 'Para solicitar la licencia de obra necesitas un presupuesto detallado. Te ponemos en contacto con hasta 3 empresas de tu zona, gratis y sin compromiso.' }
+  : {};
 
 // Build FAQPage JSON-LD
 const faqPageSchema = {
@@ -84,6 +97,8 @@ const breadcrumbSchema = {
           <Content />
         </div>
       </article>
+
+      <LeadForm service={leadService} city={city} source="bilbao-reforma-blog" {...leadCopy} />
 
       {faqs.length > 0 && (
         <section style="margin-top:2rem;background:#FAF7F2;border-radius:12px;padding:2rem">

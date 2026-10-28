@@ -4,7 +4,7 @@ description: "Guía para elegir empresas de reformas en Bilbao. Compara presupue
 canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-bilbao.html"
 readTime: "12 min"
 category: "empresas"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta una reforma de piso en Bilbao?"
     a: "Una reforma parcial (baño + cocina) oscila entre 8.000-25.000 €. Una reforma integral de un piso de 80m² puede costar entre 50.000-120.000 €, dependiendo del estado inicial y calidades elegidas."

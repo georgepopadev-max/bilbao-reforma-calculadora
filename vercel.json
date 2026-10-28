@@ -4,77 +4,313 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/vitoria/blog/subvenciones-reformas-vitoria.html",
+      "destination": "/blog/subvenciones-reformas-vitoria.html",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/subvenciones-reformas-donostia.html",
+      "destination": "/blog/subvenciones-reformas-donostia.html",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/bano-reforma-donostia.html",
+      "destination": "/donostia/blog/reforma-bano-donostia-precios-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/pintar-piso-vitoria.html",
+      "destination": "/blog/pintar-piso-vitoria.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/licencias-obra-bilbao.html",
+      "destination": "/blog/licencias-obra-bilbao-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/licencias-obra-2026.html",
+      "destination": "/blog/licencias-obra-bilbao-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/licencias-obra-mayor-bilbao-2026.html",
+      "destination": "/blog/licencias-obra-bilbao-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/presupuesto-pintura-piso.html",
+      "destination": "/presupuesto-pintura-piso-bilbao.html",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/calcular-reforma/:path*",
+      "destination": "/donostia/calculadora/",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/calcular-reforma.html",
+      "destination": "/donostia/calculadora/",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/calcular-reforma/:path*",
+      "destination": "/vitoria/calculadora/",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/calcular-reforma.html",
+      "destination": "/vitoria/calculadora/",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/calcular-reforma",
+      "destination": "/donostia/calculadora/",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/calcular-reforma",
+      "destination": "/vitoria/calculadora/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/", "destination": "/blog.html" },
-    { "source": "/donostia", "destination": "/donostia.html" },
-    { "source": "/donostia/", "destination": "/donostia.html" },
-    { "source": "/donostia/blog", "destination": "/donostia/blog.html" },
-    { "source": "/donostia/blog/", "destination": "/donostia/blog.html" },
-    { "source": "/donostia/calculadora", "destination": "/donostia/calculadora.html" },
-    { "source": "/donostia/calculadora/", "destination": "/donostia/calculadora.html" },
-    { "source": "/donostia/empresas", "destination": "/donostia/empresas.html" },
-    { "source": "/donostia/empresas/", "destination": "/donostia/empresas.html" },
-    { "source": "/donostia/calcular-reforma", "destination": "/donostia/calcular-reforma.html" },
-    { "source": "/donostia/calcular-reforma/", "destination": "/donostia/calcular-reforma.html" },
-    { "source": "/donostia/reforma-donostia", "destination": "/donostia/reforma-donostia.html" },
-    { "source": "/donostia/reforma-donostia/", "destination": "/donostia/reforma-donostia.html" },
-    { "source": "/vitoria", "destination": "/vitoria.html" },
-    { "source": "/vitoria/", "destination": "/vitoria.html" },
-    { "source": "/vitoria/blog", "destination": "/vitoria/blog.html" },
-    { "source": "/vitoria/blog/", "destination": "/vitoria/blog.html" },
-    { "source": "/vitoria/calculadora", "destination": "/vitoria/calculadora.html" },
-    { "source": "/vitoria/calculadora/", "destination": "/vitoria/calculadora.html" },
-    { "source": "/vitoria/empresas", "destination": "/vitoria/empresas.html" },
-    { "source": "/vitoria/empresas/", "destination": "/vitoria/empresas.html" },
-    { "source": "/vitoria/calcular-reforma", "destination": "/vitoria/calcular-reforma.html" },
-    { "source": "/vitoria/calcular-reforma/", "destination": "/vitoria/calcular-reforma.html" },
-    { "source": "/vitoria/reforma-vitoria", "destination": "/vitoria/reforma-vitoria.html" },
-    { "source": "/vitoria/reforma-vitoria/", "destination": "/vitoria/reforma-vitoria.html" },
-    { "source": "/calculadora", "destination": "/calculadora.html" },
-    { "source": "/calculadora/", "destination": "/calculadora.html" },
-    { "source": "/empresas", "destination": "/empresas.html" },
-    { "source": "/empresas/", "destination": "/empresas.html" },
-    { "source": "/barrios", "destination": "/barrios.html" },
-    { "source": "/barrios/", "destination": "/barrios.html" },
-    { "source": "/calculadora/index.html", "destination": "/calculadora.html" },
-    { "source": "/empresas/index.html", "destination": "/empresas.html" },
-    { "source": "/blog/index.html", "destination": "/blog.html" },
-    { "source": "/donostia/index.html", "destination": "/donostia.html" },
-    { "source": "/vitoria/index.html", "destination": "/vitoria.html" },
-    { "source": "/donostia/calculadora/index.html", "destination": "/donostia/calculadora.html" },
-    { "source": "/donostia/empresas/index.html", "destination": "/donostia/empresas.html" },
-    { "source": "/donostia/blog/index.html", "destination": "/donostia/blog.html" },
-    { "source": "/vitoria/calculadora/index.html", "destination": "/vitoria/calculadora.html" },
-    { "source": "/vitoria/empresas/index.html", "destination": "/vitoria/empresas.html" },
-    { "source": "/donostia/calculadora/bano", "destination": "/donostia/calculadora/bano-donostia.html" },
-    { "source": "/donostia/calculadora/cocina", "destination": "/donostia/calculadora/cocina-donostia.html" },
-    { "source": "/donostia/calculadora/pintura", "destination": "/donostia/calculadora/pintura-donostia.html" },
-    { "source": "/donostia/calculadora/suelo", "destination": "/donostia/calculadora/suelo-donostia.html" },
-    { "source": "/donostia/calculadora/integral", "destination": "/donostia/calculadora/integral-donostia.html" },
-    { "source": "/vitoria/calculadora/bano", "destination": "/vitoria/calculadora/bano-vitoria.html" },
-    { "source": "/vitoria/calculadora/cocina", "destination": "/vitoria/calculadora/cocina-vitoria.html" },
-    { "source": "/vitoria/calculadora/pintura", "destination": "/vitoria/calculadora/pintura-vitoria.html" },
-    { "source": "/vitoria/calculadora/suelo", "destination": "/vitoria/calculadora/suelo-vitoria.html" },
-    { "source": "/vitoria/calculadora/integral", "destination": "/vitoria/calculadora/integral-vitoria.html" },
-    { "source": "/presupuesto-reforma-integral-bilbao", "destination": "/presupuesto-reforma-integral-bilbao.html" },
-    { "source": "/presupuesto-reforma-bano-bilbao", "destination": "/presupuesto-reforma-bano-bilbao.html" },
-    { "source": "/presupuesto-reforma-cocina-bilbao", "destination": "/presupuesto-reforma-cocina-bilbao.html" },
-    { "source": "/presupuesto-pintura-piso-bilbao", "destination": "/presupuesto-pintura-piso-bilbao.html" },
-    { "source": "/presupuesto-cambio-suelo-bilbao", "destination": "/presupuesto-cambio-suelo-bilbao.html" }
+    {
+      "source": "/blog",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/donostia",
+      "destination": "/donostia.html"
+    },
+    {
+      "source": "/donostia/",
+      "destination": "/donostia.html"
+    },
+    {
+      "source": "/donostia/blog",
+      "destination": "/donostia/blog.html"
+    },
+    {
+      "source": "/donostia/blog/",
+      "destination": "/donostia/blog.html"
+    },
+    {
+      "source": "/donostia/calculadora",
+      "destination": "/donostia/calculadora.html"
+    },
+    {
+      "source": "/donostia/calculadora/",
+      "destination": "/donostia/calculadora.html"
+    },
+    {
+      "source": "/donostia/empresas",
+      "destination": "/donostia/empresas.html"
+    },
+    {
+      "source": "/donostia/empresas/",
+      "destination": "/donostia/empresas.html"
+    },
+    {
+      "source": "/donostia/reforma-donostia",
+      "destination": "/donostia/reforma-donostia.html"
+    },
+    {
+      "source": "/donostia/reforma-donostia/",
+      "destination": "/donostia/reforma-donostia.html"
+    },
+    {
+      "source": "/vitoria",
+      "destination": "/vitoria.html"
+    },
+    {
+      "source": "/vitoria/",
+      "destination": "/vitoria.html"
+    },
+    {
+      "source": "/vitoria/blog",
+      "destination": "/vitoria/blog.html"
+    },
+    {
+      "source": "/vitoria/blog/",
+      "destination": "/vitoria/blog.html"
+    },
+    {
+      "source": "/vitoria/calculadora",
+      "destination": "/vitoria/calculadora.html"
+    },
+    {
+      "source": "/vitoria/calculadora/",
+      "destination": "/vitoria/calculadora.html"
+    },
+    {
+      "source": "/vitoria/empresas",
+      "destination": "/vitoria/empresas.html"
+    },
+    {
+      "source": "/vitoria/empresas/",
+      "destination": "/vitoria/empresas.html"
+    },
+    {
+      "source": "/vitoria/reforma-vitoria",
+      "destination": "/vitoria/reforma-vitoria.html"
+    },
+    {
+      "source": "/vitoria/reforma-vitoria/",
+      "destination": "/vitoria/reforma-vitoria.html"
+    },
+    {
+      "source": "/calculadora",
+      "destination": "/calculadora.html"
+    },
+    {
+      "source": "/calculadora/",
+      "destination": "/calculadora.html"
+    },
+    {
+      "source": "/empresas",
+      "destination": "/empresas.html"
+    },
+    {
+      "source": "/empresas/",
+      "destination": "/empresas.html"
+    },
+    {
+      "source": "/barrios",
+      "destination": "/barrios.html"
+    },
+    {
+      "source": "/barrios/",
+      "destination": "/barrios.html"
+    },
+    {
+      "source": "/calculadora/index.html",
+      "destination": "/calculadora.html"
+    },
+    {
+      "source": "/empresas/index.html",
+      "destination": "/empresas.html"
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/donostia/index.html",
+      "destination": "/donostia.html"
+    },
+    {
+      "source": "/vitoria/index.html",
+      "destination": "/vitoria.html"
+    },
+    {
+      "source": "/donostia/calculadora/index.html",
+      "destination": "/donostia/calculadora.html"
+    },
+    {
+      "source": "/donostia/empresas/index.html",
+      "destination": "/donostia/empresas.html"
+    },
+    {
+      "source": "/donostia/blog/index.html",
+      "destination": "/donostia/blog.html"
+    },
+    {
+      "source": "/vitoria/calculadora/index.html",
+      "destination": "/vitoria/calculadora.html"
+    },
+    {
+      "source": "/vitoria/empresas/index.html",
+      "destination": "/vitoria/empresas.html"
+    },
+    {
+      "source": "/donostia/calculadora/bano",
+      "destination": "/donostia/calculadora/bano-donostia.html"
+    },
+    {
+      "source": "/donostia/calculadora/cocina",
+      "destination": "/donostia/calculadora/cocina-donostia.html"
+    },
+    {
+      "source": "/donostia/calculadora/pintura",
+      "destination": "/donostia/calculadora/pintura-donostia.html"
+    },
+    {
+      "source": "/donostia/calculadora/suelo",
+      "destination": "/donostia/calculadora/suelo-donostia.html"
+    },
+    {
+      "source": "/donostia/calculadora/integral",
+      "destination": "/donostia/calculadora/integral-donostia.html"
+    },
+    {
+      "source": "/vitoria/calculadora/bano",
+      "destination": "/vitoria/calculadora/bano-vitoria.html"
+    },
+    {
+      "source": "/vitoria/calculadora/cocina",
+      "destination": "/vitoria/calculadora/cocina-vitoria.html"
+    },
+    {
+      "source": "/vitoria/calculadora/pintura",
+      "destination": "/vitoria/calculadora/pintura-vitoria.html"
+    },
+    {
+      "source": "/vitoria/calculadora/suelo",
+      "destination": "/vitoria/calculadora/suelo-vitoria.html"
+    },
+    {
+      "source": "/vitoria/calculadora/integral",
+      "destination": "/vitoria/calculadora/integral-vitoria.html"
+    },
+    {
+      "source": "/presupuesto-reforma-integral-bilbao",
+      "destination": "/presupuesto-reforma-integral-bilbao.html"
+    },
+    {
+      "source": "/presupuesto-reforma-bano-bilbao",
+      "destination": "/presupuesto-reforma-bano-bilbao.html"
+    },
+    {
+      "source": "/presupuesto-reforma-cocina-bilbao",
+      "destination": "/presupuesto-reforma-cocina-bilbao.html"
+    },
+    {
+      "source": "/presupuesto-pintura-piso-bilbao",
+      "destination": "/presupuesto-pintura-piso-bilbao.html"
+    },
+    {
+      "source": "/presupuesto-cambio-suelo-bilbao",
+      "destination": "/presupuesto-cambio-suelo-bilbao.html"
+    }
   ],
   "headers": [
     {
       "source": "/_astro/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*).html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     }
   ]

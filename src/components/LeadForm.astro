@@ -1,0 +1,214 @@
+---
+/**
+ * LeadForm — formulario corto de solicitud de presupuestos para landings y blog.
+ * El envío y la medición viven en src/lib/lead-capture.ts.
+ */
+export interface Props {
+  service?: string;
+  city?: string;
+  title?: string;
+  description?: string;
+  source?: string;
+}
+
+const SERVICES = [
+  { value: 'integral', label: 'Reforma integral' },
+  { value: 'bano', label: 'Reforma de baño' },
+  { value: 'cocina', label: 'Reforma de cocina' },
+  { value: 'pintura', label: 'Pintura' },
+  { value: 'suelo', label: 'Cambio de suelo' },
+  { value: 'calefaccion', label: 'Calefacción o aerotermia' },
+  { value: 'otros', label: 'Otra obra' },
+];
+
+const {
+  service = 'integral',
+  city = 'bilbao',
+  title = 'Recibe 3 presupuestos de empresas de tu zona',
+  description = 'Cuéntanos qué obra quieres hacer y te ponemos en contacto con empresas verificadas. Gratis y sin compromiso.',
+  source = 'bilbao-reforma-form',
+} = Astro.props;
+
+const selected = SERVICES.some((s) => s.value === service) ? service : 'otros';
+const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' : city === 'vitoria' ? 'Ej. Lakua, Zabalgana, Salburua' : 'Ej. Deusto, Santutxu, Getxo';
+---
+
+<section class="lead-form" data-lead-form data-city={city} data-source={source}>
+  <h2 class="lead-form-title">{title}</h2>
+  <p class="lead-form-desc">{description}</p>
+
+  <form class="lf-form" novalidate>
+    <div class="lf-row">
+      <label class="lf-field">
+        <span class="lf-label">Tipo de obra</span>
+        <select name="service" required>
+          {SERVICES.map((s) => <option value={s.value} selected={s.value === selected}>{s.label}</option>)}
+        </select>
+      </label>
+      <label class="lf-field">
+        <span class="lf-label">Barrio o municipio</span>
+        <input type="text" name="location" required placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
+      </label>
+    </div>
+    <div class="lf-row">
+      <label class="lf-field">
+        <span class="lf-label">Email</span>
+        <input type="email" name="email" required placeholder="tu@email.com" autocomplete="email" />
+      </label>
+      <label class="lf-field">
+        <span class="lf-label">Teléfono</span>
+        <input type="tel" name="phone" required placeholder="+34 600 000 000" autocomplete="tel" pattern="^\+?[0-9\s\-]{8,20}$" />
+      </label>
+    </div>
+    <label class="lf-checkbox">
+      <input type="checkbox" name="consent" required />
+      <span>Acepto que Bilbao Reforma comparta mi solicitud con hasta 3 empresas de reformas para que me envíen presupuesto. <a href="/politica-privacidad.html">Política de privacidad</a>.</span>
+    </label>
+    <button type="submit" class="lf-submit">Quiero mis presupuestos</button>
+    <p class="lf-feedback" aria-live="polite"></p>
+  </form>
+</section>
+
+<style>
+  .lead-form {
+    box-sizing: border-box;
+    width: min(760px, 100% - 2rem);
+    margin: 2.5rem auto;
+    padding: 1.75rem 1.25rem;
+    background: var(--color-crema);
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-card);
+    font-family: var(--font-inter);
+  }
+  .lead-form-title {
+    font-family: var(--font-playfair);
+    font-size: 1.375rem;
+    color: var(--color-grafito);
+    margin: 0 0 0.5rem;
+  }
+  .lead-form-desc {
+    color: var(--color-gris);
+    font-size: 0.9375rem;
+    margin: 0 0 1.25rem;
+  }
+  .lf-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  @media (min-width: 640px) {
+    .lead-form { padding: 2rem; }
+    .lf-row { grid-template-columns: 1fr 1fr; }
+  }
+  .lf-field { display: block; }
+  .lf-label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-grafito);
+    margin-bottom: 0.25rem;
+  }
+  .lf-form input[type="email"],
+  .lf-form input[type="tel"],
+  .lf-form input[type="text"],
+  .lf-form select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-beige);
+    border-radius: var(--radius-button);
+    font-size: 0.9375rem;
+    color: var(--color-grafito);
+    background: var(--color-blanco);
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  .lf-form input:focus,
+  .lf-form select:focus {
+    outline: none;
+    border-color: var(--color-verde-montana);
+  }
+  .lf-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--color-gris);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .lf-checkbox a { color: var(--color-terracota); }
+  .lf-checkbox input { margin-top: 0.15rem; flex-shrink: 0; }
+  .lf-submit {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--color-terracota);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: var(--radius-button);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .lf-submit:hover { background: var(--color-terracota-hover); }
+  .lf-submit:disabled { background: var(--color-gris); cursor: not-allowed; opacity: 0.6; }
+  .lf-feedback { margin: 0.75rem 0 0; font-size: 0.875rem; text-align: center; min-height: 1.25rem; }
+  .lf-feedback.success { color: var(--color-verde-montana); }
+  .lf-feedback.error { color: var(--color-terracota); }
+</style>
+
+<script>
+  import { sendLead } from '../lib/lead-capture';
+
+  document.querySelectorAll<HTMLElement>('[data-lead-form]').forEach((root) => {
+    const form = root.querySelector('form');
+    const feedback = root.querySelector<HTMLElement>('.lf-feedback');
+    const submitBtn = root.querySelector<HTMLButtonElement>('.lf-submit');
+    if (!form || !feedback || !submitBtn) return;
+    const label = submitBtn.textContent;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        feedback.textContent = 'Por favor, completa todos los campos correctamente.';
+        feedback.className = 'lf-feedback error';
+        return;
+      }
+
+      const data = new FormData(form);
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      feedback.textContent = '';
+
+      try {
+        const ok = await sendLead({
+          email: String(data.get('email')).trim(),
+          phone: String(data.get('phone')).trim(),
+          location: String(data.get('location')).trim(),
+          calculator_type: String(data.get('service')),
+          city: root.dataset.city || 'bilbao',
+          source: root.dataset.source || 'bilbao-reforma-form',
+          consent: data.get('consent') === 'on',
+          budget_min: null,
+          budget_max: null,
+          budget_label: 'Solicitud sin calculadora',
+        });
+        if (ok) {
+          feedback.textContent = 'Solicitud enviada. Te contactaremos en menos de 48 horas.';
+          feedback.className = 'lf-feedback success';
+          form.reset();
+        } else {
+          feedback.textContent = 'Error al enviar. Inténtalo de nuevo o llámanos.';
+          feedback.className = 'lf-feedback error';
+        }
+      } catch {
+        feedback.textContent = 'Error de conexión. Revisa tu red e inténtalo de nuevo.';
+        feedback.className = 'lf-feedback error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = label;
+      }
+    });
+  });
+</script>
