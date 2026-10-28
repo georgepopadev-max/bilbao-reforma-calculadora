@@ -85,7 +85,7 @@ priceTables: 1
   <li><strong>Licencia de obra menor</strong> (comunicación previa): 2-3 semanas ante el Ayuntamiento de Bilbao.</li>
   <li><strong>Licencia de obra mayor</strong>: necesaria si hay cambios estructurales. Tarda 4-8 semanas con proyecto técnico.</li>
   </ul>
-  <p>Si tu piso está en el <a href="reformas-casco-viejo-bilbao.html">Casco Viejo de Bilbao</a> o edificio protegido, los permisos pueden requerir informe de Patrimonio Histórico. Consulta antes de planificar. Más detalles en <a href="licencias-obra-bilbao.html">nuestra guía de licencias</a>.</p>
+  <p>Si tu piso está en el <a href="reformas-casco-viejo-bilbao.html">Casco Viejo de Bilbao</a> o edificio protegido, los permisos pueden requerir informe de Patrimonio Histórico. Consulta antes de planificar. Más detalles en <a href="licencias-obra-bilbao-2026.html">nuestra guía de licencias</a>.</p>
 
   <h2>Fase 2: Demolición (1-2 Semanas)</h2>
   <p>Con los permisos en mano, empieza la obra. La primera fase es la demolición controlada: retirar azulejos, quitar suelos, desmontar falsos techos. En un piso de 80m², suele durar <strong>1 semana</strong> (hasta 2 semanas si hay mucho material de reformas anteriores). Durante esta fase se identifican problemas ocultos: humedades, instalaciones fuera de plano.</p>

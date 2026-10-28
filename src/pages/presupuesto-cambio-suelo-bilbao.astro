@@ -5,6 +5,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Calculator from '../components/calculator/Calculator.astro';
+import LeadForm from '../components/LeadForm.astro';
 
 const canonical = 'https://www.bilbaoreforma.es/presupuesto-cambio-suelo-bilbao.html';
 
@@ -161,13 +162,7 @@ const faqSchema = {
       </div>
     </section>
 
-    <section class="landing-cta" style="margin-bottom:3rem;">
-      <h2>¿Necesitas presupuestos de empresas para cambiar el suelo?</h2>
-      <p>Recibe propuestas de empresas especializadas en pavimentación en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas.</p>
-      <a href="/empresas/index.html" class="cta-button">
-        Solicita 3 presupuestos →
-      </a>
-    </section>
+    <LeadForm service="suelo" city="bilbao" source="bilbao-reforma-landing" title="¿Necesitas presupuestos de empresas para cambiar el suelo?" description="Recibe hasta 3 propuestas de empresas especializadas en pavimentación en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas." />
 
     <section class="landing-related">
       <h2>Otras calculadoras de presupuesto en Bilbao</h2>

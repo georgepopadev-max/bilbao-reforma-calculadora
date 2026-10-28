@@ -5,6 +5,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Calculator from '../components/calculator/Calculator.astro';
+import LeadForm from '../components/LeadForm.astro';
 
 const canonical = 'https://www.bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html';
 
@@ -199,13 +200,7 @@ const priceRanges = [
     </section>
 
     <!-- CTA -->
-    <section class="landing-cta" style="margin-bottom:3rem;">
-      <h2>¿Necesitas 3 presupuestos de empresas verificadas?</h2>
-      <p>Recibe propuestas de empresas de reforma integral en Bilbao y Bizkaia que han sido verificadas por nuestros clientes. Sin compromiso, gratuito y en 48 horas.</p>
-      <a href="/empresas/index.html" class="cta-button">
-        Solicita 3 presupuestos →
-      </a>
-    </section>
+    <LeadForm service="integral" city="bilbao" source="bilbao-reforma-landing" title="¿Necesitas 3 presupuestos de empresas verificadas?" description="Recibe hasta 3 propuestas de empresas de reforma integral en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas." />
 
     <!-- Related — cross-links entre landing pages Bilbao + blog baño -->
     <section class="landing-related">

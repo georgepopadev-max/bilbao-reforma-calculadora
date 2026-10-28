@@ -4,7 +4,7 @@ description: "Compara precios y acabados de reforma de baño en Bilbao vs otras 
 canonical: "https://www.bilbaoreforma.es/blog/comparativa-reforma-bano-bilbao.html"
 readTime: "10 min"
 category: "bano"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Por qué comparar precios de reforma de baño entre ciudades antes de contratar?"
     a: "Comparar precios entre ciudades te permite entender el mercado local, detectar si un presupuesto es razonable y tomar decisiones informadas. Cada ciudad tiene costes de vida, disponibilidad de profesi"

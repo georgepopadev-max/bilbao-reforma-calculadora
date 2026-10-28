@@ -58,15 +58,7 @@ const schema = {
       longitude: empresa.coordinates.lng,
     },
   }),
-  ...(empresa.ratingValue && {
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: empresa.ratingValue,
-      reviewCount: empresa.reviewCount ?? '0',
-      bestRating: '5',
-      worstRating: '1',
-    },
-  }),
+  // Sin aggregateRating: Google solo lo admite con reseñas recogidas y mostradas en esta web.
   priceRange: '€€',
   areaServed: [
     { '@type': 'Place', name: empresa.location },

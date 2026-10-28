@@ -4,7 +4,7 @@ description: "Descubre el precio por m² de una reforma de cocina en Bilbao. Cos
 canonical: "https://www.bilbaoreforma.es/blog/precio-m2-reforma-cocina-bilbao.html"
 readTime: "13 min"
 category: "cocina"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta el m² de reforma de cocina en Bilbao?"
     a: "El precio por m² de reforma de cocina en Bilbao oscila entre 600 y 1.400 €/m² dependiendo del tipo de reforma. Una reforma parcial ronda los 600-900 €/m², mientras que una reforma completa con cambio "

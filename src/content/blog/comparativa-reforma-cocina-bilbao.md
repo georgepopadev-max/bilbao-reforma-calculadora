@@ -4,7 +4,7 @@ description: "Compara precios y acabados de reforma de cocina en Bilbao vs otras
 canonical: "https://www.bilbaoreforma.es/blog/comparativa-reforma-cocina-bilbao.html"
 readTime: "15 min"
 category: "cocina"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Por qué comparar precios de reforma de cocina antes de contratar?"
     a: "Comparar precios entre ciudades te da un marco de referencia realista y evita que pagues de más. Bilbao tiene características propias (coste de vida, normativa local, acceso a materiales del norte) qu"

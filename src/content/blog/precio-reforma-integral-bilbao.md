@@ -4,7 +4,7 @@ description: "Precio reforma integral Bilbao 2026. Cuánto cuesta reformar un pi
 canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao.html"
 date: "18 junio 2026"
 category: "integral"
-city: "donostia"
+city: "bilbao"
 faqs:
   - q: "¿Cuánto cuesta una reforma integral en Bilbao por metro cuadrado?"
     a: "En Bilbao, el precio de una reforma integral en 2025 oscila entre 700 €/m² (calidad básica) y 1.400 €/m² (acabados premium). La media habitual se sitúa en torno a 1.000 €/m² para un piso de caracterís"
@@ -32,7 +32,7 @@ inContentCTAs:
     href: "tiempo-reforma-integral-bilbao.html"
   - type: "leer"
     label: "Licencias de Obra en Bilbao: Todo lo que Necesitas Saber"
-    href: "licencias-obra-bilbao.html"
+    href: "licencias-obra-bilbao-2026.html"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Bilbao: Guía Especial"
     href: "reformas-casco-viejo-bilbao.html"
@@ -240,7 +240,7 @@ priceTables: 4
 
   <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
-  <a href="licencias-obra-bilbao.html">Licencias de Obra en Bilbao: Todo lo que Necesitas Saber</a>
+  <a href="licencias-obra-bilbao-2026.html">Licencias de Obra en Bilbao: Todo lo que Necesitas Saber</a>
   <a href="reformas-casco-viejo-bilbao.html">Reformas en el Casco Viejo de Bilbao: Guía Especial</a>
   </div>
 

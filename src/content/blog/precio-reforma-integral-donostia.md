@@ -32,7 +32,7 @@ inContentCTAs:
     href: "tiempo-reforma-integral-bilbao.html"
   - type: "leer"
     label: "Licencias de Obra en Donostia: Todo lo que Necesitas Saber"
-    href: "licencias-obra-bilbao.html"
+    href: "licencias-obra-bilbao-2026.html"
   - type: "leer"
     label: "Reformas en el Casco Viejo de Donostia: Guía Especial"
     href: "reformas-casco-viejo-bilbao.html"

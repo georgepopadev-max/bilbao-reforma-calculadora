@@ -3,7 +3,7 @@ title: "Renovar Piso Antiguo Bilbao 2026"
 description: "Todo sobre reformas de pisos antiguos en Bilbao: problemas comunes (tuberías de plomo, electricidad vieja), licencias especiales en casco urbano y cómo planificar tu reforma integral."
 canonical: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao.html"
 category: "general"
-city: "vitoria"
+city: "bilbao"
 faqs:
   - q: "¿Qué problemas tienen los pisos antiguos de Bilbao que hay que resolver en una reforma?"
     a: "Los problemas más frecuentes en pisos bilbainos de más de 50 años son: tuberías de plomo (riesgo para la salud y deterioradas por la cal), instalación eléctrica vieja sin toma de tierra ni diferencial"
@@ -231,5 +231,5 @@ priceTables: 0
 
   <nav class="blog-nav">
   <a href="materiales-cocina-bilbao.html">← Encimeras de cocina Bilbao</a>
-  <a href="licencias-obra-bilbao.html">Licencias de obra Bilbao -></a>
+  <a href="licencias-obra-bilbao-2026.html">Licencias de obra Bilbao -></a>
   </nav>
