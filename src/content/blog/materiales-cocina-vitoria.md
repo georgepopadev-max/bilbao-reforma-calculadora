@@ -1,136 +1,86 @@
 ---
-title: "Encimeras Cocina Vitoria: Materiales 2026"
-description: "Encimeras de cocina en Vitoria 2026: Silestone, Dekton, granito y madera. Compara precios y durabilidad y elige la mejor para tu cocina."
-canonical: https://www.bilbaoreforma.es/blog/materiales-cocina-vitoria
-city: vitoria
-category: Cocinas
+title: "Encimeras de Cocina en Vitoria 2026: Materiales y Precios"
+description: "Qué encimera elegir en Vitoria-Gasteiz: cuarzo, ultracompacto, granito, laminado o madera, con precio por metro lineal instalado, ventajas e inconvenientes."
+canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
+readTime: "6 min"
+category: "Cocinas"
+city: "vitoria"
 faqs:
-  - q: "¿Qué material elijo para la encimera de mi cocina en Vitoria: Silestone, Dekton o granito?"
-    a: "Para una cocina familiar vitoriana con mucho uso, el Silestone o Dekton ofrecen la mejor relación practicidad-durabilidad. El Silestone (250-450 €/ml instalado) es el más popular. El Dekton (350-600 €/ml) es más resistente al calor extremo pero más caro. El granito es más económico (200-400 €/ml) pero requiere sellado periódico."
-  - q: "¿Cuánto cuesta una encimera de cocina para un piso vitoriano estándar?"
-    a: "Para una cocina estándar de 3 metros lineales: Silestone cuesta entre 750-1.350 €, Dekton entre 1.050-1.800 €, y granito entre 600-1.200 €. Estos precios incluyen material, corte de huecos para fregadero y placa, cantos, transporte e instalación profesional."
-  - q: "¿Qué diferencia hay entre Silestone y Dekton para encimeras de cocina?"
-    a: "La principal diferencia es la resistencia al calor: el Dekton soporta hasta 300°C mientras que el Silestone puede sufrir marcas con ollas calientes. El Dekton también es más resistente a rayados y manchas. Sin embargo, el Silestone tiene mayor variedad de colores tipo mármol y es más fácil de reparar si se daña."
-  - q: "¿El granito natural para encimeras necesita mantenimiento en Vitoria?"
-    a: "Sí, el granito es poroso y requiere sellado periódico (cada 1-3 años dependiendo del tipo). Sin este mantenimiento, líquidos como el aceite pueden penetrar y manchar la superficie. Para verificar si necesita sellado, vierte gotas de agua: si son absorbidas y oscurecen la piedra en 15 minutos, es hora de sellar."
-  - q: "¿Dónde comprar encimeras de cocina en Vitoria y Álava?"
-    a: "Cosentino (Silestone y Dekton) tiene distribuidores autorizados en Álava con showrooms. El área del polígono industrial de Lara-Añorga y la zona de Artaza concentran almacenes de piedra. En el límite con Gipuzkoa hay industrias de transformación de piedra con venta directa. Es fundamental ver el material en persona antes de decidir."
+  - q: "¿Cuánto cuesta una encimera para una cocina normal en Vitoria?"
+    a: "Para unos 3 metros lineales, una encimera laminada cuesta entre 350 y 800 € instalada, una de granito entre 650 y 1.250 €, una de cuarzo entre 800 y 1.450 € y una ultracompacta entre 1.100 y 1.850 €."
+  - q: "¿Qué encimera es la más resistente?"
+    a: "La ultracompacta: aguanta el calor, los arañazos y las manchas mejor que cualquier otra. El granito también es muy duro y resiste bien el calor, aunque necesita sellado cada uno o dos años."
+  - q: "¿Cuánto tarda en llegar una encimera de piedra?"
+    a: "El taller toma medidas cuando los muebles ya están montados y tarda entre 7 y 15 días en cortar la pieza. La instalación se hace en una mañana."
+  - q: "¿Es buena idea una encimera de madera?"
+    a: "Da mucha calidez, pero necesita aceite cada pocos meses y cuidado con el agua alrededor del fregadero. Si buscas poco mantenimiento, el cuarzo o el ultracompacto son mejores opciones."
 inContentCTAs:
-  - type: calculator
-    label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora
+  - type: "calculator"
+    label: "Calcula el precio de tu cocina en Vitoria"
+    href: "/vitoria/calculadora/cocina-vitoria"
+  - type: "leer"
+    label: "Reforma de cocina en Vitoria: precios y plazos"
+    href: "/blog/reforma-cocina-vitoria"
 ---
+La encimera es lo primero que se ve en una cocina y lo que más uso recibe. En Vitoria-Gasteiz hay talleres de piedra y marmolistas en los polígonos de la ciudad y alrededores, lo que facilita ver los materiales en persona antes de decidir. Esta guía compara las opciones con precios por metro lineal instalado.
 
-La encimera de tu cocina es la superficie más utilizada de toda la casa. Sobre ella cortas, cocinas, colocas ollas calientes y, en definitiva, centralizas la actividad de uno de los espacios más importantes de tu hogar vitoriano. Elegir bien el material de tu encimera en Vitoria no es solo una cuestión estética: también determina la durabilidad, el mantenimiento y el valor añadido de tu cocina.
+## Comparativa de materiales
 
-En los últimos años, los showrooms de cocinas en Vitoria y Álava han ampliado enormemente su oferta. Desde el clásico granito biselado que predominaba en los pisos del Casco Viejo hasta los modernos Dekton de gran formato que triunfan en cocinas del Ensanche y nuevos desarrollos, las opciones son cada vez más diversas. Pero, ¿cuál conviene realmente a tu cocina?
+| Material | Precio por metro lineal instalado | Resistencia al calor | Mantenimiento |
+|---|---|---|---|
+| Laminado | 115-270 € | Baja | Bajo |
+| Madera maciza | 180-340 € | Baja | Alto |
+| Granito | 220-410 € | Alta | Medio (sellado periódico) |
+| Cuarzo compacto | 260-460 € | Media | Bajo |
+| Ultracompacto | 350-600 € | Muy alta | Muy bajo |
 
-## Silestone: El Compacto de Cuarcita Más Popular en Vitoria
+Precios orientativos con material, corte, cantos y colocación. Los huecos para fregadero bajo encimera y placa suelen ir aparte (70-220 € cada uno).
 
-El Silestone es un material compuesto de cuarcita (más del 90% de su composición) mezclado con resinas y pigmentos. Fabricado por Cosentino, es el material más solicitado en cocinas vitorianas de gama media y media-alta.
+## Ventajas e inconvenientes
 
-### Ventajas del Silestone para tu Cocina
+### Laminado
 
-Una de las principales razones por las que el Silestone domina el mercado alavés es su excelente relación precio-rendimiento. Ofrece una superficie no porosa que impide la penetración de líquidos, lo que significa que las manchas de vino o de aceite de oliva no son un problema serio. Para familias que cocinan habitualmente, esta característica es invaluable.
+Es la opción más barata y hay muchos acabados que imitan madera o piedra. No aguanta ollas calientes ni golpes fuertes, y el agua puede hinchar el tablero si entra por las juntas. Funciona bien en cocinas de poco uso o pisos de alquiler.
 
-Además, el Silestone está disponible en una enorme variedad de colores y acabados. Desde el clásico Blanco Zeus hasta Negro Tebas, pasando por imitación mármol como Mont Blanc o Marengo, las opciones estéticas son prácticamente ilimitadas. Muchas cocinas vitorianas han apostado por tonalidades oscuras como Gris Expo o Arena Poquer para camouflage las marcas de corte y uso cotidiano.
+### Madera maciza
 
-### Inconvenientes y Consideraciones
+Aporta calidez, algo que se agradece en una ciudad de inviernos fríos. A cambio, pide aceite periódico y cuidado con el agua y con los cuchillos. Una solución intermedia es poner madera en la zona de desayuno y piedra junto al fregadero y la placa.
 
-El principal punto débil del Silestone es su vulnerabilidad al calor extremo. Una olla recién sacada del fuego puede causar marcas o incluso grietas si se coloca directamente sobre la superficie. Los instaladores profesionales en Vitoria siempre recomiendan usar salvamanteles.
+### Granito
 
-También hay que tener precaución con los productos químicos agresivos. La lejía pura o los desatascadores químicos pueden dañar el brillo y la integridad de la superficie si se dejan actuar durante periodos prolongados.
+Es piedra natural, muy dura y resistente al calor. Necesita un sellado cada uno o dos años para no absorber manchas. Suele ser más barato que el cuarzo de gama media.
 
-> **Precio orientativo en Vitoria 2026:** Entre 250 y 450 euros por metro lineal instalado, dependiendo del acabado y el grosor (habitualmente 12 o 20 mm). Una cocina estándar de 3 metros lineales costaría entre 750 y 1.350 euros solo en encimera.
+### Cuarzo compacto
 
-## Dekton: La Opción Premium para Cocinas Modernas
+Es el material más vendido: no es poroso, tiene muchísimos colores y apenas necesita mantenimiento. Hay que evitar apoyar ollas recién sacadas del fuego sin salvamanteles.
 
-El Dekton, también de Cosentino, representa la última generación de materiales para encimeras. Su proceso de fabricación mediante tecnología de sinterización partículas (TSP) lo convierte en uno de los más resistentes del mercado.
+### Ultracompacto
 
-En Vitoria, el Dekton ha ganado terreno especialmente en cocinas de obra nueva y reformas integrales de pisos modernos en el Ensanche y la zona de Lakua. Su aspecto de piedra natural o béton atrae a quienes buscan un diseño contemporáneo y minimalista.
+Es el más resistente en todo: calor, arañazos, manchas y luz. También el más caro, y su corte necesita un taller con experiencia.
 
-### Resistencia Excepcional
+## Ejemplo: cocina en L de 3,2 metros
 
-Donde el Dekton supera claramente a otros materiales es en su resistencia. Soporta temperaturas de hasta 300 grados centígrados, lo que significa que puedes colocar cazuelas hirviendo sin el más mínimo cuidado. También resiste rayados, manchas y desgaste por uso intensivo sin perder su apariencia original.
+| Material | Encimera | Huecos y cantos | Total orientativo |
+|---|---|---|---|
+| Laminado | 370-860 € | 90-180 € | 460-1.040 € |
+| Granito | 700-1.310 € | 140-280 € | 840-1.590 € |
+| Cuarzo | 830-1.470 € | 140-320 € | 970-1.790 € |
+| Ultracompacto | 1.120-1.920 € | 180-370 € | 1.300-2.290 € |
 
-### Acabados y Limitaciones
+## Cómo elegir según tu cocina
 
-El Dekton está disponible en grosores de 4, 8, 12, 20 y 30 mm, siendo los más finos ideales para frentes de cocina. Para encimeras, el grosor recomendado es de 12 o 20 mm. Los acabados van desde mate (Solid) hasta pulido (Polido) pasando por texturas de piedra (Stone).
+- **Cocina familiar con mucho uso:** cuarzo o ultracompacto.
+- **Presupuesto ajustado y buena durabilidad:** granito nacional.
+- **Cocina de alquiler o segunda vivienda:** laminado de buena calidad.
+- **Cocina abierta al salón:** un material mate y de tono cálido integra mejor la cocina en la zona de estar.
 
-La principal limitación del Dekton es su precio, significativamente superior al Silestone. También requiere instaladores con experiencia específica, ya que su dureza extrema complica los cortes y los cantos.
+## Antes de encargarla
 
-> **Precio orientativo en Vitoria 2026:** Entre 350 y 600 euros por metro lineal instalado. El sobrecoste respecto al Silestone se amortiza a largo plazo por su mayor durabilidad y menor necesidad de mantenimiento.
+1. **Visita un taller o exposición** y mira la pieza real, no una foto.
+2. **Encarga la medición con los muebles montados.**
+3. **Pregunta dónde irán las juntas** en encimeras largas o en L.
+4. **Decide el grosor**: 12, 20 o 30 mm cambian precio y aspecto.
 
-## Granito Natural: El Clásico Atemporal
-
-El granito ha sido durante décadas la encimera por excelencia en los pisos vitorianos. Muchos hogares del Casco Viejo todavía conservan sus encimeras de granito original de los años 80 o anteriores, testimonio de su durabilidad excepcional.
-
-A diferencia de los materiales engineered como Silestone o Dekton, el granito es una piedra natural extraída de canteras. Cada pieza es única, con veteados y colores que no se repiten. Para quienes valoran la autenticidad, el granito sigue siendo una opción muy a considerar.
-
-### Acabados Disponibles en Álava
-
-El granito se ofrece principalmente en tres acabados: pulido (el clásico brillo espejo), apomazado (mate sedoso) y abujardado (textura rugosa antideslizante). El pulido es el más fácil de limpiar pero muestra más los rayados; el apomazado disimula mejor el uso cotidiano.
-
-Los granitos más comunes en el mercado alavés incluyen el Grigio Carnico (gris italiano), el Azul Noe (azulado extremeño), el Rosa Porriño (granito rosa de Galicia) y diversas variedades de grano fino de canteras portuguesas.
-
-### Mantenimiento y Durabilidad
-
-El granito natural es extraordinariamente resistente al calor, rayados y manchas (especialmente si está sellado correctamente). Sin embargo, a diferencia del Silestone o Dekton, el granito es poroso y requiere sellado periódico (cada 1-3 años). Sin este mantenimiento, líquidos como el aceite pueden manchar la superficie permanentemente.
-
-> **Consejo:** Aplica un sellador de calidad específico para granito al menos una vez al año. Puedes comprobar si tu encimera necesita sellado vertiendo gotas de agua: si son absorbidas y oscurecen la piedra en 15 minutos, es hora de sellar.
-
-## Madera: Calidez Artesanal para Cocinas con Personalidad
-
-La encimera de madera (habitualmente de roble, nogal o iroko) aporta una calidez que ningún otro material puede igualar. En Vitoria, las cocinas rústicas del Casco Viejo y los pisos con estilo nórdico han apostado tradicionalmente por este material.
-
-Sin embargo, la madera requiere un compromiso de mantenimiento que no todos los propietarios están dispuestos a asumir. Es sensible a golpes, rayados, manchas y humedad. Una tabla de cortar bien usada es prácticamente obligatoria.
-
-### Tipos de Madera para Encimeras
-
-El roble es la opción más popular por su dureza y disponibilidad. El nogal aporta tonos más oscuros y elegantes pero a un precio superior. El iroko, madera tropical muy estable, resiste bien la humedad y es habitual en encimeras de barco y cocinas industriales.
-
-La madera llega en tablones anchos o en juntas de lamel (tiras pegadas lateralmente que forman un bloque estable). Los tablones van trattados con aceites alimentarios que deben reaplicarse periódicamente.
-
-## Tabla Comparativa: Encimeras de Cocina en Vitoria 2026
-
-| Material | Precio/ml instalado | Durabilidad | Mantenimiento | Mejor para |
-|----------|--------------------|------------|---------------|------------|
-| Silestone | 250-450 € | Muy alta | Bajo | Cocinas familiares |
-| Dekton | 350-600 € | Excepcional | Muy bajo | Cocinas intensivas |
-| Granito | 200-400 € | Muy alta | Medio | Estilo tradicional |
-| Madera | 180-350 € | Alta (con cuidado) | Alto | Cocinas con encanto |
-
-## Marcas y Proveedores Disponibles en Vitoria y Álava
-
-El área metropolitana de Vitoria ofrece múltiples puntos de venta donde ver y comparar materiales en persona. El polígono industrial de Lara-Añorga y la zona de Artaza concentran varios almacenes de piedra y mármol con exposición de encimeras.
-
-Para materiales engineered como Silestone y Dekton, los principales distribuidores autorizados en Álava cuentan con showrooms donde puedes visualizar bandas enteras del material antes de decidir. Es fundamental ver el material en persona, especialmente los acabados tipo mármol, ya que las fotografías no capturan la profundidad del veteado.
-
-### Datos de Contacto Relevantes
-
-Al solicitar presupuestos en Vitoria, asegúrate de que incluyan:
-- Material (tipo, grueso, acabado)
-- Corte de hueco para fregadero y placa de cocción
-- Cantos (vivos, biselados o redondeados)
-- Transporte y subida a domicilio
-- Instalación profesional incluyendo sellado
-- Garantía del fabricante y del instalador
-
-## Lista de Comprobación: Cómo Elegir tu Encimera
-
-> **OK Antes de Comprar: Preguntas Clave**
-> - ¿Cuánto uso va a tener la cocina? ¿Es para una cocina principal o secundaria?
-> - ¿Qué estilo visual prefieres: moderno/minimalista, clásico/rústico o atemporal?
-> - ¿Tienes presupuesto para la inversión inicial o priorizas el coste a largo plazo?
-> - ¿Estás dispuesto/a a usar salvamanteles y tablas de cortar?
-> - ¿Has visitado al menos 2 showrooms en Vitoria para ver los materiales en persona?
-> - ¿El presupuesto incluye instalación profesional y garantía?
-> - ¿El color y acabado elegido combina con el resto de elementos de la cocina?
-
-## Conclusión: Tu Encimera, tu Decisión
-
-No existe una encimera universalmente mejor: la mejor opción depende de tu estilo de vida, presupuesto y estética personal. Para una cocina familiar vitoriana con mucho uso, el Silestone o Dekton ofrecen la mejor relación practicidad-durabilidad. Para quienes buscan un ambiente más cálido y artesanal, la madera o el granito aportan personalidad inigualable.
-
-Recuerda que la encimera es una inversión a largo plazo. Un par de cientos de euros de diferencia en el material inicial pueden traducirse en décadas de satisfacción o de arrepentimiento. Tómate tu tiempo, visita showrooms, toca los materiales y deja que tu intuición vitoriana te guíe.
+Si vas a reformar la cocina entera, consulta la guía de [reforma de cocina en Vitoria](/blog/reforma-cocina-vitoria) o pide presupuesto con el formulario de abajo.

@@ -1,207 +1,98 @@
 ---
-title: "Cambiar Suelo Vitoria 2026 | Precio"
-description: "Cambiar suelo en Vitoria 2026: precios por m², materiales y empresas locales."
-canonical: https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria
-city: vitoria
-category: Acabados
+title: "Cambiar el Suelo en Vitoria 2026: Precios y Materiales"
+description: "Precio de cambiar el suelo en Vitoria-Gasteiz en 2026: parqué, porcelánico, laminado y vinílico por m², qué conviene con suelo radiante y cuánto tarda la obra."
+canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
+readTime: "7 min"
+category: "Acabados"
+city: "vitoria"
 faqs:
-  - q: "¿Qué suelo es mejor para Vitoria con su clima húmedo del norte?"
-    a: "Con el clima húmedo de Álava, el porcelánico y el vinílico SPC son las opciones más recomendables porque no absorben humedad. El parqué, aunque hermoso, requiere más mantenimiento en zonas con condensación. Si quieres madera, el parqué multicapa con tratamiento hidrófugo es la mejor opción dentro de los suelos de madera. El viento norte alavés puede generar condensación en fachadas mal aisladas."
-  - q: "¿Se puede instalar vinílico sobre parqué antiguo en un piso de Vitoria?"
-    a: "Técnicamente sí, pero no es lo recomendable. Un parqué antiguo puede tener irregularidades, humedad residual o piezas sueltas que provocarían problemas en el vinílico con el tiempo. Lo ideal es retirar el suelo anterior, nivelar la base y después instalar el vinílico. Solo en casos de parqué muy bien conservado y nivelado algunos profesionales lo permiten."
-  - q: "¿Cuánto tiempo se tarda en instalar 80 m² de suelo en Vitoria?"
-    a: "Depende del tipo de suelo. Un vinílico SPC con sistema clic se instala en aproximadamente 2-3 días en 80 m². El parqué multicapa flotante necesita entre 4 y 6 días. El porcelánico es el que más tiempo requiere: entre 5 y 8 días incluyendo el fraguado del adhesivo o mortero. A estos plazos hay que añadir 1-2 días de preparación de la base si es necesario nivelarla."
-  - q: "¿El parqué es compatible con suelo radiante en Vitoria?"
-    a: "Sí, pero con matices. El parqué multicapa es el más compatible con suelo radiante gracias a su estructura en capas que le da mayor estabilidad dimensional. El parqué macizo también puede instalarse, pero debe ser de grueso adecuado (no más de 15 mm) y estar bien aclimatado. El porcelánico es el que mejor conduce el calor y se lleva fenomenal con el suelo radiante."
-  - q: "¿Qué suelo requiere menos mantenimiento?"
-    a: "El porcelánico es el que menos mantenimiento necesita: basta con pasar la fregona o mop regularmente. El vinílico SPC también es muy fácil de mantener, con limpieza húmeda ocasional. El parqué es el que más atención requiere: barrer o aspirar a diario, limpieza con productos específicos para madera, y acuchillado cada 8-12 años en el caso del macizo."
-  - q: "¿Cuánto cuesta nivelar el suelo antes de instalar?"
-    a: "La nivelación del suelo puede costar entre 5 y 15 €/m² dependiendo del estado de la base. En un piso de 80 m², esto supone entre 400 y 1.200 € adicionales. Si las irregularidades son muy grandes puede requerir una capa de mortero autonivelante más gruesa, lo que encarece el coste. Es una partida que muchas veces se olvida en el presupuesto inicial."
-  - q: "¿El porcelánico es frío en invierno?"
-    a: "El porcelánico sí transmite más sensación de frío al contacto que la madera, pero esto se resuelve fácilmente con suelo radiante. Sin calefacción, una alfombra o un parqué multicapa dan mayor sensación de calidez. En cualquier caso, la sensación térmica depende mucho de la temperatura ambiente y el uso de calefacción."
-  - q: "¿Merece la pena invertir en parqué premium?"
-    a: "Si valoras la estética de la madera natural, la durabilidad a largo plazo y la valorización del inmueble, el parqué premium (90-130 €/m² instalado) es una inversión que se recupera. Un parqué macizo de calidad puede durar más de 50 años con el mantenimiento adecuado, se puede acuchillar 5-7 veces, y aporta un valor percibido al piso que el vinílico o el porcelánico no ofrecen."
+  - q: "¿Cuánto cuesta cambiar el suelo de un piso de 80 m² en Vitoria?"
+    a: "Con material y colocación, un laminado o vinílico de gama media sale por 2.200-3.800 €, un parqué multicapa por 4.200-7.000 € y un porcelánico por 3.300-5.600 €. Si hay que levantar el suelo viejo y nivelar, suma entre 800 y 1.900 €."
+  - q: "¿Qué suelo es más cálido para los inviernos de Vitoria?"
+    a: "La madera, ya sea parqué multicapa o macizo, es el suelo que mejor sensación térmica da al pisar. El porcelánico es frío al tacto, pero combinado con suelo radiante es la opción más eficiente porque transmite muy bien el calor."
+  - q: "¿Qué suelo va mejor con suelo radiante?"
+    a: "El porcelánico es el que mejor transmite el calor. El parqué multicapa y algunos vinílicos también son compatibles si el fabricante lo certifica. La madera maciza gruesa y la moqueta no son recomendables porque aíslan."
+  - q: "¿Cuánto tarda cambiar el suelo de un piso?"
+    a: "Un laminado o vinílico en 80 m² se coloca en 2-3 días. El parqué multicapa lleva 4-6 días y el porcelánico entre 7 y 10, porque hay que nivelar, fraguar y rejuntar."
 inContentCTAs:
-  - type: calculator
-    label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora
+  - type: "calculator"
+    label: "Calcula el precio de tu suelo en Vitoria"
+    href: "/vitoria/calculadora/suelo-vitoria"
+  - type: "leer"
+    label: "Tipos de calefacción para pisos en Vitoria"
+    href: "/blog/tipos-calefaccion-vitoria"
+  - type: "leer"
+    label: "Precio de una reforma integral en Vitoria"
+    href: "/blog/precio-reforma-integral-vitoria"
 ---
+En Vitoria-Gasteiz el suelo se elige pensando en el invierno. Con heladas frecuentes entre diciembre y febrero, la sensación al pisar importa, y cada vez más reformas combinan suelo nuevo con suelo radiante. Aquí tienes precios orientativos y lo que conviene en cada tipo de vivienda de la ciudad.
 
-Si estás pensando en **cambiar el suelo en Vitoria**, seguro que tienes la misma duda que la mayoría: ¿parqué, porcelánico o vinílico? Es una de las decisiones más importantes en cualquier reforma, porque el suelo ocupa toda la superficie de la casa, condiciona el ambiente y representa un gasto considerable. En esta guía te ayudamos a decidir con datos reales de precios, ventajas e inconvenientes de cada opción, y una tabla comparativa actualizada para 2026.
+## Precio por m² en Vitoria
 
-## ¿Cuánto cuesta cambiar el suelo en Vitoria? Precios 2026
+Precios con material y colocación. La mano de obra en Vitoria suele estar algo por debajo de Bilbao y Donostia.
 
-Antes de entrar en comparativas, lo primero que quieres saber es cuánto se va a llevar el banco. Los precios en Vitoria están en la franja media del mercado alavés, pero varían mucho según el material que elijas. Aquí tienes los rangos orientativos de **precio por metro cuadrado instalado** (material + mano de obra), sin contar retirada del suelo antiguo ni nivelación de base:
+| Tipo de suelo | Calidad básica | Calidad media | Calidad alta |
+|---|---|---|---|
+| Laminado AC4-AC5 | 17-26 €/m² | 26-40 €/m² | 40-58 €/m² |
+| Vinílico SPC | 15-28 €/m² | 28-48 €/m² | 48-75 €/m² |
+| Parqué multicapa | 38-56 €/m² | 56-88 €/m² | 88-125 €/m² |
+| Porcelánico | 24-38 €/m² | 38-62 €/m² | 62-95 €/m² |
+| Parqué macizo | 56-78 €/m² | 78-115 €/m² | 115-170 €/m² |
 
-### Precio del parqué (madera)
+Extras habituales:
 
-El parqué es la opción más premium dentro de los suelos de madera. Su precio instalado oscila entre **40 y 180 €/m²** según la calidad y el tipo (multicapa o macizo). La instalación encolada del parqué macizo es más cara que la flotante del multicapa, pero ofrece mayor durabilidad.
+- **Retirar el suelo antiguo:** 5-10 €/m² más los escombros.
+- **Nivelación con autonivelante:** 5-13 €/m².
+- **Rodapiés:** 5-13 € por metro lineal.
+- **Recortar puertas:** 30-55 € por puerta.
 
-### Precio del porcelánico
+## Qué suelo elegir según la vivienda
 
-El porcelánico es la opción con mejor relación calidad-precio del mercado. Los precios van de **25 a 100 €/m²** instalado. Los formatos grandes (75x75, 120x120) y los acabados de piedra natural o madera son los que suben de precio, pero siguen siendo competitivos frente al parqué.
+### Pisos del Ensanche, Coronación, El Pilar o Zaramaga
 
-### Precio del suelo vinílico (SPC/LVT)
+Los bloques de los años 50 a 70 de estos barrios suelen tener terrazo o baldosa antigua. Si la base está firme, se puede colocar **laminado o vinílico flotante encima** y ahorrar demolición. Si quieres porcelánico o vas a poner suelo radiante, conviene levantar y empezar de cero.
 
-El vinílico SPC (Stone Plastic Composite) se ha convertido en el favorito por su precio y facilidad de instalación. Los precios oscilan entre **16 y 80 €/m²** según calidad. El vinílico en rollo es más económico, pero el clic SPC es el que más se instala actualmente por su parecido con la madera y su resistencia.
+### Pisos de Lakua, Salburua y Zabalgana
 
-### Tabla comparativa de precios por m²
+Las viviendas construidas a partir de los 2000 suelen tener ya parqué o gres en buen estado. Aquí la reforma de suelo se hace más por estética: cambiar un parqué claro por otro tono o poner un porcelánico de imitación madera. Muchas de estas viviendas tienen ya **suelo radiante**, así que el material nuevo debe ser compatible.
 
-| Tipo de suelo | Calidad básica | Calidad media | Calidad premium |
-|---------------|----------------|---------------|-----------------|
-| **Parqué multicapa** | 40-60 €/m² | 60-90 €/m² | 90-130 €/m² |
-| **Parqué macizo** | 60-80 €/m² | 80-120 €/m² | 120-180 €/m² |
-| **Porcelánico** | 25-40 €/m² | 40-65 €/m² | 65-100 €/m² |
-| **Vinílico SPC/LVT** | 16-30 €/m² | 30-50 €/m² | 50-80 €/m² |
-| **Vinílico en rollo** | 13-25 €/m² | 25-35 €/m² | 35-50 €/m² |
+### Casco Medieval
 
-> **Nota:** Precios orientativos en Vitoria para 2026, incluyendo material y instalación. No incluyen retirada del suelo anterior (+5-12 €/m²) ni nivelación de base (+5-15 €/m²). Solicita al menos 3 presupuestos para afinar el precio real de tu reforma.
+En los edificios del Casco Medieval aparecen forjados de madera y suelos irregulares. Antes de poner un suelo pesado como el porcelánico, un técnico debe valorar si el forjado lo admite. A menudo la mejor solución es un **multicapa sobre rastreles** o un vinílico ligero.
 
-## Parqué: el suelo de madera natural
+## Suelo y calefacción
 
-El parqué es sinónimo de elegancia y calidez. Ningún otro suelo transmite tanta sensación de hogar como la madera natural bajo los pies. En Vitoria, donde hay muchos edificios antiguos con carácter, el parqué encaja a la perfección en salones y dormitorios.
+En Vitoria la calefacción funciona muchas horas al año, y el suelo influye en el gasto:
 
-### Tipos de parqué: multicapa vs macizo
+- **Con suelo radiante**, el porcelánico es el más eficiente. El multicapa también funciona bien si es fino.
+- **Con radiadores**, la madera es la más agradable al pisar y aísla algo del frío del forjado, algo que se nota en primeros pisos sobre locales o portales.
+- **Sobre locales sin calefacción**, una lámina aislante bajo el suelo flotante mejora mucho el confort.
 
-El **parqué multicapa** está formado por capas de madera pegadas en sentido cruzado, lo que le da gran estabilidad dimensional. Se instala como suelo flotante (con clic) y es compatible con suelo radiante. Puede acuchillarse 2-3 veces a lo largo de su vida.
+## Ejemplo: piso de 80 m² en Zaramaga
 
-El **parqué macizo** es tabla rasa de madera maciza. Es más grueso, más duro y más duradero: puede durar 50+ años y acuchillarse 5-7 veces. Se instala encolado al suelo, lo que requiere una base perfectamente nivelada. Aporta un valor añadido al inmueble que las otras opciones no ofrecen.
+| Partida | Laminado medio | Multicapa medio | Porcelánico medio |
+|---|---|---|---|
+| Material y colocación (75 m² útiles) | 1.950-3.000 € | 4.200-6.600 € | 2.850-4.650 € |
+| Nivelación parcial | 0-350 € | 250-550 € | 250-550 € |
+| Rodapiés (90 ml) | 450-800 € | 450-800 € | 450-800 € |
+| Puertas y remates | 150-300 € | 180-350 € | 180-350 € |
+| **Total orientativo** | **2.550-4.450 €** | **5.080-8.300 €** | **3.730-6.350 €** |
 
-### Pros del parqué
+## Plazos
 
-- Estética única e irrepetible: cada tabla es diferente
-- Aporta calidez y valor al inmueble
-- Se puede lijar y acuchillar varias veces (macizo)
-- Compatible con suelo radiante (especialmente multicapa)
-- Mejora con el tiempo si se mantiene bien
+- **Laminado o vinílico:** 2-3 días.
+- **Parqué multicapa:** 4-6 días.
+- **Porcelánico:** 7-10 días.
 
-### Contras del parqué
+Con frío intenso el mortero y el autonivelante fraguan más despacio. En pleno invierno, conviene que el piso esté calefactado durante la obra.
 
-- Más sensible a la humedad y cambios de temperatura
-- Requiere mantenimiento periódico (limpieza con productos específicos, acuchillado)
-- Precio más alto que el porcelánico o vinílico
-- Las tablas pueden expandirse o contraerse con los cambios de estación
-- Más ruidoso al pisar que el vinílico
+## Antes de pedir presupuesto
 
-### Mantenimiento del parqué
+1. **Mide los metros útiles** de cada estancia.
+2. **Decide si vas a poner suelo radiante**: cambia el material y el orden de la obra.
+3. **Pide el presupuesto desglosado** en material, colocación, retirada y remates.
+4. **Pregunta por la lámina de aislamiento acústico**: en bloques de los 60 y 70 los vecinos de abajo lo agradecen.
 
-Barrer o aspirar a diario para evitar que la arena raye la superficie. Limpiar con productos específicos para madera (nunca agua abundante ni productos agresivos). El acuchillado profesional cada 8-12 años en parqué macizo y cada 12-15 en multicapa le devolverá el aspecto de nuevo.
-
-## Porcelánico: resistencia y versatilidad
-
-El porcelánico es el suelo que mejor aguanta el paso del tiempo. Fabricado con arcillas cocidas a alta temperatura, es casi indestructible, 100% impermeable y disponible en acabados que imitan perfectamente la madera, la piedra o el cemento.
-
-### Pros del porcelánico
-
-- 100% resistente al agua: ideal para cocinas, baños y terrazas
-- Extremadamente resistente a manchas, arañazos y tráfico intenso
-- Durabilidad de 30-50 años sin apenas mantenimiento
-- Excelente conductor del calor: perfecto con suelo radiante
-- Amplísima variedad de formatos y acabados (formatos XXL en 2026)
-- Fácil limpieza: solo fregona o mop
-
-### Contras del porcelánico
-
-- Mayor sensación de frío al contacto que la madera
-- Instalación más lenta y compleja (mortero, fraguado, lechada)
-- Los formatos grandes requieren más habilidad de colocación
-- Más duro y ruidoso al pisar que el vinílico o parqué
-- Reemplazar una pieza dañada es complicado
-
-### Mantenimiento del porcelánico
-
-El porcelánico es el suelo más agradecido en cuanto a mantenimiento. Barrer o pasar la mopa a diario, fregado con agua y jabón neutro cuando sea necesario. No requiere tratamientos adicionales ni sellados.
-
-## Vinílico (SPC/LVT): la opción práctica
-
-El suelo vinílico SPC (Stone Plastic Composite) ha revolucionado el mercado en los últimos años. Ofrece una relación precio-resistencia difícil de superar y su instalación clic lo convierte en uno de los suelos que menos obra generan.
-
-### Pros del vinílico
-
-- 100% resistente al agua y la humedad
-- Instalación rápida y limpia (sistema clic, sin obras)
-- Se puede instalar sobre casi cualquier superficie existente
-- Silencioso y confortable al pisar (amortigua el impacto)
-- Excelente relación precio-resistencia
-- Ideal para familias con mascotas (resistente a arañazos)
-
-### Contras del vinílico
-
-- Vida útil más corta que el porcelánico o parqué macizo (10-25 años)
-- Puede decolorarse con la exposición directa al sol
-- Algunos acabados low-cost pueden parecer artificiales
-- No admite acuchillado ni restauración
-- Puede expandirse o curvarse con calor extremo si no tiene junta de dilatación
-
-### Mantenimiento del vinílico
-
-Limpieza con barrido o aspirado suave y fregado con agua tibia y jabón neutro. Evitar productos abrasivos, ceras o pulimentos. Es importante no dejar charcos prolongados aunque sea resistente al agua, ya que el agua puede filtrarse por las juntas de unión.
-
-## ¿Qué suelo elegir para cada estancia?
-
-No existe un suelo universalmente mejor. La elección depende de la estancia, el uso, el presupuesto y tus prioridades estéticas. Aquí tienes las recomendaciones basadas en la práctica habitual en Vitoria:
-
-### Suelo para salón
-
-El salón es el corazón de la casa y merece un suelo que combine estética y comodidad. La mejor opción es el **parqué multicapa** si buscas calidez y valor, o un **porcelánico efecto madera** si priorizas la resistencia y el bajo mantenimiento. El vinílico SPC también es una opción muy válida en gama alta.
-
-### Suelo para cocina
-
-La cocina exige resistencia al agua, manchas y golpes. El **porcelánico** es la opción más práctica y duradera. El vinílico SPC también funciona muy bien y es más cálido al pisar. Si optas por parqué, el multicapa con tratamiento hidrófugo puede funcionar, pero requiere más cuidado.
-
-### Suelo para baño
-
-En el baño el agua es protagonista, así que las opciones son **porcelánico** o **vinílico SPC**. Ambos son 100% impermeables. El porcelánico transmite más frío pero es más durable. El vinílico SPC es más cálido al contacto y más rápido de instalar.
-
-### Suelo para dormitorios
-
-Los dormitorios priorizan el confort y la calidez. El **parqué multicapa** es la elección natural: aporta calidez, reduce el ruido al caminar y tiene buena durabilidad. El vinílico SPC en gama alta también es una alternativa interesante si buscas precio contenido.
-
-## Tendencias en suelos 2025-2026
-
-El mercado de suelos ha evolucionado mucho en los últimos años. Estas son las tendencias que dominan en Vitoria actualmente:
-
-- **Tonos terrosos y neutros:** beige, gris perla, arena y tonos madera natural son los favoritos. Los grises oscuros pierden protagonismo frente a tonos más cálidos.
-- **Formatos extragrandes en porcelánico:** 75x75, 100x100 y 120x120 cm dominan en cocinas y baños. Menos juntas, más sensación de espacio.
-- **Imitaciones madera ultrarrealistas:** los nuevos diseños de porcelánico y vinílico SPC logran imitar la madera con una fidelidad impresionante, con texturas táctiles y veteados auténticos.
-- **Texturas táctiles:** el efecto "madera rústica", piedra natural desportillada y hormigón bruto están en auge.
-- **SPC consolidado:** el vinílico SPC ha dejado de ser "la opción barata" para convertirse en una opción de gama media con merecida reputación de resistencia.
-
-## Opiniones de expertos: durabilidad
-
-Los profesionales de la reforma en Vitoria coinciden en que la durabilidad real depende más de la calidad del material elegido y la correcta instalación que del tipo en sí. En términos generales:
-
-| Tipo de suelo | Vida útil estimada | Mantenimiento |
-|--------------|-------------------|---------------|
-| **Parqué macizo** | 50+ años (con acuchillado) | Medio-alto |
-| **Parqué multicapa** | 20-30 años | Medio |
-| **Porcelánico** | 30-50 años | Bajo |
-| **Vinílico SPC** | 15-25 años | Muy bajo |
-
-## Preguntas frecuentes
-
-**¿Qué suelo es mejor para Vitoria con su clima húmedo del norte?**
-Con el clima húmedo de Álava, el porcelánico y el vinílico SPC son las opciones más recomendables porque no absorben humedad. El parqué requiere más mantenimiento. Si quieres madera, el parqué multicapa con tratamiento hidrófugo es la mejor opción.
-
-**¿Se puede instalar vinílico sobre parqué antiguo?**
-Técnicamente sí, pero no es lo recomendable. Un parqué antiguo puede tener irregularidades o piezas sueltas. Lo ideal es retirar el suelo anterior, nivelar la base y después instalar el vinílico.
-
-**¿Cuánto tiempo se tarda en instalar 80 m² de suelo?**
-Un vinílico SPC con sistema clic se instala en aproximadamente 2-3 días. El parqué multicapa flotante necesita entre 4 y 6 días. El porcelánico es el que más tiempo requiere: entre 5 y 8 días incluyendo el fraguado.
-
-**¿El parqué es compatible con suelo radiante?**
-Sí. El parqué multicapa es el más compatible gracias a su estructura en capas. El porcelánico es el que mejor conduce el calor.
-
-**¿Qué suelo requiere menos mantenimiento?**
-El porcelánico es el que menos mantenimiento necesita. El vinílico SPC también es muy fácil. El parqué requiere limpieza con productos específicos y acuchillado cada 8-12 años.
-
-**¿Cuánto cuesta nivelar el suelo antes de instalar?**
-La nivelación cuesta entre 5 y 15 €/m². En un piso de 80 m², esto supone entre 400 y 1.200 € adicionales.
-
-**¿El porcelánico es frío en invierno?**
-El porcelánico sí transmite más sensación de frío al contacto que la madera, pero esto se resuelve fácilmente con suelo radiante.
-
-**¿Merece la pena invertir en parqué premium?**
-Si valoras la estética de la madera natural y la valorización del inmueble, el parqué premium (90-130 €/m² instalado) es una inversión que se recupera. Un parqué macizo de calidad puede durar más de 50 años.
+Con la [calculadora de suelo para Vitoria](/vitoria/calculadora/suelo-vitoria) tienes un rango para tu piso, y con el formulario de abajo te ponemos en contacto con empresas de la zona.

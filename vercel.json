@@ -19,7 +19,7 @@
     },
     {
       "source": "/donostia/blog/bano-reforma-donostia(\\.html)?",
-      "destination": "/donostia/blog/reforma-bano-donostia-precios-2026",
+      "destination": "/blog/reforma-bano-donostia",
       "permanent": true
     },
     {
@@ -315,6 +315,91 @@
     {
       "source": "/barrios/reforma-otxarkoaga(\\.html)?",
       "destination": "/bilbao",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/cambio-suelo-donostia-materiales(\\.html)?",
+      "destination": "/blog/cambiar-suelo-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/pintura-piso-donostia-costes(\\.html)?",
+      "destination": "/blog/pintar-piso-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/precio-reforma-bano-donostia(\\.html)?",
+      "destination": "/blog/reforma-bano-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/reforma-bano-donostia-precios-2026(\\.html)?",
+      "destination": "/blog/reforma-bano-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/reforma-cocina-donostia-consejos(\\.html)?",
+      "destination": "/blog/reforma-cocina-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/reforma-cocina-donostia(\\.html)?",
+      "destination": "/blog/reforma-cocina-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/blog/reforma-integral-donostia-guia-completa(\\.html)?",
+      "destination": "/blog/precio-reforma-integral-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reforma-integral-piso-donostia(\\.html)?",
+      "destination": "/blog/precio-reforma-integral-donostia",
+      "permanent": true
+    },
+    {
+      "source": "/donostia/reforma-donostia(\\.html)?",
+      "destination": "/donostia",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/cambio-suelo-vitoria-materiales(\\.html)?",
+      "destination": "/blog/cambiar-suelo-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/pintura-piso-vitoria-costes(\\.html)?",
+      "destination": "/blog/pintar-piso-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/reforma-bano-vitoria-precios-2026(\\.html)?",
+      "destination": "/blog/reforma-bano-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/reforma-cocina-vitoria-consejos(\\.html)?",
+      "destination": "/blog/reforma-cocina-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/reforma-integral-vitoria-guia-completa(\\.html)?",
+      "destination": "/blog/precio-reforma-integral-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/blog/precio-reforma-integral-vitoria(\\.html)?",
+      "destination": "/blog/precio-reforma-integral-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reforma-integral-piso-vitoria(\\.html)?",
+      "destination": "/blog/precio-reforma-integral-vitoria",
+      "permanent": true
+    },
+    {
+      "source": "/vitoria/reforma-vitoria(\\.html)?",
+      "destination": "/vitoria",
       "permanent": true
     },
     {

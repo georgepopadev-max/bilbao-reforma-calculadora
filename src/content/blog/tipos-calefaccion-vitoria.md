@@ -1,137 +1,88 @@
 ---
-title: "Tipos Calefacción Vitoria 2026"
-description: "Tipos de calefacción en Vitoria 2026: gas natural, aerotermia, suelo radiante y biomasa."
-canonical: https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria
-city: vitoria
-category: Instalaciones
+title: "Tipos de Calefacción para Pisos en Vitoria 2026"
+description: "Gas, aerotermia, suelo radiante, calefacción central o redes de calor: qué conviene en un piso de Vitoria-Gasteiz y cuánto cuesta instalarlo."
+canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
+readTime: "7 min"
+category: "Instalaciones"
+city: "vitoria"
 faqs:
-  - q: "¿Cuál es el mejor sistema de calefacción para un piso en Vitoria?"
-    a: "Depende del edificio y tu presupuesto. Para edificios con acometida de gas, la caldera de gas natural sigue siendo la opción más económica. Para quien busque máxima eficiencia, la aerotermia ofrece un consumo un 60-70% inferior al gas, con mayor inversión inicial (6.000-12.000 €). En el clima alavés, la humedad del norte hace que el aislamiento sea clave antes de elegir sistema."
-  - q: "¿Cuánto cuesta instalar aerotermia en un piso de 80m² en Vitoria?"
-    a: "La instalación de aerotermia para un piso de 80m² en Vitoria cuesta entre 6.000 y 12.000 € (equipo completo con unidad interior). El consumo mensual se reduce a 40-60 € frente a los 80-120 € de gas natural. Con las ayudas Next Generation del Gobierno Vasco, puedes recuperar entre el 40% y el 65% de la inversión."
-  - q: "¿Se puede instalar suelo radiante en un piso de Vitoria ya construido?"
-    a: "Sí, pero requiere levantar el pavimento completo y suele necesitar una altura adicional de 5-10 cm. La inversión es de 70-120 €/m² solo en suelo radiante, sin incluir el equipo generador. Es más habitual en reformas integrales. El tiempo de respuesta es lento (varias horas), por lo que no es ideal para usos intermitentes."
-  - q: "¿Qué problemas de calefacción tienen los pisos antiguos de Vitoria?"
-    a: "Los pisos de más de 40 años en Vitoria suelen tener problemas de aislamiento (ventanas de madera simple, fachadas sin aislar). Muchos tienen tuberías de plomo, radiadores de hierro fundido aprovechables, y en algunos casos no tienen acometida de gas natural. Los edificios del Casco Viejo y la Coronación presentan las mayores carencias de aislamiento."
-  - q: "¿Cuánto gasta mensual un piso de 80m² en Vitoria con gas natural?"
-    a: "Un piso de 80m² en Vitoria con caldera de gas natural y uso razonable gasta entre 75 y 115 € mensuales en invierno. El consumo real depende del aislamiento del edificio, la temperatura objetivo y los hábitos. En edificios antiguos mal aislados del centro de Vitoria, el gasto puede ser significativamente mayor."
+  - q: "¿Cuál es la mejor calefacción para un piso en Vitoria?"
+    a: "En pisos con gas y radiadores, una caldera de condensación nueva es lo más barato de instalar. En una reforma integral, la aerotermia con suelo radiante o radiadores de baja temperatura es la opción más eficiente, siempre que el piso esté bien aislado."
+  - q: "¿Funciona la aerotermia con el frío de Vitoria?"
+    a: "Sí. Los equipos actuales funcionan con temperaturas exteriores muy por debajo de cero, y en Vitoria rara vez se bajan los -8 °C. Lo importante es dimensionar bien el equipo y aislar la vivienda, porque en los días más fríos baja el rendimiento."
+  - q: "¿Cuánto se gasta en calefacción en un piso de 80 m² en Vitoria?"
+    a: "Con caldera de gas y un aislamiento normal, entre 90 y 140 € al mes en los meses fríos. Con aerotermia y buen aislamiento, entre 50 y 80 €. En pisos sin aislar el gasto puede ser bastante mayor."
+  - q: "¿Qué es más rentable, cambiar la calefacción o aislar?"
+    a: "En pisos antiguos, aislar suele ser lo primero. Cambiar ventanas y aislar las paredes de fachada reduce la demanda de calor, y así cualquier sistema gasta menos. Lo ideal es hacer las dos cosas en la misma reforma."
 inContentCTAs:
-  - type: calculator
-    label: 📊 Herramienta recomendada
-    href: /vitoria/calculadora
+  - type: "leer"
+    label: "Ayudas para cambiar la calefacción en Vitoria"
+    href: "/blog/subvenciones-reformas-vitoria"
+  - type: "leer"
+    label: "Cambiar el suelo en Vitoria: precios y materiales"
+    href: "/blog/cambiar-suelo-vitoria"
+  - type: "calculator"
+    label: "Calculadora de reformas para Vitoria"
+    href: "/vitoria/calculadora"
 ---
+Vitoria-Gasteiz tiene los inviernos más fríos de las tres capitales vascas: heladas frecuentes, nieblas y algún episodio de nieve. La calefacción funciona de octubre a abril, y elegir bien el sistema y el aislamiento se nota mucho en la factura anual.
 
-Cuando te mudas a un piso en el Ensanche de Vitoria o has comprado tu primer apartamento en Lakua, una de las primeras decisiones que tomarás es qué sistema de calefacción instalar. El clima alavés, con sus inviernos húmedos y frescos pero sin temperaturas extremas, merece una reflexión cuidadosa. La llanura alavesa y los vientos del norte marcan un clima particular que influye directamente en el consumo energético de tu hogar.
+## Comparativa de sistemas
 
-En esta guía analizamos todos los sistemas de calefacción disponibles en Vitoria para 2026: desde el clásico gas natural hasta la moderna aerotermia, pasando por el suelo radiante y los radiadores de última generación. Te ayudamos a comparar costes de instalación, consumo real y qué conviene según el tipo de edificio donde vivas.
+Precios orientativos para un piso de 80 m² en Vitoria:
 
-## ¿Por Qué Es Importante Elegir Bien tu Sistema de Calefacción en Vitoria?
+| Sistema | Instalación | Gasto mensual en invierno* | Vida útil |
+|---|---|---|---|
+| Caldera de gas de condensación con radiadores | 2.600-4.600 € | 90-140 € | 15-20 años |
+| Aerotermia con radiadores de baja temperatura | 8.000-13.500 € | 55-85 € | 15-20 años |
+| Aerotermia con suelo radiante | 11.500-19.000 € | 50-75 € | 20+ años |
+| Radiadores eléctricos | 1.400-3.200 € | 150-230 € | 10-15 años |
+| Calefacción central de comunidad | Sin instalación propia | Según reparto | Según edificio |
 
-Vivir en Álava tiene sus particularidades. Los edificios del centro de Vitoria, muchos construidos entre los años 60 y 80, presentan características únicas que condicionan la elección del sistema de calefacción. La normativa energética cada vez más exigente y el alza continuada de los precios de la energía hacen que una elección acertada pueda ahorrarte miles de euros a lo largo de los años.
+*Muy variable según aislamiento, orientación y temperatura de consigna.
 
-Además, las ayudas y subvenciones del Gobierno Vasco para reformas energéticas en el País Vasco 2026 hacen que ahora sea un momento especialmente favorable para dar el paso. Los fondos Next Generation han reactivado los incentivos para la aerotermia y el aislamiento térmico, con ayudas que pueden alcanzar hasta el 40-65% de la inversión en algunos casos.
+## Cada sistema en Vitoria
 
-### Factores Clave que Influyen en tu Decisión
+### Caldera de gas de condensación
 
-Antes de profundizar en cada tipo de calefacción, considera varios aspectos previos:
+Es lo más habitual en los pisos con calefacción individual. Si tu caldera tiene más de 15 años, cambiarla por una de condensación ahorra entre un 15 y un 25 % de gas, sin obra en el resto de la vivienda. Es la opción lógica si no vas a hacer una reforma grande.
 
-- **Antigüedad del edificio:** Los pisos de más de 40 años en barrios como Coronación o San Martín suelen tener problemas de aislamiento que condicionan cualquier sistema.
-- **Tipo de propiedad:** En comunidades de propietarios, necesitas autorización para instalaciones que afecten a elementos comunes.
-- **Acceso a redes de gas:** No todas las zonas de Vitoria tienen red de gas natural disponible, especialmente en áreas periféricas como Salburua o Zabalgana (nuevos desarrollos).
-- **Metros cuadrados a calefactar:** A mayor superficie, más rentable es invertir en sistemas eficientes como la aerotermia.
-- **Presupuesto disponible:** Hay que separar la inversión inicial del coste operativo a 10-15 años vista.
+### Aerotermia
 
-## Comparativa de Sistemas de Calefacción en Vitoria 2026
+Con el clima de Vitoria la aerotermia funciona bien, pero hay que hacerla bien:
 
-### 1. Gas Natural: El Clásico Vitoriano
+- **Equipo bien dimensionado** para los días de helada. Un equipo pequeño trabajará forzado y gastará más.
+- **Emisores de baja temperatura**: suelo radiante o radiadores grandes. Los radiadores antiguos se suelen quedar cortos.
+- **Buen aislamiento**: sin él, la aerotermia pierde gran parte de su ventaja.
+- **Ubicación de la unidad exterior** con permiso de la comunidad.
 
-El gas natural sigue siendo la opción más extendida en los hogares vitorianos. Si tu edificio del Ensanche o de la zona de Ariznabarra cuenta con acometida de gas, es probablemente la opción más económica a nivel de consumo mensual. La caldera de gas natural ofrece un rendimiento excelente y proporciona también agua caliente sanitaria.
+### Suelo radiante
 
-**Coste de instalación:** Entre 2.500 y 4.500 euros (caldera + radiadores nuevos si no hay ninguno). Si ya existen radiadores de fundición instalados, el coste se reduce considerablemente.
+Es el sistema más confortable para el invierno de Vitoria: calienta de forma uniforme desde el suelo y permite trabajar con agua a baja temperatura. Solo tiene sentido en una **reforma integral**, porque hay que levantar el suelo. Muchas viviendas de Salburua y Zabalgana ya lo tienen.
 
-**Consumo medio:** Un piso de 80 metros cuadrados en Vitoria puede gastar entre 75 y 115 euros mensuales en los meses de invierno con un uso razonable.
+### Calefacción central y redes de calor
 
-### 2. Propano: Alternativa para Zonas sin Gas Natural
+Muchos bloques de los años 60 y 70 de Vitoria tienen calefacción central. La normativa obliga, en la mayoría de estos edificios, a instalar repartidores o contadores para pagar según consumo. La mejora más rentable es poner **válvulas termostáticas** en cada radiador. En algunos barrios, como Coronación, se han desarrollado **redes de calor** de barrio; si tu edificio puede conectarse, es una opción a estudiar con la comunidad.
 
-Para pisos en zonas de Vitoria donde no llega la red de gas natural, como ciertas áreas de Salburua o Zabalgana, el gas propano es una alternativa viable. Funciona con caldera igual que el gas natural, pero requiere un depósito que puede ser comunitario o individual.
+### Radiadores eléctricos
 
-**Coste de instalación:** Entre 3.500 y 6.000 euros incluyendo caldera y depósito (en propiedad o comunitario).
+Baratos de instalar pero caros de usar con los inviernos de Vitoria. Útiles como apoyo puntual o en estudios pequeños.
 
-**Consideraciones:** El precio del propano fluctúa más que el del gas natural y depende de los distribuidores locales. Es importante negociar contratos a largo plazo para controlar costes.
+## El aislamiento, primero
 
-### 3. Aerotermia: La Apuesta de Futuro
+En Vitoria, las pérdidas de calor en pisos antiguos se concentran en:
 
-La aerotermia ha experimentado un crecimiento exponencial en Álava gracias a sus altas prestaciones y las generosas ayudas disponibles. Un equipo de aerotermia capta energía del aire exterior y la transfiere al interior de tu vivienda, multiplicando por tres o cuatro la energía eléctrica consumida.
+1. **Ventanas** de vidrio simple o carpintería sin rotura de puente térmico.
+2. **Paredes de fachada** sin aislar, sobre todo al norte.
+3. **Suelos sobre portales o locales** sin calefacción, en primeros pisos.
+4. **Cajas de persiana**.
 
-**Coste de instalación:** Entre 6.000 y 12.000 euros para un sistema completo con unidad interior (fan coil o radiadores de baja temperatura).
+Cambiar ventanas, aislar las paredes de fachada por el interior y aislar el suelo sobre locales puede reducir la demanda más que cambiar de caldera. Además, son obras con ayudas habituales.
 
-**Consumo medio:** Un 60-70% inferior al gas natural en condiciones normales de uso. Para el mismo piso de 80 metros, el gasto podría rondar los 40-60 euros mensuales.
+## Ayudas
 
-> **Dato clave:** La aerotermia es compatible con suelo radiante, radiadores de baja temperatura y fan coils. En pisos con radiadores de aluminio existentes, es necesario cambiarlos por modelos de baja temperatura o añadir más superficie de emisión.
+El aislamiento, las ventanas y el cambio a aerotermia suelen tener subvenciones del Gobierno Vasco y deducciones forales en Álava. Lo explicamos en la guía de [ayudas para reformar en Vitoria](/blog/subvenciones-reformas-vitoria).
 
-### 4. Suelo Radiante: Confort Máximo
-
-El suelo radiante es el sistema que ofrece mayor confort térmico, ya que calienta de forma uniforme desde el suelo hacia arriba. Es especialmente recomendable en construcciones nuevas o en reformas integrales donde se va a levantar el pavimento completo.
-
-**Coste de instalación:** Entre 70 y 120 euros por metro cuadrado, lo que para un piso de 80 metros supone entre 5.600 y 9.600 euros solo el suelo radiante, sin incluir caldera o equipo generador.
-
-**Tiempo de respuesta:** Es su principal inconveniente: necesita varias horas en calentar y otras tantas en enfriarse. No es ideal para usos intermitentes.
-
-### 5. Radiadores Eléctricos de Última Generación
-
-Los radiadores eléctricos modernos, como los de fluido térmico o los de piedra natural, han evolucionado enormemente. Con programas horarios y termostatos inteligentes, pueden ser una opción razonable para pisos pequeños o como complemento.
-
-**Coste de instalación:** Entre 150 y 400 euros por radiador. Un piso completo puede necesitar una inversión de 1.500 a 3.500 euros.
-
-**Consumo:** Elevado si se usa como sistema principal. Solo recomendable con tarifas eléctricas con discriminación horaria y buen aislamiento.
-
-## Tabla Comparativa de Costes de Calefacción
-
-| Sistema | Instalación | Consumo mensual* | Vida útil |
-|---------|-------------|-----------------|-----------|
-| Gas Natural | 2.500 - 4.500 € | 75-115 € | 15-20 años |
-| Propano | 3.500 - 6.000 € | 85-125 € | 15-20 años |
-| Aerotermia | 6.000 - 12.000 € | 40-60 € | 15-20 años |
-| Suelo Radiante | 70-120 €/m² | 35-55 € | 30-40 años |
-| Radiadores Eléctricos | 1.500 - 3.500 € | 110-190 € | 10-15 años |
-
-*Datos orientativos para un piso de 80 m² en clima de Vitoria. El consumo real depende del aislamiento, la temperatura objetivo y los hábitos de uso.*
-
-## ¿Qué Sistema de Calefacción Conviene a tu Edificio en Vitoria?
-
-### Edificios Antiguos (más de 40 años)
-
-Los pisos del Casco Viejo vitoriano, de la Coronación o de la parte alta de San Martín suelen presentar problemas de aislamiento que requieren atención antes de instalar cualquier sistema. Tuberías de plomo, ventanas de madera simple y fachadas sin aislamiento son el talón de Aquiles de estos edificios.
-
-**Recomendación:** Priorizar el aislamiento (cambiar ventanas, aplicar aislamiento térmico en fachada si es viable) antes de invertir en un sistema de calefacción de alta eficiencia. Un sistema eficiente en un edificio mal aislado nunca rendirá como debería.
-
-### Edificios de los Años 80-90
-
-Edificios del Ensanche, Lakua o Zabalgana que ya cuentan con ciertas medidas de aislamiento. Suelen tener radiadores de aluminio o hierro fundido que pueden aprovecharse con un sistema de aerotermia de baja temperatura.
-
-**Recomendación:** La aerotermia es la opción más interesante si hay radiadores existentes. Solo necesitarías cambiarlos por modelos de mayor superficie si la potencia no es suficiente.
-
-### Edificios Modernos (menos de 20 años)
-
-Construcciones recientes con buen aislamiento térmico, frecuentemente en Zabalgana, Salburua o la nueva expansión urbana. Suelen tener preinstalación de gas o sistemas centralizados.
-
-**Recomendación:** Cualquier sistema funcionará bien. La aerotermia ofrece el mejor equilibrio entre inversión y ahorro a largo plazo, especialmente con las ayudas disponibles del Gobierno Vasco.
-
-## Lista de Comprobación Antes de Instalar tu Calefacción
-
-> **OK Antes de Contratar: Preguntas Imprescindibles**
-> - ¿Tu edificio tiene acometida de gas natural o es necesario solicitarla?
-> - ¿Necesitas permiso de la comunidad de propietarios? ¿Existe acuerdo de mayoría simple?
-> - ¿Has solicitado presupuestos a al menos 3 empresas instaladoras de Álava?
-> - ¿Has calculado el aislamiento térmico de tu vivienda? ¿Necesitas mejoras previas?
-> - ¿Conoces las ayudas y subvenciones del País Vasco 2026 para tu tipo de instalación?
-> - ¿El instalador está homologado y da garantía mínima de 2 años?
-> - ¿Has revisado el contrato de mantenimiento y piezas de recambio?
-
-## Conclusión: Invierte en Eficiencia, No Solo en Calor
-
-La mejor calefacción para tu piso en Vitoria no es necesariamente la más barata de instalar, sino la que ofrece el mejor equilibrio entre inversión inicial, coste de uso y durabilidad. En un clima como el alavés, donde la humedad del norte penetra hasta los huesos en invierno, un sistema eficiente y bien dimensionado marca la diferencia entre estar cómodo y pasar frío.
-
-Recuerda que las calderas de gas natural y propano tienen una vida útil limitada y las normativas ambientales serán cada vez más estrictas. La aerotermia, con sus ayudas actuales y su eficiencia demostrada, se perfila como la inversión más segura para el futuro de tu hogar en Vitoria.
+Con el formulario de abajo te ponemos en contacto con instaladores y empresas de reformas de Vitoria-Gasteiz para valorar tu caso.

@@ -189,5 +189,7 @@ const breadcrumbSchema = {
   @media (max-width: 640px) {
     .article-content :global(table) { font-size: 0.75rem; white-space: nowrap; }
     .article-content :global(th), .article-content :global(td) { padding: 0.625rem 0.5rem; }
+    /* La primera columna puede partirse en dos líneas para que se vean los precios sin desplazar */
+    .article-content :global(td:first-child), .article-content :global(th:first-child) { white-space: normal; min-width: 7.5rem; }
   }
 </style>
