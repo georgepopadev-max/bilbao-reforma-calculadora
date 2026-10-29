@@ -54,12 +54,18 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
     </div>
     <div class="lf-row">
       <label class="lf-field">
-        <span class="lf-label">Email</span>
-        <input type="email" name="email" required placeholder="tu@email.com" autocomplete="email" />
+        <span class="lf-label">Nombre</span>
+        <input type="text" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
       </label>
       <label class="lf-field">
         <span class="lf-label">Teléfono</span>
         <input type="tel" name="phone" required placeholder="+34 600 000 000" autocomplete="tel" pattern="^\+?[0-9\s\-]{8,20}$" />
+      </label>
+    </div>
+    <div class="lf-row">
+      <label class="lf-field lf-field-wide">
+        <span class="lf-label">Email</span>
+        <input type="email" name="email" required placeholder="tu@email.com" autocomplete="email" />
       </label>
     </div>
     <label class="lf-checkbox">
@@ -104,6 +110,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
     .lf-row { grid-template-columns: 1fr 1fr; }
   }
   .lf-field { display: block; }
+  .lf-field-wide { grid-column: 1 / -1; }
   .lf-label {
     display: block;
     font-size: 0.8125rem;
@@ -187,6 +194,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
         const ok = await sendLead({
           email: String(data.get('email')).trim(),
           phone: String(data.get('phone')).trim(),
+          name: String(data.get('name') || '').trim() || undefined,
           location: String(data.get('location')).trim(),
           calculator_type: String(data.get('service')),
           city: root.dataset.city || 'bilbao',

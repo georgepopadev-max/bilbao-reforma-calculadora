@@ -65,6 +65,16 @@
       <form id="leadCaptureForm" class="lf-form" novalidate>
         <div class="lf-row">
           <label class="lf-field">
+            <span class="lf-label">Nombre</span>
+            <input type="text" id="leadName" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
+          </label>
+          <label class="lf-field">
+            <span class="lf-label">Barrio o municipio</span>
+            <input type="text" id="leadLocation" name="location" placeholder="Ej. Deusto, Getxo" autocomplete="address-level2" maxlength="80" />
+          </label>
+        </div>
+        <div class="lf-row">
+          <label class="lf-field">
             <span class="lf-label">Email</span>
             <input type="email" id="leadEmail" name="email" required placeholder="tu@email.com" autocomplete="email" />
           </label>
@@ -800,7 +810,7 @@
     });
 
     // Lead capture form
-    setupLeadForm(low, high, calculatorType, cityLabel, budgetLabel);
+    setupLeadForm(low, high, calculatorType, city, budgetLabel);
   }
 
   /** Choose chart SVG size based on viewport width */
@@ -819,7 +829,7 @@
     low: number,
     high: number,
     calculatorType: string,
-    city: string,
+    cityKey: string,
     calcLabel: string
   ) {
     const form = document.getElementById('leadCaptureForm') as HTMLFormElement | null;
@@ -845,12 +855,21 @@
       feedback.textContent = '';
 
       try {
+        let answers: Record<string, unknown> | undefined;
+        try {
+          const raw = document.getElementById('stepFinal')?.dataset.answers;
+          answers = raw ? JSON.parse(raw) : undefined;
+        } catch { /* sin respuestas */ }
+
         const ok = await sendLead({
           email: emailInput.value.trim(),
           phone: phoneInput.value.trim(),
+          name: (document.getElementById('leadName') as HTMLInputElement | null)?.value.trim() || undefined,
+          location: (document.getElementById('leadLocation') as HTMLInputElement | null)?.value.trim() || undefined,
+          answers,
           source: 'bilbao-reforma-calculadora',
           calculator_type: calculatorType,
-          city: city,
+          city: cityKey,
           budget_min: low,
           budget_max: high,
           budget_label: calcLabel,

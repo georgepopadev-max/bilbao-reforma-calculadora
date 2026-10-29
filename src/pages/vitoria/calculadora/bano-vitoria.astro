@@ -382,6 +382,7 @@ import StepFinal from '../../../components/calculator/StepFinal.astro';
     if (sfEl) {
       sfEl.dataset.budgetLow = String(low);
       sfEl.dataset.budgetHigh = String(high);
+      sfEl.dataset.answers = JSON.stringify({ ...state, barrio });
       sfEl.dataset.budgetLabel = 'Reforma de Baño';
     }
     if (typeof (window as any).stepFinalReveal === 'function' && sfEl) {
