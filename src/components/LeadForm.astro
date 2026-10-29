@@ -48,24 +48,25 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
         </select>
       </label>
       <label class="lf-field">
-        <span class="lf-label">Barrio o municipio</span>
-        <input type="text" name="location" required value={location} placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
+        <span class="lf-label">Barrio o municipio <span class="lf-optional">(opcional)</span></span>
+        <input type="text" name="location" value={location} placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
       </label>
     </div>
     <div class="lf-row">
-      <label class="lf-field">
-        <span class="lf-label">Nombre</span>
-        <input type="text" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
-      </label>
       <label class="lf-field">
         <span class="lf-label">Teléfono</span>
-        <input type="tel" name="phone" required placeholder="+34 600 000 000" autocomplete="tel" pattern="^\+?[0-9\s\-]{8,20}$" />
+        <input type="tel" name="phone" inputmode="tel" placeholder="600 123 456" autocomplete="tel-national" />
+      </label>
+      <label class="lf-field">
+        <span class="lf-label">Email</span>
+        <input type="email" name="email" inputmode="email" placeholder="tu@email.com" autocomplete="email" />
       </label>
     </div>
+    <p class="lf-hint">Con uno de los dos es suficiente.</p>
     <div class="lf-row">
       <label class="lf-field lf-field-wide">
-        <span class="lf-label">Email</span>
-        <input type="email" name="email" required placeholder="tu@email.com" autocomplete="email" />
+        <span class="lf-label">Nombre <span class="lf-optional">(opcional)</span></span>
+        <input type="text" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
       </label>
     </div>
     <label class="lf-checkbox">
@@ -111,6 +112,9 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
   }
   .lf-field { display: block; }
   .lf-field-wide { grid-column: 1 / -1; }
+  .lf-hint { margin: -0.25rem 0 0.75rem; font-size: 0.8125rem; color: var(--color-gris); }
+  .lf-optional { font-weight: 400; color: var(--color-gris); }
+  .lf-form input.lf-invalid { border-color: var(--color-terracota); }
   .lf-label {
     display: block;
     font-size: 0.8125rem;
@@ -126,7 +130,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
     padding: 0.75rem 1rem;
     border: 2px solid var(--color-beige);
     border-radius: var(--radius-button);
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: var(--color-grafito);
     background: var(--color-blanco);
     font-family: inherit;
@@ -147,7 +151,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
     cursor: pointer;
   }
   .lf-checkbox a { color: var(--color-terracota); }
-  .lf-checkbox input { margin-top: 0.15rem; flex-shrink: 0; }
+  .lf-checkbox input { width: 1.25rem; height: 1.25rem; margin-top: 0; flex-shrink: 0; }
   .lf-submit {
     width: 100%;
     padding: 1rem 1.5rem;
@@ -168,7 +172,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
 </style>
 
 <script>
-  import { sendLead } from '../lib/lead-capture';
+  import { sendLead, validateContact } from '../lib/lead-capture';
 
   document.querySelectorAll<HTMLElement>('[data-lead-form]').forEach((root) => {
     const form = root.querySelector('form');
@@ -179,23 +183,36 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (!form.checkValidity()) {
-        feedback.textContent = 'Por favor, completa todos los campos correctamente.';
+      const data = new FormData(form);
+      const emailInput = form.querySelector<HTMLInputElement>('input[name=email]');
+      const phoneInput = form.querySelector<HTMLInputElement>('input[name=phone]');
+      emailInput?.classList.remove('lf-invalid');
+      phoneInput?.classList.remove('lf-invalid');
+      const contact = validateContact(String(data.get('email') || ''), String(data.get('phone') || ''));
+      if (!contact.ok) {
+        if (contact.field !== 'email') phoneInput?.classList.add('lf-invalid');
+        if (contact.field !== 'phone') emailInput?.classList.add('lf-invalid');
+        (contact.field === 'email' ? emailInput : phoneInput)?.focus();
+        feedback.textContent = contact.error;
+        feedback.className = 'lf-feedback error';
+        return;
+      }
+      if (data.get('consent') !== 'on') {
+        feedback.textContent = 'Necesitamos que aceptes compartir tu solicitud para poder enviártela.';
         feedback.className = 'lf-feedback error';
         return;
       }
 
-      const data = new FormData(form);
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
       feedback.textContent = '';
 
       try {
         const ok = await sendLead({
-          email: String(data.get('email')).trim(),
-          phone: String(data.get('phone')).trim(),
+          email: contact.email,
+          phone: contact.phone,
           name: String(data.get('name') || '').trim() || undefined,
-          location: String(data.get('location')).trim(),
+          location: String(data.get('location') || '').trim() || undefined,
           calculator_type: String(data.get('service')),
           city: root.dataset.city || 'bilbao',
           source: root.dataset.source || 'bilbao-reforma-form',

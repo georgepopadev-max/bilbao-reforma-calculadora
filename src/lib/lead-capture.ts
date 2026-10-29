@@ -11,8 +11,9 @@
 const LEAD_ENDPOINT = 'https://api.axonflow.es/public/lead-capture';
 
 export interface LeadPayload {
-  email: string;
-  phone: string;
+  /** Con email o teléfono basta: el formulario exige uno de los dos. */
+  email?: string;
+  phone?: string;
   source: string;
   calculator_type: string;
   city: string;
@@ -28,13 +29,45 @@ export interface LeadPayload {
   answers?: Record<string, unknown>;
 }
 
+/**
+ * Valida el contacto del formulario. Basta con teléfono o email.
+ * El teléfono se escribe como en España ("600 123 456"); se acepta también
+ * con prefijo ("+34 600 123 456", "0034…") y se devuelve limpio para enviarlo.
+ */
+export function validateContact(
+  emailRaw: string,
+  phoneRaw: string,
+): { ok: true; email?: string; phone?: string } | { ok: false; error: string; field: 'email' | 'phone' | 'both' } {
+  const email = emailRaw.trim();
+  const phone = phoneRaw.trim();
+
+  if (!email && !phone) {
+    return { ok: false, field: 'both', error: 'Déjanos un teléfono o un email para poder contactarte.' };
+  }
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+    return { ok: false, field: 'email', error: 'Revisa el email: parece que le falta algo.' };
+  }
+  if (phone) {
+    let p = phone.replace(/[().]/g, '').trim();
+    if (p.startsWith('00')) p = '+' + p.slice(2);
+    const digits = p.replace(/[\s-]/g, '');
+    const spanish = /^[6-9]\d{8}$/.test(digits);
+    const international = /^\+\d{8,15}$/.test(digits);
+    if (!spanish && !international) {
+      return { ok: false, field: 'phone', error: 'Revisa el teléfono: escríbelo con 9 cifras, por ejemplo 600 123 456.' };
+    }
+    return { ok: true, email: email || undefined, phone: spanish ? '+34' + digits : digits };
+  }
+  return { ok: true, email };
+}
+
 export async function sendLead(payload: LeadPayload): Promise<boolean> {
   const full: LeadPayload = {
     ...payload,
     page: payload.page ?? window.location.pathname,
     utm_source: payload.utm_source ?? (new URLSearchParams(window.location.search).get('utm_source') || ''),
   };
-  const { source, city, budget_label, answers, name, ...rest } = full;
+  const { source, city, budget_label, answers, name, email, phone, ...rest } = full;
   const breakdown = {
     ...(budget_label ? { budget_label } : {}),
     ...(answers ? { answers } : {}),
@@ -45,6 +78,8 @@ export async function sendLead(payload: LeadPayload): Promise<boolean> {
     source_detail: source,
     city: city.toLowerCase(),
     ...(name ? { name } : {}),
+    ...(email ? { email } : {}),
+    ...(phone ? { phone } : {}),
     ...(Object.keys(breakdown).length ? { breakdown_data: breakdown } : {}),
   };
   const res = await fetch(LEAD_ENDPOINT, {

@@ -215,6 +215,8 @@ const stepCount = actualStepCount ?? labels.length;
 
   /* ---- WIZARD STEP (used by pages) ---- */
   :global(.wizard-step) {
+    /* deja libre la cabecera fija al saltar al inicio del paso */
+    scroll-margin-top: 5rem;
     display: none;
     padding: 2rem 1.5rem;
   }
@@ -813,7 +815,15 @@ const stepCount = actualStepCount ?? labels.length;
     const totalSteps = wizardSteps.length || stepperSteps.length;
 
     // ---- Progress bar update ----
+    // Al cambiar de paso se lleva al usuario al inicio del paso nuevo; sin esto
+    // se queda donde estaba el botón "Continuar", al final, y no ve la pregunta.
+    let lastStep: number | null = null;
     function updateProgressBar(currentStep: number) {
+      if (lastStep !== null && lastStep !== currentStep) {
+        const activeStep = document.querySelector('.wizard-step.active');
+        requestAnimationFrame(() => activeStep?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      }
+      lastStep = currentStep;
       if (!progressBar || !progressBarText || !progressBarPct || !progressBarFill) return;
       const pct = Math.round(((currentStep - 1) / (totalSteps - 1)) * 100);
       progressBar.setAttribute('aria-valuenow', String(currentStep));
