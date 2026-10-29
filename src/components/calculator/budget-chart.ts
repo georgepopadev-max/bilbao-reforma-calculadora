@@ -4,6 +4,8 @@
  * 2026-07-06: responsive sizing, tooltip clamped to container.
  */
 
+import { formatEuros } from '../../lib/format';
+
 export interface BreakdownItem {
   label: string;
   value: number;
@@ -12,15 +14,7 @@ export interface BreakdownItem {
   amount?: number;
 }
 
-const eurFormatter = new Intl.NumberFormat('es-ES', {
-  style: 'currency',
-  currency: 'EUR',
-  maximumFractionDigits: 0,
-});
-
-function formatEUR(n: number): string {
-  return eurFormatter.format(n);
-}
+const formatEUR = formatEuros;
 
 /**
  * Generate a responsive donut SVG + legend HTML string.

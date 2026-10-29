@@ -59,33 +59,34 @@
 
     <!-- Lead capture form -->
     <div class="sf-leadform">
-      <h3 class="sf-leadform-title">Recibe el desglose completo por email</h3>
-      <p class="sf-leadform-desc">Te enviamos un PDF personalizado + 3 cotizaciones de empresas verificadas en tu ciudad.</p>
+      <h3 class="sf-leadform-title">Recibe el desglose completo</h3>
+      <p class="sf-leadform-desc">Déjanos tu teléfono o tu email, lo que prefieras, y te enviamos el detalle junto con presupuestos de empresas de tu zona.</p>
 
       <form id="leadCaptureForm" class="lf-form" novalidate>
         <div class="lf-row">
           <label class="lf-field">
-            <span class="lf-label">Nombre</span>
+            <span class="lf-label">Teléfono</span>
+            <input type="tel" id="leadPhone" name="phone" inputmode="tel" placeholder="600 123 456" autocomplete="tel-national" />
+          </label>
+          <label class="lf-field">
+            <span class="lf-label">Email</span>
+            <input type="email" id="leadEmail" name="email" inputmode="email" placeholder="tu@email.com" autocomplete="email" />
+          </label>
+        </div>
+        <p class="lf-hint">Con uno de los dos es suficiente.</p>
+        <div class="lf-row">
+          <label class="lf-field">
+            <span class="lf-label">Nombre <span class="lf-optional">(opcional)</span></span>
             <input type="text" id="leadName" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
           </label>
           <label class="lf-field">
-            <span class="lf-label">Barrio o municipio</span>
+            <span class="lf-label">Barrio o municipio <span class="lf-optional">(opcional)</span></span>
             <input type="text" id="leadLocation" name="location" placeholder="Ej. Deusto, Getxo" autocomplete="address-level2" maxlength="80" />
-          </label>
-        </div>
-        <div class="lf-row">
-          <label class="lf-field">
-            <span class="lf-label">Email</span>
-            <input type="email" id="leadEmail" name="email" required placeholder="tu@email.com" autocomplete="email" />
-          </label>
-          <label class="lf-field">
-            <span class="lf-label">Teléfono</span>
-            <input type="tel" id="leadPhone" name="phone" required placeholder="+34 600 000 000" autocomplete="tel" pattern="^\+?[0-9\s\-]{8,20}$" />
           </label>
         </div>
         <label class="lf-checkbox">
           <input type="checkbox" id="leadConsent" name="consent" required />
-          <span>Acepto recibir el desglose y ofertas de empresas de reformas. Puedo darme de baja en cualquier momento.</span>
+          <span>Acepto que Bilbao Reforma comparta mi solicitud con hasta 3 empresas de reformas para que me envíen presupuesto. <a href="/politica-privacidad">Política de privacidad</a>.</span>
         </label>
         <button type="submit" id="leadSubmitBtn" class="lf-submit">
           Recibir desglose completo
@@ -490,12 +491,15 @@
   }
 
   .lf-form input[type="email"],
-  .lf-form input[type="tel"] {
+  .lf-form input[type="tel"],
+  .lf-form input[type="text"] {
     width: 100%;
+    box-sizing: border-box;
     padding: 0.75rem 1rem;
     border: 2px solid var(--color-beige);
     border-radius: var(--radius-button);
-    font-size: 0.9375rem;
+    /* 16px: iOS no hace zoom al enfocar el campo */
+    font-size: 1rem;
     color: var(--color-grafito);
     background: var(--color-blanco);
     transition: border-color var(--transition-base);
@@ -507,8 +511,19 @@
     border-color: var(--color-verde-montana);
   }
 
-  .lf-form input:invalid:not(:placeholder-shown) {
+  .lf-form input.lf-invalid {
     border-color: var(--color-terracota);
+  }
+
+  .lf-hint {
+    margin: -0.25rem 0 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-gris);
+  }
+
+  .lf-optional {
+    font-weight: 400;
+    color: var(--color-gris);
   }
 
   .lf-checkbox {
@@ -523,9 +538,15 @@
   }
 
   .lf-checkbox input {
-    margin-top: 0.15rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0;
     cursor: pointer;
     flex-shrink: 0;
+  }
+
+  .lf-checkbox a {
+    color: var(--color-terracota);
   }
 
   .lf-submit {
@@ -618,8 +639,9 @@
 
 <script>
   import { generateDoughnutSVG, type BreakdownItem } from './budget-chart';
+  import { formatEuros } from '../../lib/format';
   import { generateBudgetPDF, type BudgetInfo } from './pdf-generator';
-  import { sendLead } from '../../lib/lead-capture';
+  import { sendLead, validateContact } from '../../lib/lead-capture';
 
   // ---------------------------------------------------------------------------
   // Breakdown config: label + color + percentage of high budget
@@ -721,8 +743,8 @@
     const highEl = document.getElementById('finalRangeHigh');
     const metaEl = document.getElementById('finalMeta');
 
-    if (lowEl) lowEl.textContent = formatCurrency(low) + ' EUR';
-    if (highEl) highEl.textContent = formatCurrency(high) + ' EUR';
+    if (lowEl) lowEl.textContent = formatEuros(low);
+    if (highEl) highEl.textContent = formatEuros(high);
     if (metaEl) {
       metaEl.textContent = budgetLabel + '  |  ' + cityLabel + '  |  ' +
         new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
@@ -746,7 +768,7 @@
 
       // Set total in the center
       const totalEl = budgetDiv.querySelector('[data-budget-total]') as HTMLElement | null;
-      if (totalEl) totalEl.textContent = formatCurrency(high);
+      if (totalEl) totalEl.textContent = formatEuros(high);
 
       // Tooltip: click-to-show, clamped to container
       const tooltip = budgetDiv.querySelector('.budget-chart-tooltip') as HTMLElement | null;
@@ -844,8 +866,19 @@
       const phoneInput = document.getElementById('leadPhone') as HTMLInputElement;
       const consentInput = document.getElementById('leadConsent') as HTMLInputElement;
 
-      if (!form.checkValidity()) {
-        feedback.textContent = 'Por favor, completa todos los campos correctamente.';
+      emailInput.classList.remove('lf-invalid');
+      phoneInput.classList.remove('lf-invalid');
+      const contact = validateContact(emailInput.value, phoneInput.value);
+      if (!contact.ok) {
+        if (contact.field !== 'email') phoneInput.classList.add('lf-invalid');
+        if (contact.field !== 'phone') emailInput.classList.add('lf-invalid');
+        (contact.field === 'email' ? emailInput : phoneInput).focus();
+        feedback.textContent = contact.error;
+        feedback.className = 'lf-feedback error';
+        return;
+      }
+      if (!consentInput.checked) {
+        feedback.textContent = 'Necesitamos que aceptes compartir tu solicitud para poder enviártela.';
         feedback.className = 'lf-feedback error';
         return;
       }
@@ -862,8 +895,8 @@
         } catch { /* sin respuestas */ }
 
         const ok = await sendLead({
-          email: emailInput.value.trim(),
-          phone: phoneInput.value.trim(),
+          email: contact.email,
+          phone: contact.phone,
           name: (document.getElementById('leadName') as HTMLInputElement | null)?.value.trim() || undefined,
           location: (document.getElementById('leadLocation') as HTMLInputElement | null)?.value.trim() || undefined,
           answers,
@@ -906,7 +939,4 @@
     initStepFinal();
   }
 
-  function formatCurrency(n: number): string {
-    return n.toLocaleString('es-ES');
-  }
 </script>
