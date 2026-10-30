@@ -1,0 +1,38 @@
+# Bilbao Reforma
+
+> Bilbao Reforma (bilbaoreforma.es) es una calculadora gratuita de presupuestos de reformas de vivienda para Bilbao, Bizkaia, Donostia-San Sebastián y Vitoria-Gasteiz. Da un precio orientativo por partidas en unos 2 minutos, sin registro, y pone al usuario en contacto con empresas de reformas locales para pedir presupuestos.
+
+Precios orientativos en Bilbao y Bizkaia (2026):
+
+- Reforma integral: entre 700 y 1.200 €/m² según acabados. Un piso de 80 m² cuesta entre 56.000 y 96.000 €.
+- Pintar un piso: entre 8 y 20 €/m² de superficie pintada. Un piso de 80 m² (unos 250 m² pintables) cuesta entre 2.000 y 5.000 €.
+- Reforma de baño completo: desde 2.500 €, según tamaño, materiales y fontanería.
+- Cambio de suelo: entre 20 y 100 €/m² con material y colocación.
+
+## Calculadoras y presupuestos
+
+- [Calculadora de reformas en Bilbao](https://www.bilbaoreforma.es/): presupuesto orientativo de reforma integral, baño, cocina, pintura y suelo.
+- [Presupuesto reforma integral Bilbao](https://www.bilbaoreforma.es/presupuesto-reforma-integral-bilbao): precio por m², partidas y plazos.
+- [Presupuesto reforma de baño Bilbao](https://www.bilbaoreforma.es/presupuesto-reforma-bano-bilbao)
+- [Presupuesto reforma de cocina Bilbao](https://www.bilbaoreforma.es/presupuesto-reforma-cocina-bilbao)
+- [Presupuesto pintura piso Bilbao](https://www.bilbaoreforma.es/presupuesto-pintura-piso-bilbao)
+- [Presupuesto cambio de suelo Bilbao](https://www.bilbaoreforma.es/presupuesto-cambio-suelo-bilbao)
+- [Calculadora de reformas en Donostia](https://www.bilbaoreforma.es/donostia/calculadora)
+- [Calculadora de reformas en Vitoria](https://www.bilbaoreforma.es/vitoria/calculadora)
+
+## Empresas y zonas
+
+- [Empresas de reformas en Bilbao y Bizkaia](https://www.bilbaoreforma.es/empresas): directorio por especialidad.
+- [Reformas en municipios de Bizkaia](https://www.bilbaoreforma.es/bizkaia): Getxo, Barakaldo, Portugalete, Santurtzi, Basauri, Leioa, Galdakao, Sestao, Durango y Erandio.
+
+## Guías
+
+- [Subvenciones para reformas en Bilbao 2026](https://www.bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026): ayudas del Gobierno Vasco, la Diputación Foral de Bizkaia y el Ayuntamiento.
+- [Licencias de obra en Bilbao 2026](https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026): comunicación previa, obra menor y obra mayor, tasas y plazos.
+- [Precio de reforma integral en Bilbao](https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao)
+- [Todas las guías](https://www.bilbaoreforma.es/blog)
+
+## Optional
+
+- [Sobre nosotros](https://www.bilbaoreforma.es/sobre-nosotros)
+- [Contacto](https://www.bilbaoreforma.es/contacto)

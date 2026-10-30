@@ -9,7 +9,7 @@ city: "bilbao"
 readTime: "7 min"
 faqs:
   - q: "¿Cuánto cuesta una reforma en Begoña Bilbao?"
-    a: "Una reforma en Begoña Bilbao cuesta entre 735 € y 1.155 € por m² (base 700-1.100 €/m² × multiplicador 1.05). Begoña es un barrio semicéntrico con物价 moderados y buena accesibilidad, ideal para propietarios que buscan calidad sin los sobrecostes del Casco Viejo o Abando."
+    a: "Una reforma en Begoña Bilbao cuesta entre 735 € y 1.155 € por m² (base 700-1.100 €/m² × multiplicador 1.05). Begoña es un barrio semicéntrico con precios moderados y buena accesibilidad, ideal para propietarios que buscan calidad sin los sobrecostes del Casco Viejo o Abando."
   - q: "¿Qué tipo de reforma es más necesaria en Begoña?"
     a: "En Begoña predominan edificios de los años 1950 a 1970, lo que significa que las instalaciones de fontanería y electricidad suelen requerir renovación completa. La reforma de baño con fontanería nueva y la reforma de cocina son las intervenciones más habituales en este barrio."
   - q: "¿Cómo afecta la pendiente de Begoña a la reforma?"

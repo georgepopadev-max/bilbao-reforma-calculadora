@@ -68,7 +68,7 @@ inContentCTAs:
 <p><strong>Precio:</strong> 6.000 – 12.000 € (equipo + instalación + silo)</p>
 <p><strong>Vida útil:</strong> 15-20 años (hogar), 5-10 años (quemador)</p>
 <p><strong>Ventajas:</strong> Energía renovable, bajo coste operativo, altas subvenciones</p>
-<p><strong>Desventajas:</strong> Necesita espacio para el silo de pellets, requiere carga manual periódica, más mantenimiento que газ</p>
+<p><strong>Desventajas:</strong> Necesita espacio para el silo de pellets, requiere carga manual periódica, más mantenimiento que el gas</p>
 
 <h3>4. Caldera de alta eficiencia (condensación)</h3>
 <p>Las calderas de condensación aprovechan el calor de los humos de la combustión para precalentar el agua de retorno. Esto mejora la eficiencia hasta el 10-15% respecto a una caldera convencional.</p>

@@ -36,7 +36,7 @@ Rekalde es un barrio residencial en la ladera del monte de Bilbao, con edificios
 
 ## Perfil de Rekalde para Reformas
 
-Rekalde tiene características que explican sus物价 competitivos:
+Rekalde tiene características que explican sus precios competitivos:
 
 - **Promoción pública y privada** de los años 60 a 90 con estructuras estándar
 - **Topografía de ladera** que puede complicar acceso en ciertas calles
