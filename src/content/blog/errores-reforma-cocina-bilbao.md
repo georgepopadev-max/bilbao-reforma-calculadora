@@ -1,7 +1,7 @@
 ---
 title: "7 Errores Reforma Cocina Bilbao 2026"
 description: "7 errores al reformar la cocina en Bilbao y cómo evitarlos. Guía práctica con presupuestos reales 2026 para no cometer fallos costosos."
-canonical: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
+canonical: "https://bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
 date: "2026-06-04"
 updated: "2026-10-28"
 category: "cocina"
@@ -19,11 +19,11 @@ faqs:
     a: "Es posible pero muy incómodo. La reforma dura 3-6 semanas sin cocina funcional. Necesitarás un plan alternativo: kitchenette temporal, comer fuera o quedarte en otro sitio. Si tienes niños pequeños o trabajas desde casa, considera mudarte temporalmente durante las semanas más intensas de la obra."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "7 errores al reformar la cocina en Bilbao (y cómo evitarlos) [2026]"
-    url: "https://www.bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
+    url: "https://bilbaoreforma.es/blog/errores-reforma-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"

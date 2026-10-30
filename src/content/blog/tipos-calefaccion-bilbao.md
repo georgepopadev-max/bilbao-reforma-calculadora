@@ -3,7 +3,7 @@ title: "Tipos Calefacción Bilbao 2026 | Guía"
 description: "Tipos de calefacción en Bilbao 2026: gas, aerotermia, suelo radiante, biomasa. Compara precios."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
+canonical: "https://bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 category: "calefaccion"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Un piso de 80m² en Bilbao con caldera de gas natural y uso razonable gasta entre 80 y 120 € mensuales en los meses de invierno. El consumo real depende del aislamiento del edificio, la temperatura objetivo y las horas de uso."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Tipos de Calefacción en Bilbao 2026: Guía Completa para tu Reforma"
-    url: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
+    url: "https://bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"

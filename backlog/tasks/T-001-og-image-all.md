@@ -31,7 +31,7 @@ find dist -name "*.html" -exec grep -L 'og:image' {} \;
 3. **SI NO HAY imágenes disponibles**: crear placeholders con texto overlay
 4. **Para cada página**, añadir en el layout correspondiente:
 ```astro
-<meta property="og:image" content="https://www.bilbaoreforma.es/images/og/<page>-og.jpg">
+<meta property="og:image" content="https://bilbaoreforma.es/images/og/<page>-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="<descripción clara para accesibilidad y SEO>">

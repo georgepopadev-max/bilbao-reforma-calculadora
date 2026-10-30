@@ -100,7 +100,7 @@ No reutilizamos las existentes (ya están embebidas en el flujo de wizard). Crea
 <CalculadoraLayout
   title="Presupuesto Reforma Integral Bilbao 2026 | Desde 700€/m²"
   description="Calcula el presupuesto orientativo de tu reforma integral en Bilbao. Precio real desde 700€/m² según tamaño y acabados. Sin registro, en 2 minutos."
-  canonical="https://www.bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html"
+  canonical="https://bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html"
 >
 
 <!-- Hero SEO -->

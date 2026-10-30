@@ -1,7 +1,7 @@
 ---
 title: "Ayudas y Subvenciones para Reformas en Donostia 2026"
 description: "Ayudas para reformar en Donostia en 2026: rehabilitación del Gobierno Vasco, ayudas municipales, eficiencia energética, accesibilidad y deducciones."
-canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-donostia"
+canonical: "https://bilbaoreforma.es/blog/subvenciones-reformas-donostia"
 date: "2025-04-06"
 updated: "2026-10-28"
 readTime: "8 min"

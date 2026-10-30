@@ -1,7 +1,7 @@
 ---
 title: "Empresas de Reformas en Donostia: Cómo Elegir en 2026"
 description: "Cómo elegir una empresa de reformas en Donostia: qué comprobar, cómo comparar presupuestos, preguntas clave y señales de alarma antes de firmar."
-canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-donostia"
+canonical: "https://bilbaoreforma.es/blog/empresas-reformas-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

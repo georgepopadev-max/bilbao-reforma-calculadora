@@ -1,7 +1,7 @@
 ---
 title: "Tipos de Calefacción para Pisos en Vitoria 2026"
 description: "Gas, aerotermia, suelo radiante, calefacción central o redes de calor: qué conviene en un piso de Vitoria-Gasteiz y cuánto cuesta instalarlo."
-canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-vitoria"
+canonical: "https://bilbaoreforma.es/blog/tipos-calefaccion-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

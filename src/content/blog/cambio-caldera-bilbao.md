@@ -1,7 +1,7 @@
 ---
 title: "Cambiar Caldera Bilbao 2026 | Precios"
 description: "Cambiar caldera en Bilbao: precio 3.500-7.000€, tipos (gas, gasoil, biomasa) y ayudas vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao"
+canonical: "https://bilbaoreforma.es/blog/cambio-caldera-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Calefacción"
@@ -16,11 +16,11 @@ faqs:
     a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en calderas de biomasa y hasta el 30% en calderas de condensación. El Gobierno Vasco añade hasta 5.000€ por vivienda a través del programa PREE para sustitución de calderas contaminantes. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de alta eficiencia."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Cambiar Caldera Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/cambio-caldera-bilbao"
+    url: "https://bilbaoreforma.es/blog/cambio-caldera-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Tipos Calefacción Bilbao 2026"

@@ -1,7 +1,7 @@
 ---
 title: "Reformas Begoña Bilbao 2026"
 description: "Reformas Begoña Bilbao 2026. Precios por m², multiplicador ×1.05 y empresas especializadas en el barrio. Guía práctica."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-begona-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "Begoña tiene una topografía de pendiente pronunciada que puede complicar el acceso de materiales y escombros. En edificios sin ascensor, esto añade sobrecostes.logísticos de entre 500 € y 1.500 € según la planta y la accesibilidad de la calle."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Begoña Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-begona-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-begona-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Begoña"

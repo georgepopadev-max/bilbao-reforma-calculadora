@@ -12,7 +12,7 @@
     lat: 43.2630
     lng: -2.9350
   domain: bilbaoreforma.es
-  canonical: https://www.bilbaoreforma.es/
+  canonical: https://bilbaoreforma.es/
 
 - name: Donostia-San Sebastián
   slug: donostia
@@ -25,7 +25,7 @@
     lat: 43.3183
     lng: -1.9812
   domain: bilbaoreforma.es/donostia
-  canonical: https://www.bilbaoreforma.es/donostia/
+  canonical: https://bilbaoreforma.es/donostia/
 
 - name: Vitoria-Gasteiz
   slug: vitoria
@@ -38,4 +38,4 @@
     lat: 42.8468
     lng: -2.6726
   domain: bilbaoreforma.es/vitoria
-  canonical: https://www.bilbaoreforma.es/vitoria/
+  canonical: https://bilbaoreforma.es/vitoria/

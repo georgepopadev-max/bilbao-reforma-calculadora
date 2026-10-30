@@ -1,7 +1,7 @@
 ---
 title: "Pintar un Piso en Vitoria 2026: Precios por m²"
 description: "Cuánto cuesta pintar un piso en Vitoria-Gasteiz en 2026: precio por m² de pared, alisado de gotelé, pintura térmica y antimoho, y la mejor época para pintar."
-canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-vitoria"
+canonical: "https://bilbaoreforma.es/blog/pintar-piso-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "6 min"

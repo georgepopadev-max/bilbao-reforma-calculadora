@@ -1,7 +1,7 @@
 ---
 title: "Ayudas y Subvenciones para Reformas en Vitoria 2026"
 description: "Ayudas para reformar en Vitoria-Gasteiz en 2026: Gobierno Vasco, Ayuntamiento, eficiencia energética, accesibilidad y deducciones forales de Álava."
-canonical: "https://www.bilbaoreforma.es/blog/subvenciones-reformas-vitoria"
+canonical: "https://bilbaoreforma.es/blog/subvenciones-reformas-vitoria"
 date: "2025-04-06"
 updated: "2026-10-28"
 readTime: "7 min"

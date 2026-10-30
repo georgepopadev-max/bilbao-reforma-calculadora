@@ -1,7 +1,7 @@
 ---
 title: "Cambiar Suelo Bilbao 2026 | Precios"
 description: "Cambiar suelo en Bilbao: precios reales 2026 por m², tipos de material y empresas."
-canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-bilbao"
+canonical: "https://bilbaoreforma.es/blog/cambiar-suelo-bilbao"
 date: "2026-06-15"
 updated: "2026-10-28"
 readTime: "12 min"
@@ -26,11 +26,11 @@ faqs:
     a: "Si valoras la estética de la madera natural, la durabilidad a largo plazo y la valorización del inmueble, el parqué premium (90-130 €/m² instalado) es una inversión que se recupera. Un parqué macizo de calidad puede durar más de 50 años y se puede acuchillar varias veces, algo que no permiten el laminado ni el vinílico."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Cambiar Suelo en Bilbao: Parqué vs Porcelánico vs Vinílico - Guía de Precios 2026"
-    url: "https://www.bilbaoreforma.es/blog/cambiar-suelo-bilbao"
+    url: "https://bilbaoreforma.es/blog/cambiar-suelo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante en Bilbao: Ventajas, Precios y Guía"

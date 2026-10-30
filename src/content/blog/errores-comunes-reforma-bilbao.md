@@ -3,7 +3,7 @@ title: "12 Errores Comunes en una Reforma Bilbao"
 description: "Errores comunes en una reforma: los 12 fallos más costosos y cómo evitarlos. Guía actualizada para quienes reforman en Bilbao y Bizkaia sin sorpresas."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
+canonical: "https://bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Una reforma integral de un piso de 80m² en Bilbao suele tardar entre 6 y 12 semanas, dependiendo de la complejidad. Los retrasos más comunes vienen por falta de materiales, empresas con demasiada carga de trabajo y cambios de última hora en los materiales."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "12 Errores Comunes en una Reforma (y Cómo Evitarlos)"
-    url: "https://www.bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
+    url: "https://bilbaoreforma.es/blog/errores-comunes-reforma-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"

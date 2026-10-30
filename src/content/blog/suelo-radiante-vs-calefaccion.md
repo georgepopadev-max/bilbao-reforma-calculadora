@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante vs Radiadores Bilbao"
 description: "Suelo radiante vs radiadores en Bilbao: comparativa real, precio, eficiencia y cuándo conviene."
-canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
+canonical: "https://bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
 date: "2025-01-20"
 updated: "2026-10-28"
 category: "suelo"
@@ -21,11 +21,11 @@ faqs:
     a: "Depende del sistema. Solo los suelos radiantes específicamente diseñados como 'refrigerantes' permiten refrescar. El agua debe estar siempre por encima del punto de rocío para evitar condensación. En Bilbao, con su humedad, es viable pero requiere regulación precisa y un sistema de deshumidificación."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Suelo Radiante vs Calefacción Tradicional: Guía Comparativa 2026"
-    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
+    url: "https://bilbaoreforma.es/blog/suelo-radiante-vs-calefaccion"
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante en Bilbao: Ventajas, Precios y Guía"

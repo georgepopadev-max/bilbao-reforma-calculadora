@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import { readdirSync, readFileSync } from 'node:fs';
 
-const SITE = 'https://www.bilbaoreforma.es';
+const SITE = 'https://bilbaoreforma.es';
 
 // Mismo formato que las canonicals: sin .html ni barra final
 function canonicalUrl(url) {

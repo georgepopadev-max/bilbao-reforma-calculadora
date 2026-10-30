@@ -1,7 +1,7 @@
 ---
 title: "Reformas Zabalburu Bilbao 2026"
 description: "Reformas Zabalburu Bilbao 2026. Multiplicador ×1.10, precios integrales y empresas del barrio. Guía actualizada."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "Las reformas parciales (baño, cocina, pintura, cambio de suelo) no suelen requerir licencia de obra mayor en Zabalburu. Las reformas integrales sí necesitan licencia municipal, con tramitación habitual de 2 a 4 semanas. Es recomendable consultar con el ayuntamiento antes de iniciar obras."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Zabalburu Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-zabalburu-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Zabalburu"

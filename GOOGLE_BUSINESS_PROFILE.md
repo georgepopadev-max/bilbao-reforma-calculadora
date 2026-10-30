@@ -52,7 +52,7 @@ Rellena cada campo con estos datos exactos:
 | **Dirección** | Bilbao, Bizkaia *(puedes poner solo ciudad si trabajas desde casa — no necesitas dirección exacta)* |
 | **Área de servicio** | Bilbao y Bizkaia *(selecciona la zona en el mapa que Google ofrece)* |
 | **Teléfono** | +34 642 147 856 |
-| **Website** | https://www.bilbaoreforma.es |
+| **Website** | https://bilbaoreforma.es |
 | **Horario** | Lunes a Viernes: 9:00–18:00 *(cerrado fines de semana)* |
 
 > **Tip:** Usa el teléfono con formato internacional (+34). El horario debe ser preciso — si dices 9:00–18:00, sé consistente en la realidad.
@@ -94,7 +94,7 @@ Ofrecemos precios orientativos para pintura, suelos, baños, cocinas
 y reforma integral, basados en datos reales de empresas locales.
 
 ¿Necesitas un presupuesto orientativo? Usa nuestra calculadora online 
-en www.bilbaoreforma.es y obtén una estimación en segundos.
+en bilbaoreforma.es y obtén una estimación en segundos.
 
 Trabajamos en Bilbao y toda Bizkaia. Presupuesto gratuito y sin compromiso.
 ```

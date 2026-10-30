@@ -44,7 +44,7 @@
 ## 2. Recomendación og:image
 
 ### Problema crítico
-El `public/` no tiene las imágenes `og/home-og.jpg` ni `og/blog-og.jpg`. Astro sirve `public/` tal cual, así que las referencias `https://www.bilbaoreforma.es/images/og/home-og.jpg` devuelven 404 en producción.
+El `public/` no tiene las imágenes `og/home-og.jpg` ni `og/blog-og.jpg`. Astro sirve `public/` tal cual, así que las referencias `https://bilbaoreforma.es/images/og/home-og.jpg` devuelven 404 en producción.
 
 ### Solución recomendada: Imágenes estáticas + componente OG dinámico
 
@@ -76,7 +76,7 @@ Las 9 páginas de barrios referencian `bilbao-og.jpg` que NO existe. Crear ese a
 **Paso D — og:image dinámico (opcional avanzado)**
 Si se quiere og:image con texto dinámico (ciudad + tipo de reforma + presupuesto), la opción más limpia en Astro 4 es un endpoint API:
 - Crear `src/pages/api/og/[city].ts` que devuelva imagen PNG con `@resvg/resvg-js` o similar
-- Las páginas apontam a `https://www.bilbaoreforma.es/api/og/bilbao.png?type=integral&price=12000`
+- Las páginas apontam a `https://bilbaoreforma.es/api/og/bilbao.png?type=integral&price=12000`
 
 **Archivos a modificar:**
 1. `public/images/og/` — copiar/crear imágenes estáticas
@@ -96,44 +96,44 @@ Las páginas de cada ciudad son fundamentalmente el mismo contenido en español,
 
 ```html
 <!-- Página principal de cada ciudad -->
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/">
-<link rel="alternate" hreflang="x-default" href="https://www.bilbaoreforma.es/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/">
+<link rel="alternate" hreflang="x-default" href="https://bilbaoreforma.es/">
 
 <!-- Página Bilbao -->
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/">
 
 <!-- Página Donostia -->
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/donostia/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/donostia/">
 
 <!-- Página Vitoria -->
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/vitoria/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/vitoria/">
 
 <!-- Versión vasca (x-default + eu-ES si se traduce) -->
-<link rel="alternate" hreflang="x-default" href="https://www.bilbaoreforma.es/">
-<link rel="alternate" hreflang="eu-ES" href="https://www.bilbaoreforma.es/eu/">
+<link rel="alternate" hreflang="x-default" href="https://bilbaoreforma.es/">
+<link rel="alternate" hreflang="eu-ES" href="https://bilbaoreforma.es/eu/">
 ```
 
 Dado que NO hay versiones en euskera actualmente, la estructura sería:
 
 **Página principal (`/`):**
 ```html
-<link rel="alternate" hreflang="x-default" href="https://www.bilbaoreforma.es/">
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/">
+<link rel="alternate" hreflang="x-default" href="https://bilbaoreforma.es/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/">
 ```
 
 **Página Bilbao (`/calculadora/`, `/calculadora/bano-bilbao.html`, etc.):**
 ```html
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/calculadora/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/calculadora/">
 ```
 
 **Página Donostia (`/donostia/`, `/donostia/calculadora/`, etc.):**
 ```html
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/donostia/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/donostia/">
 ```
 
 **Página Vitoria (`/vitoria/`, `/vitoria/calculadora/`, etc.):**
 ```html
-<link rel="alternate" hreflang="es-ES" href="https://www.bilbaoreforma.es/vitoria/">
+<link rel="alternate" hreflang="es-ES" href="https://bilbaoreforma.es/vitoria/">
 ```
 
 ### Implementación

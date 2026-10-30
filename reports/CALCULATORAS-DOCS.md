@@ -156,7 +156,7 @@ const MIN_NUEVO = 1500; // Precio mínimo
 <CalculadoraLayout
   title="Calculadora [Tipo] Bilbao 2026"
   description="[max 155 chars]"
-  canonical="https://www.bilbaoreforma.es/calculadora/nuevo-tipo-bilbao.html"
+  canonical="https://bilbaoreforma.es/calculadora/nuevo-tipo-bilbao.html"
   city="bilbao"
   calculatorType="nuevo_tipo"  // ⚠️ Si es nuevo tipo, hay que añadirlo al type union
   minPrice={1500}  // Opcional, activa schema WebApplication

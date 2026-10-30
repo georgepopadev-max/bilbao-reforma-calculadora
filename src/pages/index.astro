@@ -17,10 +17,10 @@ import FinalCTA from '../components/home/FinalCTA.astro';
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://www.bilbaoreforma.es/#organization",
+  "@id": "https://bilbaoreforma.es/#organization",
   "name": "Bilbao Reforma",
-  "url": "https://www.bilbaoreforma.es",
-  "logo": "https://www.bilbaoreforma.es/images/logo.png",
+  "url": "https://bilbaoreforma.es",
+  "logo": "https://bilbaoreforma.es/images/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+34 642 147 856",
@@ -41,15 +41,15 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Bilbao Reforma",
-  "url": "https://www.bilbaoreforma.es",
-  "publisher": { "@id": "https://www.bilbaoreforma.es/#organization" }
+  "url": "https://bilbaoreforma.es",
+  "publisher": { "@id": "https://bilbaoreforma.es/#organization" }
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Reformas integrales y presupuestos online",
-  "provider": { "@id": "https://www.bilbaoreforma.es/#organization" },
+  "provider": { "@id": "https://bilbaoreforma.es/#organization" },
   "areaServed": [
     { "@type": "City", "name": "Bilbao" },
     { "@type": "City", "name": "Donostia-San Sebastián" },
@@ -111,9 +111,9 @@ const faqSchema = {
 <BaseLayout
   title="Calculadora de Reformas Bilbao | Gratis 2026"
   description="Calcula el presupuesto de tu reforma en Bilbao en 2 minutos. Precios reales de empresas locales. Reforma integral, cocina, baño y pintura. Sin registro."
-  canonical="https://www.bilbaoreforma.es/"
+  canonical="https://bilbaoreforma.es/"
   jsonSchemas={[organizationSchema, websiteSchema, serviceSchema, faqSchema]}
-  ogImage="https://www.bilbaoreforma.es/images/og/home-og.jpg"
+  ogImage="https://bilbaoreforma.es/images/og/home-og.jpg"
   ogImageAlt="Reformas Bilbao 2026"
 >
   <Header city="bilbao" />

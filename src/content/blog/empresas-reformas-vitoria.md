@@ -1,7 +1,7 @@
 ---
 title: "Empresas de Reformas en Vitoria: Cómo Elegir en 2026"
 description: "Cómo elegir una empresa de reformas en Vitoria-Gasteiz: qué comprobar, cómo comparar presupuestos, calendario de pagos y señales de alarma antes de firmar."
-canonical: "https://www.bilbaoreforma.es/blog/empresas-reformas-vitoria"
+canonical: "https://bilbaoreforma.es/blog/empresas-reformas-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "6 min"

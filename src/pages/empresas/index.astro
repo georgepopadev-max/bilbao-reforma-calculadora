@@ -279,7 +279,7 @@ const schema = {
     '@type': 'ListItem',
     position: i + 1,
     name: e.name,
-    url: `https://www.bilbaoreforma.es/empresas/${e.slug}`,
+    url: `https://bilbaoreforma.es/empresas/${e.slug}`,
     description: e.description,
   })),
 };
@@ -329,8 +329,8 @@ function renderCard(e: typeof empresas[0]): string {
 <BaseLayout
   title={`${empresas.length} Empresas Reformas Bilbao 2026 | Verificadas`}
   description={`${empresas.length} empresas de reformas verificadas en Bilbao y Bizkaia. Filtra por especialidad: integrales, baños, cocinas, electricidad, fontanería, pintura y más.`}
-  canonical="https://www.bilbaoreforma.es/empresas"
-  ogImage="https://www.bilbaoreforma.es/images/og/empresas-og.jpg"
+  canonical="https://bilbaoreforma.es/empresas"
+  ogImage="https://bilbaoreforma.es/images/og/empresas-og.jpg"
   ogImageAlt="Empresas de Reformas Bilbao"
 >
   <Fragment slot="head">

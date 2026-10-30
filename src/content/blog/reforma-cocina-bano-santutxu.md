@@ -3,7 +3,7 @@ title: "Reforma Cocina y Baño Santutxu 2026"
 description: "Reformar cocina y baño en Santutxu en 2026: precios orientativos, cómo planificar las dos obras a la vez y qué tienen de especial los pisos del barrio."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
+canonical: "https://bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 category: "bano"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Es extremadamente incómodo. Sin cocina usable y sin baño usable, necesitarás depender de comida para llevar, platos desechables y el baño de un vecino o familiar. Lo más práctico es coordinar la reforma con vacaciones o pasar esas semanas en casa de familiares."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma Cocina y Baño Santutxu 2025-2026: Precios Reales y Guía Local"
-    url: "https://www.bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
+    url: "https://bilbaoreforma.es/blog/reforma-cocina-bano-santutxu"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"

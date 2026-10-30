@@ -1,7 +1,7 @@
 ---
 title: "Reforma de Cocina en Donostia 2026: Precios y Plazos"
 description: "Precio de reformar una cocina en Donostia en 2026: muebles, encimera, instalaciones y un ejemplo completo, con lo específico de los pisos de la ciudad."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-donostia"
+canonical: "https://bilbaoreforma.es/blog/reforma-cocina-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "8 min"

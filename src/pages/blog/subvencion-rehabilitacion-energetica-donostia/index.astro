@@ -29,10 +29,10 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.bilbaoreforma.es/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.bilbaoreforma.es/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Subvenciones', item: 'https://www.bilbaoreforma.es/blog/subvenciones-reformas' },
-    { '@type': 'ListItem', position: 4, name: 'Donostia', item: 'https://www.bilbaoreforma.es/blog/subvencion-rehabilitacion-energetica-donostia' },
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://bilbaoreforma.es/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://bilbaoreforma.es/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Subvenciones', item: 'https://bilbaoreforma.es/blog/subvenciones-reformas' },
+    { '@type': 'ListItem', position: 4, name: 'Donostia', item: 'https://bilbaoreforma.es/blog/subvencion-rehabilitacion-energetica-donostia' },
   ],
 };
 
@@ -44,8 +44,8 @@ const articleSchema = {
   datePublished: '2026-06-28',
   dateModified: '2026-06-28',
   inLanguage: 'es-ES',
-  author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
-  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
+  author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
+  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
 };
 
 const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
@@ -54,9 +54,9 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 <BaseLayout
   title="Rehab Energética Donostia 2026"
   description="Ayudas rehabilitación energética Donostia 2026: Plan PREE Gipuzkoa y Etxebide. Cuantías de hasta 10.000€ por vivienda. Requisitos y cómo solicitarlas."
-  canonical="https://www.bilbaoreforma.es/blog/subvencion-rehabilitacion-energetica-donostia"
+  canonical="https://bilbaoreforma.es/blog/subvencion-rehabilitacion-energetica-donostia"
   ogType="article"
-  ogImage="https://www.bilbaoreforma.es/images/og/donostia-og.jpg"
+  ogImage="https://bilbaoreforma.es/images/og/donostia-og.jpg"
   ogImageAlt="Rehab Energética Donostia 2026"
   jsonSchemas={jsonSchemas}
 >

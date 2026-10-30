@@ -1,7 +1,7 @@
 ---
 title: "Reforma de Baño en Donostia 2026: Precios y Guía"
 description: "Cuánto cuesta reformar un baño en Donostia en 2026: precios por tipo de reforma, partidas, plazos y qué tener en cuenta en pisos antiguos de Gros, Amara o Egia."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-donostia"
+canonical: "https://bilbaoreforma.es/blog/reforma-bano-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "8 min"

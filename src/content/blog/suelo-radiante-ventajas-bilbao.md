@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante Bilbao 2026 | Guía + Precio"
 description: "Suelo radiante en Bilbao: precio 70-100€/m², ventajas, instalación y subvenciones vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
+canonical: "https://bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
 date: "2025-01-15"
 updated: "2026-10-28"
 category: "suelo"
@@ -19,11 +19,11 @@ faqs:
     a: "Sí. Cada circuito del suelo radiante (habitación, salón, cocina) se controla independientemente mediante termostatos. Puedes bajar la calefacción en habitaciones vacías y mantener confort en las que usas. Esta regulación por zonas representa un ahorro adicional del 10-15% en consumo."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "¿Por Qué Poner Suelo Radiante? 7 Razones que te Sorprenderán"
-    url: "https://www.bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
+    url: "https://bilbaoreforma.es/blog/suelo-radiante-ventajas-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Cambiar Suelo en Bilbao: Guía Completa de Precios 2026"

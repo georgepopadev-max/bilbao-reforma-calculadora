@@ -1,7 +1,7 @@
 ---
 title: "Reformas Zorrotzaurre Bilbao 2026"
 description: "Reformas Zorrotzaurre Bilbao 2026. Multiplicador ×1.25, precios loft e integrales en la isla urbana en transformación. Guía local."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "Las reformas en Zorrotzaurre suelen combinar elementos industriales (techos vistos, estructuras metálicas, ladrillo caravista) con instalaciones modernas. El trabajo de demolición parcial, saneado de estructura y tratamiento de hierro visto requiere mano de obra especializada que no todas las empresas de reformas en Bilbao ofrecen."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Zorrotzaurre Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-zorrotzaurre-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Zorrotzaurre"

@@ -1,7 +1,7 @@
 ---
 title: "Reforma vs Reestructuración Bilbao 2026"
 description: "Reforma vs reestructuración en Bilbao: qué papel necesitas para obra menor, obra mayor y redistribute tu piso. Guía 2026 con licencias, precios y ejemplos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
 date: "2026-06-04"
 updated: "2026-10-28"
 category: "general"
@@ -19,11 +19,11 @@ faqs:
     a: "Sí, significativamente. El Casco Viejo tiene protección patrimonial y cualquier trabajo que afecte a fachada, estructura o elementos visibles desde la calle requiere autorización adicional del Gobierno Vasco. Los plazos se alargan (3-6 meses de tramitación) y los costes pueden ser un 25-40% superiores por la complejidad burocrática y logística."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma vs Reestructuración en Bilbao: Qué Papel Necesitas [2026]"
-    url: "https://www.bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
+    url: "https://bilbaoreforma.es/blog/reforma-vs-reestructuracion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"

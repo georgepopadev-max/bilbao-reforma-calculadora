@@ -1,8 +1,8 @@
-# DNS Setup: Redirigir bilbaoreforma.es → www.bilbaoreforma.es
+# DNS Setup: Redirigir bilbaoreforma.es → bilbaoreforma.es
 
 ## Problema
 
-El dominio `bilbaoreforma.es` (sin www) no redirige a `www.bilbaoreforma.es`. Esto afecta al SEO porque Google puede ver dos versiones diferentes del mismo sitio.
+El dominio `bilbaoreforma.es` (sin www) no redirige a `bilbaoreforma.es`. Esto afecta al SEO porque Google puede ver dos versiones diferentes del mismo sitio.
 
 ## Lo que George tiene que hacer
 
@@ -21,7 +21,7 @@ El dominio `bilbaoreforma.es` (sin www) no redirige a `www.bilbaoreforma.es`. Es
 
 3. **Configura el redirect 301**
    - Dominio origen: `bilbaoreforma.es` (o `http://bilbaoreforma.es`)
-   - Dominio destino: `https://www.bilbaoreforma.es`
+   - Dominio destino: `https://bilbaoreforma.es`
    - Tipo de redirect: **301 (Permanent Redirect)** — esto es importante para SEO
 
 4. **Guarda los cambios**
@@ -41,7 +41,7 @@ Si tu hosting permite añadir un dominio adicional o un CNAME:
 ```apache
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^bilbaoreforma\.es [NC]
-RewriteRule ^(.*)$ https://www.bilbaoreforma.es/$1 [R=301,L]
+RewriteRule ^(.*)$ https://bilbaoreforma.es/$1 [R=301,L]
 ```
 
 O si usas Nginx, añade en la configuración:
@@ -49,7 +49,7 @@ O si usas Nginx, añade en la configuración:
 ```nginx
 server {
     server_name bilbaoreforma.es;
-    return 301 https://www.bilbaoreforma.es$request_uri;
+    return 301 https://bilbaoreforma.es$request_uri;
 }
 ```
 
@@ -60,7 +60,7 @@ Si usas Cloudflare como DNS:
 1. Entra en Cloudflare → tu sitio → "Rules" → "Redirect Rules"
 2. Crea una regla:
    - **When**: Hostname equals `bilbaoreforma.es`
-   - **Then**: Redirect to `https://www.bilbaoreforma.es/{path}`
+   - **Then**: Redirect to `https://bilbaoreforma.es/{path}`
    - Tipo: **301**
 
 ### Alternativa C: Netlify (gratis)
@@ -69,7 +69,7 @@ Si despliegas en Netlify:
 
 1. Crea un archivo `public/_redirects` con:
    ```
-   https://bilbaoreforma.es/* https://www.bilbaoreforma.es/:splat 301
+   https://bilbaoreforma.es/* https://bilbaoreforma.es/:splat 301
    ```
 
 ---
@@ -91,8 +91,8 @@ Si despliegas en Netlify:
 
 1. Abre una ventana de incógnito
 2. Visita: `http://bilbaoreforma.es`
-3. Deberías ser redirigido automáticamente a `https://www.bilbaoreforma.es`
-4. Verifica que la URL en el navegador muestra `www.bilbaoreforma.es`
+3. Deberías ser redirigido automáticamente a `https://bilbaoreforma.es`
+4. Verifica que la URL en el navegador muestra `bilbaoreforma.es`
 
 ## Nota importante
 
