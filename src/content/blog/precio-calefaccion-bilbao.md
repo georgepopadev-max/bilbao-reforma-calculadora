@@ -1,7 +1,7 @@
 ---
 title: "Precio Calefacción Bilbao 2026 | Guía"
 description: "Precio calefacción en Bilbao: instalación desde 3.500€. Compara gas, aerotermia y suelo radiante con datos reales."
-canonical: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao"
+canonical: "https://bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Calefacción"
@@ -16,11 +16,11 @@ faqs:
     a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en aerotermia y suelo radiante. El Gobierno Vasco añade ayudas de hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Precio Calefacción Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/precio-calefaccion-bilbao"
+    url: "https://bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao 2026"

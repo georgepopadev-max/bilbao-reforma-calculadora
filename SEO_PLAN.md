@@ -10,7 +10,7 @@
 
 ### 1.1 Posicionamiento Actual
 - `bilbaoreforma.es` (sin www) → **No resuelve** (muestra página de hosting por defecto)
-- `www.bilbaoreforma.es` → **Activo**, pero no aparece en top 20 para:
+- `bilbaoreforma.es` → **Activo**, pero no aparece en top 20 para:
   - "calculadora reformas Bilbao" ❌
   - "presupuesto reforma Bilbao" ❌
   - "reformas Bilbao" ❌
@@ -25,7 +25,7 @@
 | tiendamanilla.com | Alta | Blog con muchos artículos |
 
 ### 1.3 Problemas Técnicos Detectados
-1. **DNS crítico:** `bilbaoreforma.es` no redirige a `www.bilbaoreforma.es`
+1. **DNS crítico:** `bilbaoreforma.es` no redirige a `bilbaoreforma.es`
 2. **H1 de la home** podría incluir más keywords
 3. **Falta contenido SEO** en la calculadora (FAQ, tabla de precios)
 4. **Falta página específica** para "reformas Bilbao" y "presupuesto reforma Bilbao"

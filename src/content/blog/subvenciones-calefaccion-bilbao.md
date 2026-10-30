@@ -1,7 +1,7 @@
 ---
 title: "Subvenciones Calefacción Bilbao 2026"
 description: "Subvenciones calefacción Bilbao 2026: Plan Rehabilitación, Gobierno Vasco y ayudas municipales. Hasta 6.000€."
-canonical: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
+canonical: "https://bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Calefacción"
@@ -16,11 +16,11 @@ faqs:
     a: "Los requisitos principales son: ser propietario o inquilino de la vivienda, que sea residencia habitual, contratar empresa instaladora habilitada, cumplir los requisitos técnicos del equipo (COP, etiquetado energético), y solicitar la ayuda antes de iniciar la obra."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Subvenciones Calefacción Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
+    url: "https://bilbaoreforma.es/blog/subvenciones-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Precio Bilbao 2026"

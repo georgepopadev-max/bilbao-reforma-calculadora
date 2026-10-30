@@ -1,7 +1,7 @@
 ---
 title: "Encimeras de Cocina en Donostia 2026: Materiales y Precios"
 description: "Qué encimera elegir en Donostia: cuarzo, ultracompacto, granito, laminado o madera, con precio por metro lineal instalado y cómo aguantan la humedad."
-canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-donostia"
+canonical: "https://bilbaoreforma.es/blog/materiales-cocina-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

@@ -3,7 +3,7 @@ title: "Renovar Piso Antiguo Bilbao 2026"
 description: "Reformar un piso antiguo en Bilbao: tuberías de plomo, electricidad vieja, licencias en el casco histórico y cómo planificar la reforma integral."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
+canonical: "https://bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
 category: "general"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "La duración depende del alcance: una actualización de acabados dura 4-8 semanas, una reforma semintegral 2-4 meses, una reforma integral con distribución 4-6 meses, y si hay que tocar estructura puede superar los 6 meses."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma de Piso Antiguo en Bilbao: Guía Completa 2026"
-    url: "https://www.bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
+    url: "https://bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"

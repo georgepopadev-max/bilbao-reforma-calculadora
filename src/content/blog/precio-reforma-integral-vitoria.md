@@ -1,7 +1,7 @@
 ---
 title: "Precio Reforma Integral en Vitoria 2026: Costes por m²"
 description: "Cuánto cuesta una reforma integral en Vitoria-Gasteiz en 2026: precio por m² según calidad, ejemplo de un piso de 80 m², sobrecostes y plazos."
-canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-vitoria"
+canonical: "https://bilbaoreforma.es/blog/precio-reforma-integral-vitoria"
 date: "2026-06-18"
 updated: "2026-10-28"
 readTime: "8 min"

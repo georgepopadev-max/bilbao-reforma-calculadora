@@ -176,13 +176,13 @@ Basado en análisis del contenido existente y gaps vs competidores:
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Bilbao Reforma",
-  "url": "https://www.bilbaoreforma.es/",
+  "url": "https://bilbaoreforma.es/",
   "description": "Calculadora de presupuestos de reformas en Bilbao 2026. Precios orientativos gratis en 2 minutos.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.bilbaoreforma.es/calculadora/?q={search_term_string}"
+      "urlTemplate": "https://bilbaoreforma.es/calculadora/?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -203,14 +203,14 @@ Basado en análisis del contenido existente y gaps vs competidores:
   "author": {
     "@type": "Organization",
     "name": "Bilbao Reforma",
-    "url": "https://www.bilbaoreforma.es/"
+    "url": "https://bilbaoreforma.es/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Bilbao Reforma",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.bilbaoreforma.es/images/logo-bilbao-reforma.png"
+      "url": "https://bilbaoreforma.es/images/logo-bilbao-reforma.png"
     }
   },
   "datePublished": "2026-06-17",

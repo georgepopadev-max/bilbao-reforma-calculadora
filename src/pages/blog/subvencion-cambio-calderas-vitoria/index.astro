@@ -29,10 +29,10 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.bilbaoreforma.es/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.bilbaoreforma.es/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Subvenciones', item: 'https://www.bilbaoreforma.es/blog/subvenciones-reformas' },
-    { '@type': 'ListItem', position: 4, name: 'Vitoria', item: 'https://www.bilbaoreforma.es/blog/subvencion-cambio-calderas-vitoria' },
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://bilbaoreforma.es/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://bilbaoreforma.es/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Subvenciones', item: 'https://bilbaoreforma.es/blog/subvenciones-reformas' },
+    { '@type': 'ListItem', position: 4, name: 'Vitoria', item: 'https://bilbaoreforma.es/blog/subvencion-cambio-calderas-vitoria' },
   ],
 };
 
@@ -44,8 +44,8 @@ const articleSchema = {
   datePublished: '2026-06-28',
   dateModified: '2026-06-28',
   inLanguage: 'es-ES',
-  author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
-  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
+  author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
+  publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
 };
 
 const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
@@ -54,9 +54,9 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 <BaseLayout
   title="Subvención Calderas Vitoria 2026"
   description="Ayudas cambio calderas Vitoria 2026: Plan Renove Álava y cambio a aerotermia. Cuantías de hasta 3.000€ por potencia. Requisitos y solicitud."
-  canonical="https://www.bilbaoreforma.es/blog/subvencion-cambio-calderas-vitoria"
+  canonical="https://bilbaoreforma.es/blog/subvencion-cambio-calderas-vitoria"
   ogType="article"
-  ogImage="https://www.bilbaoreforma.es/images/og/vitoria-og.jpg"
+  ogImage="https://bilbaoreforma.es/images/og/vitoria-og.jpg"
   ogImageAlt="Subvención Cambio Calderas Vitoria 2026"
   jsonSchemas={jsonSchemas}
 >
@@ -147,7 +147,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
       <ol style="margin: 1.5rem 0; padding-left: 1.5rem; color: var(--color-grafito); list-style: none; counter-reset: step;">
         <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem; counter-increment: step;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">1</span><strong>Consulta la convocatoria:</strong> Accede a la web de la Diputación Foral de Álava para conocer las bases exactas y el presupuesto disponible.</li>
         <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">2</span><strong>Recibe presupuestos:</strong> Pide al menos 2-3 presupuestos a empresas instaladoras autorizadas que incluyan marca, modelo y especificaciones técnicas del equipo.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">3</span><strong>Presenta la solicitud:</strong> Rellena el formulario a través de la sede electrónica de la Deputación Foral de Álava dentro del plazo. Algunas convocatorias funcionan por orden de llegada hasta agotar presupuesto.</li>
+        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">3</span><strong>Presenta la solicitud:</strong> Rellena el formulario a través de la sede electrónica de la Diputación Foral de Álava dentro del plazo. Algunas convocatorias funcionan por orden de llegada hasta agotar presupuesto.</li>
         <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">4</span><strong>Espera la resolución:</strong> El plazo de resolución suele ser de 1-2 meses.</li>
         <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">5</span><strong>Instala el equipo:</strong> Una vez presentada la solicitud (y preferiblemente una vez concedida), ejecuta la instalación con la empresa elegida.</li>
         <li style="position: relative; padding-left: 3rem; margin-bottom: 0;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">6</span><strong>Justifica y cobra:</strong> Presenta facturas, certificado de instalación y fotografías para recibir el pago de la ayuda.</li>

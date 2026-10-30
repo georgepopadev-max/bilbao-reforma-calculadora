@@ -1,7 +1,7 @@
 ---
 title: "Rehabilitación Edificio Antiguo Bilbao 2026"
 description: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao en 2026. Precios €/m², ayudas, licencias y plazos para reformas de edificios de los años 20-60."
-canonical: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
+canonical: "https://bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
 date: "2026-06-04"
 updated: "2026-10-28"
 category: "general"
@@ -19,11 +19,11 @@ faqs:
     a: "Sí. Toda rehabilitación que implique consolidación estructural, reforma de fachada o modificación de elementos comunes requiere licencia de obra mayor. En edificios protegidos por Patrimonio Histórico (Casco Viejo, Indautxu, Deusto), también necesitas informe favorable del departamento de Patrimonio del Ayuntamiento de Bilbao, lo que puede alargar la tramitación entre 2 y 4 meses adicionales."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Cuánto cuesta rehabilitar un edificio antiguo en Bilbao [2026]"
-    url: "https://www.bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
+    url: "https://bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"

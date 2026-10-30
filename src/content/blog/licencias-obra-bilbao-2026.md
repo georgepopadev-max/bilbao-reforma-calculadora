@@ -1,7 +1,7 @@
 ---
 title: "Licencias de Obra Bilbao 2026: Guía y Precios"
 description: "Todo sobre licencias de obra en Bilbao: tipos, precios, plazos y qué obras requieren proyecto técnico. Actualizado 2026."
-canonical: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
+canonical: "https://bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
 date: "2026-06-21"
 updated: "2026-10-28"
 readTime: "9 min"
@@ -20,11 +20,11 @@ faqs:
     a: "Las sanciones van desde los 600 euros en infracciones leves hasta los 60.000 euros en las muy graves, además de la obligación de restaurar la legalidad urbanística. A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas licencias de obra Bilbao es siempre una mala decisión económica, tanto a corto como a largo plazo."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Licencias de Obra Bilbao 2026: Tipos, Costes y Trámites"
-    url: "https://www.bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
+    url: "https://bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
 inContentCTAs:
   - type: "leer"
     label: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"

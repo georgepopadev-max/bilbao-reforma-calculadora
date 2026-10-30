@@ -93,7 +93,7 @@ src/pages/vitoria/calculadora/
 Para cada archivo copiar del correspondiente Bilbao:
 1. Cambiar import paths (3 levels up en vez de 2)
 2. Props de CalculadoraLayout: `city="donostia"` o `city="vitoria"`
-3. Canonical URL: `https://www.bilbaoreforma.es/donostia/calculadora/bano-donostia.html`
+3. Canonical URL: `https://bilbaoreforma.es/donostia/calculadora/bano-donostia.html`
 4. Ajustar todos los precios según tablas arriba
 5. Cambiar título h1: "Reforma de Baño en Donostia" / "en Vitoria"
 6. Cambiar badges de precio en las cards: "desde X EUR" con nuevos valores

@@ -20,8 +20,8 @@
 - **Solución:** Añadir un H1 oculto semánticamente (visible para Google) en la sección intro: `<h1>Calculadora de Presupuestos de Reformas en Bilbao 2026</h1>` y mantener el H2 actual como subtítulo visual.
 
 ### 2. Canonical con www inconsistente entre home y calculadora
-- **Impacto:** La calculadora usa `https://bilbaoreforma.es/calculadora/index.html` (sin www) y la home usa `https://www.bilbaoreforma.es/`. Google las ve como sitios distintos → divide el PageRank y duplica contenido.
-- **Solución:** Cambiar el canonical de la calculadora a `https://www.bilbaoreforma.es/calculadora/` y aplicar redirect 301 en el servidor del no-www → www.
+- **Impacto:** La calculadora usa `https://bilbaoreforma.es/calculadora/index.html` (sin www) y la home usa `https://bilbaoreforma.es/`. Google las ve como sitios distintos → divide el PageRank y duplica contenido.
+- **Solución:** Cambiar el canonical de la calculadora a `https://bilbaoreforma.es/calculadora/` y aplicar redirect 301 en el servidor del no-www → www.
 
 ### 3. Title no contiene "presupuesto reforma Bilbao" como frase exacta
 - **Impacto:** Title actual: "Calculadora de Reformas Bilbao 2026 | Presupuesto Gratis por Tipo de Reforma". Google no detecta coincidencia exacta con "presupuesto reforma Bilbao" (~1.300 búsquedas/mes).

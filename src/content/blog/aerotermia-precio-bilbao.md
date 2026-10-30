@@ -1,7 +1,7 @@
 ---
 title: "Aerotermia Precio Bilbao 2026 | Guía"
 description: "Aerotermia en Bilbao: precio 12.000-18.000€, ahorro hasta 70% y subvenciones Plan Rehabilitación vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao"
+canonical: "https://bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Calefacción"
@@ -16,11 +16,11 @@ faqs:
     a: "El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión. El Gobierno Vasco añade hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Aerotermia Precio Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/aerotermia-precio-bilbao"
+    url: "https://bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Aerotermia Bilbao: Ventajas"

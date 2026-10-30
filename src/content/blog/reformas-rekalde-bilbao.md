@@ -1,7 +1,7 @@
 ---
 title: "Reformas Rekalde Bilbao"
 description: "Reformas Rekalde Bilbao 2026. Multiplicador ×0.90, barrio económico para reformas funcionales. Guía con precios y empresas."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-rekalde-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "En Rekalde puedes ahorrar un 10% respecto a la media de Bilbao por el multiplicador. Para ahorrar más: pide 3 presupuestos, reforma fuera de temporada alta (noviembre-marzo), evita tocar la distribución de instalaciones y elige materiales de stock o exposición."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Rekalde Bilbao"
-    url: "https://www.bilbaoreforma.es/blog/reformas-rekalde-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-rekalde-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Rekalde"
@@ -36,7 +36,7 @@ Rekalde es un barrio residencial en la ladera del monte de Bilbao, con edificios
 
 ## Perfil de Rekalde para Reformas
 
-Rekalde tiene características que explican sus物价 competitivos:
+Rekalde tiene características que explican sus precios competitivos:
 
 - **Promoción pública y privada** de los años 60 a 90 con estructuras estándar
 - **Topografía de ladera** que puede complicar acceso en ciertas calles

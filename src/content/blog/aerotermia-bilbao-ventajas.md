@@ -3,7 +3,7 @@ title: "Aerotermia Bilbao 2026 | Ventajas y Precio"
 description: "Aerotermia en Bilbao: ventajas, precio 12.000-18.000€ y subvenciones 2026 para tu reforma."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/aerotermia-bilbao-ventajas"
+canonical: "https://bilbaoreforma.es/blog/aerotermia-bilbao-ventajas"
 category: "subvenciones"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Sí, pero con matices. La aerotermia trabaja a temperaturas de impulsión más bajas (40-50°C) que una caldera convencional (60-70°C). Los radiadores de aluminio pueden necesitar más elementos para compensar la menor temperatura del agua. En pisos con poco aislamiento puede convenir cambiarlos por radiadores de baja temperatura o por suelo radiante."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Aerotermia en Bilbao 2026: Ventajas, Subvenciones País Vasco y Comparativa"
-    url: "https://www.bilbaoreforma.es/blog/aerotermia-bilbao-ventajas"
+    url: "https://bilbaoreforma.es/blog/aerotermia-bilbao-ventajas"
 inContentCTAs:
   - type: "leer"
     label: "Tipos de Calefacción en Bilbao"

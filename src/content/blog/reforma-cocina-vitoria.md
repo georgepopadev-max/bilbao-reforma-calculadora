@@ -1,7 +1,7 @@
 ---
 title: "Reforma de Cocina en Vitoria 2026: Precios y Plazos"
 description: "Precio de reformar una cocina en Vitoria-Gasteiz en 2026: muebles, encimera, instalaciones y ejemplos por tamaño, en pisos antiguos y en viviendas nuevas."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-cocina-vitoria"
+canonical: "https://bilbaoreforma.es/blog/reforma-cocina-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

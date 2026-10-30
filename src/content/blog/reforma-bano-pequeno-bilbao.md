@@ -3,7 +3,7 @@ title: "Reforma Baño Pequeño Bilbao 2026"
 description: "Reforma de baño pequeño en Bilbao 2026: precios para baños de 3 a 5 m², ideas para aprovechar cada metro y errores que conviene evitar."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
 category: "bano"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Técnicamente sí, pero el baño no será usable durante toda la obra (10-18 días). Es recomendable coordinar con vacaciones, usar un baño comunitario, o planificar fases si hay más de un baño en la vivienda."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma Baño Pequeño Bilbao 2025-2026: Precios y Guía para Baños de 3 a 5 m²"
-    url: "https://www.bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
+    url: "https://bilbaoreforma.es/blog/reforma-bano-pequeno-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao: Precios y Guía Completa 2026"

@@ -1,7 +1,7 @@
 ---
 title: "Reformas Bilbao 2026: Precios"
 description: "Reformas Bilbao precios 2026. Cuánto cuesta pintar, cambiar suelo, reforma de baño o cocina en Bilbao. Tablas de precios y consejos para ahorrar."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios"
+canonical: "https://bilbaoreforma.es/blog/reformas-bilbao-precios"
 date: "2026-06-18"
 updated: "2026-10-28"
 category: "presupuesto"
@@ -19,11 +19,11 @@ faqs:
     a: "Para ahorrar sin sacrificar calidad: pide siempre 3 presupuestos mínimo y compara; aprovecha los meses de menor demanda (noviembre a marzo) para negociar mejores precios; no toques la distribución original de instalaciones para evitar sobrecostes de fontanería y electricidad; elige materiales de stock o exposición; y utiliza la calculadora de Bilbao Reforma para estimar un presupuesto realista antes de contactar empresas."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Bilbao Precios 2026: Guía Completa de Costes"
-    url: "https://www.bilbaoreforma.es/blog/reformas-bilbao-precios"
+    url: "https://bilbaoreforma.es/blog/reformas-bilbao-precios"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao 2026: €/m² y Presupuesto"

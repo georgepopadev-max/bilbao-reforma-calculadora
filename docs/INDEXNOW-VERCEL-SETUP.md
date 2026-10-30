@@ -48,14 +48,14 @@ Click en **`bilbao-reforma-calculadora`** (no en cualquier otro proyecto que ten
 3. Click en la pestaña **`Build Logs`** o **`Runtime Logs`**
 4. Busca una línea tipo:
    ```
-   IndexNow: Submitted https://www.bilbaoreforma.es/...
+   IndexNow: Submitted https://bilbaoreforma.es/...
    ```
    Si aparece → **funciona ✅**
 
 ### Método 2 — Verificar manualmente con curl (opcional)
 Una vez configurado, Vercel expone un endpoint automático. Para verificar:
 ```bash
-curl -I https://www.bilbaoreforma.es/<TU_API_KEY>.txt
+curl -I https://bilbaoreforma.es/<TU_API_KEY>.txt
 ```
 Debería devolver un `200 OK` con el contenido de la API key. Esto confirma que Vercel creó el archivo de validación que IndexNow necesita.
 

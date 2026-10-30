@@ -17,7 +17,7 @@ Configurar tracking de conversiones y análisis para bilbaoreforma.es
 3. Nombre propiedad: "Bilbao Reforma Web"
 4. Zona horaria: España
 5. Moneda: EUR
-6. Crear flujo de datos → Web → URL: https://www.bilbaoreforma.es/
+6. Crear flujo de datos → Web → URL: https://bilbaoreforma.es/
 7. Copia el **Measurement ID** (formato G-XXXXXXXXXX)
 
 ## Paso 2: Conectar GA4 a GTM (5 min)

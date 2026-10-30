@@ -56,9 +56,9 @@ const schema = schemaData ?? {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: `Presupuestos de reformas en ${currentCity}`,
-  provider: { '@type': 'Organization', '@id': 'https://www.bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://www.bilbaoreforma.es/' },
+  provider: { '@type': 'Organization', '@id': 'https://bilbaoreforma.es/#organization', name: 'Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
   description: description ?? `Calculadora de presupuestos de reformas en ${currentCity} y ${regionNames[city]}.`,
-  url: `https://www.bilbaoreforma.es/${citySlugs[city]}`,
+  url: `https://bilbaoreforma.es/${citySlugs[city]}`,
   areaServed: {
     '@type': 'State',
     name: regionNames[city],

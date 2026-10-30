@@ -1,7 +1,7 @@
 ---
 title: "Pintar un Piso en Donostia 2026: Precios por m²"
 description: "Cuánto cuesta pintar un piso en Donostia en 2026: precio por m² de pared, alisado de gotelé, pinturas antimoho para la humedad del Cantábrico y plazos."
-canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-donostia"
+canonical: "https://bilbaoreforma.es/blog/pintar-piso-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

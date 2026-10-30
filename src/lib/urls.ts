@@ -3,7 +3,7 @@
  */
 export type City = 'bilbao' | 'donostia' | 'vitoria';
 
-export const SITE_URL = 'https://www.bilbaoreforma.es';
+export const SITE_URL = 'https://bilbaoreforma.es';
 
 // Bilbao vive en la raíz; Donostia y Vitoria bajo su prefijo.
 export function cityPath(city: City = 'bilbao', section = ''): string {

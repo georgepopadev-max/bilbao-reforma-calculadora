@@ -1,7 +1,7 @@
 ---
 title: "Reforma para Mayores en Bilbao | Accesibilidad y Ayudas 2026"
 description: "Reformas adaptadas para personas mayores en Bilbao. Subtítulo con ayudas, grants y soluciones sin barreras. Consulta precio orientativo gratis."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
 date: "2026-06-04"
 updated: "2026-10-28"
 category: "general"
@@ -19,11 +19,11 @@ faqs:
     a: "Las ayudas PADIS van dirigidas a personas con grado de discapacidad reconocida igual o superior al 33%, o personas mayores de 65 años con movilidad reducida. Se requieren ingresos anuales por debajo de ciertos umbrales (consultar convocatoria). La solicitud se hace a través del Departamento de Vivienda del Gobierno Vasco."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma para personas mayores en Bilbao: elimina barreras arquitectónicas [2026]"
-    url: "https://www.bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
+    url: "https://bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"

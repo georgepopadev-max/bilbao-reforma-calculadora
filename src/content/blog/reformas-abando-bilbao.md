@@ -1,7 +1,7 @@
 ---
 title: "Reformas Abando Bilbao 2026"
 description: "Reformas Abando Bilbao 2026. Precios por m², multiplicador ×1.20 y empresas especializadas en el barrio. Calcula tu presupuesto."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-abando-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "Comprar para reformar en Abando puede ser interesante si encuentras un piso en mal estado a buen precio. El precio medio de vivienda es 4.815 €/m² (Idealista ene 2026), el más alto de Bilbao. Un piso de 80m² a reformas puede costar entre 385.000 € y 450.000 € frente a 500.000 € o más si está reformado."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas Abando Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-abando-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-abando-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en Abando"

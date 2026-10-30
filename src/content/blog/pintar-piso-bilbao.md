@@ -1,7 +1,7 @@
 ---
 title: "Pintar Piso Bilbao 2026: Precios por m²"
 description: "Precio pintar piso Bilbao 2026: €/m² según tipo de pintura, preparación de paredes, diferencia entre vinílica y acrílica, y coste de alisar gotelé."
-canonical: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao"
+canonical: "https://bilbaoreforma.es/blog/pintar-piso-bilbao"
 date: "2025-04-06"
 updated: "2026-10-28"
 category: "pintura"
@@ -9,11 +9,11 @@ city: "bilbao"
 faqs:
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Pintar un Piso en Bilbao: Precios por m² 2026"
-    url: "https://www.bilbaoreforma.es/blog/pintar-piso-bilbao"
+    url: "https://bilbaoreforma.es/blog/pintar-piso-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"

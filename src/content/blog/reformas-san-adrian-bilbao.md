@@ -1,7 +1,7 @@
 ---
 title: "Reformas San Adrián Bilbao 2026"
 description: "Reformas San Adrián Bilbao 2026. Precios por m², multiplicador ×0.95 y empresas del barrio. La zona más asequible de Bilbao."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Reformas Bilbao"
@@ -16,11 +16,11 @@ faqs:
     a: "San Adrián tiene un precio medio de vivienda de 2.800 €/m². Una reforma de baño (4.500-6.500 €) o cocina (8.000-12.000 €) puede aumentar el valor del inmueble en un 8-12% en un barrio donde la demanda de vivienda de segunda mano es constante por los precios más accesibles."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas San Adrián Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-san-adrian-bilbao"
 inContentCTAs:
   - type: "calculator"
     label: "Calcula tu reforma en San Adrián"

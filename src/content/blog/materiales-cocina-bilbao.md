@@ -3,7 +3,7 @@ title: "Encimera Cocina Bilbao 2026"
 description: "Encimeras de cocina en Bilbao 2026: Silestone, Dekton, granito y madera. Compara precios y durabilidad y elige la mejor para tu cocina."
 date: "2026-06-29"
 updated: "2026-10-28"
-canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao"
+canonical: "https://bilbaoreforma.es/blog/materiales-cocina-bilbao"
 category: "cocina"
 city: "bilbao"
 faqs:
@@ -19,11 +19,11 @@ faqs:
     a: "Cosentino (Silestone y Dekton) tiene distribuidores autorizados en Bizkaia con showrooms donde ver los materiales. El área de San Mamés y Bolueta concentra almacenes de piedra y mármol. En Trapagaran y Basauri hay naves de marmolistas que suelen dar buenos precios con instalación incluida."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Encimera de Cocina en Bilbao 2026: Materiales, Precios y Marcas Disponibles"
-    url: "https://www.bilbaoreforma.es/blog/materiales-cocina-bilbao"
+    url: "https://bilbaoreforma.es/blog/materiales-cocina-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Cocina Bilbao: Guía Completa de Precios 2026"

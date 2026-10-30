@@ -1,7 +1,7 @@
 ---
 title: "Cuánto tarda una Reforma Integral en Bilbao | Plazos 2026"
 description: "Descubre cuánto tarda una reforma integral en Bilbao según tipo de obra. Plazos reales de 2 a 6 meses. Incluye licencias y tiempo de obra por m²."
-canonical: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
+canonical: "https://bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
 date: "2026-06-04"
 updated: "2026-10-28"
 category: "integral"
@@ -19,11 +19,11 @@ faqs:
     a: "Contrata al arquitecto desde el primer día para preparar documentación en paralelo; pide presupuestos a 3 empresas y negocia plazos; elige materiales de stock; evita cambios de distribución con muros de carga y decide todos los materiales antes de empezar la obra."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Cuánto tarda una reforma integral en Bilbao: timeline realista [2026]"
-    url: "https://www.bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
+    url: "https://bilbaoreforma.es/blog/tiempo-reforma-integral-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"

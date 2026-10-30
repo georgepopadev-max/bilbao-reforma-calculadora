@@ -1,7 +1,7 @@
 ---
 title: "Reforma de Baño en Vitoria 2026: Precios y Guía"
 description: "Cuánto cuesta reformar un baño en Vitoria-Gasteiz en 2026: precios por tipo de reforma, partidas, plazos y qué cambia en pisos antiguos y nuevos."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-bano-vitoria"
+canonical: "https://bilbaoreforma.es/blog/reforma-bano-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

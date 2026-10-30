@@ -1,7 +1,7 @@
 ---
 title: "Fontanero Bilbao 2026 | Precios y Servicios"
 description: "Fontanero en Bilbao: precio 30-50€/h. Servicios urgentes, instalación calefacción, reformas baño. Empresas verificadas 24h."
-canonical: "https://www.bilbaoreforma.es/blog/fontanero-bilbao"
+canonical: "https://bilbaoreforma.es/blog/fontanero-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Fontanería"
@@ -16,11 +16,11 @@ faqs:
     a: "Para elegir fontanero: verifica que esté dado de alta como empresa instaladora, comprueba que tiene seguro de responsabilidad civil (pide copia de la póliza), pide al menos 3 presupuestos detallados por escrito, solicita referencias verificables (Google Maps, portales de opinión), y desconfía de precios muy bajos que no incluyan garantía."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Fontanero Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/fontanero-bilbao"
+    url: "https://bilbaoreforma.es/blog/fontanero-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma Baño Bilbao 2026"

@@ -25,7 +25,7 @@ Crear 5 landing pages SEO para Bilbao, una por cada tipo de Calculator. Cada lan
 <CalculadoraLayout
   title="Presupuesto Reforma Integral Bilbao 2026 | Desde 700€/m²"
   description="..."
-  canonical="https://www.bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html"
+  canonical="https://bilbaoreforma.es/presupuesto-reforma-integral-bilbao.html"
 >
   <!-- Breadcrumb -->
   <nav class="breadcrumb-landing">...</nav>

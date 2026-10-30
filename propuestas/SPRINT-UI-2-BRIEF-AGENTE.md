@@ -5,7 +5,7 @@
 ## 📋 CONTEXTO
 
 Proyecto: `/home/ubuntu/.openclaw/workspace/bilbao-reforma-calculadora/`
-URL producción: https://www.bilbaoreforma.es
+URL producción: https://bilbaoreforma.es
 Stack: Astro 4.16, Tailwind 3.4, jsPDF, TypeScript strict
 Estado: Build verde actual. Bilbao funciona, Donostia/Vitoria son esqueletos.
 Tiempo estimado: 6-8 horas

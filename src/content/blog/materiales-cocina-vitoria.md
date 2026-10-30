@@ -1,7 +1,7 @@
 ---
 title: "Encimeras de Cocina en Vitoria 2026: Materiales y Precios"
 description: "Qué encimera elegir en Vitoria-Gasteiz: cuarzo, ultracompacto, granito, laminado o madera, con precio por metro lineal instalado, ventajas e inconvenientes."
-canonical: "https://www.bilbaoreforma.es/blog/materiales-cocina-vitoria"
+canonical: "https://bilbaoreforma.es/blog/materiales-cocina-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "6 min"

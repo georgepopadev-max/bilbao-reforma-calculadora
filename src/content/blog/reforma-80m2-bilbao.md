@@ -1,7 +1,7 @@
 ---
 title: "Reforma Piso 80m² Bilbao 2026"
 description: "Ejemplo real de reforma integral de un piso de 80m² en Bilbao. Presupuesto desglosado de 52.668€ con 18 partidas detalladas, precios 2026 y factores clave."
-canonical: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reforma-80m2-bilbao"
 date: "2026-06-15"
 updated: "2026-10-28"
 readTime: "14 min"
@@ -30,11 +30,11 @@ faqs:
     a: "Las diferencias de hasta 30% entre presupuestos para la misma obra se explican por varios factores: calidad de materiales (una encimera de cuarzo de Silestone no cuesta lo mismo que una de granito económico), la mano de obra, la carga de trabajo de cada empresa y lo que incluye o deja fuera cada presupuesto."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reforma Piso 80m² Bilbao: Ejemplo Real con Presupuesto Desglosado 2026"
-    url: "https://www.bilbaoreforma.es/blog/reforma-80m2-bilbao"
+    url: "https://bilbaoreforma.es/blog/reforma-80m2-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Precio Reforma Integral Bilbao: Guía 2026 con €/m²"

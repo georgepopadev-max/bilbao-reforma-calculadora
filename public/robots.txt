@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bilbaoreforma.es/sitemap-index.xml
+Sitemap: https://bilbaoreforma.es/sitemap-index.xml

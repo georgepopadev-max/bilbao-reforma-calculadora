@@ -1,7 +1,7 @@
 ---
 title: "Cambiar el Suelo en Vitoria 2026: Precios y Materiales"
 description: "Precio de cambiar el suelo en Vitoria-Gasteiz en 2026: parqué, porcelánico, laminado y vinílico por m², qué conviene con suelo radiante y cuánto tarda la obra."
-canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-vitoria"
+canonical: "https://bilbaoreforma.es/blog/cambiar-suelo-vitoria"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "7 min"

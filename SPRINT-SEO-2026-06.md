@@ -19,7 +19,7 @@
 | Robots.txt | ✅ | Permite todo lo bueno, bloquea `/content/` |
 | Schema LocalBusiness en home | ✅ | JSON-LD completo con geo, horarios, address |
 | Schema FAQPage en home | ✅ | 4 preguntas implementadas |
-| Canonical en home | ✅ | Apunta a `www.bilbaoreforma.es/` |
+| Canonical en home | ✅ | Apunta a `bilbaoreforma.es/` |
 | Title optimizado | ✅ | "Calculadora Reformas Bilbao 2025 — Presupuesto Gratis en 2 Min" |
 | Meta description | ✅ | Buena, con CTA y keywords |
 | Open Graph | ✅ | og:title, og:description, og:type, og:locale |
@@ -30,11 +30,11 @@
 
 #### A. **Inconsistencia masiva de canonical**
 - **15 blogs con canonical `https://bilbaoreforma.es/...`** (SIN www)
-- **4 blogs con canonical `https://www.bilbaoreforma.es/...`** (CON www)
+- **4 blogs con canonical `https://bilbaoreforma.es/...`** (CON www)
 - Google los ve como URLs distintas → **dilución de autoridad** + contenido duplicado potencial
 - Esto explica en parte la posición 80: Google no sabe qué versión indexar
 
-**Acción:** Estandarizar TODOS los canonicals a `https://www.bilbaoreforma.es/...` con www.
+**Acción:** Estandarizar TODOS los canonicals a `https://bilbaoreforma.es/...` con www.
 
 #### B. **2 blogs sin canonical (riesgo alto)**
 - `blog/index.html` (la index del blog, importante)
@@ -158,7 +158,7 @@
 
 #### **T1. Estandarizar canonicals con www** [CRÍTICO]
 - **Problema:** 15 blogs tienen canonical sin www + 2 sin canonical
-- **Acción:** Cambiar TODOS los canonicals a `https://www.bilbaoreforma.es/...` con www
+- **Acción:** Cambiar TODOS los canonicals a `https://bilbaoreforma.es/...` con www
 - **Ficheros:** 17 archivos HTML en `blog/`
 - **QA:** `curl -s URL | grep canonical` para cada uno + validar con [Google Search Console URL Inspection](https://search.google.com/search-console/inspect)
 - **Impacto:** ALTO — consolida señales de autoridad
@@ -167,7 +167,7 @@
 #### **T2. Añadir canonicals faltantes** [CRÍTICO]
 - **Problema:** 2 blogs sin canonical
 - **Ficheros:** `blog/index.html`, `blog/pintar-piso-bilbao.html`
-- **Acción:** Insertar `<link rel="canonical" href="https://www.bilbaoreforma.es/blog/...">` después de `<title>`
+- **Acción:** Insertar `<link rel="canonical" href="https://bilbaoreforma.es/blog/...">` después de `<title>`
 - **QA:** curl + grep
 - **Estimación:** 10 min
 
@@ -199,7 +199,7 @@
   - H1: "Blog de Reformas en Bilbao: Guías, Precios y Consejos 2026"
   - Title: "Blog de Reformas Bilbao 2026 | Guías, Precios y Consejos"
   - Meta description: ~155 chars con keywords
-  - Canonical: `https://www.bilbaoreforma.es/blog/`
+  - Canonical: `https://bilbaoreforma.es/blog/`
   - Añadir Schema Blog o CollectionPage
   - Añadir intro SEO (200 palabras) sobre qué encontrarás
 - **Estimación:** 1h

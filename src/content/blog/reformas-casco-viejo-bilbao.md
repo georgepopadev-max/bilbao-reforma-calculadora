@@ -1,7 +1,7 @@
 ---
 title: "Reformas Casco Viejo Bilbao 2026"
 description: "Reforma Casco Viejo Bilbao 2026: licencias Patrimonio, acceso difícil, sobrecostes logísticos, materiales típicos y empresas especializadas."
-canonical: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
+canonical: "https://bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
 date: "2025-04-06"
 updated: "2026-10-28"
 category: "presupuesto"
@@ -17,11 +17,11 @@ faqs:
     a: "Una reforma integral en el Casco Viejo tarda entre 12 y 20 semanas para un piso de 70-90m², frente a las 8-14 de otros barrios. El sobrecoste en plazos se debe a la complejidad estructural, gestión de permisos y logística (calles peatonales y horarios restringidos de acceso)."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Reformas en el Casco Viejo de Bilbao: Particularidades, Precios y Consejos"
-    url: "https://www.bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
+    url: "https://bilbaoreforma.es/blog/reformas-casco-viejo-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"

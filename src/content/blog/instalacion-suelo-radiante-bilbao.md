@@ -1,7 +1,7 @@
 ---
 title: "Suelo Radiante Bilbao 2026 | Instalación"
 description: "Instalación suelo radiante en Bilbao: precio 70-100€/m², proceso paso a paso y empresas instaladoras. Subvenciones vigentes."
-canonical: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
+canonical: "https://bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"
 category: "Calefacción"
@@ -16,11 +16,11 @@ faqs:
     a: "No, es necesario levantar el suelo existente para instalar el sistema de tuberías bajo el mortero. Existen opciones de perfil bajo (3-4cm) que minimizan el impacto en la altura del suelo y las puertas. En edificios bilbainos con forjado de 20-25cm, esta opción es viable y no suele afectar a la habitabilidad de forma significativa."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Instalación Suelo Radiante Bilbao 2026"
-    url: "https://www.bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
+    url: "https://bilbaoreforma.es/blog/instalacion-suelo-radiante-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Suelo Radiante Bilbao 2026: Ventajas"

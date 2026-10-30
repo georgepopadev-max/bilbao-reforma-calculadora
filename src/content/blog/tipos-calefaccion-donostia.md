@@ -1,7 +1,7 @@
 ---
 title: "Tipos de Calefacción para Pisos en Donostia 2026"
 description: "Gas, aerotermia, suelo radiante o radiadores eléctricos: qué calefacción conviene en un piso de Donostia, cuánto cuesta y cuánto se gasta al mes."
-canonical: "https://www.bilbaoreforma.es/blog/tipos-calefaccion-donostia"
+canonical: "https://bilbaoreforma.es/blog/tipos-calefaccion-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "8 min"

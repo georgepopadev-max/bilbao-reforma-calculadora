@@ -1,7 +1,7 @@
 ---
 title: "Cambiar el Suelo en Donostia 2026: Precios y Materiales"
 description: "Precio de cambiar el suelo en Donostia en 2026: parqué, porcelánico y vinílico por m², qué aguanta mejor la humedad del Cantábrico y cuánto tarda la obra."
-canonical: "https://www.bilbaoreforma.es/blog/cambiar-suelo-donostia"
+canonical: "https://bilbaoreforma.es/blog/cambiar-suelo-donostia"
 date: "2026-06-29"
 updated: "2026-10-28"
 readTime: "8 min"

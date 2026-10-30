@@ -1,7 +1,7 @@
 ---
 title: "Precio Reforma Integral Bilbao 2026"
 description: "Precio reforma integral Bilbao 2026. Cuánto cuesta reformar un piso entero en Bilbao. Factores que influyen, precios por m² y calculadora de presupuesto gratis."
-canonical: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
+canonical: "https://bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
 date: "2026-06-18"
 updated: "2026-10-28"
 category: "integral"
@@ -19,11 +19,11 @@ faqs:
     a: "Una reforma integral de un piso de 80m² en Bilbao dura entre 10 y 20 semanas, dependiendo de la complejidad. En edificios modernos puede estar lista en 10-12 semanas. En el Casco Viejo o edificios antiguos con licencias de obra mayor, puede extenderse a 16-20 semanas."
 breadcrumbs:
   - name: "Inicio"
-    url: "https://www.bilbaoreforma.es/"
+    url: "https://bilbaoreforma.es/"
   - name: "Blog"
-    url: "https://www.bilbaoreforma.es/blog"
+    url: "https://bilbaoreforma.es/blog"
   - name: "Precio Reforma Integral Bilbao 2026: Cuánto Cuesta Reformar un Piso"
-    url: "https://www.bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
+    url: "https://bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
 inContentCTAs:
   - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa con Presupuesto Detallado"
