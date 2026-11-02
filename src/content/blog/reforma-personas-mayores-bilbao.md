@@ -26,6 +26,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/reforma-personas-mayores-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Cambiar bañera por ducha en Bizkaia: precio y ayudas"
+    href: "/blog/cambio-banera-por-ducha-bizkaia"
+  - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
     href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"
