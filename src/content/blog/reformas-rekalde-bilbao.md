@@ -1,6 +1,6 @@
 ---
-title: "Reformas Rekalde Bilbao"
-description: "Reformas Rekalde Bilbao 2026. Multiplicador ×0.90, barrio económico para reformas funcionales. Guía con precios y empresas."
+title: "Reformas en Rekalde (Bilbao): Precios 2026"
+description: "Reformas en Rekalde 2026: cuánto cuesta reformar baño, cocina o el piso entero en el barrio, qué tener en cuenta en sus edificios y cómo pedir 3 presupuestos."
 canonical: "https://bilbaoreforma.es/blog/reformas-rekalde-bilbao"
 date: "2026-07-03"
 updated: "2026-10-28"

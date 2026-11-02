@@ -27,6 +27,12 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
 inContentCTAs:
   - type: "leer"
+    label: "Cambiar bañera por ducha en Bizkaia: precio y ayudas"
+    href: "/blog/cambio-banera-por-ducha-bizkaia"
+  - type: "leer"
+    label: "Pintar fachada en Bilbao: precio y ayudas"
+    href: "/blog/pintar-fachada-bilbao"
+  - type: "leer"
     label: "Reformas Bilbao 2026: Guía Completa para No Cometer Errores"
     href: "/blog/reformas-bilbao-precios"
   - type: "leer"
@@ -191,6 +197,14 @@ priceTables: 3
   <p>Las solicitudes se canalizan habitualmente a través de la web del <a href="https://www.euskadi.eus/" target="_blank" rel="noopener">Gobierno Vasco (Eusko Jaurlaritza)</a> y de la oficina de vivienda del Ayuntamiento de Bilbao. La convocatoria principal suele abrirse en el primer trimestre del año, pero en 2026 se han habilitado también ventanas extraordinarias para rehabilitación energética. Comprueba siempre la fecha exacta de la convocatoria en el momento de iniciar el trámite. Para ayudas vinculadas a eficiencia energética, consulta también el catálogo del <a href="https://www.eve.eus/programa-de-ayudas/" target="_blank" rel="noopener">Ente Vasco de la Energía (EVE)</a>.</p>
   </div>
 
+  <aside class="lead-cta-mid">
+    <p><strong>Casi todas las ayudas piden un presupuesto detallado de la obra.</strong> Calcula cuánto costaría la tuya o pide hasta 3 presupuestos gratis a empresas de Bilbao y Bizkaia.</p>
+    <div class="lead-cta-mid-actions">
+      <a class="blog-cta-btn" href="/calculadora/integral-bilbao" data-cta="subvenciones-mid1-calculadora">Calcular mi reforma</a>
+      <a class="blog-cta-link" href="#presupuesto" data-cta="subvenciones-mid1-form">Pedir 3 presupuestos</a>
+    </div>
+  </aside>
+
   <h2>Deducciones en el IRPF por Obras de Rehabilitación</h2>
 
   <p>Las deducciones autonómicas y estatales en el IRPF son, en muchos casos, la ayuda más infrautilizada. Aunque técnicamente no es una subvención "que te dan en mano", el ahorro fiscal puede suponer entre un 20% y un 60% de la inversión, y se aplica directamente en la declaración de la renta del año en que finalizan las obras.</p>
@@ -351,6 +365,14 @@ priceTables: 3
   </div>
 
   <p>Como regla general, cuanto mayor sea la <strong>mejora acreditada en el Certificado de Eficiencia Energética</strong> (al subir dos o tres letras, por ejemplo, de la E a la B), mayor es el porcentaje de ayuda aplicable. Por eso, antes de plantear reformas parciales, suele compensar agruparlas en un solo proyecto: el "paquete" completo es más subvencionable que la suma de las obras sueltas.</p>
+
+  <aside class="lead-cta-mid">
+    <p><strong>Antes de solicitar, ten el presupuesto en la mano.</strong> Te ponemos en contacto con hasta 3 empresas que conocen la tramitación de ayudas en Bizkaia. Gratis y sin compromiso.</p>
+    <div class="lead-cta-mid-actions">
+      <a class="blog-cta-btn" href="/calculadora/integral-bilbao" data-cta="subvenciones-mid2-calculadora">Calcular presupuesto</a>
+      <a class="blog-cta-link" href="#presupuesto" data-cta="subvenciones-mid2-form">Pedir 3 presupuestos</a>
+    </div>
+  </aside>
 
   <h2>Cómo Solicitar las Ayudas: Paso a Paso</h2>
 

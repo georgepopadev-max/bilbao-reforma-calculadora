@@ -26,6 +26,12 @@ breadcrumbs:
   - name: "Reforma Baño Bilbao 2026: Precios, Tendencias y Presupuesto"
     url: "https://bilbaoreforma.es/blog/reforma-bano-bilbao"
 inContentCTAs:
+  - type: "leer"
+    label: "Cambiar bañera por ducha en Bizkaia: precio y ayudas"
+    href: "/blog/cambio-banera-por-ducha-bizkaia"
+  - type: "leer"
+    label: "Mampara de ducha en Bilbao: precio instalada"
+    href: "/blog/precio-mampara-ducha-bilbao"
   - type: "herramienta"
     label: "Calculadora de presupuesto reforma baño Bilbao ->"
     href: "/calculadora/bano-bilbao"

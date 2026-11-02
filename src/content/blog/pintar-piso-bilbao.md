@@ -16,6 +16,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/pintar-piso-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Pintar fachada en Bilbao: precio y ayudas"
+    href: "/blog/pintar-fachada-bilbao"
+  - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
     href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"

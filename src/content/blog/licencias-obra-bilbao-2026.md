@@ -277,6 +277,14 @@ priceTables: 3
 
   <p>Ten en cuenta que esta tabla es orientativa: cada obra tiene sus particularidades y, en la duda, conviene siempre confirmar con el servicio de orientación urbanística del Ayuntamiento de Bilbao antes de empezar. Esa confirmación previa es especialmente útil para quienes nunca han tramitado <strong>licencias de obra Bilbao</strong>, ya que el equipo municipal te indicará exactamente qué documentación aportar y qué tasas aplicar en tu caso concreto.</p>
 
+  <aside class="lead-cta-mid">
+    <p><strong>La tasa de la licencia se calcula sobre el presupuesto de ejecución.</strong> Calcula cuánto costaría tu obra en 2 minutos o pide 3 presupuestos detallados a empresas de Bilbao.</p>
+    <div class="lead-cta-mid-actions">
+      <a class="blog-cta-btn" href="/calculadora/integral-bilbao" data-cta="licencias-mid1-calculadora">Calcular mi obra</a>
+      <a class="blog-cta-link" href="#presupuesto" data-cta="licencias-mid1-form">Pedir 3 presupuestos</a>
+    </div>
+  </aside>
+
   <h2>Costes de las Licencias de Obra Bilbao 2026</h2>
 
   <p>El coste de la licencia depende de tres factores principales: la tasa municipal, el ICIO (impuesto sobre construcciones) y, en su caso, los honorarios del técnico que redacte el proyecto. En Bilbao, las tasas se regulan por la Ordenanza Fiscal Municipal y se calculan en función del presupuesto de ejecución material de la obra, de los metros cuadrados afectados y del tipo de intervención.</p>
@@ -455,6 +463,14 @@ priceTables: 3
   </table>
 
   <p>Un detalle importante: el plazo de las licencias de obra mayor empieza a contar desde que el expediente está completo. Si presentas la solicitud y falta documentación, el reloj no corre hasta que la entregues. Por eso es clave preparar bien el proyecto técnico desde el inicio. En la práctica, las <strong>licencias de obra Bilbao</strong> bien preparadas se resuelven en la mitad de tiempo que las presentadas con carencias, lo que demuestra la importancia de la fase previa.</p>
+
+  <aside class="lead-cta-mid">
+    <p><strong>Para pedir la licencia necesitas un presupuesto detallado por partidas.</strong> Te ponemos en contacto con hasta 3 empresas de tu zona que te lo preparan, gratis y sin compromiso.</p>
+    <div class="lead-cta-mid-actions">
+      <a class="blog-cta-btn" href="/calculadora/integral-bilbao" data-cta="licencias-mid2-calculadora">Calcular presupuesto</a>
+      <a class="blog-cta-link" href="#presupuesto" data-cta="licencias-mid2-form">Pedir 3 presupuestos</a>
+    </div>
+  </aside>
 
   <h2>Cómo Solicitar la Licencia Paso a Paso</h2>
 

@@ -52,6 +52,19 @@ const leadCopy = category === 'subvenciones'
   ? { title: 'Pide el presupuesto que necesitas para la licencia', description: 'Para solicitar la licencia de obra necesitas un presupuesto detallado. Te ponemos en contacto con hasta 3 empresas de tu zona, gratis y sin compromiso.' }
   : {};
 
+// CTA superior: calculadora del servicio y la ciudad del artículo (calefacción no tiene calculadora)
+const slugService = ['suelo', 'bano', 'cocina', 'pint'].find((k) => post.slug.includes(k));
+const calcService = slugService === 'pint' ? 'pintura'
+  : slugService || (['bano', 'cocina', 'integral', 'pintura', 'suelo'].includes(leadService) ? leadService : 'integral');
+const calcHref = city === 'donostia' || city === 'vitoria'
+  ? `/${city}/calculadora/${calcService}-${city}`
+  : `/calculadora/${calcService}-bilbao`;
+const topCta = category === 'subvenciones'
+  ? '¿Cuánto costaría tu obra antes de pedir la ayuda?'
+  : /licencia/.test(post.slug)
+  ? '¿Cuánto costaría tu obra? Lo necesitarás para la licencia'
+  : '¿Cuánto costaría tu obra?';
+
 // Build FAQPage JSON-LD
 const faqPageSchema = {
   "@context": "https://schema.org",
@@ -119,12 +132,21 @@ const breadcrumbSchema = {
         {description && <p style="font-size:1.0625rem;color:#6B6B6B;line-height:1.65">{description}</p>}
       </header>
 
+      <aside class="blog-top-cta" aria-label="Calcula tu presupuesto">
+        <p class="blog-top-cta-text"><strong>{topCta}</strong> Calcula el precio en 2 minutos o pide 3 presupuestos gratis a empresas de tu zona.</p>
+        <div class="blog-top-cta-actions">
+          <a class="blog-cta-btn" href={calcHref} data-cta="blog-top-calculadora">Calcular presupuesto</a>
+          <a class="blog-cta-link" href="#presupuesto" data-cta="blog-top-form">Pedir 3 presupuestos</a>
+        </div>
+      </aside>
+
       <article style="background:#FFFFFF;border-radius:12px;padding:2rem;box-shadow:0 2px 8px rgba(45,30,15,.08)">
         <div class="article-content">
           <Content />
         </div>
       </article>
 
+      <div id="presupuesto" style="scroll-margin-top:5rem"></div>
       <LeadForm service={leadService} city={city} source="bilbao-reforma-blog" {...leadCopy} />
 
       {faqs.length > 0 && !bodyHasFaq && (

@@ -238,6 +238,36 @@
 }
 .in-content-cta a:hover { color: var(--color-terracota); text-decoration: underline; }
 
+/* ---- CTA de captación en el blog (arriba y a mitad de artículo) ---- */
+.blog-top-cta, .lead-cta-mid {
+  background: #FFF7F2;
+  border: 1px solid #F0D5C8;
+  border-radius: var(--radius-card);
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+.lead-cta-mid { margin: 2rem 0; }
+.blog-top-cta-text, .lead-cta-mid p { margin: 0 !important; font-size: 0.9375rem; color: var(--color-grafito); line-height: 1.5; flex: 1 1 18rem; }
+.blog-top-cta-actions, .lead-cta-mid-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; }
+.blog-cta-btn, .lead-cta-mid .blog-cta-btn {
+  display: inline-block;
+  background: var(--color-terracota);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.blog-cta-btn:hover { filter: brightness(0.95); }
+.blog-cta-link { color: var(--color-terracota) !important; font-weight: 600; font-size: 0.9375rem; text-decoration: underline; white-space: nowrap; }
+
 /* ---- Highlight Box ---- */
 .highlight-box {
   background: linear-gradient(135deg, #F6FBF0 0%, #E8F0E4 100%);
