@@ -23,7 +23,7 @@ Precios orientativos en Bilbao y Bizkaia (2026):
 ## Empresas y zonas
 
 - [Empresas de reformas en Bilbao y Bizkaia](https://bilbaoreforma.es/empresas): directorio por especialidad.
-- [Reformas en municipios de Bizkaia](https://bilbaoreforma.es/bizkaia): Getxo, Barakaldo, Portugalete, Santurtzi, Basauri, Leioa, Galdakao, Sestao, Durango y Erandio.
+- [Reformas en municipios de Bizkaia](https://bilbaoreforma.es/bizkaia): Getxo, Barakaldo, Portugalete, Santurtzi, Basauri, Leioa, Galdakao, Sestao, Durango, Erandio, Sopela, Mungia, Amorebieta-Etxano, Ermua, Etxebarri, Arrigorriaga, Bermeo y Gernika-Lumo.
 
 ## Guías
 
