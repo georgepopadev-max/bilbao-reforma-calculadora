@@ -8,6 +8,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import CalcCta from '../../components/CalcCta.astro';
 import MunicipiosLinks from '../../components/MunicipiosLinks.astro';
 import { SITE_URL, absoluteUrl } from '../../lib/urls';
 
@@ -65,6 +66,11 @@ const topCta = category === 'subvenciones'
   : /licencia/.test(post.slug)
   ? '¿Cuánto costaría tu obra? Lo necesitarás para la licencia'
   : '¿Cuánto costaría tu obra?';
+const CALC_NOUN: Record<string, string> = {
+  bano: 'reformar tu baño', cocina: 'reformar tu cocina', integral: 'tu reforma',
+  pintura: 'pintar tu piso', suelo: 'cambiar el suelo',
+};
+const calcNoun = CALC_NOUN[calcService] || 'tu reforma';
 
 // Build FAQPage JSON-LD
 const faqPageSchema = {
@@ -146,6 +152,22 @@ const breadcrumbSchema = {
           <Content />
         </div>
       </article>
+
+      <div id="blog-mid-cta">
+        <CalcCta href={calcHref} title={`¿Cuánto te costaría ${calcNoun}?`} text="Calcúlalo en 1 minuto con nuestra calculadora: precio orientativo con mano de obra, sin registrarte." formHref="#presupuesto" dataCta="blog-mid-calculadora" />
+      </div>
+      <script is:inline>
+        (function () {
+          // Coloca la caja de la calculadora antes del tercer h2 del artículo
+          var box = document.getElementById('blog-mid-cta');
+          var hs = document.querySelectorAll('.article-content h2');
+          if (!box) return;
+          if (hs.length >= 4) hs[2].parentNode.insertBefore(box, hs[2]);
+          else box.remove();
+        })();
+      </script>
+
+      <CalcCta href={calcHref} title="Antes de pedir presupuestos, calcula el tuyo" text="Con el precio orientativo de la calculadora sabrás si los presupuestos que te pasen las empresas son razonables." button="Ir a la calculadora" dataCta="blog-end-calculadora" />
 
       <div id="presupuesto" style="scroll-margin-top:5rem"></div>
       <LeadForm service={leadService} city={city} source="bilbao-reforma-blog" {...leadCopy} />

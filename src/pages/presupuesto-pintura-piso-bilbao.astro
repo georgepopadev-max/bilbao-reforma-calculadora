@@ -5,7 +5,9 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MunicipiosLinks from '../components/MunicipiosLinks.astro';
-import Calculator from '../components/calculator/Calculator.astro';
+import CalcCta from '../components/CalcCta.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import LeadForm from '../components/LeadForm.astro';
 
 const canonical = 'https://bilbaoreforma.es/presupuesto-pintura-piso-bilbao';
@@ -59,20 +61,7 @@ const faqSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
 
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="header-logo">
-        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <span class="header-logo-text">Bilbao Reforma</span>
-      </a>
-      <nav class="header-nav">
-        <a href="/calculadora" class="header-nav-link">Calculadora</a>
-        <a href="/blog" class="header-nav-link">Blog</a>
-        <a href="/empresas" class="header-nav-link">Empresas</a>
-        <a href="/contacto" class="header-nav-link header-nav-link-cta">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <Header city="bilbao" />
 
   <main>
     <nav class="breadcrumb-landing" aria-label="Breadcrumb">
@@ -88,9 +77,7 @@ const faqSchema = {
       <p>Calcula el presupuesto de pintura de tu piso en Bilbao y Bizkaia. Datos basados en precios reales de pintores profesionales, actualizados 2026.</p>
     </section>
 
-    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
-      <Calculator city="bilbao" calculatorType="pintura" />
-    </section>
+    <CalcCta variant="hero" href="/calculadora/pintura-bilbao" title="¿Cuánto te costaría pintar tu piso?" text="Responde 6 preguntas (metros, estado de las paredes, techos, tipo de pintura…) y te damos un precio orientativo al momento." points={["Desde 8 €/m²", "Habitación desde 320 €", "Piso de 80 m²: 2.000–5.000 €"]} formHref="#presupuesto" dataCta="landing-pintura-calculadora" />
 
     <section class="landing-guide">
       <h2>Guía de precios para pintura de piso en Bilbao</h2>
@@ -158,6 +145,7 @@ const faqSchema = {
       ))}
     </section>
 
+    <div id="presupuesto" style="scroll-margin-top:5rem"></div>
     <LeadForm service="pintura" city="bilbao" source="bilbao-reforma-landing" title="¿Necesitas presupuestos de pintores profesionales?" description="Recibe hasta 3 propuestas de empresas de pintura en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas." />
 
     <section class="landing-related">
@@ -200,11 +188,5 @@ const faqSchema = {
   </main>
   <MunicipiosLinks />
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
-      </div>
-    </div>
-  </footer>
+  <Footer city="bilbao" />
 </BaseLayout>
