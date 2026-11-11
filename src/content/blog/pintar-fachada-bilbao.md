@@ -26,6 +26,9 @@ breadcrumbs:
   - name: "Pintar Fachada en Bilbao 2026: Precio y Ayudas"
     url: "https://bilbaoreforma.es/blog/pintar-fachada-bilbao"
 inContentCTAs:
+  - type: "leer"
+    label: "Rehabilitación de fachadas en Bilbao: precio por m²"
+    href: "/blog/rehabilitacion-fachada-bilbao-precio"
   - type: "calculator"
     label: "Calcula el precio de pintar tu piso en Bilbao"
     href: "/calculadora/pintura-bilbao"

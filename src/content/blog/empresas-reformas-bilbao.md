@@ -29,6 +29,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/empresas-reformas-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Reforma de local de hostelería en Bilbao"
+    href: "/blog/reforma-local-hosteleria-bilbao"
+  - type: "leer"
     label: "Empresas de Reformas en Donostia"
     href: "/blog/empresas-reformas-donostia"
   - type: "leer"

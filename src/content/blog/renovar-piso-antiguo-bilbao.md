@@ -26,6 +26,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/renovar-piso-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Cambiar la instalación eléctrica de un piso en Bilbao"
+    href: "/blog/reforma-electrica-piso-bilbao"
+  - type: "leer"
     label: "Rehabilitación de Edificio Antiguo en Bilbao"
     href: "/blog/rehabilitacion-edificio-antiguo-bilbao"
   - type: "leer"

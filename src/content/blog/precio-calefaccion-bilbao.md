@@ -23,6 +23,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Instalar calefacción de gas natural en Bilbao"
+    href: "/blog/instalacion-gas-natural-bilbao"
+  - type: "leer"
     label: "Tipos de Calefacción en Bilbao 2026"
     href: "/blog/tipos-calefaccion-bilbao"
   - type: "leer"

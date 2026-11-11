@@ -23,6 +23,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/cambio-caldera-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Instalar calefacción de gas natural en Bilbao"
+    href: "/blog/instalacion-gas-natural-bilbao"
+  - type: "leer"
     label: "Tipos Calefacción Bilbao 2026"
     href: "/blog/tipos-calefaccion-bilbao"
   - type: "leer"

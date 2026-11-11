@@ -26,6 +26,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/tipos-calefaccion-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Instalar calefacción de gas natural en Bilbao"
+    href: "/blog/instalacion-gas-natural-bilbao"
+  - type: "leer"
     label: "Aerotermia en Bilbao: Ventajas y Precios"
     href: "/blog/aerotermia-bilbao-ventajas"
   - type: "leer"
