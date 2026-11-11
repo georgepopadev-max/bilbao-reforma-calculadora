@@ -8,11 +8,11 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 
 const faqs = [
-  { q: '¿Cuánto dinero puede conceder el Plan PREE de Gipuzkoa para rehabilitación energética?', a: 'El Plan PREE de Gipuzkoa puede conceder hasta 10.000€ por vivienda para rehabilitación energética integral. Las ayudas Etxebide pueden llegar hasta 8.000€ adicionales, y las bonificaciones del IBI pueden reducir el impuesto entre un 50% y un 90% durante 4 años.' },
-  { q: '¿Qué tipo de obras son elegibles para estas ayudas?', a: 'Son elegibles: aislamiento térmico de fachadas y cubiertas, sustitución de ventanas por otras de alta eficiencia, instalación de sistemas de calefacción eficientes (aerotermia, caldera de condensación), e instalación de energía solar térmica o fotovoltaica.' },
-  { q: '¿Qué es el programa Etxebide y quién puede acceder?', a: 'El programa Etxebide está dirigido a hogares con ingresos moderados. Si tus ingresos superan el umbral establecido, puedes acceder a otras líneas de ayuda como el Plan PREE o las bonificaciones del IBI.' },
-  { q: '¿El Ayuntamiento de Donostia ofrece bonificaciones del IBI?', a: 'El Ayuntamiento de Donostia ofrece bonificaciones del IBI (entre el 50% y el 90% durante 4 años) para viviendas que realicen obras de mejora de la eficiencia energética o accesibilidad. Consulta los requisitos en la web del Ayuntamiento.' },
-  { q: '¿Se pueden solicitar ayudas para varias viviendas?', a: 'Sí, las ayudas se conceden por vivienda, no por persona. Si tienes propiedades en diferentes ciudades, puedes solicitar ayudas en cada una de ellas, siempre que cumplas los requisitos de cada convocatoria.' },
+  { q: '¿Qué ayudas hay para la aerotermia en Donostia?', a: 'El programa Eguzki Hotz del EVE, abierto desde el 5 de noviembre de 2026: 500 euros por kW con un máximo de 3.000 euros por vivienda y hasta el 65 % del coste.' },
+  { q: '¿Cuánto paga el Ayuntamiento por mejorar la eficiencia de mi piso?', a: 'El 20 % del gasto subvencionable, con un máximo de 2.000 euros, para eficiencia energética y aislamiento acústico, con ingresos del hogar inferiores a 35.000 euros.' },
+  { q: '¿Siguen las ayudas Next Generation?', a: 'No para solicitudes nuevas. En Euskadi están cerradas desde junio de 2023 y las obras concedidas tenían que terminar antes del 30 de junio de 2026.' },
+  { q: '¿Hay ayudas para una caldera de gas?', a: 'No en Eguzki Hotz, que solo subvenciona bombas de calor y renovables. Desde 2025 la normativa europea impide subvencionar calderas que solo usan combustibles fósiles.' },
+  { q: '¿Quién gestiona las ayudas municipales?', a: 'Donostiako Etxegintza, en la calle San Marcial, 2.' },
 ];
 
 const faqSchema = {
@@ -39,8 +39,8 @@ const breadcrumbSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rehab Energética Donostia 2026: Subvención Hasta 10.000€',
-  description: 'Ayudas rehabilitación energética Donostia 2026: Plan PREE Gipuzkoa y Etxebide. Cuantías de hasta 10.000€ por vivienda.',
+  headline: 'Ayudas de Rehabilitación Energética en Donostia 2026',
+  description: 'Ayudas para eficiencia energética en Donostia en 2026: Eguzki Hotz (hasta 3.000 € en aerotermia), ayudas de Etxegintza y del Gobierno Vasco. Datos revisados.',
   datePublished: '2026-06-28',
   dateModified: '2026-11-11',
   inLanguage: 'es-ES',
@@ -52,12 +52,12 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 ---
 
 <BaseLayout
-  title="Rehab Energética Donostia 2026"
-  description="Ayudas rehabilitación energética Donostia 2026: Plan PREE Gipuzkoa y Etxebide. Cuantías de hasta 10.000€ por vivienda. Requisitos y cómo solicitarlas."
+  title="Ayudas Rehabilitación Energética Donostia 2026"
+  description="Ayudas para eficiencia energética en Donostia en 2026: Eguzki Hotz (hasta 3.000 € en aerotermia), ayudas de Etxegintza y del Gobierno Vasco. Datos revisados."
   canonical="https://bilbaoreforma.es/blog/subvencion-rehabilitacion-energetica-donostia"
   ogType="article"
   ogImage="https://bilbaoreforma.es/images/og/donostia-og.jpg"
-  ogImageAlt="Rehab Energética Donostia 2026"
+  ogImageAlt="Ayudas de Rehabilitación Energética en Donostia 2026"
   jsonSchemas={jsonSchemas}
 >
   <Header city="donostia" />
@@ -77,90 +77,63 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
     <header style="margin-bottom: 2rem;">
       <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 11 de noviembre de 2026 · 8 min de lectura</p>
       <h1 style="font-family: var(--font-playfair); font-size: 2rem; font-weight: 700; color: var(--color-grafito); line-height: 1.25; margin-bottom: 1rem;">
-        Rehab Energética Donostia 2026: Subvención Hasta 10.000€
+        Ayudas de Rehabilitación Energética en Donostia 2026
       </h1>
       <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.65;">
-        Donostia cuenta con líneas específicas de ayuda para la rehabilitación energética de viviendas a través del Plan PREE de Gipuzkoa y de las bonificaciones municipales del Ayuntamiento. Las cuantías pueden alcanzar los 10.000€ por vivienda, y se pueden combinar con la deducción del IRPF para maximizar el ahorro.
+        Qué ayudas reales hay en noviembre de 2026 para aislar, cambiar ventanas o pasarse a la aerotermia en Donostia: Eguzki Hotz, Etxegintza y Gobierno Vasco.
       </p>
     </header>
 
     <article style="background: var(--color-blanco); border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(45,30,15,.08);">
 
-      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Donostia, como capital de Gipuzkoa, lidera muchas de las políticas de rehabilitación energética del territorio. El clima atlántico de la ciudad —con lluvias frecuentes y temperaturas moderadas pero con picos de frío en invierno— hace que el aislamiento energético de las viviendas sea una inversión especialmente rentable. Un edificio mal aislado puede perder hasta un 35% de su energía por las fachadas y cubierta.</p>
-
       <div style="background: #FFF9E6; border: 1px solid #F0E6C8; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
-        <h3 style="color: #8A7340; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem;">Datos orientativos</h3>
-        <p style="margin-bottom: 0; font-size: 0.9375rem;">Las cuantías y requisitos que detallamos se basan en información pública de 2024-2025. Las convocatorias de 2026 pueden variar. Consulta siempre las bases oficiales en la web de la Diputación de Gipuzkoa y del Ayuntamiento de Donostia antes de iniciar cualquier trámite.</p>
+        <h3 style="color: #8A7340; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem;">Datos revisados el 11 de noviembre de 2026</h3>
+        <p style="margin-bottom: 0; font-size: 0.9375rem;">Hemos contrastado cuantías y plazos con las fuentes oficiales que enlazamos al final. Las convocatorias cambian cada año: antes de empezar la obra, confirma las bases en <a href="https://www.donostia.eus/es/servicios/ayudas-municipales" style="color: var(--color-terracota);" target="_blank" rel="noopener">donostia.eus</a> y en <a href="https://www.euskadi.eus/gobierno-vasco/-/etxe-medidas-financieras-rehabilitacion/" style="color: var(--color-terracota);" target="_blank" rel="noopener">euskadi.eus</a>.</p>
       </div>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cuantía de la ayuda para rehabilitación energética en Donostia</h2>
-      <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Programa PREE (Programa de Rehabilitación Energética de Edificios) de Gipuzkoa y las ayudas Etxebide ofrecen cuantías variables según el tipo de actuación y los ingresos. Estas son las cuantías orientativas:</p>
-
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Para mejorar la eficiencia energética de una vivienda o un edificio en Donostia hay tres vías reales en 2026: el programa Eguzki Hotz del EVE, las ayudas del Gobierno Vasco y las ayudas municipales de Etxegintza.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Eguzki Hotz (EVE): aerotermia y autoconsumo</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">El programa Eguzki Hotz del Ente Vasco de la Energía (EVE) está abierto desde el 5 de noviembre de 2026 hasta el 29 de septiembre de 2028 o hasta agotar sus 80 millones de euros. Para un particular, la aerotermia recibe 500 € por kW con un máximo de 3.000 € por vivienda, y la ayuda no puede superar el 65 % del coste. Se concede por orden de presentación. Las calderas de gas no están entre las instalaciones subvencionables.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Ayuntamiento de Donostia</h2>
       <div style="overflow-x: auto; margin: 1.5rem 0;">
         <table style="width: 100%; border-collapse: collapse; font-size: 0.9375rem;">
-          <caption style="font-size: 0.8125rem; color: var(--color-gris); text-align: left; margin-bottom: 0.5rem; font-style: italic;">Cuantías orientativas para rehabilitación energética en Donostia (datos 2024-2025)</caption>
-          <thead>
-            <tr>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Programa</th>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Tipo de obra</th>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ayuda orientativa</th>
-            </tr>
-          </thead>
+          <caption style="font-size: 0.8125rem; color: var(--color-gris); text-align: left; margin-bottom: 0.5rem; font-style: italic;">Ayudas municipales de Donostia para rehabilitación y accesibilidad (bases municipales vigentes)</caption>
+          <thead><tr><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Obra</th><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ayuda</th><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Máximo</th></tr></thead>
           <tbody>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Plan PREE Gipuzkoa</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Rehabilitación integral</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 10.000 € / vivienda</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Plan PREE Gipuzkoa</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Aislamiento térmico</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">2.000 - 6.000 €</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Etxebide</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Mejora accesibilidad y eficiencia</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 8.000 €</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Bonificación IBI Donostia</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Mejora eficiencia o accesibilidad</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">50-90% reducción IBI (4 años)</td></tr>
-            <tr><td style="padding: 0.75rem 1rem;">Ayudas municipales Donostia</td><td style="padding: 0.75rem 1rem;">Rehabilitación fachada y cubierta</td><td style="padding: 0.75rem 1rem; font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 5.000 € / vivienda</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Accesibilidad en elementos comunes (ascensores, rampas, plataformas)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20 % del gasto subvencionable sin IVA</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">Obras exigidas por la ITE en elementos comunes</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">10.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Complemento en zonas de rehabilitación preferente</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">+10 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">10.000 € (total 30 %, máx. 30.000 €)</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">Adaptación de la vivienda para movilidad reducida o mayores de 65</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">6.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Eficiencia energética y aislamiento acústico en la vivienda</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">2.000 €</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Requisitos para solicitar la ayuda</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Para ventanas, la ayuda municipal de eficiencia exige que las nuevas alcancen al menos 30 dB(A) de aislamiento acústico.</p>
       <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;">Ser propietario o inquilino de una vivienda situada en Donostia.</li>
-        <li style="margin-bottom: 0.5rem;">La vivienda debe ser la residencia habitual del solicitante.</li>
-        <li style="margin-bottom: 0.5rem;">Los trabajos deben tener un coste elegible mínimo (variable según convocatoria).</li>
-        <li style="margin-bottom: 0.5rem;">Las obras deben ser ejecutadas por empresas con alta fiscal vigente.</li>
-        <li style="margin-bottom: 0.5rem;">Es necesario un informe técnico que acredite la mejora energética esperada.</li>
-        <li style="margin-bottom: 0.5rem;">Contratar un técnico competente cuando la convocatoria lo exija.</li>
-        <li style="margin-bottom: 0;">No tener deudas pendientes con la Administración Pública.</li>
+        <li style="margin-bottom: 0.5rem;">Gestiona Donostiako Etxegintza (calle San Marcial, 2; 943 481 765).</li>
+        <li style="margin-bottom: 0.5rem;">En el momento de la revisión, la web municipal indica que <strong>no hay convocatorias abiertas</strong>. Conviene preparar la documentación para la próxima.</li>
+        <li style="margin-bottom: 0.5rem;">Para obras en la vivienda, ingresos ponderados del hogar inferiores a 35.000 euros.</li>
+        <li style="margin-bottom: 0.5rem;">Edificio de más de 10 años (con excepciones), con al menos 2/3 de uso residencial y 3 viviendas.</li>
+        <li style="margin-bottom: 0.5rem;">Licencia concedida (o exención acreditada) antes de pedir la ayuda, y la obra no puede empezar antes de la concesión provisional.</li>
+        <li style="margin-bottom: 0.5rem;">En obras comunitarias hay que presentar la ITE.</li>
+      </ul>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Gobierno Vasco</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Gobierno Vasco subvenciona obras de rehabilitación, accesibilidad y eficiencia energética en viviendas y en elementos comunes de edificios. El porcentaje depende del tipo de obra y de los ingresos del hogar, y hay una línea especial de accesibilidad para mayores de 65 años o personas con discapacidad con ingresos ponderados de hasta 12.000 euros. El edificio debe tener más de 10 años (salvo obras de accesibilidad) y, si tiene más de 50, solo se subvencionan las obras que recoja la ITE.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Lo que ya no está disponible</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
+        <li style="margin-bottom: 0.5rem;"><strong>Next Generation:</strong> en Euskadi no se admiten solicitudes nuevas de los programas de rehabilitación energética (3, 4 y 5) desde junio de 2023, y las obras ya concedidas debían terminar antes del 30 de junio de 2026.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Plan Estatal de Vivienda 2026-2030:</strong> no se aplica en el País Vasco, que tiene sus propios programas.</li>
+      </ul>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">IRPF</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Gipuzkoa tiene su propia normativa del IRPF: las deducciones estatales del 20, 40 y 60 % no se aplican. Consulta en <a href="https://www.gipuzkoa.eus/es/web/ogasuna" style="color: var(--color-terracota);" target="_blank" rel="noopener">Hacienda Foral de Gipuzkoa</a> las deducciones vigentes.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Fuentes consultadas</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-gris); font-size: 0.875rem;">
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.euskadi.eus/ayuda_subvencion/2026/eguzki-hotz-programa-de-ayudas-a-la-generacion-electrica-para-autoconsumo-y-la-electrificacion-de-los-consumos-termicos-mediante-energias-renovables/web01-tramite/es/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Gobierno Vasco / EVE: programa Eguzki Hotz 2026</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.ekosum.com/eguzki-hotz-ayudas-climatizacion-placas-solares/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Ekosum: importes de Eguzki Hotz para aerotermia</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.donostia.eus/es/servicios/ayudas-municipales" style="color: var(--color-terracota);" target="_blank" rel="noopener">Ayuntamiento de Donostia: ayudas municipales</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.euskadi.eus/gobierno-vasco/-/etxe-medidas-financieras-rehabilitacion/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Gobierno Vasco: medidas financieras para rehabilitación</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.euskadi.eus/servicios/1211802/web01-tramite/es/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Gobierno Vasco: estado de los programas Next Generation</a></li>
       </ul>
 
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Documentación necesaria</h2>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;">DNI o NIE del solicitante.</li>
-        <li style="margin-bottom: 0.5rem;">Escritura de propiedad o contrato de alquiler.</li>
-        <li style="margin-bottom: 0.5rem;">Certificado de empadronamiento.</li>
-        <li style="margin-bottom: 0.5rem;">Presupuesto detallado de la empresa de reformas.</li>
-        <li style="margin-bottom: 0.5rem;">Certificado de Eficiencia Energética de la vivienda antes de la obra.</li>
-        <li style="margin-bottom: 0.5rem;">Informe técnico con la descripción de las actuaciones y mejora energética prevista.</li>
-        <li style="margin-bottom: 0;">Fotografías del estado actual de la vivienda.</li>
-      </ul>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Plazos y convocatoria 2026</h2>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;"><strong>Programa PREE Gipuzkoa:</strong> Previsto para abril de 2026.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Ayudas Etxebide:</strong> Período de solicitud entre marzo y mayo de 2026.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Bonificación IBI Donostia:</strong> Solicitud anual en el último trimestre del año.</li>
-        <li style="margin-bottom: 0;"><strong>Plazo de ejecución:</strong> Habitualmente 12-18 meses desde la resolución.</li>
-      </ul>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cómo solicitarla paso a paso</h2>
-      <ol style="margin: 1.5rem 0; padding-left: 1.5rem; color: var(--color-grafito); list-style: none; counter-reset: step;">
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem; counter-increment: step;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">1</span><strong>Consulta la convocatoria:</strong> Accede a la web de la Diputación de Gipuzkoa y del Ayuntamiento de Donostia para conocer las líneas abiertas.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">2</span><strong>Contrata un técnico:</strong> Un técnico competente debe redactar el informe técnico y, en su caso, el proyecto.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">3</span><strong>Recibe presupuestos:</strong> Pide al menos 2-3 presupuestos a empresas de reformas inscritas.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">4</span><strong>Presenta la solicitud:</strong> Rellena el formulario en la sede electrónica del organismo convocante.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">5</span><strong>Espera la resolución:</strong> El plazo de resolución suele ser de 2-4 meses.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">6</span><strong>Ejecuta la obra:</strong> Una vez concedida la ayuda, ejecuta la reforma con la empresa elegida.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 0;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">7</span><strong>Justifica y cobra:</strong> Presenta facturas, certificado final de eficiencia energética y documentación gráfica.</li>
-      </ol>
-
-      <div style="background: linear-gradient(135deg, #F6FBF0 0%, #E8F0E4 100%); border: 1px solid #C4D8B0; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
-        <h3 style="color: var(--color-verde-montana); margin-top: 0; font-size: 1rem; font-family: var(--font-playfair); margin-bottom: 0.5rem;">Compatibilidad con otras ayudas</h3>
-        <p style="margin-bottom: 0; font-size: 0.9375rem;">La deducción del IRPF por obras de mejora energética es <strong>compatible</strong> con las ayudas del Plan PREE y Etxebide. Las diferentes líneas de ayuda pública <strong>suelen ser compatibles</strong> entre sí si no cubren los mismos conceptos. Consulta siempre con el organismo concedente.</p>
-      </div>
 
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Preguntas frecuentes</h2>
 

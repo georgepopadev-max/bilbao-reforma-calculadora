@@ -9,15 +9,15 @@ category: "presupuesto"
 city: "bilbao"
 faqs:
   - q: "¿Necesito licencia para pintar mi piso en Bilbao?"
-    a: "No una licencia propiamente dicha, pero sí una Comunicación Previa de Obra. Es un trámite ágil, generalmente gratuito, y puedes iniciar la pintura inmediatamente después de presentarlo en la sede electrónica del Ayuntamiento o en una oficina de registro. Aunque pueda parecer un trámite absurdo, pintar sin Comunicación Previa puede acarrear sanciones si el Ayuntamiento detecta la obra durante una inspección rutinaria. Por eso, aunque sea la más sencilla de las licencias de obra Bilbao, no conviene saltársela."
+    a: "No una licencia propiamente dicha, pero sí una Comunicación Previa de Obra. Es un trámite ágil y barato (se paga la tasa municipal y, sobre el presupuesto, el ICIO del 5%), y puedes iniciar la pintura después de presentarlo en la sede electrónica del Ayuntamiento o en una oficina de registro. Aunque pueda parecer un trámite absurdo, pintar sin Comunicación Previa puede acarrear sanciones si el Ayuntamiento detecta la obra durante una inspección rutinaria. Por eso, aunque sea la más sencilla de las licencias de obra Bilbao, no conviene saltársela."
   - q: "¿Cuánto cuesta una licencia de obra mayor en Bilbao en 2026?"
-    a: "La tasa municipal oscila habitualmente entre 500 y 1.500 euros en función del presupuesto y los metros cuadrados. A eso hay que sumar el ICIO (4% del presupuesto), el proyecto técnico de arquitecto (1.500 - 4.000 euros) y la dirección de obra (1.000 - 3.000 euros). El coste total de licencias de obra Bilbao para una reforma integral puede estar entre 6.000 y 12.000 euros dependiendo del alcance, una cifra significativa que conviene reservar desde el inicio del proyecto."
+    a: "La tasa municipal oscila habitualmente entre 500 y 1.500 euros en función del presupuesto y los metros cuadrados. A eso hay que sumar el ICIO, que en Bilbao es del 5% del presupuesto de ejecución material (con bonificaciones de hasta el 90% en algunos casos), el proyecto técnico de arquitecto (1.500 - 4.000 euros) y la dirección de obra (1.000 - 3.000 euros). Son cifras orientativas de mercado. El coste total de licencias de obra Bilbao para una reforma integral puede estar entre 6.000 y 12.000 euros dependiendo del alcance, una cifra significativa que conviene reservar desde el inicio del proyecto."
   - q: "¿Cuánto tarda el Ayuntamiento de Bilbao en conceder una licencia de obra mayor?"
     a: "El plazo legal de resolución para una Licencia de Obra Mayor en Bilbao es de 3 meses, ampliable hasta 6 meses en expedientes que requieran informes sectoriales (patrimonio, Gobierno Vasco, evaluación ambiental). Presentar el proyecto completo desde el principio es lo que más acorta el plazo."
   - q: "¿Qué diferencia hay entre comunicación previa y declaración responsable en Bilbao?"
     a: "La Comunicación Previa es el mecanismo general para obras menores: presentas la documentación, pagas la tasa y, salvo requerimiento municipal en 15 días, puedes empezar. La Declaración Responsable es para obras de mayor alcance sin proyecto técnico complejo: declaras que cumples la normativa y puedes empezar, aunque el Ayuntamiento puede inspeccionar después."
   - q: "¿Qué pasa si hago una obra sin licencia en Bilbao?"
-    a: "Las sanciones van desde los 600 euros en infracciones leves hasta los 60.000 euros en las muy graves, además de la obligación de restaurar la legalidad urbanística. A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas licencias de obra Bilbao es siempre una mala decisión económica, tanto a corto como a largo plazo."
+    a: "La Ley 2/2006 de Suelo y Urbanismo del País Vasco califica las infracciones como leves, graves o muy graves y fija multas que crecen con la gravedad y con el valor de lo construido, además de la obligación de restaurar la legalidad urbanística (incluida la demolición). A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas licencias de obra Bilbao es siempre una mala decisión económica, tanto a corto como a largo plazo."
 breadcrumbs:
   - name: "Inicio"
     url: "https://bilbaoreforma.es/"
@@ -60,7 +60,7 @@ priceTables: 3
 ---
 
 <div class="article-content">
-  <p class="intro-text">Empezar una reforma en Bilbao sin tener claros los trámites administrativos es uno de los errores más comunes y más caros que comete un propietario. Cada año, decenas de obras en Bilbao son paralizadas por el Área de Desarrollo Urbano del Ayuntamiento por no disponer de la correspondiente <strong>licencia de obra Bilbao</strong>, y sus titulares acaban enfrentándose a sanciones que pueden ir desde los 600 euros hasta los 60.000, según la gravedad de la infracción. Y eso sin contar la obligación de restaurar la legalidad, que en la práctica puede significar derribar lo construido.</p>
+  <p class="intro-text">Empezar una reforma en Bilbao sin tener claros los trámites administrativos es uno de los errores más comunes y más caros que comete un propietario. Cada año se paralizan obras en Bilbao por el Área de Desarrollo Urbano del Ayuntamiento por no disponer de la correspondiente <strong>licencia de obra Bilbao</strong>, y sus titulares acaban enfrentándose a multas proporcionales a la gravedad de la infracción y al valor de la obra. Y eso sin contar la obligación de restaurar la legalidad, que en la práctica puede significar derribar lo construido.</p>
 
   <p class="intro-text">Esta guía está pensada para responder, de forma práctica y sin rodeos, a todas las preguntas que recibimos sobre <strong>licencias obras Bilbao 2026</strong>: qué tipo de permiso necesitas para tu reforma, cuánto cuestan las tasas municipales y el ICIO, qué plazos maneja el Ayuntamiento y qué documentos tienes que preparar. Tanto si vas a pintar el piso como si te embarcas en una rehabilitación integral, aquí encontrarás el procedimiento actualizado. Repasaremos los tres grandes grupos de <strong>licencias de obra Bilbao</strong>, los costes reales que puedes esperar y los pasos exactos para presentar la solicitud sin errores.</p>
 
@@ -150,14 +150,14 @@ priceTables: 3
 
   <p>Es el trámite más ágil y, en la práctica, el que vas a utilizar en la mayoría de reformas de tu piso en Bilbao. Se trata simplemente de presentar un formulario normalizado, un presupuesto desglosado y el justificante de pago de la tasa. Una vez registrado, puedes iniciar la obra de forma inmediata, salvo que el Ayuntamiento te requiera documentación adicional en un plazo de 15 días. La Comunicación Previa se ha convertido en la <strong>licencia de obra Bilbao</strong> más habitual para reformas domésticas porque elimina esperas y costes, sin reducir el control municipal sobre la legalidad de la intervención.</p>
 
-  <p>La Comunicación Previa es la vía adecuada para:</p>
+  <p>Según el Ayuntamiento de Bilbao, la comunicación previa cubre en viviendas las obras de acabados interiores, de instalaciones y el cambio de ventanas a patio, siempre que no se modifique la distribución, no se trate de una planta baja o un bajo cubierta y no se toquen estructura ni fachada. En la práctica, es la vía adecuada para:</p>
   <ul>
   <li>Pintar el piso (aunque parezca increíble, pintar también requiere comunicación previa).</li>
   <li>Cambiar los suelos sin modificar niveles ni instalaciones.</li>
   <li>Renovar baño o cocina sin mover tuberías ni instalaciones de agua.</li>
   <li>Sustituir sanitarios, griferías, platos de ducha y mamparas.</li>
   <li>Cambiar la caldera individual por otra de similares características.</li>
-  <li>Sustituir ventanas interiores o carpintería sin modificar huecos.</li>
+  <li>Sustituir ventanas que dan a patio sin modificar huecos (las de fachada a calle siguen otro trámite).</li>
   <li>Trabajos de electricidad sin modificar la potencia contratada ni la instalación común.</li>
   </ul>
 
@@ -289,7 +289,7 @@ priceTables: 3
 
   <p>El coste de la licencia depende de tres factores principales: la tasa municipal, el ICIO (impuesto sobre construcciones) y, en su caso, los honorarios del técnico que redacte el proyecto. En Bilbao, las tasas se regulan por la Ordenanza Fiscal Municipal y se calculan en función del presupuesto de ejecución material de la obra, de los metros cuadrados afectados y del tipo de intervención.</p>
 
-  <p>Las cifras que verás a continuación son las que utiliza el Ayuntamiento de Bilbao para liquidar las tasas de <strong>licencias de obra Bilbao</strong> en 2026. Sirven como referencia orientativa, pero cada expediente tiene sus particularidades y la cuota definitiva puede variar tras la revisión técnica.</p>
+  <p>Lo único fijo es el ICIO: la Ordenanza fiscal del Ayuntamiento de Bilbao establece un tipo del 5% sobre el presupuesto de ejecución material. La tasa por licencia o comunicación previa se calcula según la Ordenanza fiscal nº 7 de tasas urbanísticas, y los honorarios técnicos los fija libremente cada profesional. Por eso las cifras de tasas y honorarios de la tabla son estimaciones de mercado, no tarifas oficiales: la liquidación exacta te la da el Ayuntamiento al presentar el expediente.</p>
 
   <p>Conocer de antemano estos tres componentes es la mejor forma de evitar que el coste real de las <strong>licencias de obra Bilbao</strong> supere con creces lo que tenías presupuestado, algo que ocurre con demasiada frecuencia cuando se empieza una reforma sin haber hecho números completos. Por eso, antes de presentar la solicitud, pide siempre un desglose cerrado de los tres conceptos a tu empresa de reformas y al técnico que firme el proyecto.</p>
 
@@ -300,7 +300,7 @@ priceTables: 3
   <p>Repasemos primero las cifras globales para entender el orden de magnitud antes de entrar en detalle en cada componente de las <strong>licencias de obra Bilbao</strong>. Esta comparativa es la más consultada por los propietarios que están planificando una reforma en Bilbao y necesitan anticipar el coste total de las <strong>licencias de obra Bilbao</strong> que tendrán que asumir.</p>
 
   <table class="price-table">
-  <caption>Costes orientativos de licencias de obra en Bilbao para 2026. Tasas municipales + ICIO (4%) + honorarios técnicos. No incluye el coste de la obra en sí.</caption>
+  <caption>Costes orientativos de licencias de obra en Bilbao para 2026. Tasas municipales y honorarios orientativos + ICIO (5% del PEM). No incluye el coste de la obra en sí.</caption>
   <thead>
   <tr>
   <th>Concepto</th>
@@ -311,14 +311,14 @@ priceTables: 3
   </thead>
   <tbody>
   <tr>
-  <td>Tasa municipal aproximada</td>
+  <td>Tasa municipal (estimación)</td>
   <td>50 - 150 €</td>
   <td>200 - 500 €</td>
   <td>500 - 1.500 €</td>
   </tr>
   <tr>
-  <td>ICIO (4% del PEM)</td>
-  <td>No aplica</td>
+  <td>ICIO (5% del PEM)</td>
+  <td>Sobre presupuesto</td>
   <td>Sobre presupuesto</td>
   <td>Sobre presupuesto</td>
   </tr>
@@ -352,13 +352,15 @@ priceTables: 3
   <p><strong>Ejemplo práctico:</strong> para una reforma integral de un piso de 80 m² en Indautxu con presupuesto de obra de 70.000 €, el desglose aproximado de costes administrativos sería el siguiente:</p>
 
   <ul>
-  <li>Tasa municipal de Licencia de Obra Mayor: 900 €</li>
-  <li>ICIO (4% sobre 70.000 €): 2.800 €</li>
+  <li>Tasa municipal de Licencia de Obra Mayor (estimación): 900 €</li>
+  <li>ICIO (5% sobre 70.000 €): 3.500 €</li>
   <li>Proyecto técnico de arquitecto: 2.500 €</li>
   <li>Dirección de obra: 1.800 €</li>
   <li>Estudio de seguridad y salud: 400 €</li>
-  <li><strong>Total aproximado solo en licencias: 8.400 €</strong></li>
+  <li><strong>Total aproximado solo en licencias: 9.100 €</strong></li>
   </ul>
+
+  <p>Si la obra entra en alguno de los supuestos bonificados del ICIO, ese importe baja mucho. La ordenanza de Bilbao prevé un 90% de bonificación para obras en fachadas y cubiertas, para instalaciones de energías renovables u obras que lleven el edificio a calificación energética A o B, y para obras de rehabilitación integrada o en áreas preferentes; y un 65% para obras de accesibilidad (90% si son en elementos privativos de una persona con discapacidad motora superior al 33%). Las bonificaciones no son acumulables, hay que pedirlas en el plazo de un mes desde la concesión de la licencia o la presentación de la comunicación previa, y se pierden si la obra empieza antes de tener la licencia.</p>
 
   <p>Este coste puede parecer elevado, pero es una fracción menor comparado con los riesgos de operar sin licencia: una sanción por obra ilegal puede multiplicar esa cifra por cinco o más, sin contar la obligación de restaurar la legalidad. Reservar desde el inicio una partida específica para las <strong>licencias de obra Bilbao</strong> en tu presupuesto de reforma es, en este sentido, una decisión inteligente que evita improvisaciones de última hora.</p>
 
@@ -400,7 +402,7 @@ priceTables: 3
         <rect x="440" y="60" width="80" height="150" fill="url(#bar-may)" rx="4"/>
         <text x="480" y="232" text-anchor="middle" font-weight="600" fill="#2D2D2D">Obra</text>
         <text x="480" y="246" text-anchor="middle" fill="#2D2D2D">Mayor</text>
-        <text x="480" y="54" text-anchor="middle" font-size="10" fill="#2D2D2D">~8.000 €</text>
+        <text x="480" y="54" text-anchor="middle" font-size="10" fill="#2D2D2D">~9.000 €</text>
       </g>
       <text x="300" y="30" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#2D2D2D">Coste total estimado de licencias en Bilbao 2026 (€)</text>
     </svg>
@@ -478,7 +480,7 @@ priceTables: 3
 
   <h3>1. Identifica el tipo de licencia que necesitas</h3>
 
-  <p>Revisa la tabla del apartado anterior o utiliza el servicio de orientación urbanística del Ayuntamiento. Si tienes dudas, pide cita previa gratuita en el Área de Desarrollo Urbano (calle Venezuela, 2) antes de presentar nada. Este primer paso es el que más confusión genera y, sin embargo, es el más determinante para que el resto de las <strong>licencias de obra Bilbao</strong> se tramiten correctamente.</p>
+  <p>Revisa la tabla del apartado anterior o utiliza el servicio de orientación urbanística del Ayuntamiento. Si tienes dudas, pide cita previa gratuita en el Área de Desarrollo Urbano (plaza Venezuela, 2) antes de presentar nada. Este primer paso es el que más confusión genera y, sin embargo, es el más determinante para que el resto de las <strong>licencias de obra Bilbao</strong> se tramiten correctamente.</p>
 
   <h3>2. Prepara la documentación</h3>
 
@@ -541,7 +543,7 @@ priceTables: 3
 
   <h3>Sanciones administrativas</h3>
 
-  <p>La <a href="https://boe.es/buscar/pdf/2011/BOE-A-2011-17400-consolidado.pdf" target="_blank" rel="noopener">Ley 2/2006 de Suelo y Urbanismo del País Vasco</a> (publicada en el BOE y vigente con sus posteriores modificaciones) tipifica las infracciones urbanísticas en leves, graves y muy graves. Las multas van desde los 600 euros en el caso más leve hasta los 60.000 euros (o más, en función del valor de la obra) en el caso más grave. Las actualizaciones y normativas de desarrollo se publican en el <a href="https://www.euskadi.eus/web01-bopv/es/" target="_blank" rel="noopener">Boletín Oficial del País Vasco (BOPV)</a> y en el <a href="https://www.bizkaia.eus/es/bob" target="_blank" rel="noopener">Boletín Oficial de Bizkaia (BOB)</a>. Además de la multa, la administración puede:</p>
+  <p>La <a href="https://boe.es/buscar/pdf/2011/BOE-A-2011-17400-consolidado.pdf" target="_blank" rel="noopener">Ley 2/2006 de Suelo y Urbanismo del País Vasco</a> (publicada en el BOE y vigente con sus posteriores modificaciones) tipifica las infracciones urbanísticas en leves, graves y muy graves. La cuantía de la multa depende de esa calificación y del valor de la obra ejecutada sin título, por lo que en una reforma integral puede superar con facilidad el coste de haber tramitado la licencia. Las actualizaciones y normativas de desarrollo se publican en el <a href="https://www.euskadi.eus/web01-bopv/es/" target="_blank" rel="noopener">Boletín Oficial del País Vasco (BOPV)</a> y en el <a href="https://www.bizkaia.eus/es/bob" target="_blank" rel="noopener">Boletín Oficial de Bizkaia (BOB)</a>. Además de la multa, la administración puede:</p>
 
   <ul>
   <li>Ordenar la paralización inmediata de la obra.</li>
@@ -621,19 +623,27 @@ priceTables: 3
   <span class="bilbao-divider-line"></span>
   </div>
 
+  <h2>Fuentes consultadas</h2>
+  <ul>
+  <li><a href="https://www.bilbao.eus/" target="_blank" rel="noopener">Ayuntamiento de Bilbao: ordenanzas fiscales (ICIO y tasas urbanísticas) y trámites de comunicación previa y licencia de obra</a></li>
+  <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-17400" target="_blank" rel="noopener">Ley 2/2006, de 30 de junio, de Suelo y Urbanismo del País Vasco</a></li>
+  <li><a href="https://www.bizkaia.eus/es/bob" target="_blank" rel="noopener">Boletín Oficial de Bizkaia (publicación de las ordenanzas fiscales municipales)</a></li>
+  </ul>
+  <p><em>Revisado el 11 de noviembre de 2026. Las tasas y honorarios son estimaciones; confirma la liquidación con el Ayuntamiento antes de presupuestar.</em></p>
+
   <h2>Preguntas Frecuentes sobre Licencias de Obra en Bilbao</h2>
 
-  <p>Antes de cerrar esta guía, un resumen ejecutivo: si tu reforma en Bilbao no toca estructura, fachada ni instalaciones comunes, una <strong>Comunicación Previa</strong> suele bastar y puedes empezar en 24-48 horas. Si afecta a cualquiera de esos elementos, entra en juego la <strong>Licencia de Obra Menor</strong> o la <strong>Licencia de Obra Mayor</strong>, con proyecto técnico y plazos de entre 1 y 6 meses. Conocer esta distinción antes de empezar es la diferencia entre pagar tasas razonables o enfrentarte a sanciones de hasta 60.000 euros. El procedimiento de <strong>licencias obras Bilbao 2026</strong> está más digitalizado que nunca, pero la revisión municipal sigue siendo rigurosa: prepara bien la documentación desde el inicio y evitarás retrasos.</p>
+  <p>Antes de cerrar esta guía, un resumen ejecutivo: si tu reforma en Bilbao no toca estructura, fachada ni instalaciones comunes, una <strong>Comunicación Previa</strong> suele bastar y puedes empezar en 24-48 horas. Si afecta a cualquiera de esos elementos, entra en juego la <strong>Licencia de Obra Menor</strong> o la <strong>Licencia de Obra Mayor</strong>, con proyecto técnico y plazos de entre 1 y 6 meses. Conocer esta distinción antes de empezar es la diferencia entre pagar tasas razonables o enfrentarte a sanciones y a la obligación de deshacer la obra. El procedimiento de <strong>licencias obras Bilbao 2026</strong> está más digitalizado que nunca, pero la revisión municipal sigue siendo rigurosa: prepara bien la documentación desde el inicio y evitarás retrasos.</p>
 
   <p>Estas son las dudas más habituales que recibimos de propietarios en Bilbao sobre <strong>licencias de obra Bilbao</strong>. Si no encuentras la respuesta a tu caso, utiliza el <a href="/empresas">directorio de empresas</a> de reformas de Bilbao para contactar con profesionales que puedan orientarte de forma personalizada.</p>
 
   <h3>¿Necesito licencia para pintar mi piso en Bilbao?</h3>
 
-  <p>No una licencia propiamente dicha, pero sí una Comunicación Previa de Obra. Es un trámite ágil, generalmente gratuito, y puedes iniciar la pintura inmediatamente después de presentarlo en la sede electrónica del Ayuntamiento o en una oficina de registro. Aunque pueda parecer un trámite absurdo, pintar sin Comunicación Previa puede acarrear sanciones si el Ayuntamiento detecta la obra durante una inspección rutinaria. Por eso, aunque sea la más sencilla de las <strong>licencias de obra Bilbao</strong>, no conviene saltársela.</p>
+  <p>No una licencia propiamente dicha, pero sí una Comunicación Previa de Obra. Es un trámite ágil y barato (se paga la tasa municipal y, sobre el presupuesto, el ICIO del 5%), y puedes iniciar la pintura después de presentarlo en la sede electrónica del Ayuntamiento o en una oficina de registro. Aunque pueda parecer un trámite absurdo, pintar sin Comunicación Previa puede acarrear sanciones si el Ayuntamiento detecta la obra durante una inspección rutinaria. Por eso, aunque sea la más sencilla de las <strong>licencias de obra Bilbao</strong>, no conviene saltársela.</p>
 
   <h3>¿Cuánto cuesta una Licencia de Obra Mayor en Bilbao en 2026?</h3>
 
-  <p>La tasa municipal oscila habitualmente entre 500 y 1.500 euros en función del presupuesto y los metros cuadrados. A eso hay que sumar el ICIO (4% del presupuesto), el proyecto técnico de arquitecto (1.500 - 4.000 euros) y la dirección de obra (1.000 - 3.000 euros). El coste total de <strong>licencias de obra Bilbao</strong> para una reforma integral puede estar entre 6.000 y 12.000 euros dependiendo del alcance, una cifra significativa que conviene reservar desde el inicio del proyecto.</p>
+  <p>La tasa municipal oscila habitualmente entre 500 y 1.500 euros en función del presupuesto y los metros cuadrados. A eso hay que sumar el ICIO, que en Bilbao es del 5% del presupuesto de ejecución material (con bonificaciones de hasta el 90% en algunos casos), el proyecto técnico de arquitecto (1.500 - 4.000 euros) y la dirección de obra (1.000 - 3.000 euros). Son cifras orientativas de mercado. El coste total de <strong>licencias de obra Bilbao</strong> para una reforma integral puede estar entre 6.000 y 12.000 euros dependiendo del alcance, una cifra significativa que conviene reservar desde el inicio del proyecto.</p>
 
   <h3>¿Cuánto tarda el Ayuntamiento en conceder una Licencia de Obra Mayor?</h3>
 
@@ -645,7 +655,7 @@ priceTables: 3
 
   <h3>¿Qué pasa si hago una obra sin licencia en Bilbao?</h3>
 
-  <p>Las sanciones van desde los 600 euros en infracciones leves hasta los 60.000 euros en las muy graves, además de la obligación de restaurar la legalidad urbanística. A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas <strong>licencias de obra Bilbao</strong> es siempre una mala decisión económica, tanto a corto como a largo plazo.</p>
+  <p>La Ley 2/2006 de Suelo y Urbanismo del País Vasco califica las infracciones como leves, graves o muy graves y fija multas que crecen con la gravedad y con el valor de lo construido, además de la obligación de restaurar la legalidad urbanística (incluida la demolición). A esto se suman los problemas con el seguro de hogar, las dificultades para vender o hipotecar el piso en el futuro, y la posible paralización de la obra por parte del Ayuntamiento. En resumen, operar sin las preceptivas <strong>licencias de obra Bilbao</strong> es siempre una mala decisión económica, tanto a corto como a largo plazo.</p>
 
   <p>Si después de leer esta guía quieres explorar las <a href="/blog/subvenciones-reformas-bilbao-2026">subvenciones para reformas Bilbao 2026</a> disponibles para ayudarte a financiar parte de la obra (incluyendo tasas y licencias), consulta nuestra guía actualizada. Y si todavía no tienes una cifra orientativa del coste total, usa la <a href="/calculadora">calculadora de presupuesto de reforma Bilbao</a> para obtener una primera estimación en menos de dos minutos.</p>
 
