@@ -96,18 +96,29 @@ const resolvedOgImageAlt = ogImageAlt || fullTitle;
   <slot />
 
   <!-- Cookie Consent Banner -->
-  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#FAF7F2;border-top:1px solid #E8E2D9;padding:1rem 1.5rem;box-shadow:0 -2px 8px rgba(45,30,15,0.08);font-family:'Inter',system-ui,sans-serif;">
-    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-      <p style="margin:0;color:#2D2D2D;font-size:0.875rem;flex:1;min-width:280px;">
-        Utilizamos cookies técnicas y, con tu consentimiento, cookies analíticas (Google Analytics) para mejorar tu experiencia.
-        <a href="/politica-privacidad" style="color:#C45C3E;text-decoration:underline;font-size:0.875rem;">Más información</a>
+  <div id="cookie-banner" style="display:none;">
+    <div class="cb-inner">
+      <p class="cb-text">
+        Usamos cookies analíticas (Google Analytics) solo si las aceptas.
+        <a href="/politica-privacidad">Más información</a>
       </p>
-      <div style="display:flex;gap:0.5rem;flex-shrink:0;">
-        <button id="cookie-reject" style="background:#6B6B6B;color:#fff;border:none;border-radius:8px;padding:0.5rem 1rem;cursor:pointer;font-size:0.875rem;font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:background 0.2s;">Rechazar</button>
-        <button id="cookie-accept" style="background:#C45C3E;color:#fff;border:none;border-radius:8px;padding:0.5rem 1rem;cursor:pointer;font-size:0.875rem;font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:background 0.2s;">Aceptar</button>
+      <div class="cb-actions">
+        <button id="cookie-reject" class="cb-btn cb-reject" type="button">Rechazar</button>
+        <button id="cookie-accept" class="cb-btn cb-accept" type="button">Aceptar</button>
       </div>
     </div>
   </div>
+  <style is:global>
+    /* Banner compacto: en móvil ocupaba ~20% de la pantalla y tapaba la calculadora */
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999; background: #FAF7F2; border-top: 1px solid #E8E2D9; padding: 0.625rem 1rem; box-shadow: 0 -2px 8px rgba(45,30,15,0.08); font-family: 'Inter', system-ui, sans-serif; }
+    #cookie-banner .cb-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+    #cookie-banner .cb-text { margin: 0; color: #2D2D2D; font-size: 0.8125rem; line-height: 1.4; flex: 1; min-width: 0; }
+    #cookie-banner .cb-text a { color: #C45C3E; text-decoration: underline; }
+    #cookie-banner .cb-actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    #cookie-banner .cb-btn { border: none; border-radius: 8px; padding: 0.5rem 0.75rem; cursor: pointer; font-size: 0.8125rem; font-family: inherit; font-weight: 500; min-height: 40px; }
+    #cookie-banner .cb-reject { background: #6B6B6B; color: #fff; }
+    #cookie-banner .cb-accept { background: #C45C3E; color: #fff; }
+  </style>
 
   <script is:inline>
     (function() {

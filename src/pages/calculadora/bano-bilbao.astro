@@ -347,7 +347,7 @@ import StepFinal from '../../components/calculator/StepFinal.astro';
     const m2 = state.metros;
     let base = 0;
 
-    const precioM2: Record<string, number> = { ducha: 450, banera: 550, ducha_banera: 750, sanitarios: 200 };
+    const precioM2: Record<string, number> = { ducha: 650, banera: 750, ducha_banera: 950, sanitarios: 300 };
     base += m2 * (precioM2[state.mainElement] || 400);
 
     const precioDucha: Record<string, number> = {

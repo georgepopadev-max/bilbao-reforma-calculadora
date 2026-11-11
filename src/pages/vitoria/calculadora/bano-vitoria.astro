@@ -341,7 +341,7 @@ import StepFinal from '../../../components/calculator/StepFinal.astro';
     let base = 0;
 
     // Vitoria prices (x0.9 from Bilbao)
-    const precioM2: Record<string, number> = { ducha: 405, banera: 495, ducha_banera: 675, sanitarios: 180 };
+    const precioM2: Record<string, number> = { ducha: 585, banera: 675, ducha_banera: 855, sanitarios: 270 };
     base += m2 * (precioM2[state.mainElement] || 360);
 
     const precioDucha: Record<string, number> = {

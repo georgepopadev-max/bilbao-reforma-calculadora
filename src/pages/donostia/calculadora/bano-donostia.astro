@@ -348,7 +348,7 @@ import StepFinal from '../../../components/calculator/StepFinal.astro';
     let base = 0;
 
     // Donostia prices (x1.1 from Bilbao)
-    const precioM2: Record<string, number> = { ducha: 495, banera: 605, ducha_banera: 825, sanitarios: 220 };
+    const precioM2: Record<string, number> = { ducha: 715, banera: 825, ducha_banera: 1045, sanitarios: 330 };
     base += m2 * (precioM2[state.mainElement] || 440);
 
     const precioDucha: Record<string, number> = {
