@@ -3,6 +3,7 @@
  * subvention-eficiencia-energetica-bilbao — static Astro page migrated from legacy HTML
  * A2 Zone
  */
+import CalcCta from '../../../components/CalcCta.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import MunicipiosLinks from '../../../components/MunicipiosLinks.astro';
 import Header from '../../../components/Header.astro';
@@ -109,6 +110,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Ente Vasco de la Energía (EVE) abrió el 5 de noviembre de 2026 el programa Eguzki Hotz, con 80 millones de euros, para electrificar la calefacción con renovables y para el autoconsumo. Para un particular, la aerotermia recibe 500 € por kW instalado con un máximo de 3.000 € por vivienda, y la ayuda no puede superar el 65 % del coste. Se concede por orden de llegada hasta agotar fondos. Las calderas de gas no están entre las instalaciones subvencionables.</p>
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Deducción del 15 % en el IRPF de Bizkaia</h2>
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">desde 2025 hay una deducción del 15 % por obras de mejora de la eficiencia energética e integración de renovables en la vivienda, con una base máxima de 20.000 € al año (Norma Foral 2/2025, vigente de 2025 a 2035). Las deducciones estatales del 20 %, 40 % y 60 % no se aplican a quien tributa en Hacienda Foral de Bizkaia. Se aplica en la vivienda habitual y también en una vivienda alquilada como residencia permanente. Guarda facturas y pagos por banco.</p>
+      <CalcCta href="/calculadora/integral-bilbao" title="¿Cuánto costaría tu obra antes de pedir la ayuda?" text="Para casi todas las ayudas necesitas un presupuesto. Calcula un precio orientativo en 1 minuto." dataCta="blog-mid-calculadora" />
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Gobierno Vasco y de Surbisa</h2>
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Gobierno Vasco subvenciona mejoras de eficiencia en viviendas (obras particulares) y en edificios (obras comunitarias y de rehabilitación integral y eficiente), con un porcentaje que depende de los ingresos y del tipo de obra. En Bilbao, la Línea Verde de Surbisa cubre eficiencia y renovables en edificios, pero el plazo de 2026 terminó el 30 de septiembre.</p>
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Lo que ya no está disponible</h2>

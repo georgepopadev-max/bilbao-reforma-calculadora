@@ -3,6 +3,7 @@
  * subvention-rehabilitacion-energetica-donostia — static Astro page migrated from legacy HTML
  * A2 Zone
  */
+import CalcCta from '../../../components/CalcCta.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
@@ -116,6 +117,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
         <li style="margin-bottom: 0.5rem;">Licencia concedida (o exención acreditada) antes de pedir la ayuda, y la obra no puede empezar antes de la concesión provisional.</li>
         <li style="margin-bottom: 0.5rem;">En obras comunitarias hay que presentar la ITE.</li>
       </ul>
+      <CalcCta href="/donostia/calculadora/integral-donostia" title="¿Cuánto costaría tu obra antes de pedir la ayuda?" text="Para casi todas las ayudas necesitas un presupuesto. Calcula un precio orientativo en 1 minuto." dataCta="blog-mid-calculadora" />
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Gobierno Vasco</h2>
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Gobierno Vasco subvenciona obras de rehabilitación, accesibilidad y eficiencia energética en viviendas y en elementos comunes de edificios. El porcentaje depende del tipo de obra y de los ingresos del hogar, y hay una línea especial de accesibilidad para mayores de 65 años o personas con discapacidad con ingresos ponderados de hasta 12.000 euros. El edificio debe tener más de 10 años (salvo obras de accesibilidad) y, si tiene más de 50, solo se subvencionan las obras que recoja la ITE.</p>
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Lo que ya no está disponible</h2>

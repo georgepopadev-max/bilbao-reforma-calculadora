@@ -3,6 +3,7 @@
  * subvention-fachadas-bilbao — static Astro page migrated from legacy HTML
  * A2 Zone
  */
+import CalcCta from '../../../components/CalcCta.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import MunicipiosLinks from '../../../components/MunicipiosLinks.astro';
 import Header from '../../../components/Header.astro';
@@ -115,6 +116,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
         <li style="margin-bottom: 0.5rem;">En edificios de más de 50 años, solo se subvencionan las obras que recoja la ITE, y la ITE debe estar presentada.</li>
         <li style="margin-bottom: 0.5rem;">Las líneas de obras comunitarias y de rehabilitación integral no se pueden combinar entre sí para la misma obra.</li>
       </ul>
+      <CalcCta href="/calculadora/integral-bilbao" title="¿Cuánto costaría tu obra antes de pedir la ayuda?" text="Para pedir la ayuda de Surbisa necesitas un presupuesto. Calcula un precio orientativo en 1 minuto." dataCta="blog-mid-calculadora" />
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Bonificación del ICIO y deducción del IRPF</h2>
       <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
         <li style="margin-bottom: 0.5rem;"><strong>ICIO de Bilbao:</strong> el impuesto de obras es del 5 %, con bonificaciones del 90 % para limpieza, pintura o restauración integral de fachadas y cubiertas, del 90 % para obras que lleven el edificio a etiqueta energética A o B o instalen renovables, y del 65 % para obras de accesibilidad. Se piden en el plazo de un mes desde la licencia o comunicación previa y no se acumulan.</li>

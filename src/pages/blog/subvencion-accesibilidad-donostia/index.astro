@@ -3,6 +3,7 @@
  * subvention-accesibilidad-donostia — static Astro page migrated from legacy HTML
  * A2 Zone
  */
+import CalcCta from '../../../components/CalcCta.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
@@ -115,6 +116,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
       </ul>
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Gobierno Vasco</h2>
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Gobierno Vasco subvenciona obras de rehabilitación, accesibilidad y eficiencia energética en viviendas y en elementos comunes de edificios. El porcentaje depende del tipo de obra y de los ingresos del hogar, y hay una línea especial de accesibilidad para mayores de 65 años o personas con discapacidad con ingresos ponderados de hasta 12.000 euros. El edificio debe tener más de 10 años (salvo obras de accesibilidad) y, si tiene más de 50, solo se subvencionan las obras que recoja la ITE.</p>
+      <CalcCta href="/donostia/calculadora/bano-donostia" title="¿Vas a adaptar el baño? Calcula cuánto costaría" text="Cambiar la bañera por un plato de ducha es la obra de accesibilidad más habitual. Calcula el precio en 1 minuto antes de pedir la ayuda." dataCta="blog-mid-calculadora" />
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">IRPF</h2>
       <p style="margin-bottom: 1rem; color: var(--color-grafito);">Gipuzkoa tiene su propia normativa del IRPF, distinta de la estatal: las deducciones de la Agencia Tributaria no se aplican. Consulta en <a href="https://www.gipuzkoa.eus/es/web/ogasuna" style="color: var(--color-terracota);" target="_blank" rel="noopener">Hacienda Foral de Gipuzkoa</a> qué beneficios hay para tu caso.</p>
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Lo que ya no está disponible</h2>

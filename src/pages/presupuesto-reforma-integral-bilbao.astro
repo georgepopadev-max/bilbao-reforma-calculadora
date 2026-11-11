@@ -5,7 +5,9 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MunicipiosLinks from '../components/MunicipiosLinks.astro';
-import Calculator from '../components/calculator/Calculator.astro';
+import CalcCta from '../components/CalcCta.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import LeadForm from '../components/LeadForm.astro';
 
 const canonical = 'https://bilbaoreforma.es/presupuesto-reforma-integral-bilbao';
@@ -69,20 +71,7 @@ const priceRanges = [
   </Fragment>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="header-logo">
-        <svg class="header-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <span class="header-logo-text">Bilbao Reforma</span>
-      </a>
-      <nav class="header-nav">
-        <a href="/calculadora" class="header-nav-link">Calculadora</a>
-        <a href="/blog" class="header-nav-link">Blog</a>
-        <a href="/empresas" class="header-nav-link">Empresas</a>
-        <a href="/contacto" class="header-nav-link header-nav-link-cta">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <Header city="bilbao" />
 
   <main>
     <!-- Breadcrumb -->
@@ -101,9 +90,7 @@ const priceRanges = [
     </section>
 
     <!-- Calculator -->
-    <section style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
-      <Calculator city="bilbao" calculatorType="integral" />
-    </section>
+    <CalcCta variant="hero" href="/calculadora/integral-bilbao" title="¿Cuánto costaría la reforma integral de tu piso?" text="Indica los metros y el nivel de acabados y te damos un precio orientativo al momento." points={[]} formHref="#presupuesto" dataCta="landing-integral-calculadora" />
 
     <!-- Guide -->
     <section class="landing-guide">
@@ -201,6 +188,7 @@ const priceRanges = [
     </section>
 
     <!-- CTA -->
+    <div id="presupuesto" style="scroll-margin-top:5rem"></div>
     <LeadForm service="integral" city="bilbao" source="bilbao-reforma-landing" title="¿Necesitas 3 presupuestos de empresas verificadas?" description="Recibe hasta 3 propuestas de empresas de reforma integral en Bilbao y Bizkaia. Sin compromiso, gratuito y en 48 horas." />
 
     <!-- Related — cross-links entre landing pages Bilbao + blog baño -->
@@ -244,11 +232,5 @@ const priceRanges = [
   </main>
   <MunicipiosLinks />
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2025–2026 Bilbao Reforma</p>
-      </div>
-    </div>
-  </footer>
+  <Footer city="bilbao" />
 </BaseLayout>
