@@ -26,6 +26,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/rehabilitacion-edificio-antiguo-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Restaurar un caserío en Bizkaia: precio y permisos"
+    href: "/blog/restauracion-caserio-bizkaia"
+  - type: "leer"
     label: "Renovar Piso Antiguo en Bilbao"
     href: "/blog/renovar-piso-antiguo-bilbao"
   - type: "leer"

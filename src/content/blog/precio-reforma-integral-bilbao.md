@@ -26,6 +26,9 @@ breadcrumbs:
     url: "https://bilbaoreforma.es/blog/precio-reforma-integral-bilbao"
 inContentCTAs:
   - type: "leer"
+    label: "Cambiar la instalación eléctrica de un piso en Bilbao"
+    href: "/blog/reforma-electrica-piso-bilbao"
+  - type: "leer"
     label: "Reforma 80m² Bilbao: Guía Completa con Presupuesto Detallado"
     href: "/blog/reforma-80m2-bilbao"
   - type: "leer"
