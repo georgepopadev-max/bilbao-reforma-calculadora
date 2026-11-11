@@ -8,11 +8,11 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 
 const faqs = [
-  { q: '¿Cuánto dinero puede dar la ayuda para salvaescaleras en Donostia?', a: 'Las ayudas para salvaescaleras y plataformas elevadoras pueden alcanzar entre 4.000€ y 8.000€ por vivienda, dependiendo de la convocatoria y los ingresos del solicitante. Las adaptaciones de baño oscilan entre 1.500€ y 3.000€.' },
-  { q: '¿Qué obras son elegibles para las ayudas de accesibilidad?', a: 'Son elegibles la instalación de salvaescaleras y plataformas elevadoras, la adaptación de baños con ducha accesible, la instalación de barandillas y rampas de acceso, y las puertas automáticas de entrada.' },
-  { q: '¿Un inquilino puede solicitar estas ayudas?', a: 'Sí, los inquilinos pueden solicitar estas ayudas con el consentimiento escrito del propietario y siempre que la obra revierta en beneficio de la vivienda y del propio inquilino.' },
-  { q: '¿Qué documentación necesito para pedir la ayuda?', a: 'Necesitas el DNI o NIE, certificado de empadronamiento, escritura o contrato de alquiler, certificado de discapacidad (igual o superior al 33%) o informe médico, informe de servicios sociales y al menos 2-3 presupuestos de empresas especializadas.' },
-  { q: '¿Se puede combinar esta ayuda con la deducción de IRPF?', a: 'Sí, la deducción del IRPF por obras de accesibilidad es compatible con las ayudas públicas de la Diputación de Gipuzkoa y del Ayuntamiento de Donostia. Puedes recibir la ayuda pública y además deducirte un porcentaje en tu declaración de la renta.' },
+  { q: '¿Cuánto paga Donostia por instalar un ascensor?', a: 'El 20 % del gasto subvencionable sin IVA, con un máximo de 20.000 euros, y un 10 % más (hasta 10.000 euros) en zonas de rehabilitación preferente.' },
+  { q: '¿Y por adaptar la vivienda de una persona mayor?', a: 'El 20 % del gasto, con un máximo de 6.000 euros, para personas con movilidad reducida o mayores de 65 años, con ingresos del hogar inferiores a 35.000 euros.' },
+  { q: '¿Está abierta la convocatoria?', a: 'En la revisión del 11 de noviembre de 2026, la web municipal indica que no hay convocatorias abiertas. Consulta Donostiako Etxegintza para la próxima.' },
+  { q: '¿Puedo empezar la obra antes de pedir la ayuda?', a: 'No. Las bases municipales exigen que la obra no empiece antes de la concesión provisional.' },
+  { q: '¿Hay ayudas del Gobierno Vasco?', a: 'Sí, para obras de accesibilidad en viviendas y elementos comunes, con una línea especial para mayores de 65 o personas con discapacidad con ingresos ponderados de hasta 12.000 euros.' },
 ];
 
 const faqSchema = {
@@ -39,8 +39,8 @@ const breadcrumbSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Subvención Accesibilidad Donostia 2026: Ayudas hasta 8.000€',
-  description: 'Ayudas accesibilidad Donostia 2026: salvaescaleras, adaptaciones de baño y ascensores. Cuantías de hasta 8.000€ por vivienda. Requisitos y solicitud.',
+  headline: 'Ayudas de Accesibilidad en Donostia 2026: Cuantías Reales',
+  description: 'Ayudas de accesibilidad en Donostia: hasta 20.000 € para ascensores y 6.000 € para adaptar la vivienda (Etxegintza), más las del Gobierno Vasco. Requisitos.',
   datePublished: '2026-06-28',
   dateModified: '2026-11-11',
   inLanguage: 'es-ES',
@@ -52,12 +52,12 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 ---
 
 <BaseLayout
-  title="Subvención Accesibilidad Donostia 2026"
-  description="Ayudas accesibilidad Donostia 2026: salvaescaleras, adaptaciones de baño y ascensores. Cuantías de hasta 8.000€ por vivienda. Requisitos y solicitud."
+  title="Ayudas Accesibilidad Donostia 2026: Cuantías y Requisitos"
+  description="Ayudas de accesibilidad en Donostia: hasta 20.000 € para ascensores y 6.000 € para adaptar la vivienda (Etxegintza), más las del Gobierno Vasco. Requisitos."
   canonical="https://bilbaoreforma.es/blog/subvencion-accesibilidad-donostia"
   ogType="article"
   ogImage="https://bilbaoreforma.es/images/og/donostia-og.jpg"
-  ogImageAlt="Subvención Accesibilidad Donostia 2026"
+  ogImageAlt="Ayudas de Accesibilidad en Donostia 2026: Cuantías Reales"
   jsonSchemas={jsonSchemas}
 >
   <Header city="donostia" />
@@ -77,89 +77,58 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
     <header style="margin-bottom: 2rem;">
       <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 11 de noviembre de 2026 · 8 min de lectura</p>
       <h1 style="font-family: var(--font-playfair); font-size: 2rem; font-weight: 700; color: var(--color-grafito); line-height: 1.25; margin-bottom: 1rem;">
-        Subvención Accesibilidad Donostia 2026
+        Ayudas de Accesibilidad en Donostia 2026: Cuantías Reales
       </h1>
       <p style="font-size: 1.0625rem; color: var(--color-gris); line-height: 1.65;">
-        La Diputación de Gipuzkoa y el Ayuntamiento de Donostia-San Sebastián ofrecen ayudas para adaptar viviendas de personas con movilidad reducida o mayores de 65 años. Estas ayudas pueden cubrir buena parte del coste de salvaescaleras, adaptaciones de baño y eliminación de barreras arquitectónicas.
+        Cuánto paga el Ayuntamiento de Donostia por instalar un ascensor o adaptar una vivienda, qué ayuda el Gobierno Vasco y qué requisitos hay. Datos revisados el 11 de noviembre de 2026.
       </p>
     </header>
 
     <article style="background: var(--color-blanco); border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(45,30,15,.08);">
 
       <div style="background: #FFF9E6; border: 1px solid #F0E6C8; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
-        <h3 style="color: #8A7340; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem;">Datos orientativos</h3>
-        <p style="margin-bottom: 0; font-size: 0.9375rem;">Las cuantías y requisitos que detallamos se basan en información pública de 2024-2025. Las convocatorias de 2026 pueden variar. Consulta siempre las bases oficiales en la web de la Diputación de Gipuzkoa (www.gipuzkoa.eus) y del Ayuntamiento de Donostia (www.donostia.eus) antes de iniciar cualquier trámite.</p>
+        <h3 style="color: #8A7340; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem;">Datos revisados el 11 de noviembre de 2026</h3>
+        <p style="margin-bottom: 0; font-size: 0.9375rem;">Hemos contrastado cuantías y plazos con las fuentes oficiales que enlazamos al final. Las convocatorias cambian cada año: antes de empezar la obra, confirma las bases en <a href="https://www.donostia.eus/es/servicios/ayudas-municipales" style="color: var(--color-terracota);" target="_blank" rel="noopener">donostia.eus</a> y en <a href="https://www.euskadi.eus/gobierno-vasco/-/etxe-medidas-financieras-rehabilitacion/" style="color: var(--color-terracota);" target="_blank" rel="noopener">euskadi.eus</a>.</p>
       </div>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cuantía de la ayuda para accesibilidad en Donostia</h2>
-      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Las ayudas de accesibilidad en Donostia y Gipuzkoa contemplan cuantías orientativas que varían según el tipo de adaptación y los ingresos del solicitante. Estas son los rangos habituales:</p>
-
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">En Donostia, las obras de accesibilidad pueden tener ayuda del Ayuntamiento, a través de Etxegintza, y del Gobierno Vasco. Estas son las cuantías reales de las bases municipales y lo que hay que tener en cuenta en 2026.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Ayuntamiento de Donostia</h2>
       <div style="overflow-x: auto; margin: 1.5rem 0;">
         <table style="width: 100%; border-collapse: collapse; font-size: 0.9375rem;">
-          <caption style="font-size: 0.8125rem; color: var(--color-gris); text-align: left; margin-bottom: 0.5rem; font-style: italic;">Cuantías orientativas para ayudas de accesibilidad en Donostia (datos 2024-2025)</caption>
-          <thead>
-            <tr>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Tipo de adaptación</th>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Organismo</th>
-              <th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ayuda orientativa</th>
-            </tr>
-          </thead>
+          <caption style="font-size: 0.8125rem; color: var(--color-gris); text-align: left; margin-bottom: 0.5rem; font-style: italic;">Ayudas municipales de Donostia para rehabilitación y accesibilidad (bases municipales vigentes)</caption>
+          <thead><tr><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Obra</th><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Ayuda</th><th style="background: var(--color-verde-montana); color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.8125rem;">Máximo</th></tr></thead>
           <tbody>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Salvaescaleras o plataforma elevadora</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Diputación Gipuzkoa / Donostia</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">4.000 - 8.000 €</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Adaptación de baño (ducha accesible)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Gipuzkoa / Donostia</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">1.500 - 3.000 €</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Ascensor para comunidad de vecinos</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige);">Plan PREE / Gipuzkoa</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">Hasta 10.000 € / vivienda</td></tr>
-            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Rampas y barandillas</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema);">Ayuntamiento Donostia</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); background: var(--color-crema); font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">800 - 2.500 €</td></tr>
-            <tr><td style="padding: 0.75rem 1rem;">Puertas automáticas</td><td style="padding: 0.75rem 1rem;">Ayuntamiento Donostia</td><td style="padding: 0.75rem 1rem; font-family: var(--font-mono); font-weight: 600; color: var(--color-terracota);">800 - 2.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Accesibilidad en elementos comunes (ascensores, rampas, plataformas)</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20 % del gasto subvencionable sin IVA</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">Obras exigidas por la ITE en elementos comunes</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">10.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Complemento en zonas de rehabilitación preferente</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">+10 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">10.000 € (total 30 %, máx. 30.000 €)</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">Adaptación de la vivienda para movilidad reducida o mayores de 65</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top; background: var(--color-crema);">6.000 €</td></tr>
+            <tr><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">Eficiencia energética y aislamiento acústico en la vivienda</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">20 %</td><td style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-beige); vertical-align: top;">2.000 €</td></tr>
           </tbody>
         </table>
       </div>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Requisitos para solicitar la ayuda</h2>
       <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;">Ser propietario o inquilino de una vivienda en Donostia o Gipuzkoa.</li>
-        <li style="margin-bottom: 0.5rem;">Tener más de 65 años o poseer certificado de discapacidad (igual o superior al 33%) o dependencia.</li>
-        <li style="margin-bottom: 0.5rem;">La vivienda debe ser la residencia habitual del solicitante.</li>
-        <li style="margin-bottom: 0.5rem;">Las obras deben ser ejecutadas por empresas especializadas con alta fiscal vigente.</li>
-        <li style="margin-bottom: 0.5rem;">Es necesario un informe de servicios sociales o técnico que acredite la necesidad de la adaptación.</li>
-        <li style="margin-bottom: 0;">No tener deudas pendientes con la Administración Pública.</li>
+        <li style="margin-bottom: 0.5rem;">Gestiona Donostiako Etxegintza (calle San Marcial, 2; 943 481 765).</li>
+        <li style="margin-bottom: 0.5rem;">En el momento de la revisión, la web municipal indica que <strong>no hay convocatorias abiertas</strong>. Conviene preparar la documentación para la próxima.</li>
+        <li style="margin-bottom: 0.5rem;">Para obras en la vivienda, ingresos ponderados del hogar inferiores a 35.000 euros.</li>
+        <li style="margin-bottom: 0.5rem;">Edificio de más de 10 años (con excepciones), con al menos 2/3 de uso residencial y 3 viviendas.</li>
+        <li style="margin-bottom: 0.5rem;">Licencia concedida (o exención acreditada) antes de pedir la ayuda, y la obra no puede empezar antes de la concesión provisional.</li>
+        <li style="margin-bottom: 0.5rem;">En obras comunitarias hay que presentar la ITE.</li>
+      </ul>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Ayudas del Gobierno Vasco</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">El Gobierno Vasco subvenciona obras de rehabilitación, accesibilidad y eficiencia energética en viviendas y en elementos comunes de edificios. El porcentaje depende del tipo de obra y de los ingresos del hogar, y hay una línea especial de accesibilidad para mayores de 65 años o personas con discapacidad con ingresos ponderados de hasta 12.000 euros. El edificio debe tener más de 10 años (salvo obras de accesibilidad) y, si tiene más de 50, solo se subvencionan las obras que recoja la ITE.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">IRPF</h2>
+      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Gipuzkoa tiene su propia normativa del IRPF, distinta de la estatal: las deducciones de la Agencia Tributaria no se aplican. Consulta en <a href="https://www.gipuzkoa.eus/es/web/ogasuna" style="color: var(--color-terracota);" target="_blank" rel="noopener">Hacienda Foral de Gipuzkoa</a> qué beneficios hay para tu caso.</p>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Lo que ya no está disponible</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
+        <li style="margin-bottom: 0.5rem;"><strong>Next Generation:</strong> en Euskadi no se admiten solicitudes nuevas de los programas de rehabilitación energética (3, 4 y 5) desde junio de 2023, y las obras ya concedidas debían terminar antes del 30 de junio de 2026.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Plan Estatal de Vivienda 2026-2030:</strong> no se aplica en el País Vasco, que tiene sus propios programas.</li>
+      </ul>
+      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Fuentes consultadas</h2>
+      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-gris); font-size: 0.875rem;">
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.donostia.eus/es/servicios/ayudas-municipales" style="color: var(--color-terracota);" target="_blank" rel="noopener">Ayuntamiento de Donostia: ayudas municipales para accesibilidad y rehabilitación</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.euskadi.eus/gobierno-vasco/-/etxe-medidas-financieras-rehabilitacion/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Gobierno Vasco: medidas financieras para rehabilitación, accesibilidad y eficiencia energética</a></li>
+        <li style="margin-bottom: 0.4rem;"><a href="https://www.euskadi.eus/servicios/1211802/web01-tramite/es/" style="color: var(--color-terracota);" target="_blank" rel="noopener">Gobierno Vasco: estado de los programas Next Generation</a></li>
       </ul>
 
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Documentación necesaria</h2>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;">DNI o NIE del solicitante.</li>
-        <li style="margin-bottom: 0.5rem;">Escritura de propiedad o contrato de alquiler (con consentimiento del propietario si es inquilino).</li>
-        <li style="margin-bottom: 0.5rem;">Certificado de empadronamiento que acredite la residencia habitual.</li>
-        <li style="margin-bottom: 0.5rem;">Certificado de discapacidad (igual o superior al 33%) o informe médico que acredite la movilidad reducida.</li>
-        <li style="margin-bottom: 0.5rem;">Informe de servicios sociales municipales (obligatorio en algunas convocatorias).</li>
-        <li style="margin-bottom: 0.5rem;">Presupuesto detallado de la empresa instaladora especializada.</li>
-        <li style="margin-bottom: 0;">Fotografías del estado actual de la vivienda antes de la obra.</li>
-      </ul>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Plazos y convocatoria 2026</h2>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;"><strong>Convocatoria Diputación de Gipuzkoa:</strong> Prevista para febrero-marzo y septiembre de 2026.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Convocatoria Ayuntamiento de Donostia:</strong> Período habitual entre abril y junio. Consulta en la web municipal las fechas de 2027.</li>
-        <li style="margin-bottom: 0;"><strong>Plazo de ejecución:</strong> Habitualmente 12 meses desde la resolución favorable.</li>
-      </ul>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Zonas de Donostia con mayor necesidad de accesibilidad</h2>
-      <p style="margin-bottom: 1rem; color: var(--color-grafito);">Existen numerosos edificios de vivienda antiga en Donostia que carecen de accesibilidad, especialmente en los barrios de Altza, Intxaurrondo, Gros, Centro y Amara. Estas zonas concentran un parque inmobiliario con más de 40 años de antigüedad donde la instalación de salvaescaleras o ascensores puede mejorar notablemente la calidad de vida de los residentes.</p>
-
-      <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Cómo solicitarla paso a paso</h2>
-      <ol style="margin: 1.5rem 0; padding-left: 1.5rem; color: var(--color-grafito); list-style: none; counter-reset: step;">
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem; counter-increment: step;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">1</span><strong>Consulta la convocatoria:</strong> Accede a la web de la Diputación de Gipuzkoa (www.gipuzkoa.eus) o del Ayuntamiento de Donostia (www.donostia.eus) para conocer las bases exactas y el presupuesto disponible.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">2</span><strong>Solicita informe de servicios sociales:</strong> En algunos casos es obligatorio un informe de los servicios sociales que acredite la necesidad de la adaptación.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">3</span><strong>Obtén presupuestos:</strong> Pide al menos 2-3 presupuestos a empresas especializadas en instalaciones de accesibilidad con alta fiscal vigente.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">4</span><strong>Presenta la solicitud:</strong> Rellena el formulario en la sede electrónica del organismo convocante, adjuntando toda la documentación requerida.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">5</span><strong>Espera la resolución:</strong> El plazo de resolución suele ser de 2-3 meses desde la presentación de la solicitud.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 1.5rem;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">6</span><strong>Ejecuta la obra:</strong> Una vez concedida la ayuda, ejecuta la adaptación con la empresa elegida dentro del plazo establecido.</li>
-        <li style="position: relative; padding-left: 3rem; margin-bottom: 0;"><span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: var(--color-terracota); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">7</span><strong>Justifica y cobra:</strong> Presenta facturas y documentación gráfica para justificar el gasto y recibir el pago de la ayuda.</li>
-      </ol>
-
-      <div style="background: linear-gradient(135deg, #F6FBF0 0%, #E8F0E4 100%); border: 1px solid #C4D8B0; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;">
-        <h3 style="color: var(--color-verde-montana); margin-top: 0; font-size: 1rem; font-family: var(--font-playfair); margin-bottom: 0.5rem;">Compatibilidad con otras ayudas</h3>
-        <p style="margin-bottom: 0; font-size: 0.9375rem;">La deducción del IRPF por obras de accesibilidad es <strong>compatible</strong> con las ayudas públicas de la Diputación de Gipuzkoa y del Ayuntamiento de Donostia. Puedes recibir la ayuda pública y además deducirte un porcentaje en tu declaración de la renta. Consulta también el Plan PREE para ascensores comunitarios.</p>
-      </div>
 
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Preguntas frecuentes</h2>
 
