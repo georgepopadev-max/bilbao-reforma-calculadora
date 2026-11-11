@@ -79,12 +79,22 @@ const schema = {
   }),
 };
 
+// Título SEO: nombre + qué hace + dónde, para captar las búsquedas de la marca
+const empresaCity = Astro.url.pathname.startsWith('/vitoria/') ? 'Vitoria' : Astro.url.pathname.startsWith('/donostia/') ? 'Donostia' : 'Bilbao';
+const contactWord = empresa.phone ? 'Teléfono' : 'Contacto';
+const titleCandidates = [
+  ...(/reformas/i.test(empresa.name) ? [] : [`${empresa.name}: Reformas en ${empresaCity}, Opiniones y ${contactWord}`]),
+  `${empresa.name} en ${empresaCity}: Opiniones y ${contactWord}`,
+  `${empresa.name}: Opiniones y ${contactWord}`,
+];
+const empresaTitle = titleCandidates.find((t) => t.length <= 60) ?? titleCandidates[titleCandidates.length - 1];
+
 // Meta description de ~155 caracteres cortada por frases completas
 const metaDescription = empresa.description.split(/(?<=\.)\s+/).reduce((acc: string, sentence: string) => !acc ? sentence : (acc + ' ' + sentence).length <= 158 ? acc + ' ' + sentence : acc, '');
 ---
 
 <BaseLayout
-  title={`${empresa.name} | ${empresa.location} 2026`}
+  title={empresaTitle}
   description={metaDescription}
   canonical={Astro.url.pathname}
   ogImage={ogImage}

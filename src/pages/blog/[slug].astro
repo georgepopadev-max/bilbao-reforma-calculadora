@@ -8,6 +8,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import MunicipiosLinks from '../../components/MunicipiosLinks.astro';
 import { SITE_URL, absoluteUrl } from '../../lib/urls';
 
 export async function getStaticPaths() {
@@ -177,6 +178,7 @@ const breadcrumbSchema = {
       )}
     </div>
   </main>
+  {city === 'bilbao' && !/vitoria|gasteiz|donostia|san-sebastian/.test(post.slug) && <MunicipiosLinks />}
 
   <Footer city={city} />
 </BaseLayout>

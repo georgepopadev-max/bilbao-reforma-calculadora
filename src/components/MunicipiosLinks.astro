@@ -1,0 +1,58 @@
+---
+/**
+ * Enlaces internos a las páginas de municipios de Bizkaia (/bizkaia/[slug]).
+ * Se muestra en contenido de Bilbao/Bizkaia para que Google descubra y valore esas páginas.
+ */
+import { MUNICIPIOS } from '../data/municipios';
+
+interface Props {
+  title?: string;
+}
+const { title = 'También hacemos presupuestos en otros municipios de Bizkaia' } = Astro.props;
+const municipios = [...MUNICIPIOS].sort((a, b) => a.name.localeCompare(b.name, 'es'));
+---
+<nav class="municipios-links" aria-label="Reformas en municipios de Bizkaia">
+  <p class="municipios-links-title">{title}</p>
+  <ul>
+    {municipios.map((m) => (
+      <li><a href={`/bizkaia/${m.slug}`}>Reformas en {m.name}</a></li>
+    ))}
+    <li><a href="/bizkaia">Todos los municipios</a></li>
+  </ul>
+</nav>
+
+<style>
+  .municipios-links {
+    max-width: 960px;
+    margin: 2.5rem auto;
+    padding: 1.25rem 1rem;
+    border-top: 1px solid var(--color-beige);
+  }
+  .municipios-links-title {
+    font-weight: 600;
+    color: var(--color-grafito);
+    margin: 0 0 0.75rem;
+  }
+  .municipios-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .municipios-links a {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    background: var(--color-crema);
+    border: 1px solid var(--color-beige);
+    color: var(--color-grafito);
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+  .municipios-links a:hover {
+    border-color: var(--color-terracota);
+    color: var(--color-terracota);
+  }
+</style>
