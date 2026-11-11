@@ -42,25 +42,10 @@
       <p class="sf-meta" id="finalMeta">—</p>
     </header>
 
-    <!-- Donut chart + legend -->
-    <div class="sf-chart-wrap" id="finalBudget" aria-label="Desglose del presupuesto"></div>
-
-    <!-- Action buttons -->
-    <div class="sf-actions">
-      <button class="sf-btn sf-btn-primary" id="downloadPdfBtn" type="button">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-        Descargar PDF
-      </button>
-      <button class="sf-btn sf-btn-secondary" id="requestQuotesBtn" type="button">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        Solicitar 3 presupuestos
-      </button>
-    </div>
-
     <!-- Lead capture form -->
     <div class="sf-leadform">
-      <h3 class="sf-leadform-title">Recibe el desglose completo</h3>
-      <p class="sf-leadform-desc">Déjanos tu teléfono o tu email, lo que prefieras, y te enviamos el detalle junto con presupuestos de empresas de tu zona.</p>
+      <h3 class="sf-leadform-title">Recibe hasta 3 presupuestos gratis</h3>
+      <p class="sf-leadform-desc">Déjanos tu teléfono o tu email y te pasamos el desglose completo y presupuestos de empresas de tu zona. Sin compromiso.</p>
 
       <form id="leadCaptureForm" class="lf-form" novalidate>
         <div class="lf-row">
@@ -89,10 +74,25 @@
           <span>Acepto que Bilbao Reforma comparta mi solicitud con hasta 3 empresas de reformas para que me envíen presupuesto. <a href="/politica-privacidad">Política de privacidad</a>.</span>
         </label>
         <button type="submit" id="leadSubmitBtn" class="lf-submit">
-          Recibir desglose completo
+          Quiero mis presupuestos
         </button>
         <p class="lf-feedback" id="leadFeedback"></p>
       </form>
+      <div class="sf-lead-success" id="leadSuccess" hidden>
+        <p class="sf-lead-success-title">¡Solicitud recibida!</p>
+        <p>Te contactaremos en menos de 48 horas con el desglose y los presupuestos. No hace falta que la envíes otra vez.</p>
+      </div>
+    </div>
+
+    <!-- Donut chart + legend -->
+    <div class="sf-chart-wrap" id="finalBudget" aria-label="Desglose del presupuesto"></div>
+
+    <!-- Action buttons -->
+    <div class="sf-actions">
+      <button class="sf-btn sf-btn-secondary" id="downloadPdfBtn" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Descargar PDF
+      </button>
     </div>
 
     <!-- Disclaimer -->
@@ -124,6 +124,10 @@
     padding: 1.5rem 1rem 4rem;
     font-family: var(--font-inter);
   }
+
+  .sf-lead-success { background: #EEF4EA; border: 1px solid #A4B99B; border-radius: 12px; padding: 1rem 1.25rem; color: var(--color-grafito); }
+  .sf-lead-success p { margin: 0; font-size: 0.9375rem; line-height: 1.5; }
+  .sf-lead-success-title { font-weight: 700; margin-bottom: 0.25rem !important; color: #4A6741; }
 
   /* ---- LOADING ---- */
   .sf-loading {
@@ -790,17 +794,18 @@
         });
       });
 
-      budgetDiv.addEventListener('click', (e) => {
+      budgetDiv.onclick = (e) => {
         const target = e.target as Element;
         if (!target.closest('.budget-chart-segment') && tooltip) {
           tooltip.classList.remove('visible');
         }
-      });
+      };
     }
 
+    // Botones: onclick (no addEventListener) porque reveal() se llama en cada recálculo
     // PDF button
     const pdfBtn = document.getElementById('downloadPdfBtn');
-    pdfBtn?.addEventListener('click', async () => {
+    if (pdfBtn) pdfBtn.onclick = async () => {
       const { generateBudgetPDF } = await import('./pdf-generator');
       const budget: BudgetInfo = {
         city: cityLabel,
@@ -811,25 +816,19 @@
         breakdown,
       };
       generateBudgetPDF(budget);
-    });
-
-    // Request quotes button
-    const quotesBtn = document.getElementById('requestQuotesBtn');
-    quotesBtn?.addEventListener('click', () => {
-      window.location.href = '/empresas';
-    });
+    };
 
     // Back button
     const backBtn = document.getElementById('btn-back-final');
-    backBtn?.addEventListener('click', () => {
+    if (backBtn) backBtn.onclick = () => {
       window.dispatchEvent(new CustomEvent('stepfinal:back', { detail: { calculatorType } }));
-    });
+    };
 
     // New calculation button
     const restartBtn = document.getElementById('btn-restart-final');
-    restartBtn?.addEventListener('click', () => {
+    if (restartBtn) restartBtn.onclick = () => {
       window.location.reload();
-    });
+    };
 
     // Lead capture form
     setupLeadForm(low, high, calculatorType, city, budgetLabel);
@@ -847,6 +846,13 @@
   // ---------------------------------------------------------------------------
   // Lead capture — Axonflow integration
   // ---------------------------------------------------------------------------
+  // reveal() se ejecuta cada vez que el usuario recalcula. Antes cada llamada
+  // añadía otro listener al formulario y un solo clic enviaba el lead N veces.
+  // Ahora el listener se registra una vez y lee el presupuesto vigente.
+  let leadCtx: { low: number; high: number; calculatorType: string; cityKey: string; calcLabel: string } | null = null;
+  let leadFormBound = false;
+  let leadSending = false;
+
   function setupLeadForm(
     low: number,
     high: number,
@@ -854,13 +860,18 @@
     cityKey: string,
     calcLabel: string
   ) {
+    leadCtx = { low, high, calculatorType, cityKey, calcLabel };
+    if (leadFormBound) return;
     const form = document.getElementById('leadCaptureForm') as HTMLFormElement | null;
     const feedback = document.getElementById('leadFeedback');
     const submitBtn = document.getElementById('leadSubmitBtn') as HTMLButtonElement | null;
     if (!form || !feedback || !submitBtn) return;
+    leadFormBound = true;
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (leadSending || !leadCtx) return;
+      const { low, high, calculatorType, cityKey, calcLabel } = leadCtx;
 
       const emailInput = document.getElementById('leadEmail') as HTMLInputElement;
       const phoneInput = document.getElementById('leadPhone') as HTMLInputElement;
@@ -883,6 +894,7 @@
         return;
       }
 
+      leadSending = true;
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
       feedback.textContent = '';
@@ -910,9 +922,12 @@
         });
 
         if (ok) {
-          feedback.textContent = 'Datos enviados. Te contactaremos pronto con tu desglose.';
-          feedback.className = 'lf-feedback success';
-          form.reset();
+          // Ocultamos el formulario para que no se reenvíe el mismo lead
+          form.hidden = true;
+          const success = document.getElementById('leadSuccess');
+          if (success) success.hidden = false;
+          success?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          feedback.textContent = '';
         } else {
           feedback.textContent = 'Error al enviar. Intentalo de nuevo o llamanos.';
           feedback.className = 'lf-feedback error';
@@ -921,8 +936,9 @@
         feedback.textContent = 'Error de conexion. Verifica tu red e intentalo de nuevo.';
         feedback.className = 'lf-feedback error';
       } finally {
+        leadSending = false;
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Recibir desglose completo';
+        submitBtn.textContent = 'Quiero mis presupuestos';
       }
     });
   }

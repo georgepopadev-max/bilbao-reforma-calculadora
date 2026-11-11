@@ -180,9 +180,12 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
     const submitBtn = root.querySelector<HTMLButtonElement>('.lf-submit');
     if (!form || !feedback || !submitBtn) return;
     const label = submitBtn.textContent;
+    let sending = false;
+    let sent = false;
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (sending || sent) return;
       const data = new FormData(form);
       const emailInput = form.querySelector<HTMLInputElement>('input[name=email]');
       const phoneInput = form.querySelector<HTMLInputElement>('input[name=phone]');
@@ -203,6 +206,7 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
         return;
       }
 
+      sending = true;
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
       feedback.textContent = '';
@@ -222,7 +226,8 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
           budget_label: 'Solicitud sin calculadora',
         });
         if (ok) {
-          feedback.textContent = 'Solicitud enviada. Te contactaremos en menos de 48 horas.';
+          sent = true;
+          feedback.textContent = 'Solicitud recibida. Te contactaremos en menos de 48 horas; no hace falta enviarla otra vez.';
           feedback.className = 'lf-feedback success';
           form.reset();
         } else {
@@ -233,8 +238,10 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
         feedback.textContent = 'Error de conexión. Revisa tu red e inténtalo de nuevo.';
         feedback.className = 'lf-feedback error';
       } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = label;
+        sending = false;
+        // Tras un envío correcto el botón queda bloqueado para no duplicar el lead
+        submitBtn.disabled = sent;
+        submitBtn.textContent = sent ? 'Solicitud enviada ✓' : label;
       }
     });
   });
