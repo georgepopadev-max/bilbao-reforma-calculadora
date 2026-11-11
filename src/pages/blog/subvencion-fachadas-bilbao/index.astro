@@ -4,6 +4,7 @@
  * A2 Zone
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MunicipiosLinks from '../../../components/MunicipiosLinks.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 
@@ -42,7 +43,7 @@ const articleSchema = {
   headline: 'Subvención Fachadas Bilbao 2026: Ayudas, ITE y Eficiencia',
   description: 'Ayudas rehabilitación fachadas Bilbao 2026: Plan Rehabilita, ITE y Next Generation. Cuantías orientativas, plazos y requisitos actualizados.',
   datePublished: '2026-06-28',
-  dateModified: '2026-06-28',
+  dateModified: '2026-11-11',
   inLanguage: 'es-ES',
   author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
   publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
@@ -52,8 +53,8 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 ---
 
 <BaseLayout
-  title="Subvención Fachadas Bilbao 2026"
-  description="Ayudas rehabilitación fachadas Bilbao 2026: Plan Rehabilita, ITE y Next Generation. Cuantías orientativas, plazos y requisitos actualizados."
+  title="Subvenciones Fachadas Bilbao 2026: Cuantías y Requisitos"
+  description="Ayudas para rehabilitar la fachada en Bilbao: de 3.000 a 12.000 € por vivienda. Plan Rehabilita, ITE, SATE e IBI. Requisitos y cómo pedirlas."
   canonical="https://bilbaoreforma.es/blog/subvencion-fachadas-bilbao"
   ogType="article"
   ogImage="https://bilbaoreforma.es/images/og/bilbao-og.jpg"
@@ -75,7 +76,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
     </nav>
 
     <header style="margin-bottom: 2rem;">
-      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 28 de junio de 2026 · 8 min de lectura</p>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 11 de noviembre de 2026 · 8 min de lectura</p>
       <h1 style="font-family: var(--font-playfair); font-size: 2rem; font-weight: 700; color: var(--color-grafito); line-height: 1.25; margin-bottom: 1rem;">
         Subvención Fachadas Bilbao 2026: Ayudas, ITE y Eficiencia
       </h1>
@@ -140,7 +141,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Plazos y convocatoria 2026</h2>
       <ul style="margin: 1rem 0 1.5rem 1.5rem; color: var(--color-grafito);">
-        <li style="margin-bottom: 0.5rem;"><strong>Plan Rehabilita Bizkaia:</strong> Convocatorias previstas para marzo-abril y junio de 2026.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Plan Rehabilita Bizkaia:</strong> Convocatorias habituales en marzo-abril y junio. Comprueba si queda alguna abierta en 2026 y prepara la documentación para la de 2027.</li>
         <li style="margin-bottom: 0.5rem;"><strong>Next Generation:</strong> Resoluciones periódicas a lo largo de 2026.</li>
         <li style="margin-bottom: 0.5rem;"><strong>Bonificación IBI Bilbao:</strong> Solicitud anual en septiembre.</li>
         <li style="margin-bottom: 0;"><strong>Plazo de ejecución:</strong> Habitualmente 12-18 meses desde la resolución.</li>
@@ -180,7 +181,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
       <h2 style="font-family: var(--font-playfair); font-size: 1.375rem; font-weight: 600; color: var(--color-grafito); margin: 2rem 0 0.75rem; padding-top: 1rem; border-top: 1px solid var(--color-beige);">Artículos relacionados</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
         <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem; transition: all 0.2s;">
-          <a href="/blog/subvencion-cambio-ventanas-bilbao" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Subvención cambio de ventanas Bilbao</a>
+          <a href="/blog/subvenciones-cambio-ventanas-bizkaia" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Subvención cambio de ventanas Bilbao</a>
         </div>
         <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem;">
           <a href="/blog/pintar-fachada-bilbao" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Pintar fachada en Bilbao: precio por m²</a>
@@ -189,6 +190,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 
     </article>
   </main>
+  <MunicipiosLinks />
 
   <Footer city="bilbao" />
 </BaseLayout>

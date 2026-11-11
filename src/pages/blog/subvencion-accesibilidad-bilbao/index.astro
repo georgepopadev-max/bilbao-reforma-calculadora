@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MunicipiosLinks from '../../../components/MunicipiosLinks.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 
@@ -38,7 +39,7 @@ const articleSchema = {
   headline: 'Subvención Accesibilidad Bilbao 2026: Ayudas hasta 8.000€',
   description: 'Subvención accesibilidad Bilbao 2026: ayudas para baños adaptados, salvaescaleras y ascensores.',
   datePublished: '2026-06-28',
-  dateModified: '2026-06-28',
+  dateModified: '2026-11-11',
   inLanguage: 'es-ES',
   author: { '@type': 'Organization', name: 'Equipo Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
   publisher: { '@type': 'Organization', name: 'Bilbao Reforma', url: 'https://bilbaoreforma.es/' },
@@ -70,7 +71,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
     </nav>
 
     <header style="margin-bottom: 2rem;">
-      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 28 de junio de 2026 · 8 min de lectura</p>
+      <p style="font-size: 0.8125rem; color: var(--color-gris); margin-bottom: 1.5rem; font-family: var(--font-mono);">Actualizado: 11 de noviembre de 2026 · 8 min de lectura</p>
       <h1 style="font-family: var(--font-playfair); font-size: 2rem; font-weight: 700; color: var(--color-grafito); line-height: 1.25; margin-bottom: 1rem;">
         Subvención Accesibilidad Bilbao 2026: Cuantía, Requisitos y Cómo Solicitar
       </h1>
@@ -176,7 +177,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
           <a href="/blog/subvenciones-reformas-bilbao-2026" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Guía general de subvenciones 2026</a>
         </div>
         <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem;">
-          <a href="/blog/subvencion-cambio-ventanas-bilbao" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Subvención cambio de ventanas Bilbao</a>
+          <a href="/blog/subvenciones-cambio-ventanas-bizkaia" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Subvención cambio de ventanas Bilbao</a>
         </div>
         <div style="background: var(--color-crema); border: 1px solid var(--color-beige); border-radius: 12px; padding: 1rem;">
           <a href="/blog/cambio-banera-por-ducha-bizkaia" style="color: var(--color-grafito); text-decoration: none; display: block; font-weight: 500; font-size: 0.9375rem;">Cambiar bañera por ducha: precio y ayudas</a>
@@ -185,6 +186,7 @@ const jsonSchemas = [articleSchema, faqSchema, breadcrumbSchema];
 
     </article>
   </main>
+  <MunicipiosLinks />
 
   <Footer city="bilbao" />
 </BaseLayout>

@@ -1,9 +1,9 @@
 ---
 title: "Subvenciones para Reformas Bilbao 2026 | Guía Actualizada"
-description: "Todas las ayudas y grants para reformas en Bilbao 2026. IDAE, Gobierno Vasco y Ayuntamiento. Solicita antes del cierre de convocatoria."
+description: "Ayudas para reformas en Bilbao en 2026: Gobierno Vasco, Diputación de Bizkaia y Ayuntamiento. Cuantías, requisitos y plazos, revisados en noviembre."
 canonical: "https://bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
 date: "2026-06-21"
-updated: "2026-10-28"
+updated: "2026-11-11"
 readTime: "10 min"
 category: "subvenciones"
 city: "bilbao"
@@ -572,6 +572,6 @@ priceTables: 3
   <p style="margin: 0; color: var(--color-grafito); line-height: 1.6;"><strong>Equipo Bilbao Reforma</strong> es el equipo editorial de <a href="/">bilbaoreforma.es</a>. Reunimos a técnicos, arquitectos y especialistas en rehabilitación de vivienda en Bilbao y Bizkaia que analizan al detalle las convocatorias de ayudas y subvenciones públicas vigentes cada año. Nuestra misión es ayudarte a planificar tu reforma con cifras reales, normativa actualizada y referencias oficiales. Más información en <a href="/sobre-nosotros">quiénes somos</a>.</p>
   </section>
 
-  <p class="legal-disclaimer"><strong>Aviso legal:</strong> la información contenida en este artículo es orientativa y se basa en el marco normativo y los programas públicos conocidos a fecha de junio de 2026. Las cuantías, requisitos, plazos y procedimientos de cada ayuda pueden variar entre convocatorias y comunidades autónomas. Esta guía no constituye asesoramiento jurídico, fiscal ni técnico. Antes de tomar decisiones económicas, consulta la convocatoria oficial vigente y, si procede, a un profesional (gestoría, arquitecto técnico o asesor fiscal). Bilbao Reforma no se responsabiliza de decisiones adoptadas exclusivamente a partir de este contenido.</p>
+  <p class="legal-disclaimer"><strong>Aviso legal:</strong> la información contenida en este artículo es orientativa y se basa en el marco normativo y los programas públicos conocidos a fecha de noviembre de 2026. Las cuantías, requisitos, plazos y procedimientos de cada ayuda pueden variar entre convocatorias y comunidades autónomas. Esta guía no constituye asesoramiento jurídico, fiscal ni técnico. Antes de tomar decisiones económicas, consulta la convocatoria oficial vigente y, si procede, a un profesional (gestoría, arquitecto técnico o asesor fiscal). Bilbao Reforma no se responsabiliza de decisiones adoptadas exclusivamente a partir de este contenido.</p>
 
   </div>

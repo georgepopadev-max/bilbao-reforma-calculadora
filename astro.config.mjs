@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { join } from 'node:path';
 
 const SITE = 'https://bilbaoreforma.es';
 
@@ -24,6 +25,28 @@ const BLOG_LASTMOD = Object.fromEntries(
     .filter(([, date]) => date)
 );
 
+// lastmod de las páginas .astro que declaran dateModified literal en su schema
+function walkAstro(dir) {
+  return readdirSync(dir).flatMap((f) => {
+    const p = join(dir, f);
+    if (statSync(p).isDirectory()) return walkAstro(p);
+    return f.endsWith('.astro') && !f.includes('[') ? [p] : [];
+  });
+}
+const PAGE_LASTMOD = Object.fromEntries(
+  walkAstro('./src/pages')
+    .map((p) => {
+      const date = readFileSync(p, 'utf8').match(/["']?dateModified["']?\s*:\s*["'](\d{4}-\d{2}-\d{2})/)?.[1];
+      const path = p.replace(/^\.?\/?src\/pages/, '').replace(/\.astro$/, '').replace(/\/index$/, '');
+      return [canonicalUrl(SITE + (path || '/')), date];
+    })
+    .filter(([, date]) => date)
+);
+const LASTMOD = { ...PAGE_LASTMOD, ...BLOG_LASTMOD };
+
+// Páginas legales: indexables, pero sin valor para el sitemap
+const SITEMAP_EXCLUDE = new Set(['/aviso-legal', '/politica-privacidad'].map((p) => SITE + p));
+
 export default defineConfig({
   site: SITE,
   output: 'static',
@@ -36,9 +59,10 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap({
+      filter: (page) => !SITEMAP_EXCLUDE.has(canonicalUrl(page)),
       serialize: (item) => {
         const url = canonicalUrl(item.url);
-        return BLOG_LASTMOD[url] ? { ...item, url, lastmod: BLOG_LASTMOD[url] } : { ...item, url };
+        return LASTMOD[url] ? { ...item, url, lastmod: LASTMOD[url] } : { ...item, url };
       },
     }),
   ],

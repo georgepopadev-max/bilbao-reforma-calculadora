@@ -8,6 +8,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog/subvencion-cambio-ventanas-bilbao(\\.html)?",
+      "destination": "/blog/subvenciones-cambio-ventanas-bizkaia",
+      "permanent": true
+    },
+    {
       "source": "/vitoria/blog/subvenciones-reformas-vitoria(\\.html)?",
       "destination": "/blog/subvenciones-reformas-vitoria",
       "permanent": true

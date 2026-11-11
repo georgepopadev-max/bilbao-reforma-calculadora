@@ -3,7 +3,7 @@ title: "Licencias de Obra Bilbao 2026: Guía y Precios"
 description: "Todo sobre licencias de obra en Bilbao: tipos, precios, plazos y qué obras requieren proyecto técnico. Actualizado 2026."
 canonical: "https://bilbaoreforma.es/blog/licencias-obra-bilbao-2026"
 date: "2026-06-21"
-updated: "2026-10-28"
+updated: "2026-11-11"
 readTime: "9 min"
 category: "presupuesto"
 city: "bilbao"
@@ -66,7 +66,7 @@ priceTables: 3
 
   <p class="intro-text">Si en algún momento te asalta la duda de si tu obra necesita o no <strong>licencias de obra Bilbao</strong>, vuelve a esta guía: la hemos estructurado precisamente para responder a esa pregunta de forma rápida y ordenada.</p>
 
-  <p class="intro-text">Pero la buena noticia es que la normativa es clara: en Bizkaia, y por tanto en Bilbao, existen tres figuras administrativas principales —<strong>Comunicación Previa</strong>, <strong>Licencia de Obra Menor</strong> y <strong>Licencia de Obra Mayor</strong>— que cubren el 99% de las reformas en vivienda. Si sabes cuál aplica a tu obra, cuánto cuesta y qué documentos necesitas, el trámite se vuelve mucho menos intimidante. Esta guía está actualizada a junio de 2026 y recoge todo lo que un propietario en Bilbao debe saber para hacer las cosas bien desde el minuto uno. Nuestra experiencia tramitando <strong>licencias de obra Bilbao</strong> nos dice que el 90% de los problemas surgen por desconocimiento, no por mala fe.</p>
+  <p class="intro-text">Pero la buena noticia es que la normativa es clara: en Bizkaia, y por tanto en Bilbao, existen tres figuras administrativas principales —<strong>Comunicación Previa</strong>, <strong>Licencia de Obra Menor</strong> y <strong>Licencia de Obra Mayor</strong>— que cubren el 99% de las reformas en vivienda. Si sabes cuál aplica a tu obra, cuánto cuesta y qué documentos necesitas, el trámite se vuelve mucho menos intimidante. Esta guía está revisada a noviembre de 2026 y recoge todo lo que un propietario en Bilbao debe saber para hacer las cosas bien desde el minuto uno. Nuestra experiencia tramitando <strong>licencias de obra Bilbao</strong> nos dice que el 90% de los problemas surgen por desconocimiento, no por mala fe.</p>
 
   <p class="intro-text">Si todavía no tienes claro el alcance de tu reforma, antes de entrar en materia de licencias te recomendamos utilizar nuestra <a href="/calculadora">calculadora de presupuestos</a> para obtener una estimación rápida del coste y la envergadura del proyecto. Con esa cifra en la mano podrás anticipar qué tipo de <strong>licencias de obra Bilbao</strong> te corresponderá solicitar y planificar el calendario con margen suficiente.</p>
 
@@ -662,7 +662,7 @@ priceTables: 3
   </div>
 
   <div class="disclaimer">
-  <strong>Disclaimer legal:</strong> Las tasas, plazos y procedimientos recogidos en este artículo son orientativos y se basan en la normativa general del Ayuntamiento de Bilbao y de la Comunidad Autónoma del País Vasco aplicable en junio de 2026. Las ordenanzas municipales y la legislación urbanística pueden haber sido actualizadas después de esta fecha. Te recomendamos encarecidamente que confirmes la información directamente con el Área de Desarrollo Urbano del Ayuntamiento de Bilbao o con un profesional (arquitecto, arquitecto técnico o gestor administrativo) antes de iniciar cualquier obra. Bilbao Reforma no se responsabiliza de las decisiones tomadas sobre la base de esta información.
+  <strong>Disclaimer legal:</strong> Las tasas, plazos y procedimientos recogidos en este artículo son orientativos y se basan en la normativa general del Ayuntamiento de Bilbao y de la Comunidad Autónoma del País Vasco aplicable en noviembre de 2026. Las ordenanzas municipales y la legislación urbanística pueden haber sido actualizadas después de esta fecha. Te recomendamos encarecidamente que confirmes la información directamente con el Área de Desarrollo Urbano del Ayuntamiento de Bilbao o con un profesional (arquitecto, arquitecto técnico o gestor administrativo) antes de iniciar cualquier obra. Bilbao Reforma no se responsabiliza de las decisiones tomadas sobre la base de esta información.
   </div>
 
   <div class="article-cta">
