@@ -3,7 +3,7 @@ title: "Precio Calefacción Bilbao 2026 | Guía"
 description: "Precio calefacción en Bilbao: instalación desde 3.500€. Compara gas, aerotermia y suelo radiante con datos reales."
 canonical: "https://bilbaoreforma.es/blog/precio-calefaccion-bilbao"
 date: "2026-07-03"
-updated: "2026-10-28"
+updated: "2026-11-24"
 category: "Calefacción"
 city: "bilbao"
 readTime: "9 min"
@@ -13,7 +13,7 @@ faqs:
   - q: "¿Qué sistema de calefacción es más barato en Bilbao a largo plazo?"
     a: "La aerotermia ofrece el menor coste de uso (hasta 70% menos que gas natural) y se amortiza en 6-10 años. Combinada con suelo radiante, es la opción más eficiente. El gas natural tiene el menor coste de instalación inicial pero un consumo más alto."
   - q: "¿Hay subvenciones para instalar calefacción en Bilbao en 2026?"
-    a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en aerotermia y suelo radiante. El Gobierno Vasco añade ayudas de hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
+    a: "Sí para la aerotermia y otras bombas de calor: Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Si tributas en Bizkaia, también puedes aplicar la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año). Las calderas de gas no tienen ayuda y los programas Next Generation ya no admiten solicitudes."
 breadcrumbs:
   - name: "Inicio"
     url: "https://bilbaoreforma.es/"
@@ -192,7 +192,7 @@ inContentCTAs:
 <p>La aerotermia ofrece el menor coste de uso (hasta 70% menos que gas natural) y se amortiza en 6-10 años. Combinada con suelo radiante, es la opción más eficiente. El gas natural tiene el menor coste de instalación inicial pero un consumo más alto.</p>
 
 <h3>¿Hay subvenciones para instalar calefacción en Bilbao en 2026?</h3>
-<p>Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en aerotermia y suelo radiante. El Gobierno Vasco añade ayudas de hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables.</p>
+<p>Sí para la aerotermia y otras bombas de calor: Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Si tributas en Bizkaia, también puedes aplicar la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año). Las calderas de gas no tienen ayuda y los programas Next Generation ya no admiten solicitudes.</p>
 
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto de calefacción?</h3>

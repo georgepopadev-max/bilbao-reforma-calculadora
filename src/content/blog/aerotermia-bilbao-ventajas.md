@@ -2,7 +2,7 @@
 title: "Aerotermia Bilbao 2026 | Ventajas y Precio"
 description: "Aerotermia en Bilbao: ventajas, precio 12.000-18.000€ y subvenciones 2026 para tu reforma."
 date: "2026-06-29"
-updated: "2026-10-28"
+updated: "2026-11-24"
 canonical: "https://bilbaoreforma.es/blog/aerotermia-bilbao-ventajas"
 category: "subvenciones"
 city: "bilbao"
@@ -12,7 +12,7 @@ faqs:
   - q: "¿Cuánto ahorro con aerotermia frente al gas natural en Bilbao?"
     a: "Para un piso de 90 m² en Bilbao, la factura mensual de calefacción en invierno puede pasar de 100-150 € con gas natural a 40-70 € con aerotermia. El retorno de la inversión se amortiza en 5-10 años de uso, según el tamaño de la vivienda y el aislamiento."
   - q: "¿Hay subvenciones para instalar aerotermia en Bizkaia en 2026?"
-    a: "Sí. El programa PREE del Gobierno Vasco cubre hasta 12.000 € por vivienda para aerotermia. Los fondos Next Generation pueden cubrir hasta el 40% de la inversión para comunidades de propietarios. Además, en Bizkaia se puede deducir parte de la inversión en el IRPF foral. Conviene confirmar los importes vigentes antes de pedir presupuesto, porque las convocatorias cambian cada año."
+    a: "Sí. Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste; también pueden pedirla las comunidades de propietarios. Además, si tributas en Bizkaia, puedes aplicar la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año). Los programas Next Generation ya no admiten solicitudes."
   - q: "¿Funciona la aerotermia con frío intenso en Bilbao?"
     a: "Sí. Las bombas de calor modernas operan eficazmente hasta -15°C o -20°C, perfectamente adecuadas para el clima de Bilbao donde las temperaturas raramente bajan de -5°C. No es cierto que deje de funcionar con frío: simplemente baja algo su rendimiento en los días más fríos."
   - q: "¿Se puede combinar aerotermia con los radiadores de aluminio existentes?"
@@ -47,7 +47,7 @@ priceTables: 0
   <div class="blog-content">
   <p>El Monte Pagasarri y los montes que rodean la cubeta bilbaina no solo ofrecen excelentes rutas de senderismo para los vizcaínos: también influyen en el clima local, creando un entorno donde la humedad del Cantábrico se mezcla con las temperaturas templadas. Este microclima particular hace que la elección del sistema de calefacción sea especialmente importante para los hogares de Bizkaia.</p>
 
-  <p>La aerotermia se ha convertido en la revolución tecnológica más significativa del sector de climatización en los últimos años. En Bilbao y su área metropolitana, las instalaciones de aerotermia han crecido exponencialmente, impulsadas por las generosas ayudas de los fondos europeos Next Generation y las propias-subvenciones del Gobierno Vasco para la transición energética en el País Vasco.</p>
+  <p>La aerotermia se ha convertido en la revolución tecnológica más significativa del sector de climatización en los últimos años. En Bilbao y su área metropolitana, las instalaciones de aerotermia han crecido exponencialmente, impulsadas por las ayudas a la energía renovable y por la subida del precio del gas.</p>
 <div class="in-content-cta">
   <span class="in-content-cta-label">📖 Leer también</span>
   <a href="/blog/tipos-calefaccion-bilbao">Tipos de Calefacción en Bilbao</a>
@@ -181,15 +181,15 @@ priceTables: 0
 
   <h2>Subvenciones y Ayudas para Aerotermia en el País Vasco 2026</h2>
 
-  <p>El Gobierno Vasco, a través del Departamento de Desarrollo Económico, Sostenibilidad y Medio Ambiente, gestiona los fondos europeos Next Generation para la rehabilitación energética de edificios residenciales. Estas ayudas pueden cubrir hasta un 40% de la inversión eligible en aerotermia para los fondos de recuperación.</p>
+  <p>Las ayudas Next Generation para rehabilitación energética ya no admiten solicitudes en Euskadi desde junio de 2023. En 2026, la ayuda para instalar aerotermia es Eguzki Hotz, del EVE, abierta desde el 5 de noviembre de 2026.</p>
 
   <div class="blog-subvention">
   <h4>📋 Programas de Ayuda Disponibles en 2026</h4>
   <ul>
-  <li><strong>Programa PREE (Rehabilitación Energética de Edificios):</strong> Subvenciones de hasta 12.000 euros por vivienda para la instalación de aerotermia, con adicionales bonificaciones si se combina con mejora del aislamiento.</li>
-  <li><strong>Fondos Next Generation:</strong> Hasta 40% de la inversión para comunidades de propietarios que aborden rehabilitación integral, incluyendo sistemas de aerotermia centralizada.</li>
-  <li><strong>Plan Renove de Electrodomésticos (Euskadi):</strong> Para equipos de aerotermia con etiqueta energética A++ o superior.</li>
-  <li><strong>IBI y Impuesto de Transmisiones:</strong> Bonificaciones fiscales municipalities para instalaciones de energías renovables en Bizkaia (consultar ordenanzas fiscales del Ayuntamiento de Bilbao).</li>
+  <li><strong>Eguzki Hotz (EVE):</strong> 500 € por kW, máximo 3.000 € por vivienda y tope del 65 % del coste. La bomba de calor debe tener un SPF superior a 2,5. <a href="/blog/ayudas-aerotermia-eguzki-hotz">Cómo pedirla</a>.</li>
+  <li><strong>IRPF de Bizkaia:</strong> deducción del 15 % por obras de eficiencia energética, con base máxima de 20.000 € al año. <a href="/blog/deduccion-irpf-eficiencia-energetica-bizkaia">Ver la deducción</a>.</li>
+  <li><strong>Gobierno Vasco:</strong> ayudas a la rehabilitación de viviendas y edificios, según ingresos, que pueden incluir mejoras de eficiencia.</li>
+  <li><strong>ICIO de Bilbao:</strong> bonificación del 90 % del impuesto de obras para instalaciones de energías renovables.</li>
   </ul>
   </div>
 

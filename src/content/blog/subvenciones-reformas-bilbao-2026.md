@@ -3,7 +3,7 @@ title: "Subvenciones para Reformas en Bilbao 2026: Ayudas Reales"
 description: "Ayudas para reformas en Bilbao en 2026, revisadas en noviembre: Surbisa, Gobierno Vasco, Eguzki Hotz, IRPF de Bizkaia e ICIO. Qué está abierto y qué no."
 canonical: "https://bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
 date: "2026-06-21"
-updated: "2026-11-11"
+updated: "2026-11-24"
 readTime: "10 min"
 category: "subvenciones"
 city: "bilbao"
@@ -28,6 +28,15 @@ breadcrumbs:
   - name: "Subvenciones Reformas Bilbao 2026: Ayudas del Gobierno Vasco"
     url: "https://bilbaoreforma.es/blog/subvenciones-reformas-bilbao-2026"
 inContentCTAs:
+  - type: "leer"
+    label: "Eguzki Hotz 2026: ayudas para aerotermia paso a paso"
+    href: "/blog/ayudas-aerotermia-eguzki-hotz"
+  - type: "leer"
+    label: "Deducción del 15 % en el IRPF de Bizkaia por eficiencia energética"
+    href: "/blog/deduccion-irpf-eficiencia-energetica-bizkaia"
+  - type: "leer"
+    label: "Plan Renove calderas Bizkaia 2026: qué hay de verdad"
+    href: "/blog/subvenciones-calefaccion-bilbao"
   - type: "leer"
     label: "Cambiar bañera por ducha en Bizkaia: precio y ayudas"
     href: "/blog/cambio-banera-por-ducha-bizkaia"
@@ -56,9 +65,9 @@ priceTables: 3
 
   <h2>Resumen: Qué Ayudas Hay Abiertas en Bilbao</h2>
   <table>
-  <thead><tr><th>Ayuda</th><th>Para qué</th><th>Cuánto</th><th>Estado a 11/11/2026</th></tr></thead>
+  <thead><tr><th>Ayuda</th><th>Para qué</th><th>Cuánto</th><th>Estado</th></tr></thead>
   <tbody>
-  <tr><td>Surbisa: ascensores y barreras</td><td>Ascensores y accesos en edificios</td><td>Unos 800.000 € en total</td><td>Abierta hasta el 13 de noviembre de 2026</td></tr>
+  <tr><td>Surbisa: ascensores y barreras</td><td>Ascensores y accesos en edificios</td><td>Unos 800.000 € en total</td><td>Plazo cerrado el 13 de noviembre de 2026</td></tr>
   <tr><td>Surbisa: zonas preferentes</td><td>Rehabilitación en barrios declarados</td><td>1.920.000 € en total</td><td>Abierta mientras haya presupuesto</td></tr>
   <tr><td>Surbisa: Línea Verde</td><td>Eficiencia y renovables</td><td>350.000 € en total</td><td>Cerrada el 30 de septiembre</td></tr>
   <tr><td>Surbisa: estructura</td><td>Reparaciones estructurales</td><td>160.000 € en total</td><td>Cerrada el 30 de septiembre</td></tr>
@@ -72,7 +81,7 @@ priceTables: 3
   <h2>1. Ayudas del Ayuntamiento de Bilbao (Surbisa)</h2>
   <p>En 2026 el Ayuntamiento de Bilbao destina <strong>3,54 millones de euros</strong> a la rehabilitación, un 17 % más que el año anterior, gestionados por Surbisa. Se reparten así:</p>
   <ul>
-  <li><strong>Ascensores y eliminación de barreras:</strong> unos 800.000 €, para instalar ascensores y mejorar accesos al portal y elementos comunes. Plazo hasta el 13 de noviembre de 2026.</li>
+  <li><strong>Ascensores y eliminación de barreras:</strong> unos 800.000 €, para instalar ascensores y mejorar accesos al portal y elementos comunes. Plazo cerrado el 13 de noviembre de 2026; habrá que esperar a la convocatoria de 2027.</li>
   <li><strong>Línea Verde:</strong> 350.000 € para eficiencia energética, renovables y naturalización de espacios. Plazo cerrado el 30 de septiembre de 2026.</li>
   <li><strong>Reparaciones estructurales:</strong> 160.000 € para estructura y tratamiento de termitas. Plazo cerrado el 30 de septiembre de 2026.</li>
   <li><strong>Accesibilidad en viviendas de personas mayores:</strong> 300.000 €.</li>
