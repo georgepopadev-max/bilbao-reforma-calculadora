@@ -65,8 +65,8 @@
             <input type="text" id="leadName" name="name" placeholder="Tu nombre" autocomplete="name" maxlength="128" />
           </label>
           <label class="lf-field">
-            <span class="lf-label">Barrio o municipio <span class="lf-optional">(opcional)</span></span>
-            <input type="text" id="leadLocation" name="location" placeholder="Ej. Deusto, Getxo" autocomplete="address-level2" maxlength="80" />
+            <span class="lf-label">Barrio o municipio de la obra</span>
+            <input type="text" id="leadLocation" name="location" placeholder="Ej. Deusto, Getxo" autocomplete="address-level2" maxlength="80" required />
           </label>
         </div>
         <label class="lf-checkbox">
@@ -877,14 +877,23 @@
       const phoneInput = document.getElementById('leadPhone') as HTMLInputElement;
       const consentInput = document.getElementById('leadConsent') as HTMLInputElement;
 
+      const locationInput = document.getElementById('leadLocation') as HTMLInputElement | null;
       emailInput.classList.remove('lf-invalid');
       phoneInput.classList.remove('lf-invalid');
+      locationInput?.classList.remove('lf-invalid');
       const contact = validateContact(emailInput.value, phoneInput.value);
       if (!contact.ok) {
         if (contact.field !== 'email') phoneInput.classList.add('lf-invalid');
         if (contact.field !== 'phone') emailInput.classList.add('lf-invalid');
         (contact.field === 'email' ? emailInput : phoneInput).focus();
         feedback.textContent = contact.error;
+        feedback.className = 'lf-feedback error';
+        return;
+      }
+      if (locationInput && locationInput.value.trim().length < 2) {
+        locationInput.classList.add('lf-invalid');
+        locationInput.focus();
+        feedback.textContent = 'Dinos en qué barrio o municipio es la obra para pasártela a empresas de esa zona.';
         feedback.className = 'lf-feedback error';
         return;
       }
@@ -910,7 +919,7 @@
           email: contact.email,
           phone: contact.phone,
           name: (document.getElementById('leadName') as HTMLInputElement | null)?.value.trim() || undefined,
-          location: (document.getElementById('leadLocation') as HTMLInputElement | null)?.value.trim() || undefined,
+          location: locationInput?.value.trim() || undefined,
           answers,
           source: 'bilbao-reforma-calculadora',
           calculator_type: calculatorType,

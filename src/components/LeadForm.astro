@@ -48,8 +48,8 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
         </select>
       </label>
       <label class="lf-field">
-        <span class="lf-label">Barrio o municipio <span class="lf-optional">(opcional)</span></span>
-        <input type="text" name="location" value={location} placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" />
+        <span class="lf-label">Barrio o municipio de la obra</span>
+        <input type="text" name="location" value={location} placeholder={locationPlaceholder} autocomplete="address-level2" maxlength="80" required />
       </label>
     </div>
     <div class="lf-row">
@@ -189,14 +189,23 @@ const locationPlaceholder = city === 'donostia' ? 'Ej. Gros, Amara, Errenteria' 
       const data = new FormData(form);
       const emailInput = form.querySelector<HTMLInputElement>('input[name=email]');
       const phoneInput = form.querySelector<HTMLInputElement>('input[name=phone]');
+      const locationInput = form.querySelector<HTMLInputElement>('input[name=location]');
       emailInput?.classList.remove('lf-invalid');
       phoneInput?.classList.remove('lf-invalid');
+      locationInput?.classList.remove('lf-invalid');
       const contact = validateContact(String(data.get('email') || ''), String(data.get('phone') || ''));
       if (!contact.ok) {
         if (contact.field !== 'email') phoneInput?.classList.add('lf-invalid');
         if (contact.field !== 'phone') emailInput?.classList.add('lf-invalid');
         (contact.field === 'email' ? emailInput : phoneInput)?.focus();
         feedback.textContent = contact.error;
+        feedback.className = 'lf-feedback error';
+        return;
+      }
+      if (String(data.get('location') || '').trim().length < 2) {
+        locationInput?.classList.add('lf-invalid');
+        locationInput?.focus();
+        feedback.textContent = 'Dinos en qué barrio o municipio es la obra para pasártela a empresas de esa zona.';
         feedback.className = 'lf-feedback error';
         return;
       }
