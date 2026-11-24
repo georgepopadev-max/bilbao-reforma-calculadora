@@ -1,19 +1,19 @@
 ---
 title: "Aerotermia Precio Bilbao 2026 | Guía"
-description: "Aerotermia en Bilbao: precio 12.000-18.000€, ahorro hasta 70% y subvenciones Plan Rehabilitación vigentes."
+description: "Aerotermia en Bilbao: precio 12.000-18.000€, ahorro hasta 70% y ayuda Eguzki Hotz de hasta 3.000€ en 2026."
 canonical: "https://bilbaoreforma.es/blog/aerotermia-precio-bilbao"
 date: "2026-07-03"
-updated: "2026-10-28"
+updated: "2026-11-24"
 category: "Calefacción"
 city: "bilbao"
 readTime: "10 min"
 faqs:
   - q: "¿Cuánto cuesta instalar aerotermia en Bilbao?"
-    a: "El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. Este precio puede reducirse significativamente gracias a las subvenciones del Plan Rehabilitación Energética Next Generation (hasta 40% de la inversión) y las ayudas del Gobierno Vasco (hasta 12.000€ por vivienda)."
+    a: "El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. A ese precio se le puede restar la ayuda Eguzki Hotz del EVE (500 € por kW, hasta 3.000 € por vivienda) y, si tributas en Bizkaia, la deducción del 15 % del IRPF por eficiencia energética."
   - q: "¿Cuánto se ahorra con aerotermia frente al gas natural?"
     a: "Para una vivienda de 90m² en Bilbao, la factura mensual de calefacción puede pasar de 100-150€ con gas natural a 40-70€ con aerotermia. El ahorro anual se sitúa entre 600€ y 1.000€, con lo que la inversión se amortiza en 6-10 años considerando las subvenciones disponibles."
   - q: "¿Qué subvenciones hay para aerotermia en Bilbao en 2026?"
-    a: "El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión. El Gobierno Vasco añade hasta 12.000€ por vivienda. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables."
+    a: "Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Si tributas en Bizkaia, puedes aplicar además la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año). En Bilbao, el ICIO tiene una bonificación del 90 % para instalaciones de renovables. Las ayudas Next Generation ya no admiten solicitudes."
 breadcrumbs:
   - name: "Inicio"
     url: "https://bilbaoreforma.es/"
@@ -167,7 +167,7 @@ inContentCTAs:
 <h3>Amortización de la inversión</h3>
 <p>Si la inversión en aerotermia es de 14.000€ y el ahorro anual es de 800€, el payback simple es de 17,5 años. Sin embargo, hay que tener en cuenta:</p>
 <ul>
-<li>Las subvenciones pueden cubrir entre el 30% y el 40% de la inversión, reduciendo el coste real a 8.400-9.800€ y el payback a 10-12 años.</li>
+<li>La ayuda Eguzki Hotz (hasta 3.000 €) y la deducción del 15 % del IRPF de Bizkaia (hasta 2.100 € sobre 14.000 €) pueden bajar el coste real a unos 8.900 € y el payback a unos 11 años.</li>
 <li>El precio de los combustibles fósiles (gas, gasoil) tiende a subir más rápido que el de la electricidad.</li>
 <li>El mantenimiento de la aerotermia es mucho menor que el de una caldera (no hay revisión obligatoria anual).</li>
 <li>La vida útil de la aerotermia es de 15-20 años, comparable a una caldera.</li>
@@ -197,13 +197,13 @@ inContentCTAs:
 <h2>Preguntas Frecuentes sobre Aerotermia</h2>
 
 <h3>¿Cuánto cuesta instalar aerotermia en Bilbao?</h3>
-<p>El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. Este precio puede reducirse significativamente gracias a las subvenciones del Plan Rehabilitación Energética Next Generation (hasta 40% de la inversión) y las ayudas del Gobierno Vasco (hasta 12.000€ por vivienda).</p>
+<p>El precio de la aerotermia en Bilbao para una vivienda de 100m² oscila entre 12.000€ y 18.000€, incluyendo equipo e instalación. A ese precio se le puede restar la ayuda Eguzki Hotz del EVE (500 € por kW, hasta 3.000 € por vivienda) y, si tributas en Bizkaia, la deducción del 15 % del IRPF por eficiencia energética.</p>
 
 <h3>¿Cuánto se ahorra con aerotermia frente al gas natural?</h3>
 <p>Para una vivienda de 90m² en Bilbao, la factura mensual de calefacción puede pasar de 100-150€ con gas natural a 40-70€ con aerotermia. El ahorro anual se sitúa entre 600€ y 1.000€, con lo que la inversión se amortiza en 6-10 años considerando las subvenciones disponibles.</p>
 
 <h3>¿Qué subventions hay para aerotermia en Bilbao en 2026?</h3>
-<p>El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en aerotermia. El Gobierno Vasco añade hasta 12.000€ por vivienda a través del programa PREE. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de energías renovables. En total, las ayudas pueden superar el 50% de la inversión.</p>
+<p>Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Si tributas en Bizkaia, puedes aplicar además la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año). En Bilbao, el ICIO tiene una bonificación del 90 % para instalaciones de renovables. Las ayudas Next Generation ya no admiten solicitudes. Ver <a href="/blog/ayudas-aerotermia-eguzki-hotz">Eguzki Hotz paso a paso</a>.</p>
 
 <div class="article-cta">
 <h3>¿Quieres una estimación de presupuesto con aerotermia?</h3>

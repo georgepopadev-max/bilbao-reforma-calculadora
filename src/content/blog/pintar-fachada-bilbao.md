@@ -131,7 +131,7 @@ inContentCTAs:
   <p>Tienes más detalle en la guía de <a href="/blog/licencias-obra-bilbao-2026">licencias de obra en Bilbao 2026</a>.</p>
 
   <h2>Subvenciones para Fachadas en Bilbao</h2>
-  <p>Pintar una fachada sin más casi nunca tiene ayudas. Pero si la comunidad aprovecha para <strong>rehabilitar la fachada</strong>, reparar patologías o añadir aislamiento térmico, puede acceder a las líneas de rehabilitación del Gobierno Vasco, a las ayudas municipales y, en algunos casos, a bonificaciones del IBI. Lo explicamos en la guía de <a href="/blog/subvencion-fachadas-bilbao">subvenciones para fachadas en Bilbao</a> y en la de <a href="/blog/subvenciones-reformas-bilbao-2026">subvenciones para reformas en Bilbao 2026</a>.</p>
+  <p>Pintar una fachada sin más casi nunca tiene ayudas. Pero si la comunidad aprovecha para <strong>rehabilitar la fachada</strong>, reparar patologías o añadir aislamiento térmico, puede acceder a las líneas de rehabilitación del Gobierno Vasco, a las ayudas municipales de Surbisa y, en Bilbao, a una bonificación del 90 % del ICIO para obras en fachadas. Lo explicamos en la guía de <a href="/blog/subvencion-fachadas-bilbao">subvenciones para fachadas en Bilbao</a> y en la de <a href="/blog/subvenciones-reformas-bilbao-2026">subvenciones para reformas en Bilbao 2026</a>.</p>
   <p>Ten en cuenta que, si el edificio tiene más de 50 años, puede estar obligado a pasar la Inspección Técnica del Edificio (ITE), y las deficiencias que salgan en ella suelen marcar qué obra hay que hacer en la fachada.</p>
 
   <h2>Qué Pintura Usar en Bilbao</h2>

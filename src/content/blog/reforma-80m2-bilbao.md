@@ -3,7 +3,7 @@ title: "Reforma Piso 80m² Bilbao 2026"
 description: "Ejemplo real de reforma integral de un piso de 80m² en Bilbao. Presupuesto desglosado de 52.668€ con 18 partidas detalladas, precios 2026 y factores clave."
 canonical: "https://bilbaoreforma.es/blog/reforma-80m2-bilbao"
 date: "2026-06-15"
-updated: "2026-10-28"
+updated: "2026-11-24"
 readTime: "14 min"
 category: "presupuesto"
 city: "bilbao"
@@ -23,7 +23,7 @@ faqs:
   - q: "¿Cómo sé si el presupuesto que me dan es justo?"
     a: "Lo primero: compara al menos 3 presupuestos. Las diferencias entre empresas para la misma obra pueden llegar al 30%, y eso no siempre se explica por calidad diferente. Fíjate en que cada presupuesto incluya las mismas partidas, con marcas y cantidades, para poder compararlos de verdad."
   - q: "¿Hay ayudas para reformar en Bilbao en 2026?"
-    a: "Sí, hay varias líneas activas. SURBISA (Ayuntamiento de Bilbao) ofrece ayudas para rehabilitación de inmuebles, mejora de fachadas, cubiertas, eficiencia energética y accesibilidad. El Gobierno Vasco, a través del programa de rehabilitación y de los fondos europeos, complementa esas ayudas. Conviene revisar las convocatorias abiertas antes de empezar la obra."
+    a: "Sí, hay varias líneas activas. SURBISA (Ayuntamiento de Bilbao) ofrece ayudas para rehabilitación de inmuebles, mejora de fachadas, cubiertas, eficiencia energética y accesibilidad. El Gobierno Vasco, a través de su programa de rehabilitación, complementa esas ayudas. Conviene revisar las convocatorias abiertas antes de empezar la obra."
   - q: "¿Qué certificado necesito después de la reforma?"
     a: "Tras una reforma integral necesitarás: el Certificado de Final de Obra (que emite el arquitecto técnico o aparejador si ha dirigido la obra), el Certificado de Eficiencia Energética del edificio reformado y, si se ha cambiado la instalación eléctrica o de gas, los boletines de esas instalaciones firmados por un instalador autorizado."
   - q: "¿Por qué varían tanto los presupuestos entre empresas?"
@@ -324,16 +324,16 @@ priceTables: 2
   </ul>
   </div>
 
-  <h2>Ayudas y subvenciones en Bilbao (SURBISA, Gobierno Vasco, Next Generation EU)</h2>
+  <h2>Ayudas y subvenciones en Bilbao (Surbisa, Gobierno Vasco, IRPF)</h2>
 
   <p>Si tu reforma incluye mejoras de eficiencia energética o accesibilidad, puedes acceder a ayudas que reducen considerablemente la inversión inicial:</p>
   <ul>
   <li><strong>SURBISA</strong> (Ayuntamiento de Bilbao): ayudas para rehabilitación de inmuebles, mejora de fachadas, cubiertas, eficiencia energética y accesibilidad. Consulta plazos y requisitos en la web del Ayuntamiento.</li>
   <li><strong>Gobierno Vasco</strong>: programas de ayudas a la rehabilitación para accesibilidad, eficiencia energética y conservación de edificios.</li>
-  <li><strong>Next Generation EU</strong>: hasta un 80% del coste de la reforma en partidas de eficiencia energética (aislamiento, ventanas, sistemas de calefacción). Requiere solicitud previa a la obra.</li>
+  <li><strong>IRPF de Bizkaia</strong>: deducción del 15 % de lo invertido en obras de eficiencia energética (aislamiento, ventanas, calefacción renovable), con base máxima de 20.000 € al año. Las ayudas Next Generation ya no admiten solicitudes. Más en <a href="/blog/subvenciones-reformas-bilbao-2026">subvenciones para reformas en Bilbao 2026</a>.</li>
   </ul>
 
-  <p class="highlight-box"><strong>Consejo clave:</strong> consulta las ayudas disponibles ANTES de firmar cualquier presupuesto. Algunas ayudas requieren que la empresa esté homologada y que la obra cumpla determinados requisitos técnicos. Si empiezas sin saberlo, puedes quedarte fuera de una ayuda del 20-30% sobre el total.</p>
+  <p class="highlight-box"><strong>Consejo clave:</strong> consulta las ayudas disponibles ANTES de firmar cualquier presupuesto. Algunas ayudas requieren que la empresa esté homologada y que la obra cumpla determinados requisitos técnicos. Si empiezas sin saberlo, puedes quedarte fuera de la ayuda.</p>
 
   <div class="article-cta">
   <h3>¿Quieres un presupuesto personalizado para tu reforma?</h3>
@@ -370,7 +370,7 @@ priceTables: 2
   Compara al menos 3 presupuestos línea a línea. Las diferencias de hasta 30% son habituales. Fíjate en que cada presupuesto incluya las mismas partidas. Revisa que haya partida de imprevistos (mínimo 5%). Desconfía de presupuestos muy por debajo del mercado: pueden indicar materiales low-cost o partidas omitidas que aparecerán como extras.</p>
 
   <p><strong>¿Hay ayudas para reformar en Bilbao en 2026?</strong><br>
-  Sí. SURBISA ofrece ayudas para rehabilitación y eficiencia energética. El Gobierno Vasco tiene programas para accesibilidad y conservación. Y Next Generation EU puede cubrir hasta el 80% del coste de reformas de eficiencia energética. Consulta antes de empezar porque muchas ayudas requieren solicitud previa.</p>
+  Sí. SURBISA ofrece ayudas para rehabilitación y eficiencia energética. El Gobierno Vasco tiene programas para accesibilidad y conservación. Y si tributas en Bizkaia, puedes deducir el 15 % de lo invertido en obras de eficiencia energética en el IRPF. Las ayudas Next Generation ya no admiten solicitudes. Consulta antes de empezar porque muchas ayudas requieren solicitud previa.</p>
 
   <p><strong>¿Qué certificado necesito después de la reforma?</strong><br>
   Necesitarás el Certificado de Final de Obra (emitido por el arquitecto técnico si ha dirigido la obra), el Certificado de Eficiencia Energética post-reforma (obligatorio para venta o alquiler, 150-300 €), y el Boletín de Instalaciones para electricidad, gas y fontanería (lo expide el instalador autorizado).</p>

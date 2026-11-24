@@ -1,9 +1,9 @@
 ---
 title: "Cambiar Caldera Bilbao 2026 | Precios"
-description: "Cambiar caldera en Bilbao: precio 3.500-7.000€, tipos (gas, gasoil, biomasa) y ayudas vigentes."
+description: "Cambiar caldera en Bilbao: precio 3.500-7.000€, tipos (gas, gasoil, biomasa) y qué ayudas hay de verdad en 2026."
 canonical: "https://bilbaoreforma.es/blog/cambio-caldera-bilbao"
 date: "2026-07-03"
-updated: "2026-10-28"
+updated: "2026-11-24"
 category: "Calefacción"
 city: "bilbao"
 readTime: "9 min"
@@ -13,7 +13,7 @@ faqs:
   - q: "¿Cuándo hay que cambiar la caldera?"
     a: "Se recomienda cambiar la caldera cuando tiene más de 15 años, cuando las reparaciones son frecuentes o costosas, cuando el consumo ha aumentado sin causa justificada, o cuando quieres mejorar la eficiencia energética de tu hogar. Cambiar una caldera vieja por una de condensación puede reducir el consumo de gas entre un 10% y un 15%."
   - q: "¿Hay subvenciones para cambiar caldera en Bilbao?"
-    a: "Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en calderas de biomasa y hasta el 30% en calderas de condensación. El Gobierno Vasco añade hasta 5.000€ por vivienda a través del programa PREE para sustitución de calderas contaminantes. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de alta eficiencia."
+    a: "No para cambiar una caldera de gas por otra: en 2026 no hay Plan Renove de calderas en Euskadi. Sí hay ayuda si te pasas a una bomba de calor: Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Además, si tributas en Bizkaia puedes aplicar la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año)."
 breadcrumbs:
   - name: "Inicio"
     url: "https://bilbaoreforma.es/"
@@ -159,9 +159,9 @@ inContentCTAs:
 </ol>
 
 <h2>Subvenciones para cambiar caldera en Bilbao 2026</h2>
-<p><strong>Plan Rehabilitación Energética Next Generation:</strong> Cubre hasta el 40% de la inversión en calderas de biomasa y hasta el 30% en calderas de condensación de alta eficiencia. Requiere que la vivienda sea la residencia habitual y que los trabajos los realice una empresa instalada.</p>
-<p><strong>Programa PREE del Gobierno Vasco:</strong> Ayudas directas de hasta 5.000€ por vivienda para la sustitución de calderas de carbón o gasoil por calderas de biomasa o sistemas de aerotermia.</p>
-<p><strong>Bonificaciones fiscales:</strong> El Ayuntamiento de Bilbao aplica bonificaciones en el IBI para instalaciones de energías renovables. Consulta las ordenanzas fiscales vigentes para 2026.</p>
+<p><strong>No hay Plan Renove de calderas en 2026.</strong> Ni el EVE ni el Gobierno Vasco tienen una convocatoria para cambiar calderas, y una caldera de gas nueva no tiene subvención. Las cifras del 30-40 % que circulan por internet son de los programas Next Generation, que no admiten solicitudes nuevas desde junio de 2023.</p>
+<p><strong>Eguzki Hotz (EVE), si te pasas a la aerotermia:</strong> Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Abierta desde el 5 de noviembre de 2026. Ver <a href="/blog/ayudas-aerotermia-eguzki-hotz">Eguzki Hotz paso a paso</a>.</p>
+<p><strong>Ventajas fiscales:</strong> La deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año), y en Bilbao la bonificación del 90 % del ICIO para instalaciones de renovables. Todo el detalle en <a href="/blog/subvenciones-calefaccion-bilbao">Plan Renove calderas Bizkaia 2026: ayudas reales</a>.</p>
 
 <h2>Empresas especializadas en calderas en Bilbao</h2>
 <ul>
@@ -182,7 +182,7 @@ inContentCTAs:
 <p>Se recomienda cambiar la caldera cuando tiene más de 15 años, cuando las reparaciones son frecuentes o costosas, cuando el consumo ha aumentado sin causa justificada, o cuando quieres mejorar la eficiencia energética de tu hogar. Cambiar una caldera vieja por una de condensación puede reducir el consumo de gas entre un 10% y un 15%.</p>
 
 <h3>¿Hay subvenciones para cambiar caldera en Bilbao?</h3>
-<p>Sí. El Plan Rehabilitación Energética Next Generation cubre hasta el 40% de la inversión en calderas de biomasa y hasta el 30% en calderas de condensación. El Gobierno Vasco añade hasta 5.000€ por vivienda a través del programa PREE para sustitución de calderas contaminantes. El Ayuntamiento de Bilbao ofrece bonificaciones en el IBI para instalaciones de alta eficiencia.</p>
+<p>No para cambiar una caldera de gas por otra: en 2026 no hay Plan Renove de calderas en Euskadi. Sí hay ayuda si te pasas a una bomba de calor: Eguzki Hotz, del EVE, da 500 € por kW instalado de aerotermia, con un máximo de 3.000 € por vivienda y sin superar el 65 % del coste. Además, si tributas en Bizkaia puedes aplicar la deducción del 15 % del IRPF de Bizkaia por obras de eficiencia energética (base máxima de 20.000 € al año).</p>
 
 <div class="article-cta">
 <h3>¿Quieres saber cuánto costaría cambiar tu caldera?</h3>
